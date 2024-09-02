@@ -317,7 +317,9 @@ Forest and urban fires are a major problem in the modern era that tests
  Greece for a period of 10 years.
 
 \series bold
- For this purpose, a wide range of machine learning techniques were used
+ 
+\series default
+For this purpose, a wide range of machine learning techniques were used
  on this data and the experimental results were more than encouraging.
 \end_layout
 
