@@ -1,0 +1,418 @@
+%% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+
+\Title{Predict the duration of forestfires using machine learning methods}
+
+\TitleCitation{Predict the duration of forestfires using machine learning methods}
+
+\Author{Constantina Kopitsa$^{1}$, Ioannis G. Tsoulos$^{2*}$, Vasileios
+Charilogis$^{3}$, Athanassios Stavrakoudis$^{4}$}
+
+\AuthorNames{Constantina Kopitsa, Ioannis G. Tsoulos, Vasileios Charilogis and
+Athanassios Stavrakoudis}
+
+\AuthorCitation{Kopitsa, C.;Tsoulos, I.G.; Charilogis V., Stavrakoudis A.}
+
+
+\address{$^{1}$\quad{}Department of Informatics and Telecommunications,
+University of Ioannina, Greece;k.kopitsa@uoi.gr\\
+$^{2}$\quad{}Department of Informatics and Telecommunications, University
+of Ioannina, Greece; itsoulos@uoi.gr\\
+$^{3}\quad$Department of Informatics and Telecommunications, University
+of Ioannina, Greece; v.charilog@uoi.gr\\
+$^{4}\quad$Department of Economics, University of Ioannina, Ioannina,
+Greece; astavrak@uoi.gr}
+
+
+\corres{Correspondence: itsoulos@uoi.gr}
+
+
+\abstract{Forest and urban fires are a major problem in the modern era that
+tests the endurance of governments to extinguish them. Fires can cause
+economic and ecological problems especially in the summer months.
+In modern times, the rapid development of Artificial Intelligence
+can be a weapon for predicting the evolution of fires or even for
+their prevention. Specifically, through Machine Learning, which is
+one part of Artificial Intelligence several methods have been incorporated
+to detect the duration of fires using data which are freely available
+from the Fire Service of Greece for a period of 10 years.\textbf{
+}For this purpose, a wide range of machine learning techniques were
+used on this data and the experimental results were more than encouraging.}
+
+
+\keyword{Forest fires; Machine learning; Neural networks}
+
+\DeclareFontEncoding{LGR}{}{}
+\DeclareRobustCommand{\greektext}{%
+  \fontencoding{LGR}\selectfont\def\encodingdefault{LGR}}
+\DeclareRobustCommand{\textgreek}[1]{\leavevmode{\greektext #1}}
+\ProvideTextCommand{\~}{LGR}[1]{\char126#1}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+
+
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal and change "submit" to "accept". The document class line would be, e.g., \documentclass[preprints,article,accept,moreauthors,pdftex]{mdpi}. This is especially recommended for submission to arXiv, where line numbers should be removed before posting. For preprints.org, the editorial staff will make this change immediately prior to posting.
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% acoustics, actuators, addictions, admsci, adolescents, aerospace, agriculture, agriengineering, agronomy, ai, algorithms, allergies, alloys, analytica, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arts, asc, asi, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biotech, birds, bloods, blsf, brainsci, breath, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinpract, clockssleep, cmd, coasts, coatings, colloids, colorants, commodities, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryptography, crystals, csmf, ctn, curroncol, currophthalmol, cyber, dairy, data, dentistry, dermato, dermatopathology, designs, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecologies, econometrics, economies, education, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, ent, entomology, entropy, environments, environsciproc, epidemiologia, epigenomes, est, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, foundations, fractalfract, fuels, futureinternet, futureparasites, futurepharmacol, futurephys, futuretransp, galaxies, games, gases, gastroent, gastrointestdisord, gels, genealogy, genes, geographies, geohazards, geomatics, geosciences, geotechnics, geriatrics, hazardousmatters, healthcare, hearts, hemato, heritage, highthroughput, histories, horticulturae, humanities, humans, hydrobiology, hydrogen, hydrology, hygiene, idr, ijerph, ijfs, ijgi, ijms, ijns, ijtm, ijtpp, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jal, jcdd, jcm, jcp, jcs, jdb, jeta, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmp, jmse, jne, jnt, jof, joitmc, jor, journalmedia, jox, jpm, jrfm, jsan, jtaer, jzbg, kidney, kidneydial, knowledge, land, languages, laws, life, liquids, literature, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrology, micro, microarrays, microbiolres, micromachines, microorganisms, microplastics, minerals, mining, modelling, molbank, molecules, mps, msf, mti, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nri, nursrep, nutraceuticals, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, organoids, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, pollutants, polymers, polysaccharides, poultry, powders, preprints, proceedings, processes, prosthesis, proteomes, psf, psych, psychiatryint, psychoactives, publications, quantumrep, quaternary, qubs, radiation, reactions, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, rheumato, risks, robotics, ruminants, safety, sci, scipharm, seeds, sensors, separations, sexes, signals, sinusitis, skins, smartcities, sna, societies, socsci, software, soilsystems, solar, solids, sports, standards, stats, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, taxonomy, technologies, telecom, test, textiles, thalassrep, thermo, tomography, tourismhosp, toxics, toxins, transplantology, transportation, traumacare, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, viruses, vision, waste, water, wem, wevj, wind, women, world, youth, zoonoticdis 
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, book, bookreview, briefreport, casereport, comment, commentary, communication, conferenceproceedings, correction, conferencereport, entry, expressionofconcern, extendedabstract, datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, systematicreview, supfile, technicalnote, viewpoint, guidelines, registeredreport, tutorial
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and dvi2pdf.
+
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+ 
+\setcounter{page}{\@firstpage} 
+
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2024}
+\copyrightyear{2024}
+%\externaleditor{Academic Editor: Firstname Lastname} % For journal Automation, please change Academic Editor to "Communicated by"
+\datereceived{}
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{}
+\datepublished{}
+%\datecorrected{} % Corrected papers include a "Corrected: XXX" date in the original paper.
+%\dateretracted{} % Corrected papers include a "Retracted: XXX" date in the original paper.
+\hreflink{https://doi.org/} % If needed use \linebreak
+%\doinum{}
+%------------------------------------------------------------------
+% The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
+%\pdfoutput=1
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
+
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences:
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data:
+%\dataset{DOI number or link to the deposited data set in cases where the data set is published or set to be published separately. If the data set is submitted and will be published as a supplement to this paper in the journal Data, this field will be filled by the editors of the journal. In this case, please make sure to submit the data set as a supplement when entering your manuscript into our manuscript editorial system.}
+
+%\datasetlicense{license under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{Instead of the abstract}
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Advances in Respiratory Medicine
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+
+%\noindent This is an obligatory section in â€œAdvances in Respiratory Medicineâ€, whose goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What is the implication of the main finding?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\section{Materials and Methods}
+
+\subsection{Data pre - processing }
+
+\subsection{The proposed algorithms}
+
+\subsubsection{Bayes Net }
+
+The Bayesian Networks, are Probabilistic Graphical Models, they can
+create: diagnostic models, causal models, decision making, prediction,
+e.t.c. \citep{bayes_net1}. Therefore, the Bayes Net, is considered
+as a useful tool, in prediction and detection area, of forest/ wildfires
+fires. Consequently, it follows a brief reference, of two papers. 
+\begin{itemize}
+\item The specific algorithms, was used, in study: A Bayesian network model
+for prediction and analysis of possible forest fires causes, in 2020.
+The study was conducted in Mugla, of Turkey. The model showed, that
+the most effective factors, on forest fires ignition, were: the month,
+and the temperature \citep{bayes_net2}. 
+\item In 2021, it was published, on MDPI, the survey: A Bayesian Network
+-- Based Information Fusion Combined with DNNS for Robust Video Fire
+Detection. The combination, Regional -- Convolutional Neural Network
+(R -- CNN), Long -- Short term memory (LSTM), and Bayesian Net,
+proved that the last one, not only improves the detection accuracy,
+of forest / wildfires\ensuremath{\centerdot} but also reduces the
+decision making \citep{bayes_net3}. 
+\end{itemize}
+
+\subsubsection{Naive Bayes }
+
+The Naïve Bayes is a supervised machine learning algorithm, used for
+classification tasks. This classifier, use principles of probability
+in order to perform classification tasks \citep{naive_bayes1}. One
+of the strong points, of the algorithm, is the amenable improvements,
+and modifications, as to achieve better results in research, such
+as the forest wildfires prediction. 
+\begin{itemize}
+\item A proportional modification was found in the following research, which
+was published on MDPI: Towards Fire prediction Accuracy Enhancements
+by Leveraging an Improved Naïve Bayes Algorithm. In the aforementioned
+paper, there was an evolutionary algorithm, the Double Weighted Naïve
+Bayes with Compensation Coefficient (DWCNB)\ensuremath{\centerdot}
+which compared with Naïve Bayes, and Double Weighted Naïve Bayes.
+The results showed a prediction accuracy of 98.13\%, higher than Naïve
+Bayes for 5.08\%, and respectively 2.52\% than Double weighted Naïve
+Bayes \citep{naive_bayes2}. 
+\item In a recent research, 2024, in Turkey, it was used different algorithms
+so as to extract the highest accuracy, for forest / wildfires. The
+paper, was: Predicting forest fire vulnerability using machine learning
+approaches in the Mediterranean region: a case study in Turkiye. The
+study compared: Naïve Bayes, Decision Tree, Random Forest, Neural
+Networks, and Support Vector machines. The Random Forest algorithm,
+yielded the highest accuracy, while Naïve Bayes performed consistently,
+albeit lower than Random Forest, and Decision Tree \citep{naive_bayes3}. 
+\end{itemize}
+
+\subsubsection{Logistic Regression}
+
+Like the previous algorithm, Logistic Regression, works also with
+machine learning classification, and used to predict probabilities.
+This (ML) technique used in data sets with many features \citep{logistic1}.
+The Logistic Regression, is widely used in natural hazards, such as
+fire modeling by estimating, the probability of occurrences, according
+the following survey: A Survey of Machine Learning Algorithms based
+Forest Fires Prediction and Detection \citep{logistic2} 
+
+\subsubsection{Mlp Network }
+
+The Multilayer Perceptron is a commonly used Neural Network. It composed
+of multiple layers, and contains a set of perception elements known
+as neurons. It is used in forecasting models, and image pattern recognition
+\citep{nn1,nn2}. In a Chinese province, in 2022, was conducted the
+research: Using Multilayer Perceptron to Predict Forest Fires in Jiangxi
+Province, Southeast China. In this paper, several models were studied
+for the occurrence of forest fires. ROC plots were used to compare
+results from: (MLP), Logistic, and SVM. The (MLP) model scored the
+highest percentage, compared to the rest. Precisely, (MLP) scored
+0.984, Logistic 0.933, and SVM 0.974 \citep{nn_forest}. 
+
+\subsubsection{The J48 algorithm }
+
+J48, belong to the of Decision Tree algorithm, in supervised learning.
+Creates a decision tree, which breaks into subsets. It used in risk
+analysis, pattern recognition and makes predictions \citep{j48_1}. 
+\begin{itemize}
+\item J48, was selected among with Random Forest (RF), adaboostM1, and Bagging,
+in Algeria, 2020, for the project: Predicting Forest Fires in Algeria
+using Data Mining Techniques: Case study of the Decision Tree Algorithm.
+Although, the results showed best performance, with adaBoostM1 (84.21\%),
+the researchers do not recommend it due it needs significant resources
+and effort to be translated to hardware implementation. Therefore,
+they recommend J48 with accuracy (82,89\%). The (RF) came up to (72,36\%),
+and Bagging to (78,94\%) {[}12{]}.
+\item In a study, to Slovenia, 2005, the J48, had the lowest result. Specifically,
+on the paper: Learning to Predict Forest Fires with Different data
+Mining Techniques, highlighted the Bagging, as the most efficient
+in relation to: Logistic Regression, Random Forest, J48, και Boosting
+{[}13{]}. 
+\end{itemize}
+
+\subsubsection{Random Forests}
+
+\section{Results}
+
+\begin{table}[H]
+
+\caption{Experimental results using various machine learning models for 10
+years of observations.\label{tab:experResults}}
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+\textbf{\footnotesize{}YEAR} & \textbf{\footnotesize{}BAYESNET} & \textbf{\footnotesize{}NAIVEBAYES} & \textbf{\footnotesize{}LOGISTIC} & \textbf{\footnotesize{}MLP} & \textbf{\footnotesize{}J48} & \textbf{\footnotesize{}RANDOMFOREST}\tabularnewline
+\hline 
+\hline 
+2014 & 11.44\% & 12.89\% & 9.81\% & 11.37\% & 10.04\% & 9.42\%\tabularnewline
+\hline 
+2015 & 11.08\% & 11.26\% & 9.53\% & 10.65\% & 9.51\% & 8.95\%\tabularnewline
+\hline 
+2016 & 25.71\% & 13.00\% & 3.41\% & 3.90\% & 3.65\% & 3.00\%\tabularnewline
+\hline 
+2017 & 11.04\% & 11.51\% & 9.48\% & 10.08\% & 10.30\% & 9.29\%\tabularnewline
+\hline 
+2018 & 11.20\% & 10.46\% & 9.09\% & 9.48\% & 9.27\% & 8.58\%\tabularnewline
+\hline 
+2019 & 9.61\% & 9.25\% & 8.29\% & 8.53\% & 9.08\% & 8.01\%\tabularnewline
+\hline 
+2020 & 18.00\% & 6.72\% & 5.54\% & 5.97\% & 6.09\% & 5.50\%\tabularnewline
+\hline 
+2021 & 12.35\% & 14.15\% & 12.04\% & 13.59\% & 13.59\% & 11.92\%\tabularnewline
+\hline 
+2022 & 10.25\% & 9.62\% & 9.01\% & 9.47\% & 9.04\% & 8.93\%\tabularnewline
+\hline 
+2023 & 9.74\% & 9.19\% & 8.26\% & 8.77\% & 8.39\% & 7.66\%\tabularnewline
+\hline 
+\textbf{AVERAGE} & \textbf{13.04\%} & \textbf{10.81\%} & \textbf{8.45\%} & \textbf{9.18\%} & \textbf{8.90\%} & \textbf{8.13\%}\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+\section{Conclusions}
+
+\authorcontributions{C.K., V.C. and I.G.T. conceived of the idea and the methodology,
+and C.K. and V.C. implemented the corresponding software. C.K. conducted
+the experiments, employing objective functions as test cases, and
+provided the comparative experiments. A.S. performed the necessary
+statistical tests. All authors have read and agreed to the published
+version of the manuscript.}
+
+\funding{This research received no external funding.}
+
+\institutionalreview{Not applicable.}
+
+\informedconsent{Not applicable. }
+
+\dataavailability{Not applicable. }
+
+\acknowledgments{This research has been financed by the European Union: Next Generation
+EU through the Program Greece 2.0 National Recovery and Resilience
+Plan, under the call RESEARCH--CREATE--INNOVATE, project name “iCREW:
+Intelligent small craft simulator for advanced crew training using
+Virtual Reality techniques” (project code: TAEDK-06195).}
+
+\conflictsofinterest{The authors declare no conflicts of interest.}
+
+\begin{adjustwidth}{-\extralength}{0cm}{}
+
+\reftitle{References}
+\begin{thebibliography}{999}
+\bibitem{bayes_net1} Koski, T., \& Noble, J. (2011). Bayesian networks:
+an introduction. John Wiley \& Sons.
+
+\bibitem{bayes_net2}Sevinc, V., Kucuk, O., \& Goltas, M. (2020).
+A Bayesian network model for prediction and analysis of possible forest
+fire causes. Forest Ecology and Management, 457, 117723.
+
+\bibitem{bayes_net3}Kim, B., \& Lee, J. (2021). A Bayesian network-based
+information fusion combined with DNNs for robust video fire detection.
+Applied Sciences, 11(16), 7624.
+
+\bibitem{naive_bayes1}Bayes, T. (1968). Naive bayes classifier. Article
+Sources and Contributors, 1-9.
+
+\bibitem{naive_bayes2}Shu, L., Zhang, H., You, Y., Cui, Y., \& Chen,
+W. (2021). Towards fire prediction accuracy enhancements by leveraging
+an improved naïve bayes algorithm. Symmetry, 13(4), 530.
+
+\bibitem{naive_bayes3}Purnama, M. I., Jaya, I. N. S., Syaufina, L.,
+Çoban, H. O., \& Raihan, M. (2024, March). Predicting forest fire
+vulnerability using machine learning approaches in The Mediterranean
+Region: a case study of Türkiye. In IOP Conference Series: Earth and
+Environmental Science (Vol. 1315, No. 1, p. 012056). IOP Publishing.
+
+\bibitem{logistic1}Rymarczyk, T., Kozłowski, E., Kłosowski, G., \&
+Niderla, K. (2019). Logistic regression for machine learning in process
+tomography. Sensors, 19(15), 3400.
+
+\bibitem{logistic2}Abid, F. (2021). A survey of machine learning
+algorithms based forest fires prediction and detection systems. Fire
+technology, 57(2), 559-590.
+
+\bibitem{nn1}C. Bishop, Neural Networks for Pattern Recognition,
+Oxford University Press, 1995.
+
+\bibitem{nn2}G. Cybenko, Approximation by superpositions of a sigmoidal
+function, Mathematics of Control Signals and Systems \textbf{2}, pp.
+303-314, 1989.
+
+\bibitem{nn_forest}Gao, K., Feng, Z., \& Wang, S. (2022). Using multilayer
+perceptron to predict forest fires in jiangxi province, southeast
+china. Discrete Dynamics in Nature and Society, 2022(1), 6930812.
+
+\bibitem{j48_1}J, Biju. Bannari Amman. Institute of Technology. Classification
+by tree -- based Data Mining Algorithms. 2023. Retrieved from: https://www.bitsathy.ac.in/data-mining-algorithms/
+
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors' response\\
+%Reviewer 2 comments and authors' response\\
+%Reviewer 3 comments and authors' response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PublishersNote{}
+
+\end{adjustwidth}{}
+\end{document}

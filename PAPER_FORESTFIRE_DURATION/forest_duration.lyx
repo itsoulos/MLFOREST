@@ -331,22 +331,6 @@ For this purpose, a wide range of machine learning techniques were used
 Forest fires; Machine learning; Neural networks
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-clearpage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Introduction
 \end_layout
@@ -355,8 +339,1188 @@ Introduction
 Materials and Methods
 \end_layout
 
+\begin_layout Subsection
+Data pre - processing 
+\end_layout
+
+\begin_layout Subsection
+The proposed algorithms
+\end_layout
+
+\begin_layout Subsubsection
+Bayes Net 
+\end_layout
+
+\begin_layout Standard
+The Bayesian Networks, are Probabilistic Graphical Models, they can create:
+ diagnostic models, causal models, decision making, prediction, e.t.c.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net1"
+literal "false"
+
+\end_inset
+
+.
+ Therefore, the Bayes Net, is considered as a useful tool, in prediction
+ and detection area, of forest/ wildfires fires.
+ Consequently, it follows a brief reference, of two papers.
+ 
+\end_layout
+
+\begin_layout Itemize
+The specific algorithms, was used, in study: A Bayesian network model for
+ prediction and analysis of possible forest fires causes, in 2020.
+ The study was conducted in Mugla, of Turkey.
+ The model showed, that the most effective factors, on forest fires ignition,
+ were: the month, and the temperature 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net2"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+In 2021, it was published, on MDPI, the survey: A Bayesian Network – Based
+ Information Fusion Combined with DNNS for Robust Video Fire Detection.
+ The combination, Regional – Convolutional Neural Network (R – CNN), Long
+ – Short term memory (LSTM), and Bayesian Net, proved that the last one,
+ not only improves the detection accuracy, of forest / wildfires∙ but also
+ reduces the decision making 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net3"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Naive Bayes 
+\end_layout
+
+\begin_layout Standard
+The Naïve Bayes is a supervised machine learning algorithm, used for classificat
+ion tasks.
+ This classifier, use principles of probability in order to perform classificati
+on tasks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes1"
+literal "false"
+
+\end_inset
+
+.
+ One of the strong points, of the algorithm, is the amenable improvements,
+ and modifications, as to achieve better results in research, such as the
+ forest wildfires prediction.
+ 
+\end_layout
+
+\begin_layout Itemize
+A proportional modification was found in the following research, which was
+ published on MDPI: Towards Fire prediction Accuracy Enhancements by Leveraging
+ an Improved Naïve Bayes Algorithm.
+ In the aforementioned paper, there was an evolutionary algorithm, the Double
+ Weighted Naïve Bayes with Compensation Coefficient (DWCNB)∙ which compared
+ with Naïve Bayes, and Double Weighted Naïve Bayes.
+ The results showed a prediction accuracy of 98.13%, higher than Naïve Bayes
+ for 5.08%, and respectively 2.52% than Double weighted Naïve Bayes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes2"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+In a recent research, 2024, in Turkey, it was used different algorithms
+ so as to extract the highest accuracy, for forest / wildfires.
+ The paper, was: Predicting forest fire vulnerability using machine learning
+ approaches in the Mediterranean region: a case study in Turkiye.
+ The study compared: Naïve Bayes, Decision Tree, Random Forest, Neural Networks,
+ and Support Vector machines.
+ The Random Forest algorithm, yielded the highest accuracy, while Naïve
+ Bayes performed consistently, albeit lower than Random Forest, and Decision
+ Tree 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes3"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Logistic Regression
+\end_layout
+
+\begin_layout Standard
+Like the previous algorithm, Logistic Regression, works also with machine
+ learning classification, and used to predict probabilities.
+ This (ML) technique used in data sets with many features 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic1"
+literal "false"
+
+\end_inset
+
+.
+ The Logistic Regression, is widely used in natural hazards, such as fire
+ modeling by estimating, the probability of occurrences, according the following
+ survey: A Survey of Machine Learning Algorithms based Forest Fires Prediction
+ and Detection 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic2"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Mlp Network 
+\end_layout
+
+\begin_layout Standard
+The Multilayer Perceptron is a commonly used Neural Network.
+ It composed of multiple layers, and contains a set of perception elements
+ known as neurons.
+ It is used in forecasting models, and image pattern recognition 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn1,nn2"
+literal "false"
+
+\end_inset
+
+.
+ In a Chinese province, in 2022, was conducted the research: Using Multilayer
+ Perceptron to Predict Forest Fires in Jiangxi Province, Southeast China.
+ In this paper, several models were studied for the occurrence of forest
+ fires.
+ ROC plots were used to compare results from: (MLP), Logistic, and SVM.
+ The (MLP) model scored the highest percentage, compared to the rest.
+ Precisely, (MLP) scored 0.984, Logistic 0.933, and SVM 0.974 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_forest"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+The J48 algorithm 
+\end_layout
+
+\begin_layout Standard
+J48, belong to the of Decision Tree algorithm, in supervised learning.
+ Creates a decision tree, which breaks into subsets.
+ It used in risk analysis, pattern recognition and makes predictions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_1"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+J48, was selected among with Random Forest (RF), adaboostM1, and Bagging,
+ in Algeria, 2020, for the project: Predicting Forest Fires in Algeria using
+ Data Mining Techniques: Case study of the Decision Tree Algorithm.
+ Although, the results showed best performance, with adaBoostM1 (84.21%),
+ the researchers do not recommend it due it needs significant resources
+ and effort to be translated to hardware implementation.
+ Therefore, they recommend J48 with accuracy (82,89%).
+ The (RF) came up to (72,36%), and Bagging to (78,94%) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_2"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+In a study, to Slovenia, 2005, the J48, had the lowest result.
+ Specifically, on the paper: Learning to Predict Forest Fires with Different
+ data Mining Techniques, highlighted the Bagging, as the most efficient
+ in relation to: Logistic Regression, Random Forest, J48, Boosting 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_3"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Random Forests
+\end_layout
+
+\begin_layout Standard
+Random Forest is a popular machine learning algorithm.
+ Its ease of use and flexibility, in handles classification and regression
+ problems, in more precise predictions, fueled its commonly adoption 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest1"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+On MDPI, 2023, it was published, the paper: Forest – Fire – Risk Prediction
+ based on Random Forest and Backpropagation Neural Network of Heihe Area
+ in Heilongjiang Province, China.
+ There was a comparison, in the research, among the Random Forest, and the
+ backpropagation Neural Network (BPNN).
+ Both methods, were found suitable for predicting forest / wildfires.
+ The (RF) prediction range between 87,91% - 88,98%, while the (BPNN) accuracy
+ was 86,01% and 86,94% 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest2"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Random Forest, presented satisfactory results also in this research: Using
+ GIS and random Forest to identify fire drivers in a forest city, Yichun,
+ China.
+ The forecast, for a fire outbreak, meteorological data ranged from 71,2%
+ to 76,5%.
+ The prediction, from combined factors, had a higher percentage among 80,78%
+ - 84,8%.
+ The AUC value, based on meteorological factors, were 0,740 – 0,807 indicating
+ a moderated model fit.
+ On the other hand, the value with combined factors showed an excellent
+ fit, with the model 0,886 – 0,906 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest3"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Section
 Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimental results using various machine learning models for 10 years
+ of observations.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:experResults"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+YEAR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+BAYESNET
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+NAIVEBAYES
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+LOGISTIC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+MLP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+J48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+RANDOMFOREST
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2014
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.44%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.89%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.81%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.37%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.04%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.42%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.08%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.26%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.53%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.65%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.51%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.95%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.71%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.00%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.41%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.90%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.65%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.00%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.04%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.51%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.48%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.08%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.29%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.20%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.46%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.09%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.48%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.27%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.58%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.61%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.25%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.29%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.53%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.08%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.01%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18.00%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.72%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.54%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.97%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.09%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.50%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2021
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.35%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14.15%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.04%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.59%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.59%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.92%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2022
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.25%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.62%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.01%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.47%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.04%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.93%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.74%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.19%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.26%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.77%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.39%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.66%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+AVERAGE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+13.04%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+10.81%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.45%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9.18%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.90%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.13%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -364,7 +1528,17 @@ Conclusions
 \end_layout
 
 \begin_layout Author Contributions
-xxx
+C.K., V.C.
+ and I.G.T.
+ conceived of the idea and the methodology, and C.K.
+ and V.C.
+ implemented the corresponding software.
+ C.K.
+ conducted the experiments, employing objective functions as test cases,
+ and provided the comparative experiments.
+ A.S.
+ performed the necessary statistical tests.
+ All authors have read and agreed to the published version of the manuscript.
 \end_layout
 
 \begin_layout Funding
@@ -386,7 +1560,11 @@ Not applicable.
 \end_layout
 
 \begin_layout Acknowledgments
-xxx
+This research has been financed by the European Union: Next Generation EU
+ through the Program Greece 2.0 National Recovery and Resilience Plan, under
+ the call RESEARCH–CREATE–INNOVATE, project name “iCREW: Intelligent small
+ craft simulator for advanced crew training using Virtual Reality techniques”
+ (project code: TAEDK-06195).
 \end_layout
 
 \begin_layout Conflicts of Interest
@@ -414,17 +1592,275 @@ References
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author1(year)"
-key "ref-journal"
+key "bayes_net1"
 literal "false"
 
 \end_inset
 
- Author
-\begin_inset space ~
+ Koski, T., & Noble, J.
+ (2011).
+ Bayesian networks: an introduction.
+ John Wiley & Sons.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net2"
+literal "false"
+
 \end_inset
 
-1, 
+Sevinc, V., Kucuk, O., & Goltas, M.
+ (2020).
+ A Bayesian network model for prediction and analysis of possible forest
+ fire causes.
+ Forest Ecology and Management, 457, 117723.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net3"
+literal "false"
+
+\end_inset
+
+Kim, B., & Lee, J.
+ (2021).
+ A Bayesian network-based information fusion combined with DNNs for robust
+ video fire detection.
+ Applied Sciences, 11(16), 7624.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes1"
+literal "false"
+
+\end_inset
+
+Bayes, T.
+ (1968).
+ Naive bayes classifier.
+ Article Sources and Contributors, 1-9.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes2"
+literal "false"
+
+\end_inset
+
+Shu, L., Zhang, H., You, Y., Cui, Y., & Chen, W.
+ (2021).
+ Towards fire prediction accuracy enhancements by leveraging an improved
+ naïve bayes algorithm.
+ Symmetry, 13(4), 530.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes3"
+literal "false"
+
+\end_inset
+
+Purnama, M.
+ I., Jaya, I.
+ N.
+ S., Syaufina, L., Çoban, H.
+ O., & Raihan, M.
+ (2024, March).
+ Predicting forest fire vulnerability using machine learning approaches
+ in The Mediterranean Region: a case study of Türkiye.
+ In IOP Conference Series: Earth and Environmental Science (Vol.
+ 1315, No.
+ 1, p.
+ 012056).
+ IOP Publishing.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic1"
+literal "false"
+
+\end_inset
+
+Rymarczyk, T., Kozłowski, E., Kłosowski, G., & Niderla, K.
+ (2019).
+ Logistic regression for machine learning in process tomography.
+ Sensors, 19(15), 3400.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic2"
+literal "false"
+
+\end_inset
+
+Abid, F.
+ (2021).
+ A survey of machine learning algorithms based forest fires prediction and
+ detection systems.
+ Fire technology, 57(2), 559-590.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn1"
+literal "true"
+
+\end_inset
+
+C.
+ Bishop, Neural Networks for Pattern Recognition, Oxford University Press,
+ 1995.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn2"
+literal "true"
+
+\end_inset
+
+G.
+ Cybenko, Approximation by superpositions of a sigmoidal function, Mathematics
+ of Control Signals and Systems 
+\series bold
+2
+\series default
+, pp.
+ 303-314, 1989.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_forest"
+literal "false"
+
+\end_inset
+
+Gao, K., Feng, Z., & Wang, S.
+ (2022).
+ Using multilayer perceptron to predict forest fires in jiangxi province,
+ southeast china.
+ Discrete Dynamics in Nature and Society, 2022(1), 6930812.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_1"
+literal "false"
+
+\end_inset
+
+J, Biju.
+ Bannari Amman.
+ Institute of Technology.
+ Classification by tree – based Data Mining Algorithms.
+ 2023.
+ Retrieved from: https://www.bitsathy.ac.in/data-mining-algorithms/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_2"
+literal "false"
+
+\end_inset
+
+Abid, F., & Izeboudjen, N.
+ (2020).
+ Predicting forest fire in algeria using data mining techniques: Case study
+ of the decision tree algorithm.
+ In Advanced Intelligent Systems for Sustainable Development (AI2SD’2019)
+ Volume 4-Advanced Intelligent Systems for Applied Computing Sciences (pp.
+ 363-370).
+ Springer International Publishing.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_3"
+literal "false"
+
+\end_inset
+
+Stojanova, D., Panov, P., Kobler, A., Džeroski, S., & Taškova, K.
+ (2006, October).
+ Learning to predict forest fires with different data mining techniques.
+ In Conference on data mining and data warehouses (SiKDD 2006), Ljubljana,
+ Slovenia (pp.
+ 255-258).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest1"
+literal "false"
+
+\end_inset
+
+Rigatti, S.
+ J.
+ (2017).
+ Random forest.
+ Journal of Insurance Medicine, 47(1), 31-39.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest2"
+literal "false"
+
+\end_inset
+
+Gao, C., Lin, H., & Hu, H.
+ (2023).
+ Forest-fire-risk prediction based on random forest and backpropagation
+ neural network of Heihe area in Heilongjiang province, China.
+ Forests, 14(2), 170.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest3"
+literal "false"
+
+\end_inset
+
+Su, Z., Hu, H., Wang, G., Ma, Y., Yang, X., & Guo, F.
+ (2018).
+ Using GIS and Random Forests to identify fire drivers in a forest city,
+ Yichun, China.
+ Geomatics, Natural Hazards and Risk, 9(1), 1207-1229.
 \end_layout
 
 \begin_layout Standard
