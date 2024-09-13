@@ -539,9 +539,76 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+In addition, image processing has been established as a fire detection method.
+ In this direction, a multitude of techniques have been presented that also
+ take advantage of machine learning methods, such as the work of Vicente
+ and Guillemant that presented a method for early smoke source detection
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_image1"
+literal "false"
+
+\end_inset
+
+.
+ Also, Yan et al proposed a method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_image2"
+literal "false"
+
+\end_inset
+
+ that combined image processing techniques and neural networks for fore
+ fire recognition.
+ Mubarak et al suggested a rule - based image processing algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_image4"
+literal "false"
+
+\end_inset
+
+ for forest fire detection.
+ Convolution neural networks was utilized in the work of Wang et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_image5"
+literal "false"
+
+\end_inset
+
+ for forest fire image recognition.
+ Also, wavelet analysis was used in the work of Jiao et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_image6"
+literal "false"
+
+\end_inset
+
+ for forest fire detection.
+\end_layout
+
+\begin_layout Standard
+This research work focuses on the use of machine learning techniques to
+ predict the duration of forest fires, which occurred in Greece from 2014
+ until 2023.
+ The data was collected by the Hellenic Fire Service and then, after clearing
+ missing records, the data was digitized and the one of three categories
+ were assigned to every pattern: fires of short duration, fires of medium
+ duration and fires of long duration.
+ The prediction of the duration of a fire is important as in this way, on
+ the one hand, an estimate can be made of the expected damage that will
+ be caused in the area, and on the other, the human resources required to
+ extinguish the fire can be calculated.
+\end_layout
+
+\begin_layout Standard
 
 \series bold
-This work suggests ....
+(SIMILAR WORKS?)
 \end_layout
 
 \begin_layout Standard
@@ -596,8 +663,11 @@ Data pre - processing
 \end_layout
 
 \begin_layout Standard
-For this study we have used data by the: Greek Fire Department, from the
- years 2014 – 2023.
+For this study we have used data by the:
+\series bold
+ Hellenic Fire Service
+\series default
+, from the years 2014 – 2023.
  We have processed the preliminary raw data from years 2014 – 2023, to obtain
  usable data that will lead to a more efficient model.
  The first step involved: data cleaning.
@@ -1818,6 +1888,31 @@ name "sec:Conclusions"
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+1) Discover important features for predicting duration
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2) create rules for determination of categories
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3) using meteorological data 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6pt
+\end_inset
+
+
+\end_layout
+
 \begin_layout Author Contributions
 C.K., V.C.
  and I.G.T.
@@ -2532,6 +2627,105 @@ Y.
 13
 \series default
 , 856, 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_image1"
+literal "false"
+
+\end_inset
+
+J.
+ Vicente, P.
+ Guillemant, An image processing technique for automatically detecting forest
+ fire, International Journal of Thermal Sciences 
+\series bold
+41
+\series default
+, pp.
+ 1113-1120, 2002.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_image2"
+literal "false"
+
+\end_inset
+
+Q.
+ Yan, P.
+ Bo, Z.
+ Juanjuan, Forest Fire Image Intelligent Recognition based on the Neural
+ Network.
+ Journal of Multimedia 
+\series bold
+9
+\series default
+, pp.
+ 469-475, 2014.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_image4"
+literal "false"
+
+\end_inset
+
+Mahmoud, Mubarak A.
+ I., Ren, Honge, Forest Fire Detection Using a Rule-Based Image Processing
+ Algorithm and Temporal Variation, Mathematical Problems in Engineering,
+ 2018, 7612487, 8 pages, 2018.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_image5"
+literal "false"
+
+\end_inset
+
+Y.
+ Wang, L.
+ Dang, J.
+ Ren, Forest fire image recognition based on convolutional neural network,
+ Journal of Algorithms & Computational Technology 
+\series bold
+13
+\series default
+, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_image6"
+literal "false"
+
+\end_inset
+
+Z.
+ Jiao, Y.
+ Zhang, J.
+ Xin, Y.
+ Yi, D.
+ Liu and H.
+ Liu, "Forest Fire Detection with Color Features and Wavelet Analysis Based
+ on Aerial Imagery," 2018 Chinese Automation Congress (CAC), Xi'an, China,
+ 2018, pp.
+ 2206-2211, doi: 10.1109/CAC.2018.8623473.
 \end_layout
 
 \begin_layout Bibliography
