@@ -328,19 +328,296 @@ For this purpose, a wide range of machine learning techniques were used
 \end_layout
 
 \begin_layout Keywords
-Forest fires; Machine learning; Neural networks
+Forest fires; Machine learning; Neural networks; Decision trees
 \end_layout
 
 \begin_layout Section
 Introduction
 \end_layout
 
+\begin_layout Standard
+Forests play an important role in the ecological balance 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "forest1"
+literal "false"
+
+\end_inset
+
+ of our planet as well as in our everyday life 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "forest2"
+literal "false"
+
+\end_inset
+
+.
+ However, these ecosystems are threatened by various risks, the most important
+ of which are fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire1,fire2,fire3"
+literal "false"
+
+\end_inset
+
+.
+ Forest fires destroy the forest ecosystem 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_eco1,fire_eco2,fire_eco3"
+literal "false"
+
+\end_inset
+
+ and can have devastating effects on local economies 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_econ1,fire_econ2"
+literal "false"
+
+\end_inset
+
+, with a significant impact also on tourism development 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_tourism1,fire_tourism2,fire_tourism3"
+literal "false"
+
+\end_inset
+
+ as well as in human health 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_health1,fire_health2,fire_health3"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Since the risks of fires are great, governments must take measures and review
+ them in the direction of fire prevention by analyzing data collected from
+ fires that have broken out in recent history 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_stat1,fire_stat2,fire_stat3"
+literal "false"
+
+\end_inset
+
+.
+ Also, local authorities have used techniques for forest fire monitoring,
+ such as small UAVs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_monitor1"
+literal "false"
+
+\end_inset
+
+, usage of a monitoring system based on GPRS and ZigBee wireless network
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_monitor2"
+literal "false"
+
+\end_inset
+
+, the iForestFire system 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_monitor3"
+literal "false"
+
+\end_inset
+
+ etc.
+ Merino et al suggested an Unmanned Aircraft System (UAS) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_monitor4"
+literal "false"
+
+\end_inset
+
+ for forest fire monitoring.
+ Also, Aslan et al.
+ proposed a system 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_monitor5"
+literal "false"
+
+\end_inset
+
+ of wireless sensors networks for forest fire detection and monitoring.
+ Recently, Serna et al.
+ suggested a distributed system for fire monitoring using wireless sensor
+ networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_monitor6"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+During recent years, machine learning techniques have started to play an
+ important role in the prevention and treatment of forest fires.
+ For example, Dwiasnati and Devianto proposed the usage of various machine
+ learning methods for the classification of forest fire areas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_area_class"
+literal "false"
+
+\end_inset
+
+.
+ Also, Pang et al.
+ suggested the usage of a series of machine learning models for forest fire
+ occurrence prediction in China 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_prediction_china"
+literal "false"
+
+\end_inset
+
+.
+ Dampage et al suggested a system of wireless sensor networks with data
+ handled by machine learning models for the detection of forest fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_detection_dampage"
+literal "false"
+
+\end_inset
+
+.
+ Shao et al proposed a mapping of China's forest fire risks using a series
+ of machine learning models 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_risk"
+literal "false"
+
+\end_inset
+
+.
+ A parallel SVM model is also suggested by Singh et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_parallel_svm"
+literal "false"
+
+\end_inset
+
+ for forest fire prediction on data collected from India and Portugal.
+ A survey on machine learning models used for forest fire prediction can
+ be found in the work of Abid 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ml_survey"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+This work suggests ....
+\end_layout
+
+\begin_layout Standard
+The rest of this article is divided as follows: in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the used dataset is described as well as the incorporated machine learning
+ methods, in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the experimental results are fully described and finally in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ some conclusions are discussed accompanied by some guidelines for future
+ research.
+\end_layout
+
 \begin_layout Section
 Materials and Methods
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Materials-and-Methods"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Data pre - processing 
+\end_layout
+
+\begin_layout Standard
+For this study we have used data by the: Greek Fire Department, from the
+ years 2014 – 2023.
+ We have processed the preliminary raw data from years 2014 – 2023, to obtain
+ usable data that will lead to a more efficient model.
+ The first step involved: data cleaning.
+ In the second step, we merged the columns, containing the fire start &
+ time, as well as the columns containing the fire extinguishment & time,
+ in order to perform a subtraction and calculate the fire duration.
+ Then we identified three classes based on the fire duration (class 1, 3,
+ 4).
+ The data categorized was complemented with the classification, based on
+ the Fire Department, the Region, and the Season.
+ Our final dataset includes, 25 columns into an excel sheet∙ specifically:
+ fire department, province, season, fuel (forest, forest area, grove, grasslands
+, reeds/swamps, agricultural lands, cover crop, garbage dumps) burnt area
+ acres, manpower (Firefighters, volunteer, army, etc.), vehicles (firefighting,
+ tanks, etc.), aerial means (helicopters, different aircrafts) duration,
+ class and log.
+ We converted all the Excel files since 2014, into an ARFF file, and using
+ (nom) the class for fire duration, we evaluated the performance of all
+ algorithms, in WEKA.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -651,6 +928,13 @@ literal "false"
 
 \begin_layout Section
 Results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -658,7 +942,7 @@ Results
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1525,6 +1809,13 @@ AVERAGE
 
 \begin_layout Section
 Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author Contributions
@@ -1586,6 +1877,661 @@ Keep empty!
 
 \begin_layout References Title
 References
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "forest1"
+literal "false"
+
+\end_inset
+
+Z.
+ Qiang, E.Z.
+ Meka, R.C.
+ Anderson, Y.
+ Kakabadse, Forests nature at your service.
+ UNEP report.
+ The magazine of the United Nations Environment Program, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "forest2"
+literal "false"
+
+\end_inset
+
+A.S.
+ Mori, K.P.
+ Lertzman, L.
+ Gustafsson, Biodiversity and ecosystem services in forest ecosystems: a
+ research agenda for applied forest ecology, Journal of Applied Ecology
+ 
+\series bold
+54
+\series default
+, pp.
+ 12-27, 2017.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire1"
+literal "false"
+
+\end_inset
+
+B.J.
+ Stocks, Mason, J.
+ A., Todd, J.
+ B., Bosch, E.
+ M., Wotton, B.
+ M., Amiro, B.
+ D., ...
+ & Skinner, W.
+ R.
+ (2002).
+ Large forest fires in Canada, 1959–1997.
+ Journal of Geophysical Research: Atmospheres, 107(D1), FFR-5.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire2"
+literal "false"
+
+\end_inset
+
+M.D.
+ Flannigan, B.D.
+ Amiro, K.A.
+ Logan, B.J.
+ Stocks, B.M.
+ Wotton, Forest fires and climate change in the 21 st century.
+ Mitigation and adaptation strategies for global change 
+\series bold
+11
+\series default
+, pp.
+ 847-859, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire3"
+literal "false"
+
+\end_inset
+
+O.
+ Sahar, Wildfires in Algeria: problems and challenges.
+ IFOREST 
+\series bold
+8
+\series default
+, pp.
+ 818–826, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_eco1"
+literal "false"
+
+\end_inset
+
+G.
+ Certini, Effects of fire on properties of forest soils: a review, Oecologia
+ 
+\series bold
+143
+\series default
+, pp.
+ 1–10, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_eco2"
+literal "false"
+
+\end_inset
+
+G.R.
+ Van Der Werf, J.T.
+ Randerson, G.J.
+ Collatz, L.
+ GIGLIO, Carbon emissions from fires in tropical and subtropical ecosystems.
+ Global Change Biology, 9: 547-562, 2003.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_eco3"
+literal "false"
+
+\end_inset
+
+A.A.
+ Agbeshie, S.
+ Abugre, T.
+ Atta-Darkwa et al, A review of the effects of forest fire on soil properties,
+ J.
+ For.
+ Res.
+ 
+\series bold
+33
+\series default
+, pp.
+ 1419–1441, 2022.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_econ1"
+literal "false"
+
+\end_inset
+
+P.
+ Aleksić, M.
+ Krstić , G.
+ Jančić, Forest fi res - ecological and economic problem in Serbia, Botanica
+ Serbia 
+\series bold
+32
+\series default
+, pp.
+ 169-176, 2009.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_econ2"
+literal "false"
+
+\end_inset
+
+D.
+ Wang, D.
+ Guan, S.
+ Zhu.
+ et al, Economic footprint of California wildfires in 2018, Nat Sustain
+ 
+\series bold
+4
+\series default
+, pp.
+ 252–260, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_tourism1"
+literal "false"
+
+\end_inset
+
+P.
+ W.
+ Hystad, P.C.
+ Keller, Towards a destination tourism disaster management framework: Long-term
+ lessons from a forest fire disaster, Tourism Management 
+\series bold
+29
+\series default
+, pp.
+ 151-162, 2008.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_tourism2"
+literal "false"
+
+\end_inset
+
+G.
+ Boustras, N.
+ Boukas, Forest fires’ impact on tourism development: a comparative study
+ of Greece and Cyprus, Management of Environmental Quality 
+\series bold
+24
+\series default
+, pp.
+ 498-511, 2013.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_tourism3"
+literal "false"
+
+\end_inset
+
+V.
+ Otrachshenko, L.C.
+ Nunes, Fire takes no vacation: impact of fires on tourism, Environment
+ and Development Economics 
+\series bold
+27
+\series default
+, pp.
+ 86-101, 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_health1"
+literal "false"
+
+\end_inset
+
+N.
+ Sastry, Forest fires, air pollution, and mortality in Southeast Asia, Demograph
+y 
+\series bold
+39
+\series default
+, pp.
+ 1–23, 2002.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_health2"
+literal "false"
+
+\end_inset
+
+E.
+ Frankenberg, D.
+ McKee, D.
+ Thomas, Health consequences of forest fires in Indonesia, Demography 
+\series bold
+42
+\series default
+, pp.
+ 109–129, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_health3"
+literal "false"
+
+\end_inset
+
+D.
+ Bowman, G.
+ Williamson, J.
+ Abatzoglou.
+ et al, Human exposure and sensitivity to globally extreme wildfire events,
+ Nat Ecol Evol 
+\series bold
+1
+\series default
+, 0058, 2017.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_stat1"
+literal "false"
+
+\end_inset
+
+M.
+ Zhong, W.
+ Fan, T.
+ Liu, P.
+ Li, Statistical analysis on current status of China forest fire safety,
+ Fire Safety Journal 
+\series bold
+38
+\series default
+, pp.
+ 257-269, 2003.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_stat2"
+literal "false"
+
+\end_inset
+
+D.
+ Avila-Flores, M.
+ Pompa-Garcia, X.
+ Antonio-Nemiga.
+ et al., Driving factors for forest fire occurrence in Durango State of Mexico:
+ A geospatial perspective, Chin.
+ Geogr.
+ Sci.
+ 
+\series bold
+20
+\series default
+, pp.
+ 491–497, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_stat3"
+literal "false"
+
+\end_inset
+
+R.
+ Lovreglio, V.
+ Leone, P.
+ Giaquinto, A.
+ Notarnicola, Wildfire cause analysis: four case-studies in southern Italy.
+ iForest 
+\series bold
+3
+\series default
+, pp.
+ 8-15, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_monitor1"
+literal "false"
+
+\end_inset
+
+D.
+ W.
+ Casbeer, R.
+ W.
+ Beard, T.
+ W.
+ McLain, Sai-Ming Li and R.
+ K.
+ Mehra, "Forest fire monitoring with multiple small UAVs," Proceedings of
+ the 2005, American Control Conference, 2005., Portland, OR, USA, 2005, pp.
+ 3530-3535 vol.
+ 5, doi: 10.1109/ACC.2005.1470520.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_monitor2"
+literal "false"
+
+\end_inset
+
+Guozhu Wang, J.
+ Zhang, Wenbin Li, Dongxu Cui and Ye Jing, "A forest fire monitoring system
+ based on GPRS and ZigBee wireless sensor network," 2010 5th IEEE Conference
+ on Industrial Electronics and Applications, Taichung, 2010, pp.
+ 1859-1862, doi: 10.1109/ICIEA.2010.5515417.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_monitor3"
+literal "false"
+
+\end_inset
+
+M.
+ Stula, D.
+ Krstinic, L.
+ Seric, Intelligent forest fire monitoring system, Inf Syst Front 
+\series bold
+14
+\series default
+, pp.
+ 725–739, 2012.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_monitor4"
+literal "false"
+
+\end_inset
+
+L.
+ Merino, E.
+ Caballero, J.R.
+ Martínez-de-Dios al., An Unmanned Aircraft System for Automatic Forest Fire
+ Monitoring and Measurement, J Intell Robot Syst 
+\series bold
+65
+\series default
+, pp.
+ 533–548, 2012.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_monitor5"
+literal "false"
+
+\end_inset
+
+Y.E.
+ Aslan, I.
+ Korpeoglu, Ö.
+ Ulusoy, A framework for use of wireless sensor networks in forest fire
+ detection and monitoring, Computers, Environment and Urban Systems 
+\series bold
+36
+\series default
+, pp.
+ 614-625, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_monitor6"
+literal "false"
+
+\end_inset
+
+M.Á.
+ Serna, R.
+ Casado, A.
+ Bermúdez, N.
+ Pereira, S.
+ Tennina, Distributed Forest Fire Monitoring Using Wireless Sensor Networks,
+ International Journal of Distributed Sensor Networks 
+\series bold
+11
+\series default
+, 10, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_area_class"
+literal "false"
+
+\end_inset
+
+S.
+ Dwiasnati, Y.
+ Devianto, Classification of forest fire areas using machine learning algorithm,
+ World Journal of Advanced Engineering Technology and Sciences, 
+\series bold
+3
+\series default
+, pp.
+ 008-015, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_prediction_china"
+literal "false"
+
+\end_inset
+
+Y.
+ Pang, Y.
+ Li, Z.
+ Feng, Z.
+ Feng, Z.
+ Zhao, S.
+ Chen, H.
+ Zhang, Forest Fire Occurrence Prediction in China Based on Machine Learning
+ Methods, Remote Sensing 
+\series bold
+14
+\series default
+, 5546, 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_detection_dampage"
+literal "false"
+
+\end_inset
+
+U.
+ Dampage, L.
+ Bandaranayake, R.
+ Wanasinghe et al, Forest fire detection system using wireless sensor networks
+ and machine learning, Sci Rep 
+\series bold
+12
+\series default
+, 46, 2022.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_parallel_svm"
+literal "false"
+
+\end_inset
+
+K.R.
+ Singh, K.P.
+ Neethu, K.
+ Madhurekaa, A.
+ Harita, P.
+ Mohan, Parallel SVM model for forest fire prediction, Soft Computing Letters
+ 
+\series bold
+3
+\series default
+, 100014, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_ml_survey"
+literal "false"
+
+\end_inset
+
+F.
+ Abid, A survey of machine learning algorithms based forest fires prediction
+ and detection systems, Fire technology 
+\series bold
+57
+\series default
+, pp.
+ 559-590, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_risk"
+literal "false"
+
+\end_inset
+
+Y.
+ Shao, Z.
+ Feng, L.
+ Sun, X.
+ Yang, Y.
+ Li, B.
+ Xu, Y.
+ Chen, Mapping China’s Forest Fire Risks with Machine Learning, Forests
+ 
+\series bold
+13
+\series default
+, 856, 2022.
 \end_layout
 
 \begin_layout Bibliography
