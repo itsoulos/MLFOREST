@@ -717,8 +717,8 @@ https://www.fireservice.gr/en_US/synola-dedomenon
 \end_inset
 
 (accessed on 14 September 2024).
- The data were obtained for the years 2014-2023 and data preprocessing technique
-s were applied before inputting the data into machine learning models.
+ The data was obtained for the years 2014-2023 and data preprocessing techniques
+ were applied before inputting the data into machine learning models.
 \end_layout
 
 \begin_layout Standard
@@ -730,7 +730,7 @@ The initial datasets contain information in both numerical and alphanumeric
  integer.
  The next important step in the preprocessing of the original data is to
  delete the records that contain empty values in various attributes.
- This could happen for example if a value was not available at the time
+ This could happen, for example, if a value was not available at the time
  of entry.
  Those records in which the duration of the fire was zero were also deleted.
  Then, to create the exit category, the duration of the forest fire was
@@ -742,25 +742,40 @@ The initial datasets contain information in both numerical and alphanumeric
 \end_layout
 
 \begin_layout Standard
-
+Having performed the previously mentioned preprocessing steps, the final
+ datasets contain 25 features and the following information about the forest
+ fires:
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-The final dataset contains the following information about the forest fire:
+\begin_layout Enumerate
+Fire department.
+ 
 \end_layout
 
-\begin_layout Standard
-Our final dataset includes, 25 columns into an excel sheet∙ specifically:
- fire department, province, season, fuel (forest, forest area, grove, grasslands
-, reeds/swamps, agricultural lands, cover crop, garbage dumps) burnt area
- acres, manpower (Firefighters, volunteer, army, etc.), vehicles (firefighting,
- tanks, etc.), aerial means (helicopters, different aircrafts) duration,
- class and log.
- We converted all the Excel files since 2014, into an ARFF file, and using
- (nom) the class for fire duration, we evaluated the performance of all
- algorithms, in WEKA.
+\begin_layout Enumerate
+Province.
+\end_layout
+
+\begin_layout Enumerate
+Season.
+\end_layout
+
+\begin_layout Enumerate
+Burnt area: forest area, grove, grasslands, reeds/swamps, agricultural lands,
+ cover crop, garbage dumps.
+\end_layout
+
+\begin_layout Enumerate
+Personnel: Firefighters, volunteers, army, etc.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Vehicles: firefighting, tanks, etc.
+\end_layout
+
+\begin_layout Enumerate
+Aerial means: helicopters, different aircrafts.
  
 \end_layout
 
@@ -769,70 +784,92 @@ The proposed algorithms
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-Write also what algorithms were used, Texnikes diaforetikes metaxy tous
+A number of machine learning techniques were used to efficiently find classes
+ in the datasets of the previous subsection.
+ These techniques cover a wide range of techniques available in the field
+ of machine learning and are presented in more detail below.
+ 
 \end_layout
 
 \begin_layout Subsubsection
-Bayes Net 
+Bayesian Networks
 \end_layout
 
 \begin_layout Standard
-The Bayesian Networks, are Probabilistic Graphical Models, they can create:
- diagnostic models, causal models, decision making, prediction, e.t.c.
+Bayesian networks are probabilistic models based on direct acyclic graphs
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bayes_net1"
+key "bayes_net1,bayes_net2"
+literal "false"
+
+\end_inset
+
+ and they have been applied with success in various cases.
+ For example, Friedman et al.
+ used Bayesian Networks to analyze expression data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net_expression"
 literal "false"
 
 \end_inset
 
 .
- Therefore, the Bayes Net, is considered as a useful tool, in prediction
- and detection area, of forest/ wildfires fires.
- Consequently, it follows a brief reference, of two papers.
- 
-\end_layout
-
-\begin_layout Itemize
-The specific algorithms, was used, in study: A Bayesian network model for
- prediction and analysis of possible forest fires causes, in 2020.
- The study was conducted in Mugla, of Turkey.
- The model showed, that the most effective factors, on forest fires ignition,
- were: the month, and the temperature 
+ Also, Cai et al.
+ used Bayesian Networks in fault diagnosis 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bayes_net2"
+key "bayes_net_fault"
+literal "false"
+
+\end_inset
+
+ and Barton et al.
+ proposed the use of Bayesian Networks to environmental problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net_environ"
 literal "false"
 
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Itemize
-In 2021, it was published, on MDPI, the survey: A Bayesian Network – Based
- Information Fusion Combined with DNNS for Robust Video Fire Detection.
- The combination, Regional – Convolutional Neural Network (R – CNN), Long
- – Short term memory (LSTM), and Bayesian Net, proved that the last one,
- not only improves the detection accuracy, of forest / wildfires∙ but also
- reduces the decision making 
+ In the case of forest fires, Bayesian Networks have been used in many cases,
+ such as to predict and analyze possible fire causes 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bayes_net3"
+key "bayes_net_fire_cause"
 literal "false"
 
 \end_inset
 
 .
- 
+ The study was conducted in Mugla of Turkey.
+ Also, Bayesian networks were used to model the cascading impacts of drought
+ and forest fire in a recent study 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net_cascade"
+literal "false"
+
+\end_inset
+
+.
+ Also, Bayesian Networks were combined with deep learning for detection
+ of fires from video frames 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net_video"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
-Naive Bayes 
+Naïve Bayes 
 \end_layout
 
 \begin_layout Standard
@@ -842,22 +879,83 @@ ion tasks.
 on tasks 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "naive_bayes1"
+key "naive_bayes1,naive_bayes2"
 literal "false"
 
 \end_inset
 
 .
- One of the strong points, of the algorithm, is the amenable improvements,
- and modifications, as to achieve better results in research, such as the
- forest wildfires prediction.
- 
+ This algorithm have been incorporated in many research areas, such as document
+ classification 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes_document"
+literal "false"
+
+\end_inset
+
+, traffic risk management 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes_traffic"
+literal "false"
+
+\end_inset
+
+, network intrusion detection 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes_network"
+literal "false"
+
+\end_inset
+
+ etc.
+ Also, the Naive Bayes has been used in forest fire issues in a series of
+ papers.
+ For example, Nugroho et al.
+ proposed a system for forest fire prevention using a combination of a wireless
+ sensor network and a Naïve Bayes classifier 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes_fire1"
+literal "false"
+
+\end_inset
+
+.
+ A classification of hotspots causing forest fires using the Naive Bayes
+ algorithm is proposed in the work of Zainul et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes_fire2"
+literal "false"
+
+\end_inset
+
+.
+ Karo et al.
+ proposed a methodology to classify wildfires using feature selection and
+ the Naive Bayes among other machine learning methods 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes_fire3"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(OK)
 \end_layout
 
 \begin_layout Itemize
-A proportional modification was found in the following research, which was
- published on MDPI: Towards Fire prediction Accuracy Enhancements by Leveraging
- an Improved Naïve Bayes Algorithm.
+Towards Fire prediction Accuracy Enhancements by Leveraging an Improved
+ Naïve Bayes Algorithm.
  In the aforementioned paper, there was an evolutionary algorithm, the Double
  Weighted Naïve Bayes with Compensation Coefficient (DWCNB)∙ which compared
  with Naïve Bayes, and Double Weighted Naïve Bayes.
@@ -865,7 +963,7 @@ A proportional modification was found in the following research, which was
  for 5.08%, and respectively 2.52% than Double weighted Naïve Bayes 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "naive_bayes2"
+key "naive_bayes3"
 literal "false"
 
 \end_inset
@@ -886,7 +984,7 @@ In a recent research, 2024, in Turkey, it was used different algorithms
  Tree 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "naive_bayes3"
+key "naive_bayes4"
 literal "false"
 
 \end_inset
@@ -2044,15 +2142,6 @@ The authors declare no conflicts of interest.
 \end_layout
 
 \begin_layout Begin Whole Page
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Keep empty!
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -2886,10 +2975,13 @@ literal "false"
 
 \end_inset
 
- Koski, T., & Noble, J.
- (2011).
- Bayesian networks: an introduction.
- John Wiley & Sons.
+Ben-Gal, I.
+ (2008).
+ Bayesian Networks.
+ In Encyclopedia of Statistics in Quality and Reliability (eds F.
+ Ruggeri, R.S.
+ Kenett and F.W.
+ Faltin).
 \end_layout
 
 \begin_layout Bibliography
@@ -2901,27 +2993,142 @@ literal "false"
 
 \end_inset
 
-Sevinc, V., Kucuk, O., & Goltas, M.
- (2020).
- A Bayesian network model for prediction and analysis of possible forest
- fire causes.
- Forest Ecology and Management, 457, 117723.
+ Koski, T., & Noble, J.
+ (2011).
+ Bayesian networks: an introduction.
+ John Wiley & Sons.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "bayes_net3"
+key "bayes_net_expression"
 literal "false"
 
 \end_inset
 
-Kim, B., & Lee, J.
- (2021).
- A Bayesian network-based information fusion combined with DNNs for robust
- video fire detection.
- Applied Sciences, 11(16), 7624.
+N.
+ Friedman, M.
+ Linial, I.
+ Nachman, D.
+ Pe'er, Using Bayesian networks to analyze expression data, In: Proceedings
+ of the fourth annual international conference on Computational molecular
+ biology, pp.
+ 127-135, 2000.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net_fault"
+literal "false"
+
+\end_inset
+
+B.
+ Cai, L.
+ Huang, M.
+ Xie, Bayesian Networks in Fault Diagnosis, IEEE Transactions on Industrial
+ Informatics 
+\series bold
+13
+\series default
+, pp.
+ 2227-2240, 2017.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net_environ"
+literal "false"
+
+\end_inset
+
+D.N.
+ Barton, S.
+ Kuikka, O.
+ Varis, L.
+ Uusitalo, H.J.
+ Henriksen, M.
+ Borsuk, A.
+ de la Hera, R.
+ Farmani, S.
+ Johnson, J.D.
+ Linnell, Bayesian networks in environmental and resource management.
+ Integr Environ Assess Manag, 
+\series bold
+8
+\series default
+, pp.
+ 418-429, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net_fire_cause"
+literal "false"
+
+\end_inset
+
+V.
+ Sevinc, O.
+ Kucuk, M.
+ Goltas, A Bayesian network model for prediction and analysis of possible
+ forest fire causes.
+ Forest Ecology and Management 
+\series bold
+457
+\series default
+, 117723, 2020.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net_cascade"
+literal "false"
+
+\end_inset
+
+F.
+ Chen, H.
+ Jia, E.
+ Du, Y.
+ Chen, L.
+ Wang, Modeling of the cascading impacts of drought and forest fire based
+ on a Bayesian network, International Journal of Disaster Risk Reduction
+ 
+\series bold
+111
+\series default
+, 104716,2024.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net_video"
+literal "false"
+
+\end_inset
+
+B.
+ Kim, J.
+ Lee, A Bayesian network-based information fusion combined with DNNs for
+ robust video fire detection.
+ Applied Sciences 
+\series bold
+11
+\series default
+, 7624, 2021.
 \end_layout
 
 \begin_layout Bibliography
@@ -2948,6 +3155,150 @@ literal "false"
 
 \end_inset
 
+G.I.
+ Webb, E.
+ Keogh, R.
+ Miikkulainen, Naïve Bayes, Encyclopedia of machine learning 
+\series bold
+15
+\series default
+, pp.
+ 713-714, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes_document"
+literal "false"
+
+\end_inset
+
+S.L.
+ Ting, W.H.
+ Ip, A.H.
+ Tsang, Is Naive Bayes a good classifier for document classification, Internatio
+nal Journal of Software Engineering and Its Applications 
+\series bold
+5
+\series default
+, pp.
+ 37-46, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes_traffic"
+literal "false"
+
+\end_inset
+
+H.
+ Chen, S.
+ Hu, R.
+ Hua, et al, Improved naive Bayes classification algorithm for traffic risk
+ management, EURASIP J.
+ Adv.
+ Signal Process.
+ 2021, 30, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes_network"
+literal "false"
+
+\end_inset
+
+M.
+ Panda, M.R.
+ Patra, Network intrusion detection using naive bayes.
+ International journal of computer science and network security 
+\series bold
+7
+\series default
+, pp.
+ 258-263, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes_fire1"
+literal "false"
+
+\end_inset
+
+A.
+ Andi Nugroho, I.
+ Iwan, K.
+ Iroh Nur Azizah, F.
+ Hakim Raswa, Peatland Forest Fire Prevention Using Wireless Sensor Network
+ Based on Naïve Bayes Classifier, KnE Social Sciences 
+\series bold
+3
+\series default
+, pp.
+ 20–34, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes_fire2"
+literal "false"
+
+\end_inset
+
+M.
+ Zainul, E.
+ Minggu, Classification of Hotspots Causing Forest and Land Fires Using
+ the Naive Bayes Algorithm, Interdisciplinary Social Studies 
+\series bold
+1
+\series default
+, pp.
+ 555-567, 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes_fire3"
+literal "false"
+
+\end_inset
+
+I.M.K.
+ Karo, S.N.
+ Amalia, D.
+ Septiana, Wildfires Classification Using Feature Selection with K-NN, Naïve
+ Bayes, and ID3 Algorithms, Journal of Software Engineering, Information
+ and Communication Technology (SEICT) 
+\series bold
+3
+\series default
+, pp.
+ 15-24, 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes3"
+literal "false"
+
+\end_inset
+
 Shu, L., Zhang, H., You, Y., Cui, Y., & Chen, W.
  (2021).
  Towards fire prediction accuracy enhancements by leveraging an improved
@@ -2959,7 +3310,7 @@ Shu, L., Zhang, H., You, Y., Cui, Y., & Chen, W.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "naive_bayes3"
+key "naive_bayes4"
 literal "false"
 
 \end_inset
