@@ -875,8 +875,8 @@ Naïve Bayes
 \begin_layout Standard
 The Naïve Bayes is a supervised machine learning algorithm, used for classificat
 ion tasks.
- This classifier, use principles of probability in order to perform classificati
-on tasks 
+ This classifier, uses principles of probability in order to perform classificat
+ion tasks 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "naive_bayes1,naive_bayes2"
@@ -885,7 +885,7 @@ literal "false"
 \end_inset
 
 .
- This algorithm have been incorporated in many research areas, such as document
+ This algorithm has been incorporated in many research areas, such as document
  classification 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -925,7 +925,8 @@ literal "false"
 
 .
  A classification of hotspots causing forest fires using the Naive Bayes
- algorithm is proposed in the work of Zainul et al 
+ algorithm is proposed in the work of Zainul et al.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "naive_bayes_fire2"
@@ -945,7 +946,7 @@ literal "false"
 \end_inset
 
 .
- Also, a variant of the Naïve Bayes Algorith was suggested by Shu et al
+ Also, a variant of the Naïve Bayes Algorith was suggested by Shu et al.
  for forest fire prediction 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -963,33 +964,81 @@ Logistic Regression
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-(OK)
-\series default
-Like the previous algorithm, Logistic Regression, works also with machine
- learning classification, and used to predict probabilities.
- This (ML) technique used in data sets with many features 
+Like the previously mentioned algorithms, Logistic Regression, works also
+ with machine learning classification and it can be considered as a data
+ analysis technique used to predict probabilities 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "logistic1"
+key "logistic_def"
 literal "false"
 
 \end_inset
 
 .
- The Logistic Regression, is widely used in natural hazards, such as fire
- modeling by estimating, the probability of occurrences, according the following
- survey: A Survey of Machine Learning Algorithms based Forest Fires Prediction
- and Detection 
+ Cabrera proposed the Logistic Regression for higher school decisions 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "logistic2"
+key "logistic_education"
 literal "false"
 
 \end_inset
 
- 
+.
+ Also, Lawson et al.
+ proposed the usage of Logistic Regression method to analyze customer satisfacti
+on data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic_customer"
+literal "false"
+
+\end_inset
+
+.
+ Hu and Lo used the Logistic Regression technique to model urban growth
+ in their paper 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic_urban"
+literal "false"
+
+\end_inset
+
+.
+ This method has been used also in a series of issues involving forest fires,
+ such as human - caused wildfire risk estimation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic_fire1"
+literal "false"
+
+\end_inset
+
+, prediction of wildfire vulnerability 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic_fire2"
+literal "false"
+
+\end_inset
+
+, probabilistic modeling of wildfire occurrence 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic_fire3"
+literal "false"
+
+\end_inset
+
+, analysis of wildfire danger 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "logistic_fire4"
+literal "false"
+
+\end_inset
+
+etc.
 \end_layout
 
 \begin_layout Subsubsection
@@ -997,6 +1046,10 @@ Mlp Network
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+(OK)
+\series default
 The Multilayer Perceptron is a commonly used Neural Network.
  It composed of multiple layers, and contains a set of perception elements
  known as neurons.
@@ -3285,31 +3338,174 @@ L.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "logistic1"
+key "logistic_def"
 literal "false"
 
 \end_inset
 
-Rymarczyk, T., Kozłowski, E., Kłosowski, G., & Niderla, K.
- (2019).
- Logistic regression for machine learning in process tomography.
- Sensors, 19(15), 3400.
+S.
+ Sperandei, Understanding logistic regression analysis, Biochemia medica
+ 
+\series bold
+24
+\series default
+, pp.
+ 12-18, 2014.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "logistic2"
+key "logistic_education"
 literal "false"
 
 \end_inset
 
-Abid, F.
- (2021).
- A survey of machine learning algorithms based forest fires prediction and
- detection systems.
- Fire technology, 57(2), 559-590.
+A.F.
+ Cabrera, Logistic regression analysis in higher education: An applied perspecti
+ve, Higher education: Handbook of theory and research 
+\series bold
+10
+\series default
+, pp.
+ 225-256, 1994.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic_customer"
+literal "false"
+
+\end_inset
+
+C.
+ Lawson, D.C.
+ Montgomery, Logistic Regression Analysis of Customer Satisfaction Data,
+ Qual.
+ Reliab.
+ Engng.
+ Int.
+ 
+\series bold
+22
+\series default
+, pp.
+ 971-984, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic_urban"
+literal "false"
+
+\end_inset
+
+Zhiyong Hu and C.P.
+ Lo, Modeling urban growth in Atlanta using logistic regression, Computers,
+ Environment and Urban Systems 
+\series bold
+31
+\series default
+, pp.
+ 667-688, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic_fire1"
+literal "false"
+
+\end_inset
+
+L.
+ Vilar del Hoyo, M.P.
+ Martín Isabel, F.J.
+ Martínez Vega, Logistic regression models for human-caused wildfire risk
+ estimation: analysing the effect of the spatial accuracy in fire occurrence
+ data, Eur J Forest Res 
+\series bold
+130
+\series default
+, pp.
+ 983–996, 2011.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic_fire2"
+literal "false"
+
+\end_inset
+
+P.P.
+ de Bem, O.A.
+ de Carvalho Júnior, E.A.T.
+ Matricardi, R.F.
+ Guimarães, R.A.T.
+ Gomes, Predicting wildfire vulnerability using logistic regression and
+ artificial neural networks: a case study in Brazil’s Federal District.
+ International journal of wildland fire 
+\series bold
+28
+\series default
+, pp.
+ 35-45, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic_fire3"
+literal "false"
+
+\end_inset
+
+Eufrásio João Sozinho Nhongo, Denise Cybis Fontana, Laurindo Antonio Guasselli
+ and Carolina Bremm, Probabilistic modelling of wildfire occurrence based
+ on logistic regression, Niassa Reserve, Mozambique, Geomatics, Natural
+ Hazards and Risk 
+\series bold
+10
+\series default
+, pp.
+ 1772--1792, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "logistic_fire4"
+literal "false"
+
+\end_inset
+
+W.
+ Peng, Y.
+ Wei, G.
+ Chen, G.
+ Lu, Q.
+ Ye, R.
+ Ding, P.
+ Hu, Z.
+ Cheng, Analysis of Wildfire Danger Level Using Logistic Regression Model
+ in Sichuan Province, China.
+ Forests 
+\series bold
+14
+\series default
+, 2352, 2023.
 \end_layout
 
 \begin_layout Bibliography
