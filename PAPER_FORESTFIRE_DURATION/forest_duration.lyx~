@@ -603,16 +603,16 @@ This research work focuses on the use of machine learning techniques to
  predict the duration of forest fires, which occurred in Greece from 2014
  until 2023.
  The data was collected by the Hellenic Fire Service and then, after clearing
- missing records, the data was digitized and the one of three categories
- were assigned to every pattern: fires of short duration, fires of medium
- duration and fires of long duration.
+ missing records, the data was digitized and one of three categories was
+ assigned to every pattern: fires of short duration, fires of medium duration
+ and fires of long duration.
  The prediction of the duration of a fire is important as in this way, on
  the one hand, an estimate can be made of the expected damage that will
  be caused in the area, and on the other, the human resources required to
  extinguish the fire can be calculated.
- Similar works in this area include the work of Liang et al that used the
- duration of a wildfire and the burnt area to determine the scale of wildfires
- using neural networks 
+ Similar works in this area include the work of Liang et al.
+ that used the duration of a wildfire and the burnt area to determine the
+ scale of wildfires using neural networks 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_duration1"
@@ -621,7 +621,7 @@ literal "false"
 \end_inset
 
 .
- Also, KC et al.
+ Also, KC et al..
  proposed a Surrogate model 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -632,7 +632,8 @@ literal "false"
 
  to model the size of a wildfire over time, using data collected from wildfires
  in Tasmania.
- Furthermore, Xi et al proposed 
+ Furthermore, Xi et al.
+ proposed 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_duration3"
@@ -691,40 +692,101 @@ name "sec:Materials-and-Methods"
 
 \end_layout
 
+\begin_layout Standard
+This section presents the datasets that will be used in the experiments
+ as well as the machine learning techniques that will be applied to these
+ datasets.
+ 
+\end_layout
+
 \begin_layout Subsection
-Data pre - processing 
+The used datasets
 \end_layout
 
 \begin_layout Standard
-For this study we have used data by the:
-\series bold
- Hellenic Fire Service
-\series default
-, from the years 2014 – 2023.
- We have processed the preliminary raw data from years 2014 – 2023, to obtain
- usable data that will lead to a more efficient model.
- The first step involved: data cleaning.
- In the second step, we merged the columns, containing the fire start &
- time, as well as the columns containing the fire extinguishment & time,
- in order to perform a subtraction and calculate the fire duration.
- Then we identified three classes based on the fire duration (class 1, 3,
- 4).
- The data categorized was complemented with the classification, based on
- the Fire Department, the Region, and the Season.
- Our final dataset includes, 25 columns into an excel sheet∙ specifically:
- fire department, province, season, fuel (forest, forest area, grove, grasslands
-, reeds/swamps, agricultural lands, cover crop, garbage dumps) burnt area
- acres, manpower (Firefighters, volunteer, army, etc.), vehicles (firefighting,
- tanks, etc.), aerial means (helicopters, different aircrafts) duration,
- class and log.
- We converted all the Excel files since 2014, into an ARFF file, and using
- (nom) the class for fire duration, we evaluated the performance of all
- algorithms, in WEKA.
+In this research work, open data was used which is available from the Hellenic
+ Fire Service at the relevant link 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.fireservice.gr/en_US/synola-dedomenon
+\end_layout
+
+\end_inset
+
+(accessed on 14 September 2024).
+ The data was obtained for the years 2014-2023 and data preprocessing techniques
+ were applied before inputting the data into machine learning models.
+\end_layout
+
+\begin_layout Standard
+The initial datasets contain information in both numerical and alphanumeric
+ form, such as the area in which the forest fire occurred or the fire station
+ that extinguished it.
+ Therefore, the first step in preprocessing the data was to digitize the
+ columns that contained numerical information and replace them with a discrete
+ integer.
+ The next important step in the preprocessing of the original data is to
+ delete the records that contain empty values in various attributes.
+ This could happen, for example, if a value was not available at the time
+ of entry.
+ Those records in which the duration of the fire was zero were also deleted.
+ Then, to create the exit category, the duration of the forest fire was
+ converted into minutes.
+ Subsequently, three distinct values were created depending on the logarithmic
+ value of the duration in minutes of the forest fire.
+ This value will be used as the target value in running the experiments.
+ 
+\end_layout
+
+\begin_layout Standard
+Having performed the previously mentioned preprocessing steps, the final
+ datasets contain 25 features and the following information about the forest
+ fires:
+\end_layout
+
+\begin_layout Enumerate
+Fire department.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Province.
+\end_layout
+
+\begin_layout Enumerate
+Season.
+\end_layout
+
+\begin_layout Enumerate
+Burnt area: forest area, grove, grasslands, reeds/swamps, agricultural lands,
+ cover crop, garbage dumps.
+\end_layout
+
+\begin_layout Enumerate
+Manpower: Firefighters, volunteers, army, etc.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Vehicles: firefighting, tanks, etc.
+\end_layout
+
+\begin_layout Enumerate
+Aerial means: helicopters, different aircrafts.
  
 \end_layout
 
 \begin_layout Subsection
 The proposed algorithms
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Write also what algorithms were used, Texnikes diaforetikes metaxy tous
 \end_layout
 
 \begin_layout Subsubsection
@@ -1038,6 +1100,12 @@ name "sec:Results"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+WRITE SOMETHING ABOUT WEKA HERE 
 \end_layout
 
 \begin_layout Standard
