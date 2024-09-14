@@ -438,7 +438,8 @@ literal "false"
 \end_inset
 
  etc.
- Merino et al suggested an Unmanned Aircraft System (UAS) 
+ Merino et al.
+ suggested an Unmanned Aircraft System (UAS) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_monitor4"
@@ -456,7 +457,7 @@ literal "false"
 
 \end_inset
 
- of wireless sensors networks for forest fire detection and monitoring.
+ of wireless sensor networks for forest fire detection and monitoring.
  Recently, Serna et al.
  suggested a distributed system for fire monitoring using wireless sensor
  networks 
@@ -485,7 +486,7 @@ literal "false"
 
 .
  Also, Pang et al.
- suggested the usage of a series of machine learning models for forest fire
+ suggested the usage of a series of machine learning models to forest fire
  occurrence prediction in China 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -495,8 +496,9 @@ literal "false"
 \end_inset
 
 .
- Dampage et al suggested a system of wireless sensor networks with data
- handled by machine learning models for the detection of forest fires 
+ Dampage et al.
+ suggested a system of wireless sensor networks with data handled by machine
+ learning models for the detection of forest fires 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_detection_dampage"
@@ -505,8 +507,9 @@ literal "false"
 \end_inset
 
 .
- Shao et al proposed a mapping of China's forest fire risks using a series
- of machine learning models 
+ Shao et al.
+ proposed a mapping of China's forest fire risks using a series of machine
+ learning models 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_risk"
@@ -539,8 +542,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 In addition, image processing has been established as a fire detection method.
  In this direction, a multitude of techniques have been presented that also
  take advantage of machine learning methods, such as the work of Vicente
@@ -554,7 +555,8 @@ literal "false"
 \end_inset
 
 .
- Also, Yan et al proposed a method 
+ Also, Yan et al.
+ proposed a method 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_image2"
@@ -562,9 +564,10 @@ literal "false"
 
 \end_inset
 
- that combined image processing techniques and neural networks for fore
+ that combined image processing techniques and neural networks for forest
  fire recognition.
- Mubarak et al suggested a rule - based image processing algorithm 
+ Mubarak et al.
+ suggested a rule - based image processing algorithm 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_image4"
@@ -573,7 +576,8 @@ literal "false"
 \end_inset
 
  for forest fire detection.
- Convolution neural networks was utilized in the work of Wang et al 
+ Convolution neural networks were utilized in the work of Wang et al.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_image5"
@@ -582,7 +586,8 @@ literal "false"
 \end_inset
 
  for forest fire image recognition.
- Also, wavelet analysis was used in the work of Jiao et al 
+ Also, wavelet analysis was used in the work of Jiao et al.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_image6"
@@ -605,12 +610,38 @@ This research work focuses on the use of machine learning techniques to
  the one hand, an estimate can be made of the expected damage that will
  be caused in the area, and on the other, the human resources required to
  extinguish the fire can be calculated.
-\end_layout
+ Similar works in this area include the work of Liang et al that used the
+ duration of a wildfire and the burnt area to determine the scale of wildfires
+ using neural networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_duration1"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
-\series bold
-(SIMILAR WORKS?)
+.
+ Also, KC et al.
+ proposed a Surrogate model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_duration2"
+literal "false"
+
+\end_inset
+
+ to model the size of a wildfire over time, using data collected from wildfires
+ in Tasmania.
+ Furthermore, Xi et al proposed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_duration3"
+literal "false"
+
+\end_inset
+
+ the application of joint mixture models to model the duration and the size
+ of wildfires.
 \end_layout
 
 \begin_layout Standard
@@ -2728,6 +2759,69 @@ Z.
  on Aerial Imagery," 2018 Chinese Automation Congress (CAC), Xi'an, China,
  2018, pp.
  2206-2211, doi: 10.1109/CAC.2018.8623473.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_duration1"
+literal "false"
+
+\end_inset
+
+H.
+ Liang, M.
+ Zhang, H.
+ Wang, A Neural Network Model for Wildfire Scale Prediction Using Meteorological
+ Factors, IEEE Access 
+\series bold
+7
+\series default
+, pp.
+ 176746-176755, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_duration2"
+literal "false"
+
+\end_inset
+
+U.
+ KC, J.
+ Aryal, J.
+ Hilton, S.
+ Garg, A Surrogate Model for Rapidly Assessing the Size of a Wildfire over
+ Time, Fire 
+\series bold
+4
+\series default
+, 20, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_duration3"
+literal "false"
+
+\end_inset
+
+D.D.
+ Xi, C.B.
+ Dean, S.W.
+ Taylor, Modeling the duration and size of wildfires using joint mixture
+ models.
+ Environmetrics 
+\series bold
+32
+\series default
+, e2685, 2021.
 \end_layout
 
 \begin_layout Bibliography
