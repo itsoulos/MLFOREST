@@ -1042,32 +1042,140 @@ etc.
 \end_layout
 
 \begin_layout Subsubsection
-Mlp Network 
+Artificial neural networks 
 \end_layout
 
 \begin_layout Standard
-The Multilayer Perceptron is a commonly used Neural Network.
- It composed of multiple layers, and contains a set of perception elements
- known as neurons.
- It is used in forecasting models, and image pattern recognition 
+Artificial neural networks (ANNs) are parametric models 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nn1,nn2"
+literal "true"
+
+\end_inset
+
+, where a set of parameters, commonly called weights, must be calculated
+ to be adapted to classification or regression data.
+ This machine learning model has been utilized in a variety of scientific
+ and real - world problems, such as physics problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nnphysics1,nnphysics2,nnphysics3"
+literal "false"
+
+\end_inset
+
+, solving differential equations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nnde1,nnde2"
+literal "false"
+
+\end_inset
+
+, solar radiation prediction 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "nn1,nn2"
+key "nn_solar"
+literal "false"
+
+\end_inset
+
+, agriculture problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nnagr1,nnagr2"
+literal "false"
+
+\end_inset
+
+, problems appeared in chemistry 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nnchem1,nnchem2,nnchem3"
+literal "false"
+
+\end_inset
+
+, wind speed forecasting 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_wind"
+literal "false"
+
+\end_inset
+
+, economics problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nnecon1,nnecon2,nncecon3"
+literal "false"
+
+\end_inset
+
+, problems related to medicine 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nnmed1,nnmed2"
+literal "false"
+
+\end_inset
+
+ etc.
+\end_layout
+
+\begin_layout Standard
+In the area of forest fire prediction and observation, a number of works
+ using artificial neural networks have been published.
+ Hossain et al.
+ used ANNs to detect flames and smoke from static image features 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_fire1"
 literal "false"
 
 \end_inset
 
 .
- In a Chinese province, in 2022, was conducted the research: Using Multilayer
- Perceptron to Predict Forest Fires in Jiangxi Province, Southeast China.
- In this paper, several models were studied for the occurrence of forest
- fires.
- ROC plots were used to compare results from: (MLP), Logistic, and SVM.
- The (MLP) model scored the highest percentage, compared to the rest.
- Precisely, (MLP) scored 0.984, Logistic 0.933, and SVM 0.974 
+ Lall and Mathibela utilized neural networks to predict the risk of wildfires
+ in the city of Cape Town 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "nn_forest"
+key "nn_fire2"
+literal "false"
+
+\end_inset
+
+.
+ Also, Sayad et al.
+ used neural networks among other machine learning techniques for predictive
+ modeling of wildfires from data collected from NASA's Land Processes Distribute
+d Active Archive Center (LP DAAC) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_fire3"
+literal "false"
+
+\end_inset
+
+.
+ Artificial neural networks and meteorological data were used in the work
+ of Liang et al.
+ to predict the scale of wildfires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_fire4"
+literal "false"
+
+\end_inset
+
+.
+ Also, a case study for predicting wildfires for a Chinese province using
+ neural networks was published recently by Gao et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_fire5"
 literal "false"
 
 \end_inset
@@ -1081,9 +1189,7 @@ The J48 algorithm
 \end_layout
 
 \begin_layout Standard
-J48, belong to the of Decision Tree algorithm, in supervised learning.
- Creates a decision tree, which breaks into subsets.
- It used in risk analysis, pattern recognition and makes predictions 
+The J48 algorithm 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "j48_1"
@@ -1091,43 +1197,70 @@ literal "false"
 
 \end_inset
 
-.
- 
-\end_layout
-
-\begin_layout Itemize
-J48, was selected among with Random Forest (RF), adaboostM1, and Bagging,
- in Algeria, 2020, for the project: Predicting Forest Fires in Algeria using
- Data Mining Techniques: Case study of the Decision Tree Algorithm.
- Although, the results showed best performance, with adaBoostM1 (84.21%),
- the researchers do not recommend it due it needs significant resources
- and effort to be translated to hardware implementation.
- Therefore, they recommend J48 with accuracy (82,89%).
- The (RF) came up to (72,36%), and Bagging to (78,94%) 
+ is one of the most used supervised machine learning algorithms, used to
+ construct decision trees for classification data.
+ This method was tested on a series of classification problems, such as
+ prediction of diabetes 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "j48_2"
+key "j48_diabetes"
+literal "false"
+
+\end_inset
+
+, network intrusion detection 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_network"
+literal "false"
+
+\end_inset
+
+, classification of criminal data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_criminal"
+literal "false"
+
+\end_inset
+
+, fingerprint gender classification 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_finger"
+literal "false"
+
+\end_inset
+
+, fake news classification 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_fake"
+literal "false"
+
+\end_inset
+
+ etc.
+ Also, the J48 algorithm was used to predict forest fires using data from
+ Slovenia in a recent work 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "j48_forest2"
 literal "false"
 
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Itemize
-In a study, to Slovenia, 2005, the J48, had the lowest result.
- Specifically, on the paper: Learning to Predict Forest Fires with Different
- data Mining Techniques, highlighted the Bagging, as the most efficient
- in relation to: Logistic Regression, Random Forest, J48, Boosting 
+ A similar study was performed in Algeria using the J48 algorithm among
+ other machine learning models 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "j48_3"
+key "j48_forest2"
 literal "false"
 
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1135,61 +1268,100 @@ Random Forests
 \end_layout
 
 \begin_layout Standard
-Random Forest is a popular machine learning algorithm.
- Its ease of use and flexibility, in handles classification and regression
- problems, in more precise predictions, fueled its commonly adoption 
+Random Forest 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "random_forest1"
+key "random_forest1,random_forest2"
+literal "false"
+
+\end_inset
+
+ is a popular supervised machine learning algorithm, used to construct decision
+ trees for classification problems.
+ The method of Random Forests has proven its adaptability and effectiveness
+ in a number of difficult problems, such as remote sensing classification
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest_remote"
+literal "false"
+
+\end_inset
+
+, ecology issues 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest_ecology"
+literal "false"
+
+\end_inset
+
+, bionformatics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest_bio"
+literal "false"
+
+\end_inset
+
+, text categorization 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest_text"
+literal "false"
+
+\end_inset
+
+, network intrusion detection 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest_network"
+literal "false"
+
+\end_inset
+
+ etc.
+ Moreover, random forest was incorporated for forest fire prediction, such
+ as in the work of Latifah et al., where random forests were applied to predict
+ forest fires in Borneo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest_fire1"
 literal "false"
 
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Itemize
-On MDPI, 2023, it was published, the paper: Forest – Fire – Risk Prediction
- based on Random Forest and Backpropagation Neural Network of Heihe Area
- in Heilongjiang Province, China.
- There was a comparison, in the research, among the Random Forest, and the
- backpropagation Neural Network (BPNN).
- Both methods, were found suitable for predicting forest / wildfires.
- The (RF) prediction range between 87,91% - 88,98%, while the (BPNN) accuracy
- was 86,01% and 86,94% 
+ Also, Malik et al.
+ proposed the usage of Random Forests for wildfire risk prediction in Northern
+ California 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "random_forest2"
+key "random_forest_fire2"
 literal "false"
 
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Itemize
-Random Forest, presented satisfactory results also in this research: Using
- GIS and random Forest to identify fire drivers in a forest city, Yichun,
- China.
- The forecast, for a fire outbreak, meteorological data ranged from 71,2%
- to 76,5%.
- The prediction, from combined factors, had a higher percentage among 80,78%
- - 84,8%.
- The AUC value, based on meteorological factors, were 0,740 – 0,807 indicating
- a moderated model fit.
- On the other hand, the value with combined factors showed an excellent
- fit, with the model 0,886 – 0,906 
+ Also, Gao et al.
+ performed a forest fire risk prediction 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "random_forest3"
+key "random_forest_fire3"
+literal "false"
+
+\end_inset
+
+ in China using a combination of Random Forests and a neural network trained
+ with the Back Propagation method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bpnn1"
 literal "false"
 
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Section
@@ -1206,7 +1378,8 @@ name "sec:Results"
 \begin_layout Standard
 
 \series bold
-WRITE SOMETHING ABOUT WEKA HERE 
+WRITE SOMETHING ABOUT WEKA HERE, 10 fold also, experimental machine: ryzen
+ on arta
 \end_layout
 
 \begin_layout Standard
@@ -1215,10 +1388,6 @@ placement H
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2071,6 +2240,93 @@ AVERAGE
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename boxplot.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Box plot for the used machine learning techniques.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:boxPlot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename statistic_models_random_forest.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison between the Random Forest method and the other machine
+ learning methods.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statRandomForest"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3539,16 +3795,424 @@ G.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "nn_forest"
+key "nnphysics1"
 literal "false"
 
 \end_inset
 
-Gao, K., Feng, Z., & Wang, S.
- (2022).
- Using multilayer perceptron to predict forest fires in jiangxi province,
- southeast china.
- Discrete Dynamics in Nature and Society, 2022(1), 6930812.
+P.
+ Baldi, K.
+ Cranmer, T.
+ Faucett et al, Parameterized neural networks for high-energy physics, Eur.
+ Phys.
+ J.
+ C 
+\series bold
+76
+\series default
+, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnphysics2"
+literal "true"
+
+\end_inset
+
+J.
+ J.
+ Valdas and G.
+ Bonham-Carter, Time dependent neural network models for detecting changes
+ of state in complex processes: Applications in earth sciences and astronomy,
+ Neural Networks 
+\series bold
+19
+\series default
+, pp.
+ 196-207, 2006
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnphysics3"
+literal "false"
+
+\end_inset
+
+G.
+ Carleo,M.
+ Troyer, Solving the quantum many-body problem with artificial neural networks,
+ Science 
+\series bold
+355
+\series default
+, pp.
+ 602-606, 2017.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnde1"
+literal "false"
+
+\end_inset
+
+Y.
+ Shirvany, M.
+ Hayati, R.
+ Moradian, Multilayer perceptron neural networks with novel unsupervised
+ training method for numerical solution of the partial differential equations,
+ Applied Soft Computing 
+\series bold
+9
+\series default
+, pp.
+ 20-29, 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnde2"
+literal "false"
+
+\end_inset
+
+A.
+ Malek, R.
+ Shekari Beidokhti, Numerical solution for high order differential equations
+ using a hybrid neural network—Optimization method, Applied Mathematics
+ and Computation 
+\series bold
+183
+\series default
+, pp.
+ 260-271, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_solar"
+literal "false"
+
+\end_inset
+
+A.
+ Kumar Yadav, S.S.
+ Chandel, Solar radiation prediction using Artificial Neural Network techniques:
+ A review, Renewable and Sustainable Energy Reviews 
+\series bold
+33
+\series default
+, pp.
+ 772-781, 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnagr1"
+literal "false"
+
+\end_inset
+
+A.
+ Topuz, Predicting moisture content of agricultural products using artificial
+ neural networks, Advances in Engineering Software 
+\series bold
+41
+\series default
+, pp.
+ 464-470, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnagr2"
+literal "false"
+
+\end_inset
+
+A.
+ Escamilla-García, G.M.
+ Soto-Zarazúa, M.
+ Toledano-Ayala, E.
+ Rivas-Araiza, A.
+ Gastélum-Barrios, Abraham,Applications of Artificial Neural Networks in
+ Greenhouse Technology and Overview for Smart Agriculture Development, Applied
+ Sciences 
+\series bold
+10
+\series default
+, Article number 3835, 2020.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnchem1"
+literal "false"
+
+\end_inset
+
+Lin Shen, Jingheng Wu, and Weitao Yang, Multiscale Quantum Mechanics/Molecular
+ Mechanics Simulations with Neural Networks, Journal of Chemical Theory
+ and Computation 
+\series bold
+12
+\series default
+, pp.
+ 4934-4946, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnchem2"
+literal "false"
+
+\end_inset
+
+Sergei Manzhos, Richard Dawes, Tucker Carrington, Neural network‐based approache
+s for building high dimensional and quantum dynamics‐friendly potential
+ energy surfaces, Int.
+ J.
+ Quantum Chem.
+ 
+\series bold
+115
+\series default
+, pp.
+ 1012-1020, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnchem3"
+literal "false"
+
+\end_inset
+
+Jennifer N.
+ Wei, David Duvenaud, and Alán Aspuru-Guzik, Neural Networks for the Prediction
+ of Organic Chemistry Reactions, ACS Central Science 
+\series bold
+2
+\series default
+, pp.
+ 725-732, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_wind"
+literal "false"
+
+\end_inset
+
+G.
+ Li, J.
+ Shi, On comparing three artificial neural networks for wind speed forecasting,
+ Applied Energy 
+\series bold
+87
+\series default
+, pp.
+ 2313-2320, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnecon1"
+literal "false"
+
+\end_inset
+
+Lukas Falat and Lucia Pancikova, Quantitative Modelling in Economics with
+ Advanced Artificial Neural Networks, Procedia Economics and Finance 
+\series bold
+34
+\series default
+, pp.
+ 194-201, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnecon2"
+literal "false"
+
+\end_inset
+
+Mohammad Namazi, Ahmad Shokrolahi, Mohammad Sadeghzadeh Maharluie, Detecting
+ and ranking cash flow risk factors via artificial neural networks technique,
+ Journal of Business Research 
+\series bold
+69
+\series default
+, pp.
+ 1801-1806, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nncecon3"
+literal "false"
+
+\end_inset
+
+G.
+ Tkacz, Neural network forecasting of Canadian GDP growth, International
+ Journal of Forecasting 
+\series bold
+17
+\series default
+, pp.
+ 57-69, 2001.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnmed1"
+literal "false"
+
+\end_inset
+
+Igor I.
+ Baskin, David Winkler and Igor V.
+ Tetko, A renaissance of neural networks in drug discovery, Expert Opinion
+ on Drug Discovery 
+\series bold
+11
+\series default
+, pp.
+ 785-795, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnmed2"
+literal "false"
+
+\end_inset
+
+Ronadl Bartzatt, Prediction of Novel Anti-Ebola Virus Compounds Utilizing
+ Artificial Neural Network (ANN), Chemistry Faculty Publications 
+\series bold
+49
+\series default
+, pp.
+ 16-34, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_fire1"
+literal "false"
+
+\end_inset
+
+F.
+ M.
+ A.
+ Hossain, Y.
+ Zhang, C.
+ Yuan and C.
+ -Y.
+ Su, "Wildfire Flame and Smoke Detection Using Static Image Features and
+ Artificial Neural Network," 2019 1st International Conference on Industrial
+ Artificial Intelligence (IAI), Shenyang, China, 2019, pp.
+ 1-6, doi: 10.1109/ICIAI.2019.8850811.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_fire2"
+literal "false"
+
+\end_inset
+
+S.
+ Lall and B.
+ Mathibela, "The application of artificial neural networks for wildfire
+ risk prediction," 2016 International Conference on Robotics and Automation
+ for Humanitarian Applications (RAHA), Amritapuri, India, 2016, pp.
+ 1-6, doi: 10.1109/RAHA.2016.7931880.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_fire3"
+literal "false"
+
+\end_inset
+
+Y.
+ O.
+ Sayad, H.
+ Mousannif, H.
+ Al Moatassime, Predictive modeling of wildfires: A new dataset and machine
+ learning approach, Fire Safety Journal 
+\series bold
+104
+\series default
+, pp.
+ 130-146, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_fire4"
+literal "false"
+
+\end_inset
+
+H.
+ Liang, M.
+ Zhang, H.
+ Wang, A Neural Network Model for Wildfire Scale Prediction Using Meteorological
+ Factors, IEEE Access 
+\series bold
+7
+\series default
+, pp.
+ 176746-176755, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_fire5"
+literal "false"
+
+\end_inset
+
+K.
+ Gao, Z.
+ Feng, S.
+ Wang, Using multilayer perceptron to predict forest fires in jiangxi province,
+ southeast china, Discrete Dynamics in Nature and Society 
+\series bold
+1
+\series default
+, 6930812, 2022.
 \end_layout
 
 \begin_layout Bibliography
@@ -3559,46 +4223,146 @@ literal "false"
 
 \end_inset
 
-J, Biju.
- Bannari Amman.
- Institute of Technology.
- Classification by tree – based Data Mining Algorithms.
- 2023.
- Retrieved from: https://www.bitsathy.ac.in/data-mining-algorithms/
+N.
+ Bhargava, G.
+ Sharma, R.
+ Bhargava, M.
+ Mathuria, Decision tree analysis on j48 algorithm for data mining.
+ Proceedings of international journal of advanced research in computer science
+ and software engineering 
+\series bold
+3
+\series default
+, 2013.
 \end_layout
 
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "j48_2"
+key "j48_diabetes"
 literal "false"
 
 \end_inset
 
-Abid, F., & Izeboudjen, N.
+G.
+ Kaur, A.
+ Chhabra, Improved J48 classification algorithm for the prediction of diabetes,
+ International journal of computer applications 
+\series bold
+98
+\series default
+, 22, 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_network"
+literal "false"
+
+\end_inset
+
+S.
+ Sahu, B.M.
+ Mehtre, Network intrusion detection system using J48 Decision Tree, In:
+ 2015 International Conference on Advances in Computing, Communications
+ and Informatics (ICACCI), pp.
+ 2023-2026, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_criminal"
+literal "false"
+
+\end_inset
+
+N.N.
+ Sakhare, S.A.
+ Joshi, Classification of criminal data using J48-Decision Tree algorithm.
+ Int.
+ J.
+ Data Warehous.
+ Min 
+\series bold
+4
+\series default
+, pp.
+ 167-171, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_finger"
+literal "false"
+
+\end_inset
+
+S.F.
+ Abdullah, A.F.N.A.
+ Rahman, Z.A.
+ Abas, W.H.M.
+ Saad, Fingerprint gender classification using univariate decision tree
+ (j48), International Journal of Advanced Computer Science and Applications
+ 
+\series bold
+7
+\series default
+, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_fake"
+literal "false"
+
+\end_inset
+
+Jehad, R., & Yousif, S.
+ A.
  (2020).
- Predicting forest fire in algeria using data mining techniques: Case study
- of the decision tree algorithm.
+ Fake news classification using random forest and decision tree (j48).
+ Al-Nahrain Journal of Science, 23(4), 49-55.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_forest1"
+literal "false"
+
+\end_inset
+
+D.
+ Stojanova, P.
+ Panov, A.
+ Kobler, S.
+ Džeroski, K.
+ Taškova, Learning to predict forest fires with different data mining techniques.
+ In Conference on data mining and data warehouses (SiKDD 2006), Ljubljana,
+ Slovenia, pp.
+ 255-258, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "j48_forest2"
+literal "false"
+
+\end_inset
+
+F.
+ Abid, N.
+ Izeboudjen, Predicting forest fire in algeria using data mining techniques:
+ Case study of the decision tree algorithm.
  In Advanced Intelligent Systems for Sustainable Development (AI2SD’2019)
  Volume 4-Advanced Intelligent Systems for Applied Computing Sciences (pp.
  363-370).
- Springer International Publishing.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "j48_3"
-literal "false"
-
-\end_inset
-
-Stojanova, D., Panov, P., Kobler, A., Džeroski, S., & Taškova, K.
- (2006, October).
- Learning to predict forest fires with different data mining techniques.
- In Conference on data mining and data warehouses (SiKDD 2006), Ljubljana,
- Slovenia (pp.
- 255-258).
+ Springer International Publishing, 2020.
 \end_layout
 
 \begin_layout Bibliography
@@ -3609,11 +4373,10 @@ literal "false"
 
 \end_inset
 
-Rigatti, S.
- J.
- (2017).
- Random forest.
- Journal of Insurance Medicine, 47(1), 31-39.
+Breiman, L.
+ (2001).
+ Random forests.
+ Machine learning, 45, 5-32.
 \end_layout
 
 \begin_layout Bibliography
@@ -3624,26 +4387,216 @@ literal "false"
 
 \end_inset
 
-Gao, C., Lin, H., & Hu, H.
- (2023).
- Forest-fire-risk prediction based on random forest and backpropagation
- neural network of Heihe area in Heilongjiang province, China.
- Forests, 14(2), 170.
+S.J.
+ Rigatti, Random forest, Journal of Insurance Medicine, 47(1), 31-39, 2017.
 \end_layout
 
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "random_forest3"
+key "random_forest_remote"
 literal "false"
 
 \end_inset
 
-Su, Z., Hu, H., Wang, G., Ma, Y., Yang, X., & Guo, F.
- (2018).
- Using GIS and Random Forests to identify fire drivers in a forest city,
- Yichun, China.
- Geomatics, Natural Hazards and Risk, 9(1), 1207-1229.
+M.
+ Pal, Random forest classifier for remote sensing classification.
+ International Journal of Remote Sensing 
+\series bold
+26
+\series default
+, pp.
+ 217–222, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_ecology"
+literal "false"
+
+\end_inset
+
+D.R.
+ Cutler, T.C.
+ Edwards, K.H.
+ Beard, A.
+ Cutler, K.T.
+ Hess, J.
+ Gibson, J.J.
+ Lawler, random forests for classification in ecology.
+ Ecology 
+\series bold
+88
+\series default
+, pp.
+ 2783-2792, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_bio"
+literal "false"
+
+\end_inset
+
+Qi, Y.
+ (2012).
+ Random Forest for Bioinformatics.
+ In: Zhang, C., Ma, Y.
+ (eds) Ensemble Machine Learning.
+ Springer, New York, NY.
+ https://doi.org/10.1007/978-1-4419-9326-7_11
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_text"
+literal "false"
+
+\end_inset
+
+B.
+ Xu, X.
+ Guo, Y.
+ Ye, J.
+ Cheng, An improved random forest classifier for text categorization.
+ J.
+ Comput., 
+\series bold
+7
+\series default
+, pp.
+ 2913-2920, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_network"
+literal "false"
+
+\end_inset
+
+N.
+ Farnaaz, M.A.
+ Jabbar, Random Forest Modeling for Network Intrusion Detection System,
+ Procedia Computer Science 
+\series bold
+89
+\series default
+, pp.
+ 213-217, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_fire1"
+literal "false"
+
+\end_inset
+
+A.
+ L.
+ Latifah, A.
+ Shabrina, I.
+ N.
+ Wahyuni, R.
+ Sadikin, Evaluation of Random Forest model for forest fire prediction based
+ on climatology over Borneo, In: 2019 International Conference on Computer,
+ Control, Informatics and its Applications (IC3INA), Tangerang, Indonesia,
+ pp.
+ 4-8, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_fire2"
+literal "false"
+
+\end_inset
+
+A.
+ Malik, M.R.
+ Rao, N.
+ Puppala, P.
+ Koouri, V.A.K.
+ Thota, Q.
+ Liu, S.
+ Chiao, J.
+ Gao, Data-Driven Wildfire Risk Prediction in Northern California.
+ Atmosphere, 
+\series bold
+12
+\series default
+, 109, 2021.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_fire3"
+literal "false"
+
+\end_inset
+
+C.
+ Gao, H.
+ Lin, H.
+ Hu, Forest fire risk prediction based on random forest and backpropagation
+ neural network of Heihe area in Heilongjiang province, China, Forests 
+\series bold
+14
+\series default
+, 170, 2023.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bpnn1"
+literal "false"
+
+\end_inset
+
+D.E.
+ Rumelhart, G.E.
+ Hinton and R.J.
+ Williams, Learning representations by back-propagating errors, Nature 
+\series bold
+323
+\series default
+, pp.
+ 533 - 536 , 1986.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest_fire4"
+literal "false"
+
+\end_inset
+
+Z.
+ Su, H.
+ Hu, G.
+ Wang, Y.
+ Ma, X.
+ Yang, F.
+ Guo, Using GIS and Random Forests to identify fire drivers in a forest
+ city, Yichun, China.
+ Geomatics, Natural Hazards and Risk 
+\series bold
+91
+\series default
+, pp.
+ 1207-1229, 2018.
 \end_layout
 
 \begin_layout Standard

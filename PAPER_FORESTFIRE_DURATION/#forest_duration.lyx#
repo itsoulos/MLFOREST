@@ -1343,25 +1343,31 @@ literal "false"
 \end_inset
 
 .
- Also, Gao et al.
- performed a forest fire risk prediction 
+ Also, 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+(OK)
+\series default
+On MDPI, 2023, it was published, the paper: Forest – Fire – Risk Prediction
+ based on Random Forest and Backpropagation Neural Network of Heihe Area
+ in Heilongjiang Province, China.
+ There was a comparison, in the research, among the Random Forest, and the
+ backpropagation Neural Network (BPNN).
+ Both methods, were found suitable for predicting forest / wildfires.
+ The (RF) prediction range between 87,91% - 88,98%, while the (BPNN) accuracy
+ was 86,01% and 86,94% 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "random_forest_fire3"
-literal "false"
-
-\end_inset
-
- in China using a combination of Random Forests and a neural network trained
- with the Back Propagation method 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bpnn1"
+key "random_forest_fire4"
 literal "false"
 
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Section
@@ -4548,31 +4554,24 @@ literal "false"
 C.
  Gao, H.
  Lin, H.
- Hu, Forest fire risk prediction based on random forest and backpropagation
- neural network of Heihe area in Heilongjiang province, China, Forests 
-\series bold
-14
-\series default
-, 170, 2023.
+ Hu, Forest-fire-risk prediction based on random forest and backpropagation
+ neural network of Heihe area in Heilongjiang province, China.
+ Forests, 14(2), 170, 202
 \end_layout
 
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "bpnn1"
+key "random_forest_fire4"
 literal "false"
 
 \end_inset
 
-D.E.
- Rumelhart, G.E.
- Hinton and R.J.
- Williams, Learning representations by back-propagating errors, Nature 
-\series bold
-323
-\series default
-, pp.
- 533 - 536 , 1986.
+Su, Z., Hu, H., Wang, G., Ma, Y., Yang, X., & Guo, F.
+ (2018).
+ Using GIS and Random Forests to identify fire drivers in a forest city,
+ Yichun, China.
+ Geomatics, Natural Hazards and Risk, 9(1), 1207-1229.
 \end_layout
 
 \begin_layout Standard
