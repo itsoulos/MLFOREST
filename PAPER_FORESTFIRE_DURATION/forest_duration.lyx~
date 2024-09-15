@@ -1376,10 +1376,120 @@ name "sec:Results"
 \end_layout
 
 \begin_layout Standard
+The experiments were conducted using the freely available programming tool
+ of WEKA 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_main"
+literal "false"
+
+\end_inset
+
+.
+ The software, which is written in the JAVA programming language to be portable,
+ can be downloaded freely from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://ml.cms.waikato.ac.nz/weka/
+\end_layout
+
+\end_inset
+
+(accessed on 14 September 2024) or it can be found in the repositories of
+ most Linux systems.
+ The WEKA software is a collection of machine learning and data analysis
+ tools and it contains also some visualization tools for modeling.
+ The WEKA has been used with success in many cases, such as educational
+ problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_education1,weka_education2"
+literal "false"
+
+\end_inset
+
+, medical problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_medical1,weka_medical2"
+literal "false"
+
+\end_inset
+
+ etc.
+ The validation of the conducted experiments was performed using the ten
+ - fold cross validation technique.
+  The experiments were carried out on an AMD Ryzen 5950X with 128GB of RAM,
+ running the Debian Linux operating system.
+ The experimental results using the methods mentioned in the previous section
+ and the 10 modified datasets from the Hellenic Fire Service are listed
+ in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:experResults"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The following applies to the tables of experimental results:
+\end_layout
+
+\begin_layout Enumerate
+The numbers in cells denote average classification error as calculated on
+ the test set.
+\end_layout
+
+\begin_layout Enumerate
+The column YEAR denotes the year where the machine learning methods were
+ applied.
+\end_layout
+
+\begin_layout Enumerate
+The column BAYESNET stands for the application of the Bayesian Network method.
+\end_layout
+
+\begin_layout Enumerate
+The column NAIVEBAYES denotes the application of the Naïve Bayes algorithm.
+\end_layout
+
+\begin_layout Enumerate
+The column LOGISTIC represents the application of the Logistic Regression
+ algorithm.
+\end_layout
+
+\begin_layout Enumerate
 
 \series bold
-WRITE SOMETHING ABOUT WEKA HERE, 10 fold also, experimental machine: ryzen
- on arta
+The column MLP denotes the application of a neural network with 
+\begin_inset Formula $H=$
+\end_inset
+
+ processing nodes.
+ The network was trained with the method 
+\begin_inset Formula $ $
+\end_inset
+
+ of the WEKA.
+\end_layout
+
+\begin_layout Enumerate
+The column J48 denotes the application of the J48 method to the forest fire
+ data.
+\end_layout
+
+\begin_layout Enumerate
+The column RANDOMFOREST denotes the usage of the Random Forest method to
+ the data.
+\end_layout
+
+\begin_layout Enumerate
+The row AVERAGE denotes the average classification error for all datasets.
 \end_layout
 
 \begin_layout Standard
@@ -1395,6 +1505,8 @@ status collapsed
 \begin_layout Plain Layout
 Experimental results using various machine learning models for 10 years
  of observations.
+ The numbers in cells denote average classification error as measured on
+ the test set.
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:experResults"
@@ -2245,7 +2357,24 @@ AVERAGE
 
 \end_inset
 
+Judging from the experimental results it is evident that the Random Forest
+ technique excellently outweighs the others along with the Logistic Regression
+ technique.
+ This can be shown graphically also in the box plot of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:boxPlot"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -2362,6 +2491,18 @@ name "sec:Conclusions"
 
 \series bold
 3) using meteorological data 
+\end_layout
+
+\begin_layout Standard
+4) more machine learning methods
+\end_layout
+
+\begin_layout Standard
+5) parallel execution
+\end_layout
+
+\begin_layout Standard
+6) forecasting?
 \end_layout
 
 \begin_layout Standard
@@ -4578,25 +4719,107 @@ D.E.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "random_forest_fire4"
+key "weka_main"
 literal "false"
 
 \end_inset
 
-Z.
- Su, H.
- Hu, G.
- Wang, Y.
- Ma, X.
- Yang, F.
- Guo, Using GIS and Random Forests to identify fire drivers in a forest
- city, Yichun, China.
- Geomatics, Natural Hazards and Risk 
+M.
+ Hall, F.
+ Frank, G.
+ Holmes, B.
+ Pfahringer, P.
+ Reutemann, I.H.
+ Witten, The WEKA data mining software: an update.
+ ACM SIGKDD explorations newsletter 
 \series bold
-91
+11
 \series default
 , pp.
- 1207-1229, 2018.
+ 10-18, 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_education1"
+literal "false"
+
+\end_inset
+
+S.B.
+ Aher, L.M.R.J.
+ Lobo, Data mining in educational system using weka.
+ In International conference on emerging technology trends, Foundation of
+ Computer Science 
+\series bold
+3
+\series default
+, pp.
+ 20-25, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_education2"
+literal "false"
+
+\end_inset
+
+S.
+ Hussain, N.A.
+ Dahan, F.M.
+ Ba-Alwib, N.
+ Ribata, Educational data mining and analysis of students’ academic performance
+ using WEKA.
+ Indonesian Journal of Electrical Engineering and Computer Science 
+\series bold
+9
+\series default
+, pp.
+ 447-459, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_medical1"
+literal "false"
+
+\end_inset
+
+A.K.
+ Sigurdardottir, H.
+ Jonsdottir, R.
+ Benediktsson, Outcomes of educational interventions in type 2 diabetes:
+ WEKA data-mining analysis.
+ Patient education and counseling 
+\series bold
+67
+\series default
+, pp.
+ 21-31, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_medical2"
+literal "false"
+
+\end_inset
+
+M.N.
+ Amin, A.
+ Habib, Comparison of different classification techniques using WEKA for
+ hematological data.
+ American Journal of Engineering Research 
+\series bold
+4
+\series default
+, pp.
+ 55-61, 2015.
 \end_layout
 
 \begin_layout Standard
