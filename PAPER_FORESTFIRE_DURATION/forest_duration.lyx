@@ -2500,36 +2500,51 @@ A series of machine learning methods was applied on datasets involving forest
  required to extinguish it.
  Most of the machine learning techniques used achieved significantly low
  error values for each year of experimental data.
- On average these classification error values are in the range of 8-13%
+ On average, these classification error values are in the range of 8-13%
  with the Random Forest technique achieving the lowest value.
  The present work could be extended in the future in various research directions
 , such as: 
 \end_layout
 
 \begin_layout Enumerate
-more machine learning methods
+Incorporation of more machine learning methods from the relevant literature.
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-1) Discover important features for predicting duration
+\begin_layout Enumerate
+Use feature selection or construction techniques from recent literature
+ to identify the most important factors influencing the classification process.
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-2) create rules for determination of categories
+\begin_layout Enumerate
+Usage of methods that create classification rules, in order to discover
+ any hidden relationships between the data and the classes of the datasets.
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-3) using meteorological data 
+\begin_layout Enumerate
+Usage of data that also includes meteorological data, in order to identify
+ a possible correlation of the categories with the meteorological conditions
+ that prevailed at the time of the fire.
 \end_layout
 
-\begin_layout Standard
-5) parallel execution
+\begin_layout Enumerate
+Parallel programming techniques may be incorporated to speed up the optimization
+ process, such as MPI  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "MPI"
+literal "false"
+
+\end_inset
+
+ or the OpenMP library 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "OPENMP"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4847,6 +4862,33 @@ M.N.
 \series default
 , pp.
  55-61, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "MPI"
+literal "false"
+
+\end_inset
+
+Gropp, W.; Lusk, E.; Doss, N.; Skjellum, A.
+ A high-performance, portable implementation of the MPI message passing
+ interface standard.
+ Parallel Comput.
+ 1996, 22, 789–828.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "OPENMP"
+literal "false"
+
+\end_inset
+
+Chandra, R.
+ Parallel Programming in OpenMP; Morgan Kaufmann: Cambridge, MA, USA, 2001.
 \end_layout
 
 \begin_layout Standard
