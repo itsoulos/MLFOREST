@@ -735,10 +735,90 @@ The initial datasets contain information in both numerical and alphanumeric
  Those records in which the duration of the fire was zero were also deleted.
  Then, to create the exit category, the duration of the forest fire was
  converted into minutes.
- Subsequently, three distinct values were created depending on the logarithmic
- value of the duration in minutes of the forest fire.
- This value will be used as the target value in running the experiments.
+ In order to address highly skewed and non-normal distribution of the dependent
+ variable (fire duration) we used the commonly applied method of natural
+ log transformation for minutes.
+ This allowed the variance stabilization of the dependent variable and transform
+ed its distribution much closer to normal, allowing a better allowance for
+ linear modeling and greatly reducing the impact of outliers
+\series bold
  
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "log_norm"
+literal "false"
+
+\end_inset
+
+.
+ Subsequently, three distinct values were created depending on the logarithmic
+ value of the duration in minutes of the forest fire: one value is used
+ for short duration forest fires, one distinct class for forest fires of
+ medium duration and one class for the forest fires with long duration.
+
+\series bold
+ 
+\series default
+This value will be used as the target value in running the experiments.
+ The preprocessing steps are graphically illustrated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:preSteps"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename forest_diagram.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The steps of the preprocessing that were applied on the original datasets.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:preSteps"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -775,12 +855,12 @@ Vehicles: firefighting, tanks, etc.
 \end_layout
 
 \begin_layout Enumerate
-Aerial means: helicopters, different aircrafts.
+Aerial means: helicopters and other aircrafts.
  
 \end_layout
 
 \begin_layout Subsection
-The proposed algorithms
+The used machine learning methods
 \end_layout
 
 \begin_layout Standard
@@ -3421,6 +3501,27 @@ D.D.
 32
 \series default
 , e2685, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "log_norm"
+literal "false"
+
+\end_inset
+
+H.M.
+ Hammouri, R.T.
+ Sabo, R.
+ Alsaadawi, K.A.
+ Kheirallah, Handling Skewed Data: A Comparison of Two Popular Methods.
+ Applied Sciences 
+\series bold
+10
+\series default
+, 6247, 2020.
 \end_layout
 
 \begin_layout Bibliography

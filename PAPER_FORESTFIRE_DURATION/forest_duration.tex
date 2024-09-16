@@ -283,10 +283,27 @@ that contain empty values in various attributes. This could happen,
 for example, if a value was not available at the time of entry. Those
 records in which the duration of the fire was zero were also deleted.
 Then, to create the exit category, the duration of the forest fire
-was converted into minutes. Subsequently, three distinct values were
-created depending on the logarithmic value of the duration in minutes
-of the forest fire. This value will be used as the target value in
-running the experiments. 
+was converted into minutes. In order to address highly skewed and
+non-normal distribution of the dependent variable (fire duration)
+we used the commonly applied method of natural log transformation
+for minutes. This allowed the variance stabilization of the dependent
+variable and transformed its distribution much closer to normal, allowing
+a better allowance for linear modeling and greatly reducing the impact
+of outliers\textbf{ }\citep{log_norm}. Subsequently, three distinct
+values were created depending on the logarithmic value of the duration
+in minutes of the forest fire: one value is used for short duration
+forest fires, one distinct class for forest fires of medium duration
+and one class for the forest fires with long duration.\textbf{ }This
+value will be used as the target value in running the experiments.
+The preprocessing steps are graphically illustrated in Figure \ref{fig:preSteps}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.4]{forest_diagram}
+\par\end{centering}
+\caption{The steps of the preprocessing that were applied on the original datasets.\label{fig:preSteps}}
+
+\end{figure}
 
 Having performed the previously mentioned preprocessing steps, the
 final datasets contain 25 features and the following information about
@@ -302,7 +319,7 @@ lands, cover crop, garbage dumps.
 \item Aerial means: helicopters, different aircrafts. 
 \end{enumerate}
 
-\subsection{The proposed algorithms}
+\subsection{The used machine learning methods}
 
 A number of machine learning techniques were used to efficiently find
 classes in the datasets of the previous subsection. These techniques
@@ -449,9 +466,13 @@ method.
 \item The column NAIVEBAYES denotes the application of the Naïve Bayes algorithm.
 \item The column LOGISTIC represents the application of the Logistic Regression
 algorithm.
-\item The column MLP denotes the application of a neural network with $H=$
-processing nodes. The network was trained with the method $ $ of
-the WEKA.
+\item The column MLP denotes the application of a neural network to the
+dataset.
+\item The column J48 denotes the application of the J48 method to the forest
+fire data.
+\item The column RANDOMFOREST denotes the usage of the Random Forest method
+to the data.
+\item The row AVERAGE denotes the average classification error for all datasets.
 \end{enumerate}
 \begin{table}[H]
 \caption{Experimental results using various machine learning models for 10
@@ -488,6 +509,11 @@ error as measured on the test set.\label{tab:experResults}}
 \hline 
 \end{tabular}
 \end{table}
+Judging from the experimental results it is evident that the Random
+Forest technique excellently outweighs the others along with the Logistic
+Regression technique. This observations is reinforced from  the box
+plot of Figure \ref{fig:boxPlot}. 
+
 \begin{figure}[H]
 \begin{centering}
 \includegraphics{boxplot}
@@ -495,6 +521,8 @@ error as measured on the test set.\label{tab:experResults}}
 \caption{Box plot for the used machine learning techniques. \label{fig:boxPlot}}
 
 \end{figure}
+The statistical comparison of the Random Forest with the other machine
+learning methods is depicted in Figure \ref{fig:statRandomForest}.
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.65]{statistic_models_random_forest}
@@ -503,22 +531,47 @@ error as measured on the test set.\label{tab:experResults}}
 machine learning methods.\label{fig:statRandomForest}}
 
 \end{figure}
-
+The results of the Kruskal-Wallis test showed a p-value less than
+0.05, leading to the rejection of the null hypothesis. This indicates
+that there are statistically significant differences in the error
+rates among the models. Based on these findings, the models do not
+exhibit uniform performance, with some performing better or worse
+than others. Specifically, the \textquotedbl RANDOMFOREST\textquotedbl{}
+model was compared to all other models and demonstrated superior performance. 
 
 \section{Conclusions\label{sec:Conclusions}}
 
-\textbf{1) Discover important features for predicting duration}
-
-\textbf{2) create rules for determination of categories}
-
-\textbf{3) using meteorological data }
-
-4) more machine learning methods
-
-5) parallel execution
-
-6) forecasting?
-
+A series of machine learning methods was applied on datasets involving
+forest fires for the Greece. These datasets covered a period of ten
+years, starting from 2014. These methods were obtained from the WEKA
+machine learning tool, which is freely available for any operating
+system. These methods cover a wide range of machine learning techniques
+from different domains. The purpose of this study was to identify
+the duration of forest fires and three cases of forest fires were
+studied in this research work: forest fires of limited duration, forest
+fires of medium duration and forest fires of long duration. Estimating
+the duration of a fire is an important factor, as it can be used to
+estimate the size of the impending disaster as well as the resources
+required to extinguish it. Most of the machine learning techniques
+used achieved significantly low error values for each year of experimental
+data. On average, these classification error values are in the range
+of 8-13\% with the Random Forest technique achieving the lowest value.
+The present work could be extended in the future in various research
+directions, such as: 
+\begin{enumerate}
+\item Incorporation of more machine learning methods from the relevant literature.
+\item Use feature selection or construction techniques from recent literature
+to identify the most important factors influencing the classification
+process.
+\item Usage of methods that create classification rules, in order to discover
+any hidden relationships between the data and the classes of the datasets.
+\item Usage of data that also includes meteorological data, in order to
+identify a possible correlation of the categories with the meteorological
+conditions that prevailed at the time of the fire.
+\item Parallel programming techniques may be incorporated to speed up the
+optimization process, such as MPI  \citep{MPI} or the OpenMP library
+\citep{OPENMP}.
+\end{enumerate}
 \vspace{6pt}
 
 
@@ -716,6 +769,10 @@ Model for Rapidly Assessing the Size of a Wildfire over Time, Fire
 \bibitem{fire_duration3}D.D. Xi, C.B. Dean, S.W. Taylor, Modeling
 the duration and size of wildfires using joint mixture models. Environmetrics
 \textbf{32}, e2685, 2021.
+
+\bibitem{log_norm}H.M. Hammouri, R.T. Sabo, R. Alsaadawi, K.A. Kheirallah,
+Handling Skewed Data: A Comparison of Two Popular Methods. Applied
+Sciences \textbf{10}, 6247, 2020.
 
 \bibitem{bayes_net1}Ben-Gal, I. (2008). Bayesian Networks. In Encyclopedia
 of Statistics in Quality and Reliability (eds F. Ruggeri, R.S. Kenett
@@ -1036,6 +1093,13 @@ analysis. Patient education and counseling \textbf{67}, pp. 21-31,
 \bibitem{weka_medical2}M.N. Amin, A. Habib, Comparison of different
 classification techniques using WEKA for hematological data. American
 Journal of Engineering Research \textbf{4}, pp. 55-61, 2015.
+
+\bibitem{MPI}Gropp, W.; Lusk, E.; Doss, N.; Skjellum, A. A high-performance,
+portable implementation of the MPI message passing interface standard.
+Parallel Comput. 1996, 22, 789--828.
+
+\bibitem{OPENMP}Chandra, R. Parallel Programming in OpenMP; Morgan
+Kaufmann: Cambridge, MA, USA, 2001.
 
 \end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
