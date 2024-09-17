@@ -224,11 +224,11 @@ End
 \begin_body
 
 \begin_layout Title
-Predict the duration of forestfires using machine learning methods
+Predict the duration of forest fires using machine learning methods
 \end_layout
 
 \begin_layout Title Citation
-Predict the duration of forestfires using machine learning methods
+Predict the duration of forest fires using machine learning methods
 \end_layout
 
 \begin_layout Author
@@ -4348,12 +4348,30 @@ noprefix "false"
 
 \end_inset
 
-, Random Forest consistently emerges as the best model based on error rates,
- recording lower errors in most years compared to the other machine learning
+, the BAYESNET model shows higher error rates in most years, with an exceptional
+ly high error in 2016, reaching 25.71%.
+ However, in other years, such as 2019 and 2023, its performance was quite
+ close to RANDOMFOREST, although the latter remains slightly better.
+ Although NAIVEBAYES performs relatively well in several years, it still
+ shows higher errors compared to RANDOMFOREST, especially during the 2020-2021
+ period, where NAIVEBAYES had significantly increased errors.
+ LOGISTIC records exceptionally low error rates in 2016, but remains consistentl
+y below RANDOMFOREST in most years.
+ An exception is in 2020, where a divergence is observed, with better performanc
+e for RANDOMFOREST.
+ MLP shows some fluctuations in errors, with significant improvement after
+ 2016.
+ Despite better performance in certain years, such as 2021, it remains generally
+ inferior compared to Random Forest.
+ J48 has fairly comparable error rates with RANDOMFOREST, especially after
+ 2018, but RANDOMFOREST consistently proves to be the most efficient model
+ in most years.
+ RANDOMFOREST consistently emerges as the best model based on error rates,
+ recording lower errors in most years compared to other machine learning
  models.
- Although other models, such as Logistic Regression and MLP, show strong
- performance in certain years, Random Forest maintains a more stable and
- reliable performance with fewer fluctuations.
+ Although other models, such as LOGISTIC and MLP, perform well in certain
+ years, RANDOMFOREST maintains a more stable and reliable performance with
+ fewer fluctuations.
 \end_layout
 
 \begin_layout Section
@@ -6461,10 +6479,13 @@ literal "false"
 
 \end_inset
 
-Breiman, L.
- (2001).
- Random forests.
- Machine learning, 45, 5-32.
+L.
+ Breiman, Random forests, Machine learning 
+\series bold
+45
+\series default
+, pp.
+ 5-32, 2001.
 \end_layout
 
 \begin_layout Bibliography
@@ -6476,7 +6497,12 @@ literal "false"
 \end_inset
 
 S.J.
- Rigatti, Random forest, Journal of Insurance Medicine, 47(1), 31-39, 2017.
+ Rigatti, Random forest, Journal of Insurance Medicine 
+\series bold
+47
+\series default
+, pp.
+ 31-39, 2017.
 \end_layout
 
 \begin_layout Bibliography

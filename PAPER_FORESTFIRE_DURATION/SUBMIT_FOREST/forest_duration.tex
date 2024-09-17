@@ -1,10 +1,11 @@
 %% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[journal,article,submit,pdftex,moreauthors]{mdpi}
+\documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 \usepackage[utf8]{inputenc}
 \usepackage{float}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{rotating}
 
 \makeatletter
 
@@ -299,7 +300,7 @@ The preprocessing steps are graphically illustrated in Figure \ref{fig:preSteps}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.4]{forest_diagram}
+\includegraphics[scale=0.65]{forest_diagram}
 \par\end{centering}
 \caption{The steps of the preprocessing that were applied on the original datasets.\label{fig:preSteps}}
 
@@ -316,7 +317,7 @@ the forest fires:
 lands, cover crop, garbage dumps.
 \item Personnel: Firefighters, volunteers, army, etc. 
 \item Vehicles: firefighting, tanks, etc.
-\item Aerial means: helicopters, different aircrafts. 
+\item Aerial means: helicopters and other aircrafts. 
 \end{enumerate}
 
 \subsection{The used machine learning methods}
@@ -521,6 +522,82 @@ plot of Figure \ref{fig:boxPlot}.
 \caption{Box plot for the used machine learning techniques. \label{fig:boxPlot}}
 
 \end{figure}
+Also the precision and recall measures for every dataset and for each
+method are presented in Table \ref{tab:Precision-and-recall}.
+
+\begin{table}[H]
+\begin{raggedright}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline 
+\begin{turn}{90}
+\end{turn} & \multicolumn{2}{l|}{\begin{turn}{90}
+{\scriptsize{}BAYES NET}
+\end{turn}} & \multicolumn{2}{l|}{\begin{turn}{90}
+{\scriptsize{}NAIVEBAYES}
+\end{turn}} & \multicolumn{2}{l|}{\begin{turn}{90}
+{\scriptsize{}LOGISTIC}
+\end{turn}} & \multicolumn{2}{l|}{\begin{turn}{90}
+{\scriptsize{}MLP}
+\end{turn}} & \multicolumn{2}{l|}{\begin{turn}{90}
+{\scriptsize{}J48}
+\end{turn}} & \multicolumn{2}{l|}{\begin{turn}{90}
+{\scriptsize{}FOREST}
+\end{turn}}\tabularnewline
+\hline 
+\hline 
+\begin{turn}{90}
+{\scriptsize{}YEAR}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}PRECISION}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}RECALL}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}PRECISION}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}RECALL}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}PRECISION}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}RECALL}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}PRECISION}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}RECALL}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}PRECISION}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}RECALL}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}PRECISION}
+\end{turn} & \begin{turn}{90}
+{\scriptsize{}RECALL}
+\end{turn}\tabularnewline
+\hline 
+{\scriptsize{}2014} & {\scriptsize{}0.889} & {\scriptsize{}0.886} & {\scriptsize{}0.851} & {\scriptsize{}0.871} & {\scriptsize{}0.89} & {\scriptsize{}0.902} & {\scriptsize{}0.87} & {\scriptsize{}0.886} & {\scriptsize{}0.888} & {\scriptsize{}0.90} & {\scriptsize{}0.898} & {\scriptsize{}0.906}\tabularnewline
+\hline 
+{\scriptsize{}2015} & {\scriptsize{}0.892} & {\scriptsize{}0.889} & {\scriptsize{}0.87} & {\scriptsize{}0.887} & {\scriptsize{}0.891} & {\scriptsize{}0.905} & {\scriptsize{}0.876} & {\scriptsize{}0.893} & {\scriptsize{}0.892} & {\scriptsize{}0.905} & {\scriptsize{}0.901} & {\scriptsize{}0.91}\tabularnewline
+\hline 
+{\scriptsize{}2016} & {\scriptsize{}0.959} & {\scriptsize{}0.743} & {\scriptsize{}0.959} & {\scriptsize{}0.87} & {\scriptsize{}0.96} & {\scriptsize{}0.966} & {\scriptsize{}0.955} & {\scriptsize{}0.961} & {\scriptsize{}0.959} & {\scriptsize{}0.963} & {\scriptsize{}0.968} & {\scriptsize{}0.97}\tabularnewline
+\hline 
+{\scriptsize{}2017} & {\scriptsize{}0.897} & {\scriptsize{}0.89} & {\scriptsize{}0.869} & {\scriptsize{}0.885} & {\scriptsize{}0.893} & {\scriptsize{}0.905} & {\scriptsize{}0.886} & {\scriptsize{}0.889} & {\scriptsize{}0.886} & {\scriptsize{}0.897} & {\scriptsize{}0.899} & {\scriptsize{}0.907}\tabularnewline
+\hline 
+{\scriptsize{}2018} & {\scriptsize{}0.897} & {\scriptsize{}0.888} & {\scriptsize{}0.879} & {\scriptsize{}0.895} & {\scriptsize{}0.894} & {\scriptsize{}0.909} & {\scriptsize{}0.89} & {\scriptsize{}0.905} & {\scriptsize{}0.894} & {\scriptsize{}0.907} & {\scriptsize{}0.905} & {\scriptsize{}0.914}\tabularnewline
+\hline 
+{\scriptsize{}2019} & {\scriptsize{}0.914} & {\scriptsize{}0.904} & {\scriptsize{}0.894} & {\scriptsize{}0.907} & {\scriptsize{}0.903} & {\scriptsize{}0.917} & {\scriptsize{}0.903} & {\scriptsize{}0.915} & {\scriptsize{}0.898} & {\scriptsize{}0.909} & {\scriptsize{}0.912} & {\scriptsize{}0.92}\tabularnewline
+\hline 
+{\scriptsize{}2020} & {\scriptsize{}0.929} & {\scriptsize{}0.82} & {\scriptsize{}0.923} & {\scriptsize{}0.933} & {\scriptsize{}0.937} & {\scriptsize{}0.945} & {\scriptsize{}0.933} & {\scriptsize{}0.94} & {\scriptsize{}0.931} & {\scriptsize{}0.939} & {\scriptsize{}0.94} & {\scriptsize{}0.945}\tabularnewline
+\hline 
+{\scriptsize{}2021} & {\scriptsize{}0.879} & {\scriptsize{}0.876} & {\scriptsize{}0.835} & {\scriptsize{}0.858} & {\scriptsize{}0.865} & {\scriptsize{}0.88} & {\scriptsize{}0.846} & {\scriptsize{}0.864} & {\scriptsize{}0.849} & {\scriptsize{}0.864} & {\scriptsize{}0.871} & {\scriptsize{}0.881}\tabularnewline
+\hline 
+{\scriptsize{}2022} & {\scriptsize{}0.91} & {\scriptsize{}0.897} & {\scriptsize{}0.889} & {\scriptsize{}0.904} & {\scriptsize{}0.893} & {\scriptsize{}0.91} & {\scriptsize{}0.891} & {\scriptsize{}0.905} & {\scriptsize{}0.896} & {\scriptsize{}0.91} & {\scriptsize{}0.9} & {\scriptsize{}0.911}\tabularnewline
+\hline 
+{\scriptsize{}2023} & {\scriptsize{}0.912} & {\scriptsize{}0.903} & {\scriptsize{}0.894} & {\scriptsize{}0.908} & {\scriptsize{}0.905} & {\scriptsize{}0.917} & {\scriptsize{}0.899} & {\scriptsize{}0.912} & {\scriptsize{}0.906} & {\scriptsize{}0.916} & {\scriptsize{}0.916} & {\scriptsize{}0.923}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{raggedright}
+\caption{Precision and recall for every machine learning method.\label{tab:Precision-and-recall}}
+\end{table}
+
 The statistical comparison of the Random Forest with the other machine
 learning methods is depicted in Figure \ref{fig:statRandomForest}.
 \begin{figure}[H]
@@ -531,13 +608,27 @@ learning methods is depicted in Figure \ref{fig:statRandomForest}.
 machine learning methods.\label{fig:statRandomForest}}
 
 \end{figure}
-The results of the Kruskal-Wallis test showed a p-value less than
-0.05, leading to the rejection of the null hypothesis. This indicates
-that there are statistically significant differences in the error
-rates among the models. Based on these findings, the models do not
-exhibit uniform performance, with some performing better or worse
-than others. Specifically, the \textquotedbl RANDOMFOREST\textquotedbl{}
-model was compared to all other models and demonstrated superior performance. 
+In the statistical visualization of Figure \ref{fig:statRandomForest},
+the BAYESNET model shows higher error rates in most years, with an
+exceptionally high error in 2016, reaching 25.71\%. However, in other
+years, such as 2019 and 2023, its performance was quite close to RANDOMFOREST,
+although the latter remains slightly better. Although NAIVEBAYES performs
+relatively well in several years, it still shows higher errors compared
+to RANDOMFOREST, especially during the 2020-2021 period, where NAIVEBAYES
+had significantly increased errors. LOGISTIC records exceptionally
+low error rates in 2016, but remains consistently below RANDOMFOREST
+in most years. An exception is in 2020, where a divergence is observed,
+with better performance for RANDOMFOREST. MLP shows some fluctuations
+in errors, with significant improvement after 2016. Despite better
+performance in certain years, such as 2021, it remains generally inferior
+compared to Random Forest. J48 has fairly comparable error rates with
+RANDOMFOREST, especially after 2018, but RANDOMFOREST consistently
+proves to be the most efficient model in most years. RANDOMFOREST
+consistently emerges as the best model based on error rates, recording
+lower errors in most years compared to other machine learning models.
+Although other models, such as LOGISTIC and MLP, perform well in certain
+years, RANDOMFOREST maintains a more stable and reliable performance
+with fewer fluctuations.
 
 \section{Conclusions\label{sec:Conclusions}}
 
@@ -1026,11 +1117,11 @@ tree algorithm. In Advanced Intelligent Systems for Sustainable Development
 (AI2SD’2019) Volume 4-Advanced Intelligent Systems for Applied Computing
 Sciences (pp. 363-370). Springer International Publishing, 2020.
 
-\bibitem{random_forest1}Breiman, L. (2001). Random forests. Machine
-learning, 45, 5-32.
+\bibitem{random_forest1}L. Breiman, Random forests, Machine learning
+\textbf{45}, pp. 5-32, 2001.
 
 \bibitem{random_forest2}S.J. Rigatti, Random forest, Journal of Insurance
-Medicine, 47(1), 31-39, 2017.
+Medicine \textbf{47}, pp. 31-39, 2017.
 
 \bibitem{random_forest_remote}M. Pal, Random forest classifier for
 remote sensing classification. International Journal of Remote Sensing

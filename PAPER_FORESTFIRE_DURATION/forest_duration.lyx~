@@ -2540,7 +2540,7 @@ status open
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 BAYES NET
 \end_layout
 
@@ -2560,7 +2560,7 @@ BAYES NET
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 NAIVEBAYES
 \end_layout
 
@@ -2580,7 +2580,7 @@ NAIVEBAYES
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 LOGISTIC
 \end_layout
 
@@ -2600,7 +2600,7 @@ LOGISTIC
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 MLP
 \end_layout
 
@@ -2620,7 +2620,7 @@ MLP
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 J48
 \end_layout
 
@@ -2640,7 +2640,7 @@ J48
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 FOREST
 \end_layout
 
@@ -2662,7 +2662,7 @@ FOREST
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 YEAR
 \end_layout
 
@@ -2673,7 +2673,7 @@ YEAR
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 PRECISION
 \end_layout
 
@@ -2684,7 +2684,7 @@ PRECISION
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 RECALL
 \end_layout
 
@@ -2695,7 +2695,7 @@ RECALL
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 PRECISION
 \end_layout
 
@@ -2706,7 +2706,7 @@ PRECISION
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 RECALL
 \end_layout
 
@@ -2717,7 +2717,7 @@ RECALL
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 PRECISION
 \end_layout
 
@@ -2728,7 +2728,7 @@ PRECISION
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 RECALL
 \end_layout
 
@@ -2739,7 +2739,7 @@ RECALL
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 PRECISION
 \end_layout
 
@@ -2750,7 +2750,7 @@ PRECISION
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 RECALL
 \end_layout
 
@@ -2761,7 +2761,7 @@ RECALL
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 PRECISION
 \end_layout
 
@@ -2772,7 +2772,7 @@ PRECISION
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 RECALL
 \end_layout
 
@@ -2783,7 +2783,7 @@ RECALL
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 PRECISION
 \end_layout
 
@@ -2794,7 +2794,7 @@ PRECISION
 
 \begin_layout Plain Layout
 
-\size footnotesize
+\size scriptsize
 RECALL
 \end_layout
 
@@ -2806,6 +2806,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2014
 \end_layout
 
@@ -2815,6 +2817,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.889
 \end_layout
 
@@ -2824,6 +2828,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.886
 \end_layout
 
@@ -2833,6 +2839,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.851
 \end_layout
 
@@ -2842,6 +2850,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.871
 \end_layout
 
@@ -2851,6 +2861,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.89
 \end_layout
 
@@ -2860,6 +2872,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.902
 \end_layout
 
@@ -2869,6 +2883,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.87
 \end_layout
 
@@ -2878,6 +2894,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.886
 \end_layout
 
@@ -2887,6 +2905,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.888
 \end_layout
 
@@ -2896,6 +2916,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.90
 \end_layout
 
@@ -2905,6 +2927,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.898
 \end_layout
 
@@ -2914,6 +2938,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.906
 \end_layout
 
@@ -2925,6 +2951,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2015
 \end_layout
 
@@ -2934,6 +2962,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.892
 \end_layout
 
@@ -2943,6 +2973,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.889
 \end_layout
 
@@ -2952,6 +2984,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.87
 \end_layout
 
@@ -2961,6 +2995,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.887
 \end_layout
 
@@ -2970,6 +3006,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.891
 \end_layout
 
@@ -2979,6 +3017,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.905
 \end_layout
 
@@ -2988,6 +3028,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.876
 \end_layout
 
@@ -2997,6 +3039,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.893
 \end_layout
 
@@ -3006,6 +3050,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.892
 \end_layout
 
@@ -3015,6 +3061,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.905
 \end_layout
 
@@ -3024,6 +3072,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.901
 \end_layout
 
@@ -3033,6 +3083,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.91
 \end_layout
 
@@ -3044,6 +3096,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2016
 \end_layout
 
@@ -3053,6 +3107,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.959
 \end_layout
 
@@ -3062,6 +3118,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.743
 \end_layout
 
@@ -3071,6 +3129,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.959
 \end_layout
 
@@ -3080,6 +3140,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.87
 \end_layout
 
@@ -3089,6 +3151,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.96
 \end_layout
 
@@ -3098,6 +3162,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.966
 \end_layout
 
@@ -3107,6 +3173,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.955
 \end_layout
 
@@ -3116,6 +3184,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.961
 \end_layout
 
@@ -3125,6 +3195,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.959
 \end_layout
 
@@ -3134,6 +3206,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.963
 \end_layout
 
@@ -3143,6 +3217,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.968
 \end_layout
 
@@ -3152,6 +3228,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.97
 \end_layout
 
@@ -3163,6 +3241,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2017
 \end_layout
 
@@ -3172,6 +3252,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.897
 \end_layout
 
@@ -3181,6 +3263,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.89
 \end_layout
 
@@ -3190,6 +3274,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.869
 \end_layout
 
@@ -3199,6 +3285,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.885
 \end_layout
 
@@ -3208,6 +3296,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.893
 \end_layout
 
@@ -3217,6 +3307,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.905
 \end_layout
 
@@ -3226,6 +3318,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.886
 \end_layout
 
@@ -3235,6 +3329,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.889
 \end_layout
 
@@ -3244,6 +3340,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.886
 \end_layout
 
@@ -3253,6 +3351,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.897
 \end_layout
 
@@ -3262,6 +3362,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.899
 \end_layout
 
@@ -3271,6 +3373,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.907
 \end_layout
 
@@ -3282,6 +3386,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2018
 \end_layout
 
@@ -3291,6 +3397,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.897
 \end_layout
 
@@ -3300,6 +3408,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.888
 \end_layout
 
@@ -3309,6 +3419,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.879
 \end_layout
 
@@ -3318,6 +3430,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.895
 \end_layout
 
@@ -3327,6 +3441,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.894
 \end_layout
 
@@ -3336,6 +3452,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.909
 \end_layout
 
@@ -3345,6 +3463,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.89
 \end_layout
 
@@ -3354,6 +3474,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.905
 \end_layout
 
@@ -3363,6 +3485,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.894
 \end_layout
 
@@ -3372,6 +3496,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.907
 \end_layout
 
@@ -3381,6 +3507,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.905
 \end_layout
 
@@ -3390,6 +3518,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.914
 \end_layout
 
@@ -3401,6 +3531,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2019
 \end_layout
 
@@ -3410,6 +3542,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.914
 \end_layout
 
@@ -3419,6 +3553,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.904
 \end_layout
 
@@ -3428,6 +3564,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.894
 \end_layout
 
@@ -3437,6 +3575,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.907
 \end_layout
 
@@ -3446,6 +3586,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.903
 \end_layout
 
@@ -3455,6 +3597,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.917
 \end_layout
 
@@ -3464,6 +3608,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.903
 \end_layout
 
@@ -3473,6 +3619,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.915
 \end_layout
 
@@ -3482,6 +3630,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.898
 \end_layout
 
@@ -3491,6 +3641,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.909
 \end_layout
 
@@ -3500,6 +3652,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.912
 \end_layout
 
@@ -3509,6 +3663,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.92
 \end_layout
 
@@ -3520,6 +3676,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2020
 \end_layout
 
@@ -3529,6 +3687,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.929
 \end_layout
 
@@ -3538,6 +3698,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.82
 \end_layout
 
@@ -3547,6 +3709,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.923
 \end_layout
 
@@ -3556,6 +3720,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.933
 \end_layout
 
@@ -3565,6 +3731,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.937
 \end_layout
 
@@ -3574,6 +3742,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.945
 \end_layout
 
@@ -3583,6 +3753,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.933
 \end_layout
 
@@ -3592,6 +3764,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.94
 \end_layout
 
@@ -3601,6 +3775,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.931
 \end_layout
 
@@ -3610,6 +3786,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.939
 \end_layout
 
@@ -3619,6 +3797,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.94
 \end_layout
 
@@ -3628,6 +3808,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.945
 \end_layout
 
@@ -3639,6 +3821,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2021
 \end_layout
 
@@ -3648,6 +3832,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.879
 \end_layout
 
@@ -3657,6 +3843,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.876
 \end_layout
 
@@ -3666,6 +3854,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.835
 \end_layout
 
@@ -3675,6 +3865,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.858
 \end_layout
 
@@ -3684,6 +3876,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.865
 \end_layout
 
@@ -3693,6 +3887,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.88
 \end_layout
 
@@ -3702,6 +3898,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.846
 \end_layout
 
@@ -3711,6 +3909,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.864
 \end_layout
 
@@ -3720,6 +3920,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.849
 \end_layout
 
@@ -3729,6 +3931,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.864
 \end_layout
 
@@ -3738,6 +3942,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.871
 \end_layout
 
@@ -3747,6 +3953,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.881
 \end_layout
 
@@ -3758,6 +3966,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2022
 \end_layout
 
@@ -3767,6 +3977,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.91
 \end_layout
 
@@ -3776,6 +3988,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.897
 \end_layout
 
@@ -3785,6 +3999,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.889
 \end_layout
 
@@ -3794,6 +4010,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.904
 \end_layout
 
@@ -3803,6 +4021,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.893
 \end_layout
 
@@ -3812,6 +4032,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.91
 \end_layout
 
@@ -3821,6 +4043,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.891
 \end_layout
 
@@ -3830,6 +4054,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.905
 \end_layout
 
@@ -3839,6 +4065,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.896
 \end_layout
 
@@ -3848,6 +4076,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.91
 \end_layout
 
@@ -3857,6 +4087,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.9
 \end_layout
 
@@ -3866,6 +4098,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.911
 \end_layout
 
@@ -3877,6 +4111,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2023
 \end_layout
 
@@ -3886,6 +4122,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.912
 \end_layout
 
@@ -3895,6 +4133,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.903
 \end_layout
 
@@ -3904,6 +4144,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.894
 \end_layout
 
@@ -3913,6 +4155,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.908
 \end_layout
 
@@ -3922,6 +4166,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.905
 \end_layout
 
@@ -3931,6 +4177,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.917
 \end_layout
 
@@ -3940,6 +4188,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.899
 \end_layout
 
@@ -3949,6 +4199,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.912
 \end_layout
 
@@ -3958,6 +4210,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.906
 \end_layout
 
@@ -3967,6 +4221,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.916
 \end_layout
 
@@ -3976,6 +4232,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.916
 \end_layout
 
@@ -3985,6 +4243,8 @@ RECALL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 0.923
 \end_layout
 
@@ -4088,12 +4348,30 @@ noprefix "false"
 
 \end_inset
 
-, Random Forest consistently emerges as the best model based on error rates,
- recording lower errors in most years compared to the other machine learning
+, the BAYESNET model shows higher error rates in most years, with an exceptional
+ly high error in 2016, reaching 25.71%.
+ However, in other years, such as 2019 and 2023, its performance was quite
+ close to RANDOMFOREST, although the latter remains slightly better.
+ Although NAIVEBAYES performs relatively well in several years, it still
+ shows higher errors compared to RANDOMFOREST, especially during the 2020-2021
+ period, where NAIVEBAYES had significantly increased errors.
+ LOGISTIC records exceptionally low error rates in 2016, but remains consistentl
+y below RANDOMFOREST in most years.
+ An exception is in 2020, where a divergence is observed, with better performanc
+e for RANDOMFOREST.
+ MLP shows some fluctuations in errors, with significant improvement after
+ 2016.
+ Despite better performance in certain years, such as 2021, it remains generally
+ inferior compared to Random Forest.
+ J48 has fairly comparable error rates with RANDOMFOREST, especially after
+ 2018, but RANDOMFOREST consistently proves to be the most efficient model
+ in most years.
+ RANDOMFOREST consistently emerges as the best model based on error rates,
+ recording lower errors in most years compared to other machine learning
  models.
- Although other models, such as Logistic Regression and MLP, show strong
- performance in certain years, Random Forest maintains a more stable and
- reliable performance with fewer fluctuations.
+ Although other models, such as LOGISTIC and MLP, perform well in certain
+ years, RANDOMFOREST maintains a more stable and reliable performance with
+ fewer fluctuations.
 \end_layout
 
 \begin_layout Section
@@ -6201,10 +6479,13 @@ literal "false"
 
 \end_inset
 
-Breiman, L.
- (2001).
- Random forests.
- Machine learning, 45, 5-32.
+L.
+ Breiman, Random forests, Machine learning 
+\series bold
+45
+\series default
+, pp.
+ 5-32, 2001.
 \end_layout
 
 \begin_layout Bibliography
@@ -6216,7 +6497,12 @@ literal "false"
 \end_inset
 
 S.J.
- Rigatti, Random forest, Journal of Insurance Medicine, 47(1), 31-39, 2017.
+ Rigatti, Random forest, Journal of Insurance Medicine 
+\series bold
+47
+\series default
+, pp.
+ 31-39, 2017.
 \end_layout
 
 \begin_layout Bibliography
