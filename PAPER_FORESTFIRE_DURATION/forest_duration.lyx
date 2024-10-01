@@ -679,6 +679,7 @@ noprefix "false"
 
  some conclusions are discussed accompanied by some guidelines for future
  research.
+ 
 \end_layout
 
 \begin_layout Section
@@ -4299,7 +4300,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6820,6 +6821,20 @@ literal "false"
 
 Chandra, R.
  Parallel Programming in OpenMP; Morgan Kaufmann: Cambridge, MA, USA, 2001.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "test"
+literal "false"
+
+\end_inset
+
+Tsoulos, I., Gavrilis, D., & Glavas, E.
+ (2008).
+ Neural network construction and training using grammatical evolution.
+ Neurocomputing, 72(1-3), 269-277.
 \end_layout
 
 \begin_layout Standard
