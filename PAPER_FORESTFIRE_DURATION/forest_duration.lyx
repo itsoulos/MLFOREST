@@ -606,7 +606,92 @@ This research work focuses on the use of machine learning techniques to
  missing records, the data was digitized and one of three categories was
  assigned to every pattern: fires of short duration, fires of medium duration
  and fires of long duration.
- The prediction of the duration of a fire is important as in this way, on
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:greeceArea"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the burned areas in Greece per year for the last 10 years, according
+ to the Global Wildfire Information System (GWIS).
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename mdgreek.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Burned area in Greece for the last ten years.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:greeceArea"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Farid et al.
+ pointed out the vulnerability of the Greek ecosystem (pine forest), to
+ extent forest fires, along with other Mediterranean countries, such as
+ Spain, Portugal, Italy and France 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "faridFire"
+literal "false"
+
+\end_inset
+
+.
+ The fires in the Mediterranean region have become very intense, and dangerous,
+ with scientists reporting that we have: a sixth generation mega fire clearly
+ linked to global change.
+ This new type of fire broke out, for the first time in Portugal, and Spain
+ in 2017, with over 120 deaths, and the next year in Greece, with 104 deaths.
+ The common characteristics of the new type of fire are: extreme, uncontrollable
+, lethal as indicated in the WWF report of 2019, available from 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://awsassets.panda.org/downloads/wwf__the_mediterranean_burns_2019_eng_final.pd
+f
+\end_layout
+
+\end_inset
+
+.
+ In order to be better prepared from fire hazards, this paper will estimate
+ better forest fire management, through the use of machine learning methods.
+ 
+\series bold
+The prediction of the duration of a fire is important as in this way, on
  the one hand, an estimate can be made of the expected damage that will
  be caused in the area, and on the other, the human resources required to
  extinguish the fire can be calculated.
@@ -717,52 +802,44 @@ https://www.fireservice.gr/en_US/synola-dedomenon
 
 \end_inset
 
-(accessed on 14 September 2024).
+(accessed on 2 October 2024).
  The data was obtained for the years 2014-2023 and data preprocessing techniques
  were applied before inputting the data into machine learning models.
 \end_layout
 
 \begin_layout Standard
-The initial datasets contain information in both numerical and alphanumeric
- form, such as the area in which the forest fire occurred or the fire station
- that extinguished it.
- Therefore, the first step in preprocessing the data was to digitize the
- columns that contained numerical information and replace them with a discrete
- integer.
- The next important step in the preprocessing of the original data is to
- delete the records that contain empty values in various attributes.
- This could happen, for example, if a value was not available at the time
- of entry.
- Those records in which the duration of the fire was zero were also deleted.
- Then, to create the exit category, the duration of the forest fire was
- converted into minutes.
- In order to address highly skewed and non-normal distribution of the dependent
- variable (fire duration) we used the commonly applied method of natural
- log transformation for minutes.
- This allowed the variance stabilization of the dependent variable and transform
-ed its distribution much closer to normal, allowing a better allowance for
- linear modeling and greatly reducing the impact of outliers
-\series bold
- 
-\series default
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "log_norm"
-literal "false"
-
-\end_inset
-
-.
- Subsequently, three distinct values were created depending on the logarithmic
- value of the duration in minutes of the forest fire: one value is used
- for short duration forest fires, one distinct class for forest fires of
- medium duration and one class for the forest fires with long duration.
-
-\series bold
- 
-\series default
-This value will be used as the target value in running the experiments.
+The initial datasets contained both numerical and alphanumeric information.
+ For example, they included data on the area where the forest fire occurred,
+ as well as information about the fire station that participated in the
+ suppression efforts.
+ Therefore, the first step in data preprocessing was the digitization of
+ the columns containing alphanumeric data, specifically those with numerical
+ information.
+ This involved replacing categorical data with discrete integer values,
+ enabling their use by machine learning algorithms that require numerical
+ input.
+ The next crucial step in data preprocessing involved handling missing values.
+ Specifically, records that contained missing values in important features,
+ such as climatic data or other relevant variables, were removed from the
+ dataset.
+ This typically occurred when a value was unavailable at the time of recording,
+ which could lead to biased or unreliable results.
+ Additionally, records with a fire duration of zero were excluded, as they
+ were considered unrealistic and inappropriate for analysis.
+ To define the output category, the duration of the forest fire was converted
+ from hours or other time units into minutes, providing greater precision
+ in classification.
+ Subsequently, three distinct categories were created based on the logarithmic
+ value of the fire duration in minutes.
+ This logarithmic transformation allowed for better management of the large
+ variations in fire durations, ensuring that both shorter and longer fires
+ were appropriately considered without overemphasizing extremely large values.
+ The three resulting categories were used as target values for the execution
+ of experiments, enabling the classification of forest fires based on their
+ duration.
+ In this way, the data were adequately prepared to be analyzed using machine
+ learning methods, ultimately achieving greater accuracy in predicting the
+ duration of forest fires.
  The preprocessing steps are graphically illustrated in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -858,6 +935,66 @@ Vehicles: firefighting, tanks, etc.
 \begin_layout Enumerate
 Aerial means: helicopters and other aircrafts.
  
+\end_layout
+
+\begin_layout Standard
+A schematic representation of the used dataset is outline in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:theUsedDataset"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename forest_dataset.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The used dataset after the preprocessing steps.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:theUsedDataset"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1567,7 +1704,7 @@ The row AVERAGE denotes the average classification error for all datasets.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2506,7 +2643,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align left
@@ -4339,7 +4476,10 @@ name "fig:statRandomForest"
 
 \end_inset
 
-In the statistical visualization of Figure 
+ The Kruskal Wallis test was used because we had many groups to compare,
+ specifically six different tree counts, making it necessary to use a test
+ that could compare more than two groups simultaneously.
+ In the statistical visualization of Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:statRandomForest"
@@ -6161,6 +6301,33 @@ Z.
  on Aerial Imagery," 2018 Chinese Automation Congress (CAC), Xi'an, China,
  2018, pp.
  2206-2211, doi: 10.1109/CAC.2018.8623473.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "faridFire"
+literal "false"
+
+\end_inset
+
+A.
+ Farid, M.K.
+ Alam, V.S.N.S.
+ Goli, I.D.
+ Akin, T.
+ Akinleye, X.
+ Chen, Q.
+ Cheng, P.
+ Cleall, S.
+ Cuomo, V.
+ Foresta et al, A Review of the Occurrence and Causes for Wildfires and
+ Their Impacts on the Geoenvironment, Fire 
+\series bold
+7
+\series default
+, 295, 2024.
 \end_layout
 
 \begin_layout Bibliography
