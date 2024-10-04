@@ -5418,7 +5418,7 @@ noprefix "false"
 \begin_layout Standard
 In addition, to validate the experimental results, another comparison was
  made in which the Random Forest method participated as well as machine
- learning models, for the training of which the Optimus optimization software
+ learning models, for the training of which the OPTIMUS optimization software
  was used.
  This software is freely available from 
 \begin_inset Flex URL
@@ -5507,7 +5507,7 @@ RANDOM FOREST
 \begin_layout Plain Layout
 
 \series bold
-MLP_BFGS
+MLP10_BFGS
 \end_layout
 
 \end_inset
@@ -5518,7 +5518,7 @@ MLP_BFGS
 \begin_layout Plain Layout
 
 \series bold
-MLP_LBFGS
+MLP10_LBFGS
 \end_layout
 
 \end_inset
@@ -5529,7 +5529,7 @@ MLP_LBFGS
 \begin_layout Plain Layout
 
 \series bold
-RBF
+RBF10
 \end_layout
 
 \end_inset
@@ -6080,7 +6080,7 @@ The column RANDOM FOREST denotes the results with the method Random Forest
 \end_layout
 
 \begin_layout Enumerate
-The column MLP BFGS stands for the results obtained by a artificial neural
+The column MLP10 BFGS stands for the results obtained by a artificial neural
  network trained by a BFGS optimization method as modified by Powell 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6094,7 +6094,7 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
-The column MLP LBFGS represents the results obtained by a neural network
+The column MLP10 LBFGS represents the results obtained by a neural network
  with 10 processing nodes that was trained using the Limited Memory BFGS
  optimization method 
 \begin_inset CommandInset citation
@@ -6108,7 +6108,7 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
-The column RBF denotes the results produced by the training of an Radial
+The column RBF10 denotes the results produced by the training of an Radial
  Basis Function (RBF) 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -6118,6 +6118,89 @@ literal "false"
 \end_inset
 
  network with 10 processing nodes.
+\end_layout
+
+\begin_layout Standard
+Also, a statistical comparison for the previously presented results is outlined
+ in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statMlp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename KW2.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison for the methods: MLP, RBF and Random Forest used
+ to predict the duration of fires.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statMlp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+In Table [xxx], we observe that the RBF10 model generally exhibits higher
+ error rates compared to the other models, with greater variability from
+ year to year.
+ Its highest error occurs in 2021 at 18.17%, while its lowest is in 2016
+ at 7.25%.
+ The MLP10-BFGS model, although showing some fluctuations, is more stable
+ than RBF10 and has lower error rates in most years.
+ Its lowest error is recorded in 2016 at 4.36%, while the highest is in 2021
+ at 14.12%.
+ The MLP10-LBFGS model generally performs better than MLP10-BFGS, with slightly
+ lower error rates in most years.
+ Its lowest error is 3.61% in 2016, while the highest is in 2021 at 12.71%.
+ Finally, the Random Forest model shows the best overall performance, with
+ the lowest error recorded in 2016 (3%) and the highest in 2021 (11.92%).
+ Overall, Random Forest consistently maintains lower error rates compared
+ to the other models in nearly all years.
+ Comparing the models using the t-test (Figure [xxx]), the statistical analysis
+ shows that the differences between the models are statistically significant,
+ especially when comparing RBF10, MLP10-BFGS, and MLP10-LBFGS to Random
+ Forest.
+ The p-value is lower than the specified threshold (p < 0.05), confirming
+ that Random Forest statistically outperforms the other models.
 \end_layout
 
 \begin_layout Section
