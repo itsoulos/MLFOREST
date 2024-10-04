@@ -596,6 +596,103 @@ literal "false"
 \end_inset
 
  for forest fire detection.
+ 
+\series bold
+Also, Jain et al.
+ underlines that the field of ML has undergone an explosion of new algorithmic
+ advances in recent years and is deeply connected to the broader field of
+ artificial intelligence (AI) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cdnReview"
+literal "false"
+
+\end_inset
+
+.
+ From this research paper the diagram of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mlWildfire"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ was obtained to outline the incorporation of machine learning methods in
+ wildfire management.
+ ML models, a subset of artificial intelligence, harness the power of data
+ and algorithms to learn from past experiences 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doganBirant"
+literal "false"
+
+\end_inset
+
+.
+ In the context of wildfire management, these models are invaluable by analyzing
+ historical data and leveraging it to create predictive models capable of
+ forecasting the spread of future fires.
+ Although more complex than their statistical and physical counterparts,
+ these models stand out for their ability to incorporate a broad array of
+ variables.
+ Understanding the requirements of ML models is crucial, particularly in
+ terms of the variables they depend on for accurate predictions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singhEtAl"
+literal "false"
+
+\end_inset
+
+.
+\series default
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename machine_learning_forest.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Machine learning techniques used in wildfire management.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mlWildfire"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -676,7 +773,7 @@ literal "false"
  The common characteristics of the new type of fire are: extreme, uncontrollable
 , lethal as indicated in the WWF report of 2019, available from 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -689,9 +786,7 @@ f
 .
  In order to be better prepared from fire hazards, this paper will estimate
  better forest fire management, through the use of machine learning methods.
- 
-\series bold
-The prediction of the duration of a fire is important as in this way, on
+ The prediction of the duration of a fire is important as in this way, on
  the one hand, an estimate can be made of the expected damage that will
  be caused in the area, and on the other, the human resources required to
  extinguish the fire can be calculated.
@@ -805,6 +900,13 @@ https://www.fireservice.gr/en_US/synola-dedomenon
 (accessed on 2 October 2024).
  The data was obtained for the years 2014-2023 and data preprocessing techniques
  were applied before inputting the data into machine learning models.
+ The data used for this paper, concerns the strengthening of the European
+ transparency legislation 2013/37/EE.
+ Therefore, the data are neither type nor location biased, and concern all
+ fires in the Greek (Hellenic) area.
+ The information provided from the Hellenic Fire Service, are easily accessible,
+ allow for analysis, updated, accurate, and includes all participating parties.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -6179,9 +6281,18 @@ name "fig:statMlp"
 
 \end_inset
 
-In Table [xxx], we observe that the RBF10 model generally exhibits higher
- error rates compared to the other models, with greater variability from
- year to year.
+In Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:randomVsML"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we observe that the RBF10 model generally exhibits higher error rates
+ compared to the other models, with greater variability from year to year.
  Its highest error occurs in 2021 at 18.17%, while its lowest is in 2016
  at 7.25%.
  The MLP10-BFGS model, although showing some fluctuations, is more stable
@@ -6195,10 +6306,19 @@ In Table [xxx], we observe that the RBF10 model generally exhibits higher
  the lowest error recorded in 2016 (3%) and the highest in 2021 (11.92%).
  Overall, Random Forest consistently maintains lower error rates compared
  to the other models in nearly all years.
- Comparing the models using the t-test (Figure [xxx]), the statistical analysis
- shows that the differences between the models are statistically significant,
- especially when comparing RBF10, MLP10-BFGS, and MLP10-LBFGS to Random
- Forest.
+ Comparing the models using the t-test (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statMlp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), the statistical analysis shows that the differences between the models
+ are statistically significant, especially when comparing RBF10, MLP10-BFGS,
+ and MLP10-LBFGS to Random Forest.
  The p-value is lower than the specified threshold (p < 0.05), confirming
  that Random Forest statistically outperforms the other models.
 \end_layout
@@ -7089,6 +7209,58 @@ Z.
  on Aerial Imagery," 2018 Chinese Automation Congress (CAC), Xi'an, China,
  2018, pp.
  2206-2211, doi: 10.1109/CAC.2018.8623473.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cdnReview"
+literal "false"
+
+\end_inset
+
+Jain, P., Coogan, S.
+ C., Subramanian, S.
+ G., Crowley, M., Taylor, S., & Flannigan, M.
+ D.
+ (2020).
+ A review of machine learning applications in wildfire science and management.
+ Environmental Reviews, 28(4), 478-505.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "doganBirant"
+literal "false"
+
+\end_inset
+
+Dogan, A., & Birant, D.
+ (2021).
+ Machine learning and data mining in manufacturing.
+ Expert Systems with Applications, 166, 114060.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "singhEtAl"
+literal "false"
+
+\end_inset
+
+Singh, H., Ang, LM., Lewis, T.
+ et al.
+ Trending and emerging prospects of physics-based and ML-based wildfire
+ spread models: a comprehensive review.
+ J.
+ For.
+ Res.
+ 35, 135 (2024).
 \end_layout
 
 \begin_layout Bibliography
