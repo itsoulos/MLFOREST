@@ -819,6 +819,12 @@ literal "false"
 
  the application of joint mixture models to model the duration and the size
  of wildfires.
+ In this work, a number of machine learning models were used, which have
+ been successfully tested on a wide range of problems in the modern literature.
+ The purpose of these models is the satisfactory separation of the categories
+ of the problem through stochastic techniques that adjust the parameters
+ of the above models.
+ 
 \end_layout
 
 \begin_layout Standard

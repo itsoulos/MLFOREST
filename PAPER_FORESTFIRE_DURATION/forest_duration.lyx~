@@ -596,9 +596,7 @@ literal "false"
 \end_inset
 
  for forest fire detection.
- 
-\series bold
-Also, Jain et al.
+ Also, Jain et al.
  underlines that the field of ML has undergone an explosion of new algorithmic
  advances in recent years and is deeply connected to the broader field of
  artificial intelligence (AI) 
@@ -648,8 +646,6 @@ literal "false"
 \end_inset
 
 .
-\series default
-
 \begin_inset Float figure
 placement H
 wide false
@@ -6332,6 +6328,15 @@ name "sec:Conclusions"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In this work, a number of machine learning models were used, which have
+ been successfully tested on a wide range of problems in the modern literature.
+ The purpose of these models is the satisfactory separation of the categories
+ of the problem through stochastic techniques that adjust the parameters
+ of the above models.
+ 
 \end_layout
 
 \begin_layout Standard
