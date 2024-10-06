@@ -828,6 +828,132 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+In this paper we review the ML applications in forest fires management.
+ Our main overall objective is to improve brand awareness of ML methods
+ among fire researchers and managers, and illustrate the open data that
+ Hellenic Fire Services provide.
+ Besides that, the current state - of - the - art method in forest fire
+ duration, added benefit in the decision making regarding the fire fighting
+ resources, for the firefighters.
+ The US Forest management, underlines the importance of predictive services,
+ that gives information to the fire managers in order to anticipate and
+ determine the need in resources, such as: firefighters, engines, airplane,
+ e.t.c.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "usFire"
+literal "false"
+
+\end_inset
+
+ Also, the European State Forest Association, addressing the challenge of
+ forest fires requires a concerted effort that combines scientific research,
+ practical management strategies, and strong community engagement 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "euFire"
+literal "false"
+
+\end_inset
+
+.
+ Therefore, technology has become a valuable ally for the environmental
+ sciences.
+ On that, recent reviews demonstrate the increase, in the last ten years,
+ in the application of ML models in the environmental sciences 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KarpatheFire"
+literal "false"
+
+\end_inset
+
+ and forest ecology 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "LiuFire"
+literal "false"
+
+\end_inset
+
+.
+ The Canadian specialist in fire science, Jain,.
+ also points out that for wildfire management, it is crucial a better predicting
+ way.
+ Consequently, there has been a growing interest in the use of machine learning
+ (ML) methodologies in wildfire science and management in recent years 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "JainFire"
+literal "false"
+
+\end_inset
+
+ Forest fires & the management is a unique science field, with six domains
+ problem, according to Jain et al: Fire detection, fuels characterization,
+ and mapping.
+ Climate change, fire weather.
+ Fire susceptibility, occurrence, and risk.
+ Fire behavior prediction.
+ Fire effects.
+ Fire management.
+ In our paper, we are focusing on fire management, thus there appears to
+ be few studies in this domain problem, according to Jain et al.
+ Finley showed that Fire management is a type of risk management that aims
+ to maximize fire benefits while minimizing costs and losses 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "FinneyFire"
+literal "false"
+
+\end_inset
+
+.
+ Fire management decisions are crucial on a variety of scales, including
+ long-term strategic decisions about resource procurement and location control
+ in large regions, medium-term tactical decisions about resource acquisition,
+ relocation, or release during the fire season, and short-term real-time
+ operational decisions regarding resource deployment and usage on specific
+ events 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "JainFire"
+literal "false"
+
+\end_inset
+
+.
+ Xiao indicates that fire Management groups struggle to effectively respond
+ in a limited amount of time.
+ It would be wise to keep an eye out for potential large fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "XiaoFire"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+This paper presents a fast-decision model for predicting the duration of
+ ongoing fires.
+ As a result, this review will help practitioners and researchers in the
+ wildfire community who are interested in using machine learning techniques
+ by offering guidance and information.
+ It will also give ML researchers the chance to find potential uses in the
+ field of wildfire science and management.
+ 
+\end_layout
+
+\begin_layout Standard
 The rest of this article is divided as follows: in section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -936,12 +1062,33 @@ The initial datasets contained both numerical and alphanumeric information.
  Subsequently, three distinct categories were created based on the logarithmic
  value of the fire duration in minutes.
  This logarithmic transformation allowed for better management of the large
- variations in fire durations, ensuring that both shorter and longer fires
+ variations in fire duration, ensuring that both shorter and longer fires
  were appropriately considered without overemphasizing extremely large values.
  The three resulting categories were used as target values for the execution
  of experiments, enabling the classification of forest fires based on their
  duration.
- In this way, the data were adequately prepared to be analyzed using machine
+
+\series bold
+ 
+\series default
+In the present work and for the Greek data on forest fires, the following
+ fire classification has been used 
+\end_layout
+
+\begin_layout Enumerate
+Up to 6 hours is considered to be a fire of short duration 
+\end_layout
+
+\begin_layout Enumerate
+Up to 2 days is a forest fire of medium duration 
+\end_layout
+
+\begin_layout Enumerate
+From 2 days or more it is considered a long duration fire.
+\end_layout
+
+\begin_layout Standard
+In this way, the data were adequately prepared to be analyzed using machine
  learning methods, ultimately achieving greater accuracy in predicting the
  duration of forest fires.
  The preprocessing steps are graphically illustrated in Figure 
@@ -6353,7 +6500,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -7096,7 +7243,9 @@ AVERAGE
 
 \end_inset
 
-
+From the generated results it is evident that the artificial neural network
+ model shows improved performance when the nodes increase from 2 to 5 or
+ to 10 but from this point onwards there is no noticeable difference.
 \end_layout
 
 \begin_layout Section
@@ -8127,6 +8276,122 @@ D.D.
 32
 \series default
 , e2685, 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "usFire"
+literal "false"
+
+\end_inset
+
+US Forest Service.
+ Department of Agriculture.
+ Science and Technology.
+ Managing Fire, Fire Forecasting.
+ Available from https://www.fs.usda.gov/science-technology/managing-fire 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "euFire"
+literal "false"
+
+\end_inset
+
+eustafor.
+ European State Forest Association.
+ Forest Fires in Europe: a Growing Challenge.
+ Towards a Resilient Future.
+ Available from https://eustafor.eu/forest-fires-in-europe-a-growing-challenge/
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "KarpatheFire"
+literal "false"
+
+\end_inset
+
+Karpatne, A., Ebert-Uphoff, I., Ravela, S., Babaie, H.A., and Kumar, V.
+ 2017.
+ Machine learning for the geosciences: challenges and opportunities.
+ Available from http://arxiv.org/abs/1711.04708.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "LiuFire"
+literal "false"
+
+\end_inset
+
+Liu Z., Peng C., Work T., Candau J.N., DesRochers A., and Kneeshaw D.
+ 2018.
+ Application of machine-learning methods in forest ecology: recent progress
+ and future challenges.
+ Environ.
+ Rev.
+ 26(4): 339–350.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "JainFire"
+literal "false"
+
+\end_inset
+
+Jain P., Coogan S., Subramanian S.G., Crowley M., Taylor S., Flannigan M.D.
+ 2020.
+ A review of machine learning applications in wildfire science and management.
+ Environ.
+ Rev.
+ 28(4): 478 - 505.
+ Available from https://cdnsciencepub.com/doi/10.1139/er-2020-0019 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "FinneyFire"
+literal "false"
+
+\end_inset
+
+Finney M.A.
+ 2005.
+ The challenge of quantitative risk analysis for wildland fire.
+ For.
+ Ecol.
+ Manage.
+ 211: 97–108.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "XiaoFire"
+literal "false"
+
+\end_inset
+
+Xiao H., 2023.
+ Estimating Wildfire Duration using regression - models.
+ Available from: https://arxiv.org/pdf/2308.08936
 \end_layout
 
 \begin_layout Bibliography
