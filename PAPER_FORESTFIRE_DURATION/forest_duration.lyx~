@@ -828,8 +828,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 In this paper we review the ML applications in forest fires management.
  Our main overall objective is to improve brand awareness of ML methods
  among fire researchers and managers, and illustrate the open data that
@@ -941,8 +939,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 This paper presents a fast-decision model for predicting the duration of
  ongoing fires.
  As a result, this review will help practitioners and researchers in the
@@ -7260,26 +7256,34 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Standard
-A series of machine learning methods was applied on datasets involving forest
- fires for the Greece.
- These datasets covered a period of ten years, starting from 2014.
- These methods were obtained from the WEKA machine learning tool, which
- is freely available for any operating system.
- These methods cover a wide range of machine learning techniques from different
- domains.
- The purpose of this study was to identify the duration of forest fires
- and three cases of forest fires were studied in this research work: forest
- fires of limited duration, forest fires of medium duration and forest fires
- of long duration.
- Estimating the duration of a fire is an important factor, as it can be
- used to estimate the size of the impending disaster as well as the resources
- required to extinguish it.
+
+\series bold
+In the present research work, a study was made of the duration of forest
+ fires using open data for the Greek area.
+ This data contained information such as the area of the fire, the time
+ it erupted, the destruction it caused as well as the human resources involved
+ in extinguishing it.
+ Machine learning models were then used to estimate the duration of a fire.
+ The successful prediction of the duration contributes to the proper management
+ of such catastrophic events by the state mechanisms.
+ The machine learning models used included models such as artificial neural
+ networks, decision trees, etc.
+
+\series default
  Most of the machine learning techniques used achieved significantly low
  error values for each year of experimental data.
  On average, these classification error values are in the range of 8-13%
  with the Random Forest technique achieving the lowest value.
- The present work could be extended in the future in various research directions
-, such as: 
+ Furthermore, additional tests were executed to measure the effectiveness
+ of random forests and neural networks.
+ In addition, the stability of the used data was assessed in the presence
+ of random noise with encouraging results.
+ 
+\end_layout
+
+\begin_layout Standard
+The present work could be extended in the future in various research directions,
+ such as: 
 \end_layout
 
 \begin_layout Enumerate
