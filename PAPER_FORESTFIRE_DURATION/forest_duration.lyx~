@@ -986,6 +986,10 @@ noprefix "false"
  
 \end_layout
 
+\begin_layout Standard
+Also, we have run an additional experiment where a random noise 
+\end_layout
+
 \begin_layout Section
 Materials and Methods
 \begin_inset CommandInset label
@@ -5718,8 +5722,9 @@ name "tab:randomVsML"
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="5">
+<lyxtabular version="3" rows="12" columns="6">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -5744,6 +5749,17 @@ YEAR
 
 \series bold
 RANDOM FOREST
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+SVM
 \end_layout
 
 \end_inset
@@ -5805,6 +5821,15 @@ RBF10
 \begin_inset Text
 
 \begin_layout Plain Layout
+14.19%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 11.61%
 \end_layout
 
@@ -5844,6 +5869,15 @@ RBF10
 
 \begin_layout Plain Layout
 8.95%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.08%
 \end_layout
 
 \end_inset
@@ -5899,6 +5933,15 @@ RBF10
 \begin_inset Text
 
 \begin_layout Plain Layout
+5.03%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 4.36%
 \end_layout
 
@@ -5938,6 +5981,15 @@ RBF10
 
 \begin_layout Plain Layout
 9.30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.20%
 \end_layout
 
 \end_inset
@@ -5993,6 +6045,15 @@ RBF10
 \begin_inset Text
 
 \begin_layout Plain Layout
+11.50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 10.16%
 \end_layout
 
@@ -6032,6 +6093,15 @@ RBF10
 
 \begin_layout Plain Layout
 8.02%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.67%
 \end_layout
 
 \end_inset
@@ -6087,6 +6157,15 @@ RBF10
 \begin_inset Text
 
 \begin_layout Plain Layout
+8.18%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 6.69%
 \end_layout
 
@@ -6126,6 +6205,15 @@ RBF10
 
 \begin_layout Plain Layout
 11.92%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17.98%
 \end_layout
 
 \end_inset
@@ -6181,6 +6269,15 @@ RBF10
 \begin_inset Text
 
 \begin_layout Plain Layout
+11.16%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 9.86%
 \end_layout
 
@@ -6220,6 +6317,15 @@ RBF10
 
 \begin_layout Plain Layout
 7.67%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.37%
 \end_layout
 
 \end_inset
@@ -6281,6 +6387,17 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
+11.64%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
 9.71%
 \end_layout
 
@@ -6324,6 +6441,27 @@ AVERAGE
 \begin_layout Enumerate
 The column RANDOM FOREST denotes the results with the method Random Forest
  implemented by the WEKA package.
+\end_layout
+
+\begin_layout Enumerate
+The column SVM denotes the application of the support vector machines (SVM)
+ method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svm"
+literal "false"
+
+\end_inset
+
+ using the libsvm software package 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "libsvm"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -9862,6 +10000,37 @@ M.N.
 \series default
 , pp.
  55-61, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "libsvm"
+literal "false"
+
+\end_inset
+
+Chang, C.
+ C., & Lin, C.
+ J.
+ (2011).
+ LIBSVM: a library for support vector machines.
+ ACM transactions on intelligent systems and technology (TIST), 2(3), 1-27.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "svm"
+literal "false"
+
+\end_inset
+
+Suthaharan, S., & Suthaharan, S.
+ (2016).
+ Support vector machine.
+ Machine learning models and algorithms for big data classification: thinking
+ with examples for effective learning, 207-235.
 \end_layout
 
 \begin_layout Bibliography
