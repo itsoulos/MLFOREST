@@ -309,22 +309,35 @@ Correspondence: itsoulos@uoi.gr
 \end_layout
 
 \begin_layout Abstract
-Forest and urban fires are a major problem in the modern era that tests
- the endurance of governments to extinguish them.
- Fires can cause economic and ecological problems especially in the summer
- months.
- In modern times, the rapid development of Artificial Intelligence can be
- a weapon for predicting the evolution of fires or even for their prevention.
- Specifically, through Machine Learning, which is one part of Artificial
- Intelligence several methods have been incorporated to detect the duration
- of fires using data which are freely available from the Fire Service of
- Greece for a period of 10 years.
-
-\series bold
+For thousands of years forest fires played the role of regulator in the
+ ecosystem.
+ Forest fires contributed to the ecological balance by destroying old and
+ diseased plant material, but in the modern era fires are a major problem
+ that tests the endurance not only of governments agencies, around the world,
+ but also the effect on climate change.
+ Forestfires have become more intense, more destructive, and deadlier, known
+ as mega – fires.
+ They can cause major economic and ecological problems, especially in the
+ summer months (dry season).
+ Although, in the dystopian future, humanity has developed a weapon that
+ can: predict the fire event, to detect in time, but also to predict the
+ duration of it.
+ The weapon is: Artificial Intelligence, specifically, through Machine Learning,
+ which is one part of (AI).
+ Consequently, this paper is briefly mentioned in several methods of machine
+ learning: in predicting forest fires, and in early detections, submitting
+ an overall review of present models.
+ Our main overall objective is to venture into the novelty field: predict
+ the duration of ongoing forest fires.
+ Our contribution is offering a new way to manage forest fires, using accessible
+ open data, available from the Hellenic Fire Service.
+ In particular, we imported over 72.000 data, from a 10-year period (2014
+ – 2023) using machine learning techniques.
+ The experimental and validation results were more than encouraging, with
+ the Random Forest achieving the lower value on error range (8 -13%), that
+ means it was (87 – 92%) accurate on the prediction of forest fire duration.
+ In the end, there are some future directions in order to extend this research.
  
-\series default
-For this purpose, a wide range of machine learning techniques were used
- on this data and the experimental results were more than encouraging.
 \end_layout
 
 \begin_layout Keywords
@@ -946,7 +959,24 @@ This paper presents a fast-decision model for predicting the duration of
  by offering guidance and information.
  It will also give ML researchers the chance to find potential uses in the
  field of wildfire science and management.
- 
+ The field of wildfire duration prediction is impoverished, as researchers
+ tend to focus more on fire occurrence and early detection.
+ The domain we are focusing on appears to have great potential in two ways:
+ one for wildfire management and another for machine learning researchers.
+ The objective of this paper is to introduce an innovative approach by incorpora
+ting the number of firefighters, vehicles, and aerial forces used in each
+ of the more than 72,000 fire incidents as key data points.
+ Our research stands out by focusing not only on the occurrence of fires
+ but also on the critical role of human and material resources in managing
+ them.The application of machine learning (ML), and especially the Random
+ Forest algorithm, in our project has proven highly valuable, enabling us
+ to accurately analyze and predict critical parameters such as fire duration,
+ while also considering human and material resources.
+ Our findings are reliable, offering substantial support for optimizing
+ wildfire management strategies.Our contribution can enhance the understanding
+ of both material needs and human resources for fighting a wildfire, at
+ both the local level and the European level, through the European Civil
+ Protection Mechanism.
 \end_layout
 
 \begin_layout Standard
@@ -10005,6 +10035,21 @@ M.N.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "svm"
+literal "false"
+
+\end_inset
+
+Suthaharan, S., & Suthaharan, S.
+ (2016).
+ Support vector machine.
+ Machine learning models and algorithms for big data classification: thinking
+ with examples for effective learning, 207-235.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "libsvm"
 literal "false"
 
@@ -10016,21 +10061,6 @@ Chang, C.
  (2011).
  LIBSVM: a library for support vector machines.
  ACM transactions on intelligent systems and technology (TIST), 2(3), 1-27.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "svm"
-literal "false"
-
-\end_inset
-
-Suthaharan, S., & Suthaharan, S.
- (2016).
- Support vector machine.
- Machine learning models and algorithms for big data classification: thinking
- with examples for effective learning, 207-235.
 \end_layout
 
 \begin_layout Bibliography
