@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -128,7 +128,7 @@
 \end_preamble
 \options journal,article,submit,pdftex,moreauthors
 \use_default_options false
-\maintain_unincluded_children no
+\maintain_unincluded_children false
 \begin_local_layout
 #Adds an endnote inset, in addition to footnotes. You will need to add
 #\printendnotes in TeX-code where you want the endnotes to appear.
@@ -161,9 +161,7 @@ End
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_roman_osf false
-\font_sans_osf false
-\font_typewriter_osf false
+\font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -197,9 +195,7 @@ End
 \suppress_date false
 \justification true
 \use_refstyle 0
-\use_formatted_ref 0
 \use_minted 0
-\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -215,26 +211,23 @@ End
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tablestyle default
 \tracking_changes false
 \output_changes false
-\change_bars false
-\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\docbook_table_output 0
-\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
 
 \begin_layout Title
-Application of feature construction techniques in forest fire duration prediction data
+Application of feature construction techniques in forest fire duration predictio
+n data
 \end_layout
 
 \begin_layout Title Citation
-Application of feature construction techniques in forest fire duration prediction data
+Application of feature construction techniques in forest fire duration predictio
+n data
 \end_layout
 
 \begin_layout Author
@@ -242,19 +235,16 @@ Constantina Kopitsa
 \begin_inset Formula $^{1}$
 \end_inset
 
-,
- Ioannis G.
+, Ioannis G.
  Tsoulos
 \begin_inset Formula $^{2*}$
 \end_inset
 
-,
- Andreas Miltiadous
+, Andreas Miltiadous
 \begin_inset Formula $^{3}$
 \end_inset
 
-,
- Vasileios Charilogis
+, Vasileios Charilogis
 \begin_inset Formula $^{4}$
 \end_inset
 
@@ -262,18 +252,12 @@ Constantina Kopitsa
 \end_layout
 
 \begin_layout Author Names for PDF
-Constantina Kopitsa,
- Ioannis G.
- Tsoulos,
- Andreas Miltiadous and Vasileios Charilogis
+Constantina Kopitsa, Ioannis G.
+ Tsoulos, Andreas Miltiadous and Vasileios Charilogis
 \end_layout
 
 \begin_layout Author Names for Citation
-Kopitsa,
- C.;
- Tsoulos,
- I.G.;Miltiadous,
- A.;Charilogis V.
+Kopitsa, C.; Tsoulos, I.G.;Miltiadous, A.;Charilogis V.
 \end_layout
 
 \begin_layout Address
@@ -284,8 +268,7 @@ Kopitsa,
 \begin_inset space \quad{}
 \end_inset
 
-Department of Informatics and Telecommunications,
- University of Ioannina,
+Department of Informatics and Telecommunications, University of Ioannina,
  Greece;k.kopitsa@uoi.gr
 \begin_inset Newline newline
 \end_inset
@@ -298,10 +281,8 @@ Department of Informatics and Telecommunications,
 \begin_inset space \quad{}
 \end_inset
 
-Department of Informatics and Telecommunications,
- University of Ioannina,
- Greece;
- itsoulos@uoi.gr
+Department of Informatics and Telecommunications, University of Ioannina,
+ Greece; itsoulos@uoi.gr
 \begin_inset Newline newline
 \end_inset
 
@@ -309,10 +290,8 @@ Department of Informatics and Telecommunications,
 \begin_inset Formula $^{3}\quad$
 \end_inset
 
-Department of Informatics and Telecommunications,
- University of Ioannina,
- Greece;
- a.miltiadous@uoi.gr
+Department of Informatics and Telecommunications, University of Ioannina,
+ Greece; a.miltiadous@uoi.gr
 \begin_inset Newline newline
 \end_inset
 
@@ -320,55 +299,32 @@ Department of Informatics and Telecommunications,
 \begin_inset Formula $^{4}\quad$
 \end_inset
 
-Department of Informatics and Telecommunications,
- University of Ioannina,
- Greece;
- v.charilog@uoi.gr
+Department of Informatics and Telecommunications, University of Ioannina,
+ Greece; v.charilog@uoi.gr
 \end_layout
 
 \begin_layout Corresponding Author
-Correspondence:
- itsoulos@uoi.gr
+Correspondence: itsoulos@uoi.gr
 \end_layout
 
 \begin_layout Abstract
-Forest fires pose a major threat to both human and animal life,
- with significant economic and social impacts.
- A reliable prediction system is crucial for mitigating these effects,
- especially during summer months,
- dry seasons,
- and in high-risk areas such as the Mediterranean.
- This study explores feature construction and selection methods applied to forest fire data collected over 10 years in Greece,
- incorporating prevailing weather conditions at ignition and during suppression.
- By applying techniques like Principal Component Analysis (PCA),
- Minimum Redundancy Maximum Relevance (MRMR) feature selection,
- and Grammatical Evolution for feature construction,
- this research aims to identify key factors influencing fire duration.
+Forest fires pose a major threat to both human and animal life, with significant
+ economic and social impacts.
+ A reliable prediction system is crucial for mitigating these effects, especiall
+y during summer months, dry seasons, and in high-risk areas such as the
+ Mediterranean.
+ This study explores feature construction and selection methods applied
+ to forest fire data collected over 10 years in Greece, incorporating prevailing
+ weather conditions at ignition and during suppression.
+ By applying techniques like Principal Component Analysis (PCA), Minimum
+ Redundancy Maximum Relevance (MRMR) feature selection, and Grammatical
+ Evolution for feature construction, this research aims to identify key
+ factors influencing fire duration.
 \end_layout
 
 \begin_layout Keywords
-Forest fires;
- Machine learning;
- Neural networks;
- Feature Construction;
- Genetic Programming;
- Grammatical Evolution
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-clearpage
-\end_layout
-
-\end_inset
-
-
+Forest fires; Machine learning; Neural networks; Feature Construction; Genetic
+ Programming; Grammatical Evolution
 \end_layout
 
 \begin_layout Section
@@ -383,6 +339,42 @@ Materials and Methods
 Results
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimental results using a series of machine learning methods for the
+ forest fire prediction.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:expr"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Conclusions
 \end_layout
@@ -395,16 +387,13 @@ Conclusions
 \end_layout
 
 \begin_layout Author Contributions
-C.K.,
- V.C.
+C.K., V.C.
  and I.G.T.
- conceived of the idea and the methodology,
- and C.K.
+ conceived of the idea and the methodology, and C.K.
  and V.C.
  implemented the corresponding software.
  C.K.
- conducted the experiments,
- employing objective functions as test cases,
+ conducted the experiments, employing objective functions as test cases,
  and provided the comparative experiments.
  A.S.
  performed the necessary statistical tests.
@@ -431,12 +420,11 @@ Not applicable.
 \end_layout
 
 \begin_layout Acknowledgments
-This research has been financed by the European Union:
- Next Generation EU through the Program Greece 2.0 National Recovery and Resilience Plan,
- under the call RESEARCH–CREATE–INNOVATE,
- project name “iCREW:
- Intelligent small craft simulator for advanced crew training using Virtual Reality techniques” (project code:
- TAEDK-06195).
+This research has been financed by the European Union: Next Generation EU
+ through the Program Greece 2.0 National Recovery and Resilience Plan, under
+ the call RESEARCH–CREATE–INNOVATE, project name “iCREW: Intelligent small
+ craft simulator for advanced crew training using Virtual Reality techniques”
+ (project code: TAEDK-06195).
 \end_layout
 
 \begin_layout Conflicts of Interest
@@ -476,7 +464,8 @@ Appendix A
 \end_inset
 
 ).
- If the appendix sections contain a heading then change the argument to 
+ If the appendix sections contain a heading then change the argument to
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -488,8 +477,7 @@ yes
 \end_layout
 
 \begin_layout Plain Layout
-Please,
- note that in LyX a trailing dot is always present and the name 
+Please, note that in LyX a trailing dot is always present and the name 
 \begin_inset Quotes eld
 \end_inset
 
