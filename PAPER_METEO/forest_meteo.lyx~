@@ -360,13 +360,262 @@ The used methods
 The PCA method 
 \end_layout
 
+\begin_layout Standard
+The Principal Component Analysis (PCA) technique, introduced by mathematician
+ Karl Pearson in 1901 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca1"
+literal "false"
+
+\end_inset
+
+, and developed by Harold Hotelling (1933).
+ This technique, operates on the principle when data from a higher-dimensional
+ space is transformed into a lower-dimensional space, the resulting lower-dimens
+ional representation should retain the maximum variance, of the original
+ data.
+ 
+\end_layout
+
+\begin_layout Standard
+Notably, it is worth mentioning that the use of PCA, on larger datasets,
+ became practical only after the advent of electronic computers, which made
+ it computationally feasible, to handle datasets, beyond trivial sizes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_cadima"
+literal "false"
+
+\end_inset
+
+.
+ Continuing, with the applications of PCA, it is a widely utilized technique
+ in exploratory data analysis, and machine learning, particularly, in building
+ predictive models.
+ It is an unsupervised learning method, designed to analyze, the relationships
+ among a set of variables.
+ Often referred to as a form of general factor analysis, it involves regression
+ to determine a line of best fit.
+ The primary objective, of PCA, is to reduce the dimensionality of a dataset,
+ while retaining the most significant patterns, and relationships, among
+ the variables, all without requiring prior knowledge, of the target variables
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_i2"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Next, we will briefly reference studies, that have utilized PCA, covering
+ different areas, such as: statistical physics, genetic improvement, face
+ recognition, economic & environmental sciences, medical prediction, e.t.c.
+ Explicitly, the research conducted, by Park 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_park"
+literal "false"
+
+\end_inset
+
+, highlights the reasons behind the success of the PCA technique, for lattice
+ systems.
+ The study's primary limitation lies in the dependency of the proposed formula's
+ accuracy on the dataset size.
+ Specifically, the results achieve full precision, only under the condition
+ of an infinite dataset.
+ This constraint restricts the practical applicability, of the method, when
+ working with finite or limited data, a common scenario, in real-world analyses.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionally, the work of Sarma et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_sarma"
+literal "false"
+
+\end_inset
+
+ utilizes PCA, in order to evaluate, morphometric traits, under a multivariate
+ approach.
+ The findings suggest, that PCA could significantly enhance the genetic
+ improvement.
+ Noteworthy, is the fact, that the 64.29%, of the total variance explained,
+ can be considered relatively low.
+ This suggests, that a significant amount of unexplained information remains,
+ which is not captured, by the four principal components.
+ Moreover, Gambardella et al.
+ used the PCA technique for monitoring the cultivation, of cannabis, in
+ Albania.
+ Specifically, with PCA they remove redundant spectral information from
+ multiband datasets 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_parente"
+literal "false"
+
+\end_inset
+
+.
+ The article, by Slavkovic and Jevtic 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_electric"
+literal "false"
+
+\end_inset
+
+, presents the implementation of a face recognition system based on the
+ Principal Component Analysis (PCA) algorithm.
+ The PCA technique was utilized by Hargreaves 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_stock"
+literal "false"
+
+\end_inset
+
+, for stock selection, specifically to identify, a limited number of stock
+ variables, that could effectively aid, in determining winning stocks.
+ 
+\end_layout
+
+\begin_layout Standard
+Moreover, Xu et al.
+ presents an interesting example of a modified application of Principal
+ Component Analysis (PCA), utilizing, both linear and non-linear methods,
+ through Kernel PCA (KPCA), in combination, with the Adaptive Boosting (AdaBoost
+) algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_kernel"
+literal "false"
+
+\end_inset
+
+.
+ In the study of Zhang 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_zhang"
+literal "false"
+
+\end_inset
+
+, a neural network model, combining PCA and Levenberg-Marquardt 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lm_paper"
+literal "false"
+
+\end_inset
+
+ was developed, to efficiently, and accurately analyze, and predict the
+ interaction between IAQ and its influencing factors.
+ In particular, it was examined indoor air quality (IAQ), and its relationship,
+ with building features, and environmental conditions.
+ 
+\end_layout
+
+\begin_layout Standard
+In the work of Akinnuwesi et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_svm"
+literal "false"
+
+\end_inset
+
+, a hybrid approach was suggested combining Principal Component Analysis
+ (PCA), and Support Vector Machine (SVM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svm"
+literal "false"
+
+\end_inset
+
+.
+ They create, the Breast Cancer Risk Assessment and Early Diagnosis (BC-RAED)
+ model, designed to accurately detect BCa, in its early stages.
+ PCA, was initially applied to extract features, during the first preprocessing
+ stage, followed by further feature reduction, in the second stage.
+ The multi-preprocessed data, were analyzed for breast cancer risk, and
+ diagnosis using SVM.
+ The BC-RAED model, achieved, an accuracy of 97.62%, a sensitivity of 95.24%,
+ and a specificity of 100% in assessing, and diagnosing breast cancer risk.
+ 
+\end_layout
+
+\begin_layout Standard
+Subsequently, we will briefly mention certain studies, that have been conducted,
+ in the field of Forest Fires.
+ Guan's research focuses on forest fire prediction using PCA-preprocessed
+ data.
+ The preprocessing step removed irrelevant information, simplifying analysis.
+ Linear regression and random forest methods were then applied, revealing
+ temperature, relative humidity, wind, and rain as the most influential
+ factors in forest fire occurrence 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_guan"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A novel model was developed, by Nikolov, using meteorological forecast data
+ as input.
+ Principal Component Analysis (PCA), with orthogonal rotation, was applied
+ to reduce 195 meteorological variables, from the NARR dataset, to a smaller
+ set of significant fire-ignition predictors, later used in logistic regression,
+ to calculate wildfire ignition probabilities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_nikolov"
+literal "false"
+
+\end_inset
+
+.
+ Also, a recent publication focuses on predicting wildfire ignitions, caused
+ by lightning strikes, which account for the largest area burned annually,
+ in the extratropical Northern Hemisphere.
+ Principal Component Analysis (PCA), played a key role, in reducing 611
+ potential predictors, to 13 principal components, which were used in logistic
+ regression to identify the primary factors influencing lightning occurrence
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pca_nikolov2"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Subsubsection
 The MRMR method 
 \end_layout
 
 \begin_layout Standard
-The min-redundancy max-relevance algorithm, introduced by Chris Ding and
- Hanchuan Peng 
+The min-redundancy max-relevance (MRMR) algorithm, introduced by Chris Ding
+ and Hanchuan Peng 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mrmr1"
@@ -375,9 +624,16 @@ literal "false"
 \end_inset
 
 .
- The (MRMR) aims to optimize feature selection, by minimizing redundancy,
- and maximizing relevance by Ramirez – Gallego et all.
- (2017).
+ This method aims to optimize feature selection, by minimizing redundancy,
+ and maximizing relevance 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr2"
+literal "false"
+
+\end_inset
+
+.
  In sum, MRMR enhances relevance-only methods, such as using an f-test between
  the target, and the features.
  When two features are similar, MRMR prioritizes only the one, with the
@@ -398,6 +654,163 @@ DESCRIPTION OF GE METHOD
 
 \begin_layout Section
 Results
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The experiments were conducted using the freely available programming tool
+ of WEKA 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_main"
+literal "false"
+
+\end_inset
+
+.
+ The software, which is written in the JAVA programming language to be portable,
+ can be downloaded freely from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://ml.cms.waikato.ac.nz/weka/
+\end_layout
+
+\end_inset
+
+(accessed on 14 September 2024) or it can be found in the repositories of
+ most Linux systems.
+ The WEKA software is a collection of machine learning and data analysis
+ tools and it contains also some visualization tools for modeling.
+ The WEKA has been used with success in many cases, such as educational
+ problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_education1,weka_education2"
+literal "false"
+
+\end_inset
+
+, medical problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_medical1,weka_medical2"
+literal "false"
+
+\end_inset
+
+ etc.
+ The validation of the conducted experiments was performed using the ten
+ - fold cross validation technique.
+  The experiments were carried out on an AMD Ryzen 5950X with 128GB of RAM,
+ running the Debian Linux operating system.
+ The experimental results using the methods mentioned in the previous section
+ and the 10 modified datasets from the Hellenic Fire Service are listed
+ in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:expr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The following applies to the tables of experimental results:
+\end_layout
+
+\begin_layout Enumerate
+The column YEAR denotes the year of recording.
+\end_layout
+
+\begin_layout Enumerate
+The column BAYES the application of the Naive Bayes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naive_bayes"
+literal "false"
+
+\end_inset
+
+ method to the corresponding dataset.
+\end_layout
+
+\begin_layout Enumerate
+The column ADAM represents the usage of the ADAM optimizer 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_adam"
+literal "false"
+
+\end_inset
+
+ for the training of a neural network with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column BFGS denotes the incorporation of the BFGS optimizer 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "powell"
+literal "false"
+
+\end_inset
+
+ to train a neural network with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column MRMR denotes the results obtained by the application of a neural
+ network trained with the BFGS optimizer on two features selected using
+ the MRMR technique.
+\end_layout
+
+\begin_layout Enumerate
+The column PCA stands for the results obtained by the application of a neural
+ network trained with the BFGS optimizer on two features created using the
+ PCA technique.
+ The PCA variant implemented in MLPACK software 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mlpack"
+literal "false"
+
+\end_inset
+
+ was incorporated to create these features.
+\end_layout
+
+\begin_layout Enumerate
+The column NNC denotes the usage of the method of Neural Network Construction
+ on the proposed datasets.
+ The software that implements this method was obtained from 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_softx"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column FC represents the usage of the previously mentioned method for
+ constructing artificial features.
+ For the purposes of this article two artificial features were created.
+ These features were produced and evaluated using the QFc software .
 \end_layout
 
 \begin_layout Standard
@@ -432,9 +845,8 @@ name "tab:expr"
 
 \size footnotesize
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="9">
+<lyxtabular version="3" rows="10" columns="8">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -462,17 +874,6 @@ YEAR
 
 \size footnotesize
 BAYES
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-MSCHEME
 \end_layout
 
 \end_inset
@@ -573,17 +974,6 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-13.02%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
 13.00%
 \end_layout
 
@@ -664,17 +1054,6 @@ FC
 
 \size footnotesize
 10.49%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-11.96%
 \end_layout
 
 \end_inset
@@ -775,17 +1154,6 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-12.93%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
 12.95%
 \end_layout
 
@@ -866,17 +1234,6 @@ FC
 
 \size footnotesize
 53.36%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-12.62%
 \end_layout
 
 \end_inset
@@ -977,17 +1334,6 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-10.50%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
 10.48%
 \end_layout
 
@@ -1068,17 +1414,6 @@ FC
 
 \size footnotesize
 7.79%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-9.46%
 \end_layout
 
 \end_inset
@@ -1179,17 +1514,6 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-9.50%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
 9.56%
 \end_layout
 
@@ -1270,17 +1594,6 @@ FC
 
 \size footnotesize
 11.81%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-11.00%
 \end_layout
 
 \end_inset
@@ -1373,18 +1686,6 @@ AVERAGE
 \series bold
 \size footnotesize
 19.41%
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-\size footnotesize
-11.37%
 \end_layout
 
 \end_inset
@@ -1673,6 +1974,569 @@ literal "false"
 \series default
 , pp.
  185-205, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr2"
+literal "false"
+
+\end_inset
+
+S.
+ Ramirez – Gallego, I.
+ Lastra, D.
+ Martinez – Rego, V.
+ Bolon – Canedo, J.M.
+ Benitez, F.
+ Herrera, A.
+ Alonso – Betanzos, Fast-mRMR: Fast Minimum Redundancy Maximum Relevance
+ Algorithm for High – Dimensional Big Data, International Journal of Intelligent
+ Systems 
+\series bold
+32
+\series default
+, pp.
+ 134 – 152, 2017.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca1"
+literal "false"
+
+\end_inset
+
+A.
+ Maćkiewicz, W.
+ Ratajczak, Principal components analysis (PCA).
+ Computers & Geosciences 
+\series bold
+19
+\series default
+, pp.
+ 303-342, 1993.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_cadima"
+literal "false"
+
+\end_inset
+
+J.
+ Cadima, I.T.
+ Jolliffe, Principal component analysis: a review and recent developments,
+ National Library of Medicine.
+ 2016.
+ Available online: https://pmc.ncbi.nlm.nih.gov/articles/PMC4792409/ (accessed
+ on 16 November 2024).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_i2"
+literal "false"
+
+\end_inset
+
+i2tutorials.
+ What are the Pros and Cons of the PCA? October 1st, 2019.
+ Available online: https://www.i2tutorials.com/what-are-the-pros-and-cons-of-the-p
+ca/ (accessed on 16 November 2024).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_park"
+literal "false"
+
+\end_inset
+
+S.C.
+ Park, Physical Meaning of Principal Component Analysis for Lattice Systems
+ with Translational Invariance.
+ arXiv preprint arXiv:2410.22682, 2024.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_sarma"
+literal "false"
+
+\end_inset
+
+O.
+ Sarma, M.A.
+ Rather, S.
+ Shahnaz, R.S.
+ Barwal, Principal Component Analysis of Morphometric Traits in Kashmir
+ Merino Sheep.
+ Journal of Advances in Biology & Biotechnology 
+\series bold
+27
+\series default
+, pp.
+ 362-69, 2024.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_parente"
+literal "false"
+
+\end_inset
+
+C.
+ Gambardella, R.
+ Parente, A.
+ Ciambrone, M.
+ Casbarra, A Principal Components Analysis – Based Method for the Detection
+ of Cannabis Plants Using Representation data by Remote Sensing, Knowledge
+ Extractions from data Using Machine Learning, volume 6 (10), 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_electric"
+literal "false"
+
+\end_inset
+
+M.
+ Slavkovic, D.
+ Jevtic, Face Recognition Using Eigenface Approach, Serbian Journal of Electrica
+l Engineering 
+\series bold
+9
+\series default
+, pp.
+ 121-130, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_stock"
+literal "false"
+
+\end_inset
+
+C.A.
+ Hargreaves, C.K.
+ Mani, The Selection of Winning Stocks Using Principal Component Analysis,
+ American Journal of Marketing Research 
+\series bold
+1
+\series default
+, pp.
+ 183 – 188, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_kernel"
+literal "false"
+
+\end_inset
+
+Z.
+ Xu, F.
+ Guo, H.
+ Ma, X.
+ Liu, L.
+ Gao, On Optimizing Hyperspectral Inversion of Soil Copper Content by Kernel
+ Principal Component Analysis.
+ Remote Sensing 
+\series bold
+16
+\series default
+, 2024.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_zhang"
+literal "false"
+
+\end_inset
+
+H.
+ Zhang, R.
+ Srinivasa, X.
+ Yang, S.
+ Ahrentzen, E.S.
+ Coker, A.
+ Alwisy, Factors influencing indoor air pollution in buildings using PCA
+ – LMBP neural network: A case study of a university campus, Building and
+ environment 
+\series bold
+225
+\series default
+, 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "lm_paper"
+literal "false"
+
+\end_inset
+
+M.I.
+ Lourakis, A brief description of the Levenberg-Marquardt algorithm implemented
+ by levmar, Foundation of Research and Technology 
+\series bold
+4
+\series default
+, pp.
+ 1-6, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_svm"
+literal "false"
+
+\end_inset
+
+B.A.
+ Akinnuwesi, B.O.
+ Macaulay, B.S.
+ Aribisala, Breast cancer risk assessment and early diagnosis using Principal
+ Component Analysis and support vector machine techniques, Informatics in
+ medicine unlocked 
+\series bold
+21
+\series default
+, 100459, 2020.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "svm"
+literal "false"
+
+\end_inset
+
+M.
+ Awad, R.
+ Khanna, M.
+ Awad, R.
+ Khanna, Support vector machines for classification.
+ Efficient learning machines: Theories, concepts, and applications for engineers
+ and system designers, pp.
+ 39-66, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_guan"
+literal "false"
+
+\end_inset
+
+R.
+ Guan, Predicting forest fire with linear regression and random forest,
+ Highlights in Science, Engineering and Technology 
+\series bold
+44
+\series default
+, pp.
+ 1-7, 2023.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_nikolov"
+literal "false"
+
+\end_inset
+
+N.
+ Nikolov, P.
+ Bothwell, J.
+ Snook, Developing a gridded model for probabilistic forecasting of wildland-fir
+e ignitions across the lower 48 States.
+ USFS-CSU Joint Venture Agreement Phase 2 (2019-2021)-Final Report.
+ Fort Collins, CO: US Department of Agriculture, Forest Service, Rocky Mountain
+ Research Station.
+ 33p, 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pca_nikolov2"
+literal "false"
+
+\end_inset
+
+N.
+ Nikolov, P.
+ Bothwell, J.
+ Snook, Probalistic forecasting of lightning strikes over the Continental
+ USA and Alaska: Model development and verification.
+ Scientific Journal, Fire (7).
+ Available from: https://research.fs.usda.gov/treesearch/68447 (accessed 20
+ November 2024).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_main"
+literal "false"
+
+\end_inset
+
+M.
+ Hall, F.
+ Frank, G.
+ Holmes, B.
+ Pfahringer, P.
+ Reutemann, I.H.
+ Witten, The WEKA data mining software: an update.
+ ACM SIGKDD explorations newsletter 
+\series bold
+11
+\series default
+, pp.
+ 10-18, 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_education1"
+literal "false"
+
+\end_inset
+
+S.B.
+ Aher, L.M.R.J.
+ Lobo, Data mining in educational system using weka.
+ In International conference on emerging technology trends, Foundation of
+ Computer Science 
+\series bold
+3
+\series default
+, pp.
+ 20-25, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_education2"
+literal "false"
+
+\end_inset
+
+S.
+ Hussain, N.A.
+ Dahan, F.M.
+ Ba-Alwib, N.
+ Ribata, Educational data mining and analysis of students’ academic performance
+ using WEKA.
+ Indonesian Journal of Electrical Engineering and Computer Science 
+\series bold
+9
+\series default
+, pp.
+ 447-459, 2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_medical1"
+literal "false"
+
+\end_inset
+
+A.K.
+ Sigurdardottir, H.
+ Jonsdottir, R.
+ Benediktsson, Outcomes of educational interventions in type 2 diabetes:
+ WEKA data-mining analysis.
+ Patient education and counseling 
+\series bold
+67
+\series default
+, pp.
+ 21-31, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "weka_medical2"
+literal "false"
+
+\end_inset
+
+M.N.
+ Amin, A.
+ Habib, Comparison of different classification techniques using WEKA for
+ hematological data.
+ American Journal of Engineering Research 
+\series bold
+4
+\series default
+, pp.
+ 55-61, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "naive_bayes"
+literal "false"
+
+\end_inset
+
+G.I.
+ Webb, E.
+ Keogh, R.
+ Miikkulainen, Naïve Bayes, Encyclopedia of machine learning 
+\series bold
+15
+\series default
+, pp.
+ 713-714, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn_adam"
+literal "false"
+
+\end_inset
+
+D.
+ P.
+ Kingma, J.
+ L.
+ Ba, ADAM: a method for stochastic optimization, in: Proceedings of the
+ 3rd International Conference on Learning Representations (ICLR 2015), pp.
+ 1–15, 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "powell"
+literal "true"
+
+\end_inset
+
+M.J.D Powell, A Tolerant Algorithm for Linearly Constrained Optimization Calculati
+ons, Mathematical Programming 
+\series bold
+45
+\series default
+, pp.
+ 547-566, 1989.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mlpack"
+literal "false"
+
+\end_inset
+
+Ryan R.
+ Curtin, James R.
+ Cline, N.
+ P.
+ Slagle, William B.
+ March, Parikshit Ram, Nishant A.
+ Mehta, Alexander G.
+ Gray, MLPACK: A Scalable C++ Machine Learning Library, Journal of Machine
+ Learning Research 
+\series bold
+14
+\series default
+, pp.
+ 801-805, 2013.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_softx"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos, A.
+ Tzallas, D.
+ Tsalikakis, NNC: A tool based on Grammatical Evolution for data classification
+ and differential equation solving, SoftwareX 
+\series bold
+10
+\series default
+, 100297, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "qfc"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos, QFC: A Parallel Software Tool for Feature Construction, Based
+ on Grammatical Evolution.
+ Algorithms 
+\series bold
+15
+\series default
+, 295, 2022.
 \end_layout
 
 \begin_layout End Whole Page
