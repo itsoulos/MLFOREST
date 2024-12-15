@@ -348,6 +348,13 @@ Introduction
 Materials and Methods
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+What to show here: full description of the used datasets and a brief description
+ of the used methods and references to related works.
+\end_layout
+
 \begin_layout Subsection
 The used dataset 
 \end_layout
@@ -640,8 +647,795 @@ literal "false"
  highest relevance.
 \end_layout
 
+\begin_layout Standard
+The study, by Zhao, extends traditional MRMR methods, by introducing, a
+ non-linear feature redundancy measure, and a model-based feature relevance
+ measure, which are tested, on synthetic, and real-world datasets.
+ Based on its empirical success, MRMR is integrated, into Uber's marketing
+ machine learning platform, to automate, the creation and deployment, of
+ scalable targeting, and personalization models 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr_zhao"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Moreover, Wu et al.
+ proposed that the MRMR algorithm is utilized in conjunction with a Random
+ Forest model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest"
+literal "false"
+
+\end_inset
+
+ to perform feature selection in the context of air quality prediction.
+ MRMR, is employed, to determine which variables have the most significant
+ impact, on the air quality index (AQI), while minimizing redundancy among
+ them 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr_wu"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The article, by Elbeltagi, is an innovative approach, for estimating maize
+ chlorophyll, by integrating hyperspectral indices with cutting-edge, six
+ advanced machine learning techniques.
+ The MRMR algorithm was incorporated into the process to enhance feature
+ selection by pinpointing the most significant spectral bands, minimizing
+ data redundancy, and boosting model efficiency 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr_elbeltagi"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In the energy sector, Liu conducted the following research, offering an
+ improved method, for predicting transient stability, in power systems.
+ The MRMR algorithm, is applied for feature selection, with minimal redundancy
+ and maximum relevance, providing an enhanced approach, for forecasting
+ transient stability, in power systems.
+ This approach addresses, the limitations of previous methods, such as low
+ accuracy, difficult applicability, and high computational cost, while incorpora
+ting the "winner take all" (WTA) technique, for ensemble learning, and enhanced
+ precision 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr_liu"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Eristi, also refers to the energy sector.
+ Specifically, this paper presents, a new PD detection system, that combines
+ spectral analysis, spectrogram analysis, deep learning algorithms, MRMR
+ and ensemble machine learning (EML) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "eml"
+literal "false"
+
+\end_inset
+
+.
+ The most impactful features, are identified, by performing MRMR feature
+ selection analysis, on the extracted deep features 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr_eristi"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Zhang, employed an Acoustic Emission (AE) technique to monitor, inaccessible
+ areas of large storage tank floors, utilizing AE sensors positioned externally
+ to the tank.
+ The implemented algorithm, effectively distinguishes corrosion signals
+ from interference signals, particularly drop-back signals induced by condensati
+on.
+ Experimental studies were conducted both in laboratory settings and in
+ field environments, focusing on Q235 steel.
+ Seven characteristic AE features, derived from signal hits, and frequency,
+ were extracted, and subsequently selected for pattern recognition, using
+ the MRMR method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr_zhang"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionally, Karamouz et al., proposed a methodology to examine the effects
+ of climate change, on sea level variations, in coastal areas, using an
+ artificial neural network model.
+ Feature selection techniques, including MRMR and Mutual Information (MI),
+ are employed to identify the most suitable predictors for the neural network
+ input 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mrmr_razmi"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Subsubsection
 The Neural Network Construction method 
+\end_layout
+
+\begin_layout Standard
+Another machine learning method introduced recently that is based on Grammatical
+ Evolution 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge1"
+literal "false"
+
+\end_inset
+
+ is the construction of artificial neural networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc"
+literal "false"
+
+\end_inset
+
+.
+ In this work the architecture of the neural network is produced through
+ a series of generations of the underlying genetic algorithm by reducing
+ the training error of the neural network.
+ Furthermore, the method is able to identify the best set of parameters
+ for the neural network.
+ This method can also retain only a small portion of features from the original
+ objective problem, significantly reducing the information required to reduce
+ the training error.
+ This method was used in a series of practical problems, such as the identificat
+ion of amide I bonds 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_amide1"
+literal "false"
+
+\end_inset
+
+, solution of differential equations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_de"
+literal "false"
+
+\end_inset
+
+,
+\series bold
+ 
+\series default
+incorporation in the detection of Parkinson's disease 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_feas"
+literal "false"
+
+\end_inset
+
+,
+\series bold
+ 
+\series default
+usage in the estimation of performance of students 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+, autism screening 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+ etc.
+ 
+\end_layout
+
+\begin_layout Standard
+The used grammar for the construction of neural networks expressed in Backus–Nau
+r (BNF) form 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bnf1"
+literal "false"
+
+\end_inset
+
+ is shown in Figure
+\series bold
+ 
+\series default
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nncGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Numbers in parentheses represent the sequence number of each production
+ rule.
+ The constant 
+\begin_inset Formula $n$
+\end_inset
+
+ stands for the number of input features.
+\series bold
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout LyX-Code
+
+\series bold
+S:=<sigexpr>                          (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+<sigexpr>::=<Node>                    (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+           | <Node> + <sigexpr>       (1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+<Node>::=<number>*sig(<sum>+<number>) (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+<sum>::= <number>*<xxlist>            (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+           |    <sum>+<sum>           (1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+<xxlist>::= x1        (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             |    x2  (1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             ..............
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             |    xn  (n-1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+<number>::= (<digitlist>.<digitlist>)        (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             |    (-<digitlist>.<digitlist>) (1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+<digitlist>::= <digit>            (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             | <digit><digitlist> (1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+<digit>::= 0      (0)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             |  1 (1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             ...........
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+             |  9 (9)
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The grammar incorporated in the construction of neural networks.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nncGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\series default
+This grammar produces artificial neural networks in the following form:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+\text{NN}\left(\overrightarrow{x},\overrightarrow{w}\right)=\sum_{i=1}^{H}w_{(n+2)i-(n+1)}\sigma\left(\sum_{j=1}^{n}x_{j}w_{(n+2)i-(n+1)+j}+w_{(n+2)i}\right)\label{eq:nn}
+\end{equation}
+
+\end_inset
+
+
+\series default
+The symbol 
+\begin_inset Formula $H$
+\end_inset
+
+ defines the number of processing nodes (weights).
+
+\series bold
+ 
+\series default
+The sigmoid function 
+\begin_inset Formula $\sigma(x)$
+\end_inset
+
+ is used as the activation function of neural network and it is defined
+ as: 
+\begin_inset Formula 
+\begin{equation}
+\sigma(x)=\frac{1}{1+\exp(-x)}\label{eq:sig}
+\end{equation}
+
+\end_inset
+
+The main steps of the algorithm are:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the number of used chromosomes 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+.
+ Each chromosome is a set of randomly selected integers.
+ These integer values represent rule number in the extended BNF grammar
+ previously presented.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the maximum number of allowed generations 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the selection rate 
+\begin_inset Formula $p_{s}\in[0,1]$
+\end_inset
+
+ and the mutation rate 
+\begin_inset Formula $p_{m}\in[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+, the generation number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ each chromosome 
+\begin_inset Formula $g_{i},\ $
+\end_inset
+
+
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ using the grammar of figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nncGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the corresponding neural network 
+\begin_inset Formula $\mbox{NN}_{i}\left(\overrightarrow{x},\overrightarrow{w}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $f_{i}=\sum_{j=1}^{M}\left(\mbox{NN}_{i}\left(\overrightarrow{x}_{j},\overrightarrow{w_{i}}\right)-y_{j}\right)^{2}$
+\end_inset
+
+ the fitness of chromosome 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ The set 
+\begin_inset Formula $\left(\overrightarrow{x_{j}},y_{j}\right),\ j=1,...,M$
+\end_inset
+
+ stands for the train set of the objective problem.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Genetic operations step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Application of Selection operator.
+ The chromosomes of the population are sorted according to their fitness
+ values and the best 
+\begin_inset Formula $\left(1-p_{s}\right)\times N_{c}$
+\end_inset
+
+ chromosomes are copied to the next generation.
+ The remaining are replaced by new chromosomes produced during crossover
+ and mutation.
+\end_layout
+
+\begin_layout Enumerate
+Application of Crossover operator.
+ In this step 
+\begin_inset Formula $p_{s}\times N_{c}$
+\end_inset
+
+ new chromosomes will be created from the original ones.
+ For each set 
+\begin_inset Formula $c_{1},\ c_{2}$
+\end_inset
+
+ of new chromosomes that will be created, two chromosomes 
+\begin_inset Formula $g_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{b}$
+\end_inset
+
+ are selected from the old population using tournament selection.
+ The new chromosomes are created using one - point crossover between 
+\begin_inset Formula $g_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{b}$
+\end_inset
+
+.
+ An example of this operation is shown graphically in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:onePoint"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Application of Mutation operator.
+ For each element of every chromosome a random number 
+\begin_inset Formula $r\in[0,1]$
+\end_inset
+
+ is selected.
+ The corresponding element is changed randomly when 
+\begin_inset Formula $r\le p_{m}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k\le N_{g}$
+\end_inset
+
+ then goto Fitness Calculation Step.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Application to the test set
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Obtain
+\series default
+ the best chromosome 
+\begin_inset Formula $g^{*}$
+\end_inset
+
+ from the genetic population.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ the corresponding neural network 
+\begin_inset Formula $\mbox{NN}^{*}\left(\overrightarrow{x},\overrightarrow{w}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ this neural network to the test set of the objective problem and report
+ the corresponding error (test error).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename onePointCrossover.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of the one - point crossover operation used in Grammatical Evolution.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:onePoint"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -649,9 +1443,506 @@ The Feature Construction method
 \end_layout
 
 \begin_layout Standard
-DESCRIPTION OF GE METHOD
+Another approach discussed here and used in the conducted experiments is
+ the feature construction technique initially proposed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fc1"
+literal "true"
+
+\end_inset
+
+.
+
+\series bold
+ 
+\series default
+This approach creates artificial features from the original ones using the
+ Grammatical Evolution procedure.
+ The new features are non - linear mappings of the original ones.
+ This method has been used in a series of practical cases during the past
+ years, such as Spam Identification 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fc2"
+literal "true"
+
+\end_inset
+
+, Fetal heart classification 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fc3"
+literal "true"
+
+\end_inset
+
+, EEG signal processing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fc4,fc5"
+literal "true"
+
+\end_inset
+
+ etc.
+ The extended version of BNF grammar used during the feature construction
+ process is outlined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fcGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The extended BNF grammar used in the feature construction process.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fcGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+S::=<expr>   (0) 
+\end_layout
+
+\begin_layout LyX-Code
+<expr> ::=  (<expr> <op> <expr>)  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | <func> ( <expr> )    (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |<terminal>            (2) 
+\end_layout
+
+\begin_layout LyX-Code
+<op> ::=     +      (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | -      (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           | *      (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           | /      (3)
+\end_layout
+
+\begin_layout LyX-Code
+<func> ::=   sin  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | cos  (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |exp   (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           |log   (3)
+\end_layout
+
+\begin_layout LyX-Code
+<terminal>::=<xlist>                (0)                      
+\end_layout
+
+\begin_layout LyX-Code
+           |<digitlist>.<digitlist> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<xlist>::=x1    (0)              
+\end_layout
+
+\begin_layout LyX-Code
+           | x2 (1)              
+\end_layout
+
+\begin_layout LyX-Code
+           ………             
+\end_layout
+
+\begin_layout LyX-Code
+           | xn (n-1)
+\end_layout
+
+\begin_layout LyX-Code
+<digitlist>::=<digit>                  (0)                 
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit>            (1)
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit><digit>     (2)
+\end_layout
+
+\begin_layout LyX-Code
+<digit>  ::= 0 (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 1 (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           .......
+          
+\end_layout
+
+\begin_layout LyX-Code
+           | 9 (9)
+\end_layout
+
+\end_inset
+
+The main steps of the used algorithm have as follows:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Define 
+\series default
+the number of used chromosomes 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Define
+\series default
+ the maximum number of allowed generations 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the selection rate 
+\begin_inset Formula $p_{s}\in[0,1]$
+\end_inset
+
+ and the mutation rate 
+\begin_inset Formula $p_{m}\in[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ the number of desired features that will be created.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+, the generation number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+For 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ do
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ with the assistance of Grammatical Evolution, a set of 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ artificial features from the original ones, for chromosome 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transform
+\series default
+ the original train set using the previously produced features.
+ Represent the new set as 
+\begin_inset Formula $\mbox{TR}=\left(x_{g_{i},j},t_{j}\right),\ j=1,..M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply 
+\series default
+a machine learning model denoted as 
+\begin_inset Formula $C$
+\end_inset
+
+ on set TR and train this model and denote as 
+\begin_inset Formula $C(x)$
+\end_inset
+
+ the output of this model for any input pattern 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Calculate
+\series default
+ the fitness 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ as:
+\begin_inset Formula 
+\begin{equation}
+f_{i}=\sum_{j=1}^{M}\left(C\left(x_{g_{i},j}\right)-t_{j}\right)^{2}
+\end{equation}
+
+\end_inset
+
+The Radial Basis Function (RBF) networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rbf1,rbf2"
+literal "false"
+
+\end_inset
+
+ were used as the machine learning models 
+\begin_inset Formula $C(x)$
+\end_inset
+
+ in the current work.
+ This machine learning model was chosen because of the significantly shorter
+ training time it requires compared to other machine learning models.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Genetic operations step.
+ 
+\series default
+Perform the same genetic operators as in the case of construction neural
+ networks, discussed previously.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k\le N_{g}$
+\end_inset
+
+ then goto Fitness Calculation Step.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Application to the test set
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Obtain the chromosome 
+\begin_inset Formula $g^{*}$
+\end_inset
+
+ with the lowest fitness value.
+\end_layout
+
+\begin_layout Enumerate
+Create the 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ artificial features that correspond to this chromosome
+\end_layout
+
+\begin_layout Enumerate
+Apply the 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ features to the train set and produce the mapped training set 
+\begin_inset Formula $\mbox{TR}=\left(x_{g_{i},j},t_{j}\right),\ j=1,..M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Train a machine learning model on the produced training set.
+ An artificial neural network 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn1,nn2"
+literal "false"
+
+\end_inset
+
+ with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes is used in the current work.
+ This neural network was trained using a BFGS variant of Powell 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "powell"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Apply the new features to the test set of the objective problem and create
+ the set 
+\begin_inset Formula $\mbox{TT=}\left(x_{g_{i},j},t_{j}\right),\ j=1,..K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Apply the machine learning model on set TT and report the test error.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Results
 \end_layout
@@ -810,7 +2101,15 @@ literal "false"
 The column FC represents the usage of the previously mentioned method for
  constructing artificial features.
  For the purposes of this article two artificial features were created.
- These features were produced and evaluated using the QFc software .
+ These features were produced and evaluated using the QFc software 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qfc"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -818,7 +2117,7 @@ The column FC represents the usage of the previously mentioned method for
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1775,6 +3074,118 @@ AVERAGE
 
 \end_layout
 
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statExper"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the results of the Wilcoxon test for pairwise comparisons of the classificatio
+n models are presented, providing valuable insights into the statistical
+ significance of their performance differences.
+ Below is a more in-depth analysis, focusing on the interpretation of results
+ and a deeper understanding of the relationships between the models.
+ The overall result of the Wilcoxon test (p < 0.5) confirms that statistically
+ significant differences exist among the models' performances.
+ This indicates that the models are not equivalent in terms of their accuracy,
+ with some clearly outperforming others.
+ The comparison between FC and NNC (p = 0.039) reveals a statistically significan
+t difference, though the p-value is relatively close to the significance
+ threshold (commonly p < 0.05).
+ This suggests that while FC outperforms NNC, the difference is not exceedingly
+ pronounced.
+ This outcome might be influenced by specific data characteristics or variations
+ in the models' stability.
+ The comparison between FC and PCA (p = 0.016) shows a clearer statistically
+ significant difference.
+ FC's performance is evidently superior to PCA’s, which may be attributed
+ to the fundamental differences in their methodologies.
+ PCA, as a dimensionality reduction technique, might lose critical information
+ in the data, leading to lower accuracy in certain scenarios.
+ For the comparison between FC and MRMR (p = 0.039), a statistically significant
+ difference is observed once again.
+ Similar to the FC-NNC comparison, this difference exists but is not highly
+ pronounced.
+ MRMR, which selects features based on mutual information, might not perform
+ as consistently across all datasets, giving FC an edge.
+ The comparison between FC and BFGS (p = 0.016) indicates an even more distinct
+ difference.
+ BFGS, as an optimization method, may lack the flexibility or precision
+ required for classification tasks, allowing FC to demonstrate more stable
+ and superior performance in this case.
+ The difference between FC and ADAM (p = 0.023) is also statistically significant.
+ While ADAM is generally considered an effective algorithm in many contexts,
+ FC appears to outperform it in this analysis, possibly due to better adaptabili
+ty to the specific characteristics of the dataset.
+ The most striking difference is seen in the comparison between FC and BAYES
+ (p = 0.0078).
+ The very low p-value strongly confirms a statistically significant difference,
+ highlighting FC’s clear superiority over BAYES.
+ Notably, BAYES has exhibited high variability in its performance, especially
+ in 2017, when it recorded a very high error rate.
+ This variability likely reduces its overall reliability, which is reflected
+ in this comparison.
+ In summary, FC consistently outperforms all other models in this analysis,
+ with statistically significant differences observed in all pairwise comparisons.
+ The differences are not only numerical but also conceptual, as FC’s superior
+ performance can likely be attributed to its stability, flexibility, and
+ ability to handle the data’s nuances more effectively.
+ In contrast, models like BAYES and PCA seem more affected by changes in
+ the data or problem conditions.
+ This analysis highlights FC as the most reliable and high-performing model
+ among those evaluated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename statWilcoxon.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison of the used machine learning techniques.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statExper"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Conclusions
 \end_layout
@@ -1952,54 +3363,6 @@ Keep empty!
 
 \begin_layout References Title
 References
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author1(year)"
-key "mrmr1"
-literal "false"
-
-\end_inset
-
- C.
- Ding, H.
- Peng, Minimum redundancy feature selection from microarray gene expression
- data.
- Journal of bioinformatics and computational biology 
-\series bold
-3
-\series default
-, pp.
- 185-205, 2005.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "mrmr2"
-literal "false"
-
-\end_inset
-
-S.
- Ramirez – Gallego, I.
- Lastra, D.
- Martinez – Rego, V.
- Bolon – Canedo, J.M.
- Benitez, F.
- Herrera, A.
- Alonso – Betanzos, Fast-mRMR: Fast Minimum Redundancy Maximum Relevance
- Algorithm for High – Dimensional Big Data, International Journal of Intelligent
- Systems 
-\series bold
-32
-\series default
-, pp.
- 134 – 152, 2017.
 \end_layout
 
 \begin_layout Bibliography
@@ -2322,6 +3685,548 @@ N.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Author1(year)"
+key "mrmr1"
+literal "false"
+
+\end_inset
+
+ C.
+ Ding, H.
+ Peng, Minimum redundancy feature selection from microarray gene expression
+ data.
+ Journal of bioinformatics and computational biology 
+\series bold
+3
+\series default
+, pp.
+ 185-205, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr2"
+literal "false"
+
+\end_inset
+
+S.
+ Ramirez – Gallego, I.
+ Lastra, D.
+ Martinez – Rego, V.
+ Bolon – Canedo, J.M.
+ Benitez, F.
+ Herrera, A.
+ Alonso – Betanzos, Fast-mRMR: Fast Minimum Redundancy Maximum Relevance
+ Algorithm for High – Dimensional Big Data, International Journal of Intelligent
+ Systems 
+\series bold
+32
+\series default
+, pp.
+ 134 – 152, 2017.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr_zhao"
+literal "false"
+
+\end_inset
+
+Zhao, Z., Anand, R., & Wang, M.
+ (2019, October).
+ Maximum relevance and minimum redundancy feature selection methods for
+ a marketing machine learning platform.
+ In 2019 IEEE international conference on data science and advanced analytics
+ (DSAA) (pp.
+ 442-452).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest"
+literal "false"
+
+\end_inset
+
+S.J.
+ Rigatti, Random forest.
+ Journal of Insurance Medicine 
+\series bold
+47
+\series default
+, pp.
+ 31-39, 2017.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr_wu"
+literal "false"
+
+\end_inset
+
+Wu, H., Yang, T., Li, H., & Zhou, Z.
+ (2023).
+ Air quality prediction model based on mRMR–RF feature selection and ISSA–LSTM.
+ Scientific Reports, 13(1), 12825.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr_elbeltagi"
+literal "false"
+
+\end_inset
+
+Elbeltagi, A., Nagy, A., Szabo, A., Nxumalo, G.S., Bodi, E.B., Tamas, J.
+ Hyperspectral indices data fusion-based machine learning enhanced by MRMR
+ algorithm for estimating maize chlorophyll content.
+ Frontiers in Plant Science, Section Technical Advances in Plant Science,
+ volume 15, October 2024.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr_liu"
+literal "false"
+
+\end_inset
+
+Liu, J., Sun, H., Li, Y., Fang, W., & Niu, S.
+ (2020).
+ An improved power system transient stability prediction model based on
+ mRMR feature selection and WTA ensemble learning.
+ Applied Sciences, 10(7), 2255.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "eml"
+literal "false"
+
+\end_inset
+
+Dietterich, T.
+ G.
+ (2000, June).
+ Ensemble methods in machine learning.
+ In International workshop on multiple classifier systems (pp.
+ 1-15).
+ Berlin, Heidelberg: Springer Berlin Heidelberg.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr_eristi"
+literal "false"
+
+\end_inset
+
+Eristi, B.
+ (2024).
+ A New Approach based on Deep Features of Convolutional Neural Networks
+ for Partial Discharge Detection in Power Systems.
+ IEEE Access.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr_zhang"
+literal "false"
+
+\end_inset
+
+Li, Y., Zhang, Y., Zhu, H., Yan, R., Liu, Y., Sun, L., & Zeng, Z.
+ (2015).
+ Recognition algorithm of acoustic emission signals based on conditional
+ random field model in storage tank floor inspection using inner detector.
+ Shock and Vibration, 2015(1), 173470.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mrmr_razmi"
+literal "false"
+
+\end_inset
+
+Karamouz, M., Zahmatkesh, Z., Nazif, S., & Razmi, A.
+ (2014).
+ An evaluation of climate change impacts on extreme sea level variability:
+ Coastal area of New York City.
+ Water resources management, 28, 3697-3714.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge1"
+literal "true"
+
+\end_inset
+
+M.
+ O’Neill, C.
+ Ryan, Grammatical evolution, IEEE Trans.
+ Evol.
+ Comput.
+ 
+\series bold
+5,
+\series default
+pp.
+ 349–358, 2001.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos, D.
+ Gavrilis, E.
+ Glavas, Neural network construction and training using grammatical evolution,
+ Neurocomputing 
+\series bold
+72
+\series default
+, pp.
+ 269-277, 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_amide1"
+literal "false"
+
+\end_inset
+
+G.V.
+ Papamokos, I.G.
+ Tsoulos, I.N.
+ Demetropoulos, E.
+ Glavas, Location of amide I mode of vibration in computed data utilizing
+ constructed neural networks, Expert Systems with Applications 
+\series bold
+36
+\series default
+, pp.
+ 12210-12213, 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_de"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos, D.
+ Gavrilis, E.
+ Glavas, Solving differential equations with constructed neural networks,
+ Neurocomputing 
+\series bold
+72
+\series default
+, pp.
+ 2385-2391, 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_feas"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos, G.
+ Mitsi, A.
+ Stavrakoudis, S.
+ Papapetropoulos, Application of Machine Learning in a Parkinson's Disease
+ Digital Biomarker Dataset Using Neural Network Construction (NNC) Methodology
+ Discriminates Patient Motor Status, Frontiers in ICT 6, 10, 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+V.
+ Christou, I.G.
+ Tsoulos, V.
+ Loupas, A.T.
+ Tzallas, C.
+ Gogos, P.S.
+ Karvelis, N.
+ Antoniadis, E.
+ Glavas, N.
+ Giannakeas, Performance and early drop prediction for higher education
+ students using machine learning, Expert Systems with Applications 
+\series bold
+225
+\series default
+, 120079, 2023.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+E.I.
+ Toki, J.
+ Pange, G.
+ Tatsis, K.
+ Plachouras, I.G.
+ Tsoulos, Utilizing Constructed Neural Networks for Autism Screening, Applied
+ Sciences 
+\series bold
+14
+\series default
+, 3053, 2024.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bnf1"
+literal "false"
+
+\end_inset
+
+J.
+ W.
+ Backus.
+ The Syntax and Semantics of the Proposed International Algebraic Language
+ of the Zurich ACM-GAMM Conference.
+ Proceedings of the International Conference on Information Processing,
+ UNESCO, 1959, pp.125-132.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc1"
+literal "true"
+
+\end_inset
+
+Dimitris Gavrilis, Ioannis G.
+ Tsoulos, Evangelos Dermatas, Selecting and constructing features using
+ grammatical evolution, Pattern Recognition Letters 
+\series bold
+29
+\series default
+,pp.
+ 1358-1365, 2008.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc2"
+literal "true"
+
+\end_inset
+
+Dimitris Gavrilis, Ioannis G.
+ Tsoulos, Evangelos Dermatas, Neural Recognition and Genetic Features Selection
+ for Robust Detection of E-Mail Spam, Advances in Artificial Intelligence
+ Volume 3955 of the series Lecture Notes in Computer Science pp 498-501,
+ 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc3"
+literal "true"
+
+\end_inset
+
+George Georgoulas, Dimitris Gavrilis, Ioannis G.
+ Tsoulos, Chrysostomos Stylios, João Bernardes, Peter P.
+ Groumpos, Novel approach for fetal heart rate classification introducing
+ grammatical evolution, Biomedical Signal Processing and Control 
+\series bold
+2
+\series default
+,pp.
+ 69-79, 2007 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc4"
+literal "true"
+
+\end_inset
+
+Otis Smart, Ioannis G.
+ Tsoulos, Dimitris Gavrilis, George Georgoulas, Grammatical evolution for
+ features of epileptic oscillations in clinical intracranial electroencephalogra
+ms, Expert Systems with Applications 
+\series bold
+38
+\series default
+, pp.
+ 9991-9999, 2011 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc5"
+literal "false"
+
+\end_inset
+
+A.
+ T.
+ Tzallas, I.
+ Tsoulos, M.
+ G.
+ Tsipouras, N.
+ Giannakeas, I.
+ Androulidakis and E.
+ Zaitseva, Classification of EEG signals using feature creation produced
+ by grammatical evolution, In: 24th Telecommunications Forum (TELFOR), pp.
+ 1-4, 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rbf1"
+literal "false"
+
+\end_inset
+
+J.
+ Park and I.
+ W.
+ Sandberg, Universal Approximation Using Radial-Basis-Function Networks,
+ Neural Computation 3, pp.
+ 246-257, 1991.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rbf2"
+literal "false"
+
+\end_inset
+
+H.
+ Yu, T.
+ Xie, S.
+ Paszczynski, B.
+ M.
+ Wilamowski, Advantages of Radial Basis Function Networks for Dynamic System
+ Design, in IEEE Transactions on Industrial Electronics 
+\series bold
+58
+\series default
+, pp.
+ 5438-5450, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn1"
+literal "true"
+
+\end_inset
+
+C.
+ Bishop, Neural Networks for Pattern Recognition, Oxford University Press,
+ 1995.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn2"
+literal "true"
+
+\end_inset
+
+G.
+ Cybenko, Approximation by superpositions of a sigmoidal function, Mathematics
+ of Control Signals and Systems 
+\series bold
+2
+\series default
+, pp.
+ 303-314, 1989.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "powell"
+literal "true"
+
+\end_inset
+
+M.J.D Powell, A Tolerant Algorithm for Linearly Constrained Optimization Calculati
+ons, Mathematical Programming 
+\series bold
+45
+\series default
+, pp.
+ 547-566, 1989.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "weka_main"
 literal "false"
 
@@ -2459,23 +4364,6 @@ D.
  Ba, ADAM: a method for stochastic optimization, in: Proceedings of the
  3rd International Conference on Learning Representations (ICLR 2015), pp.
  1–15, 2015.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "powell"
-literal "true"
-
-\end_inset
-
-M.J.D Powell, A Tolerant Algorithm for Linearly Constrained Optimization Calculati
-ons, Mathematical Programming 
-\series bold
-45
-\series default
-, pp.
- 547-566, 1989.
 \end_layout
 
 \begin_layout Bibliography
