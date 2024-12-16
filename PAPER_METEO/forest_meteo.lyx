@@ -388,8 +388,559 @@ literal "false"
  
 \end_layout
 
+\begin_layout Standard
+Nevertheless, in the modern era, wildfires are ranked among the most significant
+ natural hazards 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire3"
+literal "false"
+
+\end_inset
+
+, with immense effects on Earth's ecosystems, and human societies.
+ Beyond that, according, the Chair, of ISO/TC 92, fire safety, Mr.
+ P.
+ Van Hees: ‘
+\emph on
+With losses caused by fire estimated at 1% of the global GDP each year,
+ fire safety must be viewed in the broader perspective of risk management
+ and disaster mitigation
+\emph default
+’ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire4"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fireEconomic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it is illustrated, through a graphical representation, the economic burden,
+ from forest fires, on the annual GDP.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fire_economic.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The economic impact of forest fires in Greece, and around the world.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fireEconomic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The following numbers show the extent of the destruction caused by fires::
+\end_layout
+
+\begin_layout Itemize
+The cost of fire is estimated at about 1% to 2% of the annual GDP 
+\end_layout
+
+\begin_layout Itemize
+About 1% of fires are responsible for more than 50% of the costs 
+\end_layout
+
+\begin_layout Itemize
+The number of people dying in fire is estimated at 2.2 deaths per 100,000
+ inhabitants (based on 35 countries)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire4"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In other words, wildfires and climate change, intensify each other.
+ Climate change, exacerbates wildfires by increasing drought, high temperatures,
+ low humidity, lightning, and strong winds, leading to more severe, and
+ prolonged fire seasons.
+ Conversely, wildfires contribute to worsening climate change 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire5"
+literal "false"
+
+\end_inset
+
+.
+ Thus, wildfires (along with the extraction and burning of fossil fuels,
+ and volcanic eruptions) exacerbate Climate Change, by further releasing
+ carbon dioxide, into the atmosphere 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_nasa"
+literal "false"
+
+\end_inset
+
+.
+ Also, the Mediterranean region is recognized as a key "hot-spot" for the
+ impacts of climate change 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_giorgi"
+literal "false"
+
+\end_inset
+
+.
+ At the same time, the critical need to address climate changes, effects
+ on wildfire patterns, is highlighted, as essential for protecting both
+ the environment, and public health in Greece 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_iliopoulos"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fireAtmosphere"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we observe the continuous increase in carbon dioxide levels, beginning
+ in 1751.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fire_atmosphere.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The environmental impact of carbon dioxide.
+ Available from: https://www.climate.gov/news-features/understanding-climate/clima
+te-change-atmospheric-carbon-dioxide (accessed on November 29, 2024).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fireAtmosphere"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Concerning this, the United Nations of Environment Programme, are calling
+ the governments: “to radically shift their investments in wildfires to
+ focus on prevention and preparedness” 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire5"
+literal "false"
+
+\end_inset
+
+.
+ Therefore, despite the challenging circumstances posed by Climate Change,
+ driven by continuous human expansion, and technological progress, we aim
+ to transform this disadvantage into an advantage, by focusing our efforts
+ on advancing technology itself.
+ On this, Artificial intelligence, particularly Machine learning, emerges
+ as a valuable ally in addressing this global issue, offering innovative
+ solutions and supporting sustainable development 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ai_climate,ai_ml"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Machine learning, refers to a collection of techniques, and algorithms,
+ that enable systems to identify patterns, and make decisions based on data,
+ improving their performance over time, without explicitly being programmed
+ for specific tasks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "iso_ml"
+literal "false"
+
+\end_inset
+
+.
+ This was the vision, of Alan Turing, when, in 1936, he wrote his PhD ‘On
+ Computable Numbers, with an application to the Entscheidung problem’ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ml_turing"
+literal "false"
+
+\end_inset
+
+.
+ Namely, Machine learning, is a pivotal branch of artificial intelligence,
+ presents endless opportunities for businesses, and society alike.
+ Beyond its numerous advantages, it plays a critical role in driving groundbreak
+ing advancements, in Climate Change adaptation, and mitigation.
+ By accelerating, the development of solutions, to some of the most pressing
+ challenges facing the planet, machine learning, is reshaping the way we
+ address global environmental issues 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "iso_ml"
+literal "false"
+
+\end_inset
+
+.
+ Although, modeling complex environmental variables, often presents challenges,
+ due to the significant computational resources required, and the diversity
+ or complexity of data formats 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ml_review"
+literal "false"
+
+\end_inset
+
+.
+ Machine learning algorithms, however, can bypass these challenges, by deriving
+ mappings, and relationships directly from the data, eliminating the need
+ for predefined expert rules.
+ This capability, is particularly beneficial when dealing with scenarios,
+ involving a large number of parameters, with intricate physical properties,
+ such as in forest fires.
+ Consequently, adopting a machine learning approach to fire management,
+ can help overcome many of the limitations, associated with traditional
+ physics-based simulation models.
+\end_layout
+
+\begin_layout Standard
+Regarding this, in the recent literature, significant interest has been
+ developed, in the role of machine learning, in the field of fire management
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_manage"
+literal "false"
+
+\end_inset
+
+.
+ Forest fires, however, have not been extensively studied, as research on
+ forest fires constitutes only 2.9% of the global literature, according to
+ a study conducted between 2017 and 2021 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_manage2"
+literal "false"
+
+\end_inset
+
+.
+ More specifically, floods have received the most attention in research
+ (20.3%), followed by earthquakes and hurricanes, each accounting for 18.8%.
+ Studies on general disaster types make up 15.9%, while landslides account
+ for 10.1%.
+ Notably, depending on the area of focus, researchers employ corresponding
+ algorithms, to address specific challenges.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fire_algorithms.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Machine learning methods used in fire management.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mlMethods"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mlMethods"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ summarizes the machine learning methods used in various fields of fire
+ management, as obtained from the relevant literature.
+ A number of recent publications have appeared in recent years, which utilize
+ machine learning techniques for forest fire management.
+ For example, Bayesian networks have been widely utilized in the context
+ of forest fires, particularly for predicting, and analyzing, potential
+ causes of fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_bayes1"
+literal "false"
+
+\end_inset
+
+.
+ Additionally, a recent study employed Bayesian networks to model the cascading
+ effects of drought and forest fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_bayes2"
+literal "false"
+
+\end_inset
+
+.
+ Also, Bayesian networks were integrated, with deep learning techniques,
+ to detect fires, from video frames 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_bayes3"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Naïve Bayes, has been also applied to forest fire-related challenges, in
+ numerous studies.
+ For instance, Nugroho, developed a forest fire prevention system, that
+ combines a wireless sensor network, with a Naïve Bayes classifier 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_naive1"
+literal "false"
+
+\end_inset
+
+.
+ Zainul's work proposes a method for classifying hotspots responsible for
+ forest fires using the naïve Bayes algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_naive2"
+literal "false"
+
+\end_inset
+
+.
+ Karo, proposed a methodology for wildfire classification, that incorporates
+ feature selection, and employs Naïve Bayes, alongside other machine learning
+ techniques 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_naive3"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Moreover, Logistic Regression, has been applied to various forest fire-related
+ issues, including estimating human-caused wildfire risk 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_log1"
+literal "false"
+
+\end_inset
+
+, predicting wildfire vulnerability 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_log2"
+literal "false"
+
+\end_inset
+
+, probabilistic modeling of wildfire occurrence 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_log3"
+literal "false"
+
+\end_inset
+
+, and analyzing wildfire danger 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_log4"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The remaining of this manuscript is divided as follows: section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ described the used dataset and it provided a detail discussion on the used
+ methods, section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ outlines the conducted experiments and some statistical tests on them and
+ finally section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ discusses some conclusions on the experimental results.
+\end_layout
+
 \begin_layout Section
 Materials and Methods
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Materials-and-Methods"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2010,9 +2561,29 @@ Apply
  the machine learning model on set TT and report the test error.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \end_deeper
+\begin_layout Standard
+
+\series bold
+Other studies of feature construction here
+\end_layout
+
 \begin_layout Section
 Results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3256,6 +3827,13 @@ name "fig:statExper"
 
 \begin_layout Section
 Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3504,6 +4082,404 @@ Heinonen, Keri.
  November 19, 2024.
  Available from: https://greek.mythologyworldwide.com/the-fire-of-prometheus-more-
 than-just-a-gift-to-humanity/ (accessed on November 29, 2024).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire3"
+literal "false"
+
+\end_inset
+
+McCaffrey, S.
+ (2004).
+ Thinking of wildfire as a natural hazard.
+ Society and Natural Resources, 17(6), 509-516.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire4"
+literal "false"
+
+\end_inset
+
+Patrick, Van Hees.
+ The burning challenge of fire safety.
+ ISO, International Organization for Standardization.
+ Available from: https://www.iso.org/news/2014/11/Ref1906.html (accessed on
+ December 3, 2024).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire5"
+literal "false"
+
+\end_inset
+
+UNEP.
+ United Nations Environment Programme.
+ Number of wildfires to rise by 50 per cent by 2100 and governments are
+ not prepared, experts warn.
+ 23 February 2022.
+ Available from: https://www.unep.org/news-and-stories/press-release/number-wildfi
+res-rise-50-cent-2100-and-governments-are-not-prepared (accessed on December
+ 4, 2024).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_nasa"
+literal "false"
+
+\end_inset
+
+NASA.
+ Carbon Dioxide, Vital Signs.
+ October 2024.
+ Available from: https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121
+ (accessed on November 29, 2024).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_iliopoulos"
+literal "false"
+
+\end_inset
+
+Iliopoulos, N., Aliferis, I., & Chalaris, M.
+ (2024).
+ Effect of Climate Evolution on the Dynamics of the Wildfires in Greece.
+ Fire, 7(5), 162.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_giorgi"
+literal "false"
+
+\end_inset
+
+Giorgi, F.
+ (2006).
+ Climate change hot‐spots.
+ Geophysical research letters, 33(8).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ai_climate"
+literal "false"
+
+\end_inset
+
+Satish, M., Prakash., Babu, S.M., Kumar, P.P., Devi, S., Reddy, K.P.
+ Artificial Intelligence (AI) and the Prediction of Climate Change Impacts.
+ 2023.
+ IEEE 5th International Conference on Cybernetics, Cognition and Machine
+ Learning Applications (ICCCMLA).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ai_ml"
+literal "false"
+
+\end_inset
+
+Walsh, Dylan.
+ Tackling climate change with machine learning.
+ MIT Management Sloan School.
+ Climate Change.
+ October 24, 2023.
+ Available from: https://mitsloan.mit.edu/ideas-made-to-matter/tackling-climate-ch
+ange-machine-learning (accessed on November 29, 2024).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "iso_ml"
+literal "false"
+
+\end_inset
+
+ISO.
+ Machine Learning (ML): All there is to know.
+ International Organization for Standardization.
+ Available from: https://www.iso.org/artificial-intelligence/machine-learning
+ (accessed on November 30, 2024).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ml_turing"
+literal "false"
+
+\end_inset
+
+Watson, Ian.
+ (2012).
+ How Alan Turing Invented the Computer Age.
+ Scientific American.
+ Published: 26/04/2012.Available from: https://blogs.scientificamerican.com/guest-b
+log/how-alan-turing-invented-the-computer-age/ (accessed on November 30,
+ 2024).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ml_review"
+literal "false"
+
+\end_inset
+
+Jain, P., Coogan, S.
+ C., Subramanian, S.
+ G., Crowley, M., Taylor, S., & Flannigan, M.
+ D.
+ (2020).
+ A review of machine learning applications in wildfire science and management.
+ Environmental Reviews, 28(4), 478-505.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_manage"
+literal "false"
+
+\end_inset
+
+Xiao, H.
+ (2023).
+ Estimating fire duration using regression methods.
+ arXiv preprint arXiv:2308.08936.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_manage2"
+literal "false"
+
+\end_inset
+
+Linardos, V., Drakaki, M., Tzionas, P., & Karnavas, Y.
+ L.
+ (2022).
+ Machine learning in disaster management: recent developments in methods
+ and applications.
+ Machine Learning and Knowledge Extraction, 4(2).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_bayes1"
+literal "false"
+
+\end_inset
+
+Sevinc, V., Kucuk, O., & Goltas, M.
+ (2020).
+ A Bayesian network model for prediction and analysis of possible forest
+ fire causes.
+ Forest Ecology and Management, 457, 117723.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_bayes2"
+literal "false"
+
+\end_inset
+
+Chen, F., Jia, H., Du, E., Chen, Y., & Wang, L.
+ (2024).
+ Modeling of the cascading impacts of drought and forest fire based on a
+ Bayesian network.
+ International Journal of Disaster Risk Reduction, 111, 104716.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_bayes3"
+literal "false"
+
+\end_inset
+
+Kim, B., & Lee, J.
+ (2021).
+ A Bayesian network-based information fusion combined with DNNs for robust
+ video fire detection.
+ Applied Sciences, 11(16), 7624.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_naive1"
+literal "false"
+
+\end_inset
+
+Nugroho, A.
+ A., Iwan, I., Azizah, K.
+ I.
+ N., & Raswa, F.
+ H.
+ (2019).
+ Peatland Forest Fire Prevention Using Wireless Sensor Network Based on
+ Naïve Bayes Classifier.
+ KnE Social Sciences, 20-34.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_naive2"
+literal "false"
+
+\end_inset
+
+Zainul, M., & Minggu, E.
+ (2022).
+ Classification of Hotspots Causing Forest and Land Fires Using the Naive
+ Bayes Algorithm.
+ Interdisciplinary Social Studies, 1(5), 555-567.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_naive3"
+literal "false"
+
+\end_inset
+
+Karo, I.
+ M.
+ K., Amalia, S.
+ N., & Septiana, D.
+ Wildfires Classification Using Feature Selection with K-NN, Naïve Bayes,
+ and ID3 Algorithms.
+ Journal of Software Engineering, Information and Communication Technology
+ (SEICT), 3(1), 15-24.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_log1"
+literal "false"
+
+\end_inset
+
+Vilar del Hoyo, L., Martín Isabel, M.
+ P., & Martínez Vega, F.
+ J.
+ (2011).
+ Logistic regression models for human-caused wildfire risk estimation: analysing
+ the effect of the spatial accuracy in fire occurrence data.
+ European Journal of Forest Research, 130, 983-996.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_log2"
+literal "false"
+
+\end_inset
+
+de Bem, P.
+ P., de Carvalho Júnior, O.
+ A., Matricardi, E.
+ A.
+ T., Guimarães, R.
+ F., & Gomes, R.
+ A.
+ T.
+ (2018).
+ Predicting wildfire vulnerability using logistic regression and artificial
+ neural networks: a case study in Brazil’s Federal District.
+ International journal of wildland fire, 28(1), 35-45.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_log3"
+literal "false"
+
+\end_inset
+
+Nhongo, E.
+ J.
+ S., Fontana, D.
+ C., Guasselli, L.
+ A., & Bremm, C.
+ (2019).
+ Probabilistic modelling of wildfire occurrence based on logistic regression,
+ Niassa Reserve, Mozambique.
+ Geomatics, Natural Hazards and Risk, 10(1), 1772-1792.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_log4"
+literal "false"
+
+\end_inset
+
+Peng, W., Wei, Y., Chen, G., Lu, G., Ye, Q., Ding, R., ...
+ & Cheng, Z.
+ (2023).
+ Analysis of Wildfire Danger Level Using Logistic Regression Model in Sichuan
+ Province, China.
+ Forests, 14(12), 2352.
 \end_layout
 
 \begin_layout Bibliography
