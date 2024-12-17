@@ -897,6 +897,212 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+Several studies, have utilized Artificial Neural Networks (ANNs), in the
+ field of forest fire prediction, and monitoring.
+ For instance, Hossain, employed ANNs to detect flames and smoke based on
+ static image features 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ann1"
+literal "false"
+
+\end_inset
+
+.
+ Lall and Mathibela applied neural networks to predict wildfire risk in
+ Cape Town 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ann2"
+literal "false"
+
+\end_inset
+
+.
+ Similarly, Sayad, utilized neural networks, along with other machine learning
+ techniques, for wildfire predictive modeling, using data from NASA’s Land
+ Processes Distributed Active Archive Center (LP DAAC) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ann3"
+literal "false"
+
+\end_inset
+
+.
+ Additionally, Gao, recently published a case study, on predicting wildfires,
+ in a Chinese province, using neural networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ann4"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Also, Random Forest, has been widely utilized, in forest fire prediction.
+ For instance, Latifah, applied Random Forest, to predict forest fires,
+ in Borneo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_rf1"
+literal "false"
+
+\end_inset
+
+.
+ Similarly, Malik, proposed using Random Forest, to estimate, wildfire risk
+ in Northern California 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_rf2"
+literal "false"
+
+\end_inset
+
+.
+ Additionally, Gao, conducted a forest fire, risk prediction study in China,
+ combining Random Forest, with a neural network trained, using the back-propagat
+ion method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_rf3"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This paper addresses a key issue in forest fire management, such as predicting
+ the duration of fires, utilizing information from already caused forest
+ fires in combination with the weather conditions that prevailed during
+ the development of this phenomenon.
+ Regarding this topic a series of research papers have been published during
+ the past years, such as the work of Xiao et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_manage"
+literal "false"
+
+\end_inset
+
+, who developed a wildfire duration prediction model, based on historical
+ fire data, and geospatial information.
+ The algorithms, employed included: RF (Random Forest), KNN, and XGBoost
+ regression models, as well as image-based approaches such as CNN and Encoder.
+ The model, achieved an accuracy exceeding 80%, for fires lasting longer
+ than 10 days.
+ In the same direction of research, Andela validated the fire data from
+ the Global Fire Atlas, using independent datasets, from the United States.
+ The study utilized satellite data, and highlighted, that the duration of
+ fires is significantly influenced, among others by the fire season 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duration_andela"
+literal "false"
+
+\end_inset
+
+.
+ Ujjwal settled a surrogate model, to capture the dynamic spread, of a wildfire
+ over time.
+ The surrogate model, designed to simulate the relationship between the
+ burned area and key meteorological parameters (such as relative humidity,
+ temperature, and wind speed), provides valuable insights, into fire behavior
+ across different 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duration_surrogate"
+literal "false"
+
+\end_inset
+
+.
+ Wang, also conducted research that, while capable of yielding results for
+ predicting, wildfire duration, primarily, focused on forecasting the scale
+ of a forest fire.
+ The study utilized neural network algorithms, including Backpropagation
+ Neural Network (BPNN), Recurrent Neural Network (RNN), and Long Short-Term
+ Memory (LSTM).
+ Among these classification methods, LSTM demonstrated the highest accuracy,
+ achieving 90.9% 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duration_wang"
+literal "false"
+
+\end_inset
+
+.
+ Xi, settled a framework, for jointly, modeling fire duration, and size
+ using a bivariate finite mixture model.
+ Four subpopulations (normal or extreme in duration and size) were analyzed,
+ incorporating, variables such as: location, month, and environmental factors.
+ The analysis, revealed a strong correlation between: duration, and size,
+ and identified key predictors, influencing these subpopulations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duration_xi"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Predicting, the duration of a fire is crucial, as it allows for estimating
+ the potential damage, to the affected area and determining the necessary
+ human resources, for its suppression.
+ Besides that, forest fires and climate change are commonly exacerbating.
+ The Western fire chief’s association, from the U.S.
+ emphasizes that climate change is drastically impacting the fire season.
+ As a result, fire seasons now last six to eight months, compared to the
+ four months, they previously spanned .
+ Face the Facts USA reports that, in the U.S., the average duration of wildfires
+ increased from 8 days, before 1986, to 37 days by 2013 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duration_wfca"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The current work utilizes a series of feature construction and selection
+ methods in order to improve the ability of various machine learning techniques
+ to predict the duration of forest fires.
+ These methods involve creating new, meaningful variables by combining or
+ transforming existing data attributes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genfc1"
+literal "false"
+
+\end_inset
+
+.
+ For example, integrating material resources deployed during a forest fire
+ event into a single metric constitutes feature construction, enabling models,
+ to better capture the complexity, of fire incidents, and resource allocation.
+ Another example, for Feature Construction, during a forest fire, is combining
+ weather attributes, in order to form, a fire risk index.
+ Such, approaches enhance data representation, facilitating more robust,
+ and interpretable predictive models, in disaster management.
+ The feature construction or selection methods were applied on data collected
+ for the Greek case that contained weather information.
+\end_layout
+
+\begin_layout Standard
 The remaining of this manuscript is divided as follows: section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -944,10 +1150,10 @@ name "sec:Materials-and-Methods"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-What to show here: full description of the used datasets and a brief description
- of the used methods and references to related works.
+This section initiates with a description of the used datasets and continues
+ with a detailed description of the used feature construction and selection
+ techniques, that will be applied on the datasets incorporated in the conducted
+ experiments.
 \end_layout
 
 \begin_layout Subsection
@@ -2561,6 +2767,13 @@ Apply
  the machine learning model on set TT and report the test error.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Section
 Results
@@ -3872,15 +4085,16 @@ al evolution, outperforms other methods in terms of stability and accuracy.
 \end_layout
 
 \begin_layout Author Contributions
-C.K., V.C.
+C.K., V.C.,A.M.
  and I.G.T.
  conceived of the idea and the methodology, and C.K.
  and V.C.
  implemented the corresponding software.
  C.K.
+ and A.M.
  conducted the experiments, employing objective functions as test cases,
  and provided the comparative experiments.
- A.S.
+ V.C.
  performed the necessary statistical tests.
  All authors have read and agreed to the published version of the manuscript.
 \end_layout
@@ -4461,12 +4675,243 @@ literal "false"
 
 \end_inset
 
-Peng, W., Wei, Y., Chen, G., Lu, G., Ye, Q., Ding, R., ...
+Peng, W., Wei, Y., Chen, G., Lu, G., Ye, Q., Ding, R.
  & Cheng, Z.
  (2023).
  Analysis of Wildfire Danger Level Using Logistic Regression Model in Sichuan
  Province, China.
  Forests, 14(12), 2352.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_ann1"
+literal "false"
+
+\end_inset
+
+Hossain, F.
+ A., Zhang, Y., Yuan, C., & Su, C.
+ Y.
+ (2019, July).
+ Wildfire flame and smoke detection using static image features and artificial
+ neural network.
+ In 2019 1st international conference on industrial artificial intelligence
+ (iai) (pp.
+ 1-6).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_ann2"
+literal "false"
+
+\end_inset
+
+Lall, S., & Mathibela, B.
+ (2016, December).
+ The application of artificial neural networks for wildfire risk prediction.
+ In 2016 International Conference on Robotics and Automation for Humanitarian
+ Applications (RAHA) (pp.
+ 1-6).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_ann3"
+literal "false"
+
+\end_inset
+
+Sayad, Y.
+ O., Mousannif, H., & Al Moatassime, H.
+ (2019).
+ Predictive modeling of wildfires: A new dataset and machine learning approach.
+ Fire safety journal, 104, 130-146.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_ann4"
+literal "false"
+
+\end_inset
+
+Gao, K., Feng, Z., & Wang, S.
+ (2022).
+ Using multilayer perceptron to predict forest fires in jiangxi province,
+ southeast china.
+ Discrete Dynamics in Nature and Society, 2022(1), 6930812.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_rf1"
+literal "false"
+
+\end_inset
+
+Latifah, A.
+ L., Shabrina, A., Wahyuni, I.
+ N., & Sadikin, R.
+ (2019, October).
+ Evaluation of Random Forest model for forest fire prediction based on climatolo
+gy over Borneo.
+ In 2019 International Conference on Computer, Control, Informatics and
+ its Applications (IC3INA) (pp.
+ 4-8).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_rf2"
+literal "false"
+
+\end_inset
+
+Malik, A., Rao, M.
+ R., Puppala, N., Koouri, P., Thota, V.
+ A.
+ K., Liu, Q., ...
+ & Gao, J.
+ (2021).
+ Data-driven wildfire risk prediction in northern California.
+ Atmosphere, 12(1), 109.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fire_rf3"
+literal "false"
+
+\end_inset
+
+Gao, C., Lin, H., & Hu, H.
+ (2023).
+ Forest-fire-risk prediction based on random forest and backpropagation
+ neural network of Heihe area in Heilongjiang province, China.
+ Forests, 14(2), 170.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "duration_andela"
+literal "false"
+
+\end_inset
+
+Andela, N., Morton, D.
+ C., Giglio, L., Paugam, R., Chen, Y., Hantson, S.
+ & Randerson, J.
+ T.
+ (2019).
+ The Global Fire Atlas of individual fire size, duration, speed and direction.
+ Earth System Science Data, 11(2), 529-552.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "duration_surrogate"
+literal "false"
+
+\end_inset
+
+Kc, U., Aryal, J., Hilton, J., & Garg, S.
+ (2021).
+ A surrogate model for rapidly assessing the size of a wildfire over time.
+ Fire, 4(2), 20.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "duration_wang"
+literal "false"
+
+\end_inset
+
+Liang, H., Zhang, M., & Wang, H.
+ (2019).
+ A neural network model for wildfire scale prediction using meteorological
+ factors.
+ IEEE Access, 7, 176746-176755.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "duration_xi"
+literal "false"
+
+\end_inset
+
+Xi, D.
+ D., Dean, C.
+ B., & Taylor, S.
+ W.
+ (2021).
+ Modeling the duration and size of wildfires using joint mixture models.
+ Environmetrics, 32(6), e2685.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "duration_wfca"
+literal "false"
+
+\end_inset
+
+WFCA.
+ Western Fire Chiefs Association.
+ How Long Do Wildfires Last? October 2022.
+ Available from: https://wfca.com/wildfire-articles/how-long-do-wildfires-last/
+ (accessed on December 4, 2024).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "genfc1"
+literal "false"
+
+\end_inset
+
+M.G.
+ Smith, L.
+ Bull, Genetic Programming with a Genetic Algorithm for Feature Construction
+ and Selection, Genet Program Evolvable Mach 
+\series bold
+6
+\series default
+, pp.
+ 265–281, 2005.
 \end_layout
 
 \begin_layout Bibliography
