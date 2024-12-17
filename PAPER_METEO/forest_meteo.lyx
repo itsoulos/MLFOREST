@@ -1161,13 +1161,218 @@ The used dataset
 \end_layout
 
 \begin_layout Standard
+In this research, open data provided by the Hellenic Fire Service were utilized,
+ available at the link 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.fireservice.gr/en_US/synola-dedomenon
+\end_layout
+
+\end_inset
+
+.
+ The datasets used included information on all fires that occurred in Greece
+ during the years 2014–2021.
+ The data encompassed the location of the fire, the date and time of ignition
+ and extinguishment, the burned areas categorized by land type, and the
+ firefighting forces deployed for suppression efforts.
+ 
+\end_layout
+
+\begin_layout Standard
+The datasets comply with the European transparency legislation (Directive
+ 2013/37/EU), ensuring that the data are unbiased in terms of type and location,
+ and represent all fires in the Hellenic region.
+ The information provided by the Hellenic Fire Service is easily accessible,
+ regularly updated, accurate, and comprehensive, facilitating analysis and
+ covering all involved entities.
+ 
+\end_layout
+
+\begin_layout Standard
+Regarding burned areas, the dataset included measurements for the following
+ categories: forests, forested areas, groves, grasslands, reed beds and
+ wetlands, agricultural lands, crop residues, and landfills.
+ 
+\end_layout
+
+\begin_layout Standard
+As for the firefighting units deployed, the dataset included measurements
+ for the following resources: firefighters, ground-based teams, volunteers,
+ military forces, other supporting units, fire trucks, service vehicles,
+ tankers, machinery, CL-215 aircraft, PZL aircraft, GRU aircraft, as well
+ as contracted helicopters and aircraft.
+\end_layout
+
+\begin_layout Subsubsection
+Data Preprocessing and Weather Feature Extraction
+\end_layout
+
+\begin_layout Standard
+The first step in data preprocessing involved removing rows with missing
+ values.
+ Subsequently, using the OpenCage Geocoding API, the location data, initially
+ formatted as "Municipality, Area, Address," were converted into geolocation
+ data in the form of latitude and longitude coordinates.
+\end_layout
+
+\begin_layout Standard
+Next, weather information was extracted for each fire event using the OpenWeathe
+r API, capturing data for both the ignition and extinguishment times.
+ OpenWeather is a widely used service that provides detailed weather data,
+ including historical, real-time, and forecasted weather information.
+ The extracted weather features included the following:
+\end_layout
+
+\begin_layout Enumerate
 
 \series bold
-WRITE SOME TEXT HERE
+Temperature at 2 meters
+\series default
+: The air temperature near the ground level.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Relative Humidity at 2 meters
+\series default
+: The percentage of moisture in the air relative to its maximum capacity.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Dew Point at 2 meters
+\series default
+: The temperature at which air reaches saturation and moisture condenses.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Precipitation
+\series default
+: The amount of rainfall during the specific time interval.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Weather Code
+\series default
+: A classification of the general weather conditions (e.g., clear, cloudy,
+ rainy).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Cloud Cover
+\series default
+: The percentage of the sky obscured by clouds.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Evapotranspiration
+\series default
+ (ET0): The potential evapotranspiration measured using the FAO Penman-Monteith
+ method, indicating water loss from the surface and vegetation.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Vapour Pressure Deficit
+\series default
+ (VPD): The difference between the amount of moisture in the air and the
+ maximum it can hold.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Wind Speed
+\series default
+ at 10m and 100m: Wind velocity measured at heights of 10 meters and 100
+ meters.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Wind Direction
+\series default
+ at 10m and 100m: The directional angle of the wind at the respective heights.
+\end_layout
+
+\begin_layout Quote
+Additionally, daily-level weather data were included, such as:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Daylight Duratio
+\series default
+n: The total hours of daylight during the day.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Sunshine Duration
+\series default
+: The total hours of direct sunlight during the day.
+\end_layout
+
+\begin_layout Quote
+These features were aggregated and matched with each fire record, ensuring
+ comprehensive weather context for both the ignition and extinguishment
+ phases of the fires.
+\end_layout
+
+\begin_layout Subsubsection
+Definition of the output variable
+\end_layout
+
+\begin_layout Standard
+To define the output variable, the duration of each forest fire was converted
+ from hours or other time units into minutes, ensuring greater precision
+ in classification.
+ A logarithmic transformation of fire duration in minutes was then applied
+ to manage the wide range of values effectively, preventing excessive influence
+ from extreme durations.
+ Based on this transformation, three distinct categories were established,
+ serving as target values for experimental analysis.
+ This approach enabled the classification of forest fires according to their
+ duration.
+ For the Greek forest fire data used in this study, the following classification
+ scheme was adopted: 
+\end_layout
+
+\begin_layout Enumerate
+Up to 360 minutes (6 hours) is considered to be a fire, of short duration.
+ 
+\end_layout
+
+\begin_layout Enumerate
+From 361 – 7200 minutes (6 hours – 5 days) is a fire of medium duration.
+ 
+\end_layout
+
+\begin_layout Enumerate
+More than 7201 minutes (5 days - and more), which is considered a long duration
+ fire.
 \end_layout
 
 \begin_layout Subsection
-The used methods
+The used feature construction and selection methods
 \end_layout
 
 \begin_layout Subsubsection
