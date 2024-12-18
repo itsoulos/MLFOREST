@@ -310,14 +310,14 @@ Correspondence: itsoulos@uoi.gr
 \begin_layout Abstract
 From early times, humanity has expressed a profound need to predict the
  future.
- In ancient Greece, oracles held a place of high respect, and influence.
- In modern times, the quest for accurate forecasting, has shifted to the
- realms, of research and science∙ empowered by advanced computational tools,
+ In Ancient Greece, oracles held a place of high respect and influence.
+ In modern times, the quest for accurate forecasting has shifted to the
+ realms of research and science, empowered by advanced computational tools,
  provided by Artificial Intelligence, particularly Machine Learning.
- One of the fields, where Machine Learning, has established a fertile ground
- is in the domain, of forest fire management.
- Forest fires, pose a major threat to both human, and animal life, with
- significant economic and social impacts.
+ One of the fields where Machine Learning has established fertile ground
+ is in the domain of forest fire management.
+ Forest fires pose a major threat to both human and animal life, with significan
+t economic and social impacts.
  A reliable prediction system is crucial for mitigating these effects, especiall
 y during summer months, dry seasons, and in high-risk areas, such as the
  Mediterranean.
@@ -328,10 +328,10 @@ g weather conditions at ignition, and during suppression.
  Redundancy Maximum Relevance (MRMR) feature selection, and Grammatical
  Evolution for feature construction, this research aims to identify key
  factors influencing fire duration.
- These techniques, have become invaluable allies, in addressing complex
- predictive challenges, and advancing, our understanding of future events.
+ These techniques have become invaluable allies in addressing complex predictive
+ challenges, and advancing our understanding of future events.
  Our approach, leverages advanced computational methods, to analyze complex
- datasets, providing a deeper understanding of the primary drivers, of wildfire
+ datasets, providing a deeper understanding of the primary drivers of wildfire
  behavior, and enabling more effective mitigation strategies.
 \end_layout
 
@@ -345,7 +345,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Fire, has always had a dual nature, in human history.
+Fire has always had a dual nature, in human history.
  On one hand, it has had the power to destroy civilizations, while on the
  other, it has significantly contributed to the evolution, of human society.
  From its destructive potential in warfare, and natural disasters, to its
@@ -366,14 +366,14 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-This notion, is also evident in ancient Greek mythology, particularly in
+This notion is also evident in ancient Greek mythology, particularly in
  the tale of Prometheus, who defied the gods by stealing fire, and gifting
  it to humanity.
  This act symbolizes the transfer of divine knowledge and power to humans,
  enabling progress and civilization.
- The myth, underscores fire's dual role, as a tool for human advancement,
- and as a source of conflict, illustrating the tension between progress
- and its ethical implications, as well as the costs of rebellion and innovation
+ The myth, underscores fire's dual role as a tool for human advancement
+ and as a source of conflict illustrating the tension between progress and
+ its ethical implications as well as the costs of rebellion and innovation
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -383,8 +383,8 @@ literal "false"
 \end_inset
 
 .
- On this matter, fire, has played a multifaceted role in human history,
- both through myths and through its tangible impacts.
+ On this matter, fire has played a multifaceted role in human history, both
+ through myths and through its tangible impacts.
  
 \end_layout
 
@@ -398,8 +398,8 @@ literal "false"
 
 \end_inset
 
-, with immense effects on Earth's ecosystems, and human societies.
- Beyond that, according, the Chair, of ISO/TC 92, fire safety, Mr.
+ with immense effects on Earth's ecosystems, and human societies.
+ Beyond that according the Chair of ISO/TC 92 fire safety Mr.
  P.
  Van Hees: ‘
 \emph on
@@ -430,8 +430,8 @@ noprefix "false"
 
 \end_inset
 
-, it is illustrated, through a graphical representation, the economic burden,
- from forest fires, on the annual GDP.
+ it is illustrated, through a graphical representation the economic burden
+ from forest fires on the annual GDP.
  
 \end_layout
 
@@ -478,7 +478,7 @@ name "fig:fireEconomic"
 
 \end_inset
 
-The following numbers show the extent of the destruction caused by fires::
+The following numbers show the extent of the destruction caused by fires:
 \end_layout
 
 \begin_layout Itemize
@@ -504,8 +504,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In other words, wildfires and climate change, intensify each other.
- Climate change, exacerbates wildfires by increasing drought, high temperatures,
+In other words wildfires and climate change intensify each other.
+ Climate change exacerbates wildfires by increasing drought, high temperatures,
  low humidity, lightning, and strong winds, leading to more severe, and
  prolonged fire seasons.
  Conversely, wildfires contribute to worsening climate change 
@@ -539,8 +539,8 @@ literal "false"
 
 .
  At the same time, the critical need to address climate changes, effects
- on wildfire patterns, is highlighted, as essential for protecting both
- the environment, and public health in Greece 
+ on wildfire patterns is highlighted as essential for protecting both the
+ environment, and public health in Greece 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_iliopoulos"
@@ -624,10 +624,10 @@ literal "false"
 
 .
  Therefore, despite the challenging circumstances posed by Climate Change,
- driven by continuous human expansion, and technological progress, we aim
- to transform this disadvantage into an advantage, by focusing our efforts
+ driven by continuous human expansion and technological progress we aim
+ to transform this disadvantage into an advantage by focusing our efforts
  on advancing technology itself.
- On this, Artificial intelligence, particularly Machine learning, emerges
+ On this Artificial intelligence, particularly Machine learning, emerges
  as a valuable ally in addressing this global issue, offering innovative
  solutions and supporting sustainable development 
 \begin_inset CommandInset citation
@@ -642,10 +642,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Machine learning, refers to a collection of techniques, and algorithms,
- that enable systems to identify patterns, and make decisions based on data,
- improving their performance over time, without explicitly being programmed
- for specific tasks 
+Machine learning, refers to a collection of techniques and algorithms that
+ enable systems to identify patterns and make decisions based on data improving
+ their performance over time without explicitly being programmed for specific
+ tasks 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "iso_ml"
@@ -654,7 +654,7 @@ literal "false"
 \end_inset
 
 .
- This was the vision, of Alan Turing, when, in 1936, he wrote his PhD ‘On
+ This was the vision, of Alan Turing, when, in 1936 he wrote his PhD ‘On
  Computable Numbers, with an application to the Entscheidung problem’ 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -665,11 +665,11 @@ literal "false"
 
 .
  Namely, Machine learning, is a pivotal branch of artificial intelligence,
- presents endless opportunities for businesses, and society alike.
- Beyond its numerous advantages, it plays a critical role in driving groundbreak
-ing advancements, in Climate Change adaptation, and mitigation.
+ presents endless opportunities for businesses and society alike.
+ Beyond its numerous advantages it plays a critical role in driving groundbreaki
+ng advancements in Climate Change adaptation and mitigation.
  By accelerating, the development of solutions, to some of the most pressing
- challenges facing the planet, machine learning, is reshaping the way we
+ challenges facing the planet, machine learning is reshaping the way we
  address global environmental issues 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -679,8 +679,8 @@ literal "false"
 \end_inset
 
 .
- Although, modeling complex environmental variables, often presents challenges,
- due to the significant computational resources required, and the diversity
+ Although, modeling complex environmental variables, often presents challenges
+ due to the significant computational resources required and the diversity
  or complexity of data formats 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -690,20 +690,20 @@ literal "false"
 \end_inset
 
 .
- Machine learning algorithms, however, can bypass these challenges, by deriving
- mappings, and relationships directly from the data, eliminating the need
+ Machine learning algorithms, however, can bypass these challenges by deriving
+ mappings and relationships directly from the data eliminating the need
  for predefined expert rules.
- This capability, is particularly beneficial when dealing with scenarios,
- involving a large number of parameters, with intricate physical properties,
+ This capability is particularly beneficial when dealing with scenarios
+ involving a large number of parameters with intricate physical properties,
  such as in forest fires.
- Consequently, adopting a machine learning approach to fire management,
- can help overcome many of the limitations, associated with traditional
- physics-based simulation models.
+ Consequently, adopting a machine learning approach to fire management can
+ help overcome many of the limitations associated with traditional physics-based
+ simulation models.
 \end_layout
 
 \begin_layout Standard
 Regarding this, in the recent literature, significant interest has been
- developed, in the role of machine learning, in the field of fire management
+ developed, in the role of machine learning in the field of fire management
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -713,7 +713,7 @@ literal "false"
 \end_inset
 
 .
- Forest fires, however, have not been extensively studied, as research on
+ Forest fires, however, have not been extensively studied as research on
  forest fires constitutes only 2.9% of the global literature, according to
  a study conducted between 2017 and 2021 
 \begin_inset CommandInset citation
@@ -729,7 +729,7 @@ literal "false"
  Studies on general disaster types make up 15.9%, while landslides account
  for 10.1%.
  Notably, depending on the area of focus, researchers employ corresponding
- algorithms, to address specific challenges.
+ algorithms to address specific challenges.
 \end_layout
 
 \begin_layout Standard
@@ -810,8 +810,8 @@ literal "false"
 \end_inset
 
 .
- Also, Bayesian networks were integrated, with deep learning techniques,
- to detect fires, from video frames 
+ Also, Bayesian networks were integrated with deep learning techniques to
+ detect fires, from video frames 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_bayes3"
@@ -823,10 +823,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Naïve Bayes, has been also applied to forest fire-related challenges, in
+Naïve Bayes, has been also applied to forest fire-related challenges in
  numerous studies.
- For instance, Nugroho, developed a forest fire prevention system, that
- combines a wireless sensor network, with a Naïve Bayes classifier 
+ For instance, Nugroho developed a forest fire prevention system, that combines
+ a wireless sensor network with a Naïve Bayes classifier 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_naive1"
@@ -846,7 +846,7 @@ literal "false"
 
 .
  Karo, proposed a methodology for wildfire classification, that incorporates
- feature selection, and employs Naïve Bayes, alongside other machine learning
+ feature selection and employs Naïve Bayes alongside other machine learning
  techniques 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -884,7 +884,7 @@ literal "false"
 
 \end_inset
 
-, and analyzing wildfire danger 
+ and analyzing wildfire danger 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_log4"
@@ -919,8 +919,8 @@ literal "false"
 \end_inset
 
 .
- Similarly, Sayad, utilized neural networks, along with other machine learning
- techniques, for wildfire predictive modeling, using data from NASA’s Land
+ Similarly, Sayad utilized neural networks along with other machine learning
+ techniques for wildfire predictive modeling, using data from NASA’s Land
  Processes Distributed Active Archive Center (LP DAAC) 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -930,7 +930,7 @@ literal "false"
 \end_inset
 
 .
- Additionally, Gao, recently published a case study, on predicting wildfires,
+ Additionally, Gao recently published a case study, on predicting wildfires,
  in a Chinese province, using neural networks 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -944,9 +944,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Also, Random Forest, has been widely utilized, in forest fire prediction.
- For instance, Latifah, applied Random Forest, to predict forest fires,
- in Borneo 
+Also, Random Forest, has been widely utilized in forest fire prediction.
+ For instance, Latifah applied Random Forest, to predict forest fires in
+ Borneo 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_rf1"
@@ -955,8 +955,8 @@ literal "false"
 \end_inset
 
 .
- Similarly, Malik, proposed using Random Forest, to estimate, wildfire risk
- in Northern California 
+ Similarly, Malik proposed the usage of Random Forest to estimate the wildfire
+ risk in Northern California 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_rf2"
@@ -965,9 +965,9 @@ literal "false"
 \end_inset
 
 .
- Additionally, Gao, conducted a forest fire, risk prediction study in China,
- combining Random Forest, with a neural network trained, using the back-propagat
-ion method 
+ Additionally, Gao conducted a forest fire risk prediction study in China,
+ combining Random Forest with a neural network trained using the back-propagatio
+n method 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_rf3"
@@ -993,15 +993,15 @@ literal "false"
 \end_inset
 
 , who developed a wildfire duration prediction model, based on historical
- fire data, and geospatial information.
- The algorithms, employed included: RF (Random Forest), KNN, and XGBoost
- regression models, as well as image-based approaches such as CNN and Encoder.
- The model, achieved an accuracy exceeding 80%, for fires lasting longer
+ fire data and geospatial information.
+ The algorithms employed included: RF (Random Forest), KNN, and XGBoost
+ regression models as well as image-based approaches such as CNN and Encoder.
+ The model, achieved an accuracy exceeding 80% for fires lasting longer
  than 10 days.
  In the same direction of research, Andela validated the fire data from
- the Global Fire Atlas, using independent datasets, from the United States.
- The study utilized satellite data, and highlighted, that the duration of
- fires is significantly influenced, among others by the fire season 
+ the Global Fire Atlas, using independent datasets from the United States.
+ The study utilized satellite data and highlighted that the duration of
+ fires is significantly influenced among others by the fire season 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "duration_andela"
@@ -1010,7 +1010,7 @@ literal "false"
 \end_inset
 
 .
- Ujjwal settled a surrogate model, to capture the dynamic spread, of a wildfire
+ Ujjwal settled a surrogate model to capture the dynamic spread of a wildfire
  over time.
  The surrogate model, designed to simulate the relationship between the
  burned area and key meteorological parameters (such as relative humidity,
@@ -1024,11 +1024,11 @@ literal "false"
 \end_inset
 
 .
- Wang, also conducted research that, while capable of yielding results for
+ Wang, also conducted research that while capable of yielding results for
  predicting, wildfire duration, primarily, focused on forecasting the scale
  of a forest fire.
  The study utilized neural network algorithms, including Backpropagation
- Neural Network (BPNN), Recurrent Neural Network (RNN), and Long Short-Term
+ Neural Network (BPNN), Recurrent Neural Network (RNN) and Long Short-Term
  Memory (LSTM).
  Among these classification methods, LSTM demonstrated the highest accuracy,
  achieving 90.9% 
@@ -1040,8 +1040,8 @@ literal "false"
 \end_inset
 
 .
- Xi, settled a framework, for jointly, modeling fire duration, and size
- using a bivariate finite mixture model.
+ Xi settled a framework, for jointly, modeling fire duration, and size using
+ a bivariate finite mixture model.
  Four subpopulations (normal or extreme in duration and size) were analyzed,
  incorporating, variables such as: location, month, and environmental factors.
  The analysis, revealed a strong correlation between: duration, and size,
@@ -1065,8 +1065,9 @@ Predicting, the duration of a fire is crucial, as it allows for estimating
  emphasizes that climate change is drastically impacting the fire season.
  As a result, fire seasons now last six to eight months, compared to the
  four months, they previously spanned .
- Face the Facts USA reports that, in the U.S., the average duration of wildfires
- increased from 8 days, before 1986, to 37 days by 2013 
+ Face the Facts USA reports that in the U.S.
+ the average duration of wildfires increased from 8 days, before 1986, to
+ 37 days by 2013 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "duration_wfca"
@@ -1390,9 +1391,9 @@ literal "false"
 \end_inset
 
 , and developed by Harold Hotelling (1933).
- This technique, operates on the principle when data from a higher-dimensional
- space is transformed into a lower-dimensional space, the resulting lower-dimens
-ional representation should retain the maximum variance, of the original
+ This technique operates on the principle that when data from a higher-dimension
+al space is transformed into a lower-dimensional space, the resulting lower-dime
+nsional representation should retain the maximum variance of the original
  data.
  
 \end_layout
@@ -1660,12 +1661,12 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The study, by Zhao, extends traditional MRMR methods, by introducing, a
- non-linear feature redundancy measure, and a model-based feature relevance
- measure, which are tested, on synthetic, and real-world datasets.
- Based on its empirical success, MRMR is integrated, into Uber's marketing
- machine learning platform, to automate, the creation and deployment, of
- scalable targeting, and personalization models 
+The study, by Zhao, extends traditional MRMR methods, by introducing a non-linea
+r feature redundancy measure and a model-based feature relevance measure,
+ which are tested on synthetic and real-world datasets.
+ Based on its empirical success, MRMR is integrated into Uber's marketing
+ machine learning platform to automate the creation and deployment of scalable
+ targeting and personalization models 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mrmr_zhao"
@@ -1689,7 +1690,7 @@ literal "false"
 \end_inset
 
  to perform feature selection in the context of air quality prediction.
- MRMR, is employed, to determine which variables have the most significant
+ MRMR, is employed to determine which variables have the most significant
  impact, on the air quality index (AQI), while minimizing redundancy among
  them 
 \begin_inset CommandInset citation
@@ -1704,12 +1705,12 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The article, by Elbeltagi, is an innovative approach, for estimating maize
- chlorophyll, by integrating hyperspectral indices with cutting-edge, six
+The article, by Elbeltagi is an innovative approach for estimating maize
+ chlorophyll by integrating hyperspectral indices with cutting-edge, six
  advanced machine learning techniques.
  The MRMR algorithm was incorporated into the process to enhance feature
  selection by pinpointing the most significant spectral bands, minimizing
- data redundancy, and boosting model efficiency 
+ data redundancy and boosting model efficiency 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mrmr_elbeltagi"
@@ -1722,14 +1723,14 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In the energy sector, Liu conducted the following research, offering an
- improved method, for predicting transient stability, in power systems.
- The MRMR algorithm, is applied for feature selection, with minimal redundancy
- and maximum relevance, providing an enhanced approach, for forecasting
- transient stability, in power systems.
- This approach addresses, the limitations of previous methods, such as low
- accuracy, difficult applicability, and high computational cost, while incorpora
-ting the "winner take all" (WTA) technique, for ensemble learning, and enhanced
+In the energy sector, Liu conducted the following research offering an improved
+ method for predicting transient stability in power systems.
+ The MRMR algorithm is applied for feature selection with minimal redundancy
+ and maximum relevance providing an enhanced approach for forecasting transient
+ stability, in power systems.
+ This approach addresses the limitations of previous methods, such as low
+ accuracy, difficult applicability and high computational cost, while incorporat
+ing the "winner take all" (WTA) technique for ensemble learning and enhanced
  precision 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1743,7 +1744,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Eristi, also refers to the energy sector.
+Eristi also refers to the energy sector.
  Specifically, this paper presents, a new PD detection system, that combines
  spectral analysis, spectrogram analysis, deep learning algorithms, MRMR
  and ensemble machine learning (EML) 
@@ -1768,16 +1769,15 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Zhang, employed an Acoustic Emission (AE) technique to monitor, inaccessible
- areas of large storage tank floors, utilizing AE sensors positioned externally
+Zhang employed an Acoustic Emission (AE) technique to monitor inaccessible
+ areas of large storage tank floors utilizing AE sensors positioned externally
  to the tank.
- The implemented algorithm, effectively distinguishes corrosion signals
- from interference signals, particularly drop-back signals induced by condensati
-on.
+ The implemented algorithm effectively distinguishes corrosion signals from
+ interference signals, particularly drop-back signals induced by condensation.
  Experimental studies were conducted both in laboratory settings and in
  field environments, focusing on Q235 steel.
- Seven characteristic AE features, derived from signal hits, and frequency,
- were extracted, and subsequently selected for pattern recognition, using
+ Seven characteristic AE features derived from signal hits and frequency
+ were extracted and subsequently selected for pattern recognition, using
  the MRMR method 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1792,9 +1792,9 @@ literal "false"
 
 \begin_layout Standard
 Additionally, Karamouz et al., proposed a methodology to examine the effects
- of climate change, on sea level variations, in coastal areas, using an
- artificial neural network model.
- Feature selection techniques, including MRMR and Mutual Information (MI),
+ of climate change on sea level variations in coastal areas using an artificial
+ neural network model.
+ Feature selection techniques, including MRMR and Mutual Information (MI)
  are employed to identify the most suitable predictors for the neural network
  input 
 \begin_inset CommandInset citation
@@ -2998,10 +2998,19 @@ name "sec:Results"
 \end_layout
 
 \begin_layout Standard
+The experiments were executed using the freely available optimization environmen
+t of Optimus, that can be downloaded from 
+\begin_inset Flex URL
+status open
 
-\series bold
-The experiments were conducted using the freely available programming tool
- of WEKA 
+\begin_layout Plain Layout
+
+https://github.com/itsoulos/GlobalOptimus.git
+\end_layout
+
+\end_inset
+
+ as well as the WEKA programming tool 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weka_main"
@@ -3010,47 +3019,27 @@ literal "false"
 \end_inset
 
 .
- The software, which is written in the JAVA programming language to be portable,
- can be downloaded freely from 
-\begin_inset Flex URL
-status collapsed
 
-\begin_layout Plain Layout
-
-https://ml.cms.waikato.ac.nz/weka/
-\end_layout
-
-\end_inset
-
-(accessed on 14 September 2024) or it can be found in the repositories of
- most Linux systems.
- The WEKA software is a collection of machine learning and data analysis
- tools and it contains also some visualization tools for modeling.
- The WEKA has been used with success in many cases, such as educational
- problems 
+\series bold
+ 
+\series default
+The WEKA software has been incorporated in a series of problems 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "weka_education1,weka_education2"
+key "weka_education1,weka_education2,weka_medical1,weka_medical2"
 literal "false"
 
 \end_inset
 
-, medical problems 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "weka_medical1,weka_medical2"
-literal "false"
+.
+ Each experiment was conducted 30 times, using different seed for the random
+ generator each time and the ten - fold cross validation procedure was used
+ to validate the experimental results.
+ The values of parameters for the used methods are shown in Table
+\series bold
+ 
+\series default
 
-\end_inset
-
- etc.
- The validation of the conducted experiments was performed using the ten
- - fold cross validation technique.
-  The experiments were carried out on an AMD Ryzen 5950X with 128GB of RAM,
- running the Debian Linux operating system.
- The experimental results using the methods mentioned in the previous section
- and the 10 modified datasets from the Hellenic Fire Service are listed
- in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:expr"
@@ -3061,7 +3050,12 @@ noprefix "false"
 \end_inset
 
 .
- The following applies to the tables of experimental results:
+
+\series bold
+ 
+\series default
+The following notation is used in the tables presenting the experimental
+ results:
 \end_layout
 
 \begin_layout Enumerate
@@ -4121,7 +4115,62 @@ AVERAGE
 
 \end_inset
 
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:expr"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ presents the percentage values of classification error for various machine
+ learning models from 2014 to 2021, as well as the average error rate for
+ each model.
+ The analysis reveals significant insights regarding the performance and
+ stability of the methods.
+ The BAYES model exhibits the highest variability, with a particularly high
+ error rate in 2017 (53.36%).
+ This is a clear outlier, possibly due to specific conditions in the data
+ or the evaluation framework.
+ In other years, its error rates range between 7.79% and 11.81%.
+ The average error rate for BAYES is 19.41%, the highest in the table, indicating
+ the lowest overall accuracy compared to the other models.
+ The ADAM model shows an average error rate of 11.39%, with values ranging
+ from 9.44% to 13.00%.
+ Its stability is evident, as there are no significant deviations in specific
+ years.
+ ADAM's performance is considered relatively good compared to other methods.
+ The BFGS model has an average error rate of 11.94%, slightly higher than
+ ADAM's.
+ Its error rates range from 9.66% to 14.97%.
+ Although it demonstrates stable performance, its higher average value suggests
+ slightly lower accuracy in certain cases.
+ The MRMR model has an average error rate of 9.75%, ranking it among the
+ most accurate methods.
+ However, its error rate reaches 12.65% in 2017, while remaining low in other
+ years, making it a reliable option overall.
+ The PCA model has an average error rate of 12.14%, which is among the highest
+ in the table.
+ It shows relatively stable values, with a slight increase to 15.50% in 2014.
+ Despite its generally good performance, its accuracy is lower compared
+ to other methods such as MRMR or FC.
+ The NNC model has an average error rate of 9.72%, one of the lowest in the
+ table.
+ Its values range from 7.03% to 12.61%, with small deviations, demonstrating
+ stability and reliability.
+ The FC model has the lowest average error rate in the table, at 8.79%, making
+ it the most accurate method overall.
+ Its error rates range between 6.62% and 12.66%, indicating stable performance
+ with minor fluctuations.
+ In conclusion, FC is the most accurate model, with the lowest average error
+ rate, while BAYES demonstrates the lowest accuracy due to its high average
+ error rate and significant variability.
+ Methods such as MRMR and NNC are also reliable, with low error rates and
+ relatively stable performance.
+ The observed deviations in specific years might be related to changes in
+ the data or evaluation parameters.
 \end_layout
 
 \begin_layout Standard
@@ -4233,7 +4282,107 @@ name "fig:statExper"
 
 \end_inset
 
+The data in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:experNF"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ present the classification error rates for the "FC" machine learning model
+ across different numbers of constructed features (
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+, 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+, and 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+) generated using Grammatical Evolution, spanning the years 2014 to 2021.
+ These results provide insights into the impact of the number of features
+ on the model's performance over time.
+ For 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+, the classification error rates exhibit variability across the years, ranging
+ from a minimum of 6.77% in 2019 to a maximum of 12.68% in 2017.
+ The average error rate for this configuration is 9.03%, indicating a relatively
+ moderate level of accuracy overall.
+ The peak error in 2017 suggests possible challenges in that year's data
+ or specific interactions between the model and the constructed feature
+ set.
+ For 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+, the classification error rates show a slightly improved overall performance
+ compared to 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+, with an average error of 8.79%.
+ The error rates range from 6.62% in 2019, marking the lowest rate for this
+ configuration, to 12.66% in 2017, the highest.
+ These results indicate that adding one more feature generally leads to
+ improved accuracy, although the improvement is not uniform across all years.
+ For 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+, the classification error rates demonstrate further improvement, with an
+ average error of 8.63%, which is the lowest among the three configurations.
+ The error rates range from a minimum of 6.49% in 2019 to a maximum of 12.46%
+ in 2017.
+ The slightly lower peak error compared to 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+ suggests that the inclusion of a third constructed feature enhances the
+ model's ability to capture data patterns more effectively.
+ Across all configurations, the year 2017 consistently exhibits the highest
+ classification error rates, irrespective of the number of features.
+ This outlier suggests specific data-related challenges or unique model
+ behavior during that year.
+ Conversely, 2019 consistently shows the lowest error rates, indicating
+ favorable conditions for accurate classification during that period.
+ The trend in the average classification error rates decreasing from 9.03%
+ for 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+ to 8.63% for 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+ demonstrates that the addition of constructed features through Grammatical
+ Evolution positively impacts the model's accuracy.
+ However, the diminishing returns between 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+ suggest that the incremental benefit of adding more features may plateau
+ after a certain point.
+ In conclusion, the analysis reveals that increasing the number of constructed
+ features generally improves the accuracy of the "FC" model.
+ The results highlight the importance of balancing feature complexity and
+ model performance while considering the specific characteristics of the
+ data across different years.
 \end_layout
 
 \begin_layout Standard
@@ -4241,7 +4390,7 @@ name "fig:statExper"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4677,6 +4826,166 @@ AVERAGE
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+For Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:experNF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, a statistical analysis was conducted using the Wilcoxon Test (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statNf"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) to compare classification error rates among configurations with different
+ numbers of constructed features (
+\begin_inset Formula $N_{f}=1,N_{f}=2$
+\end_inset
+
+, and 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+).
+ The results of the test provide valuable insights into the statistical
+ significance of the differences in the performance of these configurations.
+ The overall result of the Wilcoxon Test, with p < 0.5, indicates that statistica
+lly significant differences exist in at least one of the pairwise comparisons
+ between the configurations.
+ Specifically, the comparison between 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+ yields p = 0.15, which is not statistically significant.
+ This suggests that adding a second constructed feature does not lead to
+ a significant improvement in the model’s performance.
+ On the other hand, the comparison between 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+ shows p = 0.016, a statistically significant value.
+ This indicates that the inclusion of a third constructed feature substantially
+ enhances the model’s accuracy compared to using only one feature.
+ The comparison between 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+ also reveals a statistically significant difference, with p = 0.023.
+ This result suggests that even the transition from 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+ to 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+ leads to an improvement in performance, although the difference is less
+ pronounced than between 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+.
+ Overall, the analysis demonstrates that increasing the number of constructed
+ features from 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+ to 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+ results in a statistically significant improvement in the model’s accuracy.
+ The comparison between 
+\begin_inset Formula $N_{f}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+ is not statistically significant, possibly due to the limited impact of
+ adding only one additional feature.
+ In contrast, the difference between 
+\begin_inset Formula $N_{f}=2$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{f}=3$
+\end_inset
+
+ highlights that further increasing the number of features continues to
+ enhance performance, albeit to a lesser degree.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename statWilcoxon2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison for the experiment involving different values of
+ the critical parameter 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statNf"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
