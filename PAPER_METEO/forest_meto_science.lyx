@@ -1000,7 +1000,7 @@ The used dataset
 In this research, open data provided by the Hellenic Fire Service were utilized,
  available at the link 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2832,7 +2832,7 @@ name "sec:Results"
 The experiments were executed using the freely available optimization environmen
 t of Optimus, that can be downloaded from 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4866,11 +4866,72 @@ al evolution, outperforms other methods in terms of stability and accuracy.
 \end_layout
 
 \begin_layout Section*
-Compliance with Ethical Standards
+Declarations
 \end_layout
 
-\begin_layout Standard
-All authors declare that they have no has no conflict of interest.
+\begin_layout Itemize
+Funding: Not Applicable.
+\end_layout
+
+\begin_layout Itemize
+Conflict of interest: The authors declare no conflicts of interest.
+\end_layout
+
+\begin_layout Itemize
+Ethics approval and consent to participate: Not Applicable.
+\end_layout
+
+\begin_layout Itemize
+Consent for publication: Not Applicable.
+\end_layout
+
+\begin_layout Itemize
+Data availability: The data used here are freely available from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.fireservice.gr/en_US/synola-dedomenon
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Materials availability: Not Applicable.
+\end_layout
+
+\begin_layout Itemize
+Code availability: The used code is freely available from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/itsoulos/GlobalOptimus.git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Author contribution: C.K., V.C.,A.M.
+ and I.G.T.
+ conceived of the idea and the methodology, and C.K.
+ and V.C.
+ implemented the corresponding software.
+ C.K.
+ and A.M.
+ conducted the experiments, employing objective functions as test cases,
+ and provided the comparative experiments.
+ V.C.
+ performed the necessary statistical tests.
+ All authors have read and agreed to the published version of the manuscript.
 \end_layout
 
 \begin_layout Bibliography
