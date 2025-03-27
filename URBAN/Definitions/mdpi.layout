@@ -1,5 +1,5 @@
 #% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass[mdpi]{article (MDPI)}
+#  \DeclareLaTeXClass[Definitions/mdpi]{article (MDPI)}
 # A Simple Template for mdpi Papers
 # Author: E. Forestieri
 
