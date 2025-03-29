@@ -387,8 +387,854 @@ Urban fires;
 Introduction
 \end_layout
 
+\begin_layout Standard
+Whereas,
+ fires can be triggered by various causes significant fires are frequently outcome from the following disasters:
+ storms,
+ transportation accidents,
+ criminal activity / terrorism,
+ droughts,
+ hazardous materials spills 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ref1"
+literal "false"
+
+\end_inset
+
+ and forest fires.
+ Also,
+ Urban fires are predominantly attributed to negligent cooking practices,
+ whereas rural fires often stem from faulty electrical installations,
+ malfunctions in heating systems,
+ or even natural causes such as lightning strikes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ref2"
+literal "false"
+
+\end_inset
+
+.
+ Small scale urban fires often do not have a significant impact on an area,
+ nevertheless on the other hand they still are equally hazardous to human life,
+ in the socio-economic stability of a community,
+ or even they contribute to increased insurance premiums 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ref1"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Referring to human lives,
+ let us examine the numerical data provided by the Hellenic Fire Service,
+ which is available as open data in accordance with the European Union Directive (2013/37/EE) aimed at enhancing transparency 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hellenic_fire"
+literal "false"
+
+\end_inset
+
+.
+ Consequently,
+ as presented in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:graphGreece"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ an increase in fatalities associated with urban fires,
+ has been observed since 2020,
+ with a slight decline in this trend,
+ in 2023.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename greece_fire_deaths.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A graph presenting the deaths from fires in Greece for a period from 2014 to 2023.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:graphGreece"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Beyond this,
+ it is observed that in 2018,
+ the human casualties from the devastating fire in Mati,
+ Attica,
+ have not been accounted for,
+ as previously mentioned in the Abstract 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "greek_wikipedia,greek_wildfire"
+literal "false"
+
+\end_inset
+
+ .
+ This is likely due to the classification of this particular fire as a wildfire rather than an urban fire.
+\end_layout
+
+\begin_layout Standard
+According to a study conducted,
+ in America,
+ by the National Fire Protection Association (NFPA),
+ there was an approximate 4% rise in residential fires and a 13% increase in deliberately ignited structural fires in 2018 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ref2"
+literal "false"
+
+\end_inset
+
+.
+ Thus,
+ based on the official fire situation report,
+ Fire Loss in the United States During 2017,
+ published by the National Fire Protection Association,
+ fire departments across the United States responded to an estimated 1,319,500 fire incidents in 2017.
+ These incidents led to approximately 3,400 civilian fatalities,
+ 14,670 civilian injuries,
+ and an estimated $23 billion in direct property damage 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ref2"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Additionally,
+ the World Health Organization (WHO),
+ an estimated three million fires occur globally each year,
+ resulting in approximately 180,000 fatalities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "who"
+literal "false"
+
+\end_inset
+
+.
+ Moreover,
+ the majority of these disasters take place in major urban centers,
+ within low - income countries,
+ where various economic,
+ social,
+ and environmental factors contribute to an increased risk of fire incidents .
+ 
+\end_layout
+
+\begin_layout Standard
+Nevertheless,
+ the data demonstrate that wildfires are not solely an issue confined to low socio-economic status countries.
+ Notably,
+ the Black Summer of Australia in 2019–2020 remains a significant historical event.
+ Tragically,
+ the fires claimed 33 lives and impacted thousands through smoke inhalation and other effects.
+ By the end of the season,
+ they had burned a record 19 million hectares,
+ destroyed over 3,000 homes,
+ displaced tens of thousands,
+ and caused the loss of billions of animals 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_hazards,australian_report"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore,
+ in July 2024,
+ wildfires occurred in the Arctic plains of Russia's Far East,
+ posing significant challenges to containment efforts 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fires_siberian,nasa_images"
+literal "false"
+
+\end_inset
+
+ .
+ That summer,
+ wildfires had already devastated nearly 5 million hectares of forest in Russia.
+ Wildfires in Russia's Siberian and Far East regions,
+ which occur annually during the summer,
+ have become more severe in recent years due to climate change,
+ which has intensified the hot and dry conditions that fuel these fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fires_russia"
+literal "false"
+
+\end_inset
+
+.
+ Climate change projections,
+ indicate that urban environments may face increasing,
+ fire hazards 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_cities"
+literal "false"
+
+\end_inset
+
+.
+ A stark example of the interconnectedness between climate change,
+ and wildfires,
+ is evident in the fires that occurred in Los Angeles in January 2025,
+ and in Japan in February of the same year.
+ In this connection,
+ Climate scientists are working to identify the impact of climate change on wildfires.
+ However,
+ the most substantial human influence may lie in the ignition sources,
+ as no lightning storms were present at the time,
+ in L.A,
+ to naturally trigger the fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_climate"
+literal "false"
+
+\end_inset
+
+.
+ As the relentless wildfire advanced into urban areas,
+ driven by wind speeds exceeding 80 miles per hour,
+ it destroyed over 16,000 homes and buildings 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_climate"
+literal "false"
+
+\end_inset
+
+.
+ By February 4,
+ a total of 29 fatalities had been reported 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_graphics"
+literal "false"
+
+\end_inset
+
+.
+ Another technologically and socioeconomically advanced nation,
+ Japan,
+ was struck by an uncontrolled wildfire on February 26,
+ 2025 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_japan"
+literal "false"
+
+\end_inset
+
+.
+ The fire scorched over 2,100 hectares and destroyed more than 80 buildings.
+ Determining whether climate change has directly caused or intensified specific wildfires is challenging,
+ as other factors,
+ such as land-use changes,
+ also play a role.
+ However,
+ the IPCC asserts that climate change is increasing the likelihood of weather conditions that facilitate the spread of wildfires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_bbc"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From these real events,
+ it is inferred that an unpredictable natural disaster,
+ such as a wildfire,
+ does not discriminate between low and high-socioeconomic areas.
+ Furthermore,
+ it highlights the precarious balance (sword of Damocles) between climate change,
+ and urban expansion into forested regions.
+ This underscores the critical importance of our research in predicting the impacts damages of an urban fire.
+ Next,
+ we will refer to relevant studies focused on the field of urban fire prediction.
+ A team of researchers,
+ used data from Ankara region,
+ of Turkey,
+ for analysis of the spatial and temporal patterns of residential fires,
+ can enable decision-makers to strategically allocate resources for fire management,
+ based on the intensity of fire clustering over time and across different locations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_turkey"
+literal "false"
+
+\end_inset
+
+.
+ Next,
+ we proceed with an article that examines existing research on the social,
+ economic,
+ and building stock characteristics associated with residential fire risk in urban neighborhoods 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_social"
+literal "false"
+
+\end_inset
+
+.
+ From Australia in 2010,
+ we have the first study utilizing the Bayesian approach,
+ to produce detailed spatial forecasts of residential household fires,
+ across metropolitan South-East Queensland 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_resident"
+literal "false"
+
+\end_inset
+
+.
+ Also,
+ from Australia,
+ a study employs a Markov chain approach to estimate the likelihood of residential fire occurrences based on historical fire data.
+ Utilizing fire incident records collected over a decade in Melbourne,
+ Australia,
+ the spatially integrated fire risk model forecasts potential fire events by incorporating spatial and temporal variables as key predictive factors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_model"
+literal "false"
+
+\end_inset
+
+.
+ Subsequently,
+ the following study builds upon the methodology and effectiveness of a firefighter-led public education campaign on fire prevention,
+ which successfully decreased both the frequency,
+ and severity,
+ of residential structure fires in high-risk areas of Surrey,
+ British Columbia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_freq"
+literal "false"
+
+\end_inset
+
+.
+ In the sequel,
+ some studies have used GIS methods,
+ to analyze the fire risk in urban areas.
+ In Turkey,
+ a study examines fires that have occurred in various locations across Turkey,
+ including cold storage facilities,
+ factories,
+ and manufacturing plants.
+ The case data was utilized to calculate risk scores using Geographic Information System (GIS),
+ Analytical Hierarchy Process (AHP),
+ and Inverse Distance Weight (IDW) methods 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_risk_manage"
+literal "false"
+
+\end_inset
+
+.
+ In China,
+ in order to select the best suitable fire brigade zone,
+ they analyze:
+ fire-risk areas,
+ traffic congestion,
+ land cover,
+ and location.
+ They employ various methods,
+ including Geographic Information Systems (GIS),
+ Multi-Criteria Decision Making (MCDM),
+ and Location-Allocation (L-A) techniques,
+ along with multi-source geospatial data such as land cover,
+ points of interest,
+ drive time,
+ and statistical yearbooks.
+ Additionally,
+ they used Analytic Hierarchy Processes (AHP) to thoroughly assess undeveloped areas based on factors such as location,
+ topography,
+ and potential fire-risk zones 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_gis"
+literal "false"
+
+\end_inset
+
+.
+ The next study conducted in Greece,
+ to develop a fire risk estimation model that integrates recent land cover changes alongside other critical risk factors.
+ They implemented a Support Vector Machine (SVM) algorithm combined with the Analytic Hierarchy Process (AHP),
+ within a Geographic Information System (GIS) platform.
+ This approach allowed for a more precise assessment of fire-prone areas.
+ As a case study,
+ they applied this methodology to the Dadia-Lefkimi - Soufli National Forest Park,
+ ensuring a comprehensive evaluation of fire risk in the region 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_prob"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Afterwards,
+ a study seeks to assess fire risk in urban areas by analyzing 19 factors related to economic,
+ social,
+ and built environment aspects,
+ as well as past fire incidents.
+ It employs Multi-Criteria Decision Making (MCDM) techniques,
+ specifically the Analytic Hierarchy Process (AHP) to determine the significance and weighting of each criterion.
+ To illustrate the method’s effectiveness,
+ the research develops an urban vulnerability index map for Ardabil,
+ Iran,
+ using the Fuzzy-VIKOR approach within a Geographic Information System (GIS) framework 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_gis_model"
+literal "false"
+
+\end_inset
+
+.
+ Building upon,
+ Analytic Hierarchy Process,
+ the paper from Taiwan,
+ evaluated the severity of building fires across 17 villages in Taishan District,
+ New Taipei City.
+ A comprehensive literature review was conducted to examine the influence of fire severity assessment criteria,
+ which served as the foundation for identifying key factors,
+ and developing evaluation items,
+ within the (AHP) framework 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_big_data"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(TEXT ABOUT THE PROPOSED METHODS...)
+\end_layout
+
+\begin_layout Standard
+The rest of this article is divided as follows:
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ the proposed methods are presented in detail,
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ the experiments are illustrated and discussed and finally,
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ some conclusions are presented.
+\end_layout
+
 \begin_layout Section
 Materials and Methods
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Materials-and-Methods"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This section initiates with a detailed description of the used datasets and it continues with a brief presentation of the Grammatical Evolution technique and concludes with the full description of the used techniques.
+\end_layout
+
+\begin_layout Subsection
+The used datasets
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(TO BE CHANGED)
+\end_layout
+
+\begin_layout Standard
+The dataset utilized in this research was sourced from the Hellenic Fire Service in compliance with open data guidelines established by the European Union Directive (2013/37/EU),
+ aiming to promote transparency and open access to governmental records.
+ The dataset contains comprehensive records detailing urban fire incidents specifically for the calendar years 2014-2023.
+\end_layout
+
+\begin_layout Standard
+For each urban fire event documented,
+ detailed information was systematically collected,
+ including the date and precise time of occurrence,
+ allowing for temporal analysis and identification of patterns over various time intervals.
+ The geographic location for each incident was also reported with a municipality code.
+ In addition,
+ specific characteristics relevant to each fire event were captured,
+ including the probable cause or origin of the fire,
+ which helps in identifying common fire risk factors within urban settings.
+ Data regarding the structural properties involved,
+ such as building type or property classification,
+ was also documented,
+ contributing to a comprehensive risk profile for urban infrastructure.
+\end_layout
+
+\begin_layout Standard
+Furthermore,
+ human casualty data detailing the number of fatalities and injuries associated with each incident were recorded.
+ The dataset indicated an average of 0.002 fatalities per incident,
+ with a maximum of 2 fatalities observed in a single event.
+ Injuries averaged at approximately 0.0008 per incident,
+ with a maximum of 1 injury recorded per event.
+ Additionally,
+ instances of burn injuries were relatively infrequent,
+ averaging around 0.002 per incident,
+ with a maximum count of 2 burn cases reported.
+\end_layout
+
+\begin_layout Standard
+Information on the resources deployed was also comprehensively documented.
+ On average,
+ each incident involved approximately 1.65 firefighting vehicles,
+ with a maximum of 24 vehicles responding to the most severe incidents.
+ Personnel deployment averaged about 4.18 firefighters per incident,
+ with an interquartile range from 2 to 5 firefighters,
+ and up to 67 personnel attending a single event in extreme cases.
+\end_layout
+
+\begin_layout Standard
+The dataset underwent thorough preprocessing procedures to ensure high-quality data for analysis.
+ These procedures included validation checks for data accuracy,
+ consistency,
+ completeness,
+ and the removal or correction of any identified errors or inconsistencies.
+ Such rigorous preprocessing steps were critical for enhancing the reliability and validity of the analytical processes that followed.
+\end_layout
+
+\begin_layout Subsection
+Grammatical Evolution
+\end_layout
+
+\begin_layout Standard
+Grammatical evolution is a genetic algorithm where the chromosomes stand for the production rules of any given BNF (Backus–Naur form) grammar
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bnf1"
+literal "false"
+
+\end_inset
+
+.
+ Grammatical Evolution has been used successfully in a variety of cases,
+ such as function approximation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_program1,ge_program2"
+literal "false"
+
+\end_inset
+
+,
+ solution of trigonometric equations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+,
+ automatic music composition of music 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_music"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+neural network construction 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_nn,ge_nn2"
+literal "false"
+
+\end_inset
+
+,
+ creating numeric constraints
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+
+\series bold
+,
+ 
+\series default
+video games 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_pacman,ge_supermario"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+estimation of energy demand
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+combinatorial optimization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+,
+ cryptography 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+ etc.
+ The BNF grammar can be used to describe the syntax of programming languages and usually it is defined as the set 
+\series bold
+
+\begin_inset Formula $G=\left(N,T,S,P\right)$
+\end_inset
+
+
+\series default
+ where
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $N$
+\end_inset
+
+ 
+\series default
+is the set of the so - called non-terminal symbols.
+ Every non - terminal symbol is associated with a series of production rules used to produce terminal symbols.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\series default
+is the set of terminal symbols.
+
+\series bold
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S$
+\end_inset
+
+ is a the start symbol of the grammar and 
+\begin_inset Formula $S\in N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\series default
+is a set of production rules,
+ used to produce terminal symbols from non - terminal symbols.
+ These rules are in the form 
+\series bold
+
+\begin_inset Formula $A\rightarrow a$
+\end_inset
+
+ 
+\series default
+or
+\series bold
+ 
+\begin_inset Formula $A\rightarrow aB,\ A,B\in N,\ a\in T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The algorithm starts from the symbol 
+\begin_inset Formula $S$
+\end_inset
+
+ and gradually creates terminal symbols by replacing non-terminal symbols with the right hand of the selected production rule.
+ The rule is selected through the following procedure:
+\end_layout
+
+\begin_layout Itemize
+Read the next element V from the current chromosome.
+\end_layout
+
+\begin_layout Itemize
+The production rule is selected as:
+ Rule = V mod R,
+ where R is the total number of production rules for the current non – terminal symbol.
+ 
+\end_layout
+
+\begin_layout Subsection
+Neural Network Construction using Grammatical Evolution 
+\end_layout
+
+\begin_layout Subsection
+Feature construction using Grammatical Evolution 
+\end_layout
+
+\begin_layout Subsection
+Create classification rules using Grammatical Evolution
+\end_layout
+
+\begin_layout Section
+Results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -397,7 +1243,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -423,9 +1269,8 @@ name "tab:exper"
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="8">
+<lyxtabular version="3" rows="12" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -438,6 +1283,8 @@ name "tab:exper"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 YEAR
 \end_layout
 
@@ -447,6 +1294,8 @@ YEAR
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 BAYES NET
 \end_layout
 
@@ -456,7 +1305,9 @@ BAYES NET
 \begin_inset Text
 
 \begin_layout Plain Layout
-BAYES
+
+\series bold
+MLP(BP)
 \end_layout
 
 \end_inset
@@ -465,15 +1316,8 @@ BAYES
 \begin_inset Text
 
 \begin_layout Plain Layout
-MLP
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\series bold
 RBF
 \end_layout
 
@@ -483,7 +1327,9 @@ RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-FC2
+
+\series bold
+NNC
 \end_layout
 
 \end_inset
@@ -492,7 +1338,9 @@ FC2
 \begin_inset Text
 
 \begin_layout Plain Layout
-NNC
+
+\series bold
+FC2
 \end_layout
 
 \end_inset
@@ -501,6 +1349,8 @@ NNC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 GENCLASS
 \end_layout
 
@@ -530,7 +1380,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.33%
+8.34%
 \end_layout
 
 \end_inset
@@ -539,7 +1389,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+11.97%
 \end_layout
 
 \end_inset
@@ -548,7 +1398,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.82%
 \end_layout
 
 \end_inset
@@ -557,16 +1407,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+7.35%
 \end_layout
 
 \end_inset
@@ -575,7 +1416,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.03%
 \end_layout
 
 \end_inset
@@ -604,7 +1445,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.40%
+7.63%
 \end_layout
 
 \end_inset
@@ -613,7 +1454,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.79%
 \end_layout
 
 \end_inset
@@ -622,7 +1463,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.13%
 \end_layout
 
 \end_inset
@@ -631,16 +1472,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+6.78%
 \end_layout
 
 \end_inset
@@ -649,7 +1481,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.65%
 \end_layout
 
 \end_inset
@@ -678,7 +1510,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.83%
+8.13%
 \end_layout
 
 \end_inset
@@ -687,7 +1519,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.73%
 \end_layout
 
 \end_inset
@@ -696,7 +1528,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.48%
 \end_layout
 
 \end_inset
@@ -705,16 +1537,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+7.10%
 \end_layout
 
 \end_inset
@@ -723,7 +1546,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.05%
 \end_layout
 
 \end_inset
@@ -752,7 +1575,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.88%
+8.29%
 \end_layout
 
 \end_inset
@@ -761,7 +1584,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.78%
 \end_layout
 
 \end_inset
@@ -770,7 +1593,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.68%
 \end_layout
 
 \end_inset
@@ -779,16 +1602,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+7.24%
 \end_layout
 
 \end_inset
@@ -797,7 +1611,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.13%
 \end_layout
 
 \end_inset
@@ -826,7 +1640,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.34%
+7.99%
 \end_layout
 
 \end_inset
@@ -835,7 +1649,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9.33%
 \end_layout
 
 \end_inset
@@ -844,7 +1658,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.30%
 \end_layout
 
 \end_inset
@@ -853,16 +1667,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+7.11%
 \end_layout
 
 \end_inset
@@ -871,7 +1676,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.74%
 \end_layout
 
 \end_inset
@@ -900,7 +1705,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-6.72%
+7.78%
 \end_layout
 
 \end_inset
@@ -909,7 +1714,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+24.81%
 \end_layout
 
 \end_inset
@@ -918,7 +1723,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.33%
 \end_layout
 
 \end_inset
@@ -927,16 +1732,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+7.15%
 \end_layout
 
 \end_inset
@@ -945,7 +1741,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.26%
 \end_layout
 
 \end_inset
@@ -974,7 +1770,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.34%
+7.86%
 \end_layout
 
 \end_inset
@@ -983,7 +1779,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.03%
 \end_layout
 
 \end_inset
@@ -992,7 +1788,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.99%
 \end_layout
 
 \end_inset
@@ -1001,16 +1797,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+6.66%
 \end_layout
 
 \end_inset
@@ -1048,7 +1835,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.16%
+7.88%
 \end_layout
 
 \end_inset
@@ -1057,7 +1844,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.37%
 \end_layout
 
 \end_inset
@@ -1066,7 +1853,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.87%
 \end_layout
 
 \end_inset
@@ -1075,16 +1862,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+6.55%
 \end_layout
 
 \end_inset
@@ -1122,7 +1900,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.39%
+7.29%
 \end_layout
 
 \end_inset
@@ -1131,7 +1909,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8.45%
 \end_layout
 
 \end_inset
@@ -1140,7 +1918,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.86%
 \end_layout
 
 \end_inset
@@ -1149,16 +1927,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+6.52%
 \end_layout
 
 \end_inset
@@ -1196,7 +1965,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.67%
+7.50%
 \end_layout
 
 \end_inset
@@ -1205,7 +1974,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.56%
 \end_layout
 
 \end_inset
@@ -1214,7 +1983,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.87%
 \end_layout
 
 \end_inset
@@ -1223,16 +1992,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+6.58%
 \end_layout
 
 \end_inset
@@ -1274,7 +2034,9 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.71%
+
+\series bold
+7.87%
 \end_layout
 
 \end_inset
@@ -1284,6 +2046,8 @@ AVERAGE
 
 \begin_layout Plain Layout
 
+\series bold
+11.78%
 \end_layout
 
 \end_inset
@@ -1293,6 +2057,8 @@ AVERAGE
 
 \begin_layout Plain Layout
 
+\series bold
+7.23%
 \end_layout
 
 \end_inset
@@ -1302,15 +2068,8 @@ AVERAGE
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\series bold
+6.90%
 \end_layout
 
 \end_inset
@@ -1340,7 +2099,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1481,7 +2240,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.69%
 \end_layout
 
 \end_inset
@@ -1490,7 +2249,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.50%
 \end_layout
 
 \end_inset
@@ -1546,7 +2305,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.21%
 \end_layout
 
 \end_inset
@@ -1555,7 +2314,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.69%
 \end_layout
 
 \end_inset
@@ -1611,7 +2370,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.41%
 \end_layout
 
 \end_inset
@@ -1620,7 +2379,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.04%
 \end_layout
 
 \end_inset
@@ -1676,7 +2435,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8.01%
 \end_layout
 
 \end_inset
@@ -1685,7 +2444,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.20%
 \end_layout
 
 \end_inset
@@ -1741,7 +2500,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.52%
 \end_layout
 
 \end_inset
@@ -1750,7 +2509,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.04%
 \end_layout
 
 \end_inset
@@ -1806,7 +2565,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.59%
 \end_layout
 
 \end_inset
@@ -1815,7 +2574,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.31%
 \end_layout
 
 \end_inset
@@ -1871,7 +2630,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.18%
 \end_layout
 
 \end_inset
@@ -1880,7 +2639,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.67%
 \end_layout
 
 \end_inset
@@ -1936,7 +2695,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.76%
 \end_layout
 
 \end_inset
@@ -1945,7 +2704,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.55%
 \end_layout
 
 \end_inset
@@ -2001,7 +2760,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.10%
 \end_layout
 
 \end_inset
@@ -2010,7 +2769,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.52%
 \end_layout
 
 \end_inset
@@ -2066,7 +2825,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.09%
 \end_layout
 
 \end_inset
@@ -2075,7 +2834,7 @@ FC4RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.53%
 \end_layout
 
 \end_inset
@@ -2142,6 +2901,8 @@ AVERAGE
 
 \begin_layout Plain Layout
 
+\series bold
+7.26%
 \end_layout
 
 \end_inset
@@ -2151,6 +2912,8 @@ AVERAGE
 
 \begin_layout Plain Layout
 
+\series bold
+6.91%
 \end_layout
 
 \end_inset
@@ -2169,11 +2932,14 @@ AVERAGE
 \end_layout
 
 \begin_layout Section
-Results
-\end_layout
-
-\begin_layout Section
 Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2248,33 +3014,53 @@ References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "Author1(year)"
-key "ref-journal"
+key "fire_ref1"
 literal "false"
 
 \end_inset
 
- Author
-\begin_inset space ~
+Fires – Wildfires and Urban Fires.
+ Juniata County Appendix CMulti-Jurisdictional Hazard Mitigation Plan Hazard Profiles.
+ 2008.
+ Pp.
+ 15-19.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://juniataco.org/docs/hmp/Appendix%20C%20-%2004-Fire-Urban%20and%20Rural.pdf 
+\end_layout
+
 \end_inset
 
-1,
- T.
- The title of the cited article.
- 
-\emph on
-Journal Abbreviation
-\emph default
- 
+ (Accessed on 07 March 2025 ).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_ref2"
+literal "false"
+
+\end_inset
+
+M.R.
+ Hossain,
+ O.
+ Smirnov,
+ Analyzing the risk factors of residential fires in urban and rural census tracts of Ohio using panel data analysis,
+ Applied geography 
 \series bold
-2008
+151
 \series default
 ,
- 
-\emph on
-10
-\emph default
-,
- 142–149.
+ 102863,
+ 2023.
 \end_layout
 
 \begin_layout Bibliography
@@ -2282,367 +3068,1040 @@ Journal Abbreviation
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "Author2(year)"
-key "ref-book1"
+key "hellenic_fire"
 literal "false"
 
 \end_inset
 
- Author
-\begin_inset space ~
+ Hellenic Fire Service.
+ Open Data.
+ Incident record.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.fireservice.gr/el_GR/synola-dedomenon
+\end_layout
+
 \end_inset
 
-2,
+ (Accessed on 07 March 2025 ).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "greek_wikipedia"
+literal "false"
+
+\end_inset
+
+Greek Wikipedia.
+ The trial regarding MATI's wildfire.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://el.wikipedia.org/wiki/%CE%94%CE%AF%CE%BA%CE%B7_%CE%B3%CE%B9%CE%B1_%CF%84%CE%BF_%CE%9C%CE%AC%CF%84%CE%B9
+\end_layout
+
+\end_inset
+
+ (Accessed on 27 February 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "greek_wildfire"
+literal "false"
+
+\end_inset
+
+G.
+ Xanthopoulos,
+ M.
+ Athanasiou,
+ Uniting Our Global Wildfire Community.
+ Wildfire,
+ International Association of Wildland Fire.
+ April 2019,
+ volume 28.2.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "who"
+literal "false"
+
+\end_inset
+
+World Health Organization (WHO).
+ Burns.
+ 13 October 2023.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.who.int/news-room/fact-sheets/detail/burns
+\end_layout
+
+\end_inset
+
+ (Accessed on 13 March 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_hazards"
+literal "false"
+
+\end_inset
+
+Natural Hazards Research Australia.
+ Understanding the Black Summer bushfires through research:
+ a summary of key finding from the Bushfire and Natural Hazards CRC.
+ January 2023.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.naturalhazards.com.au/sites/default/files/2023-01/Understanding%20the%20Black%20Summer%20bushfires%20through%20research_final_web_NHRA.pdf
+\end_layout
+
+\end_inset
+
+ (Accessed on 13 March 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "australian_report"
+literal "false"
+
+\end_inset
+
+Australian Government.
+ Australian Public Service Commission.
+ Black Summer.
+ State of the Service Report 2019 – 20.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.apsc.gov.au/state-service/state-service-report-2019-20/chapter-1-commitment-service/black-summer
+\end_layout
+
+\end_inset
+
+ (Accessed on 13 March 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fires_siberian"
+literal "false"
+
+\end_inset
+
+Fires char the Siberian Arctic.
+ NASA,
+ Earth observatory.
+ 10 July 2024.
+ Available from:
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+ https://earthobservatory.nasa.gov/images/153087/fires-char-the-siberian-arctic
+\end_layout
+
+\end_inset
+
+ (Accessed on 17 March 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "nasa_images"
+literal "false"
+
+\end_inset
+
+Landsat Image Gallery.
+ NASA.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://landsat.visibleearth.nasa.gov/view.php?id=153087 
+\end_layout
+
+\end_inset
+
+ (Accessed on 17 March 2025) .
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fires_russia"
+literal "false"
+
+\end_inset
+
+Raging Wildfires Devastate Russia’s Far East Sakha Republic.
+ The Moscow Times.
+ By Leyla Latypova.
+ 23 July 2024.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.themoscowtimes.com/2024/07/23/raging-wildfires-devastate-russias-far-east-sakha-republic-a85802
+\end_layout
+
+\end_inset
+
+ (Accessed on 17 March 2025) .
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_cities"
+literal "false"
+
+\end_inset
+
+Cities face rising fire risks from climate change without emission cuts.
+ ChosunBiz.
+ By Park Keun-tae.
+ 03 March 2025.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://biz.chosun.com/en/en-science/2025/03/05/FXRLKFRXJJB5LK4YXKPLVETVJM/
+\end_layout
+
+\end_inset
+
+ ( Accessed on 17 March 2025) .
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_climate"
+literal "false"
+
+\end_inset
+
+Here’s how climate change fueled the Los Angeles fires.
+ Npr org.
+ By Lauren Sommer.
+ 29 January 2025.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.npr.org/2025/01/29/nx-s1-5273676/la-fires-climate-change-rainfall-extreme-weather 
+\end_layout
+
+\end_inset
+
+ (Accessed on 17 March 2025 ).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_graphics"
+literal "false"
+
+\end_inset
+
+Graphics Explain Los Angeles ‘ Rare and Devastating January Fires.
+ World Resources Institute.
+ Wri org.
+ By James McCarthy & Jessica Richter.
+ 05 February 2025.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.wri.org/insights/los-angeles-fires-january-2025-explained
+\end_layout
+
+\end_inset
+
+ ( Accessed on 17 March 2025 ).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_japan"
+literal "false"
+
+\end_inset
+
+Fire Grows Unusually Large in Japan.
+ NASA.
+ Earth observatory.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://earthobservatory.nasa.gov/images/154008/fire-grows-unusually-large-in-japan
+\end_layout
+
+\end_inset
+
+ ( Accessed on 17 March 2025 ).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_bbc"
+literal "false"
+
+\end_inset
+
+Thousands evacuated as Japan’s biggest fire in decades continues to burn.
+ BBC.
+ By Gavin Butler.
+ 03 March 17,
+ 2025.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.bbc.com/news/articles/c89ypkq72d0o
+\end_layout
+
+\end_inset
+
+ (Accessed on 17 March 2025 ).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_turkey"
+literal "false"
+
+\end_inset
+
+E.
+ Ceyhan,
+ K.
+ Ertugay,
+ S.
+ Duzgun,
+ Exploratory and inferential methods for spatio-temporal analysis of residential fire clustering in urban areas,
+ Fire safety Journal 
+\series bold
+58
+\series default
+,
+ pp.
+ 226-239,
+ 2013.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_social"
+literal "false"
+
+\end_inset
+
+C.R.
+ Jennings,
+ Social and economic characteristics as determinants of residential fire risk in urban neighborhoods:
+ A review of the literature,
+ Fire safety Journal 
+\series bold
+62
+\series default
+,
+ pp.
+ 13-19,
+ 2013.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_resident"
+literal "false"
+
+\end_inset
+
+D.
+ Rohde,
+ J.
+ Corcoran,
+ P.
+ Chhetri,
+ Spatial forecasting of residential urban fires:
+ A Bayesian approach.
+ Computers,
+ Environment and Urban Systems 
+\series bold
+34
+\series default
+,
+ pp.
+ 58-69,
+ 2010.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_model"
+literal "false"
+
+\end_inset
+
+R.
+ Ardianto,
+ P.
+ Chhetri,
+ Modeling Spatial-Temporal Dynamic of Urban Residential Fire Risk Using a Markov Chain Technique,
+ International Journal of Disaster Risk Science 
+\series bold
+10
+\series default
+,
+ pp.
+ 57-73,
+ 2019.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_freq"
+literal "false"
+
+\end_inset
+
+J.
+ Clare,
  L.
- The title of the cited contribution.
- In 
-\emph on
-The Book Title
-\emph default
-;
- Editor1,
- F.,
- Editor2,
- A.,
- Eds.;
- Publishing House:
- City,
- Country,
- 2007;
- pp.
- 32–58.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author3(year)"
-key "ref-book2"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.;
- Author 2,
- B.
- 
-\shape italic
-Book Title
-\shape default
-,
- 3rd ed.;
- Publisher:
- Publisher Location,
- Country,
- 2008;
- pp.
- 154–196.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author4(year)"
-key "ref-unpublish"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.B.;
- Author 2,
+ Garis,
+ D.
+ Plecas,
  C.
- Title of Unpublished Work.
- 
-\shape italic
-Abbreviated Journal Name
-\shape default
- year,
- 
-\shape italic
-phrase indicating stage of publication (submitted;
- accepted;
- in press)
-\shape default
-.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author5(year)"
-key "ref-url"
-literal "false"
-
-\end_inset
-
- Title of Site.
- Available online:
- URL (accessed on Day Month Year).
- 
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author6(year)"
-key "ref-proceeding"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.B.;
- Author 2,
- C.D.;
- Author 3,
- E.F.
- Title of presentation.
- In Proceedings of the Name of the Conference,
- Location of Conference,
- Country,
- Date of Conference (Day Month Year);
- Abstract Number (optional),
- Pagination (optional).
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author7(year)"
-key "ref-thesis"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.B.
- Title of Thesis.
- Level of Thesis,
- Degree-Granting University,
- Location of University,
- Date of Completion.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-If authors have biography,
- please use the format below
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Short Biography of Authors
-\end_layout
-
-\begin_layout Biography
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-Definitions/author
-\end_layout
-
-\end_inset
-
-
+ Jennings,
+ Reduced frequency and severity of residential fires following delivery of fire prevention education by on-duty fire fighters:
+ Cluster randomized controlled study,
+ Journal of Safety Research 
 \series bold
-Firstname Lastname
+43
 \series default
- Biography of first author
+,
+ pp.
+ 123-128,
+ 2012.
 \end_layout
 
-\begin_layout Biography
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-Definitions/author
-\end_layout
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_risk_manage"
+literal "false"
 
 \end_inset
 
-
+S.
+ Alkis,
+ E.
+ Aksoy,
+ K.
+ Akpinar,
+ Risk Assessment of Industrial Fires for Surrounding Vulnerable Facilities Using a Multi- Criteria Decision Support Approach and GIS,
+ Fire 
 \series bold
-Firstname Lastname
+ 4
 \series default
- Biography of second author
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-For the MDPI journals use author-date citation,
- please follow the formatting guidelines on http://www.mdpi.com/authors/references
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-To cite two works by the same author:
- 
-\backslash
-citeauthor{ref-journal-1a} (
-\backslash
-citeyear{ref-journal-1a},
- 
-\backslash
-citeyear{ref-journal-1b}).
- This produces:
- Whittaker (1967,
- 1975).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-To cite two works by the same author with specific pages:
- 
-\backslash
-citeauthor{ref-journal-3a} (
-\backslash
-citeyear{ref-journal-3a},
- p.
- 328;
- 
-\backslash
-citeyear{ref-journal-3b},
- p.475).
- This produces:
- Wong (1999,
- p.
- 328;
- 2000,
- p.
- 475).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-To obtain 
-\backslash
-citeauthor{} in LyX you have to choose 
-\begin_inset Quotes eld
-\end_inset
-
-Author1
-\begin_inset Quotes erd
-\end_inset
-
- (or 
-\begin_inset Quotes eld
-\end_inset
-
-Author2
-\begin_inset Quotes erd
-\end_inset
-
 ,
- or \SpecialChar ldots
-) in 
-\family sans
-Insert\SpecialChar menuseparator
-Citation\SpecialChar menuseparator
-Citation style
-\family default
-,
- as demonstrated in this citation inset:
- 
-\begin_inset CommandInset citation
-LatexCommand citeauthor
-key "ref-journal"
+ 53,
+ 2021.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_gis"
 literal "false"
 
 \end_inset
 
- (either left- or right-click it).
+Y.
+ Jiang,
+ A.
+ Lv,
+ Z.
+ Yan,
+ Z.
+ Yang,
+ A GIS-Based Multi-Criterion Decision-Making Method to Select City Fire Brigade:
+ A Case Study of Wuhan,
+ China,
+ International Journal of Geo-Information.
+ ISPRS 
+\series bold
+10
+\series default
+,
+ 777,
+ 2021.
+ 
 \end_layout
 
-\begin_layout Plain Layout
-To obtain 
-\backslash
-citeyear{} in LyX you have to choose 
-\begin_inset Quotes eld
-\end_inset
-
-year
-\begin_inset Quotes erd
-\end_inset
-
- in 
-\family sans
-Insert\SpecialChar menuseparator
-Citation\SpecialChar menuseparator
-Citation style
-\family default
-,
- as demonstrated in this citation inset:
- 
-\begin_inset CommandInset citation
-LatexCommand citeyear
-key "ref-journal"
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_prob"
 literal "false"
 
 \end_inset
 
- (either left- or right-click it).
+Y.
+ Maniatis,
+ A.
+ Doganis,
+ M.
+ Chatzigeorgiadis,
+ Fire Risk Probability Mapping Using Machine Learning Tools and Multi – Criteria Decision Analysis in the GIS Environment:
+ A Case Study in the National Park Forest Dadia-Lefkimi-Soufli,
+ Greece,
+ Applied Science 
+\series bold
+12
+\series default
+,
+ 2938,
+ 2022.
 \end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_gis_model"
+literal "false"
 
 \end_inset
 
+S.
+ Noori,
+ A.
+ Mohammadi,
+ T.
+ Ferreira,
+ G.
+ Miguel.,
+ A.
+ Gilandeh,
+ M.
+ Ghaffari,
+ S.
+ Ardabili,
+ J.
+ Seyed,
+ Modelling and Mapping Urban Vulnerability Index against Potential Structural Fire-related Risks:
+ An Integrated GIS-MCDM Approach,
+ Fire 
+\series bold
+6
+\series default
+,
+ 107,
+ 2023.
+\end_layout
 
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_big_data"
+literal "false"
+
+\end_inset
+
+C-A.
+ Lee,
+ Y.-C.
+ Sung,
+ Y-S.
+ Lin,
+ G.K-K.
+ Hsiao,
+ Evaluating the severity of building fires with the analytical hierarchy process,
+ big data analysis,
+ and remote sensing,
+ Natural Hazards 
+\series bold
+103
+\series default
+,
+ pp.
+ 1843-1856,
+ 2020.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "bnf1"
+literal "false"
+
+\end_inset
+
+J.
+ W.
+ Backus.
+ The Syntax and Semantics of the Proposed International Algebraic Language of the Zurich ACM-GAMM Conference.
+ Proceedings of the International Conference on Information Processing,
+ UNESCO,
+ 1959,
+ pp.125-132.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program1"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ J.
+ Collins,
+ M.
+ O’Neill,
+ Grammatical evolution:
+ Evolving programs for an arbitrary language.
+ In:
+ Banzhaf,
+ W.,
+ Poli,
+ R.,
+ Schoenauer,
+ M.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1998.
+ Lecture Notes in Computer Science,
+ vol 1391.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1998.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program2"
+literal "false"
+
+\end_inset
+
+M.
+ O’Neill,
+ M.,
+ C.
+ Ryan,
+ Evolving Multi-line Compilable C Programs.
+ In:
+ Poli,
+ R.,
+ Nordin,
+ P.,
+ Langdon,
+ W.B.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1999.
+ Lecture Notes in Computer Science,
+ vol 1598.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1999.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ M.
+ O’Neill,
+ J.J.
+ Collins,
+ Grammatical evolution:
+ Solving trigonometric identities,
+ proceedings of Mendel.
+ Vol.
+ 98.
+ 1998.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_music"
+literal "false"
+
+\end_inset
+
+A.O.
+ Puente,
+ R.
+ S.
+ Alfonso,
+ M.
+ A.
+ Moreno,
+ Automatic composition of music by means of grammatical evolution,
+ In:
+ APL '02:
+ Proceedings of the 2002 conference on APL:
+ array processing languages:
+ lore,
+ problems,
+ and applications July 2002 Pages 148–155.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn"
+literal "false"
+
+\end_inset
+
+Lídio Mauro Limade Campo,
+ R.
+ Célio Limã Oliveira,Mauro Roisenberg,
+ Optimization of neural networks through grammatical evolution and a genetic algorithm,
+ Expert Systems with Applications 
+\series bold
+56
+\series default
+,
+ pp.
+ 368-384,
+ 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn2"
+literal "false"
+
+\end_inset
+
+K.
+ Soltanian,
+ A.
+ Ebnenasir,
+ M.
+ Afsharchi,
+ Modular Grammatical Evolution for the Generation of Artificial Neural Networks,
+ Evolutionary Computation 
+\series bold
+30
+\series default
+,
+ pp 291–327,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+I.
+ Dempsey,
+ M.O' Neill,
+ A.
+ Brabazon,
+ Constant creation in grammatical evolution,
+ International Journal of Innovative Computing and Applications 
+\series bold
+1
+\series default
+ ,
+ pp 23–38,
+ 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_pacman"
+literal "false"
+
+\end_inset
+
+E.
+ Galván-López,
+ J.M.
+ Swafford,
+ M.
+ O’Neill,
+ A.
+ Brabazon,
+ Evolving a Ms.
+ PacMan Controller Using Grammatical Evolution.
+ In:
+ ,
+ et al.
+ Applications of Evolutionary Computation.
+ EvoApplications 2010.
+ Lecture Notes in Computer Science,
+ vol 6024.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_supermario"
+literal "false"
+
+\end_inset
+
+N.
+ Shaker,
+ M.
+ Nicolau,
+ G.
+ N.
+ Yannakakis,
+ J.
+ Togelius,
+ M.
+ O'Neill,
+ Evolving levels for Super Mario Bros using grammatical evolution,
+ 2012 IEEE Conference on Computational Intelligence and Games (CIG),
+ 2012,
+ pp.
+ 304-31.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+D.
+ Martínez-Rodríguez,
+ J.
+ M.
+ Colmenar,
+ J.
+ I.
+ Hidalgo,
+ R.J.
+ Villanueva Micó,
+ S.
+ Salcedo-Sanz,
+ Particle swarm grammatical evolution for energy demand estimation,
+ Energy Science and Engineering 
+\series bold
+8
+\series default
+,
+ pp.
+ 1068-1079,
+ 2020.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+N.
+ R.
+ Sabar,
+ M.
+ Ayob,
+ G.
+ Kendall,
+ R.
+ Qu,
+ Grammatical Evolution Hyper-Heuristic for Combinatorial Optimization Problems,
+ IEEE Transactions on Evolutionary Computation 
+\series bold
+17
+\series default
+,
+ pp.
+ 840-861,
+ 2013.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ M.
+ Kshirsagar,
+ G.
+ Vaidya,
+ G.
+ et al.
+ Design of a cryptographically secure pseudo random number generator with grammatical evolution.
+ Sci Rep 
+\series bold
+12
+\series default
+,
+ 8602,
+ 2022.
 \end_layout
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2705,7 +4164,7 @@ reviewreports{
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
