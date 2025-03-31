@@ -948,12 +948,6 @@ The used datasets
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-(TO BE CHANGED)
-\end_layout
-
-\begin_layout Standard
 The dataset utilized in this research was sourced from the Hellenic Fire Service in compliance with open data guidelines established by the European Union Directive (2013/37/EU),
  aiming to promote transparency and open access to governmental records.
  The dataset contains comprehensive records detailing urban fire incidents specifically for the calendar years 2014-2023.
@@ -1009,6 +1003,12 @@ The dataset underwent thorough preprocessing procedures to ensure high-quality d
 
 \begin_layout Subsection
 Grammatical Evolution
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(TO BE CHANGED)
 \end_layout
 
 \begin_layout Standard
@@ -1243,7 +1243,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1806,7 +1806,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.47%
 \end_layout
 
 \end_inset

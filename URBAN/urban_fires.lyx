@@ -1243,7 +1243,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1806,7 +1806,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.47%
 \end_layout
 
 \end_inset
@@ -1871,7 +1871,7 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.39%
 \end_layout
 
 \end_inset
