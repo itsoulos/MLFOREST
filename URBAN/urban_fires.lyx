@@ -1216,16 +1216,1456 @@ The production rule is selected as:
 
 \begin_layout Subsection
 Neural Network Construction using Grammatical Evolution 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Neural-Network-Construction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Neural Network Construction method was initial presented in the paper of Tsoulos et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc"
+literal "false"
+
+\end_inset
+
+ and it is used to determine the optimal architecture of artificial neural networks as well as the optimal set of parameters for the network.
+ The Neural Network construction mechanism utilizes the Grammatical Evolution procedure in order to produce artificial neural networks in the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N\left(\overrightarrow{x},\overrightarrow{w}\right)=\sum_{i=1}^{H}w_{(d+2)i-(d+1)}\sigma\left(\sum_{j=1}^{d}x_{j}w_{(d+2)i-(d+1)+j}+w_{(d+2)i}\right)\label{eq:nn}
+\end{equation}
+
+\end_inset
+
+In this equation the term 
+\begin_inset Formula $H$
+\end_inset
+
+ represents the number of processing units (weights) of the network.
+ The function 
+\begin_inset Formula $\sigma(x)$
+\end_inset
+
+ stands for the sigmoid function.
+ The grammar used by Grammatical Evolution to produce neural networks in the form of Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:nn"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ is outlined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nncGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+
+\series bold
+ 
+\series default
+This method has been incorporated in problems such as,
+ chemistry problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_amide1"
+literal "false"
+
+\end_inset
+
+,
+ estimation of solutions of differential equations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_de"
+literal "false"
+
+\end_inset
+
+,
+ medical problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_feas"
+literal "false"
+
+\end_inset
+
+,
+ education problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+,
+ autism screening 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+ etc.
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+S:=<Sigval>                          
+\end_layout
+
+\begin_layout LyX-Code
+<Sigval>::=<Node>                    
+\end_layout
+
+\begin_layout LyX-Code
+           | <Node> + <Sigval>       
+\end_layout
+
+\begin_layout LyX-Code
+<Node>::=<Number>*sig(<Sum>+<Number>) 
+\end_layout
+
+\begin_layout LyX-Code
+<Sum>::= <Number>*<Xlist>            
+\end_layout
+
+\begin_layout LyX-Code
+           |    <Sum>+<Sum>           
+\end_layout
+
+\begin_layout LyX-Code
+<Xlist>::= x1        (0)
+\end_layout
+
+\begin_layout LyX-Code
+             |    x2  (1)
+\end_layout
+
+\begin_layout LyX-Code
+             ..............
+\end_layout
+
+\begin_layout LyX-Code
+             |    xd  (d-1)
+\end_layout
+
+\begin_layout LyX-Code
+<Number>::= (<Dlist>.<Dlist>)        
+\end_layout
+
+\begin_layout LyX-Code
+             |    (-<Dlist>.<Dlist>) 
+\end_layout
+
+\begin_layout LyX-Code
+<Dlist>::= <Digit>            (0)
+\end_layout
+
+\begin_layout LyX-Code
+             | <Digit><Dlist> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<Digit>::= 0      (0)
+\end_layout
+
+\begin_layout LyX-Code
+             |  1 (1)
+\end_layout
+
+\begin_layout LyX-Code
+             ...........
+\end_layout
+
+\begin_layout LyX-Code
+             |  9 (9)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The proposed grammar neural network construction procedure.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nncGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ The main steps of the algorithm used to produce neural networks are outlined below:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization Step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the number of chromosomes and as 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the number of allowed generations.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ the selection rate with 
+\begin_inset Formula $p_{s}\le1$
+\end_inset
+
+ and as 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+ the mutation rate with 
+\begin_inset Formula $p_{m}\le1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ randomly each chromosome 
+\begin_inset Formula $c_{i},\ i=1,\ldots,N_{c}$
+\end_inset
+
+ as a set of randomly selected integers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ as the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness Calculation Step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ using the grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nncGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ the corresponding neural network 
+\begin_inset Formula $N_{i}(x)$
+\end_inset
+
+ for the chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as the fitness 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ of the chromosome 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ the training error of neural network 
+\begin_inset Formula $N_{i}(x)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Application of Genetic Operations
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Application of selection
+\series default
+.
+ The best 
+\begin_inset Formula $p_{s}\times N_{c}$
+\end_inset
+
+ chromosomes are copied to the next generation.
+ The remaining are substituted by chromosomes produced during crossover and mutation.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Application of crossover
+\series default
+.
+ During this procedure new chromosomes will be created from selected chromosomes from the current generation.
+ For each pair 
+\begin_inset Formula $\left(z,w\right)$
+\end_inset
+
+ of produced chromosomes two chromosomes 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ will be selected from the current population using tournament.
+ selection.
+ The new chromosomes will be produced using one - point crossover,
+ which is graphically illustrated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:onePoint"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Application of mutation
+\series default
+.
+ For every element of each chromosome a random number 
+\begin_inset Formula $r\le1$
+\end_inset
+
+ is drawn.
+ The corresponding element is altered randomly when 
+\begin_inset Formula $r\le p_{m}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Termination Check Step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k<N_{g}$
+\end_inset
+
+ 
+\series bold
+then go to 
+\series default
+Fitness Calculation Step.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Testing step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Obtain
+\series default
+ the chromosome 
+\begin_inset Formula $c^{*}$
+\end_inset
+
+ with the lowest fitness value in the population.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ the corresponding neural network 
+\begin_inset Formula $N^{*}(x)$
+\end_inset
+
+ and apply it to the test set and report the associated error.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename onepoint_crossover.eps
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of the one - point crossover procedure.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:onePoint"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Feature construction using Grammatical Evolution 
 \end_layout
 
+\begin_layout Standard
+The next method used in the performed experiments is the Feature Construction technique,
+ initially presented in the work of Gavrilis et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fc1"
+literal "false"
+
+\end_inset
+
+.
+ The method utilizes the Grammatical Evolution procedure to create artificial features from the original ones and hence it can be used to enhance the effectiveness of any applied machine learning model to the artificial data.
+ The artificial features are non - linear mappings of the original ones and the grammar used by the method to construct such features is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fcGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The grammar used in Feature Construction method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fcGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+S::=<expr>   (0) 
+\end_layout
+
+\begin_layout LyX-Code
+<expr> ::=  (<expr> <op> <expr>)               
+\end_layout
+
+\begin_layout LyX-Code
+           | <func> ( <expr> )                 
+\end_layout
+
+\begin_layout LyX-Code
+           |<terminal>             
+\end_layout
+
+\begin_layout LyX-Code
+<op> ::=     +                   
+\end_layout
+
+\begin_layout LyX-Code
+           | -                   
+\end_layout
+
+\begin_layout LyX-Code
+           | *                   
+\end_layout
+
+\begin_layout LyX-Code
+           | /      
+\end_layout
+
+\begin_layout LyX-Code
+<func> ::=   sin               
+\end_layout
+
+\begin_layout LyX-Code
+           | cos               
+\end_layout
+
+\begin_layout LyX-Code
+           |exp                
+\end_layout
+
+\begin_layout LyX-Code
+           |log   
+\end_layout
+
+\begin_layout LyX-Code
+<terminal>::=<xlist>                                      
+\end_layout
+
+\begin_layout LyX-Code
+           |<digitlist>.<digitlist> 
+\end_layout
+
+\begin_layout LyX-Code
+<xlist>::=x1                  
+\end_layout
+
+\begin_layout LyX-Code
+           | x2               
+\end_layout
+
+\begin_layout LyX-Code
+           ………             
+\end_layout
+
+\begin_layout LyX-Code
+           | xN 
+\end_layout
+
+\begin_layout LyX-Code
+<digitlist>::=<digit>                                   
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit>            
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit><digit>     
+\end_layout
+
+\begin_layout LyX-Code
+<digit>  ::= 0 | 1 | 2 | 3| 4| 5| 6| 7| 8| 9 
+\end_layout
+
+\end_inset
+
+This method has been incorporated in a series of real - world applications,
+ such as Spam detection 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fc2"
+literal "true"
+
+\end_inset
+
+,
+ Fetal heart classification 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fc3"
+literal "true"
+
+\end_inset
+
+,
+ classification of EEG signals 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fc4,fc5"
+literal "true"
+
+\end_inset
+
+ etc.
+ The features produced by this procedure can be evaluated using any machine learning method,
+ although the Radial Basis Function (RBF) networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rbf1,rbf2"
+literal "false"
+
+\end_inset
+
+ were used due to the speed of their corresponding training procedure.
+ The main steps of this procedure are the following:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Define
+\series default
+ as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the number of chromosomes and as 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the number of allowed generations.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Define
+\series default
+ the selection rate 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ and the mutation rate 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Define
+\series default
+ as 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ the number of constructed features.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ the 
+\begin_inset Formula $c_{i},\ i=1,\ldots,N_{c}$
+\end_inset
+
+ chromosomes as vectors of randomly selected integers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ artificial features 
+\begin_inset Formula $y_{1},y_{2},\ldots,y_{N_{f}}$
+\end_inset
+
+ for the chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+.
+ The production is performed using the grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fcGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Modify
+\series default
+ the train set of the objective problem using the features 
+\begin_inset Formula $y_{1},y_{2},\ldots,y_{N_{f}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ a machine learning model to the modified set and define as the fitness value 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ the corresponding training error.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Application of genetic operations
+\series default
+.
+ Apply the same genetic operations as in the case of Neural Construction method of subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Neural-Network-Construction"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k<N_{g}$
+\end_inset
+
+ go to Fitness calculation step.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Testing step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Obtain
+\series default
+ the chromosome 
+\begin_inset Formula $c^{*}$
+\end_inset
+
+ with the lowest fitness value.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Produce
+\series default
+ the features 
+\begin_inset Formula $y_{1}^{*},y_{2}^{*},\ldots,y_{N_{f}}^{*}$
+\end_inset
+
+ for this chromosome.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Modify
+\series default
+ the test set of the objective problem using the previously created features.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ any machine learning model to the test set and report the associated error.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Create classification rules using Grammatical Evolution
 \end_layout
 
+\begin_layout Standard
+The third method used in the conducted experiments which is based on Grammatical Evolution is the method that produces classification rules 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genclass"
+literal "false"
+
+\end_inset
+
+.
+ This method has also been published as a software recently 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genclass_softx"
+literal "false"
+
+\end_inset
+
+.
+ The BNF grammar used by this method is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:genclassGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The grammar used by the method that produces classification rules using Grammatical Evolution.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:genclassGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+<S>::=if(<BEXPR>) CLASS=0 else CLASS=1 
+\end_layout
+
+\begin_layout LyX-Code
+<BEXPR>::=<XLIST><BOOLOP><EXPR>            
+\end_layout
+
+\begin_layout LyX-Code
+         |!(<BEXPR>)                       
+\end_layout
+
+\begin_layout LyX-Code
+         |<XLIST><BOOLOP><EXPR>&<BEXPR>    
+\end_layout
+
+\begin_layout LyX-Code
+         |<XLIST><BOOLOP><EXPR>|<BEXPR>    
+\end_layout
+
+\begin_layout LyX-Code
+<BOOLOP>::= >                              
+\end_layout
+
+\begin_layout LyX-Code
+          | >=                             
+\end_layout
+
+\begin_layout LyX-Code
+          | <                              
+\end_layout
+
+\begin_layout LyX-Code
+          | <=                             
+\end_layout
+
+\begin_layout LyX-Code
+<EXPR>::= (<EXPR><BINARYOP><EXPR>)         
+\end_layout
+
+\begin_layout LyX-Code
+        | <FUNCTION>(<EXPR>)               
+\end_layout
+
+\begin_layout LyX-Code
+        | <TERMINAL>                       
+\end_layout
+
+\begin_layout LyX-Code
+<BINARYOP>::= +                            
+\end_layout
+
+\begin_layout LyX-Code
+            | -                            
+\end_layout
+
+\begin_layout LyX-Code
+            | *                            
+\end_layout
+
+\begin_layout LyX-Code
+            | /                            
+\end_layout
+
+\begin_layout LyX-Code
+<FUNCTION>::= sin | cos | exp | log        
+\end_layout
+
+\begin_layout LyX-Code
+<TERMINAL>::= <XLIST>                      
+\end_layout
+
+\begin_layout LyX-Code
+            | <DIGITLIST>.<DIGITLIST>      
+\end_layout
+
+\begin_layout LyX-Code
+            | (-<DIGITLIST>.<DIGITLIST>)   
+\end_layout
+
+\begin_layout LyX-Code
+ <XLIST>::= x1 | x2 | ...|xD               
+\end_layout
+
+\begin_layout LyX-Code
+<DIGITLIST>::=<DIGIT>                      
+\end_layout
+
+\begin_layout LyX-Code
+             | <DIGIT><DIGIT>              
+\end_layout
+
+\begin_layout LyX-Code
+             | <DIGIT><DIGIT><DIGIT>       
+\end_layout
+
+\begin_layout LyX-Code
+<DIGIT>::= 0 | 1 | 2 | 3 | 4 |5 |6 |7 |8 |9    
+\end_layout
+
+\end_inset
+
+The main steps of this method have as follows:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Define
+\series default
+ as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the total number of chromosomes and with 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the allowed number of generations.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Define
+\series default
+ the selection rate 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ and the mutation rate 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ as vectors of randomly selected integers the chromosomes 
+\begin_inset Formula $c_{i},\ i=1,\ldots,N_{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ using the Grammatical evolution procedure and the grammar depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:genclassGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ a classification program 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ for the corresponding chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the fitness 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ as
+\begin_inset Formula 
+\begin{equation}
+f_{i}=\sum_{j=1}^{M}\left(G_{i}\left(x_{j}\right)-t_{j}\right)^{2}
+\end{equation}
+
+\end_inset
+
+for the corresponding training set 
+\begin_inset Formula $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{M},t_{M}\right)\right\} $
+\end_inset
+
+.
+ The values 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ denote the input patterns and the value 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ the expected outcome for pattern 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Genetic operations step
+\series default
+.
+ Apply the same genetic operations as in the case of Neural Construction method of subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Neural-Network-Construction"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k<N_{g}$
+\end_inset
+
+ then go to Fitness calculation step.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Testing step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Obtain
+\series default
+ the best chromosome 
+\begin_inset Formula $c^{*}$
+\end_inset
+
+ and produce the associated classification program 
+\begin_inset Formula $G^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ the classification program to the test set of the problem and report the result.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Results
 \begin_inset CommandInset label
@@ -1243,7 +2683,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3264,6 +4704,384 @@ C.
 ,
  8602,
  2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "nnc"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ D.
+ Gavrilis,
+ E.
+ Glavas,
+ Neural network construction and training using grammatical evolution,
+ Neurocomputing 
+\series bold
+72
+\series default
+,
+ pp.
+ 269-277,
+ 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "nn_amide1"
+literal "false"
+
+\end_inset
+
+G.V.
+ Papamokos,
+ I.G.
+ Tsoulos,
+ I.N.
+ Demetropoulos,
+ E.
+ Glavas,
+ Location of amide I mode of vibration in computed data utilizing constructed neural networks,
+ Expert Systems with Applications 
+\series bold
+36
+\series default
+,
+ pp.
+ 12210-12213,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_de"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ D.
+ Gavrilis,
+ E.
+ Glavas,
+ Solving differential equations with constructed neural networks,
+ Neurocomputing 
+\series bold
+72
+\series default
+,
+ pp.
+ 2385-2391,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_feas"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ G.
+ Mitsi,
+ A.
+ Stavrakoudis,
+ S.
+ Papapetropoulos,
+ Application of Machine Learning in a Parkinson's Disease Digital Biomarker Dataset Using Neural Network Construction (NNC) Methodology Discriminates Patient Motor Status,
+ Frontiers in ICT 6,
+ 10,
+ 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+V.
+ Christou,
+ I.G.
+ Tsoulos,
+ V.
+ Loupas,
+ A.T.
+ Tzallas,
+ C.
+ Gogos,
+ P.S.
+ Karvelis,
+ N.
+ Antoniadis,
+ E.
+ Glavas,
+ N.
+ Giannakeas,
+ Performance and early drop prediction for higher education students using machine learning,
+ Expert Systems with Applications 
+\series bold
+225
+\series default
+,
+ 120079,
+ 2023.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+E.I.
+ Toki,
+ J.
+ Pange,
+ G.
+ Tatsis,
+ K.
+ Plachouras,
+ I.G.
+ Tsoulos,
+ Utilizing Constructed Neural Networks for Autism Screening,
+ Applied Sciences 
+\series bold
+14
+\series default
+,
+ 3053,
+ 2024.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "fc1"
+literal "false"
+
+\end_inset
+
+Dimitris Gavrilis,
+ Ioannis G.
+ Tsoulos,
+ Evangelos Dermatas,
+ Selecting and constructing features using grammatical evolution,
+ Pattern Recognition Letters 
+\series bold
+29
+\series default
+,pp.
+ 1358-1365,
+ 2008.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "fc2"
+literal "false"
+
+\end_inset
+
+Dimitris Gavrilis,
+ Ioannis G.
+ Tsoulos,
+ Evangelos Dermatas,
+ Neural Recognition and Genetic Features Selection for Robust Detection of E-Mail Spam,
+ Advances in Artificial Intelligence Volume 3955 of the series Lecture Notes in Computer Science pp 498-501,
+ 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc3"
+literal "true"
+
+\end_inset
+
+George Georgoulas,
+ Dimitris Gavrilis,
+ Ioannis G.
+ Tsoulos,
+ Chrysostomos Stylios,
+ João Bernardes,
+ Peter P.
+ Groumpos,
+ Novel approach for fetal heart rate classification introducing grammatical evolution,
+ Biomedical Signal Processing and Control 
+\series bold
+2
+\series default
+,pp.
+ 69-79,
+ 2007 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc4"
+literal "true"
+
+\end_inset
+
+Otis Smart,
+ Ioannis G.
+ Tsoulos,
+ Dimitris Gavrilis,
+ George Georgoulas,
+ Grammatical evolution for features of epileptic oscillations in clinical intracranial electroencephalograms,
+ Expert Systems with Applications 
+\series bold
+38
+\series default
+,
+ pp.
+ 9991-9999,
+ 2011 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "fc5"
+literal "false"
+
+\end_inset
+
+A.
+ T.
+ Tzallas,
+ I.
+ Tsoulos,
+ M.
+ G.
+ Tsipouras,
+ N.
+ Giannakeas,
+ I.
+ Androulidakis and E.
+ Zaitseva,
+ Classification of EEG signals using feature creation produced by grammatical evolution,
+ In:
+ 24th Telecommunications Forum (TELFOR),
+ pp.
+ 1-4,
+ 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "rbf1"
+literal "false"
+
+\end_inset
+
+J.
+ Park and I.
+ W.
+ Sandberg,
+ Universal Approximation Using Radial-Basis-Function Networks,
+ Neural Computation 3,
+ pp.
+ 246-257,
+ 1991.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rbf2"
+literal "false"
+
+\end_inset
+
+H.
+ Yu,
+ T.
+ Xie,
+ S.
+ Paszczynski,
+ B.
+ M.
+ Wilamowski,
+ Advantages of Radial Basis Function Networks for Dynamic System Design,
+ in IEEE Transactions on Industrial Electronics 
+\series bold
+58
+\series default
+,
+ pp.
+ 5438-5450,
+ 2011.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "genclass"
+literal "false"
+
+\end_inset
+
+Tsoulos,
+ I.G.
+ Creating classification rules using grammatical evolution.
+ Int.
+ J.
+ Comput.
+ Intell.
+ Stud.
+ 2020,
+ 9,
+ 161–171.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "genclass_softx"
+literal "false"
+
+\end_inset
+
+Anastasopoulos,
+ N.;
+ Tsoulos,
+ I.G.;
+ Tzallas,
+ A.
+ GenClass:
+ A parallel tool for data classification based on Grammatical Evolution.
+ SoftwareX 2021,
+ 16,
+ 100830.
 \end_layout
 
 \begin_layout Standard
