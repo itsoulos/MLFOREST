@@ -3430,7 +3430,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4282,6 +4282,141 @@ AVERAGE
 
 \end_inset
 
+In Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:exper"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ GENCLASS demonstrates the lowest average classification error (6.62%),
+ making it the most reliable model for wildfire prediction.
+ It is followed by FC with an average error of 6.90% and NNC with 7.23%.
+ Traditional models such as BAYES NET (8.54%) and MLP(BP) (7.87%) exhibit higher error rates,
+ while RBF performs the worst with an average error of 11.78%,
+ including an exceptionally high value in 2019 (24.81%),
+ likely due to overfitting or sensitivity to outliers.
+ GENCLASS not only has the lowest error but also shows consistent improvement over time.
+ Starting at 7.03% in 2014,
+ it decreased to 6.20% in 2023,
+ with minor fluctuations in between.
+ FC and NNC also display a declining trend but with greater variability.
+ In contrast,
+ MLP(BP) and BAYES NET show no clear improvement,
+ with BAYES NET even experiencing a slight increase in error in 2022–2023.
+ RBF,
+ despite improving after 2019,
+ remains unstable and less reliable.
+ When comparing the top three models (GENCLASS,
+ FC,
+ NNC),
+ GENCLASS consistently outperforms the others in all years except 2019,
+ where FC had a marginally better performance.
+ NNC,
+ while superior to traditional methods,
+ lags behind GENCLASS and FC.
+ The remaining models (BAYES NET,
+ MLP(BP),
+ RBF) appear less competitive in accuracy compared to newer techniques.
+ The data strongly supports GENCLASS as the optimal model for wildfire prediction due to its consistently low and stable error rate,
+ as well as its progressive improvement over time.
+ FC and NNC remain viable alternatives with good performance,
+ but GENCLASS maintains a clear advantage.
+ The other models,
+ particularly RBF,
+ may require further optimization to enhance reliability.
+ The steady performance of GENCLASS makes it the safest choice for practical applications.
+\end_layout
+
+\begin_layout Standard
+Within the framework of statistical analysis,
+ R language scripts were executed to extract significance levels (p-values) for performance differences between the classification models.
+ The results,
+ shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:stat"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ reveal statistically significant differences between the compared models.
+ Specifically,
+ all pairwise model comparisons yielded p-values below the standard significance threshold (typically p < 0.05),
+ indicating statistically significant performance differences.
+ The comparison between BAYES NET and MLP(BP) produced p = 0.0098,
+ while BAYES NET's comparisons with RBF,
+ NNC,
+ FC and GENCLASS showed even smaller values (p = 0.0039 and p = 0.002),
+ confirming that BAYES NET differs significantly from other models.
+ Similarly,
+ MLP(BP) comparisons with RBF,
+ NNC,
+ FC and GENCLASS all resulted in p = 0.002,
+ demonstrating high statistical significance in their performance differences.
+ The same holds true for RBF's comparisons with NNC,
+ FC and GENCLASS (p = 0.002),
+ as well as for comparisons between NNC,
+ FC and GENCLASS.
+ The fact that all p-values are very small (p ≤ 0.0098) confirms that the models do not perform equally and that statistically significant differences exist between them.
+ This is particularly evident in comparisons involving GENCLASS,
+ which - as previous analysis has shown - stands out for its high accuracy.
+ These results reinforce the conclusion that certain models (such as GENCLASS and FC) are clearly superior to others (like BAYES NET and RBF),
+ a finding that should be considered in practical machine learning applications.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison of the experimental results obtained by various machine learning methods.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:stat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -4294,6 +4429,66 @@ name "sec:Conclusions"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+This study implements the innovative technique of Grammatical Evolution to predict the consequences of urban fires,
+ utilizing a decade of data from the Hellenic Fire Service.
+ The results demonstrate the clear superiority of the GENCLASS method over other machine learning approaches,
+ both in terms of accuracy and interpretability.
+ The method's ability to generate human-readable classification rules constitutes a significant advantage over traditional "black-box" machine learning models.
+ These rules reveal complex correlations between factors such as meteorological conditions,
+ urban layout,
+ and human activity,
+ providing valuable insights for fire prevention and management.
+ However,
+ the research does face certain limitations that warrant discussion.
+ The reliance on historical data reduces predictive capability in extreme or unprecedented scenarios,
+ such as those caused by climate change.
+ Additionally,
+ the performance of some models,
+ like RBF,
+ shows significant instability in certain cases,
+ likely due to overfitting or sensitivity to outliers.
+ This underscores the need for further algorithm optimization and the integration of additional data to enhance reliability.
+\end_layout
+
+\begin_layout Standard
+The findings of this research confirm that Grammatical Evolution,
+ particularly the GENCLASS method,
+ offers a robust solution for predicting the impacts of urban fires.
+ This method not only achieves the lowest average classification error but also provides transparent,
+ interpretable rules that can be directly utilized by fire departments and urban planners.
+ The generated rules uncover critical dependencies,
+ such as the influence of temperature,
+ emergency response times,
+ and demographic characteristics on the extent of damage.
+ This paves the way for developing dynamic evacuation strategies,
+ implementing preventive measures in vulnerable areas,
+ and raising public awareness of fire risks.
+ Moreover,
+ the consistent improvement in GENCLASS's performance over time suggests its adaptability to changing conditions and its potential for enhancement with new data.
+ However,
+ it is important to recognize that the effectiveness of any predictive method depends heavily on the quality and completeness of available data,
+ as well as the ability to account for new and unforeseen factors,
+ such as climate change.
+\end_layout
+
+\begin_layout Standard
+To further develop the findings of this research and strengthen their practical application,
+ several directions for future exploration are proposed.
+ First,
+ the integration of real-time data from sensors and satellite systems could significantly improve the accuracy and timeliness of predictions,
+ enabling dynamic model adjustments and rapid responses to emerging threats.
+ Second,
+ extending the method to other geographic regions with different urban and climatic characteristics could explore the generalizability of the findings and identify new factors influencing fire risk.
+ Third,
+ combining Grammatical Evolution with advanced deep learning techniques,
+ such as neural networks for spatiotemporal analysis,
+ could enhance predictive capabilities in complex scenarios involving multiple simultaneous hazards.
+ Finally,
+ developing simulations that account for the long-term impacts of climate change and urban expansion could provide valuable insights for designing more resilient and safer urban environments.
+ These directions have the potential to transform the research findings into practical tools for safeguarding human lives and urban infrastructure.
 \end_layout
 
 \begin_layout Standard
