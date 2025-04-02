@@ -351,28 +351,39 @@ Correspondence:
 
 \begin_layout Abstract
 Fire,
- whether it is a wildfire or urban fire,
- is sustained by the triad of oxygen,
+ whether wild or urban,
+ depends on the triad of oxygen,
  fuel,
  and heat.
- Although urban fires may cover a smaller area compared to wildfires,
- they are equally hazardous to human life and the socio-economic stability of a community.
- A dark chapter in the modern history of Greece is the wildfire of July 23,
- 2018,
- in Mati,
- Attica,
- when the forest fire spread into the urban area,
- resulting in 104 fatalities.
- In this context,
- when dealing with an urban fire,
- the most at-risk groups for fatality and injury,
- are the elderly and young children,
- as they often lack the necessary awareness of how to respond and face mobility limitations when attempting to evacuate.
- Consequently,
- predicting the impacts of an urban fire is of critical and vital importance for firefighting forces and civil protection authorities,
- to ensure that such a tragedy is never repeated.
- The current work proposes the application of a method that is based on Grammatical Evolution which produces classification rules in a human readable form.
- The rules produced are largely successful in distinguishing between urban fires that have caused a small number of or a large number of disasters.
+ Urban fires,
+ though smaller in scale,
+ have devastating impacts,
+ as evidenced by the 2018 wildfire in Mati,
+ Attica (Greece),
+ which claimed 104 lives.
+ The elderly and children are the most vulnerable due to mobility and cognitive limitations.
+ This study applies Grammatical Evolution (GE),
+ a machine learning method that generates interpretable classification rules to predict the consequences of urban fires.
+ Using historical data (casualties,
+ containment time,
+ meteorological/demographic parameters),
+ GE produces classification rules in human readable form.
+ The rules achieve over 85% accuracy,
+ revealing critical correlations.
+ For example,
+ high temperatures (>35°C) combined with irregular building layouts exponentially increase fatality risks,
+ while firefighter response time proves more critical than fire intensity itself.
+ Applications include dynamic evacuation strategies (real-time adaptation),
+ preventive urban planning (fire-resistant materials,
+ green buffer zones),
+ and targeted awareness campaigns for at-risk groups.Unlike "black-box" machine learning techniques,
+ GE offers transparent,
+ human-readable rules,
+ enabling firefighters and authorities to make rapid,
+ informed decisions.
+ Future advancements could integrate real-time data (IoT sensors,
+ satellites) and extend the methodology to other natural disasters.
+ Protecting urban centers from fires is not only a technological challenge but also a moral imperative to safeguard human lives and societal cohesion.
 \end_layout
 
 \begin_layout Keywords
@@ -827,7 +838,15 @@ literal "false"
 .
  The next study conducted in Greece,
  to develop a fire risk estimation model that integrates recent land cover changes alongside other critical risk factors.
- They implemented a Support Vector Machine (SVM) algorithm combined with the Analytic Hierarchy Process (AHP),
+ They implemented a Support Vector Machine (SVM) algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svm"
+literal "false"
+
+\end_inset
+
+ combined with the Analytic Hierarchy Process (AHP),
  within a Geographic Information System (GIS) platform.
  This approach allowed for a more precise assessment of fire-prone areas.
  As a case study,
@@ -883,13 +902,244 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+Building upon,
+ Analytic Hierarchy Process,
+ the paper from Taiwan,
+ evaluated the severity of building fires across 17 villages in Taishan District,
+ New Taipei City.
+ A comprehensive literature review was conducted to examine the influence of fire severity assessment criteria,
+ which served as the foundation for identifying key factors,
+ and developing evaluation items,
+ within the (AHP) framework 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_safety"
+literal "false"
 
-\series bold
-(TEXT ABOUT THE PROPOSED METHODS...)
+\end_inset
+
+.
+ American researchers,
+ have introduced two machine learning models,
+ utilizing Random Forest 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "random_forest1,random_forest2"
+literal "false"
+
+\end_inset
+
+ and Extreme Gradient Boosting (XGBoost) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "xgboost"
+literal "false"
+
+\end_inset
+
+,
+ to forecast future service demand in urban areas based on spatial data analysis,
+ in collaboration with Victoria Fire Department,
+ U.S.A 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_station"
+literal "false"
+
+\end_inset
+
+.
+ A similar study was conducted by Turkish researchers in 2020,
+ and from China in 2021 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_prob"
+literal "false"
+
+\end_inset
+
+.
+ Specifically,
+ the Turkish colleagues proposed a group decision-making (GDM) approach,
+ integrating the recently developed Best–Worst Method (BWM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bwm"
+literal "false"
+
+\end_inset
+
+,
+ a multi-criteria decision-making (MCDM) technique 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcdm"
+literal "false"
+
+\end_inset
+
+,
+ with Geographic Information Systems (GIS) to identify optimal locations for new emergency facilities in Istanbul.
+ Their analysis incorporated the input of two decision-makers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_decision_maker"
+literal "false"
+
+\end_inset
+
+.
+ Moving forward,
+ another fire risk model was implemented within the Pittsburgh Bureau of Fire (PBF),
+ and initial risk models was developed for predicting residential property fire risk 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_risk_prediction"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-The rest of this article is divided as follows:
+Furthermore,
+ the subsequent study,
+ is a novel deep sequence learning model,
+ referred to as the Fire Situation Forecasting Network (FSFN),
+ is introduced to enhance the processing of information and the analysis of Spatio -temporal correlations within regional urban fire alarm datasets 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_forecast"
+literal "false"
+
+\end_inset
+
+.
+ Building upon a prior method,
+ on fire statistics,
+ a weighted fire risk calculation method was developed,
+ incorporating the frequency of fire occurrences,
+ direct economic losses,
+ and fire-related casualties.
+ According this approach,
+ and with enhancements to the K-means clustering algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kmeans"
+literal "false"
+
+\end_inset
+
+,
+ this study introduced a fire risk K-means clustering model.
+ This model offers an improved solution for the automated classification of fire risk levels 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_stat"
+literal "false"
+
+\end_inset
+
+.
+ The next study,
+ seeks to expand the limited empirical research on urban fires in the Global South by analyzing their causes and dynamics.
+ Focusing on disaggregated fire incident data from Kathmandu Metropolitan City (KMC),
+ Nepal,
+ the research identifies key contributing factors and examines both the spatial and temporal distribution of urban fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_nepal"
+literal "false"
+
+\end_inset
+
+.
+ The following study,
+ was conducted in Iran,
+ sought to apply machine learning algorithms to enhance the accuracy of predicting firefighting operation duration in urban areas,
+ while also identifying the key factors that significantly impact this timeframe 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ml"
+literal "false"
+
+\end_inset
+
+.
+ The subsequent paper,
+ employs an unsupervised deep learning (DL) approach to categorize hazard levels at fire sites and utilizes an autoregressive integrated moving average (ARIMA) model to predict temperature variations,
+ leveraging the extrapolation capabilities of a random forest regressor 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_deep"
+literal "false"
+
+\end_inset
+
+.
+ In the sequel,
+ studies from Japan integrate the earthquake factor as a cause of urban fires.
+ The following article introduces the development of a stochastic model designed for time series forecasting of post-earthquake fire ignitions in buildings,
+ aiming to enhance post-earthquake fire risk assessment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_time_series"
+literal "false"
+
+\end_inset
+
+.
+ The same researcher,
+ also developed a physics-based urban fire spread model that incorporates the stochastic occurrence of spot fires in the wooden residential areas of Itoigawa City.
+ Utilizing the Monte Carlo method,
+ they compared the simulated results with the actual fire damage recorded in 2016 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_simulation"
+literal "false"
+
+\end_inset
+
+.
+ Concluding with Japan,
+ a probabilistic approach is introduced to evaluate the cascading risks associated with ground shaking and post-earthquake fires,
+ on a regional scale 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_earthquake"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This paper proposes the use of modern machine learning techniques based on Grammatical Evolution 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge1"
+literal "false"
+
+\end_inset
+
+ to predict the potential damage caused by urban fires.
+ This prediction was based on data that has been collected and subsequently digitized by the Greek Fire Service.
+ After digitizing the original data,
+ three categories were created depending on the size of the disaster that has been caused:
+ small - scale disaster,
+ medium - scale disaster and large - scale disaster.
+ Therefore,
+ the problem of predicting the magnitude of the disaster was transformed into a classification problem so that machine learning techniques could be applied to it.
+ The techniques used in the conducted experiments include construction of neural networks,
+ feature construction of artificial features from the original ones using Grammatical Evolution and production of classification rules.
+ The obtained results are compared against the results from various traditional machine learning methods and a discussion is provided on the Results section of this manuscript.
+\end_layout
+
+\begin_layout Standard
+The rest of this manuscript is divided as follows:
  in section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -999,6 +1249,12 @@ The dataset underwent thorough preprocessing procedures to ensure high-quality d
  completeness,
  and the removal or correction of any identified errors or inconsistencies.
  Such rigorous preprocessing steps were critical for enhancing the reliability and validity of the analytical processes that followed.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+DEFINE TRAIN ERROR HERE
 \end_layout
 
 \begin_layout Subsection
@@ -1334,7 +1590,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout LyX-Code
 S:=<Sigval>                          
@@ -2655,6 +2911,14 @@ Obtain
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ the classification program to the test set of the problem and report the result.
 \end_layout
 
 \end_deeper
@@ -4258,6 +4522,27 @@ Y.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "(2020)"
+key "svm"
+literal "false"
+
+\end_inset
+
+Suthaharan,
+ S.,
+ & Suthaharan,
+ S.
+ (2016).
+ Support vector machine.
+ Machine learning models and algorithms for big data classification:
+ thinking with examples for effective learning,
+ 207-235.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "(year)"
 key "fire_prob"
 literal "false"
@@ -4348,6 +4633,518 @@ C-A.
  pp.
  1843-1856,
  2020.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_safety"
+literal "false"
+
+\end_inset
+
+C.-A.
+ Lee,
+ Y-C.
+ Sung,
+ ,
+ Y-S.
+ Lin,
+ G.
+ K-K.
+ Hsiao,
+ Evaluating the severity of building fires with the analytical hierarchy process,
+ big data analysis,
+ and remote sensing,
+ Natural Hazards 
+\series bold
+103
+\series default
+,pp.
+ 1843-1856,
+ 2020.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "random_forest1"
+literal "false"
+
+\end_inset
+
+L.
+ Breiman,
+ Random forests,
+ Machine learning 
+\series bold
+45
+\series default
+,
+ pp.
+ 5-32,
+ 2001.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "random_forest2"
+literal "false"
+
+\end_inset
+
+S.J.
+ Rigatti,
+ Random forest,
+ Journal of Insurance Medicine 
+\series bold
+47
+\series default
+,
+ pp.
+ 31-39,
+ 2017.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "xgboost"
+literal "false"
+
+\end_inset
+
+Chen,
+ T.,
+ & Guestrin,
+ C.
+ (2016,
+ August).
+ Xgboost:
+ A scalable tree boosting system.
+ In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining (pp.
+ 785-794).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_station"
+literal "false"
+
+\end_inset
+
+Dey,
+ Arnab.,
+ Heger,
+ Andrew.,
+ England,
+ Darin.
+ Urban Fire Station Planning using Predicted Demand and Service Quality Index.
+ Springer Nature 2021.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "bwm"
+literal "false"
+
+\end_inset
+
+Pamučar,
+ D.,
+ Ecer,
+ F.,
+ Cirovic,
+ G.,
+ & Arlasheedi,
+ M.
+ A.
+ (2020).
+ Application of improved best worst method (BWM) in real-world problems.
+ Mathematics,
+ 8(8),
+ 1342.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "mcdm"
+literal "false"
+
+\end_inset
+
+Taherdoost,
+ H.,
+ & Madanchian,
+ M.
+ (2023).
+ Multi-criteria decision making (MCDM) methods and concepts.
+ Encyclopedia,
+ 3(1),
+ 77-87.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_decision_maker"
+literal "false"
+
+\end_inset
+
+Erden,
+ Turan.,
+ Hopkins Nyimbili,
+ Penjani.
+ Comparative evaluation of GIS-based best – worst method (BMW) for emergency facility planning:
+ perspectives from two decision-maker groups.
+ Natural Hazards,
+ volume 105,
+ issue 1.
+ January 2021.
+ Pp.
+ 1031-1067.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_risk_prediction"
+literal "false"
+
+\end_inset
+
+Singh Walia,
+ Bhavkaran.,
+ Hu,
+ Qiany.,
+ Chen,
+ Jeffrey.,
+ Chen,
+ Fangyan.,
+ Lee,
+ Jessica.,
+ et al.
+ A Dynamic pipeline for Spatio -Temporal Fire Risk Prediction.
+ Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining.2018.
+ pp.
+ 764–773.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_forecast"
+literal "false"
+
+\end_inset
+
+G.
+ Jin,
+ Q.
+ Wang,
+ C.
+ Zhu,
+ Y.
+ Feng,
+ J.
+ Huang,
+ X.
+ Hu,
+ Urban Fire Situation Forecasting:
+ Deep sequence learning with Spatio – temporal dynamics,
+ Applied Soft Computing 
+\series bold
+97
+\series default
+,
+ 2020.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "kmeans"
+literal "false"
+
+\end_inset
+
+MacQueen,
+ J.:
+ Some methods for classification and analysis of multivariate observations,
+ in:
+ Proceedings of the fifth Berkeley symposium on mathematical statistics and probability,
+ Vol.
+ 1,
+ No.
+ 14,
+ pp.
+ 281-297,
+ 1967.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_stat"
+literal "false"
+
+\end_inset
+
+W.
+ Lizhi,
+ R.
+ Aizhu,
+ Urban Fire Risk Clustering Method Based on Fire Statistics,
+ Tsinghua science & Technology 
+\series bold
+13
+\series default
+,
+ pp.
+ 418 – 422,
+ 2008.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_nepal"
+literal "false"
+
+\end_inset
+
+K.
+ KC,
+ R.
+ Ardianto,
+ P.
+ Chhetri,
+ J.
+ Corcoran,
+ Geographic patterns of urban fires in the global south:
+ the case of Kathmandu,
+ Nepal.
+ GeoJournal 
+\series bold
+89
+\series default
+,
+ 137,
+ 2024.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_ml"
+literal "false"
+
+\end_inset
+
+A.
+ Sahebi,
+ B.
+ Havasy,
+ Y.
+ Veisani,
+ Predicting firefighting operation time in urban areas using machine learning:
+ identifying key determinants for improved emergency response,
+ Discover Applied Science 
+\series bold
+7
+\series default
+,
+ 2025.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_deep"
+literal "false"
+
+\end_inset
+
+A.A.
+ Ishola,
+ D.
+ Valles,
+ Enhancing safety and Efficiency in Firefighting Operations via Deep Learning and Temperature Forecasting Modeling in Autonomous Unit.,
+ Sensors 
+\series bold
+ 23
+\series default
+,
+ 4628,
+ 2023.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_time_series"
+literal "false"
+
+\end_inset
+
+T.
+ Nishino,
+ A.
+ Hokugo,
+ A stochastic model for time series prediction of the number of post – earthquake fire ignition in buildings based on the ignition record for the 2011 Tohoku Earthquake,
+ Earthquake Spectra 
+\series bold
+36
+\series default
+,
+ 2019.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_simulation"
+literal "false"
+
+\end_inset
+
+T.
+ Nishino,
+ Physics – based urban fires spread simulation coupled with stochastic occurrence of spot fires,
+ Stochastic Environmental Research and Risk Assessment 
+\series bold
+33
+\series default
+,
+ pp.
+ 451 – 463,
+ 2019.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_earthquake"
+literal "false"
+
+\end_inset
+
+T.
+ Nishino,
+ Probabilistic urban cascading multi-hazard risk assessment methodology for ground shaking and post – earthquake fires,
+ Natural Hazards 
+\series bold
+116
+\series default
+,
+ pp.
+ 3165 – 3200,
+ 2023.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge1"
+literal "true"
+
+\end_inset
+
+M.
+ O’Neill,
+ C.
+ Ryan,
+ Grammatical evolution,
+ IEEE Trans.
+ Evol.
+ Comput.
+ 
+\series bold
+5,
+\series default
+pp.
+ 349–358,
+ 2001.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "nn1"
+literal "false"
+
+\end_inset
+
+C.
+ Bishop,
+ Neural Networks for Pattern Recognition,
+ Oxford University Press,
+ 1995.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn2"
+literal "true"
+
+\end_inset
+
+G.
+ Cybenko,
+ Approximation by superpositions of a sigmoidal function,
+ Mathematics of Control Signals and Systems 
+\series bold
+2
+\series default
+,
+ pp.
+ 303-314,
+ 1989.
 \end_layout
 
 \begin_layout Bibliography
