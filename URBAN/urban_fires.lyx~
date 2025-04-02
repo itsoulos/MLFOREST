@@ -1133,7 +1133,15 @@ literal "false"
  medium - scale disaster and large - scale disaster.
  Therefore,
  the problem of predicting the magnitude of the disaster was transformed into a classification problem so that machine learning techniques could be applied to it.
- The techniques used in the conducted experiments include construction of neural networks,
+ The techniques used in the conducted experiments include construction of neural networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn1,nn2"
+literal "false"
+
+\end_inset
+
+,
  feature construction of artificial features from the original ones using Grammatical Evolution and production of classification rules.
  The obtained results are compared against the results from various traditional machine learning methods and a discussion is provided on the Results section of this manuscript.
 \end_layout
@@ -1252,9 +1260,71 @@ The dataset underwent thorough preprocessing procedures to ensure high-quality d
 \end_layout
 
 \begin_layout Standard
+Based on data from the Hellenic Fire Service,
+ we isolated and processed the pre- registered categories of Small,
+ Medium,
+ and Large Fires,
+ excluding other categories that were not relevant to the scope of our research.
+ The classification of a fire as Small,
+ Medium,
+ or Large may be determined in the field by firefighters,
+ particularly when additional flammable materials are present in the surrounding area,
+ when chemical substances that can accelerate the fire are involved,
+ or when there is an exceptional risk to human lives.
+ Furthermore,
+ according to our data,
+ urban fires have been recorded at 146 distinct locations,
+ each assigned a unique identification number (code).
+ For example,
+ as an indicative reference,
+ in 2023,
+ the fire department responded to 21,606 fire incidents in apartment buildings (code 18),
+ 9,106 on streets,
+ 5,219 (code 22) in single-family homes (code 39),
+ 4,971 in vacant lots (code 35),
+ 2,389 in vehicles (code 6),
+ 1,322 in duplex houses (code 37),
+ and 1,270 in waste disposal areas (code 54).
+ Beyond these,
+ some unusual locations were also recorded,
+ including 140 firefighting interventions in wells (code 143),
+ 38 in cemetery (code 82),
+ 106 in marine areas (code 69),
+ 4 in public toilets (code 112),
+ and so forth.
+ Hence,
+ the problem of predict the extend of damage caused by urban fires can be considered as a classification problem,
+ where any optimization method can be used to minimize the following training error:
+\begin_inset Formula 
+\begin{equation}
+E\left(M\left(\overrightarrow{x},\overrightarrow{p}\right)\right)=\sum_{i=1}^{M}\left(M\left(\overrightarrow{x_{i}},\overrightarrow{p}\right)-t_{i}\right)^{2}\label{eq:trainError}
+\end{equation}
 
-\series bold
-DEFINE TRAIN ERROR HERE
+\end_inset
+
+Where the function 
+\begin_inset Formula $M\left(\overrightarrow{x},\overrightarrow{p}\right)$
+\end_inset
+
+ represents a machine learning model and the vector 
+\begin_inset Formula $\overrightarrow{p}$
+\end_inset
+
+ represents the parameters of the model that should be estimated by any optimization method.
+ The set 
+\begin_inset Formula $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{M},t_{M}\right)\right\} $
+\end_inset
+
+ represents the training set of the input problem,
+ where the vectors 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ stand for the input patterns and the values 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ are the expected outputs.
 \end_layout
 
 \begin_layout Subsection
@@ -1262,13 +1332,9 @@ Grammatical Evolution
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-(TO BE CHANGED)
-\end_layout
-
-\begin_layout Standard
-Grammatical evolution is a genetic algorithm where the chromosomes stand for the production rules of any given BNF (Backus–Naur form) grammar
+The algorithm of Grammatical evolution can be considered as a genetic algorithm where the chromosomes,
+ which are series of positive integer values,
+ denote production rules of any given BNF (Backus–Naur form) grammar 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bnf1"
@@ -1277,8 +1343,8 @@ literal "false"
 \end_inset
 
 .
- Grammatical Evolution has been used successfully in a variety of cases,
- such as function approximation
+ The method has been incorporated in various cases from real - world applications,
+ such as data fitting 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_program1,ge_program2"
@@ -1296,7 +1362,7 @@ literal "false"
 \end_inset
 
 ,
- automatic music composition of music 
+ composition of music 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_music"
@@ -1318,7 +1384,7 @@ literal "false"
 \end_inset
 
 ,
- creating numeric constraints
+ producing numeric constraints
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_constant"
@@ -1344,7 +1410,7 @@ literal "false"
 \series bold
  
 \series default
-estimation of energy demand
+energy problems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_energy"
@@ -1375,7 +1441,7 @@ literal "false"
 \end_inset
 
  etc.
- The BNF grammar can be used to describe the syntax of programming languages and usually it is defined as the set 
+ The BNF grammars are used to describe the syntax of programming languages and they can be defined as sets 
 \series bold
 
 \begin_inset Formula $G=\left(N,T,S,P\right)$
@@ -1387,26 +1453,28 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-
+The set 
 \series bold
+
 \begin_inset Formula $N$
 \end_inset
 
  
 \series default
-is the set of the so - called non-terminal symbols.
- Every non - terminal symbol is associated with a series of production rules used to produce terminal symbols.
+represents the non-terminal symbols of the grammar.
+ Each non - terminal symbol can be replaced to a series of terminal symbols with the assistance of some associated production rules.
 \end_layout
 
 \begin_layout Itemize
-
+The set 
 \series bold
+
 \begin_inset Formula $T$
 \end_inset
 
  
 \series default
-is the set of terminal symbols.
+contains the terminal symbols.
 
 \series bold
  
@@ -1416,7 +1484,7 @@ is the set of terminal symbols.
 \begin_inset Formula $S$
 \end_inset
 
- is a the start symbol of the grammar and 
+ is considers as the start symbol of the grammar with the assumption 
 \begin_inset Formula $S\in N$
 \end_inset
 
@@ -1424,50 +1492,35 @@ is the set of terminal symbols.
 \end_layout
 
 \begin_layout Itemize
-
+The set 
 \series bold
+
 \begin_inset Formula $P$
 \end_inset
 
  
 \series default
-is a set of production rules,
- used to produce terminal symbols from non - terminal symbols.
- These rules are in the form 
-\series bold
-
-\begin_inset Formula $A\rightarrow a$
-\end_inset
-
- 
-\series default
-or
-\series bold
- 
-\begin_inset Formula $A\rightarrow aB,\ A,B\in N,\ a\in T$
-\end_inset
-
-.
+contains the production rules of the grammar,
+ used to replace non - terminal symbols with series of terminal ones.
 \end_layout
 
 \begin_layout Standard
-The algorithm starts from the symbol 
+The production procedure of Grammatical Evolution starts from the symbol 
 \begin_inset Formula $S$
 \end_inset
 
- and gradually creates terminal symbols by replacing non-terminal symbols with the right hand of the selected production rule.
- The rule is selected through the following procedure:
+ and through a series of steps creates valid programs by replacing non - terminal symbols with series of terminal symbols following the selected rules.
+ Every production rule is is selected usig the following steps:
 \end_layout
 
 \begin_layout Itemize
-Read the next element V from the current chromosome.
+Obtain the next element V from the chromosome that is processed.
 \end_layout
 
 \begin_layout Itemize
-The production rule is selected as:
+Select the production rule as:
  Rule = V mod R,
- where R is the total number of production rules for the current non – terminal symbol.
- 
+ where R defines the total number of production rules for the non – terminal symbol that is under processing.
 \end_layout
 
 \begin_layout Subsection
@@ -2041,6 +2094,13 @@ name "fig:onePoint"
 
 \begin_layout Subsection
 Feature construction using Grammatical Evolution 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Feature-construction-using"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2501,6 +2561,13 @@ Apply
 \end_deeper
 \begin_layout Subsection
 Create classification rules using Grammatical Evolution
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Create-classification-rules"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2934,12 +3001,421 @@ name "sec:Results"
 \end_layout
 
 \begin_layout Standard
+The code used in the experiments was implemented in C++ programming language with the assistance of Optimus optimization environment,
+ freely available from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/itsoulos/GlobalOptimus/
+\end_layout
+
+\end_inset
+
+ (accessed on 2 April 2025).
+ Also,
+ the freely available programming tool of WEKA 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_main"
+literal "false"
+
+\end_inset
+
+ was used for some of the experiments,
+ that can be downloaded also freely from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://ml.cms.waikato.ac.nz/weka/
+\end_layout
+
+\end_inset
+
+(accessed on 2 April 2025).
+ For the validation of the experiments the method of ten - fold cross validation was incorporated.
+ All the experiments were conducted on a machine running Debian Linux with 128GB of RAM.
+ The values for the experimental settings are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:settings"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The values used for the experimental settings.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:settings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PARAMETER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MEANING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VALUE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of chromosomes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{g}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum number of generations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Selection rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mutation rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{f}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of produced features
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $H$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number or processing nodes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Also,
+ the Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:exper"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ contains the experimental results where the following notation is used:
+\end_layout
+
+\begin_layout Enumerate
+The column YEAR denotes denotes the year for which the methods were applied.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The column BAYES NET denotes the application of the Bayesian Network method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayes_net1,bayes_net2"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column MLP represents the incorporation of an artificial neural network with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes,
+ that was trained using the Back Propagation method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bpnn1,bpnn2"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column RBF denotes the usage of a Radial Basis Function network with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column NNC represents the usage of the Neural Network construction method described in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Neural-Network-Construction"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column FC stands for the usage of the Feature Construction method provided in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Feature-construction-using"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column GENCLASS denotes the usage of the method that creates classification rules,
+ described in subsection .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3003,7 +3479,7 @@ BAYES NET
 \begin_layout Plain Layout
 
 \series bold
-MLP(BP)
+MLP
 \end_layout
 
 \end_inset
@@ -3036,7 +3512,7 @@ NNC
 \begin_layout Plain Layout
 
 \series bold
-FC2
+FC
 \end_layout
 
 \end_inset
@@ -5871,6 +6347,127 @@ Anastasopoulos,
  SoftwareX 2021,
  16,
  100830.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2009)"
+key "weka_main"
+literal "false"
+
+\end_inset
+
+M.
+ Hall,
+ F.
+ Frank,
+ G.
+ Holmes,
+ B.
+ Pfahringer,
+ P.
+ Reutemann,
+ I.H.
+ Witten,
+ The WEKA data mining software:
+ an update.
+ ACM SIGKDD explorations newsletter 
+\series bold
+11
+\series default
+,
+ pp.
+ 10-18,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2009)"
+key "bayes_net1"
+literal "false"
+
+\end_inset
+
+Ben-Gal,
+ I.
+ (2008).
+ Bayesian Networks.
+ In Encyclopedia of Statistics in Quality and Reliability (eds F.
+ Ruggeri,
+ R.S.
+ Kenett and F.W.
+ Faltin).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bayes_net2"
+literal "false"
+
+\end_inset
+
+ Koski,
+ T.,
+ & Noble,
+ J.
+ (2011).
+ Bayesian networks:
+ an introduction.
+ John Wiley & Sons.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2009)"
+key "bpnn1"
+literal "false"
+
+\end_inset
+
+D.E.
+ Rumelhart,
+ G.E.
+ Hinton and R.J.
+ Williams,
+ Learning representations by back-propagating errors,
+ Nature 
+\series bold
+323
+\series default
+,
+ pp.
+ 533 - 536 ,
+ 1986.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bpnn2"
+literal "false"
+
+\end_inset
+
+T.
+ Chen and S.
+ Zhong,
+ Privacy-Preserving Backpropagation Neural Network Learning,
+ IEEE Transactions on Neural Networks 
+\series bold
+20
+\series default
+,
+ ,
+ pp.
+ 1554-1564,
+ 2009.
 \end_layout
 
 \begin_layout Standard
