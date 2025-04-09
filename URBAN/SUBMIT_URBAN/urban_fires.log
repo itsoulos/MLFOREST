@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.19)  3 APR 2025 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.19)  9 APR 2025 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1475,13 +1475,13 @@ Package epstopdf Info: Source file: <onepoint_crossover.eps>
 (epstopdf)                    size: 23537 bytes
 (epstopdf)             Command: <repstopdf --outfile=onepoint_crossover-eps-con
 verted-to.pdf onepoint_crossover.eps>
-(epstopdf)             \includegraphics on input line 692.
+(epstopdf)             \includegraphics on input line 690.
 Package epstopdf Info: Output file is already uptodate.
-<onepoint_crossover-eps-converted-to.pdf, id=261, 817.0525pt x 271.0125pt>
+<onepoint_crossover-eps-converted-to.pdf, id=254, 817.0525pt x 271.0125pt>
 File: onepoint_crossover-eps-converted-to.pdf Graphic file (type pdf)
 <use onepoint_crossover-eps-converted-to.pdf>
 Package pdftex.def Info: onepoint_crossover-eps-converted-to.pdf  used on input
- line 692.
+ line 690.
 (pdftex.def)             Requested size: 285.97266pt x 94.85579pt.
 
 
@@ -1529,10 +1529,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.18796pt}.
 
 [12]
-<stat.png, id=394, 505.89pt x 505.89pt>
+<stat.png, id=379, 505.89pt x 505.89pt>
 File: stat.png Graphic file (type png)
 <use stat.png>
-Package pdftex.def Info: stat.png  used on input line 1066.
+Package pdftex.def Info: stat.png  used on input line 1061.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
 
 
@@ -1545,9 +1545,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13 <./stat.png>]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 1162.
+(Font)              scaled to size 9.37807pt on input line 1157.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 1162.
+(Font)              scaled to size 9.37807pt on input line 1157.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1575,16 +1575,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-12.18796pt}.
 
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 24.18796pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.18796pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.18796pt}.
-
-[17] 
+[16] 
 AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1594,18 +1585,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-12.18796pt}.
 
-[18] (./urban_fires.aux)
+[17] (./urban_fires.aux)
 Package rerunfilecheck Info: File `urban_fires.out' has not changed.
 (rerunfilecheck)             Checksum: CD49E2C3714B13646C8E68CD91CEFCFD;1851.
  ) 
 Here is how much of TeX's memory you used:
- 34496 strings out of 477975
- 646470 string characters out of 5839281
+ 34461 strings out of 477975
+ 646045 string characters out of 5839281
  1889330 words of memory out of 5000000
- 53344 multiletter control sequences out of 15000+600000
- 588945 words of font info for 446 fonts, out of 8000000 for 9000
+ 53323 multiletter control sequences out of 15000+600000
+ 588701 words of font info for 442 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 123i,17n,120p,5044b,931s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,17n,120p,5044b,976s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/sheridan/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.
 600pk> </home/sheridan/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0
 800.375pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/shar
@@ -1618,10 +1609,10 @@ e1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on urban_fires.pdf (18 pages, 284889 bytes).
+Output written on urban_fires.pdf (17 pages, 282298 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 485 compressed objects within 5 object streams
- 187 named destinations out of 1000 (max. 500000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 179 named destinations out of 1000 (max. 500000)
  102513 words of extra memory for PDF output out of 106986 (max. 10000000)
 

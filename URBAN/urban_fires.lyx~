@@ -1602,42 +1602,7 @@ literal "false"
 \end_inset
 
 ,
- estimation of solutions of differential equations 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nnc_de"
-literal "false"
-
-\end_inset
-
-,
- medical problems 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nnc_feas"
-literal "false"
-
-\end_inset
-
-,
- education problems 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nnc_student"
-literal "false"
-
-\end_inset
-
-,
- autism screening 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nnc_autism"
-literal "false"
-
-\end_inset
-
- etc.
+ estimation of solutions of differential equations  etc.
 \begin_inset Float figure
 placement H
 alignment document
@@ -2247,34 +2212,6 @@ S::=<expr>   (0)
 
 \end_inset
 
-This method has been incorporated in a series of real - world applications,
- such as Spam detection 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fc2"
-literal "true"
-
-\end_inset
-
-,
- Fetal heart classification 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fc3"
-literal "true"
-
-\end_inset
-
-,
- classification of EEG signals 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fc4,fc5"
-literal "true"
-
-\end_inset
-
- etc.
  The features produced by this procedure can be evaluated using any machine learning method,
  although the Radial Basis Function (RBF) networks 
 \begin_inset CommandInset citation
@@ -4432,6 +4369,66 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Standard
+This study implements the innovative technique of Grammatical Evolution to predict the consequences of urban fires,
+ utilizing a decade of data from the Hellenic Fire Service.
+ The results demonstrate the clear superiority of the GENCLASS method over other machine learning approaches,
+ both in terms of accuracy and interpretability.
+ The method's ability to generate human-readable classification rules constitutes a significant advantage over traditional "black-box" machine learning models.
+ These rules reveal complex correlations between factors such as meteorological conditions,
+ urban layout,
+ and human activity,
+ providing valuable insights for fire prevention and management.
+ However,
+ the research does face certain limitations that warrant discussion.
+ The reliance on historical data reduces predictive capability in extreme or unprecedented scenarios,
+ such as those caused by climate change.
+ Additionally,
+ the performance of some models,
+ like RBF,
+ shows significant instability in certain cases,
+ likely due to overfitting or sensitivity to outliers.
+ This underscores the need for further algorithm optimization and the integration of additional data to enhance reliability.
+\end_layout
+
+\begin_layout Standard
+The findings of this research confirm that Grammatical Evolution,
+ particularly the GENCLASS method,
+ offers a robust solution for predicting the impacts of urban fires.
+ This method not only achieves the lowest average classification error but also provides transparent,
+ interpretable rules that can be directly utilized by fire departments and urban planners.
+ The generated rules uncover critical dependencies,
+ such as the influence of temperature,
+ emergency response times,
+ and demographic characteristics on the extent of damage.
+ This paves the way for developing dynamic evacuation strategies,
+ implementing preventive measures in vulnerable areas,
+ and raising public awareness of fire risks.
+ Moreover,
+ the consistent improvement in GENCLASS's performance over time suggests its adaptability to changing conditions and its potential for enhancement with new data.
+ However,
+ it is important to recognize that the effectiveness of any predictive method depends heavily on the quality and completeness of available data,
+ as well as the ability to account for new and unforeseen factors,
+ such as climate change.
+\end_layout
+
+\begin_layout Standard
+To further develop the findings of this research and strengthen their practical application,
+ several directions for future exploration are proposed.
+ First,
+ the integration of real-time data from sensors and satellite systems could significantly improve the accuracy and timeliness of predictions,
+ enabling dynamic model adjustments and rapid responses to emerging threats.
+ Second,
+ extending the method to other geographic regions with different urban and climatic characteristics could explore the generalizability of the findings and identify new factors influencing fire risk.
+ Third,
+ combining Grammatical Evolution with advanced deep learning techniques,
+ such as neural networks for spatiotemporal analysis,
+ could enhance predictive capabilities in complex scenarios involving multiple simultaneous hazards.
+ Finally,
+ developing simulations that account for the long-term impacts of climate change and urban expansion could provide valuable insights for designing more resilient and safer urban environments.
+ These directions have the potential to transform the research findings into practical tools for safeguarding human lives and urban infrastructure.
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 6pt
 \end_inset
 
@@ -6203,92 +6200,6 @@ I.G.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "nnc_feas"
-literal "false"
-
-\end_inset
-
-I.G.
- Tsoulos,
- G.
- Mitsi,
- A.
- Stavrakoudis,
- S.
- Papapetropoulos,
- Application of Machine Learning in a Parkinson's Disease Digital Biomarker Dataset Using Neural Network Construction (NNC) Methodology Discriminates Patient Motor Status,
- Frontiers in ICT 6,
- 10,
- 2019.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "nnc_student"
-literal "false"
-
-\end_inset
-
-V.
- Christou,
- I.G.
- Tsoulos,
- V.
- Loupas,
- A.T.
- Tzallas,
- C.
- Gogos,
- P.S.
- Karvelis,
- N.
- Antoniadis,
- E.
- Glavas,
- N.
- Giannakeas,
- Performance and early drop prediction for higher education students using machine learning,
- Expert Systems with Applications 
-\series bold
-225
-\series default
-,
- 120079,
- 2023.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "nnc_autism"
-literal "false"
-
-\end_inset
-
-E.I.
- Toki,
- J.
- Pange,
- G.
- Tatsis,
- K.
- Plachouras,
- I.G.
- Tsoulos,
- Utilizing Constructed Neural Networks for Autism Screening,
- Applied Sciences 
-\series bold
-14
-\series default
-,
- 3053,
- 2024.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
 label "(2008)"
 key "fc1"
 literal "false"
@@ -6308,103 +6219,6 @@ Dimitris Gavrilis,
  1358-1365,
  2008.
  
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2008)"
-key "fc2"
-literal "false"
-
-\end_inset
-
-Dimitris Gavrilis,
- Ioannis G.
- Tsoulos,
- Evangelos Dermatas,
- Neural Recognition and Genetic Features Selection for Robust Detection of E-Mail Spam,
- Advances in Artificial Intelligence Volume 3955 of the series Lecture Notes in Computer Science pp 498-501,
- 2006.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "fc3"
-literal "true"
-
-\end_inset
-
-George Georgoulas,
- Dimitris Gavrilis,
- Ioannis G.
- Tsoulos,
- Chrysostomos Stylios,
- João Bernardes,
- Peter P.
- Groumpos,
- Novel approach for fetal heart rate classification introducing grammatical evolution,
- Biomedical Signal Processing and Control 
-\series bold
-2
-\series default
-,pp.
- 69-79,
- 2007 
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "fc4"
-literal "true"
-
-\end_inset
-
-Otis Smart,
- Ioannis G.
- Tsoulos,
- Dimitris Gavrilis,
- George Georgoulas,
- Grammatical evolution for features of epileptic oscillations in clinical intracranial electroencephalograms,
- Expert Systems with Applications 
-\series bold
-38
-\series default
-,
- pp.
- 9991-9999,
- 2011 
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "fc5"
-literal "false"
-
-\end_inset
-
-A.
- T.
- Tzallas,
- I.
- Tsoulos,
- M.
- G.
- Tsipouras,
- N.
- Giannakeas,
- I.
- Androulidakis and E.
- Zaitseva,
- Classification of EEG signals using feature creation produced by grammatical evolution,
- In:
- 24th Telecommunications Forum (TELFOR),
- pp.
- 1-4,
- 2016.
 \end_layout
 
 \begin_layout Bibliography
