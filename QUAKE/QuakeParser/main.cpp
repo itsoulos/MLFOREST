@@ -6,7 +6,7 @@
 # include <stdio.h>
 # include <math.h>
 
-const double criticalDistance = 500;//500miles
+const double criticalDistance = 500;//100miles
 
 struct QuakeRecord
 {
@@ -84,7 +84,7 @@ QVector<QuakeRecord> getQuakesBeforeMajor(QuakeRecord &major)
     QVector<QuakeRecord> list;
     for (QuakeRecord &x : quake)
     {
-        if(x.magcode >= 3) continue;
+        if(x.magcode >= 3 ) continue;
         if(!before(x,major)) continue;
         double dist = getDistance(x,major);
         if(dist<criticalDistance)
@@ -138,6 +138,17 @@ QuakeRecord readLine(QString line)
     return x;
 }
 
+int value2class(double x)
+{
+	if(x>=4.0 && x<4.5) return 1;
+	else
+	if(x>=4.5 && x<5) return 2;
+	else
+	if(x>=5.0 && x<5.5) return 3;
+	else
+	if(x>=5.5 && x<6.0) return 4;
+	else return 5;	
+}
 
 QString printQuake(const QuakeRecord &x)
 {
@@ -163,10 +174,11 @@ QString printQuake(const QuakeRecord &x)
         line+=QString::number(x.stdQuakesBefore)+" ";
     }
     /** CLASSIFICATION PROBLEM
-    if(x.magnitude>=6.0) line+=QString::number(6.0);
+    
+    if(x.magnitude>=7.0) 
+	    line+="7";
     else
-    line+=QString::number(round(x.magnitude));
-    **/
+    line+=QString::number(round(x.magnitude)); */
     /** REGRESSION PROBLEM **/
     line+=QString::number(x.magnitude);
     return line;
@@ -229,7 +241,7 @@ int main(int argc, char *argv[])
          }
         QuakeRecord tt = readLine(line);
         quake.append(tt);
-        if(tt.magcode>=3)
+        if(tt.magcode>=3 )
             bigQuake.append(tt);
      }
      fp.close();
