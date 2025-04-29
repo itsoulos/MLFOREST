@@ -1209,6 +1209,18 @@ The used datasets
 The dataset utilized in this research was sourced from the Hellenic Fire Service in compliance with open data guidelines established by the European Union Directive (2013/37/EU),
  aiming to promote transparency and open access to governmental records.
  The dataset contains comprehensive records detailing urban fire incidents specifically for the calendar years 2014-2023.
+ These datasets were downloaded from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.fireservice.gr/el_GR/synola-dedomenon 
+\end_layout
+
+\end_inset
+
+(accessed on 29 April 2025).
 \end_layout
 
 \begin_layout Standard
@@ -1297,7 +1309,7 @@ Based on data from the Hellenic Fire Service,
  where any optimization method can be used to minimize the following training error:
 \begin_inset Formula 
 \begin{equation}
-E\left(M\left(\overrightarrow{x},\overrightarrow{p}\right)\right)=\sum_{i=1}^{M}\left(M\left(\overrightarrow{x_{i}},\overrightarrow{p}\right)-t_{i}\right)^{2}\label{eq:trainError}
+E\left(M\left(\overrightarrow{x},\overrightarrow{p}\right)\right)=\sum_{i=1}^{K}\left(M\left(\overrightarrow{x_{i}},\overrightarrow{p}\right)-t_{i}\right)^{2}\label{eq:trainError}
 \end{equation}
 
 \end_inset
@@ -1312,7 +1324,7 @@ Where the function
 
  represents the parameters of the model that should be estimated by any optimization method.
  The set 
-\begin_inset Formula $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{M},t_{M}\right)\right\} $
+\begin_inset Formula $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{K},t_{K}\right)\right\} $
 \end_inset
 
  represents the training set of the input problem,
@@ -1325,6 +1337,11 @@ Where the function
 \end_inset
 
  are the expected outputs.
+ The constant 
+\begin_inset Formula $K$
+\end_inset
+
+ represents the number of patterns in the train set.
 \end_layout
 
 \begin_layout Subsection
@@ -1587,12 +1604,16 @@ nolink "false"
 
 \end_inset
 
-.
+ which has been in the initial work for Neural Network construction with Grammatical Evolution 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc"
+literal "false"
 
-\series bold
- 
-\series default
-This method has been incorporated in problems such as,
+\end_inset
+
+ .
+ This method has been incorporated in problems such as,
  chemistry problems 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1904,7 +1925,15 @@ Application of crossover
 
  will be selected from the current population using tournament.
  selection.
- The new chromosomes will be produced using one - point crossover,
+ The new chromosomes will be produced using one - point crossover 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "onePoint"
+literal "false"
+
+\end_inset
+
+,
  which is graphically illustrated in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2016,7 +2045,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2091,6 +2120,15 @@ nolink "false"
 
 \end_inset
 
+,
+ which also was initially presented in the original work of the feature construction method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fc1"
+literal "false"
+
+\end_inset
+
 .
  
 \end_layout
@@ -2101,7 +2139,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2546,7 +2584,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2995,7 +3033,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3275,6 +3313,10 @@ The column YEAR denotes denotes the year for which the methods were applied.
 \end_layout
 
 \begin_layout Enumerate
+The column PATTERNS denotes the number of patterns in the test set for every year.
+\end_layout
+
+\begin_layout Enumerate
 The column BAYES NET denotes the application of the Bayesian Network method 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3367,7 +3409,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3393,8 +3435,9 @@ name "tab:exper"
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="7">
+<lyxtabular version="3" rows="12" columns="8">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -3410,6 +3453,17 @@ name "tab:exper"
 
 \series bold
 YEAR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+PATTERNS
 \end_layout
 
 \end_inset
@@ -3495,6 +3549,15 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
+1287
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 9.01%
 \end_layout
 
@@ -3552,6 +3615,15 @@ GENCLASS
 
 \begin_layout Plain Layout
 2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1686
 \end_layout
 
 \end_inset
@@ -3625,6 +3697,15 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
+1735
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 8.99%
 \end_layout
 
@@ -3682,6 +3763,15 @@ GENCLASS
 
 \begin_layout Plain Layout
 2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1736
 \end_layout
 
 \end_inset
@@ -3755,6 +3845,15 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
+1637
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 8.38%
 \end_layout
 
@@ -3812,6 +3911,15 @@ GENCLASS
 
 \begin_layout Plain Layout
 2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1971
 \end_layout
 
 \end_inset
@@ -3885,6 +3993,15 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
+1990
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 8.70%
 \end_layout
 
@@ -3942,6 +4059,15 @@ GENCLASS
 
 \begin_layout Plain Layout
 2021
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1883
 \end_layout
 
 \end_inset
@@ -4015,6 +4141,15 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
+2036
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 8.80%
 \end_layout
 
@@ -4072,6 +4207,15 @@ GENCLASS
 
 \begin_layout Plain Layout
 2023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1978
 \end_layout
 
 \end_inset
@@ -4139,6 +4283,15 @@ GENCLASS
 
 \series bold
 AVERAGE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4232,6 +4385,7 @@ nolink "false"
 
  GENCLASS demonstrates the lowest average classification error (6.62%),
  making it the most reliable model for wildfire prediction.
+ This method presents better results compared to other techniques as it can isolate the necessary features of the problem but also identify hidden correlations that could lead to lower classification errors through the automatic creation of classification rules.
  It is followed by FC with an average error of 6.90% and NNC with 7.23%.
  Traditional models such as BAYES NET (8.54%) and MLP(BP) (7.87%) exhibit higher error rates,
  while RBF performs the worst with an average error of 11.78%,
@@ -4354,7 +4508,68 @@ name "fig:stat"
 
 \end_inset
 
+Also,
+ as an example consider the plot of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:exampleGenclass"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
+\end_inset
+
+ where the train and test error for year 2016 are presented using the GENCLASS method.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename urban_2016.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example plot for the GENCLASS method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:exampleGenclass"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+As shown in this graph,
+ the error in the training set gradually decreases as the generations increase and the error in the test set initially decreases to reach a constant value after some generations of the genetic algorithm.
 \end_layout
 
 \begin_layout Section
@@ -6195,6 +6410,26 @@ I.G.
  pp.
  2385-2391,
  2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1998)"
+key "onePoint"
+literal "false"
+
+\end_inset
+
+Poli,
+ R.,
+ & Langdon,
+ W.
+ B.
+ (1998).
+ Genetic programming with one-point crossover (pp.
+ 180-189).
+ Springer London.
 \end_layout
 
 \begin_layout Bibliography
