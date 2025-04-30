@@ -583,22 +583,148 @@ literal "false"
  within low - income countries,
  where various economic,
  social,
- and environmental factors contribute to an increased risk of fire incidents .
+ and environmental factors contribute to an increased risk of fire incidents.
  
 \end_layout
 
 \begin_layout Standard
 Nevertheless,
- the data demonstrate that wildfires are not solely an issue confined to low socio-economic status countries.
- Notably,
- the Black Summer of Australia in 2019–2020 remains a significant historical event.
- Tragically,
- the fires claimed 33 lives and impacted thousands through smoke inhalation and other effects.
- By the end of the season,
- they had burned a record 19 million hectares,
- destroyed over 3,000 homes,
- displaced tens of thousands,
- and caused the loss of billions of animals 
+ this conclusion does not exempt powerful nations from the impacts of climate change and natural disasters.
+ Accordingly,
+ the table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:climate"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ is introduced.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+How Climate change and Natural Disasters Effects even to powerful nations.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:climate"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size scriptsize
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Country
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Year
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Causes of Forest Fires
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Carbon Emissions 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Hectares
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Casualties
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Australia 
+\begin_inset Newline newline
+\end_inset
+
+(Black Summer) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_hazards,australian_report"
@@ -606,36 +732,351 @@ literal "false"
 
 \end_inset
 
-.
- Furthermore,
- in July 2024,
- wildfires occurred in the Arctic plains of Russia's Far East,
- posing significant challenges to containment efforts 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2019-2020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Dry winters,
+\begin_inset Newline newline
+\end_inset
+
+ drought
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+900 million tons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+19 million
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+33 people,
+ 3.000 
+\begin_inset Newline newline
+\end_inset
+
+Houses & Buildings
+\begin_inset Newline newline
+\end_inset
+
+Billions of wild animals
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Russia
+\series bold
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+(Arctic fires)
 \begin_inset CommandInset citation
 LatexCommand citep
-key "fires_siberian,nasa_images"
+key "fires_siberian,nasa_images,fires_russia"
 literal "false"
 
 \end_inset
 
- .
- That summer,
- wildfires had already devastated nearly 5 million hectares of forest in Russia.
- Wildfires in Russia's Siberian and Far East regions,
- which occur annually during the summer,
- have become more severe in recent years due to climate change,
- which has intensified the hot and dry conditions that fuel these fires 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2019-2020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Dryer surface,
+ 
+\begin_inset Newline newline
+\end_inset
+
+higher temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+31.1 megatones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+24 million
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+No reports.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+USA (L.A.) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "fires_russia"
+key "fire_climate,fire_graphics"
 literal "false"
 
 \end_inset
 
-.
- Climate change projections,
- indicate that urban environments may face increasing,
- fire hazards 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+High temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+4.4 megatones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+57000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+30 people,
+\begin_inset Newline newline
+\end_inset
+
+2.000.000 evacuated
+\begin_inset Newline newline
+\end_inset
+
+16000 houses burnt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Japan
+\series bold
+ 
+\series default
+(Ofunato) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_japan"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+High temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+No reported.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2900
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1 people,
+\begin_inset Newline newline
+\end_inset
+
+4000 evacuated
+\begin_inset Newline newline
+\end_inset
+
+210 buildings damaged
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Climate change projections indicate that urban environments may face increasing fire hazards 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_cities"
@@ -645,72 +1086,8 @@ literal "false"
 
 .
  A stark example of the interconnectedness between climate change,
- and wildfires,
- is evident in the fires that occurred in Los Angeles in January 2025,
+ and Forest fires are evident in the fires that occurred in Los Angeles in January 2025,
  and in Japan in February of the same year.
- In this connection,
- Climate scientists are working to identify the impact of climate change on wildfires.
- However,
- the most substantial human influence may lie in the ignition sources,
- as no lightning storms were present at the time,
- in L.A,
- to naturally trigger the fires 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_climate"
-literal "false"
-
-\end_inset
-
-.
- As the relentless wildfire advanced into urban areas,
- driven by wind speeds exceeding 80 miles per hour,
- it destroyed over 16,000 homes and buildings 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_climate"
-literal "false"
-
-\end_inset
-
-.
- By February 4,
- a total of 29 fatalities had been reported 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_graphics"
-literal "false"
-
-\end_inset
-
-.
- Another technologically and socioeconomically advanced nation,
- Japan,
- was struck by an uncontrolled wildfire on February 26,
- 2025 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_japan"
-literal "false"
-
-\end_inset
-
-.
- The fire scorched over 2,100 hectares and destroyed more than 80 buildings.
- Determining whether climate change has directly caused or intensified specific wildfires is challenging,
- as other factors,
- such as land-use changes,
- also play a role.
- However,
- the IPCC asserts that climate change is increasing the likelihood of weather conditions that facilitate the spread of wildfires 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_bbc"
-literal "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -722,55 +1099,29 @@ From these real events,
  it highlights the precarious balance (sword of Damocles) between climate change,
  and urban expansion into forested regions.
  This underscores the critical importance of our research in predicting the impacts damages of an urban fire.
- Next,
- we will refer to relevant studies focused on the field of urban fire prediction.
- A team of researchers,
- used data from Ankara region,
- of Turkey,
+ 
+\end_layout
+
+\begin_layout Standard
+Next,
+ we will refer to relevant studies focused on the field of urban fire prediction,
+ which employ statistical techniques,
+ (GIS) spatial and temporal analyses,
+ subjective evaluations through the Analytical Hierarchy Process (AHP),
+ Multi Criteria Decision Making,
+ and Probabilistic machine learning.
+ 
+\end_layout
+
+\begin_layout Standard
+A team of researchers,
+ used data from the Ankara region of Turkey,
  for analysis of the spatial and temporal patterns of residential fires,
  can enable decision-makers to strategically allocate resources for fire management,
  based on the intensity of fire clustering over time and across different locations 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_turkey"
-literal "false"
-
-\end_inset
-
-.
- Next,
- we proceed with an article that examines existing research on the social,
- economic,
- and building stock characteristics associated with residential fire risk in urban neighborhoods 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_social"
-literal "false"
-
-\end_inset
-
-.
- From Australia in 2010,
- we have the first study utilizing the Bayesian approach,
- to produce detailed spatial forecasts of residential household fires,
- across metropolitan South-East Queensland 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_resident"
-literal "false"
-
-\end_inset
-
-.
- Also,
- from Australia,
- a study employs a Markov chain approach to estimate the likelihood of residential fire occurrences based on historical fire data.
- Utilizing fire incident records collected over a decade in Melbourne,
- Australia,
- the spatially integrated fire risk model forecasts potential fire events by incorporating spatial and temporal variables as key predictive factors 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_model"
 literal "false"
 
 \end_inset
@@ -836,34 +1187,7 @@ literal "false"
 \end_inset
 
 .
- The next study conducted in Greece,
- to develop a fire risk estimation model that integrates recent land cover changes alongside other critical risk factors.
- They implemented a Support Vector Machine (SVM) algorithm 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "svm"
-literal "false"
-
-\end_inset
-
- combined with the Analytic Hierarchy Process (AHP),
- within a Geographic Information System (GIS) platform.
- This approach allowed for a more precise assessment of fire-prone areas.
- As a case study,
- they applied this methodology to the Dadia-Lefkimi - Soufli National Forest Park,
- ensuring a comprehensive evaluation of fire risk in the region 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_prob"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Afterwards,
+ Afterwards,
  a study seeks to assess fire risk in urban areas by analyzing 19 factors related to economic,
  social,
  and built environment aspects,
@@ -899,10 +1223,7 @@ literal "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Building upon,
+ Building upon,
  Analytic Hierarchy Process,
  the paper from Taiwan,
  evaluated the severity of building fires across 17 villages in Taishan District,
@@ -919,6 +1240,149 @@ literal "false"
 \end_inset
 
 .
+ Turkish colleagues proposed a group decision-making (GDM) approach,
+ integrating the recently developed Best–Worst Method (BWM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bwm"
+literal "false"
+
+\end_inset
+
+,
+ a multi-criteria decision-making (MCDM) technique 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcdm"
+literal "false"
+
+\end_inset
+
+,
+ with Geographic Information Systems (GIS) to identify optimal locations for new emergency facilities in Istanbul.
+ Their analysis incorporated the input of two decision-makers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_decision_maker"
+literal "false"
+
+\end_inset
+
+.
+ The next study seeks to expand the limited empirical research on urban fires in the Global South by analyzing their causes and dynamics.
+ Focusing on disaggregated fire incident data from Kathmandu Metropolitan City (KMC),
+ Nepal,
+ the research identifies key contributing factors and examines both the spatial and temporal distribution of urban fires 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_nepal"
+literal "false"
+
+\end_inset
+
+.
+ In the sequel,
+ we present studies that employ techniques belonging to the broader family of probabilistic machine learning.
+ Studies from Japan integrate the earthquake factor as a cause of urban fires.
+ The following article introduces the development of a stochastic model designed for time series forecasting of post-earthquake fire ignitions in buildings,
+ aiming to enhance post-earthquake fire risk assessment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_time_series"
+literal "false"
+
+\end_inset
+
+.
+ The same researcher also developed a physics-based urban fire spread model that incorporates the stochastic occurrence of spot fires in the wooden residential areas of Itoigawa City.
+ Utilizing the Monte Carlo method,
+ they compared the simulated results with the actual fire damage recorded in 2016 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_simulation"
+literal "false"
+
+\end_inset
+
+.
+ Concluding with Japan,
+ a probabilistic approach is introduced to evaluate the cascading risks associated with ground shaking and post-earthquake fires,
+ on a regional scale 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_earthquake"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We will proceed with related studies that make use of machine learning,
+ and more specifically,
+ supervised learning techniques.The first study examines existing research on the social,
+ economic,
+ and building stock characteristics associated with residential fire risk in urban neighborhoods 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_social"
+literal "false"
+
+\end_inset
+
+.
+ From Australia in 2010,
+ we have a paper utilizing the Bayesian approach,
+ to produce detailed spatial forecasts of residential household fires,
+ across metropolitan South-East Queensland 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_resident"
+literal "false"
+
+\end_inset
+
+.
+ Also,
+ from Australia,
+ a study employs a Markov chain approach to estimate the likelihood of residential fire occurrences based on historical fire data.
+ Utilizing fire incident records collected over a decade in Melbourne,
+ Australia,
+ the spatially integrated fire risk model forecasts potential fire events by incorporating spatial and temporal variables as key predictive factors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_model"
+literal "false"
+
+\end_inset
+
+.
+ The next study was conducted in Greece,
+ to develop a fire risk estimation model that integrates recent land cover changes alongside other critical risk factors.
+ They implemented a Support Vector Machine (SVM) algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svm"
+literal "false"
+
+\end_inset
+
+ combined with the Analytic Hierarchy Process (AHP),
+ within a Geographic Information System (GIS) platform.
+ This approach allowed for a more precise assessment of fire-prone areas.
+ As a case study,
+ they applied this methodology to the Dadia-Lefkimi - Soufli National Forest Park,
+ ensuring a comprehensive evaluation of fire risk in the region 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_prob"
+literal "false"
+
+\end_inset
+
+.
+ Subsequently,
  American researchers,
  have introduced two machine learning models,
  utilizing Random Forest 
@@ -949,49 +1413,9 @@ literal "false"
 \end_inset
 
 .
- A similar study was conducted by Turkish researchers in 2020,
- and from China in 2021 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_prob"
-literal "false"
-
-\end_inset
-
-.
- Specifically,
- the Turkish colleagues proposed a group decision-making (GDM) approach,
- integrating the recently developed Best–Worst Method (BWM) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bwm"
-literal "false"
-
-\end_inset
-
-,
- a multi-criteria decision-making (MCDM) technique 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mcdm"
-literal "false"
-
-\end_inset
-
-,
- with Geographic Information Systems (GIS) to identify optimal locations for new emergency facilities in Istanbul.
- Their analysis incorporated the input of two decision-makers 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_decision_maker"
-literal "false"
-
-\end_inset
-
-.
  Moving forward,
  another fire risk model was implemented within the Pittsburgh Bureau of Fire (PBF),
- and initial risk models was developed for predicting residential property fire risk 
+ and an initial risk model was developed for predicting residential property fire risk 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_risk_prediction"
@@ -1000,10 +1424,7 @@ literal "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Furthermore,
+ Furthermore,
  the subsequent study,
  is a novel deep sequence learning model,
  referred to as the Fire Situation Forecasting Network (FSFN),
@@ -1016,13 +1437,115 @@ literal "false"
 \end_inset
 
 .
- Building upon a prior method,
- on fire statistics,
+ The following study,
+ conducted in Iran,
+ sought to apply machine learning algorithms to enhance the accuracy of predicting firefighting operation duration in urban areas,
+ while also identifying the key factors that significantly impact this timeframe 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_ml"
+literal "false"
+
+\end_inset
+
+.
+ Moreover,
+ the next study investigates urban fire incidents in Austin,
+ Texas,
+ by employing machine learning techniques,
+ specifically Random Forest and time series modeling through the Autoregressive Integrated Moving Average (ARIMA) approach.
+ The analysis reveals that ARIMA models generally perform better in forecasting most categories of fires,
+ with the exception of vehicle-related fires.
+ Furthermore,
+ the findings underscore considerable variation in model accuracy across different urban districts,
+ suggesting that localized factors significantly influence fire incidence prediction
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_austin"
+literal "false"
+
+\end_inset
+
+.
+ Building upon the need to address both spatial and temporal dimensions of urban fire risk,
+ the following study introduces a deep neural network (DNN) framework designed to generate 30-day cumulative fire occurrence maps at a spatial resolution of 2.5 km × 2.5 km for the metropolitan area of Hangzhou,
+ China.
+ Drawing on a rich dataset spanning nine years (2015–2023),
+ the proposed approach synthesizes diverse data sources—
+including meteorological variables,
+ urban land use information,
+ and historical daily fire incident records—
+to enhance predictive accuracy and provide a holistic view of urban fire dynamics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_deep_30"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In an effort to advance the understanding of fire risks in urban residential settings,
+ the next paper introduces a predictive framework that integrates tree-based machine learning algorithms (Random Forest,
+ AdaBoost,
+ XGBoost,
+ and CatBoost) with resampling strategies to estimate the likelihood of damage and casualties resulting from residential building fires.
+ However,
+ XGBoost was the most time-efficient 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_resample"
+literal "false"
+
+\end_inset
+
+.
+ The following study was conducted in Oregon and involved the analysis of over 48,000 reported structure fire incidents that occurred between January 2012 and August 2023.
+ The dataset comprised 2,136 fires resulting in civilian casualties,
+ including 317 confirmed fatalities.
+ To assess the severity of injuries,
+ bagged decision tree classifiers utilizing the random forest algorithm were employed.
+ These models were used to evaluate the relative importance of various contributing factors,
+ including socioeconomic conditions,
+ population demographics,
+ structural and behavioral incident characteristics,
+ and the availability of local infrastructure 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_predictive"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore,
+ colleagues from Seoul,
+ Korea applied machine learning to predict fire-related property damage,
+ and analyze contributing factors using three years of spatial fire data.
+ Using k-fold cross-validation,
+ the random forest algorithm achieved 83% accuracy in forecasting property damage 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fire_analysis"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Closing the introduction,
+ a brief reference will also be made to machine learning,
+ which employs unsupervised learning techniques.
+ With this in mind,
  a weighted fire risk calculation method was developed,
  incorporating the frequency of fire occurrences,
  direct economic losses,
  and fire-related casualties.
- According this approach,
+ According to this approach,
  and with enhancements to the K-means clustering algorithm 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1042,31 +1565,6 @@ literal "false"
 \end_inset
 
 .
- The next study,
- seeks to expand the limited empirical research on urban fires in the Global South by analyzing their causes and dynamics.
- Focusing on disaggregated fire incident data from Kathmandu Metropolitan City (KMC),
- Nepal,
- the research identifies key contributing factors and examines both the spatial and temporal distribution of urban fires 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_nepal"
-literal "false"
-
-\end_inset
-
-.
- The following study,
- was conducted in Iran,
- sought to apply machine learning algorithms to enhance the accuracy of predicting firefighting operation duration in urban areas,
- while also identifying the key factors that significantly impact this timeframe 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_ml"
-literal "false"
-
-\end_inset
-
-.
  The subsequent paper,
  employs an unsupervised deep learning (DL) approach to categorize hazard levels at fire sites and utilizes an autoregressive integrated moving average (ARIMA) model to predict temperature variations,
  leveraging the extrapolation capabilities of a random forest regressor 
@@ -1078,41 +1576,54 @@ literal "false"
 \end_inset
 
 .
- In the sequel,
- studies from Japan integrate the earthquake factor as a cause of urban fires.
- The following article introduces the development of a stochastic model designed for time series forecasting of post-earthquake fire ignitions in buildings,
- aiming to enhance post-earthquake fire risk assessment 
+ In a related effort,
+ the next article,
+ introduces a methodology for forest fire detection utilizing unsupervised location-expert autoencoders in conjunction with Sentinel-1 SAR time series data.
+ The models are trained on multitemporal SAR imagery from a designated reference period and are used to identify anomalous time series within the same region during a test period.
+ Three variations of the autoencoder are presented,
+ incorporating either temporal or spatiotemporal features,
+ and their performance is compared against that of a state-of-the-art supervised autoencoder 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "fire_time_series"
+key "fire_unsuper"
 literal "false"
 
 \end_inset
 
 .
- The same researcher,
- also developed a physics-based urban fire spread model that incorporates the stochastic occurrence of spot fires in the wooden residential areas of Itoigawa City.
- Utilizing the Monte Carlo method,
- they compared the simulated results with the actual fire damage recorded in 2016 
+ Aligned with similar methodologies,
+ the following research may represent a pioneering effort in applying clustering analysis to explore the fire response of reinforced concrete (RC) columns.
+ The results clearly demonstrate that unsupervised machine learning can yield valuable insights for fire engineering—
+insights that are often overlooked by conventional supervised learning approaches 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "fire_simulation"
+key "fire_resist"
 literal "false"
 
 \end_inset
 
 .
- Concluding with Japan,
- a probabilistic approach is introduced to evaluate the cascading risks associated with ground shaking and post-earthquake fires,
- on a regional scale 
+\end_layout
+
+\begin_layout Standard
+Following this approach,
+ the subsequent study applies two unsupervised learning techniques,
+ Principal Component Analysis (PCA) and K-means clustering utilizing Sentinel 2 satellite imagery,
+ elevation data,
+ and the Zagros Grass Index (ZGI) to detect areas at high risk,
+ of wildfire in the increasingly vulnerable Kurdo Zagrosian forests.
+ Among the two,
+ PCA outperformed K-means by accurately identifying 80% of the areas burned between 2021 and 2023 as falling within moderate to high-risk fire zones 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "fire_earthquake"
+key "fire_prone"
 literal "false"
 
 \end_inset
 
 .
+
+\series bold
  
 \end_layout
 
@@ -1150,6 +1661,10 @@ literal "false"
  Furthermore,
  they can be used to effectively identify the most critical features of a problem,
  drastically reducing the number of inputs necessary for the efficient training of machine learning models.
+ A key problem with classical machine learning techniques is the excessive number of features that a dataset can have in relation to the number of patterns that accompany it.
+ The techniques used in this work can significantly reduce this number and select the most important ones for the effective training of machine learning techniques.
+ Furthermore,
+ in many cases some of the inputs to the problem may not contribute to the effective training of machine learning models and should be omitted.
 \end_layout
 
 \begin_layout Standard
@@ -1310,7 +1825,421 @@ Based on data from the Hellenic Fire Service,
  106 in marine areas (code 69),
  4 in public toilets (code 112),
  and so forth.
- Hence,
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-used-features."
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ depicts the features used in this dataset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The used features.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-used-features."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Min Value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Max Value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fire station
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Month code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Season code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Area (Building type)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Persons involved
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of injuries
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Burnt Victims
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Fatalities
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Vehicles involved
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Firefighters involved
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hence,
  the problem of predict the extend of damage caused by urban fires can be considered as a classification problem,
  where any optimization method can be used to minimize the following training error:
 \begin_inset Formula 
@@ -4448,7 +5377,15 @@ nolink "false"
  reveal statistically significant differences between the compared models.
  Specifically,
  all pairwise model comparisons yielded p-values below the standard significance threshold (typically p < 0.05),
- indicating statistically significant performance differences.
+ indicating statistically significant performance differences 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wilx"
+literal "false"
+
+\end_inset
+
+.
  The comparison between BAYES NET and MLP(BP) produced p = 0.0098,
  while BAYES NET's comparisons with RBF,
  NNC,
@@ -5142,37 +6079,6 @@ https://earthobservatory.nasa.gov/images/154008/fire-grows-unusually-large-in-ja
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "(year)"
-key "fire_bbc"
-literal "false"
-
-\end_inset
-
-Thousands evacuated as Japan’s biggest fire in decades continues to burn.
- BBC.
- By Gavin Butler.
- 03 March 17,
- 2025.
- Available from:
- 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://www.bbc.com/news/articles/c89ypkq72d0o
-\end_layout
-
-\end_inset
-
- (Accessed on 17 March 2025 ).
- 
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(year)"
 key "fire_turkey"
 literal "false"
 
@@ -5199,86 +6105,7 @@ E.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(year)"
-key "fire_social"
-literal "false"
-
-\end_inset
-
-C.R.
- Jennings,
- Social and economic characteristics as determinants of residential fire risk in urban neighborhoods:
- A review of the literature,
- Fire safety Journal 
-\series bold
-62
-\series default
-,
- pp.
- 13-19,
- 2013.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(year)"
-key "fire_resident"
-literal "false"
-
-\end_inset
-
-D.
- Rohde,
- J.
- Corcoran,
- P.
- Chhetri,
- Spatial forecasting of residential urban fires:
- A Bayesian approach.
- Computers,
- Environment and Urban Systems 
-\series bold
-34
-\series default
-,
- pp.
- 58-69,
- 2010.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(year)"
-key "fire_model"
-literal "false"
-
-\end_inset
-
-R.
- Ardianto,
- P.
- Chhetri,
- Modeling Spatial-Temporal Dynamic of Urban Residential Fire Risk Using a Markov Chain Technique,
- International Journal of Disaster Risk Science 
-\series bold
-10
-\series default
-,
- pp.
- 57-73,
- 2019.
- 
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(year)"
+label "(1945)"
 key "fire_freq"
 literal "false"
 
@@ -5308,7 +6135,7 @@ J.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(year)"
+label "(1945)"
 key "fire_risk_manage"
 literal "false"
 
@@ -5334,7 +6161,7 @@ S.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(year)"
+label "(1945)"
 key "fire_gis"
 literal "false"
 
@@ -5366,56 +6193,7 @@ Y.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(2020)"
-key "svm"
-literal "false"
-
-\end_inset
-
-Suthaharan,
- S.,
- & Suthaharan,
- S.
- (2016).
- Support vector machine.
- Machine learning models and algorithms for big data classification:
- thinking with examples for effective learning,
- 207-235.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(year)"
-key "fire_prob"
-literal "false"
-
-\end_inset
-
-Y.
- Maniatis,
- A.
- Doganis,
- M.
- Chatzigeorgiadis,
- Fire Risk Probability Mapping Using Machine Learning Tools and Multi – Criteria Decision Analysis in the GIS Environment:
- A Case Study in the National Park Forest Dadia-Lefkimi-Soufli,
- Greece,
- Applied Science 
-\series bold
-12
-\series default
-,
- 2938,
- 2022.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(year)"
+label "(1945)"
 key "fire_gis_model"
 literal "false"
 
@@ -5516,6 +6294,305 @@ C.-A.
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "(2020)"
+key "bwm"
+literal "false"
+
+\end_inset
+
+Pamučar,
+ D.,
+ Ecer,
+ F.,
+ Cirovic,
+ G.,
+ & Arlasheedi,
+ M.
+ A.
+ (2020).
+ Application of improved best worst method (BWM) in real-world problems.
+ Mathematics,
+ 8(8),
+ 1342.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "mcdm"
+literal "false"
+
+\end_inset
+
+Taherdoost,
+ H.,
+ & Madanchian,
+ M.
+ (2023).
+ Multi-criteria decision making (MCDM) methods and concepts.
+ Encyclopedia,
+ 3(1),
+ 77-87.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_decision_maker"
+literal "false"
+
+\end_inset
+
+Erden,
+ Turan.,
+ Hopkins Nyimbili,
+ Penjani.
+ Comparative evaluation of GIS-based best – worst method (BMW) for emergency facility planning:
+ perspectives from two decision-maker groups.
+ Natural Hazards,
+ volume 105,
+ issue 1.
+ January 2021.
+ Pp.
+ 1031-1067.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_nepal"
+literal "false"
+
+\end_inset
+
+K.
+ KC,
+ R.
+ Ardianto,
+ P.
+ Chhetri,
+ J.
+ Corcoran,
+ Geographic patterns of urban fires in the global south:
+ the case of Kathmandu,
+ Nepal.
+ GeoJournal 
+\series bold
+89
+\series default
+,
+ 137,
+ 2024.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_time_series"
+literal "false"
+
+\end_inset
+
+T.
+ Nishino,
+ A.
+ Hokugo,
+ A stochastic model for time series prediction of the number of post – earthquake fire ignition in buildings based on the ignition record for the 2011 Tohoku Earthquake,
+ Earthquake Spectra 
+\series bold
+36
+\series default
+,
+ 2019.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_simulation"
+literal "false"
+
+\end_inset
+
+T.
+ Nishino,
+ Physics – based urban fires spread simulation coupled with stochastic occurrence of spot fires,
+ Stochastic Environmental Research and Risk Assessment 
+\series bold
+33
+\series default
+,
+ pp.
+ 451 – 463,
+ 2019.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "fire_earthquake"
+literal "false"
+
+\end_inset
+
+T.
+ Nishino,
+ Probabilistic urban cascading multi-hazard risk assessment methodology for ground shaking and post – earthquake fires,
+ Natural Hazards 
+\series bold
+116
+\series default
+,
+ pp.
+ 3165 – 3200,
+ 2023.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_social"
+literal "false"
+
+\end_inset
+
+C.R.
+ Jennings,
+ Social and economic characteristics as determinants of residential fire risk in urban neighborhoods:
+ A review of the literature,
+ Fire safety Journal 
+\series bold
+62
+\series default
+,
+ pp.
+ 13-19,
+ 2013.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_resident"
+literal "false"
+
+\end_inset
+
+D.
+ Rohde,
+ J.
+ Corcoran,
+ P.
+ Chhetri,
+ Spatial forecasting of residential urban fires:
+ A Bayesian approach.
+ Computers,
+ Environment and Urban Systems 
+\series bold
+34
+\series default
+,
+ pp.
+ 58-69,
+ 2010.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_model"
+literal "false"
+
+\end_inset
+
+R.
+ Ardianto,
+ P.
+ Chhetri,
+ Modeling Spatial-Temporal Dynamic of Urban Residential Fire Risk Using a Markov Chain Technique,
+ International Journal of Disaster Risk Science 
+\series bold
+10
+\series default
+,
+ pp.
+ 57-73,
+ 2019.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "svm"
+literal "false"
+
+\end_inset
+
+Suthaharan,
+ S.,
+ & Suthaharan,
+ S.
+ (2016).
+ Support vector machine.
+ Machine learning models and algorithms for big data classification:
+ thinking with examples for effective learning,
+ 207-235.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "fire_prob"
+literal "false"
+
+\end_inset
+
+Y.
+ Maniatis,
+ A.
+ Doganis,
+ M.
+ Chatzigeorgiadis,
+ Fire Risk Probability Mapping Using Machine Learning Tools and Multi – Criteria Decision Analysis in the GIS Environment:
+ A Case Study in the National Park Forest Dadia-Lefkimi-Soufli,
+ Greece,
+ Applied Science 
+\series bold
+12
+\series default
+,
+ 2938,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
 key "random_forest1"
 literal "false"
 
@@ -5602,77 +6679,6 @@ Dey,
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "(2020)"
-key "bwm"
-literal "false"
-
-\end_inset
-
-Pamučar,
- D.,
- Ecer,
- F.,
- Cirovic,
- G.,
- & Arlasheedi,
- M.
- A.
- (2020).
- Application of improved best worst method (BWM) in real-world problems.
- Mathematics,
- 8(8),
- 1342.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
-key "mcdm"
-literal "false"
-
-\end_inset
-
-Taherdoost,
- H.,
- & Madanchian,
- M.
- (2023).
- Multi-criteria decision making (MCDM) methods and concepts.
- Encyclopedia,
- 3(1),
- 77-87.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
-key "fire_decision_maker"
-literal "false"
-
-\end_inset
-
-Erden,
- Turan.,
- Hopkins Nyimbili,
- Penjani.
- Comparative evaluation of GIS-based best – worst method (BMW) for emergency facility planning:
- perspectives from two decision-maker groups.
- Natural Hazards,
- volume 105,
- issue 1.
- January 2021.
- Pp.
- 1031-1067.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
 key "fire_risk_prediction"
 literal "false"
 
@@ -5734,6 +6740,145 @@ G.
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "(2020)"
+key "fire_ml"
+literal "false"
+
+\end_inset
+
+A.
+ Sahebi,
+ B.
+ Havasy,
+ Y.
+ Veisani,
+ Predicting firefighting operation time in urban areas using machine learning:
+ identifying key determinants for improved emergency response,
+ Discover Applied Science 
+\series bold
+7
+\series default
+,
+ 2025.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1945)"
+key "fire_austin"
+literal "false"
+
+\end_inset
+
+Yuan,
+ Y.,
+ & Wylie,
+ A.
+ G.
+ (2024).
+ Comparing Machine Learning and Time Series Approaches in Predictive Modeling of Urban Fire Incidents:
+ A Case Study of Austin,
+ Texas.
+ ISPRS International Journal of Geo-Information,
+ 13(5),
+ 149.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1945)"
+key "fire_deep_30"
+literal "false"
+
+\end_inset
+
+Zhou,
+ Y.,
+ Lin,
+ P.,
+ & Wang,
+ N.
+ (2025).
+ A deep neural network approach for regional-scale 30-day accumulated urban fire occurrence forecast.
+ Fire Safety Journal,
+ 152,
+ 104331.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1945)"
+key "fire_resample"
+literal "false"
+
+\end_inset
+
+Liu,
+ Z.,
+ & Zhuang,
+ Y.
+ (2024).
+ An investigation using resampling techniques and explainable machine learning to minimize fire losses in residential buildings.
+ Journal of Building Engineering,
+ 95,
+ 110080.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1945)"
+key "fire_predictive"
+literal "false"
+
+\end_inset
+
+Schmidt,
+ A.,
+ Gemmil,
+ E.,
+ & Hoskins,
+ R.
+ Machine Learning Based Risk Analysis and Predictive Modeling of Structure Fire Related Casualties.
+ Available at SSRN 4757205.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1945)"
+key "fire_analysis"
+literal "false"
+
+\end_inset
+
+Seo,
+ M.
+ S.,
+ Castillo-Osorio,
+ E.
+ E.,
+ & Yoo,
+ H.
+ H.
+ (2023).
+ Fire Risk Prediction Analysis Using Machine Learning Techniques.
+ Sensors & Materials,
+ 35.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
 key "kmeans"
 literal "false"
 
@@ -5784,62 +6929,6 @@ W.
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "(2020)"
-key "fire_nepal"
-literal "false"
-
-\end_inset
-
-K.
- KC,
- R.
- Ardianto,
- P.
- Chhetri,
- J.
- Corcoran,
- Geographic patterns of urban fires in the global south:
- the case of Kathmandu,
- Nepal.
- GeoJournal 
-\series bold
-89
-\series default
-,
- 137,
- 2024.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
-key "fire_ml"
-literal "false"
-
-\end_inset
-
-A.
- Sahebi,
- B.
- Havasy,
- Y.
- Veisani,
- Predicting firefighting operation time in urban areas using machine learning:
- identifying key determinants for improved emergency response,
- Discover Applied Science 
-\series bold
-7
-\series default
-,
- 2025.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
 key "fire_deep"
 literal "false"
 
@@ -5863,70 +6952,73 @@ A.A.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(2020)"
-key "fire_time_series"
+label "(1945)"
+key "fire_unsuper"
 literal "false"
 
 \end_inset
 
-T.
- Nishino,
+Di Martino,
+ T.,
+ Le Saux,
+ B.,
+ Guinvarc’h,
+ R.,
+ Thirion-Lefevre,
+ L.,
+ & Colin,
+ E.
+ (2023).
+ Detection of forest fires through deep unsupervised learning modeling of Sentinel-1 time series.
+ ISPRS International Journal of Geo-Information,
+ 12(8),
+ 332.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1945)"
+key "fire_resist"
+literal "false"
+
+\end_inset
+
+Çiftçioğlu,
  A.
- Hokugo,
- A stochastic model for time series prediction of the number of post – earthquake fire ignition in buildings based on the ignition record for the 2011 Tohoku Earthquake,
- Earthquake Spectra 
-\series bold
-36
-\series default
-,
- 2019.
- 
+ Ö.,
+ & Naser,
+ M.
+ Z.
+ (2022,
+ February).
+ Unsupervised Machine Learning for Fire Resistance Analysis.
+ In International Conference on Science,
+ Engineering Management and Information Technology (pp.
+ 211-221).
+ Cham:
+ Springer Nature Switzerland.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(2020)"
-key "fire_simulation"
+label "(1945)"
+key "fire_prone"
 literal "false"
 
 \end_inset
 
-T.
- Nishino,
- Physics – based urban fires spread simulation coupled with stochastic occurrence of spot fires,
- Stochastic Environmental Research and Risk Assessment 
-\series bold
-33
-\series default
-,
- pp.
- 451 – 463,
- 2019.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
-key "fire_earthquake"
-literal "false"
-
-\end_inset
-
-T.
- Nishino,
- Probabilistic urban cascading multi-hazard risk assessment methodology for ground shaking and post – earthquake fires,
- Natural Hazards 
-\series bold
-116
-\series default
-,
- pp.
- 3165 – 3200,
- 2023.
+Rahimi,
+ I.,
+ Duarte,
+ L.,
+ & Teodoro,
+ A.
+ C.
+ Unsupervised Image Classification Algorithms Applied to Fire-Prone Area Detection.
 \end_layout
 
 \begin_layout Bibliography
@@ -6673,6 +7765,26 @@ T.
  pp.
  1554-1564,
  2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1945)"
+key "wilx"
+literal "false"
+
+\end_inset
+
+Wilcoxon,
+ F.
+ (1945).
+ Individual Comparisons by Ranking Methods.
+ International Biometric Society:
+ Vol.
+ 1,
+ No:6,
+ pp.:80-83.
 \end_layout
 
 \begin_layout Standard
