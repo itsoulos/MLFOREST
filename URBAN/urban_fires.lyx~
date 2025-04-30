@@ -1144,6 +1144,12 @@ literal "false"
 ,
  feature construction of artificial features from the original ones using Grammatical Evolution and production of classification rules.
  The obtained results are compared against the results from various traditional machine learning methods and a discussion is provided on the Results section of this manuscript.
+ The methods utilized here include construction of artificial features from the original ones,
+ construction of neural networks and production of classification rules.
+ These techniques cover a wide range of machine learning techniques that have been presented in recent years and have shown high performance when applied to a variety of problems from various research areas.
+ Furthermore,
+ they can be used to effectively identify the most critical features of a problem,
+ drastically reducing the number of inputs necessary for the efficient training of machine learning models.
 \end_layout
 
 \begin_layout Standard
@@ -2121,7 +2127,15 @@ nolink "false"
 \end_inset
 
 ,
- which also was initially presented in the original work of the feature construction method..
+ which also was initially presented in the original work of the feature construction method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fc1"
+literal "false"
+
+\end_inset
+
+.
  
 \end_layout
 
