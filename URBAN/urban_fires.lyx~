@@ -1223,23 +1223,6 @@ literal "false"
 \end_inset
 
 .
- Building upon,
- Analytic Hierarchy Process,
- the paper from Taiwan,
- evaluated the severity of building fires across 17 villages in Taishan District,
- New Taipei City.
- A comprehensive literature review was conducted to examine the influence of fire severity assessment criteria,
- which served as the foundation for identifying key factors,
- and developing evaluation items,
- within the (AHP) framework 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_safety"
-literal "false"
-
-\end_inset
-
-.
  Turkish colleagues proposed a group decision-making (GDM) approach,
  integrating the recently developed Best–Worst Method (BWM) 
 \begin_inset CommandInset citation
@@ -1921,7 +1904,7 @@ Fire station
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -1930,7 +1913,7 @@ Fire station
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+275
 \end_layout
 
 \end_inset
@@ -1950,7 +1933,7 @@ Region code
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -1959,7 +1942,7 @@ Region code
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+51
 \end_layout
 
 \end_inset
@@ -1979,7 +1962,7 @@ Month code
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -1988,7 +1971,7 @@ Month code
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12
 \end_layout
 
 \end_inset
@@ -2008,7 +1991,7 @@ Season code
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -2017,7 +2000,7 @@ Season code
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4
 \end_layout
 
 \end_inset
@@ -2037,7 +2020,7 @@ Area (Building type)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -2046,7 +2029,7 @@ Area (Building type)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+147
 \end_layout
 
 \end_inset
@@ -2066,7 +2049,7 @@ Persons involved
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -2095,7 +2078,7 @@ Number of injuries
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -2124,7 +2107,7 @@ Number of Burnt Victims
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -2153,7 +2136,7 @@ Number of Fatalities
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -2182,7 +2165,7 @@ Number of Vehicles involved
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -2211,7 +2194,7 @@ Firefighters involved
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -6253,38 +6236,6 @@ C-A.
 \series default
 ,
  pp.
- 1843-1856,
- 2020.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
-key "fire_safety"
-literal "false"
-
-\end_inset
-
-C.-A.
- Lee,
- Y-C.
- Sung,
- ,
- Y-S.
- Lin,
- G.
- K-K.
- Hsiao,
- Evaluating the severity of building fires with the analytical hierarchy process,
- big data analysis,
- and remote sensing,
- Natural Hazards 
-\series bold
-103
-\series default
-,pp.
  1843-1856,
  2020.
 \end_layout

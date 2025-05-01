@@ -1,10 +1,11 @@
-%% LyX 2.4.1 created this file.  For more info, see https://www.lyx.org/.
+%% LyX 2.4.3 created this file.  For more info, see https://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
 \documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 \usepackage{textcomp}
 \usepackage[utf8]{inputenc}
 \usepackage{float}
 \usepackage{url}
+\usepackage{varwidth}
 \usepackage{graphicx}
 
 \makeatletter
@@ -70,6 +71,10 @@ Grammatical Evolution.}
 \DeclareTextSymbolDefault{\textquotedbl}{T1}
 %% Because html converters don't know tabularnewline
 \providecommand{\tabularnewline}{\\}
+%% Variable width box for table cells
+\newenvironment{cellvarwidth}[1][t]
+    {\begin{varwidth}[#1]{\linewidth}}
+    {\@finalstrut\@arstrutbox\end{varwidth}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
 \newenvironment{lyxcode}
@@ -239,7 +244,7 @@ in this trend, in 2023.
 \includegraphics[scale=0.5]{greece_fire_deaths}
 \par\end{centering}
 \caption{A graph presenting the deaths from fires in Greece for a period from
-2014 to 2023.\protect\label{fig:graphGreece}}
+2014 to 2023.\label{fig:graphGreece}}
 
 \end{figure}
 Beyond this, it is observed that in 2018, the human casualties from
@@ -264,68 +269,87 @@ million fires occur globally each year, resulting in approximately
 180,000 fatalities \citep{who}. Moreover, the majority of these disasters
 take place in major urban centers, within low - income countries,
 where various economic, social, and environmental factors contribute
-to an increased risk of fire incidents . 
+to an increased risk of fire incidents. 
 
-Nevertheless, the data demonstrate that wildfires are not solely an
-issue confined to low socio-economic status countries. Notably, the
-Black Summer of Australia in 2019--2020 remains a significant historical
-event. Tragically, the fires claimed 33 lives and impacted thousands
-through smoke inhalation and other effects. By the end of the season,
-they had burned a record 19 million hectares, destroyed over 3,000
-homes, displaced tens of thousands, and caused the loss of billions
-of animals \citep{fire_hazards,australian_report}. Furthermore, in
-July 2024, wildfires occurred in the Arctic plains of Russia's Far
-East, posing significant challenges to containment efforts \citep{fires_siberian,nasa_images}
-. That summer, wildfires had already devastated nearly 5 million hectares
-of forest in Russia. Wildfires in Russia's Siberian and Far East regions,
-which occur annually during the summer, have become more severe in
-recent years due to climate change, which has intensified the hot
-and dry conditions that fuel these fires \citep{fires_russia}. Climate
-change projections, indicate that urban environments may face increasing,
-fire hazards \citep{fire_cities}. A stark example of the interconnectedness
-between climate change, and wildfires, is evident in the fires that
-occurred in Los Angeles in January 2025, and in Japan in February
-of the same year. In this connection, Climate scientists are working
-to identify the impact of climate change on wildfires. However, the
-most substantial human influence may lie in the ignition sources,
-as no lightning storms were present at the time, in L.A, to naturally
-trigger the fires \citep{fire_climate}. As the relentless wildfire
-advanced into urban areas, driven by wind speeds exceeding 80 miles
-per hour, it destroyed over 16,000 homes and buildings \citep{fire_climate}.
-By February 4, a total of 29 fatalities had been reported \citep{fire_graphics}.
-Another technologically and socioeconomically advanced nation, Japan,
-was struck by an uncontrolled wildfire on February 26, 2025 \citep{fire_japan}.
-The fire scorched over 2,100 hectares and destroyed more than 80 buildings.
-Determining whether climate change has directly caused or intensified
-specific wildfires is challenging, as other factors, such as land-use
-changes, also play a role. However, the IPCC asserts that climate
-change is increasing the likelihood of weather conditions that facilitate
-the spread of wildfires \citep{fire_bbc}.
+Nevertheless, this conclusion does not exempt powerful nations from
+the impacts of climate change and natural disasters. Accordingly,
+the table \ref{tab:climate} is introduced.
+
+\begin{table}[H]
+\caption{How Climate change and Natural Disasters Effects even to powerful
+nations.\label{tab:climate}}
+
+\centering{}{\scriptsize{}%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+{\scriptsize Country} & {\scriptsize Year} & {\scriptsize Causes of Forest Fires} & {\scriptsize Carbon Emissions } & {\scriptsize Hectares} & {\scriptsize Casualties}\tabularnewline
+\hline 
+\hline 
+\begin{cellvarwidth}[t]
+\centering
+{\scriptsize Australia }\\
+{\scriptsize (Black Summer) \citep{fire_hazards,australian_report}}
+\end{cellvarwidth} & {\scriptsize 2019-2020} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Dry winters,}\\
+{\scriptsize{} drought}
+\end{cellvarwidth} & {\scriptsize 900 million tons} & {\scriptsize 19 million} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize 33 people, 3.000 }\\
+{\scriptsize Houses \& Buildings}\\
+{\scriptsize Billions of wild animals}
+\end{cellvarwidth}\tabularnewline
+\hline 
+\begin{cellvarwidth}[t]
+\centering
+{\scriptsize Russia}{\scriptsize\textbf{ }}\\
+{\scriptsize (Arctic fires)\citep{fires_siberian,nasa_images,fires_russia}}
+\end{cellvarwidth} & {\scriptsize 2019-2020} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Dryer surface, }\\
+{\scriptsize higher temperature}
+\end{cellvarwidth} & {\scriptsize 31.1 megatones} & {\scriptsize 24 million} & {\scriptsize No reports.}\tabularnewline
+\hline 
+{\scriptsize USA (L.A.) \citep{fire_climate,fire_graphics}} & {\scriptsize 2025} & {\scriptsize High temperature} & {\scriptsize 4.4 megatones} & {\scriptsize 57000} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize 30 people,}\\
+{\scriptsize 2.000.000 evacuated}\\
+{\scriptsize 16000 houses burnt}
+\end{cellvarwidth}\tabularnewline
+\hline 
+{\scriptsize Japan}{\scriptsize\textbf{ }}{\scriptsize (Ofunato) \citep{fire_japan}} & {\scriptsize 2025} & {\scriptsize High temperature} & {\scriptsize No reported.} & {\scriptsize 2900} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize 1 people,}\\
+{\scriptsize 4000 evacuated}\\
+{\scriptsize 210 buildings damaged}
+\end{cellvarwidth}\tabularnewline
+\hline 
+\end{tabular}}{\scriptsize\par}
+\end{table}
+Climate change projections indicate that urban environments may face
+increasing fire hazards \citep{fire_cities}. A stark example of the
+interconnectedness between climate change, and Forest fires are evident
+in the fires that occurred in Los Angeles in January 2025, and in
+Japan in February of the same year.
 
 From these real events, it is inferred that an unpredictable natural
 disaster, such as a wildfire, does not discriminate between low and
 high-socioeconomic areas. Furthermore, it highlights the precarious
 balance (sword of Damocles) between climate change, and urban expansion
 into forested regions. This underscores the critical importance of
-our research in predicting the impacts damages of an urban fire. Next,
-we will refer to relevant studies focused on the field of urban fire
-prediction. A team of researchers, used data from Ankara region, of
-Turkey, for analysis of the spatial and temporal patterns of residential
-fires, can enable decision-makers to strategically allocate resources
-for fire management, based on the intensity of fire clustering over
-time and across different locations \citep{fire_turkey}. Next, we
-proceed with an article that examines existing research on the social,
-economic, and building stock characteristics associated with residential
-fire risk in urban neighborhoods \citep{fire_social}. From Australia
-in 2010, we have the first study utilizing the Bayesian approach,
-to produce detailed spatial forecasts of residential household fires,
-across metropolitan South-East Queensland \citep{fire_resident}.
-Also, from Australia, a study employs a Markov chain approach to estimate
-the likelihood of residential fire occurrences based on historical
-fire data. Utilizing fire incident records collected over a decade
-in Melbourne, Australia, the spatially integrated fire risk model
-forecasts potential fire events by incorporating spatial and temporal
-variables as key predictive factors \citep{fire_model}. Subsequently,
+our research in predicting the impacts damages of an urban fire. 
+
+Next, we will refer to relevant studies focused on the field of urban
+fire prediction, which employ statistical techniques, (GIS) spatial
+and temporal analyses, subjective evaluations through the Analytical
+Hierarchy Process (AHP), Multi Criteria Decision Making, and Probabilistic
+machine learning. 
+
+A team of researchers, used data from the Ankara region of Turkey,
+for analysis of the spatial and temporal patterns of residential fires,
+can enable decision-makers to strategically allocate resources for
+fire management, based on the intensity of fire clustering over time
+and across different locations \citep{fire_turkey}. Subsequently,
 the following study builds upon the methodology and effectiveness
 of a firefighter-led public education campaign on fire prevention,
 which successfully decreased both the frequency, and severity, of
@@ -345,91 +369,160 @@ Systems (GIS), Multi-Criteria Decision Making (MCDM), and Location-Allocation
 land cover, points of interest, drive time, and statistical yearbooks.
 Additionally, they used Analytic Hierarchy Processes (AHP) to thoroughly
 assess undeveloped areas based on factors such as location, topography,
-and potential fire-risk zones \citep{fire_gis}. The next study conducted
-in Greece, to develop a fire risk estimation model that integrates
-recent land cover changes alongside other critical risk factors. They
-implemented a Support Vector Machine (SVM) algorithm \citep{svm}
-combined with the Analytic Hierarchy Process (AHP), within a Geographic
-Information System (GIS) platform. This approach allowed for a more
-precise assessment of fire-prone areas. As a case study, they applied
-this methodology to the Dadia-Lefkimi - Soufli National Forest Park,
-ensuring a comprehensive evaluation of fire risk in the region \citep{fire_prob}.
-
-Afterwards, a study seeks to assess fire risk in urban areas by analyzing
-19 factors related to economic, social, and built environment aspects,
-as well as past fire incidents. It employs Multi-Criteria Decision
-Making (MCDM) techniques, specifically the Analytic Hierarchy Process
-(AHP) to determine the significance and weighting of each criterion.
-To illustrate the method’s effectiveness, the research develops an
-urban vulnerability index map for Ardabil, Iran, using the Fuzzy-VIKOR
-approach within a Geographic Information System (GIS) framework \citep{fire_gis_model}.
-Building upon, Analytic Hierarchy Process, the paper from Taiwan,
-evaluated the severity of building fires across 17 villages in Taishan
-District, New Taipei City. A comprehensive literature review was conducted
-to examine the influence of fire severity assessment criteria, which
+and potential fire-risk zones \citep{fire_gis}. Afterwards, a study
+seeks to assess fire risk in urban areas by analyzing 19 factors related
+to economic, social, and built environment aspects, as well as past
+fire incidents. It employs Multi-Criteria Decision Making (MCDM) techniques,
+specifically the Analytic Hierarchy Process (AHP) to determine the
+significance and weighting of each criterion. To illustrate the method’s
+effectiveness, the research develops an urban vulnerability index
+map for Ardabil, Iran, using the Fuzzy-VIKOR approach within a Geographic
+Information System (GIS) framework \citep{fire_gis_model}. Building
+upon, Analytic Hierarchy Process, the paper from Taiwan, evaluated
+the severity of building fires across 17 villages in Taishan District,
+New Taipei City. A comprehensive literature review was conducted to
+examine the influence of fire severity assessment criteria, which
 served as the foundation for identifying key factors, and developing
 evaluation items, within the (AHP) framework \citep{fire_big_data}.
+Turkish colleagues proposed a group decision-making (GDM) approach,
+integrating the recently developed Best--Worst Method (BWM) \citep{bwm},
+a multi-criteria decision-making (MCDM) technique \citep{mcdm}, with
+Geographic Information Systems (GIS) to identify optimal locations
+for new emergency facilities in Istanbul. Their analysis incorporated
+the input of two decision-makers \citep{fire_decision_maker}. The
+next study seeks to expand the limited empirical research on urban
+fires in the Global South by analyzing their causes and dynamics.
+Focusing on disaggregated fire incident data from Kathmandu Metropolitan
+City (KMC), Nepal, the research identifies key contributing factors
+and examines both the spatial and temporal distribution of urban fires
+\citep{fire_nepal}. In the sequel, we present studies that employ
+techniques belonging to the broader family of probabilistic machine
+learning. Studies from Japan integrate the earthquake factor as a
+cause of urban fires. The following article introduces the development
+of a stochastic model designed for time series forecasting of post-earthquake
+fire ignitions in buildings, aiming to enhance post-earthquake fire
+risk assessment \citep{fire_time_series}. The same researcher also
+developed a physics-based urban fire spread model that incorporates
+the stochastic occurrence of spot fires in the wooden residential
+areas of Itoigawa City. Utilizing the Monte Carlo method, they compared
+the simulated results with the actual fire damage recorded in 2016
+\citep{fire_simulation}. Concluding with Japan, a probabilistic approach
+is introduced to evaluate the cascading risks associated with ground
+shaking and post-earthquake fires, on a regional scale \citep{fire_earthquake}.
 
-Building upon, Analytic Hierarchy Process, the paper from Taiwan,
-evaluated the severity of building fires across 17 villages in Taishan
-District, New Taipei City. A comprehensive literature review was conducted
-to examine the influence of fire severity assessment criteria, which
-served as the foundation for identifying key factors, and developing
-evaluation items, within the (AHP) framework \citep{fire_safety}.
-American researchers, have introduced two machine learning models,
-utilizing Random Forest \citep{random_forest1,random_forest2} and
-Extreme Gradient Boosting (XGBoost) \citep{xgboost}, to forecast
+We will proceed with related studies that make use of machine learning,
+and more specifically, supervised learning techniques.The first study
+examines existing research on the social, economic, and building stock
+characteristics associated with residential fire risk in urban neighborhoods
+\citep{fire_social}. From Australia in 2010, we have a paper utilizing
+the Bayesian approach, to produce detailed spatial forecasts of residential
+household fires, across metropolitan South-East Queensland \citep{fire_resident}.
+Also, from Australia, a study employs a Markov chain approach to estimate
+the likelihood of residential fire occurrences based on historical
+fire data. Utilizing fire incident records collected over a decade
+in Melbourne, Australia, the spatially integrated fire risk model
+forecasts potential fire events by incorporating spatial and temporal
+variables as key predictive factors \citep{fire_model}. The next
+study was conducted in Greece, to develop a fire risk estimation model
+that integrates recent land cover changes alongside other critical
+risk factors. They implemented a Support Vector Machine (SVM) algorithm
+\citep{svm} combined with the Analytic Hierarchy Process (AHP), within
+a Geographic Information System (GIS) platform. This approach allowed
+for a more precise assessment of fire-prone areas. As a case study,
+they applied this methodology to the Dadia-Lefkimi - Soufli National
+Forest Park, ensuring a comprehensive evaluation of fire risk in the
+region \citep{fire_prob}. Subsequently, American researchers, have
+introduced two machine learning models, utilizing Random Forest \citep{random_forest1,random_forest2}
+and Extreme Gradient Boosting (XGBoost) \citep{xgboost}, to forecast
 future service demand in urban areas based on spatial data analysis,
 in collaboration with Victoria Fire Department, U.S.A \citep{fire_station}.
-A similar study was conducted by Turkish researchers in 2020, and
-from China in 2021 \citep{fire_prob}. Specifically, the Turkish colleagues
-proposed a group decision-making (GDM) approach, integrating the recently
-developed Best--Worst Method (BWM) \citep{bwm}, a multi-criteria
-decision-making (MCDM) technique \citep{mcdm}, with Geographic Information
-Systems (GIS) to identify optimal locations for new emergency facilities
-in Istanbul. Their analysis incorporated the input of two decision-makers
-\citep{fire_decision_maker}. Moving forward, another fire risk model
-was implemented within the Pittsburgh Bureau of Fire (PBF), and initial
-risk models was developed for predicting residential property fire
-risk \citep{fire_risk_prediction}.
-
+Moving forward, another fire risk model was implemented within the
+Pittsburgh Bureau of Fire (PBF), and an initial risk model was developed
+for predicting residential property fire risk \citep{fire_risk_prediction}.
 Furthermore, the subsequent study, is a novel deep sequence learning
 model, referred to as the Fire Situation Forecasting Network (FSFN),
 is introduced to enhance the processing of information and the analysis
 of Spatio -temporal correlations within regional urban fire alarm
-datasets \citep{fire_forecast}. Building upon a prior method, on
-fire statistics, a weighted fire risk calculation method was developed,
-incorporating the frequency of fire occurrences, direct economic losses,
-and fire-related casualties. According this approach, and with enhancements
-to the K-means clustering algorithm \citep{kmeans}, this study introduced
+datasets \citep{fire_forecast}. The following study, conducted in
+Iran, sought to apply machine learning algorithms to enhance the accuracy
+of predicting firefighting operation duration in urban areas, while
+also identifying the key factors that significantly impact this timeframe
+\citep{fire_ml}. Moreover, the next study investigates urban fire
+incidents in Austin, Texas, by employing machine learning techniques,
+specifically Random Forest and time series modeling through the Autoregressive
+Integrated Moving Average (ARIMA) approach. The analysis reveals that
+ARIMA models generally perform better in forecasting most categories
+of fires, with the exception of vehicle-related fires. Furthermore,
+the findings underscore considerable variation in model accuracy across
+different urban districts, suggesting that localized factors significantly
+influence fire incidence prediction\citep{fire_austin}. Building
+upon the need to address both spatial and temporal dimensions of urban
+fire risk, the following study introduces a deep neural network (DNN)
+framework designed to generate 30-day cumulative fire occurrence maps
+at a spatial resolution of 2.5 km \texttimes{} 2.5 km for the metropolitan
+area of Hangzhou, China. Drawing on a rich dataset spanning nine years
+(2015--2023), the proposed approach synthesizes diverse data sources---including
+meteorological variables, urban land use information, and historical
+daily fire incident records---to enhance predictive accuracy and
+provide a holistic view of urban fire dynamics \citep{fire_deep_30}.
+
+In an effort to advance the understanding of fire risks in urban residential
+settings, the next paper introduces a predictive framework that integrates
+tree-based machine learning algorithms (Random Forest, AdaBoost, XGBoost,
+and CatBoost) with resampling strategies to estimate the likelihood
+of damage and casualties resulting from residential building fires.
+However, XGBoost was the most time-efficient \citep{fire_resample}.
+The following study was conducted in Oregon and involved the analysis
+of over 48,000 reported structure fire incidents that occurred between
+January 2012 and August 2023. The dataset comprised 2,136 fires resulting
+in civilian casualties, including 317 confirmed fatalities. To assess
+the severity of injuries, bagged decision tree classifiers utilizing
+the random forest algorithm were employed. These models were used
+to evaluate the relative importance of various contributing factors,
+including socioeconomic conditions, population demographics, structural
+and behavioral incident characteristics, and the availability of local
+infrastructure \citep{fire_predictive}. Furthermore, colleagues from
+Seoul, Korea applied machine learning to predict fire-related property
+damage, and analyze contributing factors using three years of spatial
+fire data. Using k-fold cross-validation, the random forest algorithm
+achieved 83\% accuracy in forecasting property damage \citep{fire_analysis}.
+
+Closing the introduction, a brief reference will also be made to machine
+learning, which employs unsupervised learning techniques. With this
+in mind, a weighted fire risk calculation method was developed, incorporating
+the frequency of fire occurrences, direct economic losses, and fire-related
+casualties. According to this approach, and with enhancements to the
+K-means clustering algorithm \citep{kmeans}, this study introduced
 a fire risk K-means clustering model. This model offers an improved
 solution for the automated classification of fire risk levels \citep{fire_stat}.
-The next study, seeks to expand the limited empirical research on
-urban fires in the Global South by analyzing their causes and dynamics.
-Focusing on disaggregated fire incident data from Kathmandu Metropolitan
-City (KMC), Nepal, the research identifies key contributing factors
-and examines both the spatial and temporal distribution of urban fires
-\citep{fire_nepal}. The following study, was conducted in Iran, sought
-to apply machine learning algorithms to enhance the accuracy of predicting
-firefighting operation duration in urban areas, while also identifying
-the key factors that significantly impact this timeframe \citep{fire_ml}.
 The subsequent paper, employs an unsupervised deep learning (DL) approach
 to categorize hazard levels at fire sites and utilizes an autoregressive
 integrated moving average (ARIMA) model to predict temperature variations,
 leveraging the extrapolation capabilities of a random forest regressor
-\citep{fire_deep}. In the sequel, studies from Japan integrate the
-earthquake factor as a cause of urban fires. The following article
-introduces the development of a stochastic model designed for time
-series forecasting of post-earthquake fire ignitions in buildings,
-aiming to enhance post-earthquake fire risk assessment \citep{fire_time_series}.
-The same researcher, also developed a physics-based urban fire spread
-model that incorporates the stochastic occurrence of spot fires in
-the wooden residential areas of Itoigawa City. Utilizing the Monte
-Carlo method, they compared the simulated results with the actual
-fire damage recorded in 2016 \citep{fire_simulation}. Concluding
-with Japan, a probabilistic approach is introduced to evaluate the
-cascading risks associated with ground shaking and post-earthquake
-fires, on a regional scale \citep{fire_earthquake}. 
+\citep{fire_deep}. In a related effort, the next article, introduces
+a methodology for forest fire detection utilizing unsupervised location-expert
+autoencoders in conjunction with Sentinel-1 SAR time series data.
+The models are trained on multitemporal SAR imagery from a designated
+reference period and are used to identify anomalous time series within
+the same region during a test period. Three variations of the autoencoder
+are presented, incorporating either temporal or spatiotemporal features,
+and their performance is compared against that of a state-of-the-art
+supervised autoencoder \citep{fire_unsuper}. Aligned with similar
+methodologies, the following research may represent a pioneering effort
+in applying clustering analysis to explore the fire response of reinforced
+concrete (RC) columns. The results clearly demonstrate that unsupervised
+machine learning can yield valuable insights for fire engineering---insights
+that are often overlooked by conventional supervised learning approaches
+\citep{fire_resist}.
+
+Following this approach, the subsequent study applies two unsupervised
+learning techniques, Principal Component Analysis (PCA) and K-means
+clustering utilizing Sentinel 2 satellite imagery, elevation data,
+and the Zagros Grass Index (ZGI) to detect areas at high risk, of
+wildfire in the increasingly vulnerable Kurdo Zagrosian forests. Among
+the two, PCA outperformed K-means by accurately identifying 80\% of
+the areas burned between 2021 and 2023 as falling within moderate
+to high-risk fire zones \citep{fire_prone}.\textbf{ }
 
 This paper proposes the use of modern machine learning techniques
 based on Grammatical Evolution \citep{ge1} to predict the potential
@@ -446,14 +539,29 @@ feature construction of artificial features from the original ones
 using Grammatical Evolution and production of classification rules.
 The obtained results are compared against the results from various
 traditional machine learning methods and a discussion is provided
-on the Results section of this manuscript.
+on the Results section of this manuscript. The methods utilized here
+include construction of artificial features from the original ones,
+construction of neural networks and production of classification rules.
+These techniques cover a wide range of machine learning techniques
+that have been presented in recent years and have shown high performance
+when applied to a variety of problems from various research areas.
+Furthermore, they can be used to effectively identify the most critical
+features of a problem, drastically reducing the number of inputs necessary
+for the efficient training of machine learning models. A key problem
+with classical machine learning techniques is the excessive number
+of features that a dataset can have in relation to the number of patterns
+that accompany it. The techniques used in this work can significantly
+reduce this number and select the most important ones for the effective
+training of machine learning techniques. Furthermore, in many cases
+some of the inputs to the problem may not contribute to the effective
+training of machine learning models and should be omitted.
 
 The rest of this manuscript is divided as follows: in section \ref{sec:Materials-and-Methods}
 the proposed methods are presented in detail, in section \ref{sec:Results}
 the experiments are illustrated and discussed and finally, in section
 \ref{sec:Conclusions} some conclusions are presented.
 
-\section{Materials and Methods\protect\label{sec:Materials-and-Methods}}
+\section{Materials and Methods\label{sec:Materials-and-Methods}}
 
 This section initiates with a detailed description of the used datasets
 and it continues with a brief presentation of the Grammatical Evolution
@@ -466,7 +574,8 @@ Fire Service in compliance with open data guidelines established by
 the European Union Directive (2013/37/EU), aiming to promote transparency
 and open access to governmental records. The dataset contains comprehensive
 records detailing urban fire incidents specifically for the calendar
-years 2014-2023.
+years 2014-2023. These datasets were downloaded from \url{https://www.fireservice.gr/el_GR/synola-dedomenon }(accessed
+on 29 April 2025).
 
 For each urban fire event documented, detailed information was systematically
 collected, including the date and precise time of occurrence, allowing
@@ -501,7 +610,9 @@ high-quality data for analysis. These procedures included validation
 checks for data accuracy, consistency, completeness, and the removal
 or correction of any identified errors or inconsistencies. Such rigorous
 preprocessing steps were critical for enhancing the reliability and
-validity of the analytical processes that followed.
+validity of the analytical processes that followed. A review of data
+preprocessing techniques for neural networks is provided in the work
+of Nawi et al \citep{nn_pre}.
 
 Based on data from the Hellenic Fire Service, we isolated and processed
 the pre- registered categories of Small, Medium, and Large Fires,
@@ -521,20 +632,58 @@ in duplex houses (code 37), and 1,270 in waste disposal areas (code
 54). Beyond these, some unusual locations were also recorded, including
 140 firefighting interventions in wells (code 143), 38 in cemetery
 (code 82), 106 in marine areas (code 69), 4 in public toilets (code
-112), and so forth. Hence, the problem of predict the extend of damage
-caused by urban fires can be considered as a classification problem,
-where any optimization method can be used to minimize the following
-training error:
+112), and so forth. Table \ref{tab:The-used-features.} depicts the
+features used in this dataset.
+
+\begin{table}[H]
+
+\caption{The used features.\label{tab:The-used-features.}}
+
+\centering{}%
+\begin{tabular}{|c|c|c|}
+\hline 
+Feature & Min Value & Max Value\tabularnewline
+\hline 
+\hline 
+Fire station & 1 & 275\tabularnewline
+\hline 
+Region code & 1 & 51\tabularnewline
+\hline 
+Month code & 1 & 12\tabularnewline
+\hline 
+Season code & 1 & 4\tabularnewline
+\hline 
+Area (Building type) & 1 & 147\tabularnewline
+\hline 
+Persons involved & 1 & \tabularnewline
+\hline 
+Number of injuries & 0 & \tabularnewline
+\hline 
+Number of Burnt Victims & 0 & \tabularnewline
+\hline 
+Number of Fatalities & 0 & \tabularnewline
+\hline 
+Number of Vehicles involved & 1 & \tabularnewline
+\hline 
+Firefighters involved & 1 & \tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+Hence, the problem of predict the extend of damage caused by urban
+fires can be considered as a classification problem, where any optimization
+method can be used to minimize the following training error:
 \begin{equation}
-E\left(M\left(\overrightarrow{x},\overrightarrow{p}\right)\right)=\sum_{i=1}^{M}\left(M\left(\overrightarrow{x_{i}},\overrightarrow{p}\right)-t_{i}\right)^{2}\label{eq:trainError}
+E\left(M\left(\overrightarrow{x},\overrightarrow{p}\right)\right)=\sum_{i=1}^{K}\left(M\left(\overrightarrow{x_{i}},\overrightarrow{p}\right)-t_{i}\right)^{2}\label{eq:trainError}
 \end{equation}
 Where the function $M\left(\overrightarrow{x},\overrightarrow{p}\right)$
 represents a machine learning model and the vector $\overrightarrow{p}$
 represents the parameters of the model that should be estimated by
-any optimization method. The set $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{M},t_{M}\right)\right\} $
+any optimization method. The set $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{K},t_{K}\right)\right\} $
 represents the training set of the input problem, where the vectors
 $x_{i}$ stand for the input patterns and the values $t_{i}$ are
-the expected outputs.
+the expected outputs. The constant $K$ represents the number of patterns
+in the train set.
 
 \subsection{Grammatical Evolution}
 
@@ -573,7 +722,7 @@ total number of production rules for the non -- terminal symbol that
 is under processing.
 \end{itemize}
 
-\subsection{Neural Network Construction using Grammatical Evolution \protect\label{subsec:Neural-Network-Construction}}
+\subsection{Neural Network Construction using Grammatical Evolution \label{subsec:Neural-Network-Construction}}
 
 The Neural Network Construction method was initial presented in the
 paper of Tsoulos et al \citep{nnc} and it is used to determine the
@@ -589,9 +738,11 @@ In this equation the term $H$ represents the number of processing
 units (weights) of the network. The function $\sigma(x)$ stands for
 the sigmoid function. The grammar used by Grammatical Evolution to
 produce neural networks in the form of Equation \ref{eq:nn} is outlined
-in Figure \ref{fig:nncGrammar}.\textbf{ }This method has been incorporated
-in problems such as, chemistry problems \citep{nn_amide1}, estimation
-of solutions of differential equations etc.
+in Figure \ref{fig:nncGrammar} which has been in the initial work
+for Neural Network construction with Grammatical Evolution \citep{nnc}
+. This method has been incorporated in problems such as, chemistry
+problems \citep{nn_amide1}, estimation of solutions of differential
+equations etc.
 \begin{figure}[H]
 \begin{lyxcode}
 S:=\textless Sigval\textgreater ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -630,7 +781,7 @@ S:=\textless Sigval\textgreater ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~\textbar ~~9~(9)
 \end{lyxcode}
-\caption{The proposed grammar neural network construction procedure.\protect\label{fig:nncGrammar}}
+\caption{The proposed grammar neural network construction procedure.\label{fig:nncGrammar}}
 \end{figure}
  The main steps of the algorithm used to produce neural networks are
 outlined below:
@@ -666,8 +817,8 @@ will be created from selected chromosomes from the current generation.
 For each pair $\left(z,w\right)$ of produced chromosomes two chromosomes
 $p_{1}$ and $p_{2}$ will be selected from the current population
 using tournament. selection. The new chromosomes will be produced
-using one - point crossover, which is graphically illustrated in Figure
-\ref{fig:onePoint}.
+using one - point crossover \citep{onePoint}, which is graphically
+illustrated in Figure \ref{fig:onePoint}.
 \item \textbf{Application of mutation}. For every element of each chromosome
 a random number $r\le1$ is drawn. The corresponding element is altered
 randomly when $r\le p_{m}$.
@@ -689,12 +840,12 @@ it to the test set and report the associated error.
 \begin{centering}
 \includegraphics[scale=0.35]{onepoint_crossover}
 \par\end{centering}
-\caption{An example of the one - point crossover procedure.\protect\label{fig:onePoint}}
+\caption{An example of the one - point crossover procedure.\label{fig:onePoint}}
 
 \end{figure}
 
 
-\subsection{Feature construction using Grammatical Evolution \protect\label{subsec:Feature-construction-using}}
+\subsection{Feature construction using Grammatical Evolution \label{subsec:Feature-construction-using}}
 
 The next method used in the performed experiments is the Feature Construction
 technique, initially presented in the work of Gavrilis et al \citep{fc1}.
@@ -703,10 +854,12 @@ artificial features from the original ones and hence it can be used
 to enhance the effectiveness of any applied machine learning model
 to the artificial data. The artificial features are non - linear mappings
 of the original ones and the grammar used by the method to construct
-such features is shown in Figure \ref{fig:fcGrammar}. 
+such features is shown in Figure \ref{fig:fcGrammar}, which also
+was initially presented in the original work of the feature construction
+method \citep{fc1}. 
 
 \begin{figure}[H]
-\caption{The grammar used in Feature Construction method.\protect\label{fig:fcGrammar}}
+\caption{The grammar used in Feature Construction method.\label{fig:fcGrammar}}
 
 \begin{lyxcode}
 S::=\textless expr\textgreater ~~~(0)~
@@ -804,7 +957,7 @@ the associated error.
 \end{enumerate}
 \end{enumerate}
 
-\subsection{Create classification rules using Grammatical Evolution\protect\label{subsec:Create-classification-rules}}
+\subsection{Create classification rules using Grammatical Evolution\label{subsec:Create-classification-rules}}
 
 The third method used in the conducted experiments which is based
 on Grammatical Evolution is the method that produces classification
@@ -814,7 +967,7 @@ this method is shown in Figure \ref{fig:genclassGrammar}.
 
 \begin{figure}[H]
 \caption{The grammar used by the method that produces classification rules
-using Grammatical Evolution.\protect\label{fig:genclassGrammar}}
+using Grammatical Evolution.\label{fig:genclassGrammar}}
 
 \begin{lyxcode}
 \textless S\textgreater ::=if(\textless BEXPR\textgreater )~CLASS=0~else~CLASS=1~
@@ -913,7 +1066,7 @@ and report the result.
 \end{enumerate}
 \end{enumerate}
 
-\section{Results\protect\label{sec:Results}}
+\section{Results\label{sec:Results}}
 
 The code used in the experiments was implemented in C++ programming
 language with the assistance of Optimus optimization environment,
@@ -927,7 +1080,7 @@ were conducted on a machine running Debian Linux with 128GB of RAM.
 The values for the experimental settings are shown in Table \ref{tab:settings}.
 
 \begin{table}[H]
-\caption{The values used for the experimental settings.\protect\label{tab:settings}}
+\caption{The values used for the experimental settings.\label{tab:settings}}
 
 \centering{}%
 \begin{tabular}{|c|c|c|}
@@ -954,6 +1107,8 @@ where the following notation is used:
 \begin{enumerate}
 \item The column YEAR denotes denotes the year for which the methods were
 applied. 
+\item The column PATTERNS denotes the number of patterns in the test set
+for every year.
 \item The column BAYES NET denotes the application of the Bayesian Network
 method \citep{bayes_net1,bayes_net2}.
 \item The column MLP represents the incorporation of an artificial neural
@@ -973,45 +1128,49 @@ for all years between 2014 and 2023.
 \begin{table}[H]
 \caption{Experimental results using various machine learning techniques. Numbers
 in cells represent average classification error as measured on the
-corresponding test set. \protect\label{tab:exper}}
+corresponding test set. \label{tab:exper}}
 
 \centering{}%
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline 
-\textbf{YEAR} & \textbf{BAYES NET} & \textbf{MLP} & \textbf{RBF} & \textbf{NNC} & \textbf{FC} & \textbf{GENCLASS}\tabularnewline
+\textbf{YEAR} & \textbf{PATTERNS} & \textbf{BAYES NET} & \textbf{MLP} & \textbf{RBF} & \textbf{NNC} & \textbf{FC} & \textbf{GENCLASS}\tabularnewline
 \hline 
 \hline 
-2014 & 9.01\% & 8.34\% & 11.97\% & 7.82\% & 7.35\% & 7.03\%\tabularnewline
+2014 & 1287 & 9.01\% & 8.34\% & 11.97\% & 7.82\% & 7.35\% & 7.03\%\tabularnewline
 \hline 
-2015 & 8.75\% & 7.63\% & 10.79\% & 7.13\% & 6.78\% & 6.65\%\tabularnewline
+2015 & 1686 & 8.75\% & 7.63\% & 10.79\% & 7.13\% & 6.78\% & 6.65\%\tabularnewline
 \hline 
-2016 & 8.99\% & 8.13\% & 10.73\% & 7.48\% & 7.10\% & 7.05\%\tabularnewline
+2016 & 1735 & 8.99\% & 8.13\% & 10.73\% & 7.48\% & 7.10\% & 7.05\%\tabularnewline
 \hline 
-2017 & 8.43\% & 8.29\% & 10.78\% & 7.68\% & 7.24\% & 7.13\%\tabularnewline
+2017 & 1736 & 8.43\% & 8.29\% & 10.78\% & 7.68\% & 7.24\% & 7.13\%\tabularnewline
 \hline 
-2018 & 8.38\% & 7.99\% & 9.33\% & 7.30\% & 7.11\% & 6.74\%\tabularnewline
+2018 & 1637 & 8.38\% & 7.99\% & 9.33\% & 7.30\% & 7.11\% & 6.74\%\tabularnewline
 \hline 
-2019 & 7.31\% & 7.78\% & 24.81\% & 7.33\% & 7.15\% & 6.26\%\tabularnewline
+2019 & 1971 & 7.31\% & 7.78\% & 24.81\% & 7.33\% & 7.15\% & 6.26\%\tabularnewline
 \hline 
-2020 & 8.70\% & 7.86\% & 10.03\% & 6.99\% & 6.66\% & 6.47\%\tabularnewline
+2020 & 1990 & 8.70\% & 7.86\% & 10.03\% & 6.99\% & 6.66\% & 6.47\%\tabularnewline
 \hline 
-2021 & 8.58\% & 7.88\% & 10.37\% & 6.87\% & 6.55\% & 6.39\%\tabularnewline
+2021 & 1883 & 8.58\% & 7.88\% & 10.37\% & 6.87\% & 6.55\% & 6.39\%\tabularnewline
 \hline 
-2022 & 8.80\% & 7.29\% & 8.45\% & 6.86\% & 6.52\% & 6.32\%\tabularnewline
+2022 & 2036 & 8.80\% & 7.29\% & 8.45\% & 6.86\% & 6.52\% & 6.32\%\tabularnewline
 \hline 
-2023 & 8.46\% & 7.50\% & 10.56\% & 6.87\% & 6.58\% & 6.20\%\tabularnewline
+2023 & 1978 & 8.46\% & 7.50\% & 10.56\% & 6.87\% & 6.58\% & 6.20\%\tabularnewline
 \hline 
-\textbf{AVERAGE} & \textbf{8.54\%} & \textbf{7.87\%} & \textbf{11.78\%} & \textbf{7.23\%} & \textbf{6.90\%} & \textbf{6.62\%}\tabularnewline
+\textbf{AVERAGE} &  & \textbf{8.54\%} & \textbf{7.87\%} & \textbf{11.78\%} & \textbf{7.23\%} & \textbf{6.90\%} & \textbf{6.62\%}\tabularnewline
 \hline 
 \end{tabular}
 \end{table}
 In Table \ref{tab:exper} GENCLASS demonstrates the lowest average
 classification error (6.62\%), making it the most reliable model for
-wildfire prediction. It is followed by FC with an average error of
-6.90\% and NNC with 7.23\%. Traditional models such as BAYES NET (8.54\%)
-and MLP(BP) (7.87\%) exhibit higher error rates, while RBF performs
-the worst with an average error of 11.78\%, including an exceptionally
-high value in 2019 (24.81\%), likely due to overfitting or sensitivity
+wildfire prediction. This method presents better results compared
+to other techniques as it can isolate the necessary features of the
+problem but also identify hidden correlations that could lead to lower
+classification errors through the automatic creation of classification
+rules. It is followed by FC with an average error of 6.90\% and NNC
+with 7.23\%. Traditional models such as BAYES NET (8.54\%) and MLP(BP)
+(7.87\%) exhibit higher error rates, while RBF performs the worst
+with an average error of 11.78\%, including an exceptionally high
+value in 2019 (24.81\%), likely due to overfitting or sensitivity
 to outliers. GENCLASS not only has the lowest error but also shows
 consistent improvement over time. Starting at 7.03\% in 2014, it decreased
 to 6.20\% in 2023, with minor fluctuations in between. FC and NNC
@@ -1039,34 +1198,49 @@ in Figure \ref{fig:stat}, reveal statistically significant differences
 between the compared models. Specifically, all pairwise model comparisons
 yielded p-values below the standard significance threshold (typically
 p \textless{} 0.05), indicating statistically significant performance
-differences. The comparison between BAYES NET and MLP(BP) produced
-p = 0.0098, while BAYES NET's comparisons with RBF, NNC, FC and GENCLASS
-showed even smaller values (p = 0.0039 and p = 0.002), confirming
-that BAYES NET differs significantly from other models. Similarly,
-MLP(BP) comparisons with RBF, NNC, FC and GENCLASS all resulted in
-p = 0.002, demonstrating high statistical significance in their performance
-differences. The same holds true for RBF's comparisons with NNC, FC
-and GENCLASS (p = 0.002), as well as for comparisons between NNC,
-FC and GENCLASS. The fact that all p-values are very small (p \ensuremath{\le}
-0.0098) confirms that the models do not perform equally and that statistically
-significant differences exist between them. This is particularly evident
-in comparisons involving GENCLASS, which - as previous analysis has
-shown - stands out for its high accuracy. These results reinforce
-the conclusion that certain models (such as GENCLASS and FC) are clearly
-superior to others (like BAYES NET and RBF), a finding that should
-be considered in practical machine learning applications.
+differences \citep{wilx}. The comparison between BAYES NET and MLP(BP)
+produced p = 0.0098, while BAYES NET's comparisons with RBF, NNC,
+FC and GENCLASS showed even smaller values (p = 0.0039 and p = 0.002),
+confirming that BAYES NET differs significantly from other models.
+Similarly, MLP(BP) comparisons with RBF, NNC, FC and GENCLASS all
+resulted in p = 0.002, demonstrating high statistical significance
+in their performance differences. The same holds true for RBF's comparisons
+with NNC, FC and GENCLASS (p = 0.002), as well as for comparisons
+between NNC, FC and GENCLASS. The fact that all p-values are very
+small (p \ensuremath{\le} 0.0098) confirms that the models do not
+perform equally and that statistically significant differences exist
+between them. This is particularly evident in comparisons involving
+GENCLASS, which - as previous analysis has shown - stands out for
+its high accuracy. These results reinforce the conclusion that certain
+models (such as GENCLASS and FC) are clearly superior to others (like
+BAYES NET and RBF), a finding that should be considered in practical
+machine learning applications.
 
 \begin{figure}
 \begin{centering}
 \includegraphics[scale=0.5]{stat}
 \par\end{centering}
 \caption{Statistical comparison of the experimental results obtained by various
-machine learning methods.\protect\label{fig:stat}}
+machine learning methods.\label{fig:stat}}
 
 \end{figure}
+Also, as an example consider the plot of Figure \ref{fig:exampleGenclass}
+where the train and test error for year 2016 are presented using the
+GENCLASS method. 
 
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{urban_2016}
+\par\end{centering}
+\caption{An example plot for the GENCLASS method.\label{fig:exampleGenclass}}
 
-\section{Conclusions\protect\label{sec:Conclusions}}
+\end{figure}
+As shown in this graph, the error in the training set gradually decreases
+as the generations increase and the error in the test set initially
+decreases to reach a constant value after some generations of the
+genetic algorithm.
+
+\section{Conclusions\label{sec:Conclusions}}
 
 This study implements the innovative technique of Grammatical Evolution
 to predict the consequences of urban fires, utilizing a decade of
@@ -1222,57 +1396,28 @@ from: \url{https://www.wri.org/insights/los-angeles-fires-january-2025-explained
 NASA. Earth observatory. Available from: \url{https://earthobservatory.nasa.gov/images/154008/fire-grows-unusually-large-in-japan}
 ( Accessed on 17 March 2025 ). 
 
-\bibitem[(year)]{fire_bbc}Thousands evacuated as Japan’s biggest
-fire in decades continues to burn. BBC. By Gavin Butler. 03 March
-17, 2025. Available from: \url{https://www.bbc.com/news/articles/c89ypkq72d0o}
-(Accessed on 17 March 2025 ). 
-
 \bibitem[(year)]{fire_turkey}E. Ceyhan, K. Ertugay, S. Duzgun, Exploratory
 and inferential methods for spatio-temporal analysis of residential
 fire clustering in urban areas, Fire safety Journal \textbf{58}, pp.
 226-239, 2013.
 
-\bibitem[(year)]{fire_social}C.R. Jennings, Social and economic characteristics
-as determinants of residential fire risk in urban neighborhoods: A
-review of the literature, Fire safety Journal \textbf{62}, pp. 13-19,
-2013.
-
-\bibitem[(year)]{fire_resident}D. Rohde, J. Corcoran, P. Chhetri,
-Spatial forecasting of residential urban fires: A Bayesian approach.
-Computers, Environment and Urban Systems \textbf{34}, pp. 58-69, 2010.
-
-\bibitem[(year)]{fire_model}R. Ardianto, P. Chhetri, Modeling Spatial-Temporal
-Dynamic of Urban Residential Fire Risk Using a Markov Chain Technique,
-International Journal of Disaster Risk Science \textbf{10}, pp. 57-73,
-2019. 
-
-\bibitem[(year)]{fire_freq}J. Clare, L. Garis, D. Plecas, C. Jennings,
+\bibitem[(1945)]{fire_freq}J. Clare, L. Garis, D. Plecas, C. Jennings,
 Reduced frequency and severity of residential fires following delivery
 of fire prevention education by on-duty fire fighters: Cluster randomized
 controlled study, Journal of Safety Research \textbf{43}, pp. 123-128,
 2012.
 
-\bibitem[(year)]{fire_risk_manage}S. Alkis, E. Aksoy, K. Akpinar,
+\bibitem[(1945)]{fire_risk_manage}S. Alkis, E. Aksoy, K. Akpinar,
 Risk Assessment of Industrial Fires for Surrounding Vulnerable Facilities
 Using a Multi- Criteria Decision Support Approach and GIS, Fire \textbf{ 4},
 53, 2021.
 
-\bibitem[(year)]{fire_gis}Y. Jiang, A. Lv, Z. Yan, Z. Yang, A GIS-Based
+\bibitem[(1945)]{fire_gis}Y. Jiang, A. Lv, Z. Yan, Z. Yang, A GIS-Based
 Multi-Criterion Decision-Making Method to Select City Fire Brigade:
 A Case Study of Wuhan, China, International Journal of Geo-Information.
 ISPRS \textbf{10}, 777, 2021. 
 
-\bibitem[(2020)]{svm}Suthaharan, S., \& Suthaharan, S. (2016). Support
-vector machine. Machine learning models and algorithms for big data
-classification: thinking with examples for effective learning, 207-235.
-
-\bibitem[(year)]{fire_prob}Y. Maniatis, A. Doganis, M. Chatzigeorgiadis,
-Fire Risk Probability Mapping Using Machine Learning Tools and Multi
--- Criteria Decision Analysis in the GIS Environment: A Case Study
-in the National Park Forest Dadia-Lefkimi-Soufli, Greece, Applied
-Science \textbf{12}, 2938, 2022.
-
-\bibitem[(year)]{fire_gis_model}S. Noori, A. Mohammadi, T. Ferreira,
+\bibitem[(1945)]{fire_gis_model}S. Noori, A. Mohammadi, T. Ferreira,
 G. Miguel., A. Gilandeh, M. Ghaffari, S. Ardabili, J. Seyed, Modelling
 and Mapping Urban Vulnerability Index against Potential Structural
 Fire-related Risks: An Integrated GIS-MCDM Approach, Fire \textbf{6},
@@ -1282,26 +1427,6 @@ Fire-related Risks: An Integrated GIS-MCDM Approach, Fire \textbf{6},
 Hsiao, Evaluating the severity of building fires with the analytical
 hierarchy process, big data analysis, and remote sensing, Natural
 Hazards \textbf{103}, pp. 1843-1856, 2020.
-
-\bibitem[(2020)]{fire_safety}C.-A. Lee, Y-C. Sung, , Y-S. Lin, G.
-K-K. Hsiao, Evaluating the severity of building fires with the analytical
-hierarchy process, big data analysis, and remote sensing, Natural
-Hazards \textbf{103},pp. 1843-1856, 2020.
-
-\bibitem[(2020)]{random_forest1}L. Breiman, Random forests, Machine
-learning \textbf{45}, pp. 5-32, 2001.
-
-\bibitem{random_forest2}S.J. Rigatti, Random forest, Journal of Insurance
-Medicine \textbf{47}, pp. 31-39, 2017.
-
-\bibitem[(2020)]{xgboost}Chen, T., \& Guestrin, C. (2016, August).
-Xgboost: A scalable tree boosting system. In Proceedings of the 22nd
-acm sigkdd international conference on knowledge discovery and data
-mining (pp. 785-794).
-
-\bibitem[(2020)]{fire_station}Dey, Arnab., Heger, Andrew., England,
-Darin. Urban Fire Station Planning using Predicted Demand and Service
-Quality Index. Springer Nature 2021. 
 
 \bibitem[(2020)]{bwm}Pamučar, D., Ecer, F., Cirovic, G., \& Arlasheedi,
 M. A. (2020). Application of improved best worst method (BWM) in real-world
@@ -1315,39 +1440,9 @@ Penjani. Comparative evaluation of GIS-based best -- worst method
 (BMW) for emergency facility planning: perspectives from two decision-maker
 groups. Natural Hazards, volume 105, issue 1. January 2021. Pp. 1031-1067.
 
-\bibitem[(2020)]{fire_risk_prediction}Singh Walia, Bhavkaran., Hu,
-Qiany., Chen, Jeffrey., Chen, Fangyan., Lee, Jessica., et al. A Dynamic
-pipeline for Spatio -Temporal Fire Risk Prediction. Proceedings of
-the 24th ACM SIGKDD International Conference on Knowledge Discovery
-\& Data Mining.2018. pp. 764--773. 
-
-\bibitem[(2020)]{fire_forecast}G. Jin, Q. Wang, C. Zhu, Y. Feng,
-J. Huang, X. Hu, Urban Fire Situation Forecasting: Deep sequence learning
-with Spatio -- temporal dynamics, Applied Soft Computing \textbf{97},
-2020. 
-
-\bibitem[(2020)]{kmeans}MacQueen, J.: Some methods for classification
-and analysis of multivariate observations, in: Proceedings of the
-fifth Berkeley symposium on mathematical statistics and probability,
-Vol. 1, No. 14, pp. 281-297, 1967. 
-
-\bibitem[(2020)]{fire_stat}W. Lizhi, R. Aizhu, Urban Fire Risk Clustering
-Method Based on Fire Statistics, Tsinghua science \& Technology \textbf{13},
-pp. 418 -- 422, 2008.
-
 \bibitem[(2020)]{fire_nepal}K. KC, R. Ardianto, P. Chhetri, J. Corcoran,
 Geographic patterns of urban fires in the global south: the case of
 Kathmandu, Nepal. GeoJournal \textbf{89}, 137, 2024.
-
-\bibitem[(2020)]{fire_ml}A. Sahebi, B. Havasy, Y. Veisani, Predicting
-firefighting operation time in urban areas using machine learning:
-identifying key determinants for improved emergency response, Discover
-Applied Science \textbf{7}, 2025.
-
-\bibitem[(2020)]{fire_deep}A.A. Ishola, D. Valles, Enhancing safety
-and Efficiency in Firefighting Operations via Deep Learning and Temperature
-Forecasting Modeling in Autonomous Unit., Sensors \textbf{ 23}, 4628,
-2023.
 
 \bibitem[(2020)]{fire_time_series}T. Nishino, A. Hokugo, A stochastic
 model for time series prediction of the number of post -- earthquake
@@ -1364,6 +1459,111 @@ cascading multi-hazard risk assessment methodology for ground shaking
 and post -- earthquake fires, Natural Hazards \textbf{116}, pp. 3165
 -- 3200, 2023.
 
+\bibitem[(year)]{fire_social}C.R. Jennings, Social and economic characteristics
+as determinants of residential fire risk in urban neighborhoods: A
+review of the literature, Fire safety Journal \textbf{62}, pp. 13-19,
+2013.
+
+\bibitem[(year)]{fire_resident}D. Rohde, J. Corcoran, P. Chhetri,
+Spatial forecasting of residential urban fires: A Bayesian approach.
+Computers, Environment and Urban Systems \textbf{34}, pp. 58-69, 2010.
+
+\bibitem[(year)]{fire_model}R. Ardianto, P. Chhetri, Modeling Spatial-Temporal
+Dynamic of Urban Residential Fire Risk Using a Markov Chain Technique,
+International Journal of Disaster Risk Science \textbf{10}, pp. 57-73,
+2019. 
+
+\bibitem[(2020)]{svm}Suthaharan, S., \& Suthaharan, S. (2016). Support
+vector machine. Machine learning models and algorithms for big data
+classification: thinking with examples for effective learning, 207-235.
+
+\bibitem[(year)]{fire_prob}Y. Maniatis, A. Doganis, M. Chatzigeorgiadis,
+Fire Risk Probability Mapping Using Machine Learning Tools and Multi
+-- Criteria Decision Analysis in the GIS Environment: A Case Study
+in the National Park Forest Dadia-Lefkimi-Soufli, Greece, Applied
+Science \textbf{12}, 2938, 2022.
+
+\bibitem[(2020)]{random_forest1}L. Breiman, Random forests, Machine
+learning \textbf{45}, pp. 5-32, 2001.
+
+\bibitem{random_forest2}S.J. Rigatti, Random forest, Journal of Insurance
+Medicine \textbf{47}, pp. 31-39, 2017.
+
+\bibitem[(2020)]{xgboost}Chen, T., \& Guestrin, C. (2016, August).
+Xgboost: A scalable tree boosting system. In Proceedings of the 22nd
+acm sigkdd international conference on knowledge discovery and data
+mining (pp. 785-794).
+
+\bibitem[(2020)]{fire_station}Dey, Arnab., Heger, Andrew., England,
+Darin. Urban Fire Station Planning using Predicted Demand and Service
+Quality Index. Springer Nature 2021. 
+
+\bibitem[(2020)]{fire_risk_prediction}Singh Walia, Bhavkaran., Hu,
+Qiany., Chen, Jeffrey., Chen, Fangyan., Lee, Jessica., et al. A Dynamic
+pipeline for Spatio -Temporal Fire Risk Prediction. Proceedings of
+the 24th ACM SIGKDD International Conference on Knowledge Discovery
+\& Data Mining.2018. pp. 764--773. 
+
+\bibitem[(2020)]{fire_forecast}G. Jin, Q. Wang, C. Zhu, Y. Feng,
+J. Huang, X. Hu, Urban Fire Situation Forecasting: Deep sequence learning
+with Spatio -- temporal dynamics, Applied Soft Computing \textbf{97},
+2020. 
+
+\bibitem[(2020)]{fire_ml}A. Sahebi, B. Havasy, Y. Veisani, Predicting
+firefighting operation time in urban areas using machine learning:
+identifying key determinants for improved emergency response, Discover
+Applied Science \textbf{7}, 2025.
+
+\bibitem[(1945)]{fire_austin}Yuan, Y., \& Wylie, A. G. (2024). Comparing
+Machine Learning and Time Series Approaches in Predictive Modeling
+of Urban Fire Incidents: A Case Study of Austin, Texas. ISPRS International
+Journal of Geo-Information, 13(5), 149.
+
+\bibitem[(1945)]{fire_deep_30}Zhou, Y., Lin, P., \& Wang, N. (2025).
+A deep neural network approach for regional-scale 30-day accumulated
+urban fire occurrence forecast. Fire Safety Journal, 152, 104331.
+
+\bibitem[(1945)]{fire_resample}Liu, Z., \& Zhuang, Y. (2024). An
+investigation using resampling techniques and explainable machine
+learning to minimize fire losses in residential buildings. Journal
+of Building Engineering, 95, 110080.
+
+\bibitem[(1945)]{fire_predictive}Schmidt, A., Gemmil, E., \& Hoskins,
+R. Machine Learning Based Risk Analysis and Predictive Modeling of
+Structure Fire Related Casualties. Available at SSRN 4757205.
+
+\bibitem[(1945)]{fire_analysis}Seo, M. S., Castillo-Osorio, E. E.,
+\& Yoo, H. H. (2023). Fire Risk Prediction Analysis Using Machine
+Learning Techniques. Sensors \& Materials, 35.
+
+\bibitem[(2020)]{kmeans}MacQueen, J.: Some methods for classification
+and analysis of multivariate observations, in: Proceedings of the
+fifth Berkeley symposium on mathematical statistics and probability,
+Vol. 1, No. 14, pp. 281-297, 1967. 
+
+\bibitem[(2020)]{fire_stat}W. Lizhi, R. Aizhu, Urban Fire Risk Clustering
+Method Based on Fire Statistics, Tsinghua science \& Technology \textbf{13},
+pp. 418 -- 422, 2008.
+
+\bibitem[(2020)]{fire_deep}A.A. Ishola, D. Valles, Enhancing safety
+and Efficiency in Firefighting Operations via Deep Learning and Temperature
+Forecasting Modeling in Autonomous Unit., Sensors \textbf{ 23}, 4628,
+2023.
+
+\bibitem[(1945)]{fire_unsuper}Di Martino, T., Le Saux, B., Guinvarc’h,
+R., Thirion-Lefevre, L., \& Colin, E. (2023). Detection of forest
+fires through deep unsupervised learning modeling of Sentinel-1 time
+series. ISPRS International Journal of Geo-Information, 12(8), 332.
+
+\bibitem[(1945)]{fire_resist}Çiftçioğlu, A. Ö., \& Naser, M. Z. (2022,
+February). Unsupervised Machine Learning for Fire Resistance Analysis.
+In International Conference on Science, Engineering Management and
+Information Technology (pp. 211-221). Cham: Springer Nature Switzerland.
+
+\bibitem[(1945)]{fire_prone}Rahimi, I., Duarte, L., \& Teodoro, A.
+C. Unsupervised Image Classification Algorithms Applied to Fire-Prone
+Area Detection.
+
 \bibitem{ge1}M. O’Neill, C. Ryan, Grammatical evolution, IEEE Trans.
 Evol. Comput. \textbf{5,}pp. 349--358, 2001.
 
@@ -1373,6 +1573,10 @@ Oxford University Press, 1995.
 \bibitem{nn2}G. Cybenko, Approximation by superpositions of a sigmoidal
 function, Mathematics of Control Signals and Systems \textbf{2}, pp.
 303-314, 1989.
+
+\bibitem[(2013)]{nn_pre}Nawi, N. M., Atomi, W. H., \& Rehman, M.
+Z. (2013). The effect of data pre-processing on optimized training
+of artificial neural networks. Procedia Technology, 11, 32-39.
 
 \bibitem[(year)]{bnf1}J. W. Backus. The Syntax and Semantics of the
 Proposed International Algebraic Language of the Zurich ACM-GAMM Conference.
@@ -1450,6 +1654,9 @@ utilizing constructed neural networks, Expert Systems with Applications
 equations with constructed neural networks, Neurocomputing \textbf{72},
 pp. 2385-2391, 2009.
 
+\bibitem[(1998)]{onePoint}Poli, R., \& Langdon, W. B. (1998). Genetic
+programming with one-point crossover (pp. 180-189). Springer London.
+
 \bibitem[(2008)]{fc1}Dimitris Gavrilis, Ioannis G. Tsoulos, Evangelos
 Dermatas, Selecting and constructing features using grammatical evolution,
 Pattern Recognition Letters \textbf{29},pp. 1358-1365, 2008. 
@@ -1489,6 +1696,10 @@ pp. 533 - 536 , 1986.
 \bibitem{bpnn2}T. Chen and S. Zhong, Privacy-Preserving Backpropagation
 Neural Network Learning, IEEE Transactions on Neural Networks \textbf{20},
 , pp. 1554-1564, 2009.
+
+\bibitem[(1945)]{wilx}Wilcoxon, F. (1945). Individual Comparisons
+by Ranking Methods. International Biometric Society: Vol. 1, No:6,
+pp.:80-83.
 
 \end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

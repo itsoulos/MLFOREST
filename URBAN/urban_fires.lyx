@@ -1223,23 +1223,6 @@ literal "false"
 \end_inset
 
 .
- Building upon,
- Analytic Hierarchy Process,
- the paper from Taiwan,
- evaluated the severity of building fires across 17 villages in Taishan District,
- New Taipei City.
- A comprehensive literature review was conducted to examine the influence of fire severity assessment criteria,
- which served as the foundation for identifying key factors,
- and developing evaluation items,
- within the (AHP) framework 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "fire_safety"
-literal "false"
-
-\end_inset
-
-.
  Turkish colleagues proposed a group decision-making (GDM) approach,
  integrating the recently developed Best–Worst Method (BWM) 
 \begin_inset CommandInset citation
@@ -1790,6 +1773,15 @@ The dataset underwent thorough preprocessing procedures to ensure high-quality d
  completeness,
  and the removal or correction of any identified errors or inconsistencies.
  Such rigorous preprocessing steps were critical for enhancing the reliability and validity of the analytical processes that followed.
+ A review of data preprocessing techniques for neural networks is provided in the work of Nawi et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn_pre"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6262,38 +6254,6 @@ C-A.
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "(2020)"
-key "fire_safety"
-literal "false"
-
-\end_inset
-
-C.-A.
- Lee,
- Y-C.
- Sung,
- ,
- Y-S.
- Lin,
- G.
- K-K.
- Hsiao,
- Evaluating the severity of building fires with the analytical hierarchy process,
- big data analysis,
- and remote sensing,
- Natural Hazards 
-\series bold
-103
-\series default
-,pp.
- 1843-1856,
- 2020.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2020)"
 key "bwm"
 literal "false"
 
@@ -7081,6 +7041,31 @@ G.
  pp.
  303-314,
  1989.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2013)"
+key "nn_pre"
+literal "false"
+
+\end_inset
+
+Nawi,
+ N.
+ M.,
+ Atomi,
+ W.
+ H.,
+ & Rehman,
+ M.
+ Z.
+ (2013).
+ The effect of data pre-processing on optimized training of artificial neural networks.
+ Procedia Technology,
+ 11,
+ 32-39.
 \end_layout
 
 \begin_layout Bibliography
