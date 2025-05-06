@@ -6,7 +6,7 @@
 # include <stdio.h>
 # include <math.h>
 
-const double criticalDistance = 500;//100miles
+const double criticalDistance = 10;//100miles
 
 struct QuakeRecord
 {
@@ -133,8 +133,8 @@ QuakeRecord readLine(QString line)
 
     x.submarine = items[icount++].toInt();
 
-    x.magnitude = items[icount++].toDouble();
     x.magcode = items[icount++].toInt();
+    x.magnitude = items[icount++].toDouble();
     return x;
 }
 
