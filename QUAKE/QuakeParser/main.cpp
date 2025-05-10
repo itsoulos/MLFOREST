@@ -173,14 +173,14 @@ QString printQuake(const QuakeRecord &x)
         line+=QString::number(x.meanQuakesBefore)+" ";
         line+=QString::number(x.stdQuakesBefore)+" ";
     }
-    /** CLASSIFICATION PROBLEM
+    /** CLASSIFICATION PROBLEM**/
     
     if(x.magnitude>=7.0) 
 	    line+="7";
     else
-    line+=QString::number(round(x.magnitude)); */
-    /** REGRESSION PROBLEM **/
-    line+=QString::number(x.magnitude);
+    line+=QString::number(round(x.magnitude)); 
+    /** REGRESSION PROBLEM 
+    line+=QString::number(x.magnitude); */
     return line;
 }
 
