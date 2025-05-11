@@ -6,7 +6,7 @@
 # include <stdio.h>
 # include <math.h>
 
-const double criticalDistance = 10;//100miles
+const double criticalDistance = 500;//100miles
 
 struct QuakeRecord
 {
@@ -173,14 +173,14 @@ QString printQuake(const QuakeRecord &x)
         line+=QString::number(x.meanQuakesBefore)+" ";
         line+=QString::number(x.stdQuakesBefore)+" ";
     }
-    /** CLASSIFICATION PROBLEM**/
+    /* CLASSIFICATION PROBLEM*
     
     if(x.magnitude>=7.0) 
 	    line+="7";
     else
-    line+=QString::number(round(x.magnitude)); 
-    /** REGRESSION PROBLEM 
-    line+=QString::number(x.magnitude); */
+    line+=QString::number(round(x.magnitude)); */
+    /** REGRESSION PROBLEM **/
+    line+=QString::number(x.magnitude); 
     return line;
 }
 
@@ -246,12 +246,13 @@ int main(int argc, char *argv[])
      }
      fp.close();
      int icount=0;
+     printf("big %d\n",bigQuake.size());
      for(QuakeRecord & x : bigQuake)
      {
          QVector<QuakeRecord> list = getQuakesBeforeMajor(x);
-         int count = list.size();
          double mean = getMeanValueFromList(list);
          double std = getStdValueFromList(list);
+	 int count = list.size();
          x.countQuakesBefore = count;
          x.meanQuakesBefore = mean;
          x.stdQuakesBefore = std;
