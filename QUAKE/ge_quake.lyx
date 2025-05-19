@@ -380,6 +380,18 @@ Earthquakes;
 Introduction
 \end_layout
 
+\begin_layout Standard
+text 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bfgs"
+literal "false"
+
+\end_inset
+
+ refer 
+\end_layout
+
 \begin_layout Section
 Materials and Methods
 \end_layout
@@ -394,7 +406,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1734,7 +1746,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1782,7 +1794,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1826,7 +1838,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2027,186 +2039,34 @@ References
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author1(year)"
-key "ref-journal"
+label "Author1(1989)"
+key "bfgs"
 literal "false"
 
 \end_inset
 
- Author
-\begin_inset space ~
-\end_inset
-
-1,
- T.
- The title of the cited article.
- 
-\emph on
-Journal Abbreviation
-\emph default
- 
-\series bold
-2008
-\series default
-,
- 
-\emph on
-10
-\emph default
-,
- 142–149.
+ Powell,
+ M.
+ J.
+ D.
+ (1989).
+ A tolerant algorithm for linearly constrained optimization calculations.
+ Mathematical Programming,
+ 45,
+ 547-566.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author2(year)"
-key "ref-book1"
+label "(1989)"
+key "ttt"
 literal "false"
 
 \end_inset
 
- Author
-\begin_inset space ~
-\end_inset
-
-2,
- L.
- The title of the cited contribution.
- In 
-\emph on
-The Book Title
-\emph default
-;
- Editor1,
- F.,
- Editor2,
- A.,
- Eds.;
- Publishing House:
- City,
- Country,
- 2007;
- pp.
- 32–58.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author3(year)"
-key "ref-book2"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.;
- Author 2,
- B.
- 
-\shape italic
-Book Title
-\shape default
-,
- 3rd ed.;
- Publisher:
- Publisher Location,
- Country,
- 2008;
- pp.
- 154–196.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author4(year)"
-key "ref-unpublish"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.B.;
- Author 2,
- C.
- Title of Unpublished Work.
- 
-\shape italic
-Abbreviated Journal Name
-\shape default
- year,
- 
-\shape italic
-phrase indicating stage of publication (submitted;
- accepted;
- in press)
-\shape default
-.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author5(year)"
-key "ref-url"
-literal "false"
-
-\end_inset
-
- Title of Site.
- Available online:
- URL (accessed on Day Month Year).
- 
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author6(year)"
-key "ref-proceeding"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.B.;
- Author 2,
- C.D.;
- Author 3,
- E.F.
- Title of presentation.
- In Proceedings of the Name of the Conference,
- Location of Conference,
- Country,
- Date of Conference (Day Month Year);
- Abstract Number (optional),
- Pagination (optional).
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author7(year)"
-key "ref-thesis"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.B.
- Title of Thesis.
- Level of Thesis,
- Degree-Granting University,
- Location of University,
- Date of Completion.
+hjjhhkhkhkj
 \end_layout
 
 \begin_layout Standard
