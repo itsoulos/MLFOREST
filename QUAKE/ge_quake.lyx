@@ -381,23 +381,109 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-text 
+Seismology,
+ like most scientific disciplines,
+ matured over the centuries through the rational evolution of human reasoning.
+ For many centuries,
+ the interpretation of earthquakes was rooted in mythology,
+ and it was only during the era of the profound Industrial Revolution that it became widely accepted as a geological phenomenon rather than an act of divine punishment.
+ Despite this,
+ one of the earliest seismic instruments,
+ known as the seismoscope,
+ did not record the timing or duration of ground motion but merely signaled that seismic activity had taken place.
+ This type of device was first developed by the Chinese scholar Zhang Heng as early as 132 CE 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bfgs"
+key "britanica"
 literal "false"
 
 \end_inset
 
- refer 
+.
+ Robert Mallet (1810 – 1881),
+ often referred to as the “father of seismology” due to his pioneering contributions to the study of earthquakes,
+ was an Irish geophysicist,
+ civil engineer,
+ and scientific researcher 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "britanica2"
+literal "false"
+
+\end_inset
+
+.
+ In today's era,
+ at the threshold between the Fourth and Fifth Industrial Revolutions,
+ the science of seismology continues its quest for the 'Holy Grail' of accurately predicting an impending earthquake.
+ "According to the United States Geological Survey (USGS),
+ neither the USGS nor any other scientific institution has ever successfully predicted a major earthquake.
+ A valid earthquake prediction must specify three critical elements:
+ (1) the exact date and time,
+ (2) the precise location,
+ and (3) the anticipated magnitude 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "geological"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Section
-Materials and Methods
+\begin_layout Standard
+Nevertheless,
+ earthquake prediction was long considered an unattainable goal prior to the advent of artificial intelligence technologies.
+ In recent years,
+ however,
+ annual conferences of leading scientific bodies such as the Seismological Society of America and the American Geophysical Union have included dedicated sessions on the application of machine learning (ML) in geophysical sciences.
+ These scientific advancements,
+ driven by the integration of AI-based methods,
+ have increasingly captured the attention of seismologists and researchers in the field 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bergen"
+literal "false"
+
+\end_inset
+
+.
+ The necessity of accurate prediction,
+ is also evidenced by the following alarming data by the International Disaster Database EM-DAT 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.emdat.be/ 
 \end_layout
 
-\begin_layout Section
-Results
+\end_inset
+
+ between 2010 and 2025 earthquakes have resulted in 337.372 deaths,
+ 698.085 injuries and 1.547.581 individuals left homeless.
+ These data are depicted in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Natural-Disasters-from"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ It is important to note that EM-DAT records only those events that meet at least one of the following criteria:
+ ten or more fatalities,
+ one hundred or more individuals affected,
+ the declaration of a state of emergency,
+ or a call for international assistance.
+ These figures underscore the significance of seismic disasters and lead us to emphasize the urgent need for scientific advances in earthquake prediction.
+ In order to contextualize this necessity further,
+ it is worth examining comparable human losses caused by other natural disasters.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -406,7 +492,1083 @@ placement H
 alignment document
 wide false
 sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Natural Disasters from EM-DAT
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Natural-Disasters-from"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2010 - 2025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Deaths
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Injured people
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Homeless people
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flood
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+82.644
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+111.954
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.552.142
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Storms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51.091
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+125.266
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.671.100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wildfires
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.622
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.810
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+94.925
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Earthquakes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+337.372
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+698.085
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.547.581
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+These are the stark figures that reveal how vulnerable humanity remains even in our modern era,
+ in the face of natural disasters events that are further intensified,
+ by the effects of climate change.
+ Nevertheless,
+ there is room for optimism,
+ as researchers are increasingly employing artificial intelligence and other advanced methodologies in the pursuit of forecasting earthquakes (and other natural disasters) in a timely manner,
+ with the ultimate goal of enabling populations to seek safety and reduce potential losses 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hutchison"
+literal "false"
+
+\end_inset
+
+.Consequently,
+ emphasis has been placed on various scientific approaches that investigate events potentially influencing or triggering the release of seismic energy.
+ The following are some examples illustrating these approaches.
+ 
+\end_layout
+
+\begin_layout Standard
+In the state of Oklahoma,
+ researchers have developed a sophisticated Bayesian approach to assess the relationship between wastewater injection practices,
+ and the occurrence of seismic events 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hincks"
+literal "false"
+
+\end_inset
+
+.
+ In early 2002,
+ a study was conducted examining the correlation between long-period seismic tremors occurring at a depth of approximately 30 kilometers,
+ and underlying tectonic processes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "obara2022"
+literal "false"
+
+\end_inset
+
+.
+ The connection was established in 2016,
+ highlighting that the careful and precise monitoring of slow-slip events may yield valuable insights into the probability of forthcoming large-magnitude earthquakes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "obara2016"
+literal "false"
+
+\end_inset
+
+.
+ An alternative approach involves the systematic monitoring of potential precursory signals,
+ preceding the onset of a major seismic event 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bletery"
+literal "false"
+
+\end_inset
+
+.
+ Several researchers have suggested alternative mechanisms,
+ including electromagnetic anomalies and ionospheric disturbances,
+ although investigations in this area remain in their preliminary stages 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hutchison"
+literal "false"
+
+\end_inset
+
+.
+ In addition to these approaches,
+ certain institutions have also explored the study of animal behavior as a potential means of anticipating seismic activity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "planc"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The following section presents researcher's efforts to forecast imminent seismic events through the application of machine learning techniques.
+ The subsequent research proposes an efficient and accurate framework for estimating earthquake magnitudes directly from unprocessed single-station waveform data,
+ yielding minimal average error and a standard deviation close to 0.2,
+ without requiring instrument response adjustments,
+ as validated using seismic records from Southern California 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mousavi"
+literal "false"
+
+\end_inset
+
+.
+ Next,
+ the following study demonstrated that machine learning–driven approaches enhance the accuracy of aftershock location forecasts and shed light on key physical parameters that may govern earthquake triggering during the most dynamic phase of the seismic cycle 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "devries"
+literal "false"
+
+\end_inset
+
+.
+ In the following paper,
+ the researchers trained convolutional neural networks (CNNs) on over 18 million manually picked seismographs from Southern California,
+ to estimate these parameters directly from raw waveform data,
+ without the need for feature extraction.
+ The model demonstrated high precision,
+ achieving a standard deviation of just 0.023 seconds in arrival times and 95% accuracy in polarity classification 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ross"
+literal "false"
+
+\end_inset
+
+.
+ Building on recent advancements,
+ the upcoming study employs machine learning techniques on data-sets derived from shear laboratory experiments,
+ aiming to uncover previously undetected signals that may precede seismic events 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rouet"
+literal "false"
+
+\end_inset
+
+.
+ Members of the previous study,
+ subsequently conducted an analysis using a machine learning-based method initially developed in the laboratory.
+ They processed extensive raw seismic data from Vancouver Island to distinguish the relevant signal from background seismic noise,
+ an approach that may prove valuable in assessing whether and how a slow slip event could be coupled with or evolve into a major earthquake 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rouet2019"
+literal "false"
+
+\end_inset
+
+.
+ The next step involves,
+ a high-resolution earthquake catalog developed through machine learning techniques,
+ provides new insights into the complexity,
+ and duration of earthquake sequences,
+ as well as their interrelation with recent neighboring seismic events 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tan"
+literal "false"
+
+\end_inset
+
+.
+ What follows is a study,
+ that introduces a global deep learning model capable of concurrently detecting earthquakes and identifying seismic phases.
+ The proposed model demonstrates superior performance compared to existing deep learning approaches and conventional detection and phase-picking methods.
+ Notably,
+ it enables the detection,
+ and localization of approximately twice as many earthquakes,
+ while utilizing less than one-third of the available seismic stations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mousavi2020"
+literal "false"
+
+\end_inset
+
+.
+ The subsequent study focused on California,
+ and demonstrated that nearest-neighbor diagrams offer a straightforward and effective method for distinguishing between various seismic patterns,
+ and evaluating the reliability of earthquake catalogs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hsu"
+literal "false"
+
+\end_inset
+
+.
+ The following research team,
+ concluded that the Weibull model provides a superior fit to the seismic data for California,
+ exhibiting well-behaved tail characteristics.
+ Furthermore,
+ they demonstrated its robustness by applying it successfully to independent data sets from Japan,
+ Italy,
+ and New Zealand 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayliss"
+literal "false"
+
+\end_inset
+
+.
+ The consequent article,
+ aimed to predict both the location and magnitude of potential earthquakes occurring in the following week,
+ based on seismic data from the current week,
+ focusing on seismogenic regions in southwestern China.
+ The model achieved a testing accuracy of 70%,
+ with corresponding precision,
+ recall,
+ and F1-score values of 63.63%,
+ 93.33%,
+ and 75.66%,
+ respectively 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "saad"
+literal "false"
+
+\end_inset
+
+.
+ Moreover,
+ the ensuing study focuses on predicting earthquake magnitudes in the Hindukush region.
+ Four machine learning techniques namely the pattern recognition:
+ neural network,
+ recurrent neural network,
+ random forest,
+ and linear programming boost ensemble classifier,
+ are individually implemented to model the relationships between computed seismic parameters,
+ and the occurrence of future earthquakes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "asim"
+literal "false"
+
+\end_inset
+
+.
+ Additionally,
+ another study demonstrates that machine learning can effectively predict the timing and size of laboratory earthquakes by reconstructing and making sense of the system’s intricate spatiotemporal loading history 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "corbi"
+literal "false"
+
+\end_inset
+
+.
+ In a related study,
+ a machine learning technique is applied to the regions of Japan,
+ Turkey,
+ Greece,
+ and the Indian Subcontinent.
+ The model reveals a relationship between the computed seismic data and the occurrence of future earthquakes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hoque"
+literal "false"
+
+\end_inset
+
+.
+ The following paper compares the performance of a machine learning model,
+ which uses a limited set of predictor variables surface roughness,
+ peak frequency (fP),
+ HV,
+ VS30,
+ and depth (Z2.5) to that of a physics-based model (GRA) that relies on detailed 1D velocity profiles.
+ Results indicate that the machine learning approach,
+ outperforms the physics-based modeling in terms of predictive accuracy 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhu"
+literal "false"
+
+\end_inset
+
+.
+ Another study,
+ investigates the physical and dynamic variations in seismic data,
+ and introduces a novel machine learning method called Inverse Boosting Pruning Trees (IBPT).
+ This approach is designed to provide short-term forecasts,
+ based on satellite data from 1,371 earthquakes of magnitude six or higher,
+ given their significant environmental impact 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "xiong"
+literal "false"
+
+\end_inset
+
+.
+ In contemporary scientific research,
+ there is a growing surge of interest in the prediction of seismic events.
+ Advancements in data acquisition technologies,
+ communication networks,
+ edge–cloud computing,
+ the Internet of Things (IoT),
+ and big data analytics have created favorable conditions for the development of intelligent earthquake prediction models,
+ enabling early warning systems in vulnerable regions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhatia"
+literal "false"
+
+\end_inset
+
+.
+ In this context,
+ it is noteworthy that in recent years there has been significant development of various models for the early detection of seismic events,
+ which are now accessible to the general public through mobile devices in the form of applications (apps),
+ TV media,
+ or radio.
+ For instance,
+ in Japan,
+ significant investment has been made in the timely dissemination of information regarding seismic events since 2007,
+ through the implementation of the Earthquake Early Warning (EEW) system 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "japan"
+literal "false"
+
+\end_inset
+
+.
+ In this manner,
+ an alert for an impending earthquake can be issued from up to one minute to several seconds before the event occurs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wikipedia"
+literal "false"
+
+\end_inset
+
+.
+ Moreover,
+ the United States has also developed its own earthquake warning system through the U.S.
+ Geological Survey.
+ Since 2016,
+ the system known as Shake Alert has been implemented for the West Coast 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "us_survey,shakealert"
+literal "false"
+
+\end_inset
+
+.
+ In Southern Europe,
+ specifically at the University of Naples in Italy,
+ a software model known as PRESTo has been developed,
+ which is capable of detecting earthquakes approximately within the last ten seconds before their occurrence.
+ It is abundantly clear that the science of machine learning,
+ has entered the field of seismology with considerable momentum,
+ a fact that is also reflected in the bibliographic references,
+ with two articles authored by specialists in the fields of geological and geophysical sciences,
+ which highlight how machine learning contributes to the advancement of earthquake prediction.
+ In this article,
+ a new generation of earthquake catalogs,
+ developed through supervised machine learning,
+ provides unprecedented detail in capturing seismic activity.
+ The use of unsupervised machine learning to analyze this more comprehensive representation of seismicity is suggested as the most efficient path toward enhancing earthquake forecasting 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "beroza"
+literal "false"
+
+\end_inset
+
+.
+ The same researchers,
+ emphasize that machine learning and data mining techniques can greatly enhance our ability to process seismic data.
+ In their review,
+ they offer a comprehensive overview of machine learning applications in earthquake seismology,
+ discuss recent advancements and existing challenges,
+ and propose directions for future research 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mousavi_review"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+In the current work ...
+\end_layout
+
+\begin_layout Section
+Materials and Methods
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Materials-and-Methods"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this paper,
+ there were used open data,
+ available from NSF Seismological Facility for the Earth Consortium (SAGE) and especially from the Interactive Earthquake Browser 
+\begin_inset Flex URL
 status open
+
+\begin_layout Plain Layout
+
+http://ds.iris.edu/ieb/
+\end_layout
+
+\end_inset
+
+.
+ The data were collected for the years 2004,
+ 2010,
+ and 2012,
+ with each year comprising over 100,000 recorded earthquake events.
+ Moreover,
+ our data set employs the Moment Magnitude scale,
+ as it operates effectively across a broader range of earthquake sizes,
+ and is applicable on a global scale.
+ A preprocessing procedure was applied to the data,
+ including the identification of the lithospheric plate associated with each earthquake.
+ Subsequently,
+ each earthquake location was cross-referenced with nearby volcanoes,
+ where applicable,
+ using data from the Smithsonian Institution’s Global Volcanism Program 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://volcano.si.edu/
+\end_layout
+
+\end_inset
+
+.
+ During the course of our experiments,
+ we decided to proceed with earthquakes of magnitude 5 and above,
+ as including lower-magnitude events would result in the model being trained primarily on the prediction of minor seismic occurrences.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistics from our data earthquakes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2012
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Earthquakes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+126.972
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+294.432
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+370.582
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 - 4.9 mag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+126.003
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+292.387
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+369.101
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 - 5.9 mag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+893
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.909
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.374
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6 - 6.9 mag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+117
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+92
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7 - 7.9 mag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 - 8.9 mag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9 - 10 mag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Results"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1746,7 +2908,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1794,7 +2956,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1838,7 +3000,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1881,6 +3043,13 @@ name "fig:2012"
 
 \begin_layout Section
 Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author Contributions
@@ -2040,20 +3209,27 @@ References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "Author1(1989)"
-key "bfgs"
+key "britanica"
 literal "false"
 
 \end_inset
 
- Powell,
- M.
- J.
- D.
- (1989).
- A tolerant algorithm for linearly constrained optimization calculations.
- Mathematical Programming,
- 45,
- 547-566.
+ Seismograph.
+ Britannica,
+ Earth Sciences.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.britannica.com/science/seismograph 
+\end_layout
+
+\end_inset
+
+(accessed on 20 May 2025).
 \end_layout
 
 \begin_layout Bibliography
@@ -2061,12 +3237,833 @@ literal "false"
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 label "(1989)"
-key "ttt"
+key "britanica2"
 literal "false"
 
 \end_inset
 
-hjjhhkhkhkj
+Robert Mallet.
+ Britannica,
+ Civil Engineering.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.britannica.com/biography/Robert-Mallet
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "geological"
+literal "false"
+
+\end_inset
+
+Can you predict earthquakes?
+ United States Geological Survey.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.usgs.gov/faqs/can-you-predict-earthquakes
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "Bergen"
+literal "false"
+
+\end_inset
+
+Bergen,
+ K.
+ J.,
+ Chen,
+ T.,
+ & Li,
+ Z.
+ (2019).
+ Preface to the focus section on machine learning in seismology.
+ Seismological Research Letters,
+ 90(2A),
+ 477-480.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "Hutchison"
+literal "false"
+
+\end_inset
+
+How machine learning might unlock earthquake prediction.
+ MIT Technology Review,
+ article by:
+ Allie Hutchison.
+ Published on:
+ December 29,
+ 2023.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.technologyreview.com/2023/12/29/1084699/machine-learning-earthquake-prediction-ai-artificial-intelligence/
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "Hincks"
+literal "false"
+
+\end_inset
+
+Hincks,
+ T.,
+ Aspinall,
+ W.,
+ Cooke,
+ R.,
+ & Gernon,
+ T.
+ (2018).
+ Oklahoma's induced seismicity strongly linked to wastewater injection depth.
+ Science,
+ 359(6381),
+ 1251-1255.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "obara2022"
+literal "false"
+
+\end_inset
+
+Obara,
+ K.
+ (2002).
+ Nonvolcanic deep tremor associated with subduction in southwest Japan.
+ Science,
+ 296(5573),
+ 1679-1681.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "obara2016"
+literal "false"
+
+\end_inset
+
+Obara,
+ K.,
+ & Kato,
+ A.
+ (2016).
+ Connecting slow earthquakes to huge earthquakes.
+ Science,
+ 353(6296),
+ 253-257.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "bletery"
+literal "false"
+
+\end_inset
+
+Bletery,
+ Q.,
+ & Nocquet,
+ J.
+ M.
+ (2023).
+ The precursory phase of large earthquakes.
+ Science,
+ 381(6655),
+ 297-301.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "planc"
+literal "false"
+
+\end_inset
+
+The secret knowledge of animals.
+ Max Planck Institute of Animal Behavior.
+ Published on:
+ April 12 2024.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.ab.mpg.de/578863/news_publication_21821500_transferred?c=413930
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "mousavi"
+literal "false"
+
+\end_inset
+
+Mousavi,
+ S.
+ M.,
+ & Beroza,
+ G.
+ C.
+ (2020).
+ A machine‐learning approach for earthquake magnitude estimation.
+ Geophysical Research Letters,
+ 47(1),
+ e2019GL085976.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "devries"
+literal "false"
+
+\end_inset
+
+DeVries,
+ P.
+ M.,
+ Viégas,
+ F.,
+ Wattenberg,
+ M.,
+ & Meade,
+ B.
+ J.
+ (2018).
+ Deep learning of aftershock patterns following large earthquakes.
+ Nature,
+ 560(7720),
+ 632-634.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "ross"
+literal "false"
+
+\end_inset
+
+Ross,
+ Z.
+ E.,
+ Meier,
+ M.
+ A.,
+ & Hauksson,
+ E.
+ (2018).
+ P wave arrival picking and first‐motion polarity determination with deep learning.
+ Journal of Geophysical Research:
+ Solid Earth,
+ 123(6),
+ 5120-5129.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "rouet"
+literal "false"
+
+\end_inset
+
+Rouet‐Leduc,
+ B.,
+ Hulbert,
+ C.,
+ Lubbers,
+ N.,
+ Barros,
+ K.,
+ Humphreys,
+ C.
+ J.,
+ & Johnson,
+ P.
+ A.
+ (2017).
+ Machine learning predicts laboratory earthquakes.
+ Geophysical Research Letters,
+ 44(18),
+ 9276-9282.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "rouet2019"
+literal "false"
+
+\end_inset
+
+Rouet-Leduc,
+ B.,
+ Hulbert,
+ C.,
+ & Johnson,
+ P.
+ A.
+ (2019).
+ Continuous chatter of the Cascadia subduction zone revealed by machine learning.
+ Nature Geoscience,
+ 12(1),
+ 75-79.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "tan"
+literal "false"
+
+\end_inset
+
+Tan,
+ Y.
+ J.,
+ Waldhauser,
+ F.,
+ Ellsworth,
+ W.
+ L.,
+ Zhang,
+ M.,
+ Zhu,
+ W.,
+ Michele,
+ M.,
+ ...
+ & Segou,
+ M.
+ (2021).
+ Machine‐learning‐based high‐resolution earthquake catalog reveals how complex fault structures were activated during the 2016–2017 central Italy sequence.
+ The Seismic Record,
+ 1(1),
+ 11-19.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "mousavi2020"
+literal "false"
+
+\end_inset
+
+Mousavi,
+ S.
+ M.,
+ Ellsworth,
+ W.
+ L.,
+ Zhu,
+ W.,
+ Chuang,
+ L.
+ Y.,
+ & Beroza,
+ G.
+ C.
+ (2020).
+ Earthquake transformer—
+an attentive deep-learning model for simultaneous earthquake detection and phase picking.
+ Nature communications,
+ 11(1),
+ 3952.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "hsu"
+literal "false"
+
+\end_inset
+
+Hsu,
+ Y.
+ F.,
+ Zaliapin,
+ I.,
+ & Ben‐Zion,
+ Y.
+ (2024).
+ Informative modes of seismicity in nearest‐neighbor earthquake proximities.
+ Journal of Geophysical Research:
+ Solid Earth,
+ 129(3),
+ e2023JB027826.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "bayliss"
+literal "false"
+
+\end_inset
+
+Bayliss,
+ K.,
+ Naylor,
+ M.,
+ & Main,
+ I.
+ G.
+ (2019).
+ Probabilistic identification of earthquake clusters using rescaled nearest neighbour distance networks.
+ Geophysical Journal International,
+ 217(1),
+ 487-503.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "saad"
+literal "false"
+
+\end_inset
+
+Saad,
+ O.
+ M.,
+ Chen,
+ Y.,
+ Savvaidis,
+ A.,
+ Fomel,
+ S.,
+ Jiang,
+ X.,
+ Huang,
+ D.,
+ ...
+ & Chen,
+ Y.
+ (2023).
+ Earthquake forecasting using big data and artificial intelligence:
+ A 30‐week real‐time case study in China.
+ Bulletin of the Seismological Society of America,
+ 113(6),
+ 2461-2478.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "asim"
+literal "false"
+
+\end_inset
+
+Asim,
+ K.
+ M.,
+ Martínez-Álvarez,
+ F.,
+ Basit,
+ A.,
+ & Iqbal,
+ T.
+ (2017).
+ Earthquake magnitude prediction in Hindukush region using machine learning techniques.
+ Natural Hazards,
+ 85,
+ 471-486.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "corbi"
+literal "false"
+
+\end_inset
+
+Corbi,
+ F.,
+ Sandri,
+ L.,
+ Bedford,
+ J.,
+ Funiciello,
+ F.,
+ Brizzi,
+ S.,
+ Rosenau,
+ M.,
+ & Lallemand,
+ S.
+ (2019).
+ Machine learning can predict the timing and size of analog earthquakes.
+ Geophysical Research Letters,
+ 46(3),
+ 1303-1311.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "hoque"
+literal "false"
+
+\end_inset
+
+Hoque,
+ A.,
+ Raj,
+ J.,
+ Saha,
+ A.,
+ & Bhattacharya,
+ P.
+ (2020).
+ Earthquake magnitude prediction using machine learning technique.
+ In Trends in Computational Intelligence,
+ Security and Internet of Things:
+ Third International Conference,
+ ICCISIoT 2020,
+ Tripura,
+ India,
+ December 29-30,
+ 2020,
+ Proceedings 3 (pp.
+ 37-53).
+ Springer International Publishing.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "zhu"
+literal "false"
+
+\end_inset
+
+Zhu,
+ C.,
+ Cotton,
+ F.,
+ Kawase,
+ H.,
+ & Nakano,
+ K.
+ (2023).
+ How well can we predict earthquake site response so far?
+ Machine learning vs physics-based modeling.
+ Earthquake Spectra,
+ 39(1),
+ 478-504.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1989)"
+key "xiong"
+literal "false"
+
+\end_inset
+
+Xiong,
+ P.,
+ Tong,
+ L.,
+ Zhang,
+ K.,
+ Shen,
+ X.,
+ Battiston,
+ R.,
+ Ouzounov,
+ D.,
+ ...
+ & Zhou,
+ H.
+ (2021).
+ Towards advancing the earthquake forecasting by machine learning of satellite data.
+ Science of the Total Environment,
+ 771,
+ 145256.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "bhatia"
+literal "false"
+
+\end_inset
+
+Bhatia,
+ M.,
+ Ahanger,
+ T.
+ A.,
+ & Manocha,
+ A.
+ (2023).
+ Artificial intelligence based real-time earthquake prediction.
+ Engineering Applications of Artificial Intelligence,
+ 120,
+ 105856.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "japan"
+literal "false"
+
+\end_inset
+
+Earthquake Early Warning System.
+ Japan Meteorological Agency.
+ Available from:
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+ https://www.jma.go.jp/jma/en/Activities/eew.html
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "wikipedia"
+literal "false"
+
+\end_inset
+
+Earthquake Early Warning System (Japan).
+ Wikipedia.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://en.wikipedia.org/wiki/Earthquake_Early_Warning_(Japan)
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "us_survey"
+literal "false"
+
+\end_inset
+
+ShakeAlert.
+ US Geological Survey,
+ Earthquake Hazards Program.
+ Available from:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://earthquake.usgs.gov/data/shakealert/
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "shakealert"
+literal "false"
+
+\end_inset
+
+ShakeAlert.
+ Earthquake Early Warning (EEW) System.
+ Available from:
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+ https://www.shakealert.org/
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "beroza"
+literal "false"
+
+\end_inset
+
+Beroza,
+ G.
+ C.,
+ Segou,
+ M.,
+ & Mostafa Mousavi,
+ S.
+ (2021).
+ Machine learning and earthquake forecasting—
+next steps.
+ Nature communications,
+ 12(1),
+ 4761.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "mousavi_review"
+literal "false"
+
+\end_inset
+
+Mousavi,
+ S.
+ M.,
+ & Beroza,
+ G.
+ C.
+ (2023).
+ Machine learning in earthquake seismology.
+ Annual Review of Earth and Planetary Sciences,
+ 51(1),
+ 105-129.
 \end_layout
 
 \begin_layout Standard
