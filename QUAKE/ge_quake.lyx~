@@ -1785,7 +1785,7 @@ The production mechanism of Grammatical Evolution initiates from the symbol
 
  and using a series of production rules,
  a valid program is created replacing non-terminal symbols with the right hand of the selected production rule.
- The selection scheme has as:
+ The rules are selected through the following procedure:
 \end_layout
 
 \begin_layout Itemize
@@ -1793,7 +1793,7 @@ The production mechanism of Grammatical Evolution initiates from the symbol
 \series bold
 Read
 \series default
- the next element V from the chromosome that is being processed.
+ the next element V from the current chromosome.
 \end_layout
 
 \begin_layout Itemize
@@ -1801,27 +1801,1663 @@ Read
 \series bold
 Select
 \series default
- the next production rule following the equation:Rule = V mod 
+ the production rule using the equation:Rule = V mod 
 \begin_inset Formula $N_{R}$
 \end_inset
 
 .
- The symbol 
+ The constant 
 \begin_inset Formula $N_{R}$
 \end_inset
 
- represents the total number of production rules for the under processing non – terminal symbol.
+ stands for the total number of production rules for the non – terminal symbol that is currently under processing.
  
+\end_layout
+
+\begin_layout Standard
+The previously used procedure is graphically illustrated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:production"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GEFC.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The production mechanism of the Grammatical Evolution procedure.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:production"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+As a full working example of production consider the chromosome:
+\begin_inset Formula 
+\[
+x=\left[9,8,6,4,16,10,17,23,8,14\right]
+\]
+
+\end_inset
+
+and the grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BNF-grammar-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ The numbers shown in parentheses are the increasing numbers of the production rules for each non - terminal symbol.
+ Denote with 
+\begin_inset Formula $d=3$
+\end_inset
+
+ the number of features (inputs) for the current dataset.
+ The production of the valid expression 
+\begin_inset Formula $f(x)=x_{2}+\cos\left(x_{3}\right)$
+\end_inset
+
+ is performed through a series of steps,
+ that are depicted in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:table_with_steps"
+nolink "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A full example of a BNF grammar that produces simple expression.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BNF-grammar-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+S::=<expr>   (0) 
+\end_layout
+
+\begin_layout LyX-Code
+<expr> ::=  (<expr> <op> <expr>)  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | <func> ( <expr> )    (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |<term>            (2) 
+\end_layout
+
+\begin_layout LyX-Code
+<op> ::=     +      (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | -      (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           | *      (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           | /      (3)
+\end_layout
+
+\begin_layout LyX-Code
+<func> ::=   sin  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | cos  (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |exp   (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           |log   (3)
+\end_layout
+
+\begin_layout LyX-Code
+<term>::=<xlist>                (0)                      
+\end_layout
+
+\begin_layout LyX-Code
+           |<dlist>.<dlist> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<xlist>::=x1    (0)              
+\end_layout
+
+\begin_layout LyX-Code
+           | x2 (1)              
+\end_layout
+
+\begin_layout LyX-Code
+           ………             
+\end_layout
+
+\begin_layout LyX-Code
+           | xd (d-1)
+\end_layout
+
+\begin_layout LyX-Code
+<dlist>::=<digit>                  (0)                 
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit>            (1)
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit><digit>     (2)
+\end_layout
+
+\begin_layout LyX-Code
+<digit>  ::= 0 (0)| 1 (1)| 2 (2)| 3 (3)| 4 (4)
+\end_layout
+
+\begin_layout LyX-Code
+           | 5 (5)| 6 (6)| 7 (7)| 8 (8)| 9 (9)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The series of performed steps for the production of a valid expression.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:table_with_steps"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expression
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chromosome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Operation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<expr>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,8,6,4,16,10,17,23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $9\mod 3=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(<expr><op><expr>)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,6,4,16,10,17,23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8\mod 3=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(<terminal><op><expr>)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,4,16,10,17,23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6\mod 2=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(<xlist><op><expr>)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,16,10,17,23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4\mod 3=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(x2<op><expr>)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,10,17,23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $16\mod 4=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(x2+<expr>)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,17,23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10\mod 3=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(x2+<func>(<expr>))
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17,23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $17\mod 4=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(x2+cos(<expr>))
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23,8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $23\mod 2=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(x2+cos(<terminal>))
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8\mod 2=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(x2+cos(<xlist>))
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $14\mod 3=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(x2+cos(x3))
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 The rule production method
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:The-rule-production"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The rule construction method was initially presented in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rule_tsoulos"
+literal "false"
+
+\end_inset
+
+.
+ This method can produce rules in a human readable form,
+ that can be used in classification and regression problems without any prior knowledge of the the objective problem.
+ The main steps of this method have as follows:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the number of chromosomes and as 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the maximum number of allowed generations.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ the selection rate of the genetic algorithm and as 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+ the corresponding mutation rate.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ the chromosomes 
+\begin_inset Formula $c_{i},\ i=1,\ldots,N_{c}$
+\end_inset
+
+.
+ Each chromosome is considered as a set of randomly selected positive integers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ the program 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ for the chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ using the grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ruleGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and the Grammatical Evolution production mechanism.
+\end_layout
+
+\begin_layout Enumerate
+Set as the fitness value 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ for the chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ the training error of the produced program,
+ calculated as:
+\begin_inset Formula 
+\[
+f_{i}=\sum_{j=1}^{M}\left(P_{i}\left(x_{j}\right)-y_{j}\right)^{2}
+\]
+
+\end_inset
+
+The set 
+\begin_inset Formula $\left(x_{j},y_{j}\right),\ x\in R^{N},j=1,\ldots,M$
+\end_inset
+
+ defines the training set of the objective problem,
+ where the value
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ is considered as the actual output for the input pattern 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Genetic operations step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Select
+\series default
+ the best 
+\begin_inset Formula $\left(1-p_{s}\right)\times N_{c}$
+\end_inset
+
+ chromosomes from the current population.
+ These chromosomes will be transferred intact to the next generation.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ 
+\begin_inset Formula $p_{S}N_{c}$
+\end_inset
+
+ chromosomes with the assistance of the one - point crossover shown graphically in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:onePoint"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ For every couple 
+\begin_inset Formula $\left(z_{1},z_{2}\right)$
+\end_inset
+
+ of created offsprings two chromosomes should be chosen from the current population using tournament selection.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Mutation procedure
+\series default
+:
+ For every element of each chromosome a random number 
+\begin_inset Formula $r\le1$
+\end_inset
+
+ is selected.
+ The corresponding element is altered randomly when 
+\begin_inset Formula $r\le p_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k<N_{g}$
+\end_inset
+
+ goto Fitness Calculation Step.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The BNF grammar used in the method that produces rules for classification and data fitting problems.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ruleGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+<S>::= <ifexpr> value=<expr> else value=<expr>  (0)
+\end_layout
+
+\begin_layout LyX-Code
+<ifexpr>::= if(<bexpr>) value=<expr> (0)
+\end_layout
+
+\begin_layout LyX-Code
+            |<ifexpr> else if(<bexpr>) value=<expr> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<bexpr>::=<expr> <rop> <expr> (0)
+\end_layout
+
+\begin_layout LyX-Code
+            |<bexpr> <bop> <bexpr> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<rop>::= > (0)
+\end_layout
+
+\begin_layout LyX-Code
+           |>= (1)
+\end_layout
+
+\begin_layout LyX-Code
+           |<  (2)
+\end_layout
+
+\begin_layout LyX-Code
+           |<= (3)
+\end_layout
+
+\begin_layout LyX-Code
+           |=  (4)
+\end_layout
+
+\begin_layout LyX-Code
+           |!= (5)
+\end_layout
+
+\begin_layout LyX-Code
+<bop>::=  & (0)
+\end_layout
+
+\begin_layout LyX-Code
+           | | (1)
+\end_layout
+
+\begin_layout LyX-Code
+<expr> ::=  (<expr> <op> <expr>)  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | <func> ( <expr> )    (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |<term>            (2) 
+\end_layout
+
+\begin_layout LyX-Code
+<op> ::=     +      (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | -      (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           | *      (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           | /      (3)
+\end_layout
+
+\begin_layout LyX-Code
+<func> ::=   sin  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | cos  (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |exp   (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           |log   (3)
+\end_layout
+
+\begin_layout LyX-Code
+<term>::=<xlist>                (0)                      
+\end_layout
+
+\begin_layout LyX-Code
+           |<dlist>.<dlist> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<xlist>::=x1    (0)              
+\end_layout
+
+\begin_layout LyX-Code
+           | x2 (1)              
+\end_layout
+
+\begin_layout LyX-Code
+           ………             
+\end_layout
+
+\begin_layout LyX-Code
+           | xD (D-1)
+\end_layout
+
+\begin_layout LyX-Code
+<dlist>::=<digit>                  (0)                 
+\end_layout
+
+\begin_layout LyX-Code
+            | <digit><dlist>       (1)
+\end_layout
+
+\begin_layout LyX-Code
+<digit>  ::= 0 (0)| 1 (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 2 (2)| 3 (3)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 4 (4)| 5 (5)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 6 (6)| 7 (7)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 8 (8)| 9 (9)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename onePointCrossover.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of the application of the one point crossover method in the Grammatical Evolution.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:onePoint"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Constructed neural networks 
 \end_layout
 
+\begin_layout Standard
+Another method used in the conducted experiments is the neural network construction method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc"
+literal "false"
+
+\end_inset
+
+.
+ This method can discover the optimal architecture of artificial neural networks as well as an estimation for the parameters of the network by using the Grammatical Evolution technique.
+ This method has been applied in a series of problems,
+ such as problems presented in chemistry 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_amide1"
+literal "false"
+
+\end_inset
+
+,
+ education problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+,
+ autism screening 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+ etc.
+ The BNF grammar incorporated in the neural construction procedure is depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nncGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ This grammar can produce artificial neural networks in the following form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N\left(\overrightarrow{x},\overrightarrow{w}\right)=\sum_{i=1}^{H}w_{(d+2)i-(d+1)}\sigma\left(\sum_{j=1}^{d}x_{j}w_{(d+2)i-(d+1)+j}+w_{(d+2)i}\right)\label{eq:nn}
+\end{equation}
+
+\end_inset
+
+The value 
+\begin_inset Formula $H$
+\end_inset
+
+ denotes the number of processing units (weights) of the neural network.
+ Also,
+ the function 
+\begin_inset Formula $\sigma(x)$
+\end_inset
+
+ stands for the sigmoid function.
+ Following the previous equation,
+ it is deducted that the total number of parameters for this network are computed as follows:
+\begin_inset Formula 
+\begin{equation}
+n=\left(d+2\right)H
+\end{equation}
+
+\end_inset
+
+As an example consider the following neural network:
+\begin_inset Formula 
+\begin{equation}
+N(x)=1.9\mbox{sig}\left(10.5x_{1}+3.2x_{3}+1.4\right)+2.1\mbox{sig}\left(2.2x_{2}-3.3x_{3}+3.2\right)
+\end{equation}
+
+\end_inset
+
+This expression represents a neural network used in a problem with 3 inputs 
+\begin_inset Formula $\left(x_{1},x_{2},x_{3}\right).$
+\end_inset
+
+The number of processing nodes is 
+\begin_inset Formula $H=2$
+\end_inset
+
+.
+ This neural network is outlined graphically in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nnExample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout LyX-Code
+S:=<Sigval>                          (0)
+\end_layout
+
+\begin_layout LyX-Code
+<Sigval>::=<Node>                    (0)
+\end_layout
+
+\begin_layout LyX-Code
+           | <Node> + <Sigval>       (1)
+\end_layout
+
+\begin_layout LyX-Code
+<Node>::=<Number>*sig(<Sum>+<Number>) (0)
+\end_layout
+
+\begin_layout LyX-Code
+<Sum>::= <Number>*<Xlist>            (0)
+\end_layout
+
+\begin_layout LyX-Code
+           |    <Sum>+<Sum>           (1)
+\end_layout
+
+\begin_layout LyX-Code
+<Xlist>::= x1        (0)
+\end_layout
+
+\begin_layout LyX-Code
+             |    x2  (1)
+\end_layout
+
+\begin_layout LyX-Code
+             ..............
+\end_layout
+
+\begin_layout LyX-Code
+             |    xd  (d-1)
+\end_layout
+
+\begin_layout LyX-Code
+<Number>::= (<Dlist>.<Dlist>)        (0)
+\end_layout
+
+\begin_layout LyX-Code
+             |    (-<Dlist>.<Dlist>) (1)
+\end_layout
+
+\begin_layout LyX-Code
+<Dlist>::= <Digit>            (0)
+\end_layout
+
+\begin_layout LyX-Code
+             | <Digit><Dlist> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<Digit>::= 0      (0)
+\end_layout
+
+\begin_layout LyX-Code
+             |  1 (1)
+\end_layout
+
+\begin_layout LyX-Code
+             ...........
+\end_layout
+
+\begin_layout LyX-Code
+             |  9 (9)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The proposed grammar for the construction of artificial neural networks through Grammatical Evolution.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nncGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../GlobalOptimus/doc/NNC_GA/example_diagram.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of a produced neural network.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nnExample"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The steps of the method used to construct artificial neural networks are shown below:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Define
+\series default
+ as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the number of chromosomes in the genetic population and as 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the total number of allowed generations.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ the used selection rate and as 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+ the used mutation rate.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ the chromosomes 
+\begin_inset Formula $c_{i},\ i=1,\ldots,N_{c}$
+\end_inset
+
+.
+ Each chromosome is considered as a set of randomly selected positive integers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ as the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Obtain
+\series default
+ the chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ the corresponding neural network 
+\begin_inset Formula $N_{i}\left(\overrightarrow{x},\overrightarrow{w}\right)$
+\end_inset
+
+ for this chromosome using the grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nncGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Calculate
+\series default
+ the associated fitness value 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ as the training error of network 
+\begin_inset Formula $N_{i}\left(\overrightarrow{x},\overrightarrow{w}\right)$
+\end_inset
+
+ defined as:
+\begin_inset Formula 
+\[
+f_{i}=\sum_{j=1}^{M}\left(N_{i}\left(\overrightarrow{x_{j}},\overrightarrow{w}\right)-y_{j}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Application of genetic operations
+\series default
+.
+ Apply the same genetic operations as in the algorithm of subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:The-rule-production"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Terminate
+\series default
+ if 
+\begin_inset Formula $k\ge N_{g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Go to
+\series default
+ fitness calculation step.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 The feature construction method
 \end_layout
@@ -3328,69 +4964,29 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Author Contributions
-For research articles with several authors,
- a short paragraph specifying their individual contributions must be provided.
- The following statements should be used 
-\begin_inset Quotes eld
-\end_inset
-
-Conceptualization,
- X.X.
- and Y.Y.;
- methodology,
- X.X.;
- software,
- X.X.;
- validation,
- X.X.,
- Y.Y.
- and Z.Z.;
- formal analysis,
- X.X.;
- investigation,
- X.X.;
- resources,
- X.X.;
- data curation,
- X.X.;
- writing—
-original draft preparation,
- X.X.;
- writing—
-review and editing,
- X.X.;
- visualization,
- X.X.;
- supervision,
- X.X.;
- project administration,
- X.X.;
- funding acquisition,
- Y.Y.
+C.K.,
+ V.C.
+ and I.G.T.
+ conceived of the idea and the methodology,
+ and C.K.
+ and V.C.
+ implemented the corresponding software.
+ C.K.
+ conducted the experiments,
+ employing objective functions as test cases,
+ and provided the comparative experiments.
+ V.C.
+ performed the necessary statistical tests.
  All authors have read and agreed to the published version of the manuscript.
-\begin_inset Quotes erd
-\end_inset
-
-,
- please turn to the 
-\begin_inset CommandInset href
-LatexCommand href
-name "CRediT taxonomy"
-target "http://img.mdpi.org/data/contributor-role-instruction.pdf"
-literal "false"
-
-\end_inset
-
-for the term explanation.
- Authorship must be limited to those who have contributed substantially to the work
-\begin_inset space ~
-\end_inset
-
-reported.
 \end_layout
 
 \begin_layout Funding
-This research received no external funding.
+This research has been financed by the European Union :
+ Next Generation EU through the Program Greece 2.0 National Recovery and Resilience Plan ,
+ under the call RESEARCH – CREATE – INNOVATE,
+ project name “iCREW:
+ Intelligent small craft simulator for advanced crew training using Virtual Reality techniques" (project code:TAEDK-06195).
+  
 \end_layout
 
 \begin_layout Institutional Review
@@ -4695,6 +6291,145 @@ Sastry,
  Search methodologies:
  Introductory tutorials in optimization and decision support techniques,
  97-125.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rule_tsoulos"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ Learning Functions and Classes Using Rules,
+ AI.
+ 
+\series bold
+3
+\series default
+,
+ pp.751-763,
+ 2022.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "nnc"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ D.
+ Gavrilis,
+ E.
+ Glavas,
+ Neural network construction and training using grammatical evolution,
+ Neurocomputing 
+\series bold
+72
+\series default
+,
+ pp.
+ 269-277,
+ 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_amide1"
+literal "false"
+
+\end_inset
+
+G.V.
+ Papamokos,
+ I.G.
+ Tsoulos,
+ I.N.
+ Demetropoulos,
+ E.
+ Glavas,
+ Location of amide I mode of vibration in computed data utilizing constructed neural networks,
+ Expert Systems with Applications 
+\series bold
+36
+\series default
+,
+ pp.
+ 12210-12213,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+V.
+ Christou,
+ I.G.
+ Tsoulos,
+ V.
+ Loupas,
+ A.T.
+ Tzallas,
+ C.
+ Gogos,
+ P.S.
+ Karvelis,
+ N.
+ Antoniadis,
+ E.
+ Glavas,
+ N.
+ Giannakeas,
+ Performance and early drop prediction for higher education students using machine learning,
+ Expert Systems with Applications 
+\series bold
+225
+\series default
+,
+ 120079,
+ 2023.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+E.I.
+ Toki,
+ J.
+ Pange,
+ G.
+ Tatsis,
+ K.
+ Plachouras,
+ I.G.
+ Tsoulos,
+ Utilizing Constructed Neural Networks for Autism Screening,
+ Applied Sciences 
+\series bold
+14
+\series default
+,
+ 3053,
+ 2024.
 \end_layout
 
 \begin_layout Standard
