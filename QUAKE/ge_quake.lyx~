@@ -1108,9 +1108,138 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+In the current work seismological data collected from NSF Seismological Facility were obtained and afterwards these data was pre-processed,
+ where for each earthquake of magnitude greater than 5,
+ the closest earthquakes that had preceded it in various parts of the planet within a critical distance were identified.
+ Then,
+ the number of these preceding seismic vibrations and their average magnitude were added to these recordings.
+ The purpose of the above process is to achieve the most accurate prediction of the magnitude of an earthquake based on its characteristics and the earthquakes that have preceded it within a predetermined distance.
+ An attempt was then made to predict the magnitude of earthquakes using machine learning techniques based on the Grammatical Evolution method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge1"
+literal "false"
 
+\end_inset
+
+.
+ Grammatical Evolution is an evolutionary technique where chromosomes (candidate solutions) are expressed as a series of production rules of a provided BNF grammar 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bnf1"
+literal "false"
+
+\end_inset
+
+.
+ Grammatical Evolution was used in a series of problems,
+ such as data fitting
 \series bold
-In the current work ...
+ 
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_program1,ge_program2"
+literal "false"
+
+\end_inset
+
+,
+ composition of music 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_music"
+literal "false"
+
+\end_inset
+
+,
+ video games 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_pacman,ge_supermario"
+literal "false"
+
+\end_inset
+
+,
+ energy problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+,
+ cryptography 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+,
+ economics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_trading"
+literal "false"
+
+\end_inset
+
+ etc.
+ The methods based on Grammatical Evolution was compared against various optimization techniques incorporated to train artificial neural networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn1,nn2"
+literal "false"
+
+\end_inset
+
+for the prediction of magnitude of earthquakes and the results are presented and discussed.
+\end_layout
+
+\begin_layout Standard
+The remaining of this paper has the following structure:
+ the section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ presents the used dataset as well as the proposed machine learning techniques,
+ the section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ illustrates the experimental results finally the section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ presents some conclusions.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1122,6 +1251,10 @@ name "sec:Materials-and-Methods"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+The used dataset
 \end_layout
 
 \begin_layout Standard
@@ -1167,11 +1300,41 @@ https://volcano.si.edu/
  During the course of our experiments,
  we decided to proceed with earthquakes of magnitude 5 and above,
  as including lower-magnitude events would result in the model being trained primarily on the prediction of minor seismic occurrences.
+ In the year 2004,
+ a total of 666 geographic regions were classified,
+ within which 126,972 seismic events were recorded.
+ Similarly,
+ in 2010,
+ 635 regions were classified,
+ corresponding to 294,432 earthquakes,
+ while in 2012,
+ 690 regions were classified,
+ with a total of 370,582 recorded seismic events.
+ Regarding tectonic plates,
+ for each seismic event,
+ we classified the tectonic plates involved in the corresponding region.
+ In total,
+ 81 distinct combinations of lithospheric tectonic plates were identified.
+ In relation to the classification of volcanoes,
+ these were categorized into ten types:
+ stratovolcano,
+ volcanic field,
+ lava dome,
+ caldera,
+ complex,
+ compound,
+ shield,
+ pyroclastic,
+ minor,
+ and submarine.
+ For each region containing a volcano,
+ the corresponding category was marked with a value of 1,
+ while a value of 0 was assigned when no volcano of that type was present.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment document
 wide false
 sideways false
@@ -1549,6 +1712,10 @@ Earthquakes
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Grammatical Evolution
 \end_layout
 
 \begin_layout Section
@@ -4005,7 +4172,17 @@ literal "false"
 ShakeAlert.
  Earthquake Early Warning (EEW) System.
  Available from:
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
  https://www.shakealert.org/
+\end_layout
+
+\end_inset
+
+ (accessed on 20 May 2025).
 \end_layout
 
 \begin_layout Bibliography
@@ -4054,6 +4231,321 @@ Mousavi,
  Annual Review of Earth and Planetary Sciences,
  51(1),
  105-129.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge1"
+literal "true"
+
+\end_inset
+
+M.
+ O’Neill,
+ C.
+ Ryan,
+ Grammatical evolution,
+ IEEE Trans.
+ Evol.
+ Comput.
+ 
+\series bold
+5,
+\series default
+pp.
+ 349–358,
+ 2001.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(year)"
+key "bnf1"
+literal "false"
+
+\end_inset
+
+J.
+ W.
+ Backus.
+ The Syntax and Semantics of the Proposed International Algebraic Language of the Zurich ACM-GAMM Conference.
+ Proceedings of the International Conference on Information Processing,
+ UNESCO,
+ 1959,
+ pp.125-132.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program1"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ J.
+ Collins,
+ M.
+ O’Neill,
+ Grammatical evolution:
+ Evolving programs for an arbitrary language.
+ In:
+ Banzhaf,
+ W.,
+ Poli,
+ R.,
+ Schoenauer,
+ M.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1998.
+ Lecture Notes in Computer Science,
+ vol 1391.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1998.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program2"
+literal "false"
+
+\end_inset
+
+M.
+ O’Neill,
+ M.,
+ C.
+ Ryan,
+ Evolving Multi-line Compilable C Programs.
+ In:
+ Poli,
+ R.,
+ Nordin,
+ P.,
+ Langdon,
+ W.B.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1999.
+ Lecture Notes in Computer Science,
+ vol 1598.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1999.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_music"
+literal "false"
+
+\end_inset
+
+A.O.
+ Puente,
+ R.
+ S.
+ Alfonso,
+ M.
+ A.
+ Moreno,
+ Automatic composition of music by means of grammatical evolution,
+ In:
+ APL '02:
+ Proceedings of the 2002 conference on APL:
+ array processing languages:
+ lore,
+ problems,
+ and applications July 2002 Pages 148–155.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_pacman"
+literal "false"
+
+\end_inset
+
+E.
+ Galván-López,
+ J.M.
+ Swafford,
+ M.
+ O’Neill,
+ A.
+ Brabazon,
+ Evolving a Ms.
+ PacMan Controller Using Grammatical Evolution.
+ In:
+ ,
+ et al.
+ Applications of Evolutionary Computation.
+ EvoApplications 2010.
+ Lecture Notes in Computer Science,
+ vol 6024.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_supermario"
+literal "false"
+
+\end_inset
+
+N.
+ Shaker,
+ M.
+ Nicolau,
+ G.
+ N.
+ Yannakakis,
+ J.
+ Togelius,
+ M.
+ O'Neill,
+ Evolving levels for Super Mario Bros using grammatical evolution,
+ 2012 IEEE Conference on Computational Intelligence and Games (CIG),
+ 2012,
+ pp.
+ 304-31.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+D.
+ Martínez-Rodríguez,
+ J.
+ M.
+ Colmenar,
+ J.
+ I.
+ Hidalgo,
+ R.J.
+ Villanueva Micó,
+ S.
+ Salcedo-Sanz,
+ Particle swarm grammatical evolution for energy demand estimation,
+ Energy Science and Engineering 
+\series bold
+8
+\series default
+,
+ pp.
+ 1068-1079,
+ 2020.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ M.
+ Kshirsagar,
+ G.
+ Vaidya,
+ G.
+ et al.
+ Design of a cryptographically secure pseudo random number generator with grammatical evolution.
+ Sci Rep 
+\series bold
+12
+\series default
+,
+ 8602,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_trading"
+literal "false"
+
+\end_inset
+
+C.
+ Martín,
+ D.
+ Quintana,
+ P.
+ Isasi,
+ Grammatical Evolution-based ensembles for algorithmic trading,
+ Applied Soft Computing 
+\series bold
+84
+\series default
+,
+ 105713,
+ 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "nn1"
+literal "false"
+
+\end_inset
+
+C.
+ Bishop,
+ Neural Networks for Pattern Recognition,
+ Oxford University Press,
+ 1995.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn2"
+literal "true"
+
+\end_inset
+
+G.
+ Cybenko,
+ Approximation by superpositions of a sigmoidal function,
+ Mathematics of Control Signals and Systems 
+\series bold
+2
+\series default
+,
+ pp.
+ 303-314,
+ 1989.
 \end_layout
 
 \begin_layout Standard
