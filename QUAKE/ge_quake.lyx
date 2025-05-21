@@ -1715,7 +1715,115 @@ Earthquakes
 \end_layout
 
 \begin_layout Subsection
-Grammatical Evolution
+Grammatical Evolution preliminaries 
+\end_layout
+
+\begin_layout Standard
+The Grammatical Evolution procedure is considered as a variant of genetic algorithms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gen1,gen2"
+literal "false"
+
+\end_inset
+
+,
+ where the chromosomes are series of integer values that represent production rules of the underlying BNF grammar.
+ The BNF grammars are denoted as sets
+\series bold
+ 
+\begin_inset Formula $G=\left(N,T,S,P\right)$
+\end_inset
+
+
+\series default
+,
+
+\series bold
+ 
+\series default
+with the following definitions:
+\end_layout
+
+\begin_layout Itemize
+The set 
+\begin_inset Formula $N$
+\end_inset
+
+ represents the non - terminal symbols.
+\end_layout
+
+\begin_layout Itemize
+The set 
+\begin_inset Formula $T$
+\end_inset
+
+ contains the terminal symbols of the language.
+ 
+\end_layout
+
+\begin_layout Itemize
+The symbol 
+\begin_inset Formula $S\in N$
+\end_inset
+
+ denotes the start symbol of the grammar.
+\end_layout
+
+\begin_layout Itemize
+The set 
+\begin_inset Formula $P$
+\end_inset
+
+ holds the production rules of the grammar.
+\end_layout
+
+\begin_layout Standard
+The production mechanism of Grammatical Evolution initiates from the symbol 
+\begin_inset Formula $S$
+\end_inset
+
+ and using a series of production rules,
+ a valid program is created replacing non-terminal symbols with the right hand of the selected production rule.
+ The rules are selected through the following procedure:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Read
+\series default
+ the next element V from the chromosome that is being processed.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Select
+\series default
+ the next production rule following the equation:Rule = V mod 
+\begin_inset Formula $N_{R}$
+\end_inset
+
+.
+ The symbol 
+\begin_inset Formula $N_{R}$
+\end_inset
+
+ represents the total number of production rules for the under processing non – terminal symbol.
+ 
+\end_layout
+
+\begin_layout Subsection
+The rule production method
+\end_layout
+
+\begin_layout Subsection
+Constructed neural networks 
+\end_layout
+
+\begin_layout Subsection
+The feature construction method
 \end_layout
 
 \begin_layout Section
@@ -4546,6 +4654,47 @@ G.
  pp.
  303-314,
  1989.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1994)"
+key "gen1"
+literal "false"
+
+\end_inset
+
+Holland,
+ J.
+ H.
+ (1992).
+ Genetic algorithms.
+ Scientific american,
+ 267(1),
+ 66-73.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1994)"
+key "gen2"
+literal "false"
+
+\end_inset
+
+Sastry,
+ K.,
+ Goldberg,
+ D.,
+ & Kendall,
+ G.
+ (2005).
+ Genetic algorithms.
+ Search methodologies:
+ Introductory tutorials in optimization and decision support techniques,
+ 97-125.
 \end_layout
 
 \begin_layout Standard
