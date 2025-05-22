@@ -1714,6 +1714,17 @@ Earthquakes
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+(MAYBE ALGORITHM?
+ Declare 
+\begin_inset Formula $D_{c}$
+\end_inset
+
+)
+\end_layout
+
 \begin_layout Subsection
 Grammatical Evolution preliminaries 
 \end_layout
@@ -2978,6 +2989,13 @@ name "fig:onePoint"
 
 \begin_layout Subsection
 Constructed neural networks 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Constructed-neural-networks"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3099,7 +3117,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout LyX-Code
 S:=<Sigval>                          (0)
@@ -3460,10 +3478,407 @@ Go to
 \end_deeper
 \begin_layout Subsection
 The feature construction method
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:The-feature-construction"
+
+\end_inset
+
+
 \end_layout
 
+\begin_layout Standard
+Another technique,
+ based on Grammatical Evolution,
+ used on the conducted experiments is the Feature Construction technique,
+ initially described in the work of Gavrilis et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fc1"
+literal "false"
+
+\end_inset
+
+.
+ This technique produces artificial features from the original ones,
+ using non linear mappings produced by the Grammatical Evolution procedure.
+ The BNF grammar used for this technique is outlined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fcGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The grammar used in Feature Construction method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fcGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+S::=<expr>   (0) 
+\end_layout
+
+\begin_layout LyX-Code
+<expr> ::=  (<expr> <op> <expr>)               
+\end_layout
+
+\begin_layout LyX-Code
+           | <func> ( <expr> )                 
+\end_layout
+
+\begin_layout LyX-Code
+           |<term>             
+\end_layout
+
+\begin_layout LyX-Code
+<op> ::=     +                   
+\end_layout
+
+\begin_layout LyX-Code
+           | -                   
+\end_layout
+
+\begin_layout LyX-Code
+           | *                   
+\end_layout
+
+\begin_layout LyX-Code
+           | /      
+\end_layout
+
+\begin_layout LyX-Code
+<func> ::=   sin               
+\end_layout
+
+\begin_layout LyX-Code
+           | cos               
+\end_layout
+
+\begin_layout LyX-Code
+           |exp                
+\end_layout
+
+\begin_layout LyX-Code
+           |log   
+\end_layout
+
+\begin_layout LyX-Code
+<term>::=<xlist>                                      
+\end_layout
+
+\begin_layout LyX-Code
+           |<dlist>.<dlist> 
+\end_layout
+
+\begin_layout LyX-Code
+<xlist>::=x1                  
+\end_layout
+
+\begin_layout LyX-Code
+           | x2               
+\end_layout
+
+\begin_layout LyX-Code
+           ………             
+\end_layout
+
+\begin_layout LyX-Code
+           | xd 
+\end_layout
+
+\begin_layout LyX-Code
+<dlist>::=<digit>                                   
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit>            
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit><digit>     
+\end_layout
+
+\begin_layout LyX-Code
+<digit>  ::= 0 | 1 | 2 | 3| 4| 5| 6| 7| 8| 9 
+\end_layout
+
+\end_inset
+
+The produced features are evaluated by Radial Basis Function (RBF) networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rbf1,rbf2"
+literal "false"
+
+\end_inset
+
+ due to the speed of their associated training procedure.
+ The steps of the feature construction technique have as follows:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the parameters of the method:
+ 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the number of chromosomes,
+ 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the maximum number of allowed generations,
+ 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ the selection rate and 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+ the mutation rate.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ the 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ chromosomes as sets of random integers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ the number of constructed features.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Produce
+\series default
+ 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ artificial features 
+\begin_inset Formula $y_{1},y_{2},\ldots,y_{N_{f}}$
+\end_inset
+
+ for the processed chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ using the grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fcGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Modify
+\series default
+ the original train set using the constructed features 
+\begin_inset Formula $y_{1},y_{2},\ldots,y_{N_{f}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ a machine learning model denoted as 
+\begin_inset Formula $M(x)$
+\end_inset
+
+ to the modified set and define as the fitness value 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ the training error of 
+\begin_inset Formula $M(x)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Genetic operations step
+\series default
+.
+ Apply the same genetic operations as in the algorithm of subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:The-rule-production"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Terminate
+\series default
+ when 
+\begin_inset Formula $k\ge N_{g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Go to
+\series default
+ fitness calculation step.
+\end_layout
+
+\end_deeper
 \begin_layout Section
-Results
+Experimental results
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Results"
@@ -3471,6 +3886,464 @@ name "sec:Results"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The measurements from the years 2004,
+ 2010 and 2012 was uses as test cases in the experimental results.
+ For the neural network construction technique the freely available software NNC 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_softx"
+literal "false"
+
+\end_inset
+
+ was incorporated.
+ The feature construction was performed by using the QFC software 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qfc"
+literal "false"
+
+\end_inset
+
+,
+ that was also freely available.
+ Furthermore,
+ the WEKA programming tool 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weka_main"
+literal "false"
+
+\end_inset
+
+ was also utilized in the conducted experiments.
+ The validation of the experiments was performed using the ten - fold cross validation technique and all experiments were conducted on a machine running Debian Linux with 128GB of RAM.
+ The average regression error on the test set was measured,
+ using the following equation:
+\begin_inset Formula 
+\begin{equation}
+E_{R}\left(M\left(\overrightarrow{x}\right)\right)=\frac{\sum_{i=1}^{N}\left(N\left(\overrightarrow{x_{i}}\right)-y_{i}\right)^{2}}{N}
+\end{equation}
+
+\end_inset
+
+Here the test set 
+\begin_inset Formula $T$
+\end_inset
+
+ is defined as the set 
+\begin_inset Formula $T=\left(x_{i},y_{i}\right),\ i=1,\ldots,N$
+\end_inset
+
+ and the equation 
+\begin_inset Formula $M\left(\overrightarrow{x}\right)$
+\end_inset
+
+ denotes the application of the machine learning 
+\begin_inset Formula $M(x)$
+\end_inset
+
+ on the input pattern 
+\begin_inset Formula $\overrightarrow{x}$
+\end_inset
+
+.
+ The values for the experimental parameters are outlined in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:settings"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The values used for the experimental parameters.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:settings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PARAMETER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MEANING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VALUE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chromosomes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{g}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum number of generations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Selection rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mutation rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{f}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of produced features
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number or processing nodes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Also,
+ The following notation is used in the experimental table:
+\end_layout
+
+\begin_layout Enumerate
+The column year denotes the recording year for the earthquakes.
+\end_layout
+
+\begin_layout Enumerate
+The column 
+\begin_inset Formula $D_{c}$
+\end_inset
+
+ denotes the critical distance used in the pre - processing of the earthquake data.
+\end_layout
+
+\begin_layout Enumerate
+The column MLP(BP) denotes the incorporation of the Back Propagation algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bpnn1,bpnn2"
+literal "false"
+
+\end_inset
+
+ in the training of a neural network with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column MLP(RPROP) represents the usage of the RPROP method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rpropnn-1,rpropnn-2"
+literal "false"
+
+\end_inset
+
+ for the training of a neural network with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column MLP(BFGS) denotes the usage of the BFGS optimization procedure 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "powell"
+literal "false"
+
+\end_inset
+
+ for the training of an artificial neural network with 
+\begin_inset Formula $H=10$
+\end_inset
+
+ processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column RULE denotes the incorporation of the rule construction method,
+ described in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:The-rule-production"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column NNC represents the usage of the Neural Network Construction method,
+ provided in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Constructed-neural-networks"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column FC stands for the usage of the Feature Construction technique,
+ outlined in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:The-feature-construction"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The row AVERAGE stands for the average error for all years and critical distances.
 \end_layout
 
 \begin_layout Standard
@@ -6412,6 +7285,263 @@ E.I.
 ,
  3053,
  2024.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "fc1"
+literal "false"
+
+\end_inset
+
+Dimitris Gavrilis,
+ Ioannis G.
+ Tsoulos,
+ Evangelos Dermatas,
+ Selecting and constructing features using grammatical evolution,
+ Pattern Recognition Letters 
+\series bold
+29
+\series default
+,pp.
+ 1358-1365,
+ 2008.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "rbf1"
+literal "false"
+
+\end_inset
+
+J.
+ Park and I.
+ W.
+ Sandberg,
+ Universal Approximation Using Radial-Basis-Function Networks,
+ Neural Computation 3,
+ pp.
+ 246-257,
+ 1991.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rbf2"
+literal "false"
+
+\end_inset
+
+H.
+ Yu,
+ T.
+ Xie,
+ S.
+ Paszczynski,
+ B.
+ M.
+ Wilamowski,
+ Advantages of Radial Basis Function Networks for Dynamic System Design,
+ in IEEE Transactions on Industrial Electronics 
+\series bold
+58
+\series default
+,
+ pp.
+ 5438-5450,
+ 2011.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2009)"
+key "weka_main"
+literal "false"
+
+\end_inset
+
+M.
+ Hall,
+ F.
+ Frank,
+ G.
+ Holmes,
+ B.
+ Pfahringer,
+ P.
+ Reutemann,
+ I.H.
+ Witten,
+ The WEKA data mining software:
+ an update.
+ ACM SIGKDD explorations newsletter 
+\series bold
+11
+\series default
+,
+ pp.
+ 10-18,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2022)"
+key "nnc_softx"
+literal "false"
+
+\end_inset
+
+Tsoulos,
+ I.
+ G.,
+ Tzallas,
+ A.,
+ & Tsalikakis,
+ D.
+ (2019).
+ NNC:
+ A tool based on Grammatical Evolution for data classification and differential equation solving.
+ SoftwareX,
+ 10,
+ 100297.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2022)"
+key "qfc"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ QFC:
+ A Parallel Software Tool for Feature Construction,
+ Based on Grammatical Evolution,
+ Algorithms 
+\series bold
+15
+\series default
+,
+ 295,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bpnn1"
+literal "false"
+
+\end_inset
+
+Vora,
+ K.,
+ & Yagnik,
+ S.
+ (2014).
+ A survey on backpropagation algorithms for feedforward neural networks.
+ International Journal of Engineering Development and Research,
+ 1(3),
+ 193-197.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "bpnn2"
+literal "false"
+
+\end_inset
+
+K.
+ Vora,
+ S.
+ Yagnik,
+ A survey on backpropagation algorithms for feedforward neural networks,
+ International Journal of Engineering Development and Research 
+\series bold
+1
+\series default
+,
+ pp.
+ 193-197,
+ 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rpropnn-1"
+literal "false"
+
+\end_inset
+
+Pajchrowski,
+ T.,
+ Zawirski,
+ K.,
+ & Nowopolski,
+ K.
+ (2014).
+ Neural speed controller trained online by means of modified RPROP algorithm.
+ IEEE transactions on industrial informatics,
+ 11(2),
+ 560-568.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rpropnn-2"
+literal "false"
+
+\end_inset
+
+Hermanto,
+ R.
+ P.
+ S.,
+ & Nugroho,
+ A.
+ (2018).
+ Waiting-time estimation in bank customer queues using RPROP neural networks.
+ Procedia Computer Science,
+ 135,
+ 35-42.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "powell"
+literal "true"
+
+\end_inset
+
+M.J.D Powell,
+ A Tolerant Algorithm for Linearly Constrained Optimization Calculations,
+ Mathematical Programming 
+\series bold
+45
+\series default
+,
+ pp.
+ 547-566,
+ 1989.
+ 
 \end_layout
 
 \begin_layout Standard
