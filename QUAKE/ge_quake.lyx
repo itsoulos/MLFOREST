@@ -1272,14 +1272,25 @@ http://ds.iris.edu/ieb/
 \end_inset
 
 .
+ The NSF SAGE Facility has been certified as a trustworthy data repository by the CoreTrustSeal Standards and Certification Board.
  The data were collected for the years 2004,
  2010,
  and 2012,
  with each year comprising over 100,000 recorded earthquake events.
+ For every recorded earthquake event,
+ comprehensive data were systematically gathered,
+ including the date,
+ exact time of occurrence,
+ geographic coordinates,depth,
+ and magnitude.
+ This information enabled temporal analyses and the identification of seismic patterns across different time intervals.
  Moreover,
  our data set employs the Moment Magnitude scale,
  as it operates effectively across a broader range of earthquake sizes,
  and is applicable on a global scale.
+ During the initial stages of preprocessing,
+ it became evident that earthquake events should be organized based on lithospheric plate boundaries rather than national borders,
+ which had initially been our approach.
  A preprocessing procedure was applied to the data,
  including the identification of the lithospheric plate associated with each earthquake.
  Subsequently,
@@ -1300,19 +1311,47 @@ https://volcano.si.edu/
  During the course of our experiments,
  we decided to proceed with earthquakes of magnitude 5 and above,
  as including lower-magnitude events would result in the model being trained primarily on the prediction of minor seismic occurrences.
+ We approached our research on earthquake magnitude prediction as a regression problem,
+ employing the technique of Grammatical Evolution.
+ To achieve this objective,
+ we used the following features as input variables:
+ date,
+ time,
+ latitude,
+ longitude,
+ depth,
+ lithospheric plate,
+ type of nearby volcano,
+ magnitude,
+ and magnitude code.
+ In addition,
+ a predefined distance from the epicenter of the target event (10 miles,
+ 25 miles,
+ 50 miles,
+ 100 miles,
+ and 500 miles) was also taken into account.
+ However,
+ this parameter did not appear to play a significant role in the outcome of our experiment.
+ The numerical output of the model predicted the earthquake’s intensity with high predictive accuracy,
+ mean absolute error below 0.5 magnitude units per event.
+\end_layout
+
+\begin_layout Standard
+The following section provides a concise summary as well as a more detailed analysis of our data set.
  In the year 2004,
  a total of 666 geographic regions were classified,
+ and used as an input for the regression model,
  within which 126,972 seismic events were recorded.
  Similarly,
  in 2010,
- 635 regions were classified,
+ 635 regions were defined and encoded as input features,
  corresponding to 294,432 earthquakes,
  while in 2012,
- 690 regions were classified,
+ 690 regions were established as categorical input variables,
  with a total of 370,582 recorded seismic events.
  Regarding tectonic plates,
  for each seismic event,
- we classified the tectonic plates involved in the corresponding region.
+ we classified and used as an input feature the tectonic plates involved in the corresponding region.
  In total,
  81 distinct combinations of lithospheric tectonic plates were identified.
  In relation to the classification of volcanoes,
@@ -1328,7 +1367,7 @@ https://volcano.si.edu/
  minor,
  and submarine.
  For each region containing a volcano,
- the corresponding category was marked with a value of 1,
+ the corresponding category was marked as an input feature with a value of 1,
  while a value of 0 was assigned when no volcano of that type was present.
 \end_layout
 

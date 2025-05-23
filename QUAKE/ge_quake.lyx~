@@ -3800,7 +3800,11 @@ Apply
 \begin_inset Formula $f_{i}$
 \end_inset
 
- the corresponding training error.
+ the training error of 
+\begin_inset Formula $M(x)$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
