@@ -1262,7 +1262,7 @@ In this paper,
  there were used open data,
  available from NSF Seismological Facility for the Earth Consortium (SAGE) and especially from the Interactive Earthquake Browser 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1272,6 +1272,14 @@ http://ds.iris.edu/ieb/
 \end_inset
 
 .
+ The data were obtained from the NSF,
+ as it offered greater functionality.
+ Specifically,
+ while the GEOFON program provided similar information,
+ it imposed a limitation on the maximum number of earthquakes retrievable per request (1,000 events),
+ which significantly constrained the selectable time range.
+ This is particularly restrictive,
+ given that approximately 1,000 seismic events can occur within a single day.
  The NSF SAGE Facility has been certified as a trustworthy data repository by the CoreTrustSeal Standards and Certification Board.
  The data were collected for the years 2004,
  2010,
@@ -1394,7 +1402,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1738,6 +1746,68 @@ Earthquakes
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The transformation from raw seismic events to structured input for machine learning was conducted as follows:
+ 
+\end_layout
+
+\begin_layout Enumerate
+On the Earthquake Interactive Browser platform,
+ the "maximum earthquakes" parameter was set to 25,000 in order to extract the maximum available number of records.
+\end_layout
+
+\begin_layout Enumerate
+The "time range" was then adjusted to correspond to the specific year or range of years targeted for data collection.
+\end_layout
+
+\begin_layout Enumerate
+Subsequently,
+ the "magnitude range" was specified,
+ the filter was applied,
+ and the dataset was downloaded in Excel format.
+\end_layout
+
+\begin_layout Enumerate
+The final dataset was further processed by creating a separate column for each variable,
+ including:
+ Year,
+ Month,
+ Day,
+ Time,
+ Latitude,
+ Longitude,
+ Depth,
+ Magnitude,
+ Magnitude Code,
+ Region,
+ Region Code,
+ Lithospheric/Tectonic Plate,
+ Lithospheric/Tectonic Plate Code,
+ Stratovolcano,
+ Volcanic Field,
+ Lava Dome,
+ Caldera,
+ Complex,
+ Compound,
+ Shield,
+ Pyroclastic,
+ Minor,
+ and Submarine.
+\end_layout
+
+\begin_layout Standard
+In order to enhance the reliability of the used dataset,
+ extensive data cleaning was performed by removing several thousands of records from each year.
+ For instance,
+ in 2004,
+ a total of 214.170 entries were excluded,
+ in 2010,
+ 325.278 records were removed,
+ and in 2012,
+ 403.035 were similarly discarded.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -2514,10 +2584,10 @@ literal "false"
  The main steps of this method have as follows:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Initialization step
+Step 1 - Initialization step
 \series default
 .
 \end_layout
@@ -2582,10 +2652,10 @@ Set
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Fitness calculation step
+Step 2 - Fitness calculation step
 \series default
 .
 \end_layout
@@ -2675,10 +2745,10 @@ End For
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Genetic operations step
+Step 3 - Genetic operations step
 \series default
 .
 \end_layout
@@ -2745,10 +2815,10 @@ Mutation procedure
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Termination check step
+Step 4 - Termination check step
 \series default
 .
 \end_layout
@@ -3132,7 +3202,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout LyX-Code
 S:=<Sigval>                          (0)
@@ -3233,7 +3303,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3270,10 +3340,10 @@ name "fig:nnExample"
 The steps of the method used to construct artificial neural networks are shown below:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Initialization step
+Step 1 - Initialization step
 \series default
 .
 \end_layout
@@ -3338,10 +3408,10 @@ Set
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Fitness calculation step
+Step 2 - Fitness calculation step
 \series default
 .
 \end_layout
@@ -3429,10 +3499,10 @@ End For
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Application of genetic operations
+Step 3 - Application of genetic operations
 \series default
 .
  Apply the same genetic operations as in the algorithm of subsection 
@@ -3449,10 +3519,10 @@ nolink "false"
 .
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Termination check step
+Step 4 - Termination check step
 \series default
 .
 \end_layout
@@ -4261,6 +4331,14 @@ The column
  denotes the critical distance,
  expressed as mile,
  used in the pre - processing of the earthquake data.
+\end_layout
+
+\begin_layout Enumerate
+The column RBF
+\end_layout
+
+\begin_layout Enumerate
+The column SVM
 \end_layout
 
 \begin_layout Enumerate
