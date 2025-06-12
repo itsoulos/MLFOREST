@@ -241,12 +241,11 @@ int main(int argc, char *argv[])
          }
         QuakeRecord tt = readLine(line);
         quake.append(tt);
-        if(tt.magcode>=3 )
+        if(tt.magcode>=3  && tt.magnitude>=5.0)
             bigQuake.append(tt);
      }
      fp.close();
      int icount=0;
-     printf("big %d\n",bigQuake.size());
      for(QuakeRecord & x : bigQuake)
      {
          QVector<QuakeRecord> list = getQuakesBeforeMajor(x);

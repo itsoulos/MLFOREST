@@ -3340,10 +3340,10 @@ name "fig:nnExample"
 The steps of the method used to construct artificial neural networks are shown below:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Initialization step
+Step 1 - Initialization step
 \series default
 .
 \end_layout
@@ -3408,10 +3408,10 @@ Set
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Fitness calculation step
+Step 2 - Fitness calculation step
 \series default
 .
 \end_layout
@@ -3499,10 +3499,10 @@ End For
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Application of genetic operations
+Step 3 - Application of genetic operations
 \series default
 .
  Apply the same genetic operations as in the algorithm of subsection 
@@ -3519,10 +3519,10 @@ nolink "false"
 .
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Termination check step
+Step 4 - Termination check step
 \series default
 .
 \end_layout
@@ -4334,7 +4334,7 @@ The column
 \end_layout
 
 \begin_layout Enumerate
-The column RBF
+The column LSTM
 \end_layout
 
 \begin_layout Enumerate
@@ -4518,7 +4518,7 @@ YEAR
 
 \series bold
 \size footnotesize
-RBF
+LSTM
 \end_layout
 
 \end_inset
@@ -4637,7 +4637,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.17
+0.25
 \end_layout
 
 \end_inset
@@ -4749,7 +4749,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.27
+0.23
 \end_layout
 
 \end_inset
@@ -4861,7 +4861,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.51
+0.24
 \end_layout
 
 \end_inset
@@ -4973,7 +4973,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.91
+0.23
 \end_layout
 
 \end_inset
@@ -5085,7 +5085,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.18
+0.24
 \end_layout
 
 \end_inset
@@ -5197,7 +5197,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.22
+0.24
 \end_layout
 
 \end_inset
@@ -5309,7 +5309,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.19
+0.24
 \end_layout
 
 \end_inset
@@ -5421,7 +5421,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.18
+0.23
 \end_layout
 
 \end_inset
@@ -5533,7 +5533,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.19
+0.24
 \end_layout
 
 \end_inset
@@ -5645,7 +5645,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.35
+0.25
 \end_layout
 
 \end_inset
@@ -5757,7 +5757,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.23
+0.21
 \end_layout
 
 \end_inset
@@ -5869,7 +5869,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.43
+0.24
 \end_layout
 
 \end_inset
@@ -5981,7 +5981,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.50
+0.22
 \end_layout
 
 \end_inset
@@ -6093,7 +6093,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.29
+0.23
 \end_layout
 
 \end_inset
@@ -6205,7 +6205,7 @@ FC
 \begin_layout Plain Layout
 
 \size footnotesize
-0.20
+0.22
 \end_layout
 
 \end_inset
