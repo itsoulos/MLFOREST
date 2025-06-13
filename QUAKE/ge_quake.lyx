@@ -339,26 +339,15 @@ Throughout history,
  Earthquakes,
  as sudden and often devastating events,
  inspired a range of symbolic and mythological interpretations across different civilizations.
- In ancient Greece,
- for example,
- seismic activity was attributed to the giant Enceladus,
- who,
- according to myth,
- was buried beneath the earth by the gods and would cause tremors as he struggled to break free from his subterranean prison.
- Similarly,
- in Norse mythology,
- earthquakes were believed to be the result of the imprisoned god Loki,
- who writhed in pain beneath the ground,
- shaking the earth as a consequence of his suffering.
- Other cultural traditions also developed unique cosmologies to explain seismic events.
  It was not until the 18th and 19th centuries that a more positivist and scientific approach began to emerge regarding the explanation of earthquakes,
  recognizing their origin as stemming from processes occurring beneath the Earth’s surface.
- In the present century,
- the question of how earthquakes occur has been resolved,
+ A pivotal moment in the emergence of modern seismology was the Lisbon earthquake of 1755,
+ which marked a significant shift towards scientific inquiry.
+ This means that the question of how earthquakes occur has been resolved,
  thanks to advancements in scientific,
  geological,
- and geophysical research.
- It is now well understood that seismic events result from the collision and movement of lithospheric or tectonic plates.
+ and geophysical research∙ ιt is now well understood that seismic events result from the collision,
+ and movement of lithospheric or tectonic plates.
  The contemporary challenge that emerges,
  however,
  lies in whether such seismic phenomena can be accurately predicted.
@@ -1200,6 +1189,27 @@ literal "false"
 \end_inset
 
  for the prediction of magnitude of earthquakes and the results are presented and discussed.
+\end_layout
+
+\begin_layout Standard
+The limitations of the proposed work stem primarily from those we ourselves imposed,
+ as it is focused on the analysis of data from a three-year period.
+ Moreover,
+ in order to avoid overfitting,
+ we deliberately excluded a significant portion of data from each year and concentrated on seismic events with a magnitude greater than 5.
+ 
+\end_layout
+
+\begin_layout Standard
+Despite these constraints,
+ our study highlighted the considerable potential of Grammatical Evolution in this domain,
+ due to its consistently dynamic adaptability,
+ high predictive accuracy,
+ and low error rates even for earthquakes,
+ occurring at distances ranging from 25 to 500 miles.
+ Therefore,
+ Grammatical Evolution proves to be both pioneering and innovative within the field,
+ offering substantial promise to advance the discipline of seismology.
 \end_layout
 
 \begin_layout Standard
