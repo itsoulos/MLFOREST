@@ -1211,6 +1211,13 @@ Despite these constraints,
  Therefore,
  Grammatical Evolution proves to be both pioneering and innovative within the field,
  offering substantial promise to advance the discipline of seismology.
+ The methods used in this work,
+ which make systematic use of the Grammatical Evolution technique,
+ include the construction of artificial features,
+ the construction of programming rules,
+ and the creation of Artificial Neural Networks.
+ The above techniques can be used to effectively explore the objective problem space,
+ as they have the ability to isolate the most important features of the problem but also to detect and present hidden correlations between the features of the problem.
 \end_layout
 
 \begin_layout Standard
@@ -1818,7 +1825,29 @@ In order to enhance the reliability of the used dataset,
  325.278 records were removed,
  and in 2012,
  403.035 were similarly discarded.
- 
+ The extensive data cleaning process played a crucial role in preventing our model from predominantly learning to predict the values of low-magnitude earthquakes,
+ which vastly outnumbered higher-magnitude events,
+ by several hundreds of thousands.
+\end_layout
+
+\begin_layout Standard
+In the used preprocessing pipeline,
+ categorical variables such as geographic regions,
+ and lithospheric / tectonic plates were encoded using a unique integer-based labeling scheme.
+ Specifically,
+ each distinct geographic region and tectonic plate was assigned a unique numeric identifier,
+ ranging sequentially from 1 up to the number of unique entries in the respective category.
+ Regarding volcanic types,
+ a binary encoding approach was applied.
+ For each type of volcano (e.g.,
+ stratovolcano,
+ caldera,
+ shield,
+ etc.),
+ we created a binary feature indicating the presence or absence of that specific volcano type within a given region.
+ A value of 1 was assigned if the volcano type was present,
+ and 0 otherwise.
+ This strategy enabled the model to capture the influence of specific volcanic characteristics while maintaining compatibility with the GE algorithm.
 \end_layout
 
 \begin_layout Subsection
@@ -2746,6 +2775,11 @@ The set
 \end_inset
 
 .
+ In the current implementation of Grammatical Evolution,
+ the fitness function is defined as the sum of squared errors between the predicted and actual earthquake magnitudes across the training set.
+ This fitness function is crucial in guiding the evolutionary process by favoring candidate solutions (programs) that minimize prediction error.
+ As earthquake magnitude prediction is a regression task,
+ this formulation ensures that evolved models are optimized for minimizing the deviation from actual magnitudes.
 \end_layout
 
 \end_deeper
@@ -4059,6 +4093,7 @@ nolink "false"
 \end_inset
 
 .
+ The parameters used in the individual Genetic Algorithms have been successfully used in the past in a multitude of research works and furthermore constitute a compromise between the speed and performance of the algorithms used in the present work.
 \end_layout
 
 \begin_layout Standard
@@ -4345,11 +4380,44 @@ The column
 \end_layout
 
 \begin_layout Enumerate
-The column LSTM
+The column LSTM denotes the incorporation of the Long short - term memory (LSTM) neural network 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lstm"
+literal "false"
+
+\end_inset
+
+ as implemented in the PyTorch programming library 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pytorch"
+literal "false"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
-The column SVM
+The column SVM stands for the usage of the Support Vector Machines 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svm"
+literal "false"
+
+\end_inset
+
+ as coded in the LibSvm library 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "libsvm"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -6876,7 +6944,26 @@ name "fig:distanceError"
 \end_layout
 
 \begin_layout Standard
-......NOISE_RESULTS....
+To verify the stability of the application of Grammatical Evolution to the present seismic data,
+ an additional experiment was performed where random noise in the range of 0.1%-5% was applied to the problem features one by one.
+ The neural construction method guided by the Grammatical Evolution was incorporated for the data with the noise and the average regression error as measured on the test is shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:noiseResults"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ The noise was applied in the results of the year 2010,
+ where the critical distance 
+\begin_inset Formula $D_{c}$
+\end_inset
+
+ was set to 10 miles.
 \end_layout
 
 \begin_layout Standard
@@ -6885,7 +6972,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -6907,7 +6994,8 @@ name "tab:noiseResults"
 
 \end_inset
 
-
+ The bold notation is used to indicate the higher test error as measured on the corresponding test set.
+ 
 \end_layout
 
 \end_inset
@@ -7917,7 +8005,8 @@ FEATURE
 
 \end_inset
 
-
+As one can see from the above experimental results,
+ only in a few cases of noise and only in a limited number of features did a partial deviation in the error appear compared to the case where there is no noise in the data.
 \end_layout
 
 \begin_layout Section
@@ -9563,6 +9652,101 @@ I.G.
 ,
  295,
  2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2019)"
+key "lstm"
+literal "false"
+
+\end_inset
+
+Yu,
+ Y.,
+ Si,
+ X.,
+ Hu,
+ C.,
+ & Zhang,
+ J.
+ (2019).
+ A review of recurrent neural networks:
+ LSTM cells and network architectures.
+ Neural computation,
+ 31(7),
+ 1235-1270.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2021)"
+key "pytorch"
+literal "false"
+
+\end_inset
+
+Ketkar,
+ N.,
+ Moolayil,
+ J.,
+ Ketkar,
+ N.,
+ & Moolayil,
+ J.
+ (2021).
+ Introduction to pytorch.
+ Deep learning with python:
+ learn best practices of deep learning models with PyTorch,
+ 27-91.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2009)"
+key "svm"
+literal "false"
+
+\end_inset
+
+Xue,
+ H.,
+ Yang,
+ Q.,
+ & Chen,
+ S.
+ (2009).
+ SVM:
+ Support vector machines.
+ In The top ten algorithms in data mining (pp.
+ 51-74).
+ Chapman and Hall/CRC.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2009)"
+key "libsvm"
+literal "false"
+
+\end_inset
+
+Chang,
+ C.
+ C.,
+ & Lin,
+ C.
+ J.
+ (2011).
+ LIBSVM:
+ a library for support vector machines.
+ ACM transactions on intelligent systems and technology (TIST),
+ 2(3),
+ 1-27.
 \end_layout
 
 \begin_layout Bibliography
