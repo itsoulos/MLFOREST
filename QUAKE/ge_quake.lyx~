@@ -1371,7 +1371,7 @@ The following section provides a concise summary as well as a more detailed anal
  In the year 2004,
  a total of 666 geographic regions were classified,
  and used as an input for the regression model,
- within which 126,972 seismic events were recorded.
+ within which 666126,972 seismic events were recorded.
  Similarly,
  in 2010,
  635 regions were defined and encoded as input features,
@@ -1837,40 +1837,17 @@ In the used preprocessing pipeline,
  Specifically,
  each distinct geographic region and tectonic plate was assigned a unique numeric identifier,
  ranging sequentially from 1 up to the number of unique entries in the respective category.
- The codification outlined in Table was used to create the datasets incorporated in the experiments.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Codification used to construct the used datasets.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ Regarding volcanic types,
+ a binary encoding approach was applied.
+ For each type of volcano (e.g.,
+ stratovolcano,
+ caldera,
+ shield,
+ etc.),
+ we created a binary feature indicating the presence or absence of that specific volcano type within a given region.
+ A value of 1 was assigned if the volcano type was present,
+ and 0 otherwise.
+ This strategy enabled the model to capture the influence of specific volcanic characteristics while maintaining compatibility with the GE algorithm.
 \end_layout
 
 \begin_layout Subsection
@@ -6518,6 +6495,18 @@ AVERAGE
 
 \end_inset
 
+An example of constructed features for the year 2010 is presented below:
+ 
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+f_{1}(x) & = & \frac{-4}{99.35}x_{2}+\cos\left(x_{3}-877.38x_{6}+\sin\left(43.56x_{4}+x_{6}-99.35x_{2}\right)\right)\\
+f_{2}(x) & = & 2x_{13}-95.2x_{2}+948.94x_{1}
+\end{array}
+\]
+
+\end_inset
+
 
 \end_layout
 
@@ -8072,6 +8061,22 @@ As future directions,
  Another avenue could involve optimizing the method's hyperparameters and incorporating additional geophysical parameters for even more accurate predictions.
  Finally,
  the real-time application of the model and its integration into early warning frameworks could be significant steps toward the practical utilization of this research's findings.
+\end_layout
+
+\begin_layout Standard
+Furthermore,
+ as previously mentioned in the introduction,
+ several developments of various models have focused on short-term early warning systems,
+ typically offering a lead time of approximately one minute,
+ based on real-time detection of tectonic or lithospheric plate movement as it occurs.
+ In contrast,
+ our study not only targets seismic events of magnitude 5.0 and above,
+ but also takes a step further by demonstrating the potential to predict such events before any plate movement is detected.
+ Consequently,
+ our model can potentially be integrated into a broader early warning framework capable of delivering mid to long-term predictions of earthquake occurrences,
+ ranging from hours or days to even months in advance,
+ thereby offering a significantly enhanced preparedness window,
+ and risk mitigation efforts.
 \end_layout
 
 \begin_layout Author Contributions
