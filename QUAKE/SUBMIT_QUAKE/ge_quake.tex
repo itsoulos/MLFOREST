@@ -39,31 +39,25 @@ of Ioannina, Greece; v.charilog@uoi.gr}
 \abstract{Throughout history, human societies have sought to explain natural
 phenomena through the lens of mythology. Earthquakes, as sudden and
 often devastating events, inspired a range of symbolic and mythological
-interpretations across different civilizations. In ancient Greece,
-for example, seismic activity was attributed to the giant Enceladus,
-who, according to myth, was buried beneath the earth by the gods and
-would cause tremors as he struggled to break free from his subterranean
-prison. Similarly, in Norse mythology, earthquakes were believed to
-be the result of the imprisoned god Loki, who writhed in pain beneath
-the ground, shaking the earth as a consequence of his suffering. Other
-cultural traditions also developed unique cosmologies to explain seismic
-events. It was not until the 18th and 19th centuries that a more positivist
-and scientific approach began to emerge regarding the explanation
-of earthquakes, recognizing their origin as stemming from processes
-occurring beneath the Earth’s surface. In the present century, the
-question of how earthquakes occur has been resolved, thanks to advancements
-in scientific, geological, and geophysical research. It is now well
-understood that seismic events result from the collision and movement
-of lithospheric or tectonic plates. The contemporary challenge that
-emerges, however, lies in whether such seismic phenomena can be accurately
-predicted. In this paper, a systematic attempt is made to use techniques
-based on Grammatical Evolution to determine the magnitude of earthquakes.
-These techniques use freely available data in which the history of
-large earthquakes is introduced before the application of the proposed
-techniques. From the execution of the experiments, it became clear
-that the use of these techniques can estimate the magnitude of earthquakes
-more effectively compared to other machine learning techniques from
-the relevant literature.}
+interpretations across different civilizations. It was not until the
+18th and 19th centuries that a more positivist and scientific approach
+began to emerge regarding the explanation of earthquakes, recognizing
+their origin as stemming from processes occurring beneath the Earth’s
+surface. A pivotal moment in the emergence of modern seismology was
+the Lisbon earthquake of 1755, which marked a significant shift towards
+scientific inquiry. This means that the question of how earthquakes
+occur has been resolved, thanks to advancements in scientific, geological,
+and geophysical research, it is now well understood that seismic events
+result from the collision, and movement of lithospheric or tectonic
+plates. The contemporary challenge that emerges, however, lies in
+whether such seismic phenomena can be accurately predicted. In this
+paper, a systematic attempt is made to use techniques based on Grammatical
+Evolution to determine the magnitude of earthquakes. These techniques
+use freely available data in which the history of large earthquakes
+is introduced before the application of the proposed techniques. From
+the execution of the experiments, it became clear that the use of
+these techniques can estimate the magnitude of earthquakes more effectively
+compared to other machine learning techniques from the relevant literature.}
 
 
 \keyword{Earthquakes; Machine learning; Evolutionary computation; Grammatical
@@ -448,6 +442,51 @@ Evolution was compared against various optimization techniques incorporated
 to train artificial neural networks \citep{nn1,nn2} for the prediction
 of magnitude of earthquakes and the results are presented and discussed.
 
+The limitations of the proposed work stem primarily from those we
+ourselves imposed, as it is focused on the analysis of data from a
+three-year period. Moreover, in order to avoid overfitting, we deliberately
+excluded a significant portion of data from each year and concentrated
+on seismic events with a magnitude greater than 5. 
+
+In this study, is was observed that machine learning and soft computing
+techniques have a longstanding presence in the field of seismology.
+For instance, Artificial Neural Networks (ANNs) were introduced into
+the field of seismology in 1994 \citep{neural_quake}. The initial
+application of Deep Neural Networks (DNNs), featuring two hidden layers,
+emerged in 2002 \citep{layered_quake}, while the earliest implementation
+of Recurrent Neural Networks (RNNs) in the context of seismology appeared
+in 2007 \citep{neural_magnitude}. However, they have yet to achieve
+the so-called \textquotedbl triple prediction\textquotedbl{} namely,
+the accurate forecasting: of the date and time, location, and precise
+magnitude of seismic events. For this reason, we adopt a groundbreaking
+approach by employing Grammatical Evolution in 2025, a novel technique
+within the domain. Furthermore, our initial approach involved the
+application of machine learning techniques. Specifically, we conducted
+experiments using the following algorithms: (LSTM, RBF, MLP (BP, RPROP,
+BFGS) \& SVM ). Subsequently, we carried out an exploratory experiment
+employing Grammatical Evolution. The results proved to be so compelling
+that we decided to shift our focus and pursue this novel direction
+in greater depth. Moreover, our approach distinguishes itself from
+other studies in the field, as most existing research relies on data
+obtained directly from seismographs and primarily focuses on localized
+regions. In contrast, we process historical earthquake data on a global
+scale, allowing for broader generalization and pattern recognition
+
+Despite these constraints, our study highlighted the considerable
+potential of Grammatical Evolution in this domain, due to its consistently
+dynamic adaptability, high predictive accuracy, and low error rates
+even for earthquakes, occurring at distances ranging from 25 to 500
+miles. Therefore, Grammatical Evolution proves to be both pioneering
+and innovative within the field, offering substantial promise to advance
+the discipline of seismology. The methods used in this work, which
+make systematic use of the Grammatical Evolution technique, include
+the construction of artificial features, the construction of programming
+rules, and the creation of Artificial Neural Networks. The above techniques
+can be used to effectively explore the objective problem space, as
+they have the ability to isolate the most important features of the
+problem but also to detect and present hidden correlations between
+the features of the problem.
+
 The remaining of this paper has the following structure: the section
 \ref{sec:Materials-and-Methods} presents the used dataset as well
 as the proposed machine learning techniques, the section \ref{sec:Results}
@@ -460,18 +499,24 @@ presents some conclusions.
 
 In this paper, there were used open data, available from NSF Seismological
 Facility for the Earth Consortium (SAGE) and especially from the Interactive
-Earthquake Browser \url{http://ds.iris.edu/ieb/}. The NSF SAGE Facility
-has been certified as a trustworthy data repository by the CoreTrustSeal
-Standards and Certification Board. The data were collected for the
-years 2004, 2010, and 2012, with each year comprising over 100,000
-recorded earthquake events. For every recorded earthquake event, comprehensive
-data were systematically gathered, including the date, exact time
-of occurrence, geographic coordinates,depth, and magnitude. This information
-enabled temporal analyses and the identification of seismic patterns
-across different time intervals. Moreover, our data set employs the
-Moment Magnitude scale, as it operates effectively across a broader
-range of earthquake sizes, and is applicable on a global scale. During
-the initial stages of preprocessing, it became evident that earthquake
+Earthquake Browser \url{http://ds.iris.edu/ieb/}. The data were obtained
+from the NSF, as it offered greater functionality. Specifically, while
+the GEOFON program provided similar information, it imposed a limitation
+on the maximum number of earthquakes retrievable per request (1,000
+events), which significantly constrained the selectable time range.
+This is particularly restrictive, given that approximately 1,000 seismic
+events can occur within a single day. The NSF SAGE Facility has been
+certified as a trustworthy data repository by the CoreTrustSeal Standards
+and Certification Board. The data were collected for the years 2004,
+2010, and 2012, with each year comprising over 100,000 recorded earthquake
+events. For every recorded earthquake event, comprehensive data were
+systematically gathered, including the date, exact time of occurrence,
+geographic coordinates,depth, and magnitude. This information enabled
+temporal analyses and the identification of seismic patterns across
+different time intervals. Moreover, our data set employs the Moment
+Magnitude scale, as it operates effectively across a broader range
+of earthquake sizes, and is applicable on a global scale. During the
+initial stages of preprocessing, it became evident that earthquake
 events should be organized based on lithospheric plate boundaries
 rather than national borders, which had initially been our approach.
 A preprocessing procedure was applied to the data, including the identification
@@ -496,10 +541,10 @@ accuracy, mean absolute error below 0.5 magnitude units per event.
 The following section provides a concise summary as well as a more
 detailed analysis of our data set. In the year 2004, a total of 666
 geographic regions were classified, and used as an input for the regression
-model, within which 126,972 seismic events were recorded. Similarly,
+model, within which 215,753 seismic events were recorded. Similarly,
 in 2010, 635 regions were defined and encoded as input features, corresponding
-to 294,432 earthquakes, while in 2012, 690 regions were established
-as categorical input variables, with a total of 370,582 recorded seismic
+to 327,909 earthquakes, while in 2012, 690 regions were established
+as categorical input variables, with a total of 405,153 recorded seismic
 events. Regarding tectonic plates, for each seismic event, we classified
 and used as an input feature the tectonic plates involved in the corresponding
 region. In total, 81 distinct combinations of lithospheric tectonic
@@ -539,6 +584,47 @@ Earthquakes & 126.972 & 294.432 & 370.582\tabularnewline
 \end{tabular*}
 \end{table}
 
+The transformation from raw seismic events to structured input for
+machine learning was conducted as follows: 
+\begin{enumerate}
+\item On the Earthquake Interactive Browser platform, the \textquotedbl maximum
+earthquakes\textquotedbl{} parameter was set to 25,000 in order to
+extract the maximum available number of records.
+\item The \textquotedbl time range\textquotedbl{} was then adjusted to
+correspond to the specific year or range of years targeted for data
+collection.
+\item Subsequently, the \textquotedbl magnitude range\textquotedbl{} was
+specified, the filter was applied, and the dataset was downloaded
+in Excel format.
+\item The final dataset was further processed by creating a separate column
+for each variable, including: Year, Month, Day, Time, Latitude, Longitude,
+Depth, Magnitude, Magnitude Code, Region, Region Code, Lithospheric/Tectonic
+Plate, Lithospheric/Tectonic Plate Code, Stratovolcano, Volcanic Field,
+Lava Dome, Caldera, Complex, Compound, Shield, Pyroclastic, Minor,
+and Submarine.
+\end{enumerate}
+In order to enhance the reliability of the used dataset, extensive
+data cleaning was performed by removing several thousands of records
+from each year. For instance, in 2004, a total of 214.170 entries
+were excluded, in 2010, 325.278 records were removed, and in 2012,
+403.035 were similarly discarded. The extensive data cleaning process
+played a crucial role in preventing our model from predominantly learning
+to predict the values of low-magnitude earthquakes, which vastly outnumbered
+higher-magnitude events, by several hundreds of thousands.
+
+In the used preprocessing pipeline, categorical variables such as
+geographic regions, and lithospheric / tectonic plates were encoded
+using a unique integer-based labeling scheme. Specifically, each distinct
+geographic region and tectonic plate was assigned a unique numeric
+identifier, ranging sequentially from 1 up to the number of unique
+entries in the respective category. Regarding volcanic types, a binary
+encoding approach was applied. For each type of volcano (e.g., stratovolcano,
+caldera, shield, etc.), we created a binary feature indicating the
+presence or absence of that specific volcano type within a given region.
+A value of 1 was assigned if the volcano type was present, and 0 otherwise.
+This strategy enabled the model to capture the influence of specific
+volcanic characteristics while maintaining compatibility with the
+GE algorithm.
 
 \subsection{Grammatical Evolution preliminaries }
 
@@ -678,8 +764,8 @@ This method can produce rules in a human readable form, that can be
 used in classification and regression problems without any prior knowledge
 of the the objective problem. The main steps of this method have as
 follows:
-\begin{enumerate}
-\item \textbf{Initialization step}.
+\begin{itemize}
+\item \textbf{Step 1 - Initialization step}.
 \begin{enumerate}
 \item \textbf{Set} $N_{c}$ the number of chromosomes and as $N_{g}$ the
 maximum number of allowed generations.
@@ -689,7 +775,7 @@ and as $p_{m}$ the corresponding mutation rate.
 chromosome is considered as a set of randomly selected positive integers.
 \item \textbf{Set} $k=0$, the generation counter.
 \end{enumerate}
-\item \textbf{Fitness calculation step}.
+\item \textbf{Step 2 - Fitness calculation step}.
 \begin{enumerate}
 \item \textbf{For} $i=1,\ldots,N_{c}$ \textbf{do}
 \begin{enumerate}
@@ -704,10 +790,18 @@ f_{i}=\sum_{j=1}^{M}\left(P_{i}\left(x_{j}\right)-y_{j}\right)^{2}
 The set $\left(x_{j},y_{j}\right),\ x\in R^{N},j=1,\ldots,M$ defines
 the training set of the objective problem, where the value$y_{j}$
 is considered as the actual output for the input pattern $x_{j}$.
+In the current implementation of Grammatical Evolution, the fitness
+function is defined as the sum of squared errors between the predicted
+and actual earthquake magnitudes across the training set. This fitness
+function is crucial in guiding the evolutionary process by favoring
+candidate solutions (programs) that minimize prediction error. As
+earthquake magnitude prediction is a regression task, this formulation
+ensures that evolved models are optimized for minimizing the deviation
+from actual magnitudes.
 \end{enumerate}
 \item \textbf{End For}
 \end{enumerate}
-\item \textbf{Genetic operations step}.
+\item \textbf{Step 3 - Genetic operations step}.
 \begin{enumerate}
 \item \textbf{Select} the best $\left(1-p_{s}\right)\times N_{c}$ chromosomes
 from the current population. These chromosomes will be transferred
@@ -721,12 +815,12 @@ tournament selection.
 a random number $r\le1$ is selected. The corresponding element is
 altered randomly when $r\le p_{m}$
 \end{enumerate}
-\item \textbf{Termination check step}.
+\item \textbf{Step 4 - Termination check step}.
 \begin{enumerate}
 \item \textbf{Set} $k=k+1$
 \item \textbf{If} $k<N_{g}$ goto Fitness Calculation Step.
 \end{enumerate}
-\end{enumerate}
+\end{itemize}
 \begin{figure}[H]
 \caption{The BNF grammar used in the method that produces rules for classification
 and data fitting problems.\label{fig:ruleGrammar}}
@@ -898,8 +992,8 @@ through Grammatical Evolution.\label{fig:nncGrammar}}
 \end{figure}
 The steps of the method used to construct artificial neural networks
 are shown below:
-\begin{enumerate}
-\item \textbf{Initialization step}.
+\begin{itemize}
+\item \textbf{Step 1 - Initialization step}.
 \begin{enumerate}
 \item \textbf{Define} as $N_{c}$ the number of chromosomes in the genetic
 population and as $N_{g}$ the total number of allowed generations.
@@ -909,7 +1003,7 @@ used mutation rate.
 chromosome is considered as a set of randomly selected positive integers.
 \item \textbf{Set} $k=0$, as the generation counter.
 \end{enumerate}
-\item \textbf{Fitness calculation step}.
+\item \textbf{Step 2 - Fitness calculation step}.
 \begin{enumerate}
 \item \textbf{For} $i=1,\ldots,N_{c}$ \textbf{do}
 \begin{enumerate}
@@ -925,15 +1019,15 @@ f_{i}=\sum_{j=1}^{M}\left(N_{i}\left(\overrightarrow{x_{j}},\overrightarrow{w}\r
 \end{enumerate}
 \item \textbf{End For}
 \end{enumerate}
-\item \textbf{Application of genetic operations}. Apply the same genetic
-operations as in the algorithm of subsection \ref{subsec:The-rule-production}.
-\item \textbf{Termination check step}.
+\item \textbf{Step 3 - Application of genetic operations}. Apply the same
+genetic operations as in the algorithm of subsection \ref{subsec:The-rule-production}.
+\item \textbf{Step 4 - Termination check step}.
 \begin{enumerate}
 \item \textbf{Set} $k=k+1$
 \item \textbf{Terminate} if $k\ge N_{g}$
 \item \textbf{Go to} fitness calculation step.
 \end{enumerate}
-\end{enumerate}
+\end{itemize}
 
 \subsection{The feature construction method\label{subsec:The-feature-construction}}
 
@@ -1052,6 +1146,10 @@ Here the test set $T$ is defined as the set $T=\left(x_{i},y_{i}\right),\ i=1,\l
 and the equation $M\left(\overrightarrow{x}\right)$ denotes the application
 of the machine learning $M(x)$ on the input pattern $\overrightarrow{x}$.
 The values for the experimental parameters are outlined in Table \ref{tab:settings}.
+The parameters used in the individual Genetic Algorithms have been
+successfully used in the past in a multitude of research works and
+furthermore constitute a compromise between the speed and performance
+of the algorithms used in the present work.
 
 \begin{table}[H]
 \caption{The values used for the experimental parameters.\label{tab:settings}}
@@ -1081,6 +1179,11 @@ $H$ & Weights & 10\tabularnewline
 \item The column year denotes the recording year for the earthquakes.
 \item The column $D_{c}$ denotes the critical distance, expressed as mile,
 used in the pre - processing of the earthquake data.
+\item The column LSTM denotes the incorporation of the Long short - term
+memory (LSTM) neural network \citep{lstm} as implemented in the PyTorch
+programming library \citep{pytorch}. 
+\item The column SVM stands for the usage of the Support Vector Machines
+\citep{svm} as coded in the LibSvm library \citep{libsvm}.
 \item The column MLP(BP) denotes the incorporation of the Back Propagation
 algorithm \citep{bpnn1,bpnn2} in the training of a neural network
 with $H=10$ processing nodes.
@@ -1102,100 +1205,127 @@ distances.
 \caption{Experimental results using a series of machine learning methods.\label{tab:expResults}}
 
 \centering{}%
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
 \hline 
-\textbf{YEAR} & \textbf{$D_{c}$} & \textbf{MLP(BP)} & \textbf{MLP(RPROP)} & \textbf{MLP(BFGS)} & \textbf{RULE} & \textbf{NNC} & \textbf{FC}\tabularnewline
+{\footnotesize\textbf{YEAR}} & {\footnotesize\textbf{$D_{c}$}} & {\footnotesize\textbf{LSTM}} & {\footnotesize\textbf{SVM}} & {\footnotesize\textbf{MLP(BP)}} & {\footnotesize\textbf{MLP(RPROP)}} & {\footnotesize\textbf{MLP(BFGS)}} & {\footnotesize\textbf{RULE}} & {\footnotesize\textbf{NNC}} & {\footnotesize\textbf{FC}}\tabularnewline
 \hline 
 \hline 
-2004 & 10 & 0.44 & 0.24 & 0.82 & 0.16 & 0.16 & 0.17\tabularnewline
+{\footnotesize 2004} & {\footnotesize 10} & {\footnotesize 0.25} & {\footnotesize 0.29} & {\footnotesize 0.44} & {\footnotesize 0.24} & {\footnotesize 0.82} & {\footnotesize 0.16} & {\footnotesize 0.16} & {\footnotesize 0.17}\tabularnewline
 \hline 
-2004 & 25 & 0.42 & 0.24 & 0.98 & 0.17 & 0.17 & 0.17\tabularnewline
+{\footnotesize 2004} & {\footnotesize 25} & {\footnotesize 0.23} & {\footnotesize 0.29} & {\footnotesize 0.42} & {\footnotesize 0.24} & {\footnotesize 0.98} & {\footnotesize 0.17} & {\footnotesize 0.17} & {\footnotesize 0.17}\tabularnewline
 \hline 
-2004 & 50 & 0.43 & 0.24 & 0.87 & 0.17 & 0.17 & 0.16\tabularnewline
+{\footnotesize 2004} & {\footnotesize 50} & {\footnotesize 0.24} & {\footnotesize 0.29} & {\footnotesize 0.43} & {\footnotesize 0.24} & {\footnotesize 0.87} & {\footnotesize 0.17} & {\footnotesize 0.17} & {\footnotesize 0.16}\tabularnewline
 \hline 
-2004 & 100 & 0.35 & 0.22 & 0.69 & 0.16 & 0.16 & 0.16\tabularnewline
+{\footnotesize 2004} & {\footnotesize 100} & {\footnotesize 0.23} & {\footnotesize 0.28} & {\footnotesize 0.35} & {\footnotesize 0.22} & {\footnotesize 0.69} & {\footnotesize 0.16} & {\footnotesize 0.16} & {\footnotesize 0.16}\tabularnewline
 \hline 
-2004 & 500 & 0.45 & 0.27 & 0.65 & 0.16 & 0.16 & 0.16\tabularnewline
+{\footnotesize 2004} & {\footnotesize 500} & {\footnotesize 0.24} & {\footnotesize 0.26} & {\footnotesize 0.45} & {\footnotesize 0.27} & {\footnotesize 0.65} & {\footnotesize 0.16} & {\footnotesize 0.16} & {\footnotesize 0.16}\tabularnewline
 \hline 
-2010 & 10 & 0.36 & 0.24 & 0.74 & 0.19 & 0.17 & 0.19\tabularnewline
+{\footnotesize 2010} & {\footnotesize 10} & {\footnotesize 0.24} & {\footnotesize 0.30} & {\footnotesize 0.36} & {\footnotesize 0.24} & {\footnotesize 0.74} & {\footnotesize 0.19} & {\footnotesize 0.17} & {\footnotesize 0.19}\tabularnewline
 \hline 
-2010 & 25 & 0.37 & 0.21 & 0.49 & 0.19 & 0.18 & 0.17\tabularnewline
+{\footnotesize 2010} & {\footnotesize 25} & {\footnotesize 0.24} & {\footnotesize 0.30} & {\footnotesize 0.37} & {\footnotesize 0.21} & {\footnotesize 0.49} & {\footnotesize 0.19} & {\footnotesize 0.18} & {\footnotesize 0.17}\tabularnewline
 \hline 
-2010 & 50 & 0.39 & 0.24 & 0.60 & 0.18 & 0.17 & 0.18\tabularnewline
+{\footnotesize 2010} & {\footnotesize 50} & {\footnotesize 0.23} & {\footnotesize 0.30} & {\footnotesize 0.39} & {\footnotesize 0.24} & {\footnotesize 0.60} & {\footnotesize 0.18} & {\footnotesize 0.17} & {\footnotesize 0.18}\tabularnewline
 \hline 
-2010 & 100 & 0.31 & 0.27 & 0.40 & 0.19 & 0.18 & 0.19\tabularnewline
+{\footnotesize 2010} & {\footnotesize 100} & {\footnotesize 0.24} & {\footnotesize 0.30} & {\footnotesize 0.31} & {\footnotesize 0.27} & {\footnotesize 0.40} & {\footnotesize 0.19} & {\footnotesize 0.18} & {\footnotesize 0.19}\tabularnewline
 \hline 
-2010 & 500 & 0.40 & 0.32 & 0.51 & 0.19 & 0.18 & 0.18\tabularnewline
+{\footnotesize 2010} & {\footnotesize 500} & {\footnotesize 0.25} & {\footnotesize 0.29} & {\footnotesize 0.40} & {\footnotesize 0.32} & {\footnotesize 0.51} & {\footnotesize 0.19} & {\footnotesize 0.18} & {\footnotesize 0.18}\tabularnewline
 \hline 
-2012 & 10 & 0.33 & 0.22 & 0.45 & 0.18 & 0.17 & 0.19\tabularnewline
+{\footnotesize 2012} & {\footnotesize 10} & {\footnotesize 0.21} & {\footnotesize 0.28} & {\footnotesize 0.33} & {\footnotesize 0.22} & {\footnotesize 0.45} & {\footnotesize 0.18} & {\footnotesize 0.17} & {\footnotesize 0.19}\tabularnewline
 \hline 
-2012 & 25 & 0.33 & 0.24 & 0.75 & 0.17 & 0.17 & 0.16\tabularnewline
+{\footnotesize 2012} & {\footnotesize 25} & {\footnotesize 0.24} & {\footnotesize 0.28} & {\footnotesize 0.33} & {\footnotesize 0.24} & {\footnotesize 0.75} & {\footnotesize 0.17} & {\footnotesize 0.17} & {\footnotesize 0.16}\tabularnewline
 \hline 
-2012 & 50 & 0.36 & 0.23 & 0.21 & 0.17 & 0.17 & 0.16\tabularnewline
+{\footnotesize 2012} & {\footnotesize 50} & {\footnotesize 0.22} & {\footnotesize 0.27} & {\footnotesize 0.36} & {\footnotesize 0.23} & {\footnotesize 0.21} & {\footnotesize 0.17} & {\footnotesize 0.17} & {\footnotesize 0.16}\tabularnewline
 \hline 
-2012 & 100 & 0.38 & 0.21 & 0.57 & 0.17 & 0.17 & 0.16\tabularnewline
+{\footnotesize 2012} & {\footnotesize 100} & {\footnotesize 0.23} & {\footnotesize 0.26} & {\footnotesize 0.38} & {\footnotesize 0.21} & {\footnotesize 0.57} & {\footnotesize 0.17} & {\footnotesize 0.17} & {\footnotesize 0.16}\tabularnewline
 \hline 
-2012 & 500 & 0.35 & 0.29 & 0.85 & 0.17 & 0.17 & 0.16\tabularnewline
+{\footnotesize 2012} & {\footnotesize 500} & {\footnotesize 0.22} & {\footnotesize 0.25} & {\footnotesize 0.35} & {\footnotesize 0.29} & {\footnotesize 0.85} & {\footnotesize 0.17} & {\footnotesize 0.17} & {\footnotesize 0.16}\tabularnewline
 \hline 
-\textbf{AVERAGE} &  & \textbf{0.378} & \textbf{0.245} & \textbf{0.639} & \textbf{0.175} & \textbf{0.170} & \textbf{0.171}\tabularnewline
+{\footnotesize\textbf{AVERAGE}} &  & {\footnotesize\textbf{0.234}} & {\footnotesize\textbf{0.283}} & {\footnotesize\textbf{0.378}} & {\footnotesize\textbf{0.245}} & {\footnotesize\textbf{0.639}} & {\footnotesize\textbf{0.175}} & {\footnotesize\textbf{0.170}} & {\footnotesize\textbf{0.171}}\tabularnewline
 \hline 
 \end{tabular}
 \end{table}
+An example of constructed features for the year 2010 is presented
+below: 
+\[
+\begin{array}{ccc}
+f_{1}(x) & = & \frac{-4}{99.35}x_{2}+\cos\left(x_{3}-877.38x_{6}+\sin\left(43.56x_{4}+x_{6}-99.35x_{2}\right)\right)\\
+f_{2}(x) & = & 2x_{13}-95.2x_{2}+948.94x_{1}
+\end{array}
+\]
 
-Here follows the evaluation of the performance of different machine
-learning models for predicting earthquake magnitudes, based on data
-from neighboring earthquakes. The Table \ref{tab:expResults} presents
-regression errors for three years (2004, 2010, 2012) and five different
-critical distances , comparing the performance of three models without
-grammatical evolution and three models with grammatical evolution.
-The models without grammatical evolution, specifically MLP(BP), MLP(RPROP),
-and MLP(BFGS), exhibit higher errors compared to models using grammatical
-evolution. The MLP(BFGS) model shows the largest error, with values
-reaching up to 0.98 for a distance of 25 miles in 2004, indicating
-instability under certain conditions. In contrast, MLP(RPROP) displays
-the smallest error among models without grammatical evolution, with
-an average value of 0.245, suggesting better adaptability. The models
-with grammatical evolution RULE, NNC, and FC show significantly smaller
-and more stable errors, with average values of 0.175, 0.17, and 0.171,
-respectively. This stability suggests that grammatical evolution provides
-robustness against data variations. The influence of distance appears
-significant for models without grammatical evolution, particularly
-for MLP(BFGS), where the error fluctuates between 0.21 and 0.98 depending
-on distance. Conversely, in models with grammatical evolution, the
-error remains nearly unchanged regardless of distance, highlighting
-their ability to handle different spatial conditions. From a temporal
-perspective, models without grammatical evolution show a trend of
-improvement over time, with MLP(BFGS) reducing its average error from
-0.82 in 2004 to 0.57 in 2012. However, this improvement is insufficient
-to match the performance of models with grammatical evolution, which
-maintain consistent performance across all years. In summary, the
-results demonstrate that the use of grammatical evolution leads to
-significantly better predictions, with smaller and more stable errors.
-This stability is observed across different distances and years, suggesting
-that models with grammatical evolution are less sensitive to data
-variations. The superiority of these models may stem from their ability
-to better recognize and exploit structures and relationships within
-the data. Future research could focus on investigating the precise
-mechanisms through which grammatical evolution enhances performance,
-as well as comparisons with other advanced machine learning techniques.
+According to the data from the \ref{tab:expResults} for seismic magnitude
+prediction (2004) based on neighboring earthquakes, the following
+key observations are made: The grammatical evolution models (RULE,
+NNC, FC) continuously exhibit the lowest regression error (0.16--0.17)
+at all distances $\left(D_{c}\right)$. They are much more stable
+and accurate than the other models, with an average error of 0.164.
+This suggests that grammatical evolution significantly improves performance.
+Among the models without grammatical evolution, LSTM and MLP-RPROP
+have the best performance with an average error around 0.24 and demonstrate
+decent stability at different distances. SVM has a slightly higher
+average error (0.282) but is also relatively stable. MLP-BP has a
+higher average error (0.418), with some improvement at greater distances
+(e.g., 0.35 at 100 miles). MLP-BFGS exhibits the worst error (average
+0.802) and very high variance, particularly at short distances (0.98
+at 25 miles), indicating significant instability. Distance (Dc) seems
+to minimally affect the error for most models (LSTM, SVM, MLP-RPROP,
+and the grammatical models), suggesting robustness. The significant
+exception is MLP-BFGS, which shows marked sensitivity to distance.
+In summary, the grammatical evolution models (RULE, NNC, FC) are clearly
+the most accurate and reliable for this prediction problem. Among
+the rest, LSTM and MLP-RPROP are the best choices due to balanced
+performance, while MLP-BFGS appears unsuitable due to high and unpredictable
+error.
 
-Figure \ref{fig:2004} presents the regression errors for earthquake
-magnitude prediction based on 2004 data. Significant differences are
-observed between the two model categories. Models without grammatical
-evolution (MLP(BP), MLP(RPROP), MLP(BFGS)) show higher errors compared
-to models using grammatical evolution (RULE, NNC, FC). MLP(BFGS) exhibits
-the largest errors, reaching 0.98 for 25-mile distances, indicating
-instability under specific conditions. Conversely, MLP(RPROP) shows
-the smallest errors among non-grammatical evolution models, with consistent
-values around 0.24. Grammatical evolution models maintain exceptionally
-low and stable errors, ranging between 0.16-0.17 regardless of distance.
-Distance (Dc) significantly affects errors in non-grammatical evolution
-models, with particularly large variations in MLP(BFGS). In contrast,
-grammatical evolution models maintain nearly constant errors, demonstrating
-resilience to spatial variations. Overall, the results support the
-superiority of grammatical evolution models, which show smaller and
-more stable prediction errors, making them more reliable for earthquake
-magnitude estimation.
+For the year 2010, the grammatical evolution models (RULE, NNC, FC)
+maintain the lowest regression error (0.17--0.19) at all distances,
+with NNC achieving the best average (0.176). They are more stable
+than most non-evolutionary models, confirming that grammatical evolution
+provides reliable predictions. Among the other models, LSTM shows
+the best performance (average error 0.24) with remarkable stability
+at all distances. MLP-RPROP has a slightly higher average error (0.256)
+but with greater variance, particularly at long distances (0.32 at
+500 miles). SVM remains stable (average 0.298) with no significant
+fluctuations. MLP-BP improves at medium distances (0.31 at 100 miles)
+but has a higher average error (0.366). MLP-BFGS improves compared
+to 2004 (average error 0.548) but still exhibits significant variance
+and high error at short distances (0.74 at 10 miles). Distance (Dc)
+minimally affects most models, with the exception of MLP-BFGS and,
+to a lesser extent, MLP-RPROP, which show sensitivity. Overall, the
+grammatical models (especially NNC) and LSTM stand out as the most
+reliable approaches for this prediction problem.
+
+Similarly, in 2012, the grammatical evolution models (RULE, NNC, FC)
+continue to maintain the lowest and most stable regression error at
+all distances. NNC and FC achieve the best average error (0.17 and
+0.166 respectively), with FC demonstrating remarkable stability (0.16)
+at most distances. RULE has a slightly higher average (0.172). This
+confirms the superiority of grammatical evolution for this problem.
+Among the non-evolutionary models, LSTM stands out with the best average
+error (0.224) and very good stability at different distances. MLP-RPROP
+has a similar average (0.238) but greater variance, particularly at
+long distances (0.29 at 500 miles). SVM improves significantly compared
+to previous years (average error 0.268) and is stable. MLP-BP has
+the highest error (0.35) among non-evolutionary models, with increasing
+error at medium distances (0.38 at 100 miles). MLP-BFGS continues
+to have the highest average error (0.566) and explosive variance,
+ranging from extremely low error (0.21 at 50 miles) to very high (0.85
+at 500 miles), making it unreliable. Distance (Dc) minimally affects
+the grammatical models, LSTM, and SVM. MLP-BP shows sensitivity at
+medium distances, while MLP-RPROP and particularly MLP-BFGS show strong
+sensitivity at specific distances. Overall, for 2012, the grammatical
+models (especially FC and NNC) and LSTM stand out as the most accurate
+and stable approaches. MLP-BFGS remains unsuitable due to unpredictable
+performance, while MLP-BP has the highest error among traditional
+models. There is a general improvement in SVM and stability in LSTM
+compared to previous years.
+
+In Figure \ref{fig:2004}, the grammatical models (RULE, NNC, FC)
+exhibit the lowest and most stable error (0.16--0.17) across all
+distances, clearly outperforming the others. LSTM and MLP-RPROP are
+the best non-evolutionary models (average error \textasciitilde 0.24),
+while MLP-BFGS shows significant instability (average 0.802) with
+particularly high errors at short distances.
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.75]{2004}
@@ -1205,22 +1335,11 @@ values of the critical parameter $D_{c}$\label{fig:2004}}
 
 \end{figure}
 
-Figure \ref{fig:2010} shows regression errors for 2010 earthquake
-magnitude prediction. As in 2004, grammatical evolution models (RULE,
-NNC, FC) maintain lower and more stable errors compared to non-grammatical
-evolution models (MLP(BP), MLP(RPROP), MLP(BFGS)). MLP(BFGS) shows
-significant improvement from 2004, with errors between 0.4-0.74, though
-still displaying the highest distance-dependent variation. MLP(RPROP)
-maintains the lowest errors among non-grammatical models (0.21-0.32),
-while MLP(BP) shows similar errors to 2004 (0.31-0.4). Grammatical
-evolution models show slightly higher errors than 2004 but remain
-stable and reliable. NNC continues to perform best (0.17-0.18), followed
-by FC and RULE (0.17-0.19). Distance has less impact than in 2004,
-particularly for MLP(BFGS) which shows reduced variation. Grammatical
-evolution models remain largely unaffected by distance. The results
-confirm the superiority of grammatical evolution models, which maintain
-smaller, more stable errors, while non-grammatical models show improvement
-(especially MLP(BFGS)) without matching the former's accuracy.
+In Figure \ref{fig:2010}, the grammatical models maintain their superiority
+with an average error of 0.176--0.188, with NNC standing out. LSTM
+continues to be the top non-evolutionary model (average 0.24) with
+remarkable stability, while MLP-BFGS improves compared to 2004 (average
+0.548) but retains significant variation, especially at short distances.
 
 \begin{figure}[H]
 \begin{centering}
@@ -1229,20 +1348,11 @@ smaller, more stable errors, while non-grammatical models show improvement
 \caption{Error per point for each used method using the 2010 dataset and a
 variety of values of the critical parameter $D_{c}$\label{fig:2010}}
 \end{figure}
- Figure \ref{fig:2012} reveals interesting regression error patterns
-for 2012. Grammatical evolution models (RULE, NNC, FC) maintain previous
-years' trends with exceptionally stable, low errors (0.16-0.19). NNC
-and FC perform best (0.16-0.17 for most distances). Non-grammatical
-models show mixed results: MLP(BFGS) exhibits extreme variations (0.21-0.85),
-demonstrating high condition sensitivity; MLP(RPROP) maintains this
-category's lowest errors (0.21-0.29); while MLP(BP) shows more stable
-behavior (0.33-0.38). Distance remains significant for non-grammatical
-models, especially MLP(BFGS) with 0.64 variation (0.21-0.85). Grammatical
-evolution models maintain practically constant errors regardless of
-distance. The 2012 data confirms the consistent superiority of grammatical
-evolution models, which maintain reliable performance across all distances.
-While non-grammatical models show some improvements, their significant
-variability continues to limit reliability.
+ In Figure \ref{fig:2012}, the grammatical models achieve their best
+performance, with FC (average 0.166) and NNC (0.17) demonstrating
+exceptional stability. LSTM remains the most reliable non-evolutionary
+model (average 0.224), while MLP-BFGS shows extreme variation (from
+0.21 to 0.85) despite its reduced average error (0.566).
 
 \begin{figure}[H]
 \begin{centering}
@@ -1250,6 +1360,31 @@ variability continues to limit reliability.
 \par\end{centering}
 \caption{Error per point the machine learning methods using the 2012 and a
 series of values for the critical parameter $D_{c}$\label{fig:2012}}
+\end{figure}
+According to the results of the Friedman test \ref{fig:friedman},
+where the overall difference between the models is extremely statistically
+significant (p=4.51e-18 \textless{} 0.0001, critical value=4.2863,
+critical difference=3.834), the following key stratifications are
+observed: The models with Grammatical Evolution (RULE, NNC, FC) show
+homogeneous performance (p=ns among them) but are significantly better
+(p={*}{*}{*}{*}) than MLP(BP) and MLP(BFGS). They also significantly
+outperform SVM (p={*}{*}{*}{*} for NNC/FC, p={*}{*}{*} for RULE).
+LSTM (without Grammar-Based Evolution) does not differ significantly
+either from the models with Grammar-Based Evolution (p=ns) or from
+SVM, MLP(BP), and MLP(RPROP) (p=ns), with the only significant difference
+being against MLP(BFGS) (p={*}{*}). MLP(RPROP) (without Grammar-Based
+Evolution) does not differ from RULE (p=ns) but shows significantly
+higher error than NNC/FC (p={*}) and MLP(BFGS) (p={*}). MLP(BFGS)
+(without Grammar-Based Evolution) is the least reliable model, with
+significantly worse performance (p={*}{*}{*}) compared to all models
+with Grammar-Based Evolution and significantly worse than LSTM (p={*}{*})
+and MLP(RPROP) (p={*}).
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{stat3}
+\par\end{centering}
+\caption{Method comparison using Friedman test.\label{fig:friedman}}
+
 \end{figure}
 
 In Figures \ref{fig:graphYear} and \ref{fig:distanceError}, the
@@ -1291,6 +1426,68 @@ in the experiments.\label{fig:graphYear}}
 
 \end{figure}
 
+To verify the stability of the application of Grammatical Evolution
+to the present seismic data, an additional experiment was performed
+where random noise in the range of 0.1\%-5\% was applied to the problem
+features one by one. The neural construction method guided by the
+Grammatical Evolution was incorporated for the data with the noise
+and the average regression error as measured on the test is shown
+in Table \ref{tab:noiseResults}. The noise was applied in the results
+of the year 2010, where the critical distance $D_{c}$ was set to
+10 miles.
+
+\begin{table}[H]
+
+\caption{Experimental results for the year 2010 and $D_{c}=10$ using the Neural
+Construction technique. A random noise ranging from 0.001 to 0.05
+was applied to the data.\label{tab:noiseResults} The bold notation
+is used to indicate the higher test error as measured on the corresponding
+test set. }
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+ & \multicolumn{5}{c|}{NOISE PERCENT}\tabularnewline
+\hline 
+\hline 
+FEATURE & 0.1\% & 0.05\% & 1\% & 2\% & 5\%\tabularnewline
+\hline 
+1 & 0.176 & \textbf{0.228} & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+2 & \textbf{0.177} & 0.175 & 0.175 & 0.172 & 0.175\tabularnewline
+\hline 
+3 & 0.175 & \textbf{0.176} & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+4 & \textbf{0.175} & 0.175 & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+5 & \textbf{0.175} & 0.175 & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+6 & 0.175 & \textbf{0.176} & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+7 & 0.175 & 0.175 & 0.175 & \textbf{0.193} & 0.175\tabularnewline
+\hline 
+8 & \textbf{0.175} & 0.175 & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+9 & \textbf{0.175} & 0.175 & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+10 & \textbf{0.175} & 0.175 & 0.175 & 0.175 & 0.175\tabularnewline
+\hline 
+11 & 0.175 & 0.175 & 0.175 & 0.175 & \textbf{0.176}\tabularnewline
+\hline 
+12 & 0.176 & 0.175 & 0.175 & 0.175 & \textbf{0.176}\tabularnewline
+\hline 
+13 & 0.175 & 0.175 & 0.176 & \textbf{0.176} & 0.175\tabularnewline
+\hline 
+14 & 0.176 & 0.175 & 0.176 & \textbf{0.176} & 0.175\tabularnewline
+\hline 
+15 & 0.175 & 0.175 & \textbf{0.176} & 0.175 & 0.175\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+As one can see from the above experimental results, only in a few
+cases of noise and only in a limited number of features did a partial
+deviation in the error appear compared to the case where there is
+no noise in the data.
 
 \section{Conclusions\label{sec:Conclusions}}
 
@@ -1323,6 +1520,19 @@ for even more accurate predictions. Finally, the real-time application
 of the model and its integration into early warning frameworks could
 be significant steps toward the practical utilization of this research's
 findings.
+
+Furthermore, as previously mentioned in the introduction, several
+developments of various models have focused on short-term early warning
+systems, typically offering a lead time of approximately one minute,
+based on real-time detection of tectonic or lithospheric plate movement
+as it occurs. In contrast, our study not only targets seismic events
+of magnitude 5.0 and above, but also takes a step further by demonstrating
+the potential to predict such events before any plate movement is
+detected. Consequently, our model can potentially be integrated into
+a broader early warning framework capable of delivering mid to long-term
+predictions of earthquake occurrences, ranging from hours or days
+to even months in advance, thereby offering a significantly enhanced
+preparedness window, and risk mitigation efforts.
 
 \authorcontributions{C.K., V.C. and I.G.T. conceived of the idea and the methodology,
 and C.K. and V.C. implemented the corresponding software. C.K. conducted
@@ -1548,6 +1758,20 @@ Oxford University Press, 1995.
 function, Mathematics of Control Signals and Systems \textbf{2}, pp.
 303-314, 1989.
 
+\bibitem[(1994)]{neural_quake}Lakkos S, Hadjiprocopis A, Compley
+R, Smith P (1994) A neural network scheme for earthquake prediction
+based on the Seismic Electric Signals. In: Proceedings of the IEEE
+conference on neural networks and signal processing, Ermioni, 681-689. 
+
+\bibitem[(1994)]{layered_quake}Negarestani A, Setayeshi S, Ghannadi-Maragheh
+M, Akashe B (2002) Layered neural networks based analysis of radon
+concentration and environmental parameters in earthquake prediction.
+J. Environmental Radioactivity 62:225-233.
+
+\bibitem[(1994)]{neural_magnitude}Panakkat A, Adeli H (2007) Neural
+network models for earthquake magnitude prediction using multiple
+seismicity indicators. Int. J. Neural Systems 17:13-33
+
 \bibitem[(1994)]{gen1}Holland, J. H. (1992). Genetic algorithms.
 Scientific american, 267(1), 66-73.
 
@@ -1601,6 +1825,22 @@ and differential equation solving. SoftwareX, 10, 100297.
 \bibitem[(2022)]{qfc}I.G. Tsoulos, QFC: A Parallel Software Tool
 for Feature Construction, Based on Grammatical Evolution, Algorithms
 \textbf{15}, 295, 2022.
+
+\bibitem[(2019)]{lstm}Yu, Y., Si, X., Hu, C., \& Zhang, J. (2019).
+A review of recurrent neural networks: LSTM cells and network architectures.
+Neural computation, 31(7), 1235-1270.
+
+\bibitem[(2021)]{pytorch}Ketkar, N., Moolayil, J., Ketkar, N., \&
+Moolayil, J. (2021). Introduction to pytorch. Deep learning with python:
+learn best practices of deep learning models with PyTorch, 27-91.
+
+\bibitem[(2009)]{svm}Xue, H., Yang, Q., \& Chen, S. (2009). SVM:
+Support vector machines. In The top ten algorithms in data mining
+(pp. 51-74). Chapman and Hall/CRC.
+
+\bibitem[(2009)]{libsvm}Chang, C. C., \& Lin, C. J. (2011). LIBSVM:
+a library for support vector machines. ACM transactions on intelligent
+systems and technology (TIST), 2(3), 1-27.
 
 \bibitem{bpnn1}Vora, K., \& Yagnik, S. (2014). A survey on backpropagation
 algorithms for feedforward neural networks. International Journal

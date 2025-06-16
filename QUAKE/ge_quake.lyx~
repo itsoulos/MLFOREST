@@ -1202,6 +1202,60 @@ The limitations of the proposed work stem primarily from those we ourselves impo
 \end_layout
 
 \begin_layout Standard
+In this study,
+ is was observed that machine learning and soft computing techniques have a longstanding presence in the field of seismology.
+ For instance,
+ Artificial Neural Networks (ANNs) were introduced into the field of seismology in 1994 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "neural_quake"
+literal "false"
+
+\end_inset
+
+.
+ The initial application of Deep Neural Networks (DNNs),
+ featuring two hidden layers,
+ emerged in 2002 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "layered_quake"
+literal "false"
+
+\end_inset
+
+,
+ while the earliest implementation of Recurrent Neural Networks (RNNs) in the context of seismology appeared in 2007 (3).
+ However,
+ they have yet to achieve the so-called "triple prediction" namely,
+ the accurate forecasting:
+ of the date and time,
+ location,
+ and precise magnitude of seismic events.
+ For this reason,
+ we adopt a groundbreaking approach by employing Grammatical Evolution in 2025,
+ a novel technique within the domain.
+ Furthermore,
+ our initial approach involved the application of machine learning techniques.
+ Specifically,
+ we conducted experiments using the following algorithms:
+ (LSTM,
+ RBF,
+ MLP (BP,
+ RPROP,
+ BFGS) & SVM ).
+ Subsequently,
+ we carried out an exploratory experiment employing Grammatical Evolution.
+ The results proved to be so compelling that we decided to shift our focus and pursue this novel direction in greater depth.
+ Moreover,
+ our approach distinguishes itself from other studies in the field,
+ as most existing research relies on data obtained directly from seismographs and primarily focuses on localized regions.
+ In contrast,
+ we process historical earthquake data on a global scale,
+ allowing for broader generalization and pattern recognition
+\end_layout
+
+\begin_layout Standard
 Despite these constraints,
  our study highlighted the considerable potential of Grammatical Evolution in this domain,
  due to its consistently dynamic adaptability,
@@ -1371,14 +1425,14 @@ The following section provides a concise summary as well as a more detailed anal
  In the year 2004,
  a total of 666 geographic regions were classified,
  and used as an input for the regression model,
- within which 666126,972 seismic events were recorded.
+ within which 215,753 seismic events were recorded.
  Similarly,
  in 2010,
  635 regions were defined and encoded as input features,
- corresponding to 294,432 earthquakes,
+ corresponding to 327,909 earthquakes,
  while in 2012,
  690 regions were established as categorical input variables,
- with a total of 370,582 recorded seismic events.
+ with a total of 405,153 recorded seismic events.
  Regarding tectonic plates,
  for each seismic event,
  we classified and used as an input feature the tectonic plates involved in the corresponding region.
@@ -6511,9 +6565,7 @@ f_{2}(x) & = & 2x_{13}-95.2x_{2}+948.94x_{1}
 \end_layout
 
 \begin_layout Standard
-Here follows the evaluation of the performance of different machine learning models for predicting earthquake magnitudes,
- based on data from neighboring earthquakes.
- The Table 
+According to the data from the 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:expResults"
@@ -6524,55 +6576,102 @@ nolink "false"
 
 \end_inset
 
- presents regression errors for three years (2004,
- 2010,
- 2012) and five different critical distances ,
- comparing the performance of three models without grammatical evolution and three models with grammatical evolution.
- The models without grammatical evolution,
- specifically MLP(BP),
- MLP(RPROP),
- and MLP(BFGS),
- exhibit higher errors compared to models using grammatical evolution.
- The MLP(BFGS) model shows the largest error,
- with values reaching up to 0.98 for a distance of 25 miles in 2004,
- indicating instability under certain conditions.
- In contrast,
- MLP(RPROP) displays the smallest error among models without grammatical evolution,
- with an average value of 0.245,
- suggesting better adaptability.
- The models with grammatical evolution RULE,
+ for seismic magnitude prediction (2004) based on neighboring earthquakes,
+ the following key observations are made:
+ The grammatical evolution models (RULE,
  NNC,
- and FC show significantly smaller and more stable errors,
- with average values of 0.175,
- 0.17,
- and 0.171,
- respectively.
- This stability suggests that grammatical evolution provides robustness against data variations.
- The influence of distance appears significant for models without grammatical evolution,
- particularly for MLP(BFGS),
- where the error fluctuates between 0.21 and 0.98 depending on distance.
- Conversely,
- in models with grammatical evolution,
- the error remains nearly unchanged regardless of distance,
- highlighting their ability to handle different spatial conditions.
- From a temporal perspective,
- models without grammatical evolution show a trend of improvement over time,
- with MLP(BFGS) reducing its average error from 0.82 in 2004 to 0.57 in 2012.
- However,
- this improvement is insufficient to match the performance of models with grammatical evolution,
- which maintain consistent performance across all years.
+ FC) continuously exhibit the lowest regression error (0.16–0.17) at all distances 
+\begin_inset Formula $\left(D_{c}\right)$
+\end_inset
+
+.
+ They are much more stable and accurate than the other models,
+ with an average error of 0.164.
+ This suggests that grammatical evolution significantly improves performance.
+ Among the models without grammatical evolution,
+ LSTM and MLP-RPROP have the best performance with an average error around 0.24 and demonstrate decent stability at different distances.
+ SVM has a slightly higher average error (0.282) but is also relatively stable.
+ MLP-BP has a higher average error (0.418),
+ with some improvement at greater distances (e.g.,
+ 0.35 at 100 miles).
+ MLP-BFGS exhibits the worst error (average 0.802) and very high variance,
+ particularly at short distances (0.98 at 25 miles),
+ indicating significant instability.
+ Distance (Dc) seems to minimally affect the error for most models (LSTM,
+ SVM,
+ MLP-RPROP,
+ and the grammatical models),
+ suggesting robustness.
+ The significant exception is MLP-BFGS,
+ which shows marked sensitivity to distance.
  In summary,
- the results demonstrate that the use of grammatical evolution leads to significantly better predictions,
- with smaller and more stable errors.
- This stability is observed across different distances and years,
- suggesting that models with grammatical evolution are less sensitive to data variations.
- The superiority of these models may stem from their ability to better recognize and exploit structures and relationships within the data.
- Future research could focus on investigating the precise mechanisms through which grammatical evolution enhances performance,
- as well as comparisons with other advanced machine learning techniques.
+ the grammatical evolution models (RULE,
+ NNC,
+ FC) are clearly the most accurate and reliable for this prediction problem.
+ Among the rest,
+ LSTM and MLP-RPROP are the best choices due to balanced performance,
+ while MLP-BFGS appears unsuitable due to high and unpredictable error.
 \end_layout
 
 \begin_layout Standard
-Figure 
+For the year 2010,
+ the grammatical evolution models (RULE,
+ NNC,
+ FC) maintain the lowest regression error (0.17–0.19) at all distances,
+ with NNC achieving the best average (0.176).
+ They are more stable than most non-evolutionary models,
+ confirming that grammatical evolution provides reliable predictions.
+ Among the other models,
+ LSTM shows the best performance (average error 0.24) with remarkable stability at all distances.
+ MLP-RPROP has a slightly higher average error (0.256) but with greater variance,
+ particularly at long distances (0.32 at 500 miles).
+ SVM remains stable (average 0.298) with no significant fluctuations.
+ MLP-BP improves at medium distances (0.31 at 100 miles) but has a higher average error (0.366).
+ MLP-BFGS improves compared to 2004 (average error 0.548) but still exhibits significant variance and high error at short distances (0.74 at 10 miles).
+ Distance (Dc) minimally affects most models,
+ with the exception of MLP-BFGS and,
+ to a lesser extent,
+ MLP-RPROP,
+ which show sensitivity.
+ Overall,
+ the grammatical models (especially NNC) and LSTM stand out as the most reliable approaches for this prediction problem.
+\end_layout
+
+\begin_layout Standard
+Similarly,
+ in 2012,
+ the grammatical evolution models (RULE,
+ NNC,
+ FC) continue to maintain the lowest and most stable regression error at all distances.
+ NNC and FC achieve the best average error (0.17 and 0.166 respectively),
+ with FC demonstrating remarkable stability (0.16) at most distances.
+ RULE has a slightly higher average (0.172).
+ This confirms the superiority of grammatical evolution for this problem.
+ Among the non-evolutionary models,
+ LSTM stands out with the best average error (0.224) and very good stability at different distances.
+ MLP-RPROP has a similar average (0.238) but greater variance,
+ particularly at long distances (0.29 at 500 miles).
+ SVM improves significantly compared to previous years (average error 0.268) and is stable.
+ MLP-BP has the highest error (0.35) among non-evolutionary models,
+ with increasing error at medium distances (0.38 at 100 miles).
+ MLP-BFGS continues to have the highest average error (0.566) and explosive variance,
+ ranging from extremely low error (0.21 at 50 miles) to very high (0.85 at 500 miles),
+ making it unreliable.
+ Distance (Dc) minimally affects the grammatical models,
+ LSTM,
+ and SVM.
+ MLP-BP shows sensitivity at medium distances,
+ while MLP-RPROP and particularly MLP-BFGS show strong sensitivity at specific distances.
+ Overall,
+ for 2012,
+ the grammatical models (especially FC and NNC) and LSTM stand out as the most accurate and stable approaches.
+ MLP-BFGS remains unsuitable due to unpredictable performance,
+ while MLP-BP has the highest error among traditional models.
+ There is a general improvement in SVM and stability in LSTM compared to previous years.
+\end_layout
+
+\begin_layout Standard
+In Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:2004"
@@ -6583,30 +6682,13 @@ nolink "false"
 
 \end_inset
 
- presents the regression errors for earthquake magnitude prediction based on 2004 data.
- Significant differences are observed between the two model categories.
- Models without grammatical evolution (MLP(BP),
- MLP(RPROP),
- MLP(BFGS)) show higher errors compared to models using grammatical evolution (RULE,
+,
+ the grammatical models (RULE,
  NNC,
- FC).
- MLP(BFGS) exhibits the largest errors,
- reaching 0.98 for 25-mile distances,
- indicating instability under specific conditions.
- Conversely,
- MLP(RPROP) shows the smallest errors among non-grammatical evolution models,
- with consistent values around 0.24.
- Grammatical evolution models maintain exceptionally low and stable errors,
- ranging between 0.16-0.17 regardless of distance.
- Distance (Dc) significantly affects errors in non-grammatical evolution models,
- with particularly large variations in MLP(BFGS).
- In contrast,
- grammatical evolution models maintain nearly constant errors,
- demonstrating resilience to spatial variations.
- Overall,
- the results support the superiority of grammatical evolution models,
- which show smaller and more stable prediction errors,
- making them more reliable for earthquake magnitude estimation.
+ FC) exhibit the lowest and most stable error (0.16–0.17) across all distances,
+ clearly outperforming the others.
+ LSTM and MLP-RPROP are the best non-evolutionary models (average error ~0.24),
+ while MLP-BFGS shows significant instability (average 0.802) with particularly high errors at short distances.
 \begin_inset Float figure
 placement H
 alignment document
@@ -6658,7 +6740,7 @@ name "fig:2004"
 \end_layout
 
 \begin_layout Standard
-Figure 
+In Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:2010"
@@ -6669,28 +6751,12 @@ nolink "false"
 
 \end_inset
 
- shows regression errors for 2010 earthquake magnitude prediction.
- As in 2004,
- grammatical evolution models (RULE,
- NNC,
- FC) maintain lower and more stable errors compared to non-grammatical evolution models (MLP(BP),
- MLP(RPROP),
- MLP(BFGS)).
- MLP(BFGS) shows significant improvement from 2004,
- with errors between 0.4-0.74,
- though still displaying the highest distance-dependent variation.
- MLP(RPROP) maintains the lowest errors among non-grammatical models (0.21-0.32),
- while MLP(BP) shows similar errors to 2004 (0.31-0.4).
- Grammatical evolution models show slightly higher errors than 2004 but remain stable and reliable.
- NNC continues to perform best (0.17-0.18),
- followed by FC and RULE (0.17-0.19).
- Distance has less impact than in 2004,
- particularly for MLP(BFGS) which shows reduced variation.
- Grammatical evolution models remain largely unaffected by distance.
- The results confirm the superiority of grammatical evolution models,
- which maintain smaller,
- more stable errors,
- while non-grammatical models show improvement (especially MLP(BFGS)) without matching the former's accuracy.
+,
+ the grammatical models maintain their superiority with an average error of 0.176–0.188,
+ with NNC standing out.
+ LSTM continues to be the top non-evolutionary model (average 0.24) with remarkable stability,
+ while MLP-BFGS improves compared to 2004 (average 0.548) but retains significant variation,
+ especially at short distances.
 \end_layout
 
 \begin_layout Standard
@@ -6737,7 +6803,7 @@ name "fig:2010"
 
 \end_inset
 
- Figure 
+ In Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:2012"
@@ -6748,24 +6814,11 @@ nolink "false"
 
 \end_inset
 
- reveals interesting regression error patterns for 2012.
- Grammatical evolution models (RULE,
- NNC,
- FC) maintain previous years' trends with exceptionally stable,
- low errors (0.16-0.19).
- NNC and FC perform best (0.16-0.17 for most distances).
- Non-grammatical models show mixed results:
- MLP(BFGS) exhibits extreme variations (0.21-0.85),
- demonstrating high condition sensitivity;
- MLP(RPROP) maintains this category's lowest errors (0.21-0.29);
- while MLP(BP) shows more stable behavior (0.33-0.38).
- Distance remains significant for non-grammatical models,
- especially MLP(BFGS) with 0.64 variation (0.21-0.85).
- Grammatical evolution models maintain practically constant errors regardless of distance.
- The 2012 data confirms the consistent superiority of grammatical evolution models,
- which maintain reliable performance across all distances.
- While non-grammatical models show some improvements,
- their significant variability continues to limit reliability.
+,
+ the grammatical models achieve their best performance,
+ with FC (average 0.166) and NNC (0.17) demonstrating exceptional stability.
+ LSTM remains the most reliable non-evolutionary model (average 0.224),
+ while MLP-BFGS shows extreme variation (from 0.21 to 0.85) despite its reduced average error (0.566).
 \end_layout
 
 \begin_layout Standard
@@ -6807,6 +6860,77 @@ name "fig:2012"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+According to the results of the Friedman test 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:friedman"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ where the overall difference between the models is extremely statistically significant (p=4.51e-18 < 0.0001,
+ critical value=4.2863,
+ critical difference=3.834),
+ the following key stratifications are observed:
+ The models with Grammatical Evolution (RULE,
+ NNC,
+ FC) show homogeneous performance (p=ns among them) but are significantly better (p=****) than MLP(BP) and MLP(BFGS).
+ They also significantly outperform SVM (p=**** for NNC/FC,
+ p=*** for RULE).
+ LSTM (without Grammar-Based Evolution) does not differ significantly either from the models with Grammar-Based Evolution (p=ns) or from SVM,
+ MLP(BP),
+ and MLP(RPROP) (p=ns),
+ with the only significant difference being against MLP(BFGS) (p=**).
+ MLP(RPROP) (without Grammar-Based Evolution) does not differ from RULE (p=ns) but shows significantly higher error than NNC/FC (p=*) and MLP(BFGS) (p=*).
+ MLP(BFGS) (without Grammar-Based Evolution) is the least reliable model,
+ with significantly worse performance (p=***) compared to all models with Grammar-Based Evolution and significantly worse than LSTM (p=**) and MLP(RPROP) (p=*).
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Method comparison using Friedman test.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:friedman"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -9348,6 +9472,59 @@ G.
  pp.
  303-314,
  1989.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1994)"
+key "neural_quake"
+literal "false"
+
+\end_inset
+
+Lakkos S,
+ Hadjiprocopis A,
+ Compley R,
+ Smith P (1994) A neural network scheme for earthquake prediction based on the Seismic Electric Signals.
+ In:
+ Proceedings of the IEEE conference on neural networks and signal processing,
+ Ermioni,
+ 681-689.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1994)"
+key "layered_quake"
+literal "false"
+
+\end_inset
+
+Negarestani A,
+ Setayeshi S,
+ Ghannadi-Maragheh M,
+ Akashe B (2002) Layered neural networks based analysis of radon concentration and environmental parameters in earthquake prediction.
+ J.
+ Environmental Radioactivity 62:225-233.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1994)"
+key "neural_magnitude"
+literal "false"
+
+\end_inset
+
+Panakkat A,
+ Adeli H (2007) Neural network models for earthquake magnitude prediction using multiple seismicity indicators.
+ Int.
+ J.
+ Neural Systems 17:13-33
 \end_layout
 
 \begin_layout Bibliography
