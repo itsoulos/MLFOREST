@@ -1,0 +1,244 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass Definitions/mdpi
+\use_default_options true
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "cochineal-ntxm" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement H
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letter
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Predicting the magnitude of earthquakes using Grammatical Evolution
+\end_layout
+
+\begin_layout Author
+Constantina Kopitsa
+\begin_inset Formula $^{1}$
+\end_inset
+
+,
+ Ioannis G.
+ Tsoulos
+\begin_inset Formula $^{2,*}$
+\end_inset
+
+ and Vasileios Charilogis
+\begin_inset Formula $^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author Names for PDF
+Kopitsa,
+ C.,
+ Tsoulos,
+ I.G.,
+ Charilogs,
+ V.
+ 
+\end_layout
+
+\begin_layout Author Names for PDF
+Constantina Kopitsa,
+ Ioannis G.
+ Tsoulos and Vasileios Charilogis.
+ 
+\end_layout
+
+\begin_layout Author Names for Citation
+Kopitsa,
+ C.;
+ Tsoulos,
+ I.G.;
+ Charilogis,
+ V.
+ 
+\end_layout
+
+\begin_layout Address
+\begin_inset Formula $^{1}$
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+Department of Informatics and Telecommunications,
+ University of Ioannina,
+ Greece;k.kopitsa@uoi.gr
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+Department of Informatics and Telecommunications,
+ University of Ioannina,
+ Greece;
+ itsoulos@uoi.gr
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{3}\quad$
+\end_inset
+
+Department of Informatics and Telecommunications,
+ University of Ioannina,
+ Greece;
+ v.charilog@uoi.gr
+\end_layout
+
+\begin_layout Corresponding Author
+Correspondence:
+ itsoulos@uoi.gr
+\end_layout
+
+\begin_layout Abstract
+Are earthquakes inherently unpredictable phenomena,
+ or can they be forecasted through advances in technology?
+ Contemporary seismological research continues to pursue this scientific milestone,
+ often referred to as the ‘Holy Grail’ of earthquake prediction.
+ In the direction of earthquake prediction based on historical data,
+ the Law of Seismic Entropy Production proposed by S.
+ Ts.
+ Akopian has demonstrated high levels of predictive accuracy.
+ Similarly,
+ our research team follows this line of reasoning,
+ operating under the belief that nature provides a pattern that,
+ with the appropriate tools,
+ can be decoded.
+ What is certain is that,
+ over the past 30 years,
+ scientists and researchers have made significant strides in the field of seismology,
+ largely aided by the development and application of artificial intelligence techniques.
+ Artificial Neural Networks (ANNs) were first applied in the domain of seismology in 1994.
+ The introduction of Deep Neural Networks (DNNs),
+ characterized by architectures incorporating two hidden layers,
+ followed in 2002.
+ Subsequently,
+ Recurrent Neural Networks (RNNs) were implemented within seismological studies as early as 2007.
+ Most recently,
+ Grammatical Evolution (GE) has been explored in this context,
+ with its application emerging in 2025.
+ Despite ongoing advancements,
+ the so-called "triple prediction" accurately forecasting the time,
+ location,
+ and magnitude of a seismic event,
+ remains unachieved.
+ Beyond that Machine learning and soft computing techniques have maintained a longstanding presence in the field of seismology.
+ Concerning these approaches,
+ significant advancements have been achieved,
+ both in mapping seismic patterns and in predicting seismic characteristics on a smaller geographical scale.
+ In such a way,
+ our research will analyze historical seismic events from 1970 to 2025,
+ which will be categorized and classified,
+ with the aim of employing Machine Learning techniques to achieve more accurate and timely predictions of earthquake magnitudes.
+ Furthermore,
+ in constructing our seismic dataset,
+ we identified and categorized the lithospheric–tectonic plate associated with each seismic event.
+ In addition,
+ we incorporated the Kp index,
+ which reflects geomagnetic storms occurring within the closest temporal window to each seismic event.
+ This paper presents a systematic effort to apply Machine Learning techniques for estimating earthquake magnitudes,
+ using various (ML) algorithms.
+ 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\end_body
+\end_document
