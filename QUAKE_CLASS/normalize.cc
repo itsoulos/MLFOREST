@@ -43,18 +43,18 @@ int main(int argc,char **argv)
 	printf("%d\n%d\n",d,count);
 	for(int i=0;i<count;i++)
 	{
+		double xx[d];
 		for(int j=0;j<d;j++)
 		{
 			double x;
-			fscanf(fp,"%lf",&x);
+			fscanf(fp,"%lf",&xx[j]);
 			//x=(x-min[j])/(max[j]-min[j]);
-			printf("%lf ",x);
 		}
 		double y;
 		fscanf(fp,"%lf",&y);
 		if(y<=1) continue;
 		if(y>4) y=1; else y=0;
-		//y=(y-ymin)/(ymax-ymin);
+		for(int j=0;j<d;j++) printf("%lf ",xx[j]);
 		printf("%lf\n",y);
 	}
 	fclose(fp);
