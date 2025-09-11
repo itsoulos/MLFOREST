@@ -4,12 +4,20 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass Definitions/mdpi
+\textclass article
+\begin_preamble
+
+\usepackage[numbers]{natbib}
+\usepackage[utf8]{inputenc}
+\end_preamble
 \use_default_options true
+\begin_modules
+natbibapa
+\end_modules
 \maintain_unincluded_children no
 \language english
 \language_package default
-\inputencoding auto-legacy
+\inputencoding utf8
 \fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -48,7 +56,7 @@
 \use_package stmaryrd 1
 \use_package undertilde 1
 \cite_engine natbib
-\cite_engine_type default
+\cite_engine_type numerical
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -93,7 +101,7 @@
 \begin_body
 
 \begin_layout Title
-Predicting the magnitude of earthquakes using Grammatical Evolution
+Classify earthquakes using Grammatical Evolution 
 \end_layout
 
 \begin_layout Author
@@ -104,44 +112,56 @@ Constantina Kopitsa
 ,
  Ioannis G.
  Tsoulos
-\begin_inset Formula $^{2,*}$
+\begin_inset Formula $^{2}$
 \end_inset
 
- and Vasileios Charilogis
+,
+ Vasileios Charilogis
 \begin_inset Formula $^{3}$
+\end_inset
+
+and Chrysostomos Stylioy 
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+*
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Author Names for PDF
-Kopitsa,
- C.,
- Tsoulos,
- I.G.,
- Charilogs,
- V.
- 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "refs"
+encoding "default"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author Names for PDF
 Constantina Kopitsa,
  Ioannis G.
- Tsoulos and Vasileios Charilogis.
- 
-\end_layout
-
-\begin_layout Author Names for Citation
-Kopitsa,
- C.;
  Tsoulos,
- I.G.;
- Charilogis,
- V.
- 
+ Vasileios Charilogis,
+ Chrysostomos Stylioy.
 \end_layout
 
-\begin_layout Address
+\begin_layout Author Names for PDF
 \begin_inset Formula $^{1}$
 \end_inset
 
@@ -180,20 +200,51 @@ Department of Informatics and Telecommunications,
  v.charilog@uoi.gr
 \end_layout
 
+\begin_layout Author Names for PDF
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+4 
+\end_layout
+
+\end_inset
+
+Department of Informatics and Telecommunications,
+ University of Ioannina,
+ Greece;stylios@uoi.gr
+\end_layout
+
 \begin_layout Corresponding Author
 Correspondence:
- itsoulos@uoi.gr
+ stylios@uoi.gr
 \end_layout
 
 \begin_layout Abstract
-Are earthquakes inherently unpredictable phenomena,
+The predictability of earthquakes remains a central challenge in seismological research.
+ Are earthquakes inherently unpredictable phenomena,
  or can they be forecasted through advances in technology?
  Contemporary seismological research continues to pursue this scientific milestone,
  often referred to as the ‘Holy Grail’ of earthquake prediction.
  In the direction of earthquake prediction based on historical data,
- the Law of Seismic Entropy Production proposed by S.
- Ts.
- Akopian has demonstrated high levels of predictive accuracy.
+ the Grammatical Evolution technique 
+\begin_inset CommandInset href
+LatexCommand href
+name "GenClass"
+target "https://github.com/itsoulos/GenClass"
+literal "false"
+
+\end_inset
+
+ demonstrated high predictive accuracy for earthquake magnitude 
+\begin_inset CommandInset href
+LatexCommand href
+name "Predicting the Magnitude of Earthquakes Using Grammatical Evolution"
+target "https://www.mdpi.com/1999-4893/18/7/405"
+literal "false"
+
+\end_inset
+
+.
  Similarly,
  our research team follows this line of reasoning,
  operating under the belief that nature provides a pattern that,
@@ -210,34 +261,3437 @@ Are earthquakes inherently unpredictable phenomena,
  Subsequently,
  Recurrent Neural Networks (RNNs) were implemented within seismological studies as early as 2007.
  Most recently,
- Grammatical Evolution (GE) has been explored in this context,
- with its application emerging in 2025.
+ Grammatical Evolution (GE) has recently been introduced in seismological studies (2025).
  Despite ongoing advancements,
  the so-called "triple prediction" accurately forecasting the time,
  location,
  and magnitude of a seismic event,
  remains unachieved.
- Beyond that Machine learning and soft computing techniques have maintained a longstanding presence in the field of seismology.
+ Beyond that,
+ Machine learning and soft computing techniques have maintained a longstanding presence in the field of seismology.
  Concerning these approaches,
  significant advancements have been achieved,
  both in mapping seismic patterns and in predicting seismic characteristics on a smaller geographical scale.
  In such a way,
  our research will analyze historical seismic events from 1970 to 2025,
- which will be categorized and classified,
- with the aim of employing Machine Learning techniques to achieve more accurate and timely predictions of earthquake magnitudes.
+ for the Latitude 33 - 44 & Longitude 17 - 44.
+ The data will be categorized and classified,
+ with the aim of employing Grammatical Evolution techniques to achieve more accurate and timely predictions of earthquake magnitudes.
  Furthermore,
  in constructing our seismic dataset,
  we identified and categorized the lithospheric–tectonic plate associated with each seismic event.
  In addition,
  we incorporated the Kp index,
  which reflects geomagnetic storms occurring within the closest temporal window to each seismic event.
- This paper presents a systematic effort to apply Machine Learning techniques for estimating earthquake magnitudes,
- using various (ML) algorithms.
- 
+ This paper presents a systematic effort to enhance magnitude prediction accuracy using GE,
+ contributing to the broader goal of reliable earthquake forecasting.
+ During the course of our experiments,
+ the application of the SMOTE technique may be considered in cases where class imbalance arises and cannot be effectively addressed through alternative methods.
 \end_layout
 
 \begin_layout Section
 Introduction
+\end_layout
+
+\begin_layout Standard
+Seismology was first established as an academic discipline in 1876 at the Imperial College of Engineering in Tokyo,
+ when John Milne (1850 - 1913) was invited to teach there,
+ and in 1886,
+ S.
+ Sekiya (1855 - 1896) was appointed as the world’s first professor dedicated specifically to the field of seismology 
+\backslash
+cite
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Duncan2002"
+literal "false"
+
+\end_inset
+
+.
+ Nevertheless,
+ the seismologists who left a lasting legacy lending their names to the classification of earthquakes,
+ were Charles Richter (1900 - 1985) and Giuseppe Mercalli (1850 - 1914).
+ The former developed,
+ in 1935,
+ a scale measuring the magnitude of seismic events,
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Richter Scale & magnitude (SMS Tsunami Warning)"
+
+\end_inset
+
+ ranging from 1 to 9 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Richter"
+literal "false"
+
+\end_inset
+
+ while the latter devised a scale that categorizes the destructive effects of an earthquake,
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab: The-Modified-Mercalli"
+
+\end_inset
+
+ranging from levels 1 to 12
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mercalli"
+literal "false"
+
+\end_inset
+
+.
+ The introduction of the Richter scale marked a significant advancement in seismology by establishing a standardized method for quantifying earthquake magnitude.
+ This standardization enabled consistent comparisons between seismic events,
+ thereby enhancing the analysis,
+ preparedness,
+ and management of earthquake-related disasters 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Geovera"
+literal "false"
+
+\end_inset
+
+.
+ On the other hand,
+ the Mercalli scale assessed the effects of an earthquake using qualitative criteria based on observed impacts on buildings,
+ infrastructure,
+ and human perception.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Richter Scale (each level is 10 time stronger than the previous).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Richter Scale & Magnitude (SMS Tsunami Warning)"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Magnitude
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consequences / Effects
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 - 1.9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detected only by seismograph
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 - 2.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hanging objects may swing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 - 3.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+People near the epicenter feel this quake
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 - 4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Can cause damage around the epicenter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 - 5.9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Can cause damage to weak buildings in the epicenter area 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6 - 6.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Can cause great damage to well - built structures
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7 - 7.9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Can cause serious damage to buildings foundations
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 - 8.9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Causes death and major destruction
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9 - ...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total destruction 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Modified Mercalli Intensity Scale (near the epicentre of the earthquake).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-Modified-Mercalli"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="2">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scale Level
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consequences / Effects
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not felt except by very few under especially favorable conditions.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+II
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Felt only by a few people
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+III
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Felt quite noticeably by people indoors
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Felt indoors by many,
+ and outdoors by few
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Felt by nearly everyone
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Felt by all
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VII
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Damage is negligible in buildings of good design and construction
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VIII
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Damage is slight in specially designed structures
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Damage is considerable in specially designed structures
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Some well-built structures are destroyed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Few,structures remain standing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XII
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Damage is total
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These measurements proved particularly applicable in urban environments,
+ especially within Western societies,
+ where systematic documentation of earthquake damage was feasible 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NAP"
+literal "false"
+
+\end_inset
+
+.
+ The classification of earthquakes has made it possible not only to develop seismic hazard maps but also to organize data systematically for the development of algorithms aimed at predicting seismic events.
+ In the following map,
+ we see the hazard map issued by the Global Earthquake Model
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.globalquakemodel.org/product/global-seismic-risk-map
+\end_layout
+
+\end_inset
+
+,
+ indicating a 10% probability of being exceeded within 50 years.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Κωνσταντίνα/Pictures/GEM_Global_Seismic_Risk_Map_2023-1_area.png
+	lyxscale 10
+	scale 20
+	BoundingBox 50cm 25cm 50cm 25cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On this researchers are increasingly utilizing artificial intelligence and other advanced techniques to enhance the timely forecasting of earthquakes and other natural disasters,
+ with the ultimate aim of helping communities take protective measures and mitigate potential impacts 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hutchison2023"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The next section highlights the efforts of researchers to predict impending seismic events using multiple Machine Learning techniques.
+\end_layout
+
+\begin_layout Standard
+Artificial neural networks (ANNs) were first applied to the field of seismology in 1994,
+ specifically through research focused on earthquake prediction using seismic electric signals "A neural network scheme for Earthquake prediction based on the seismic electric signals" 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lakkos"
+literal "false"
+
+\end_inset
+
+.
+ A more advanced form of an Artificial Neural Network (ANN) was employed in the following study 
+\begin_inset Quotes eld
+\end_inset
+
+ A machine Learning Approach for Earthquake Magnitude Estimation
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mousavi2020"
+literal "false"
+
+\end_inset
+
+ and in 
+\begin_inset Quotes eld
+\end_inset
+
+Earthquake transformer—
+An attentive deep-learning model for simultaneous earthquake detection and phase picking
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mousavi2020a"
+literal "false"
+
+\end_inset
+
+.
+ In a separate study 
+\begin_inset Quotes eld
+\end_inset
+
+P Wave Arrival Picking and First - Motion Polarity Determination With Deep Learning
+\begin_inset Quotes erd
+\end_inset
+
+ ∙ researchers utilized convolutional neural networks (CNNs) trained on more than 18 million manually annotated seismograms from Southern California to estimate earthquake parameters directly from raw waveform data,
+ eliminating the need for manual feature extraction.
+ The model exhibited remarkable precision,
+ achieving a standard deviation of only 0.023 seconds in arrival-time estimation and a 95% accuracy rate in polarity classification 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ross2018"
+literal "false"
+
+\end_inset
+
+.
+ The earliest application of Deep Neural Networks (DNNs),
+ incorporating two hidden layers,
+ was introduced in 2002 
+\begin_inset Quotes eld
+\end_inset
+
+Layered neural networks based analysis of radon concentration and environmental parameters in earthquake prediction
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "negarestani2002layered"
+literal "false"
+
+\end_inset
+
+.
+ Subsequently,
+ a high-resolution earthquake catalog was developed using DNN techniques,
+ offering valuable insights into the complexity and duration of earthquake sequences,
+ as well as their relationships with recent neighboring seismic events,
+ as discussed in the paper 
+\begin_inset Quotes eld
+\end_inset
+
+Machine learning based high resolution earthquake catalog reveals how complex fault structures were activated during the 2016 2017 central Italy sequence
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tan2021"
+literal "false"
+
+\end_inset
+
+.
+ The first documented application of Recurrent Neural Networks (RNNs) within the field of seismology was introduced in 2007,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+ Neural network models for earthquake magnitude prediction using multiple seismicity indicators
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "panakkat2007neural"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore,
+ a subsequent study 
+\begin_inset Quotes eld
+\end_inset
+
+ Earthquake magnitude prediction in Hindukush region using machine learning techniques
+\begin_inset Quotes erd
+\end_inset
+
+ concentrated on forecasting earthquake magnitudes in the Hindukush region.
+ Four machine learning approaches—
+neural network–based pattern recognition,
+ Recurrent Neural Networks (RNNs),
+ Random Forest,
+ and a Linear Programming Boost ensemble classifier—
+were individually applied to model the relationships between calculated seismic parameters and the likelihood of future earthquake occurrences 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Asim2017"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Continuing the review of previous research employing traditional machine learning techniques,
+ such as the Nearest Neighbor method.
+ a subsequent study 
+\begin_inset Quotes eld
+\end_inset
+
+Informative Modes of Seismicity in Nearest - Neighbor Earthquake Proximities
+\begin_inset Quotes erd
+\end_inset
+
+ is focusing on California∙ demonstrated that nearest-neighbor diagrams provide a simple yet effective approach for differentiating between distinct seismic patterns and assessing the reliability of earthquake catalogs 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hsu2024"
+literal "false"
+
+\end_inset
+
+.
+ Another research team,
+ used Nearest Neighbor method,
+ determined that the Weibull model offered a more accurate fit for seismic data in California,
+ showing well-structured tail behavior.
+ They further validated its robustness by successfully applying it to independent datasets from Japan,
+ Italy,
+ and New Zealand,
+ in the article 
+\begin_inset Quotes eld
+\end_inset
+
+Probabilistic identification of earthquake clusters using rescaled nearest neighbor distance networks
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bayliss2019"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This section highlights the prominent role of Machine Learning techniques in the field of seismology,
+ with several indicative examples discussed below.
+ Building on recent advancements,
+ the authors of 
+\begin_inset Quotes eld
+\end_inset
+
+Machine learning predicts laboratory earthquakes
+\begin_inset Quotes erd
+\end_inset
+
+ applied machine learning techniques to datasets obtained from shear laboratory experiments,
+ with the objective of identifying previously undetected signals that could potentially precede seismic events 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RouetLeduc2017"
+literal "false"
+
+\end_inset
+
+.
+ In a subsequent study,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Continuous chatter of the Cascadia subduction zone revealed by machine learningt
+\begin_inset Quotes erd
+\end_inset
+
+ the same researchers utilized a machine learning-based approach,
+ originally developed in the laboratory,
+ to analyze extensive raw seismic data from Vancouver Island.
+ This methodology enabled the differentiation of pertinent seismic signals from background noise and holds promise for evaluating whether,
+ and under what conditions,
+ a slow slip event might be associated with or evolve into a major earthquake 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RouetLeduc2019"
+literal "false"
+
+\end_inset
+
+.
+ Additionally,
+ another study 
+\begin_inset Quotes eld
+\end_inset
+
+Earthquake forecasting using big data and artificial intelligence:
+ A 30-week real-time case study in China
+\begin_inset Quotes erd
+\end_inset
+
+ sought to develop a predictive model capable of estimating both the location and magnitude of potential earthquakes in the following week,
+ utilizing seismic data from the current week and focusing on seismogenic regions in southwestern China.
+ The model demonstrated a testing accuracy of 70%,
+ with corresponding precision,
+ recall,
+ and F1-score values of 63.63%,
+ 93.33%,
+ and 75.66%,
+ respectively 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Saad2023"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore,
+ another study 
+\begin_inset Quotes eld
+\end_inset
+
+Machine learning can predict the timing and size of analog earthquakes
+\begin_inset Quotes erd
+\end_inset
+
+ demonstrated that machine learning techniques can effectively predict the timing and magnitude of laboratory-induced earthquakes by reconstructing and interpreting the system’s complex spatiotemporal loading history 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Corbi2019"
+literal "false"
+
+\end_inset
+
+.
+ In brief,
+ we will refer to three additional studies employing machine learning techniques:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+P.
+ Earthquake magnitude prediction using machine learning technique
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hoque2020"
+literal "false"
+
+\end_inset
+
+ ,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Towards advancing the earthquake forecasting by machine learning of satellite data
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Xiong2021"
+literal "false"
+
+\end_inset
+
+,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+How well can we predict earthquake site response so far?
+ Machine learning vs physics-based modeling
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zhu2023"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A novel method,
+ with Grammatical Evolution,
+ was introduced,
+ in 2025,
+ from the authors of this paper,
+ called 
+\begin_inset Quotes eld
+\end_inset
+
+ Predicting the Magnitude of Earthquakes Using Grammatical Evolution
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tsoulos2025"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Materials and Methods
+\end_layout
+
+\begin_layout Subsection*
+2.1 The Dataset Employed
+\end_layout
+
+\begin_layout Standard
+In this study,
+ we utilized open data provided by the NSF Seismological Facility for the Earth Consortium (SAGE),
+ specifically accessed through the 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&endtime=2010-12-31&orderby=time-desc&src=iris&limit=1000&maxlat=86.99&minlat=-84.16&maxlon=180.00&minlon=-180.00&zm=1&mt=ter 
+\end_layout
+
+\end_inset
+
+ Interactive Earthquake Browser.
+ The choice of NSF data was motivated by its enhanced functionality.
+ Although the GEOFON program offers similar information,
+ it imposes a restriction on the maximum number of earthquakes retrievable per query (1000 events),
+ thereby limiting the temporal scope of data extraction.
+ This constraint is particularly significant,
+ as nearly 1000 seismic events may occur within a single day.
+ The NSF SAGE Facility is recognized as a reliable data repository,
+ having been certified by the CoreTrustSeal Standards and Certification Board.
+ The dataset was compiled for the region spanning latitudes 33 - 44,
+ and longitudes 17 - 44,
+ covering the period from 1970 to 2025,
+ with each subset comprising approximately 1,000 recorded earthquake events.
+ The regions encompassed within these geographical coordinates are as follows.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Regions & Code
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="6">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Turkey
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Albania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Romania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crete Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North/Western Balkan region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bulgaria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greece (Attika)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Central Mediterranean Sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crimea region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dodecanese Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jordan/Syrian Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Armenia/Azerbaizan/Iran border
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ionian Sea Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Georgia/Armenia/Turkey border
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adriatic Sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aegean Sea Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Turkey/Iran border
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ukraine/Moldova/South West Russia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Southern Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iraq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Southern Italy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greece/Albanian border
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eastern Mediterranean Sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iran/Iraq border
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greece/Bulgarian border
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North/Western Caucasus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cyprus Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Black Sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The total number of recorded seismic events in these regions amounted to 550.710,
+ the majority of which specifically 421.890,
+ correspond to low magnitude earthquakes,
+ ranging from 1.0 to 2.99 mag.
+ The seismic data analysis was conducted using a classification algorithm implemented in C++,
+ executed within the MSYS2 MINGW64 environment.
+ Development and testing of the code were performed using Visual Studio Code (VSCode).
+ The algorithm leverages data structures from the C++ Standard Library to read,
+ filter,
+ and classify seismic events based on magnitude and temporal sequence.
+ For each region and for each year,
+ the number of events with a magnitude (Mw) equal to or greater than 5 was calculated.
+ 
+\end_layout
+
+\begin_layout Standard
+The regions in which earthquakes of magnitude 6 and above have occurred are as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Regions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mag>=6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mag>=6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Turkey (1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cyprus (10)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crete Greece (2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Albania (11)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greece (3)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North/Western Balkan (12)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dodecanese (4)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Central Mediterranean (13)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ionian (5)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jordan/Syrian (14)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aegean (6)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Turkey/Iran border (16)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Southern Greece (7)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North/Western Caucasus (19)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The following table presents the focal depth of the earthquakes,per selected region,
+ which has been categorized into the following classes,
+ according to depth,
+ as outlined below:
+ From 0 to 32.9 km corresponds to class 0,
+ from 33 to 69.9 km to class 1,
+ from 70 to 149.9 km to class 2,
+ from 150 to 299.9 km to class 3,
+ from 300 to 499.9 km to class 4,
+ from 500 to 799.9 km to class 5,
+ and focal depths greater than 800 km correspond to class 6.
+ The categorization of these specific classes was conducted in accordance with the color-coded classification of focal depth provided by the NSF SAGE.
+ Based on the data presented below,
+ it is initially observed that no seismic events with focal depths exceeding 800 km are recorded in the study area.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Depth statistics per region
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="4">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Count earthquakes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Min depth (class)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Max depth (class)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+230.632
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.007
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+99.964
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26.180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.306
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33.725
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38.023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.326
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.077
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.354
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.614
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.690
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.595
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliographystyle{plain} % ή plain,
+ ή IEEEtran,
+ ανάλογα με το στυλ που θέλεις
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliography{refs} % χωρίς το .bib στο όνομα
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "refs"
+options "ieeetr"
+encoding "default"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[1] Duncan2002"
+
+\end_inset
+
+History of Seismology,
+ 2002,
+ INTERNATIONAL HANDBOOK OF EARTHQUAKE AND ENGINEERING SEISMOLOGY,
+ volume 81A.
+ ISBN:
+ 0-12-440652-1,
+ https://igppweb.ucsd.edu/~agnew/Pubs/agnew.a66.pdf
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[2] Richter"
+
+\end_inset
+
+Online Archive of California,
+ Guide to the Papers of Charles F.
+ Richter,
+ 1839-1984.
+ https://oac.cdlib.org/findaid/ark:/13030/kt787005jn/admin/
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[3] Mercalli"
+
+\end_inset
+
+Encyclopedia.com,
+ Mercalli,
+ Giuseppe.
+ https://www.encyclopedia.com/people/science-and-technology/environmental-studies-biographies/giuseppe-mercalli#:~:text=Mercalli,
+ Giuseppe (1815–1914)An Italian professor of natural,and refined several times.
+ See Mercalli scale.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[4] Geovera"
+
+\end_inset
+
+GeoVera,
+ A Journey Through Time:
+ The History of the Richter Scale,
+ 2023.
+ https://geovera.com/2023/04/27/history-richter-scale/
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[5] NAP"
+
+\end_inset
+
+National Academies of Sciences,
+ Engineering,
+ and Medicine.
+ 2003.
+ Living on an Active Earth:
+ Perspectives on Earthquake Science.
+ Washington,
+ DC:
+ The National Academies Press.
+ https://doi.org/10.17226/10493.
+ https://nap.nationalacademies.org/read/10493/chapter/1#ii 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[6] Hutcinson"
+
+\end_inset
+
+ Hutchison,
+ Allie.
+ How machine learning might unlock earthquake prediction.
+ 2023.
+ MIT Technology Review.
+ https://www.technologyreview.com/2023/12/29/1084699/machine-learning-earthquake-prediction-ai-artificial-intelligence/ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[7] Lakkos et al. "
+
+\end_inset
+
+ Lakkos,
+ S.
+ / Hadjiprocopis,
+ A.
+ / Comley,
+ R.
+ / Smith,
+ P.
+ A neural network scheme for Earthquake prediction based on the seismic electric signals .1994.
+ Proceedings of IEEE Workshop on Neural Networks for Signal Processing pp.
+ 681-689.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[8] Mousavi & Beroza"
+
+\end_inset
+
+ Mousavi,
+ S.
+ Mostafa.
+ / Beroza,
+ Gregory.
+ C.
+ A machine learning approach for earthquake magnitude estimation .
+ 2020.
+ Geophysical Research Letters ,
+ Vol.
+ 47,
+ No.
+ 1.
+ https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019GL085976 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[9] Mousavi et al."
+
+\end_inset
+
+ Mousavi,
+ S.
+ Mostafa.
+ / Ellsworth,
+ William.
+ L.
+ / Zhu,
+ Weiqiang.
+ / Chuang,
+ Lindsay.
+ Y.
+ / Beroza,
+ Gregory.
+ C.
+ Earthquake transformer an attentive deep learning model for simultaneous earthquake detection and phase picking.
+ 2020.
+ Nature communications ,
+ Vol.
+ 11,
+ No.
+ 3952 https://www.nature.com/articles/s41467-020-17591-w
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[10] Ross et al. "
+
+\end_inset
+
+ Ross,
+ Zachary.
+ E.
+ / Meier,
+ Men Andrin.
+ / Hauksson,
+ Egill.
+ P wave arrival picking and first motion polarity determination with deep learning.
+ 2018.
+ Journal of Geophysical Research:
+ Solid Earth ,
+ Vol.
+ 123,
+ No.
+ 6 pp.
+ 5120-5129.
+ https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2017JB015251
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[11] Negarestani et al. "
+
+\end_inset
+
+ Negarestani,
+ Ali / Setayeshi,
+ Saeed / Ghannadi-Maragheh,
+ M.
+ / Akashe,
+ B.
+ Layered neural networks based analysis of radon concentration and environmental parameters in earthquake prediction.
+ 2002.
+ Journal of environmental radioactivity ,
+ Vol.
+ 62,
+ No.
+ 3 Elsevier pp.
+ 225-233 https://www.sciencedirect.com/science/article/pii/S0265931X01001655?casa_token=8GeIQfNdfmYAAAAA:uiNSmNFI0qZQVSHa_MjAX513dhdOqe4eZ__ggaDg0nr-zbzkEmTh4hqZEdUUntXpORDIexSpXrY 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[12] Tan et al. "
+
+\end_inset
+
+ Tan,
+ Yen.
+ Joe.
+ / Waldhauser,
+ Felix.
+ / Ellsworth,
+ William.
+ L.
+ / Zhang,
+ Miao.
+ / Zhu,
+ Weiqiang.
+ / Michele,
+ Maddalena.
+ / Chiaraluce,
+ Lauro.
+ / Beroza,
+ Gregory.
+ C.
+ / Segou,
+ Margarita.
+ Machine learning based high resolution earthquake catalog reveals how complex fault structures were activated during the 2016 2017 central Italy sequence .
+ 2021.
+ The Seismic Record ,
+ Vol.
+ 1,
+ No.
+ 1 pp.
+ 11-19.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[13] Panakat & Adeli"
+
+\end_inset
+
+ Panakkat,
+ Ashif / Adeli,
+ Hojjat.
+ Neural network models for earthquake magnitude prediction using multiple seismicity indicators.
+ 2007.
+ International journal of neural systems ,
+ Vol.
+ 17,
+ No.
+ 01 World Scientific.
+ pp.
+ 13-33.
+ https://www.worldscientific.com/doi/abs/10.1142/S0129065707000890 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[14] Asim et al. "
+
+\end_inset
+
+ Asim,
+ K.
+ M.
+ / Martínez-Álvarez,
+ F.
+ / Basit,
+ A.
+ / Iqbal,
+ T.
+ Earthquake magnitude prediction in Hindukush region using machine learning techniques.
+ 2017.
+ Natural Hazards ,
+ Vol.
+ 85 pp.
+ 471 - 486 https://link.springer.com/article/10.1007/s11069-016-2579-3
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[15] Fang Hsu et al."
+
+\end_inset
+
+ Hsu,
+ Yu-Fang.
+ / Zaliapin,
+ Ilya.
+ / Ben‐Zion,
+ Yehuda.
+ Informative modes of seismicity in nearest neighbor earthquake proximities.
+ 2024.
+ Journal of Geophysical Research:
+ Solid Earth ,
+ Vol.
+ 129,
+ No.
+ 3 pp.
+ e2023JB027826 https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JB027826 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[16] Bayliss et al. "
+
+\end_inset
+
+ Bayliss,
+ Kirsty.
+ / Naylor,
+ Mark.
+ / Main,
+ Ian.
+ G.
+ Probabilistic identification of earthquake clusters using rescaled nearest neighbour distance networks.
+ 
+\end_layout
+
+\begin_layout Standard
+2019.
+ Geophysical Journal International ,
+ Vol.
+ 217,
+ No.
+ 1 pp.
+ 487- 503 https://academic.oup.com/gji/article/217/1/487/5292493
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[17] Rouet et al. -1"
+
+\end_inset
+
+ Rouet Leduc,
+ Bertrand.
+ / Hulbert,
+ Claudia.
+ / Lubbers,
+ Nicholas.
+ / Barros,
+ Kipton.
+ / Humphreys,
+ Colin.
+ J.
+ / Johnson,
+ Paul.
+ A.
+ Machine learning predicts laboratory earthquakes.
+ 2017.
+ Geophysical Research Letters ,
+ Vol.
+ 44,
+ No.
+ 18 pp.
+ 9276-9282.
+ https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017GL074677 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[18] Rouet et al. "
+
+\end_inset
+
+ Rouet Leduc,
+ Bertrand.
+ / Hulbert,
+ Claudia.
+ / Johnson,
+ Paul.
+ A.
+ Continuous chatter of the Cascadia subduction zone revealed by machine learning.
+ 2019.
+ Nature Geoscience ,
+ Vol.
+ 12,
+ No.
+ 1
+\end_layout
+
+\begin_layout Standard
+pp.
+ 75 - 79
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[19] Saad et al."
+
+\end_inset
+
+ Saad,
+ Omar.
+ M.
+ / Chen,
+ Yunfeng.
+ / Savvaidis,
+ Alexandros.
+ / Fomel,
+ Sergey.
+ / Jiang,
+ Xiuxuan.
+ / Huang,
+ Dino.
+ / ...
+ & Chen,
+ Yangkang.
+ Earthquake forecasting using big data and artificial intelligence:
+ A 30 week real time case study in China.
+ 2023.
+ Bulletin of the Seismological Society of America,
+ ,
+ Vol.
+ 113,
+ No.
+ 6 pp.
+ 2461 - 2478 https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/113/6/2461/627949/Earthquake-Forecasting-Using-Big-Data-and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[20] Corbi et al. "
+
+\end_inset
+
+ Corbi,
+ F.
+ / Sandri,
+ L.
+ / Bedford,
+ J.
+ / Funiciello,
+ F.
+ / Brizzi,
+ S.
+ / Rosenau,
+ M.
+ / Lallemand,
+ S.
+ Machine learning can predict the timing and size of analog earthquakes.
+ 2019.
+ Geophysical Research Letters ,
+ Vol.
+ 46,
+ No.
+ 3 pp.
+ 1303 - 1311 https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GL081251 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[21] Hoque et al. "
+
+\end_inset
+
+ Hoque,
+ Amirul.
+ / Raj,
+ Jyoti.
+ / Saha,
+ Ashim.
+ / Bhattacharya,
+ Paritosh.
+ Earthquake magnitude prediction using machine learning technique.
+ In Trends in Computational Intelligence,
+ Security and Internet of Things:
+ Third International Conference,
+ ICCISIoT 2020,
+ Tripura,
+ India.
+ 2020.
+ Springer International Publishing.
+ pp.
+ 37 - 53 https://link.springer.com/chapter/10.1007/978-3-030-66763-4_4
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[22] Xiong et al."
+
+\end_inset
+
+ Xiong,
+ Pan.
+ / Tong,
+ Lei.
+ / Zhang,
+ Kun.
+ / Shen,
+ Xuhui.
+ / Battiston,
+ Roberto.
+ / Ouzounov,
+ Dimitar.
+ / ...
+ & Zhou,
+ Huiyu.
+ Towards advancing the earthquake forecasting by machine learning of satellite data.
+ 2021.
+ Science of the Total Environment ,
+ Vol.
+ 771 pp.
+ 145256 
+\end_layout
+
+\begin_layout Standard
+https://www.sciencedirect.com/science/article/pii/S0048969721003223?casa_token=kIUc3ZoGeOYAAAAA:w12vsFK8dfM1eIgP_rhwprzty12TYgWfKQH0gGcIRyPzBjAQOQvnIpitnEAqjShuGvOpe1KDf-Q 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[23] Zhu et al."
+
+\end_inset
+
+ Zhu,
+ Chuanbin.
+ / Cotton,
+ Fabrice.
+ / Kawase,
+ Hiroshi.
+ / Nakano,
+ Kenici.
+ How well can we predict earthquake site response so far?
+ Machine learning vs physics based modeling.
+ 2023.
+ Earthquake Spectra ,
+ Vol.
+ 39,
+ No.
+ 1 pp.
+ 478 - 504 https://journals.sagepub.com/doi/full/10.1177/87552930221116399
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "[24] Tsoulos et al."
+
+\end_inset
+
+ Kopitsa,
+ Constantina / Tsoulos,
+ Ioannis G.
+ / Charilogis,
+ Vasileios.
+ Predicting the Magnitude of Earthquakes Using Grammatical Evolutio.
+ 2025.Algorithms ,
+ Vol.
+ 18,
+ No.
+ 7 https://www.mdpi.com/1999-4893/18/7/405 
 \end_layout
 
 \end_body
