@@ -54,7 +54,7 @@ int main(int argc,char **argv)
 		fscanf(fp,"%lf",&y);
 		if(y<=1) continue;
 		if(y>2) y=1; else y=0;
-		for(int j=0;j<d;j++) printf("%lf ",xx[j]);
+		for(int j=0;j<d;j++) printf("%lf ",j==0?xx[j]-1970:xx[j]);
 		printf("%lf\n",y);
 	}
 	fclose(fp);
