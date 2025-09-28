@@ -24,7 +24,7 @@ struct Quake
 
 QVector<Quake> originalQuake;
 QVector<Quake> finalQuake;
-long timeInterval=2000;//secs
+long timeInterval=0;//secs
 
 
 long makeDateInSecs(QString t)
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
         record.lithcode=list[13].toInt();
         record.datetime=list[14];
         record.kpcode=list[15].toInt();
-        if(record.magcode<=2) continue;
+        if(record.magcode<=3) continue;
         originalQuake<<record;
     }
     fp.close();
@@ -105,19 +105,19 @@ int main(int argc, char *argv[])
     QFile fout("output.data");
     fout.open(QIODevice::WriteOnly);
     QTextStream s2(&fout);
-    s2<<"12\n"<<finalQuake.size()<<"\n";
+    s2<<"10\n"<<finalQuake.size()<<"\n";
     for(int i=0;i<finalQuake.size();i++)
     {
         Quake record = finalQuake[i];
-        if(record.magcode>=4) record.magcode=4;
+        if(record.magcode>=5) record.magcode=5;
         s2<<(record.year-1970)*1.0/(2025.0-1970.0)<<" "<<record.epoch<<" "<<
             record.day<<" "<<record.time<<" "<<
             record.lat<<" "<<
             record.lon<<" "<<
             record.depthcode<<" "<<
             record.prevmagcode<<" "<<record.regioncode<<" "<<
-            record.days_since<<" "<<record.lithcode<<" "<<
-            record.kpcode<<" "<<record.magcode<<"\n";
+            record.lithcode<<" "<<
+            record.magcode<<"\n";
 
     }
     fout.close();
