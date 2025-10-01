@@ -77,6 +77,7 @@ int main(int argc, char *argv[])
         if(icount==0) {icount=1; continue;}
         if(line.length()<1) continue;
         icount++;
+	if(rand()%10<9) continue;
         QStringList list=line.split(";");
         Quake record;
         int lcount=0;
@@ -94,7 +95,7 @@ int main(int argc, char *argv[])
         record.datetime=list[lcount++];
         record.lithcode=list[lcount++].toInt();
         record.magnitude=list[lcount++].toDouble();
-        if(record.magnitude<=4) continue;
+        if(record.magnitude<=3) continue;
         originalQuake<<record;
     }
     fp.close();
@@ -120,7 +121,7 @@ int main(int argc, char *argv[])
             QString t2 = originalQuake[j].datetime;
             long l1 = makeDateInSecs(t1);
             long l2 = makeDateInSecs(t2);
-            if(i%100==0) printf("running %d \n",i);
+            if(i%100==0) printf("running %d from %d \n",i,N);
             if(l2>l1) continue;
             if(distance<minDistance)
             {
@@ -187,13 +188,13 @@ int main(int argc, char *argv[])
             record.lat/10000.0<<" "<<
             record.lon/10000.0<<" "<<
             record.depth<<" "<<
-            (round(record.prevmag)>=6.0?6.0:round(record.prevmag))<<" "<<
+            (round(record.prevmag)>=5.0?5.0:round(record.prevmag))<<" "<<
             record.regioncode<<" "<<
             record.same_region<<" "<<
             record.lithcode<<" "<<
             record.nearQuakesInThePast<<" "<<
             record.meanQuakesInThePast<<"  "<<
-            (round(record.magnitude)>=6.0?6.0:round(record.magnitude))<<"\n";
+            (round(record.magnitude)>=5.0?5.0:round(record.magnitude))<<"\n";
     }
     fout.close();
     return 0;
