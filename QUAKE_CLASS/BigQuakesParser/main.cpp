@@ -5,23 +5,27 @@
 # include <math.h>
 struct Quake
 {
-    int year;
-    int month;
-    int epoch;
-    int day;
-    int time;
-    double lat;
-    double lon;
-    int depth;
-    double prevmag;
-    int regioncode;
-    QString datetime;
-    int same_region;
-    int lithcode;
-    double magnitude;
+    int 	year;
+    int 	month;
+    int 	epoch;
+    int 	day;
+    int 	time;
+    double 	lat;
+    double 	lon;
+    int 	depth;
+    double 	prevmag;
+    int 	regioncode;
+    QString 	datetime;
+    int 	same_region;
+    int 	lithcode;
+    double 	magnitude;
 
-    int nearQuakesInThePast=0;
-    double meanQuakesInThePast=0.0;
+    double      maxNearQuake=0.0;
+    double      meanDistance=0.0;
+    int         nearQuakesInThePast=0;
+    double      meanQuakesInThePast=0.0;
+    long        timeBetweenMajorQuake=0;
+    double      distanceFromMajorQuake=0.0;
 };
 
 QVector<Quake> originalQuake;
@@ -30,7 +34,7 @@ QVector<Quake> finalQuake;
 
 long timeInterval=2000;//secs
 
-
+const  double minDistance = 5000.0;//50km
 long makeDateInSecs(QString t)
 {
     QStringList alist=t.split(" ");
@@ -77,7 +81,7 @@ int main(int argc, char *argv[])
         if(icount==0) {icount=1; continue;}
         if(line.length()<1) continue;
         icount++;
-	if(rand()%10<9) continue;
+        if(rand()%30<29) continue;
         QStringList list=line.split(";");
         Quake record;
         int lcount=0;
@@ -95,7 +99,7 @@ int main(int argc, char *argv[])
         record.datetime=list[lcount++];
         record.lithcode=list[lcount++].toInt();
         record.magnitude=list[lcount++].toDouble();
-        if(record.magnitude<=3) continue;
+        if(record.magnitude<=2) continue;
         originalQuake<<record;
     }
     fp.close();
@@ -104,10 +108,13 @@ int main(int argc, char *argv[])
     int N=originalQuake.size();
     for(int i=0;i<N;i++)
     {
-        double minDistance = 50000.0;//50km
+
         int iminDistance=0;
         double dminDistance=0.0;
         double dminMagnitude=0.0;
+        originalQuake[i].maxNearQuake=0.0;
+        originalQuake[i].timeBetweenMajorQuake=0;
+        originalQuake[i].distanceFromMajorQuake=0.0;
         for(int j=0;j<N;j++)
         {
             if(i==j) continue;
@@ -125,6 +132,13 @@ int main(int argc, char *argv[])
             if(l2>l1) continue;
             if(distance<minDistance)
             {
+                if(originalQuake[j].magnitude>originalQuake[i].maxNearQuake)
+                {
+                    originalQuake[i].maxNearQuake=originalQuake[j].magnitude;
+                    originalQuake[i].timeBetweenMajorQuake=l1-l2;
+                    originalQuake[i].distanceFromMajorQuake=distance;
+                }
+
                 iminDistance++;
                 dminDistance+=distance;
                 dminMagnitude+=originalQuake[j].magnitude;
@@ -132,11 +146,13 @@ int main(int argc, char *argv[])
         }
         if(iminDistance>0)
         {
+		originalQuake[i].meanDistance= dminDistance/iminDistance;
             originalQuake[i].nearQuakesInThePast=iminDistance;
             originalQuake[i].meanQuakesInThePast=dminMagnitude/iminDistance;
         }
         else
         {
+		originalQuake[i].meanDistance= 0.0;
             originalQuake[i].nearQuakesInThePast=0;
             originalQuake[i].meanQuakesInThePast=0.0;
         }
@@ -177,24 +193,27 @@ int main(int argc, char *argv[])
    QFile fout("output.data");
     fout.open(QIODevice::WriteOnly);
     QTextStream s2(&fout);
-    s2<<"13\n"<<finalQuake.size()<<"\n";
+    s2<<"16\n"<<finalQuake.size()<<"\n";
     for(int i=0;i<finalQuake.size();i++)
     {
         Quake record = finalQuake[i];
-        s2<<(record.year-1970)*1.0<<" "<<
+        s2<<(record.year-1970)*1.0/(2025.0-1970.0)<<" "<<
             record.epoch<<" "<<
-            record.day<<" "<<
-            record.time<<" "<<
+            record.day/30.0<<" "<<
+            record.time/24.0<<" "<<
             record.lat/10000.0<<" "<<
             record.lon/10000.0<<" "<<
             record.depth<<" "<<
-            (round(record.prevmag)>=5.0?5.0:round(record.prevmag))<<" "<<
+            (round(record.prevmag)>=4.0?4.0:round(record.prevmag))<<" "<<
             record.regioncode<<" "<<
             record.same_region<<" "<<
             record.lithcode<<" "<<
             record.nearQuakesInThePast<<" "<<
             record.meanQuakesInThePast<<"  "<<
-            (round(record.magnitude)>=5.0?5.0:round(record.magnitude))<<"\n";
+            record.maxNearQuake<<" "<<
+            record.timeBetweenMajorQuake*1.0/(3600.0 * 1000.0)<<" "<<
+            record.distanceFromMajorQuake/minDistance<<" "<<
+            (round(record.magnitude)>=4.0?4.0:round(record.magnitude))<<"\n";
     }
     fout.close();
     return 0;
