@@ -1107,7 +1107,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename gem_quake.png
-	scale 45
+	scale 30
 
 \end_inset
 
@@ -1143,6 +1143,13 @@ name "fig:Hazard-map-from"
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace 6pt
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 On this researchers are increasingly utilizing artificial intelligence and other advanced techniques to enhance the timely forecasting of earthquakes and other natural disasters,
  with the ultimate aim of helping communities take protective measures and mitigate potential impacts 
 \begin_inset CommandInset citation
@@ -1153,18 +1160,12 @@ literal "false"
 \end_inset
 
 .
- A series of machine learning techniques were applied on data gathered from earthquakes.
- For example,
- Artificial neural networks (ANNs) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nnoverview"
-literal "false"
+\end_layout
 
-\end_inset
-
- were first applied to the field of seismology in 1994,
- specifically through research focused on earthquake prediction using seismic electric signals 
+\begin_layout Standard
+The next section highlights the efforts of researchers to predict impending seismic events using multiple Machine Learning techniques.
+ Artificial neural networks (ANNs) were first applied to the field of seismology in 1994,
+ specifically through research focused on earthquake prediction using seismic electric signals "A neural network scheme for Earthquake prediction based on the seismic electric signals" 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lakkos1994"
@@ -1173,7 +1174,7 @@ literal "false"
 \end_inset
 
 .
- A more advanced form of an Artificial Neural Network (ANN) was employed in the related study 
+ A more advanced form of an Artificial Neural Network (ANN) was employed related study 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mousavi2020"
@@ -1181,17 +1182,16 @@ literal "false"
 
 \end_inset
 
+ and in 
+\begin_inset Quotes eld
+\end_inset
 
-\series bold
-.
+Earthquake transformer—
+An attentive deep-learning model for simultaneous earthquake detection and phase picking
+\begin_inset Quotes erd
+\end_inset
+
  
-\series default
-Furthermore
-\series bold
-,
-
-\series default
- Mousavi et al 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Mousavi2020-1"
@@ -1199,17 +1199,16 @@ literal "false"
 
 \end_inset
 
- suggested an attentive deep-learning model for simultaneous earthquake detection.
- Moreover,
- researchers utilized convolutional neural networks (CNNs) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "cnnSurvey"
-literal "false"
-
+.
+ In a separate study 
+\begin_inset Quotes eld
 \end_inset
 
- trained on more than 18 million manually annotated seismograms from Southern California to estimate earthquake parameters directly from raw waveform data,
+P Wave Arrival Picking and First - Motion Polarity Determination With Deep Learning
+\begin_inset Quotes erd
+\end_inset
+
+ ∙ researchers utilized convolutional neural networks (CNNs) trained on more than 18 million manually annotated seismograms from Southern California to estimate earthquake parameters directly from raw waveform data,
  eliminating the need for manual feature extraction.
  The model exhibited remarkable precision,
  achieving a standard deviation of only 0.023 seconds in arrival-time estimation and a 95% accuracy rate in polarity classification 
@@ -1221,21 +1220,17 @@ literal "false"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-The earliest application of Deep Neural Networks (DNNs) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dnnOverview"
-literal "false"
-
-\end_inset
-
-,
+ The earliest application of Deep Neural Networks (DNNs),
  incorporating two hidden layers,
  was introduced in 2002 
+\begin_inset Quotes eld
+\end_inset
+
+Layered neural networks based analysis of radon concentration and environmental parameters in earthquake prediction
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Negarestani2002"
@@ -1248,7 +1243,15 @@ literal "false"
  a high-resolution earthquake catalog was developed using DNN techniques,
  offering valuable insights into the complexity and duration of earthquake sequences,
  as well as their relationships with recent neighboring seismic events,
- as discussed in the related work 
+ as discussed in the paper 
+\begin_inset Quotes eld
+\end_inset
+
+Machine learning based high resolution earthquake catalog reveals how complex fault structures were activated during the 2016 2017 central Italy sequence
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tan2021"
@@ -1257,16 +1260,16 @@ literal "false"
 \end_inset
 
 .
- Additionally,
- Recurrent Neural Networks (RNNs) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "rnnOverview"
-literal "false"
-
+ The first documented application of Recurrent Neural Networks (RNNs) within the field of seismology was introduced in 2007,
+ 
+\begin_inset Quotes eld
 \end_inset
 
- within the field of seismology was introduced in 2007 
+ Neural network models for earthquake magnitude prediction using multiple seismicity indicators
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Panakat & Adeli"
@@ -1276,7 +1279,21 @@ literal "false"
 
 .
  Furthermore,
- a subsequent study regarding Earthquake magnitude prediction using machine learning techniques was introduced recently 
+ a subsequent study 
+\begin_inset Quotes eld
+\end_inset
+
+ Earthquake magnitude prediction in Hindukush region using machine learning techniques
+\begin_inset Quotes erd
+\end_inset
+
+ concentrated on forecasting earthquake magnitudes in the Hindukush region.
+ Four machine learning approaches—
+neural network–based pattern recognition,
+ Recurrent Neural Networks (RNNs),
+ Random Forest,
+ and a Linear Programming Boost ensemble classifier—
+were individually applied to model the relationships between calculated seismic parameters and the likelihood of future earthquake occurrences 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Asim et al."
@@ -1284,28 +1301,22 @@ literal "false"
 
 \end_inset
 
-,
- concentrated on forecasting earthquake magnitudes in the Hindukush region.
- Four machine learning approaches—
-neural network–based pattern recognition,
- Recurrent Neural Networks,
- Random Forests 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "rfOverview"
-literal "false"
+.
+ 
+\end_layout
 
+\begin_layout Standard
+Continuing the review of previous research employing traditional machine learning techniques,
+ such as the Nearest Neighbor method.
+ a subsequent study 
+\begin_inset Quotes eld
 \end_inset
 
-,
- and a Linear Programming Boost ensemble classifier—
-were individually applied to model the relationships between calculated seismic parameters and the likelihood of future earthquake occurrences.
- Also
-\series bold
-,
+Informative Modes of Seismicity in Nearest - Neighbor Earthquake Proximities
+\begin_inset Quotes erd
+\end_inset
 
-\series default
- a subsequent study demonstrated that nearest-neighbor diagrams provide a simple yet effective approach for differentiating between distinct seismic patterns and assessing the reliability of earthquake catalogs 
+ is focusing on California∙ demonstrated that nearest-neighbor diagrams provide a simple yet effective approach for differentiating between distinct seismic patterns and assessing the reliability of earthquake catalogs 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hsu2024"
@@ -1321,7 +1332,15 @@ literal "false"
  They further validated its robustness by successfully applying it to independent datasets from Japan,
  Italy,
  and New Zealand,
- in the related publication 
+ in the article 
+\begin_inset Quotes eld
+\end_inset
+
+Probabilistic identification of earthquake clusters using rescaled nearest neighbor distance networks
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bayliss2019"
@@ -5859,26 +5878,6 @@ Total Years
 The used method
 \end_layout
 
-\begin_layout Standard
-The main steps of the GenClass method proposed here have as follows:
-\end_layout
-
-\begin_layout Enumerate
-Initialization step.
-\end_layout
-
-\begin_layout Enumerate
-Fitness calculation step.
-\end_layout
-
-\begin_layout Enumerate
-Application of genetic operations.
-\end_layout
-
-\begin_layout Enumerate
-Termination check step.
-\end_layout
-
 \begin_layout Section
 Results
 \begin_inset CommandInset label
@@ -7085,30 +7084,6 @@ https://www.technologyreview.com/2023/12/29/1084699/machine-learning-earthquake-
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(2008)"
-key "nnoverview"
-literal "false"
-
-\end_inset
-
-Zou,
- J.,
- Han,
- Y.,
- & So,
- S.
- S.
- (2008).
- Overview of artificial neural networks.
- Artificial neural networks:
- methods and applications,
- 14-22.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
 key "Lakkos1994"
 literal "false"
 
@@ -7187,36 +7162,6 @@ an attentive deep-learning model for simultaneous earthquake detection and phase
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(2008)"
-key "cnnSurvey"
-literal "false"
-
-\end_inset
-
-Li,
- Z.,
- Liu,
- F.,
- Yang,
- W.,
- Peng,
- S.,
- & Zhou,
- J.
- (2021).
- A survey of convolutional neural networks:
- analysis,
- applications,
- and prospects.
- IEEE transactions on neural networks and learning systems,
- 33(12),
- 6999-7019.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
 key "Ross2018"
 literal "false"
 
@@ -7236,35 +7181,6 @@ Ross,
  Solid Earth,
  123(6),
  5120-5129.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2008)"
-key "dnnOverview"
-literal "false"
-
-\end_inset
-
-Sze,
- V.,
- Chen,
- Y.
- H.,
- Yang,
- T.
- J.,
- & Emer,
- J.
- S.
- (2017).
- Efficient processing of deep neural networks:
- A tutorial and survey.
- Proceedings of the IEEE,
- 105(12),
- 2295-2329.
 \end_layout
 
 \begin_layout Bibliography
@@ -7328,30 +7244,6 @@ Tan,
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "(2008)"
-key "rnnOverview"
-literal "false"
-
-\end_inset
-
-Caterini,
- A.
- L.,
- & Chang,
- D.
- E.
- (2018).
- Recurrent neural networks.
- In Deep neural networks in a mathematical framework (pp.
- 59-79).
- Cham:
- Springer International Publishing.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
 key "Panakat & Adeli"
 literal "false"
 
@@ -7391,25 +7283,6 @@ Asim,
  Natural Hazards,
  85(1),
  471-486.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2008)"
-key "rfOverview"
-literal "false"
-
-\end_inset
-
-Breiman,
- L.
- (2001).
- Random forests.
- Machine learning,
- 45(1),
- 5-32.
 \end_layout
 
 \begin_layout Bibliography
