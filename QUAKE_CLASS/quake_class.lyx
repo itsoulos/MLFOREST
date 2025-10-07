@@ -488,7 +488,7 @@ literal "false"
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -734,7 +734,7 @@ Total destruction
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -1097,7 +1097,7 @@ https://www.globalquakemodel.org/product/global-seismic-risk-map
 
 \begin_layout Standard
 \begin_inset Float figure
-placement document
+placement H
 alignment document
 wide false
 sideways false
@@ -1405,11 +1405,16 @@ literal "false"
 \end_inset
 
  is proposed for the efficient creation of classification rules on seismic data that are widely available on the internet.
- 
-\series bold
-Grammatical Evolution is considered as a special case of genetic algorithms,
- where the chromosomes are series of integer numbers.
- Chromosomes in the Grammatical Evolution process are rules for generating a Backus–Naur form (BNF) grammar 
+ Grammatical Evolution is a genetic algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gaOverview"
+literal "false"
+
+\end_inset
+
+,
+ where the chromosomes are series of production rules from a provided Backus–Naur form (BNF) grammar 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bnf1"
@@ -1417,9 +1422,13 @@ literal "false"
 
 \end_inset
 
- and can be used to create functional programs in any programming language.
- Grammatical Evolution has been applied on a wide series of real - world applications,
- such as function approximation
+.
+ Among the numerous cases of application of Grammatical Evolution,
+ one can find problems such as
+\series bold
+ 
+\series default
+function approximation
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_program1,ge_program2"
@@ -1428,7 +1437,7 @@ literal "false"
 \end_inset
 
 ,
- credit classification 
+ economic problems
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_credit"
@@ -1437,7 +1446,11 @@ literal "false"
 \end_inset
 
 ,
- network security and prevention of attacks 
+
+\series bold
+ 
+\series default
+network security issues 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_intrusion"
@@ -1446,7 +1459,7 @@ literal "false"
 \end_inset
 
 ,
- monitoring of water quality 
+ water quality problems 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_water"
@@ -1455,7 +1468,7 @@ literal "false"
 \end_inset
 
 ,
- modeling glycemia in humans 
+ medical problems 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_glykemia"
@@ -1464,7 +1477,7 @@ literal "false"
 \end_inset
 
 ,
- automatic design of Ant algorithms 
+ evolutionary computation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_ant"
@@ -1473,7 +1486,7 @@ literal "false"
 \end_inset
 
 ,
- temperature prediction in data centers 
+ prediction of temperature in data centers 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_datacenter"
@@ -1482,7 +1495,7 @@ literal "false"
 \end_inset
 
 ,
- solving trigonometric equations 
+ solving trigonometric problems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_trig"
@@ -1500,7 +1513,7 @@ literal "false"
 \end_inset
 
 ,
- neural network construction 
+ construction of neural networks 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_nn,ge_nn2"
@@ -1509,7 +1522,7 @@ literal "false"
 \end_inset
 
 ,
- producing numeric constants 
+ numerical problems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_constant"
@@ -1527,7 +1540,7 @@ literal "false"
 \end_inset
 
 ,
- energy demand estimation
+ energy issues 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_energy"
@@ -1545,7 +1558,7 @@ literal "false"
 \end_inset
 
 ,
- cryptography 
+ security issues 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_crypt"
@@ -1554,7 +1567,7 @@ literal "false"
 \end_inset
 
 ,
- evolving of decision trees 
+ evolution of decision trees 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_decision"
@@ -1563,7 +1576,7 @@ literal "false"
 \end_inset
 
 ,
- automatic design of analog electronic circuits 
+ problems that appear in electronics 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_analog"
@@ -1625,9 +1638,10 @@ name "sec:Materials-and-Methods"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-TI EXOUME SE AUTIN TIN ENOTHTA?
+In this section,
+ an extensive presentation of the seismic data used,
+ their post-processing,
+ as well as the computational rule construction method applied for the effective classification of earthquakes will be given.
 \end_layout
 
 \begin_layout Subsection
@@ -1683,7 +1697,7 @@ http://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&en
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -2394,7 +2408,7 @@ In the following table,
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -4419,7 +4433,7 @@ The following table presents the focal depth of the earthquakes,
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -5186,7 +5200,7 @@ In the following table,
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -5967,23 +5981,414 @@ The used method
 \end_layout
 
 \begin_layout Standard
-The main steps of the GenClass method proposed here have as follows:
+The method that constructs classification rules was initially presented in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genclassMain"
+literal "false"
+
+\end_inset
+
+ and an implementation in C++ was suggested later by Anastasopoulos et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genclassSoftx"
+literal "false"
+
+\end_inset
+
+.
+ The method can produce a series of classification rules in a human readable form in order to effectively classify patterns in predefined classes.
+ This method does not require prior knowledge of the specifics of a dataset and can furthermore discover hidden correlations between the features of the dataset or even isolate only those features that play the most significant role in the successful classification of patterns.
+ The method has been successfully applied in many cases,
+ such as pollution detection 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genClassPollution"
+literal "false"
+
+\end_inset
+
+,
+ network problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genClassNetwork"
+literal "false"
+
+\end_inset
+
+ etc.
+ The main steps of this method have as follows:
 \end_layout
 
 \begin_layout Enumerate
-Initialization step.
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the number of chromosomes in the genetic population and as 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the maximum number of allowed generations.
 \end_layout
 
 \begin_layout Enumerate
-Fitness calculation step.
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ the selection rate and as 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+ the mutation rate.
 \end_layout
 
 \begin_layout Enumerate
-Application of genetic operations.
+
+\series bold
+Initialize
+\series default
+ the chromosomes 
+\begin_inset Formula $g_{i},\ i=1,\ldots,N_{c}$
+\end_inset
+
+ as sets of random integers.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Termination check step.
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ a classification program 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ for the chromosome 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+.
+ The BNF grammar used for this production is outlined in Figure .
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ the classification program to the train set of the objective problem and set as 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ the classification error for this program.
+ The variable 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ denotes the fitness of the chromosome 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Application of genetic operations
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Selection
+\series default
+:
+ The chromosomes are sorted with respect to their fitness values.
+ The 
+\begin_inset Formula $\left(1-p_{s}\right)\times N_{c}$
+\end_inset
+
+ of them with the lowest fitness values will be copied to the next generation without changes.
+ The remaining will be substituted by chromosomes produced during crossover and mutation.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Crossover
+\series default
+:
+ In this procedure a series of offspring are produced,
+ through a process similar to biological crossover in nature.
+ For every couple 
+\begin_inset Formula $\left(\widetilde{z},\widehat{w}\right)$
+\end_inset
+
+ of produced offsprings two chromosomes are selected from the current population,
+ using tournament selection.
+ Subsquently,
+ these chromosomes will produce the set 
+\begin_inset Formula $\left(\widetilde{z},\widehat{w}\right)$
+\end_inset
+
+ with the application of one - point crossover.
+ A graphical example of the one - point crossover method is outlined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:onePoint"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Mutation
+\series default
+:
+ In this step,
+ for every element 
+\begin_inset Formula $g_{i,j}$
+\end_inset
+
+ of each chromosome 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ a random number 
+\begin_inset Formula $r\in[0,1]$
+\end_inset
+
+ is selected.
+ If 
+\begin_inset Formula $r\le p_{m}$
+\end_inset
+
+,
+ then the element 
+\begin_inset Formula $g_{i,j}$
+\end_inset
+
+ is substituted by another random integer.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k\le N_{g}$
+\end_inset
+
+ 
+\series bold
+then go to
+\series default
+ Fitness Calculation step 
+\series bold
+else
+\series default
+ terminate.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename genclass_grammar.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The grammar of the proposed method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-grammar-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cross2.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of the one - point crossover method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:onePoint"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5995,6 +6400,12 @@ name "sec:Results"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TEXT HERE and SETTINGS.
 \end_layout
 
 \begin_layout Standard
@@ -7707,6 +8118,26 @@ O'Neill,
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "(2017)"
+key "gaOverview"
+literal "false"
+
+\end_inset
+
+Kramer,
+ O.
+ (2017).
+ Genetic algorithms.
+ In Genetic algorithm essentials (pp.
+ 11-19).
+ Cham:
+ Springer International Publishing.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "(2002)"
 key "bnf1"
 literal "false"
@@ -8262,6 +8693,96 @@ F.
  pp.
  1003-1018,
  2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "genclassMain"
+literal "false"
+
+\end_inset
+
+Tsoulos,
+ I.
+ G.
+ (2020).
+ Creating classification rules using grammatical evolution.
+ International Journal of Computational Intelligence Studies,
+ 9(1-2),
+ 161-171.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "genclassSoftx"
+literal "false"
+
+\end_inset
+
+Anastasopoulos,
+ N.;
+ Tsoulos,
+ I.G.;
+ Tzallas,
+ A.
+ GenClass:
+ A parallel tool for data classification based on Grammatical Evolution.
+ SoftwareX 2021,
+ 16,
+ 100830.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "genClassPollution"
+literal "false"
+
+\end_inset
+
+Spyrou,
+ E.
+ D.,
+ Stylios,
+ C.,
+ & Tsoulos,
+ I.
+ (2023).
+ Classification of CO Environmental Parameter for Air Pollution Monitoring with Grammatical Evolution.
+ Algorithms,
+ 16(6),
+ 300.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2023)"
+key "genClassNetwork"
+literal "false"
+
+\end_inset
+
+Margariti,
+ S.
+ V.,
+ Tsoulos,
+ I.
+ G.,
+ Kiousi,
+ E.,
+ & Stergiou,
+ E.
+ (2024).
+ Traffic Classification in Software-Defined Networking Using Genetic Programming Tools.
+ Future Internet,
+ 16(9),
+ 338.
 \end_layout
 
 \begin_layout Bibliography
