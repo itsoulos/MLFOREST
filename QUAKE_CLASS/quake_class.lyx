@@ -1334,21 +1334,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-(OK)
-\series default
-This section highlights the prominent role of Machine Learning techniques in the field of seismology,
- with several indicative examples discussed below.
- Building on recent advancements,
- the authors of 
-\begin_inset Quotes eld
-\end_inset
-
-Machine learning predicts laboratory earthquakes
-\begin_inset Quotes erd
-\end_inset
-
+Building on recent advancements,
+ Rouet‐Leduc et al.
  applied machine learning techniques to datasets obtained from shear laboratory experiments,
  with the objective of identifying previously undetected signals that could potentially precede seismic events 
 \begin_inset CommandInset citation
@@ -1360,15 +1347,7 @@ literal "false"
 
 .
  In a subsequent study,
- 
-\begin_inset Quotes eld
-\end_inset
-
-Continuous chatter of the Cascadia subduction zone revealed by machine learningt
-\begin_inset Quotes erd
-\end_inset
-
- the same researchers utilized a machine learning-based approach,
+ the same research team utilized a machine learning-based approach,
  originally developed in the laboratory,
  to analyze extensive raw seismic data from Vancouver Island.
  This methodology enabled the differentiation of pertinent seismic signals from background noise and holds promise for evaluating whether,
@@ -1383,16 +1362,8 @@ literal "false"
 
 .
  Additionally,
- another study 
-\begin_inset Quotes eld
-\end_inset
-
-Earthquake forecasting using big data and artificial intelligence:
- A 30-week real-time case study in China
-\begin_inset Quotes erd
-\end_inset
-
- sought to develop a predictive model capable of estimating both the location and magnitude of potential earthquakes in the following week,
+ in a recent study a predictive model was developed,
+ capable of estimating both the location and magnitude of potential earthquakes in the following week,
  utilizing seismic data from the current week and focusing on seismogenic regions in southwestern China.
  The model demonstrated a testing accuracy of 70%,
  with corresponding precision,
@@ -1409,16 +1380,9 @@ literal "false"
 \end_inset
 
 .
- Furthermore,
- another study 
-\begin_inset Quotes eld
-\end_inset
-
-Machine learning can predict the timing and size of analog earthquakes
-\begin_inset Quotes erd
-\end_inset
-
- demonstrated that machine learning techniques can effectively predict the timing and magnitude of laboratory-induced earthquakes by reconstructing and interpreting the system’s complex spatiotemporal loading history 
+ Moreover,
+ in another publication,
+ the research team demonstrated that machine learning techniques can effectively predict the timing and magnitude of laboratory-induced earthquakes by reconstructing and interpreting the system’s complex spatiotemporal loading history 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Corbi2019"
@@ -1427,93 +1391,226 @@ literal "false"
 \end_inset
 
 .
- In brief,
- we will refer to three additional studies employing machine learning techniques:
  
-\begin_inset Quotes eld
-\end_inset
+\end_layout
 
-P.
- Earthquake magnitude prediction using machine learning technique
-\begin_inset Quotes erd
-\end_inset
-
- 
+\begin_layout Standard
+In this paper,
+ a technique based on Grammatical Evolution 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Hoque2020"
+key "mainGe"
 literal "false"
 
 \end_inset
 
- ,
+ is proposed for the efficient creation of classification rules on seismic data that are widely available on the internet.
  
-\begin_inset Quotes eld
-\end_inset
-
-Towards advancing the earthquake forecasting by machine learning of satellite data
-\begin_inset Quotes erd
-\end_inset
-
- 
+\series bold
+Grammatical Evolution is considered as a special case of genetic algorithms,
+ where the chromosomes are series of integer numbers.
+ Chromosomes in the Grammatical Evolution process are rules for generating a Backus–Naur form (BNF) grammar 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "Xiong2021"
+LatexCommand cite
+key "bnf1"
+literal "false"
+
+\end_inset
+
+ and can be used to create functional programs in any programming language.
+ Grammatical Evolution has been applied on a wide series of real - world applications,
+ such as function approximation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_program1,ge_program2"
 literal "false"
 
 \end_inset
 
 ,
- 
-\begin_inset Quotes eld
-\end_inset
-
-How well can we predict earthquake site response so far?
- Machine learning vs physics-based modeling
-\begin_inset Quotes erd
-\end_inset
-
- 
+ credit classification 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Zhu2023"
+key "ge_credit"
 literal "false"
 
 \end_inset
 
-.
- 
-\end_layout
-
-\begin_layout Standard
-A novel method,
- with Grammatical Evolution,
- was introduced,
- in 2025,
- from the authors of this paper,
- called 
-\begin_inset Quotes eld
-\end_inset
-
- Predicting the Magnitude of Earthquakes Using Grammatical Evolution
-\begin_inset Quotes erd
-\end_inset
-
- 
+,
+ network security and prevention of attacks 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Tsoulos2025"
+key "ge_intrusion"
 literal "false"
 
 \end_inset
 
-.
+,
+ monitoring of water quality 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_water"
+literal "false"
+
+\end_inset
+
+,
+ modeling glycemia in humans 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_glykemia"
+literal "false"
+
+\end_inset
+
+,
+ automatic design of Ant algorithms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_ant"
+literal "false"
+
+\end_inset
+
+,
+ temperature prediction in data centers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_datacenter"
+literal "false"
+
+\end_inset
+
+,
+ solving trigonometric equations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+,
+ composing music 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_music"
+literal "false"
+
+\end_inset
+
+,
+ neural network construction 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_nn,ge_nn2"
+literal "false"
+
+\end_inset
+
+,
+ producing numeric constants 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+,
+ video games 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_pacman,ge_supermario"
+literal "false"
+
+\end_inset
+
+,
+ energy demand estimation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+,
+ combinatorial optimization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+,
+ cryptography 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+,
+ evolving of decision trees 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_decision"
+literal "false"
+
+\end_inset
+
+,
+ automatic design of analog electronic circuits 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_analog"
+literal "false"
+
+\end_inset
+
+ etc.
 \end_layout
 
 \begin_layout Standard
+The remaining of this paper has as follows:
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
-\series bold
-(.....)
+\end_inset
+
+ the used dataset is described as well as the steps of the proposed method,
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ the experimental results are presented and finally in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ some conclusions are discussed.
 \end_layout
 
 \begin_layout Section
@@ -1525,6 +1622,12 @@ name "sec:Materials-and-Methods"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TI EXOUME SE AUTIN TIN ENOTHTA?
 \end_layout
 
 \begin_layout Subsection
@@ -7583,106 +7686,582 @@ Corbi,
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "Hoque2020"
+label "(2002)"
+key "mainGe"
 literal "false"
 
 \end_inset
 
-Hoque,
- A.,
- Raj,
- J.,
- Saha,
- A.,
- & Bhattacharya,
- P.
- (2020,
- December).
- Earthquake magnitude prediction using machine learning technique.
- In International Conference on Computational Intelligence,
- Security and Internet of Things (pp.
- 37-53).
- Cham:
- Springer International Publishing.
+O'Neill,
+ M.,
+ & Ryan,
+ C.
+ (2002).
+ Grammatical evolution.
+ IEEE Transactions on Evolutionary Computation,
+ 5(4),
+ 349-358.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "Xiong2021"
+label "(2002)"
+key "bnf1"
 literal "false"
 
 \end_inset
 
-Xiong,
- P.,
- Tong,
- L.,
- Zhang,
- K.,
- Shen,
- X.,
- Battiston,
+J.
+ W.
+ Backus.
+ The Syntax and Semantics of the Proposed International Algebraic Language of the Zurich ACM-GAMM Conference.
+ Proceedings of the International Conference on Information Processing,
+ UNESCO,
+ 1959,
+ pp.125-132.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program1"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ J.
+ Collins,
+ M.
+ O’Neill,
+ Grammatical evolution:
+ Evolving programs for an arbitrary language.
+ In:
+ Banzhaf,
+ W.,
+ Poli,
  R.,
- Ouzounov,
- D.,
- ...
- & Zhou,
- H.
- (2021).
- Towards advancing the earthquake forecasting by machine learning of satellite data.
- Science of The Total Environment,
- 771,
- 145256.
+ Schoenauer,
+ M.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1998.
+ Lecture Notes in Computer Science,
+ vol 1391.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1998.
 \end_layout
 
 \begin_layout Bibliography
-\labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "Zhu2023"
+key "ge_program2"
 literal "false"
 
 \end_inset
 
-Zhu,
- C.,
- Cotton,
- F.,
- Kawase,
- H.,
- & Nakano,
- K.
- (2023).
- How well can we predict earthquake site response so far?
- Machine learning vs physics-based modeling.
- Earthquake Spectra,
- 39(1),
- 478-504.
+M.
+ O’Neill,
+ M.,
+ C.
+ Ryan,
+ Evolving Multi-line Compilable C Programs.
+ In:
+ Poli,
+ R.,
+ Nordin,
+ P.,
+ Langdon,
+ W.B.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1999.
+ Lecture Notes in Computer Science,
+ vol 1598.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1999.
 \end_layout
 
 \begin_layout Bibliography
-\labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "Tsoulos2025"
+key "ge_credit"
 literal "false"
 
 \end_inset
 
-Kopitsa,
- C.,
- Tsoulos,
+A.
+ Brabazon,
+ M.
+ O'Neill,
+ Credit classification using grammatical evolution,
+ Informatica 
+\series bold
+30.3
+\series default
+,
+ 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_intrusion"
+literal "false"
+
+\end_inset
+
+S.
+ Şen,
+ J.A.
+ Clark.
+ A grammatical evolution approach to intrusion detection on mobile ad hoc networks,
+ In:
+ Proceedings of the second ACM conference on Wireless network security,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_water"
+literal "false"
+
+\end_inset
+
+L.
+ Chen,
+ C.H.
+ Tan,
+ S.J.
+ Kao,
+ T.S.
+ Wang,
+ Improvement of remote monitoring on water quality in a subtropical reservoir by incorporating grammatical evolution with parallel genetic algorithms into satellite imagery,
+ Water Research 
+\series bold
+ 42
+\series default
+,
+ pp.
+ 296-306,
+ 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_glykemia"
+literal "false"
+
+\end_inset
+
+J.
  I.
- G.,
- & Charilogis,
- V.
- (2025).
- Predicting the Magnitude of Earthquakes Using Grammatical Evolution.
- Algorithms,
- 18(7),
- 405.
+ Hidalgo,
+ J.
+ M.
+ Colmenar,
+ J.L.
+ Risco-Martin,
+ A.
+ Cuesta-Infante,
+ E.
+ Maqueda,
+ M.
+ Botella,J.
+ A.
+ Rubio,
+ Modeling glycemia in humans by means of Grammatical Evolution,
+ Applied Soft Computing 
+\series bold
+20
+\series default
+,
+ pp.
+ 40-53,
+ 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_ant"
+literal "false"
+
+\end_inset
+
+J.
+ Tavares,
+ F.B.
+ Pereira,
+ Automatic Design of Ant Algorithms with Grammatical Evolution.
+ In:
+ Moraglio,
+ A.,
+ Silva,
+ S.,
+ Krawiec,
+ K.,
+ Machado,
+ P.,
+ Cotta,
+ C.
+ (eds) Genetic Programming.
+ EuroGP 2012.
+ Lecture Notes in Computer Science,
+ vol 7244.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_datacenter"
+literal "false"
+
+\end_inset
+
+M.
+ Zapater,
+ J.L.
+ Risco-Martín,
+ P.
+ Arroba,
+ J.L.
+ Ayala,
+ J.M.
+ Moya,
+ R.
+ Hermida,
+ Runtime data center temperature prediction using Grammatical Evolution techniques,
+ Applied Soft Computing 
+\series bold
+49
+\series default
+,
+ pp.
+ 94-107,
+ 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ M.
+ O’Neill,
+ J.J.
+ Collins,
+ Grammatical evolution:
+ Solving trigonometric identities,
+ proceedings of Mendel.
+ Vol.
+ 98.
+ 1998.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_music"
+literal "false"
+
+\end_inset
+
+A.O.
+ Puente,
+ R.
+ S.
+ Alfonso,
+ M.
+ A.
+ Moreno,
+ Automatic composition of music by means of grammatical evolution,
+ In:
+ APL '02:
+ Proceedings of the 2002 conference on APL:
+ array processing languages:
+ lore,
+ problems,
+ and applications July 2002 Pages 148–155.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn"
+literal "false"
+
+\end_inset
+
+Lídio Mauro Limade Campo,
+ R.
+ Célio Limã Oliveira,Mauro Roisenberg,
+ Optimization of neural networks through grammatical evolution and a genetic algorithm,
+ Expert Systems with Applications 
+\series bold
+56
+\series default
+,
+ pp.
+ 368-384,
+ 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn2"
+literal "false"
+
+\end_inset
+
+K.
+ Soltanian,
+ A.
+ Ebnenasir,
+ M.
+ Afsharchi,
+ Modular Grammatical Evolution for the Generation of Artificial Neural Networks,
+ Evolutionary Computation 
+\series bold
+30
+\series default
+,
+ pp 291–327,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+I.
+ Dempsey,
+ M.O' Neill,
+ A.
+ Brabazon,
+ Constant creation in grammatical evolution,
+ International Journal of Innovative Computing and Applications 
+\series bold
+1
+\series default
+ ,
+ pp 23–38,
+ 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_pacman"
+literal "false"
+
+\end_inset
+
+E.
+ Galván-López,
+ J.M.
+ Swafford,
+ M.
+ O’Neill,
+ A.
+ Brabazon,
+ Evolving a Ms.
+ PacMan Controller Using Grammatical Evolution.
+ In:
+ ,
+ et al.
+ Applications of Evolutionary Computation.
+ EvoApplications 2010.
+ Lecture Notes in Computer Science,
+ vol 6024.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_supermario"
+literal "false"
+
+\end_inset
+
+N.
+ Shaker,
+ M.
+ Nicolau,
+ G.
+ N.
+ Yannakakis,
+ J.
+ Togelius,
+ M.
+ O'Neill,
+ Evolving levels for Super Mario Bros using grammatical evolution,
+ 2012 IEEE Conference on Computational Intelligence and Games (CIG),
+ 2012,
+ pp.
+ 304-31.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+D.
+ Martínez-Rodríguez,
+ J.
+ M.
+ Colmenar,
+ J.
+ I.
+ Hidalgo,
+ R.J.
+ Villanueva Micó,
+ S.
+ Salcedo-Sanz,
+ Particle swarm grammatical evolution for energy demand estimation,
+ Energy Science and Engineering 
+\series bold
+8
+\series default
+,
+ pp.
+ 1068-1079,
+ 2020.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+N.
+ R.
+ Sabar,
+ M.
+ Ayob,
+ G.
+ Kendall,
+ R.
+ Qu,
+ Grammatical Evolution Hyper-Heuristic for Combinatorial Optimization Problems,
+ IEEE Transactions on Evolutionary Computation 
+\series bold
+17
+\series default
+,
+ pp.
+ 840-861,
+ 2013.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ M.
+ Kshirsagar,
+ G.
+ Vaidya,
+ G.
+ et al.
+ Design of a cryptographically secure pseudo random number generator with grammatical evolution.
+ Sci Rep 
+\series bold
+12
+\series default
+,
+ 8602,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_decision"
+literal "false"
+
+\end_inset
+
+P.J.
+ Pereira,
+ P.
+ Cortez,
+ R.
+ Mendes,
+ Multi-objective Grammatical Evolution of Decision Trees for Mobile Marketing user conversion prediction,
+ Expert Systems with Applications 
+\series bold
+168
+\series default
+,
+ 114287,
+ 2021.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_analog"
+literal "false"
+
+\end_inset
+
+F.
+ Castejón,
+ E.J.
+ Carmona,
+ Automatic design of analog electronic circuits using grammatical evolution,
+ Applied Soft Computing 
+\series bold
+62
+\series default
+,
+ pp.
+ 1003-1018,
+ 2018.
 \end_layout
 
 \begin_layout Bibliography
