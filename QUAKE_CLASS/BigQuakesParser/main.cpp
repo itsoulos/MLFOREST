@@ -37,7 +37,7 @@ QVector<Quake> finalQuake;
 
 long timeInterval=2000;//secs
 
-const  double minDistance = 5000.0;//50km
+const  double minDistance = 5000.0;//10km
 long makeDateInSecs(QString t)
 {
     QStringList alist=t.split(" ");
