@@ -336,17 +336,39 @@ Correspondence:
 \begin_layout Abstract
 The spread of contemporary artificial intelligence technologies,
  particularly Machine Learning,
- has significantly enhanced the capacity to predict natural disasters.
+ has significantly enhanced the capacity to predict asymmetrical natural disasters.
  Wildfires constitute a prominent example,
  as machine learning can be employed to forecast not only their spatial extent but also their environmental and socio-economic impacts,
  propagation dynamics,
+ 
+\series bold
+\color red
+symmetrical or asymmetrical
+\series default
+ 
+\series bold
+patterns
+\series default
+\color inherit
  and even their duration.
  Such predictive capabilities are of critical importance for effective wildfire management,
  as they inform the strategic allocation of material resources,
  and the optimal deployment of human personnel in the field.
+ Beyond that,
+ examination of
+\series bold
+ symmetrical or asymmetrical patterns
+\series default
+ in fires,
+ helps to understand the causes and dynamic of their spread.
  The necessity of leveraging machine learning tools has become imperative in our era,
  as climate change has disrupted traditional wildfire management models due to prolonged droughts,
  rising temperatures,
+ 
+\series bold
+asymmetrical patterns
+\series default
+,
  and the increasing frequency of extreme weather events.
  For this reason,
  our research seeks to fully exploit the potential of Principal Component Analysis (PCA),
@@ -354,13 +376,32 @@ The spread of contemporary artificial intelligence technologies,
  and Grammatical Evolution,
  both for constructing Artificial Features and for generating Neural Network Architectures.
  For this purpose,
- we utilized the highly detailed and publicly available datasets provided by the Hellenic Fire Service for the years 2014–2021,
+ we utilized the highly detailed and publicly available 
+\series bold
+symmetrical
+\series default
+ datasets provided by the Hellenic Fire Service for the years 2014–2021,
  which we further enriched with meteorological data,
  corresponding to the prevailing conditions at both the onset,
  and the suppression of each wildfire event.
  The research concluded that the Feature Construction technique,
  using Grammatical Evolution,
- outperforms other methods in terms of stability and accuracy.
+ combine both the 
+\series bold
+symmetrical and asymmetrical
+\series default
+ 
+\series bold
+conditions
+\series default
+,
+ that weather phenomena may provide and outperforms other methods in terms of stability and accuracy.
+ 
+\series bold
+Therefore,
+ the asymmetric phenomenon in our research is defined as the unpredictable outcome of climate change (meteorological data) which prolongs the duration of forest fires over time.
+
+\series default
  Specifically,
  the model accuracy of wildfire duration using Feature Construction,
  the mean error was 8.79%,
@@ -374,6 +415,22 @@ Forest fires;
  Feature Construction;
  Genetic Programming;
  Grammatical Evolution
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -568,6 +625,11 @@ In other words wildfires and climate change fuel each other's intensify.
  high temperatures,
  low humidity,
  lightning,
+
+\series bold
+ asymmetrical patterns
+\series default
+,
  and strong winds,
  leading to more severe,
  and prolonged fire seasons.
@@ -606,7 +668,11 @@ literal "false"
 .
  At the same time,
  the critical need to address climate changes,
- effects on wildfire patterns is highlighted as crucial for protecting both the environment,
+ effects on wildfire
+\series bold
+ asymmetrical patterns
+\series default
+ is highlighted as crucial for protecting both the environment,
  and public health in Greece 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -641,7 +707,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -698,7 +764,12 @@ literal "false"
  On that ground,
  despite the challenging conditions posed by Climate Change,
  driven by endless human expansion and technological progress,
- we attempt to transform this disadvantage into an advantage by focusing our efforts on rising technology itself.
+ we attempt to transform this disadvantage into an advantage 
+\series bold
+and the asymmetrical to symmetrical,
+
+\series default
+ by focusing our efforts on rising technology itself.
  That is to say,
  Artificial intelligence,
  particularly Machine learning,
@@ -717,7 +788,11 @@ literal "false"
 
 \begin_layout Standard
 Machine learning,
- apply to a collection of techniques and algorithms that make it easier for systems to identify patterns and make decisions based on data enriching their performance over time without explicitly being programmed for specific tasks 
+ apply to a collection of techniques and algorithms that make it easier for systems to identify 
+\series bold
+symmetrical / asymmetrical 
+\series default
+patterns and make decisions based on data enriching their performance over time without explicitly being programmed for specific tasks 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "iso_ml"
@@ -744,10 +819,20 @@ literal "false"
  is a vital branch of artificial intelligence,
  presents golden opportunities for businesses and society alike.
  Beyond,
- its countless advantages it plays a critical role in driving innovative advancements in Climate Change adaptation and mitigation.
+ its countless advantages it plays a critical role in driving innovative advancements in 
+\series bold
+asymmetry
+\series default
+ Climate Change,
+ adaptation,
+ and mitigation.
  By accelerating,
  the development of resolutions,
- to some of the most urgent challenges facing the planet,
+ to some of the most urgent 
+\series bold
+asymmetrical
+\series default
+ challenges facing the planet,
  machine learning is transforming the process we address global environmental issues 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -770,8 +855,16 @@ literal "false"
 .
  Machine learning algorithms,
  nevertheless,
- can bypass these challenges by deriving mappings and relationships straight from the data eliminating the need for prespecified expert rules.
- This ability is particularly helpful when dealing with frameworks involving a large number of parameters with complex physical properties,
+ can bypass these 
+\series bold
+asymmetrical
+\series default
+ challenges by deriving mappings and relationships straight from the data eliminating the need for prespecified expert rules.
+ This ability is particularly helpful when dealing with frameworks involving a large number of parameters with complex 
+\series bold
+asymmetrical
+\series default
+ physical properties,
  such as in forest fires.
  Therefore,
  adopting a machine learning technique to fire management can help defeat many of the barriers associated with traditional physics-based simulation models.
@@ -1432,7 +1525,7 @@ Predicting,
  to the affected area and determining the necessary human resources,
  for its suppression.
  Additionally,
- forest fires and climate change are commonly 
+ forest fires and asymmetry climate change are commonly 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1460,13 +1553,121 @@ literal "false"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+On this subject,
+ regarding the asymmetric effects and phenomena brought about by Climate Change,
+ we will indicatively refer to certain studies.
+ In 2001,
+ Flato & Boer,
+ introduced the paper 
+\begin_inset Quotes eld
+\end_inset
+
+ Warming asymmetry in Climate Change simulations
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Flato and Boer"
+literal "false"
+
+\end_inset
+
+.
+ In 2009,
+ Whitmarsh,
+ published the article 
+\begin_inset Quotes eld
+\end_inset
+
+Behavioural responses to climate change:
+ Asymmetry of intentions and impacts
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Whitmarsh"
+literal "false"
+
+\end_inset
+
+.
+ In 2012,
+ Xu & Ramanathan,
+ bring out 
+\begin_inset Quotes eld
+\end_inset
+
+Latitudinally asymmetric response of global surface temperature:
+ Implications for regional climate change
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Xu and Ramanathan"
+literal "false"
+
+\end_inset
+
+.
+ In 2018,
+ Shunchuan printed 
+\begin_inset Quotes eld
+\end_inset
+
+A symmetrical CO2 peak and asymmetrical climate change during the middle Miocene
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shunchuan2018"
+literal "false"
+
+\end_inset
+
+.
+ In 2021,
+ Gao issued 
+\begin_inset Quotes eld
+\end_inset
+
+Asymmetrical lightning fire season expansion in the boreal forest of Northeast China
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gao2021"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 The current work employs a series of Feature Construction,
  and selection methods in order to improve the ability of various machine learning techniques to predict the duration of forest fires.
  These methods involve creating new,
- meaningful variables by combining or transforming existing data attributes 
+ meaningful variables by combining or transforming existing 
+\series bold
+symmetrical & asymmetrical
+\series default
+ data attributes 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "genfc1"
@@ -3511,15 +3712,19 @@ name "sec:Results"
 \end_layout
 
 \begin_layout Standard
-The code used in the experiments was code in the C++ programming language and for the optimization methods the freely available Optimus programming tool was incorporated 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "optimus"
-literal "false"
+The experiments were executed using the freely available optimization environment of Optimus,
+ that can be downloaded from 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/itsoulos/GlobalOptimus.git
+\end_layout
 
 \end_inset
 
- as as well as the WEKA programming tool 
+ as well as the WEKA programming tool 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "weka_main"
@@ -3664,7 +3869,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3690,8 +3895,10 @@ name "tab:expr"
 
 \size footnotesize
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="8">
+<lyxtabular version="3" rows="10" columns="10">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -3763,6 +3970,24 @@ MRMR
 
 \size footnotesize
 PCA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BAYESNN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DNN
 \end_layout
 
 \end_inset
@@ -3853,6 +4078,24 @@ FC
 
 \size footnotesize
 15.50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.14%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.01%
 \end_layout
 
 \end_inset
@@ -3952,6 +4195,24 @@ FC
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \size footnotesize
 9.17%
 \end_layout
@@ -4033,6 +4294,24 @@ FC
 
 \size footnotesize
 12.93%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4132,6 +4411,24 @@ FC
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \size footnotesize
 12.61%
 \end_layout
@@ -4213,6 +4510,24 @@ FC
 
 \size footnotesize
 10.49%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4312,6 +4627,24 @@ FC
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \size footnotesize
 7.03%
 \end_layout
@@ -4402,6 +4735,24 @@ FC
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \size footnotesize
 9.50%
 \end_layout
@@ -4483,6 +4834,24 @@ FC
 
 \size footnotesize
 11.03%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4588,6 +4957,24 @@ AVERAGE
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \series bold
 \size footnotesize
 9.72%
@@ -4603,6 +4990,919 @@ AVERAGE
 \series bold
 \size footnotesize
 8.79%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Standard deviation values for all used methods.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:std"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size footnotesize
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="10">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+YEAR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+BAYES
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+ADAM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+BFGS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+MRMR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+PCA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BAYESNN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DNN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+NNC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+FC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2014
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.51
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.07
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.18
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.07
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2021
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.18
 \end_layout
 
 \end_inset
@@ -4904,7 +6204,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -5469,7 +6769,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6753,6 +8053,129 @@ WFCA.
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "Flato and Boer"
+literal "false"
+
+\end_inset
+
+Flato,
+ G.
+ M.,
+ & Boer,
+ G.
+ J.
+ (2001).
+ Warming asymmetry in climate change simulations.
+ Geophysical research letters,
+ 28(1),
+ 195-198.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Whitmarsh"
+literal "false"
+
+\end_inset
+
+Whitmarsh,
+ L.
+ (2009).
+ Behavioural responses to climate change:
+ Asymmetry of intentions and impacts.
+ Journal of environmental psychology,
+ 29(1),
+ 13-23.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Xu and Ramanathan"
+literal "false"
+
+\end_inset
+
+Xu,
+ Y.,
+ & Ramanathan,
+ V.
+ (2012).
+ Latitudinally asymmetric response of global surface temperature:
+ Implications for regional climate change.
+ Geophysical Research Letters,
+ 39(13).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Shunchuan2018"
+literal "false"
+
+\end_inset
+
+Ji,
+ S.,
+ Nie,
+ J.,
+ Lechler,
+ A.,
+ Huntington,
+ K.
+ W.,
+ Heitmann,
+ E.
+ O.,
+ & Breecker,
+ D.
+ O.
+ (2018).
+ A symmetrical CO2 peak and asymmetrical climate change during the middle Miocene.
+ Earth and Planetary Science Letters,
+ 499,
+ 134-144.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Gao2021"
+literal "false"
+
+\end_inset
+
+Gao,
+ C.,
+ An,
+ R.,
+ Wang,
+ W.,
+ Shi,
+ C.,
+ Wang,
+ M.,
+ Liu,
+ K.,
+ ...
+ & Shu,
+ L.
+ (2021).
+ Asymmetrical lightning fire season expansion in the boreal forest of Northeast China.
+ Forests,
+ 12(8),
+ 1023.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "genfc1"
 literal "false"
 
@@ -7862,34 +9285,6 @@ M.J.D Powell,
  pp.
  547-566,
  1989.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "(2025)"
-key "optimus"
-literal "false"
-
-\end_inset
-
-I.G.
- Tsoulos,
- V.
- Charilogis,
- G.
- Kyrou,
- V.N.
- Stavrou,
- A.
- Tzallas,
- Journal of Open Source Software 
-\series bold
-10
-\series default
-,
- 7584,
- 2025.
 \end_layout
 
 \begin_layout Bibliography
