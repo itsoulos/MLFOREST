@@ -4302,7 +4302,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12.53%
 \end_layout
 
 \end_inset
@@ -4311,7 +4311,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12.89%
 \end_layout
 
 \end_inset
@@ -4410,7 +4410,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12.65%
 \end_layout
 
 \end_inset
@@ -4419,7 +4419,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12.62%
 \end_layout
 
 \end_inset
@@ -4518,7 +4518,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.02%
 \end_layout
 
 \end_inset
@@ -4527,7 +4527,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10.38%
 \end_layout
 
 \end_inset
@@ -5036,9 +5036,8 @@ name "tab:std"
 
 \size footnotesize
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="10">
+<lyxtabular version="3" rows="9" columns="9">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -5056,17 +5055,6 @@ name "tab:std"
 
 \size footnotesize
 YEAR
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-BAYES
 \end_layout
 
 \end_inset
@@ -5172,15 +5160,6 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 0.06
 \end_layout
 
@@ -5258,15 +5237,6 @@ FC
 
 \size footnotesize
 2015
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -5360,15 +5330,6 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 0.04
 \end_layout
 
@@ -5405,7 +5366,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.20
 \end_layout
 
 \end_inset
@@ -5414,7 +5375,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.06
 \end_layout
 
 \end_inset
@@ -5446,15 +5407,6 @@ FC
 
 \size footnotesize
 2017
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -5499,7 +5451,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.05
 \end_layout
 
 \end_inset
@@ -5508,7 +5460,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.04
 \end_layout
 
 \end_inset
@@ -5540,15 +5492,6 @@ FC
 
 \size footnotesize
 2018
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -5593,7 +5536,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.20
 \end_layout
 
 \end_inset
@@ -5602,7 +5545,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.08
 \end_layout
 
 \end_inset
@@ -5634,15 +5577,6 @@ FC
 
 \size footnotesize
 2019
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -5736,15 +5670,6 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 0.05
 \end_layout
 
@@ -5799,7 +5724,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.12
 \end_layout
 
 \end_inset
@@ -5822,15 +5747,6 @@ FC
 
 \size footnotesize
 2021
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -5893,7 +5809,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.48
 \end_layout
 
 \end_inset
