@@ -3837,6 +3837,44 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
+The column BAYESNN presents results using the Bayesian optimizer from the open-source BayesOpt library 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bayesopt"
+literal "false"
+
+\end_inset
+
+.
+ This method was uses to train a neural network with 10 processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column DNN denotes the usage of a deep neural network as implemented in the Tiny Dnn library,
+ that can be downloaded freely from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/tiny-dnn/tiny-dnn
+\end_layout
+
+\end_inset
+
+(accessed on 10 October 2025).
+ The optimization method AdaGrad 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "adagrad"
+literal "false"
+
+\end_inset
+
+ was used to train the neural network in this case.
+\end_layout
+
+\begin_layout Enumerate
 The column NNC denotes the usage of the method of Neural Network Construction on the proposed datasets.
  The software that implements this method was obtained from 
 \begin_inset CommandInset citation
@@ -3978,6 +4016,8 @@ PCA
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 BAYESNN
 \end_layout
 
@@ -3987,6 +4027,8 @@ BAYESNN
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 DNN
 \end_layout
 
@@ -4086,6 +4128,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.14%
 \end_layout
 
@@ -4095,6 +4139,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13.01%
 \end_layout
 
@@ -4194,6 +4240,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11.48%
 \end_layout
 
@@ -4203,6 +4251,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11.89%
 \end_layout
 
@@ -4302,6 +4352,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.53%
 \end_layout
 
@@ -4311,6 +4363,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.89%
 \end_layout
 
@@ -4410,6 +4464,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.65%
 \end_layout
 
@@ -4419,6 +4475,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.62%
 \end_layout
 
@@ -4518,6 +4576,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10.02%
 \end_layout
 
@@ -4527,6 +4587,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10.38%
 \end_layout
 
@@ -4626,6 +4688,8 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 8.94%
 \end_layout
 
@@ -4636,6 +4700,8 @@ FC
 
 \begin_layout Plain Layout
 
+\size footnotesize
+9.41%
 \end_layout
 
 \end_inset
@@ -4735,6 +4801,8 @@ FC
 
 \begin_layout Plain Layout
 
+\size footnotesize
+9.50%
 \end_layout
 
 \end_inset
@@ -4744,6 +4812,8 @@ FC
 
 \begin_layout Plain Layout
 
+\size footnotesize
+9.50%
 \end_layout
 
 \end_inset
@@ -4843,6 +4913,8 @@ FC
 
 \begin_layout Plain Layout
 
+\size footnotesize
+10.90%
 \end_layout
 
 \end_inset
@@ -4852,6 +4924,8 @@ FC
 
 \begin_layout Plain Layout
 
+\size footnotesize
+10.62%
 \end_layout
 
 \end_inset
@@ -4957,6 +5031,9 @@ AVERAGE
 
 \begin_layout Plain Layout
 
+\series bold
+\size footnotesize
+11.02%
 \end_layout
 
 \end_inset
@@ -4966,6 +5043,9 @@ AVERAGE
 
 \begin_layout Plain Layout
 
+\series bold
+\size footnotesize
+11.29%
 \end_layout
 
 \end_inset
@@ -5178,7 +5258,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.07
 \end_layout
 
 \end_inset
@@ -5187,7 +5267,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.10
 \end_layout
 
 \end_inset
@@ -5263,7 +5343,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.12
 \end_layout
 
 \end_inset
@@ -5272,7 +5352,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.06
 \end_layout
 
 \end_inset
@@ -5348,7 +5428,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.07
 \end_layout
 
 \end_inset
@@ -5357,7 +5437,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.03
 \end_layout
 
 \end_inset
@@ -5433,7 +5513,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.06
 \end_layout
 
 \end_inset
@@ -5442,7 +5522,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.14
 \end_layout
 
 \end_inset
@@ -5518,7 +5598,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.16
 \end_layout
 
 \end_inset
@@ -5527,7 +5607,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.05
 \end_layout
 
 \end_inset
@@ -5603,7 +5683,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.12
 \end_layout
 
 \end_inset
@@ -5612,7 +5692,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.03
 \end_layout
 
 \end_inset
@@ -5630,7 +5710,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.05
 \end_layout
 
 \end_inset
@@ -5688,7 +5768,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.03
 \end_layout
 
 \end_inset
@@ -5697,7 +5777,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.04
 \end_layout
 
 \end_inset
@@ -5706,7 +5786,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.04
 \end_layout
 
 \end_inset
@@ -5715,7 +5795,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.04
 \end_layout
 
 \end_inset
@@ -5773,7 +5853,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.14
 \end_layout
 
 \end_inset
@@ -5782,7 +5862,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.13
 \end_layout
 
 \end_inset
@@ -5791,7 +5871,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.26
 \end_layout
 
 \end_inset
@@ -5800,7 +5880,7 @@ FC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.08
 \end_layout
 
 \end_inset
@@ -9416,6 +9496,47 @@ Ryan R.
  pp.
  801-805,
  2013.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2014)"
+key "bayesopt"
+literal "false"
+
+\end_inset
+
+Ruben Martinez-Cantin,
+ BayesOpt:
+ A Bayesian Optimization Library for Nonlinear Optimization,
+ Experimental Design and Bandits.
+ Journal of Machine Learning Research,
+ 15(Nov):3735--3739,
+ 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2020)"
+key "adagrad"
+literal "false"
+
+\end_inset
+
+Ward,
+ R.,
+ Wu,
+ X.,
+ & Bottou,
+ L.
+ (2020).
+ Adagrad stepsizes:
+ Sharp convergence over nonconvex landscapes.
+ Journal of Machine Learning Research,
+ 21(219),
+ 1-30.
 \end_layout
 
 \begin_layout Bibliography
