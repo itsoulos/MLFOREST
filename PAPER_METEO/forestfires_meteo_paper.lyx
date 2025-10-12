@@ -340,35 +340,17 @@ The spread of contemporary artificial intelligence technologies,
  Wildfires constitute a prominent example,
  as machine learning can be employed to forecast not only their spatial extent but also their environmental and socio-economic impacts,
  propagation dynamics,
- 
-\series bold
-\color red
-symmetrical or asymmetrical
-\series default
- 
-\series bold
-patterns
-\series default
-\color inherit
- and even their duration.
+ symmetrical or asymmetrical patterns and even their duration.
  Such predictive capabilities are of critical importance for effective wildfire management,
  as they inform the strategic allocation of material resources,
  and the optimal deployment of human personnel in the field.
  Beyond that,
- examination of
-\series bold
- symmetrical or asymmetrical patterns
-\series default
- in fires,
- helps to understand the causes and dynamic of their spread.
+ examination of symmetrical or asymmetrical patterns in fires,
+ helps to understand the causes and dynamics of their spread.
  The necessity of leveraging machine learning tools has become imperative in our era,
  as climate change has disrupted traditional wildfire management models due to prolonged droughts,
  rising temperatures,
- 
-\series bold
-asymmetrical patterns
-\series default
-,
+ asymmetrical patterns,
  and the increasing frequency of extreme weather events.
  For this reason,
  our research seeks to fully exploit the potential of Principal Component Analysis (PCA),
@@ -376,36 +358,20 @@ asymmetrical patterns
  and Grammatical Evolution,
  both for constructing Artificial Features and for generating Neural Network Architectures.
  For this purpose,
- we utilized the highly detailed and publicly available 
-\series bold
-symmetrical
-\series default
- datasets provided by the Hellenic Fire Service for the years 2014–2021,
+ we utilized the highly detailed and publicly available symmetrical datasets provided by the Hellenic Fire Service for the years 2014–2021,
  which we further enriched with meteorological data,
  corresponding to the prevailing conditions at both the onset,
  and the suppression of each wildfire event.
  The research concluded that the Feature Construction technique,
  using Grammatical Evolution,
- combine both the 
-\series bold
-symmetrical and asymmetrical
-\series default
- 
-\series bold
-conditions
-\series default
-,
- that weather phenomena may provide and outperforms other methods in terms of stability and accuracy.
- 
-\series bold
-Therefore,
+ combines both symmetrical and asymmetrical conditions,
+ that weather phenomena may provide and outperform other methods in terms of stability and accuracy.
+ Therefore,
  the asymmetric phenomenon in our research is defined as the unpredictable outcome of climate change (meteorological data) which prolongs the duration of forest fires over time.
-
-\series default
  Specifically,
  the model accuracy of wildfire duration using Feature Construction,
- the mean error was 8.79%,
- indicating an overall accuracy of 91.21%.
+ the mean error was 8.25%,
+ indicating an overall accuracy of 91.75%.
 \end_layout
 
 \begin_layout Keywords
@@ -415,22 +381,6 @@ Forest fires;
  Feature Construction;
  Genetic Programming;
  Grammatical Evolution
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-clearpage
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -471,21 +421,18 @@ literal "false"
 \end_inset
 
 .
- This duality,
- underscores fire’s paradoxical role,
- in human progress:
+ This duality underscores fire’s paradoxical role in human progress:
  a force capable of both creation and destruction.
 \end_layout
 
 \begin_layout Standard
 This belief is also evident in ancient Greek mythology,
  particularly in the tale of Prometheus,
- who defied the gods by stealing fire,
- and gifting it to humanity.
+ who defied the gods by stealing fire and gifting it to humanity.
  This act symbolizes the transfer of divine knowledge and power to humans,
  enabling progress and civilization.
- The myth,
- underscores fire's dual role as a tool for human advancement and as a source of conflict illustrating the tension between progress and its ethical implications as well as the costs of rebellion and innovation 
+ The myth underscores fire's dual role as a tool for human advancement and as a source of conflict,
+ illustrating the tension between progress and its ethical implications as well as the costs of rebellion and innovation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire2"
@@ -511,9 +458,10 @@ literal "false"
 
 \end_inset
 
- with immense effects on Earth's ecosystems,
- and human societies.
- Beyond that according the Chair of ISO/TC 92 fire safety Mr.
+ with immense effects on Earth's ecosystems and human societies.
+ Beyond that,
+ according to the Chair of ISO/TC 92 fire safety,
+ Mr.
  P.
  Van Hees:
  ‘
@@ -599,11 +547,11 @@ The following numbers show the extent of the destruction caused by fires:
 \end_layout
 
 \begin_layout Itemize
-The cost of fire is estimated at about 1% to 2% of the annual GDP 
+The cost of fire is estimated at about 1% to 2% of the annual GDP.
 \end_layout
 
 \begin_layout Itemize
-About 1% of fires are responsible for more than 50% of the costs 
+About 1% of fires are responsible for more than 50% of the costs.
 \end_layout
 
 \begin_layout Itemize
@@ -620,19 +568,19 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In other words wildfires and climate change fuel each other's intensify.
- Climate change interact synergistically with wildfires by increasing drought,
+In other words,
+ wildfires and climate change fuel each other's intensify.
+ Climate change interacts synergistically with wildfires by increasing drought,
  high temperatures,
  low humidity,
  lightning,
 
 \series bold
- asymmetrical patterns
+ 
 \series default
-,
+asymmetrical patterns,
  and strong winds,
- leading to more severe,
- and prolonged fire seasons.
+ leading to more severe and prolonged fire seasons.
  Conversely,
  wildfires contribute to reinforcing climate change 
 \begin_inset CommandInset citation
@@ -646,8 +594,7 @@ literal "false"
  Thus,
  wildfires (along with the extraction and burning of fossil fuels,
  and volcanic eruptions) mutually enhance Climate Change,
- by further releasing carbon dioxide,
- into the atmosphere 
+ by further releasing carbon dioxide into the atmosphere 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_nasa"
@@ -670,10 +617,9 @@ literal "false"
  the critical need to address climate changes,
  effects on wildfire
 \series bold
- asymmetrical patterns
+ 
 \series default
- is highlighted as crucial for protecting both the environment,
- and public health in Greece 
+asymmetrical patterns is highlighted as crucial for protecting both the environment and public health in Greece 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_iliopoulos"
@@ -699,9 +645,7 @@ nolink "false"
 ,
  we observe the continuous increase in carbon dioxide levels,
  beginning in 1751.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Float figure
 placement H
 alignment document
@@ -751,8 +695,7 @@ name "fig:fireAtmosphere"
 
  In this regard,
  the United Nations of Environment Programme,
- are calling the governments:
- “to radically shift their investments in wildfires to focus on prevention and preparedness” 
+ are calling on governments “to radically shift their investments in wildfires to focus on prevention and preparedness” 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire5"
@@ -764,17 +707,17 @@ literal "false"
  On that ground,
  despite the challenging conditions posed by Climate Change,
  driven by endless human expansion and technological progress,
- we attempt to transform this disadvantage into an advantage 
+ we attempt to transform this disadvantage into an advantage and asymmetrical to symmetrical
 \series bold
-and the asymmetrical to symmetrical,
+,
 
 \series default
  by focusing our efforts on rising technology itself.
  That is to say,
- Artificial intelligence,
- particularly Machine learning,
- emerges as a helpful ally in addressing this global issue,
- offering innovative resolutions and aiding sustainable development 
+ artificial intelligence,
+ particularly machine learning,
+ has emerged as a helpful ally in addressing this global issue,
+ offering innovative solutions and aiding sustainable development 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ai_climate,ai_ml"
@@ -788,9 +731,9 @@ literal "false"
 
 \begin_layout Standard
 Machine learning,
- apply to a collection of techniques and algorithms that make it easier for systems to identify 
+ applied to a collection of techniques and algorithms that make it easier for systems to identify symmetrical / asymmetrical
 \series bold
-symmetrical / asymmetrical 
+ 
 \series default
 patterns and make decisions based on data enriching their performance over time without explicitly being programmed for specific tasks 
 \begin_inset CommandInset citation
@@ -801,10 +744,10 @@ literal "false"
 \end_inset
 
 .
- This was the vision,
- of Alan Turing,
+ This was the vision of Alan Turing,
  when,
- in 1936 he wrote his PhD ‘On Computable Numbers,
+ in 1936,
+ he wrote his PhD ‘On Computable Numbers,
  with an application to the Entscheidung problem’ 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -815,25 +758,15 @@ literal "false"
 
 .
  That is to say,
- Machine learning,
+ machine learning,
  is a vital branch of artificial intelligence,
  presents golden opportunities for businesses and society alike.
- Beyond,
- its countless advantages it plays a critical role in driving innovative advancements in 
-\series bold
-asymmetry
-\series default
- Climate Change,
+ Beyond its countless advantages,
+ it plays a critical role in driving innovative advancements in climate change,
  adaptation,
  and mitigation.
- By accelerating,
- the development of resolutions,
- to some of the most urgent 
-\series bold
-asymmetrical
-\series default
- challenges facing the planet,
- machine learning is transforming the process we address global environmental issues 
+ By accelerating the development of resolutions to some of the most urgent asymmetrical challenges facing the planet,
+ machine learning is transforming the process we addressing global environmental issues 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "iso_ml"
@@ -842,9 +775,7 @@ literal "false"
 \end_inset
 
 .
- Even though,
- modeling multiplex environmental variables,
- repeatedly presents challenges on account of significant computation resources required and the diverseness or complexity of data formats 
+ Even though modeling multiplex environmental variables repeatedly presents challenges on account of the significant computation resources required and the diverseness or complexity of data formats 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ml_review"
@@ -855,16 +786,9 @@ literal "false"
 .
  Machine learning algorithms,
  nevertheless,
- can bypass these 
-\series bold
-asymmetrical
-\series default
- challenges by deriving mappings and relationships straight from the data eliminating the need for prespecified expert rules.
- This ability is particularly helpful when dealing with frameworks involving a large number of parameters with complex 
-\series bold
-asymmetrical
-\series default
- physical properties,
+ can bypass these asymmetrical challenges by deriving mappings and relationships straight from the data,
+ eliminating the need for prespecified expert rules.
+ This ability is particularly helpful when dealing with frameworks involving numerous parameters with complex asymmetrical physical properties,
  such as in forest fires.
  Therefore,
  adopting a machine learning technique to fire management can help defeat many of the barriers associated with traditional physics-based simulation models.
@@ -873,8 +797,7 @@ asymmetrical
 \begin_layout Standard
 Concerning this,
  in the current literature,
- noteworthy interest has been developed,
- in the role of machine learning in the domain of fire management 
+ noteworthy interest has been developed in the role of machine learning in the domain of fire management 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fire_manage"
@@ -919,7 +842,6 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename fire_algorithms.png
-	scale 50
 
 \end_inset
 
@@ -1005,7 +927,8 @@ literal "false"
 
 .
  Also,
- Bayesian networks were integrated with deep learning techniques 
+ Bayesian networks were integrated with deep learning techniques:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1026,7 +949,7 @@ literal "false"
 
 \begin_layout Standard
 Naïve Bayes,
- has also been employed to forest fire-related challenges in many studies.
+ has also been employed to face fire-related challenges in many studies.
  For instance,
  Nugroho developed a forest fire prevention system,
  
@@ -1046,7 +969,8 @@ literal "false"
 \end_inset
 
 .
- Zainul's work proposes a method for classifying hotspots responsible for forest fires 
+ Zainul's work proposes a method for classifying hotspots responsible for forest fires:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1064,8 +988,8 @@ literal "false"
 
 .
  Karo,
- present a method for wildfire classification,
- that incorporates feature selection and employs Naïve Bayes alongside other machine learning techniques 
+ presented a method for wildfire classification that incorporates feature selection and employs Naïve Bayes alongside other machine learning techniques:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1166,10 +1090,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Numerous studies,
- have utilized Artificial Neural Networks (ANNs),
- in the area of forest fire prediction,
- and monitoring.
+Numerous studies have utilized Artificial Neural Networks (ANNs),
+ in the area of forest fire prediction and monitoring.
  For instance,
  Hossain,
  employed ANNs to detect flames and smoke 
@@ -1227,15 +1149,13 @@ literal "false"
 
 .
  Similarly,
- Gao recently published a case study,
- on predicting wildfires,
- in a Chinese province,
+ Gao recently published a case study on predicting wildfires in a Chinese province,
  
 \begin_inset Quotes eld
 \end_inset
 
  Using multilayer perceptron to predict forest fires in Jiangxi province,
- southeast china
+ southeast China
 \begin_inset Quotes erd
 \end_inset
 
@@ -1253,8 +1173,7 @@ literal "false"
 
 \begin_layout Standard
 In addition,
- Random Forest,
- has been widely employed in forest fire prediction.
+ Random Forests have been widely employed in forest fire prediction.
  For instance,
  Latifah applied Random Forest,
  to predict forest fires in 
@@ -1293,7 +1212,7 @@ literal "false"
 
 .
  Song,
- demonstrated the superiority of Random Forest model,
+ demonstrated the superiority of the Random Forest model,
  over SVM,
  XGBoost,
  and LightGBM,
@@ -1335,9 +1254,9 @@ literal "false"
 
 .
  Hu,
- developed and validated results,
- related to fires events in fuel tank,
- employing Particle Swarm Optimization with a back propagation neural network 
+ developed and validated results related to fire events in fuel tank,
+ employing Particle Swarm Optimization with a back propagation neural network:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1377,12 +1296,12 @@ literal "false"
  RF (Random Forest),
  KNN,
  and XGBoost regression models s well as image-based approaches such as CNN and Encoder.
- The model,
- achieved an accuracy exceeding 80% for fires lasting longer than 10 days.
+ The model achieved an accuracy exceeding 80% for fires lasting longer than 10 days.
  In the same vein,
  Andela validated the fire data from the Global Fire Atlas,
  utilizing independent datasets from the United States.
- The study employed satellite data and highlighted that the duration of fires is significantly influenced among others by the fire season 
+ The study employed satellite data and highlighted that the duration of fires is significantly influenced among others by the fire season:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1427,7 +1346,8 @@ literal "false"
  Zi-Cong,
  also leveraged the capabilities of a Deep Learning Surrogate Model,
  designed to predict the temperature evolution,
- within a tunnel in the event of a fire outbreak 
+ within a tunnel in the event of a fire outbreak:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1441,7 +1361,7 @@ A deep learning--based surrogate model for spatial-temporal temperature field pr
  wildfire duration,
  primarily,
  focused on forecasting the scale of a forest fire.
- The research,
+ The research:
  
 \begin_inset Quotes eld
 \end_inset
@@ -1464,9 +1384,10 @@ literal "false"
 \end_inset
 
 .
- Subsequent,
+ Subsequently,
  researchers also highlighted the LSTM method,
- in a study concerning fires in enclosed and industrial environments 
+ in a study concerning fires in enclosed and industrial environments:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1484,10 +1405,9 @@ literal "false"
 
 .
  Xi,
- established a framework,
- for jointly,
- modeling fire duration,
- and size using a bivariate finite mixture model 
+ established a framework for jointly modeling fire duration,
+ and size using a bivariate finite mixture model,
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1502,9 +1422,7 @@ Modeling the duration and size of wildfires using joint mixture models
  location,
  month,
  and environmental factors.
- The research,
- revealed a strong connection between:
- duration,
+ The research revealed a strong connection between duration,
  and size,
  and identified key predictors,
  influencing these subpopulations 
@@ -1519,13 +1437,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Predicting,
- the duration of a fire is crucial,
- as it allows for estimating the potential risk,
- to the affected area and determining the necessary human resources,
- for its suppression.
+Predicting the duration of a fire is crucial,
+ as it allows for estimating the potential risk to the affected area and determining the necessary human resources for its suppression.
  Additionally,
- forest fires and asymmetry climate change are commonly 
+ forest fires and asymmetrical climate change are commonly 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1539,8 +1454,7 @@ inflamed
  emphasizes that climate change is drastically impacting the fire season.
  Therefore,
  fire seasons now last six to eight months,
- compared to the four months,
- they previously spanned .
+ compared to the four months they previously spanned .
  Face the Facts USA reports that in the U.S.
  the average duration of wildfires increased from 8 days,
  before 1986,
@@ -1557,14 +1471,11 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 On this subject,
  regarding the asymmetric effects and phenomena brought about by Climate Change,
  we will indicatively refer to certain studies.
  In 2001,
- Flato & Boer,
- introduced the paper 
+ Flato & Boer introduced the paper 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1582,8 +1493,8 @@ literal "false"
 
 .
  In 2009,
- Whitmarsh,
- published the article 
+ Whitmarsh published the article:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1603,7 +1514,8 @@ literal "false"
 .
  In 2012,
  Xu & Ramanathan,
- bring out 
+ bring out:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1622,7 +1534,8 @@ literal "false"
 
 .
  In 2018,
- Shunchuan printed 
+ Shunchuan printed:
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1660,14 +1573,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The current work employs a series of Feature Construction,
+The current work employs a series of feature construction,
  and selection methods in order to improve the ability of various machine learning techniques to predict the duration of forest fires.
  These methods involve creating new,
- meaningful variables by combining or transforming existing 
-\series bold
-symmetrical & asymmetrical
-\series default
- data attributes 
+ meaningful variables by combining or transforming existing symmetrical and asymmetrical data attributes 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "genfc1"
@@ -1679,21 +1588,48 @@ literal "false"
  For example,
  integrating material resources deployed during a forest fire event into a single metric constitutes Feature Construction,
  enabling models,
- to better capture the complexity,
- of fire incidents,
+ to better capture the complexity of fire incidents,
  and resource allocation.
  Another example,
  for Feature Construction,
  during a forest fire,
  is combining weather attributes,
- in order to form,
- a fire risk index.
+ in order to form a fire risk index.
  Such,
  approaches enhance data representation,
  facilitating more robust,
  and interpretable predictive models,
  in disaster management.
- The Feature Construction or selection methods were applied on data collected for the Greek case that contained weather information.
+ The Feature Construction or selection methods were applied to data collected for the Greek case that contained weather information.
+\end_layout
+
+\begin_layout Standard
+To main contributions of the current work can be summarized to the following highlights:
+\end_layout
+
+\begin_layout Enumerate
+The incorporation of Forest Fires Greek data from the years 2014 - 2021 (57.904 entries).
+\end_layout
+
+\begin_layout Enumerate
+The inclusion of meteorological data for each fire event.
+\end_layout
+
+\begin_layout Enumerate
+The classification of Forest Fires according to their Duration.
+\end_layout
+
+\begin_layout Enumerate
+The usage of Feature Construction Techniques.
+\end_layout
+
+\begin_layout Enumerate
+The prediction of the Forest Fire Duration.
+\end_layout
+
+\begin_layout Enumerate
+Main contributions:
+ Estimating Fire Duration and Analyzing the Interaction Between Environmental Conditions and Fire Duration.
 \end_layout
 
 \begin_layout Standard
@@ -1747,8 +1683,7 @@ name "sec:Materials-and-Methods"
 \end_layout
 
 \begin_layout Standard
-This section initiates with a description of the used datasets and continues with a detailed description of the used feature construction and selection techniques,
- that will be applied on the datasets incorporated in the conducted experiments.
+This section initiates with a description of the used datasets and continues with a detailed description of the used feature construction and selection techniques that will be applied to the datasets incorporated in the conducted experiments.
 \end_layout
 
 \begin_layout Subsection
@@ -1760,7 +1695,7 @@ In this research,
  open data provided by the Hellenic Fire Service were utilized,
  available at the link 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1787,11 +1722,7 @@ The datasets comply with the European transparency legislation (Directive 2013/3
  accurate,
  and comprehensive,
  facilitating analysis and covering all involved entities.
- 
-\end_layout
-
-\begin_layout Standard
-Regarding burned areas,
+ Regarding burned areas,
  the dataset included measurements for the following categories:
  forests,
  forested areas,
@@ -1820,6 +1751,462 @@ As for the firefighting units deployed,
  PZL aircraft,
  GRU aircraft,
  as well as contracted helicopters and aircraft.
+ From the raw data obtained from the Hellenic Fire Service,
+ we removed all records that lacked essential values such as the date,
+ fire ignition time,
+ or fire extinguishing time,
+ as it would not be possible to proceed with predicting the duration of a fire without these fundamental parameters.
+ This data preprocessing step ensured the retention of complete and consistent information,
+ establishing a symmetric and reliable basis for subsequent analyses,
+ while mitigating potential asymmetric data gaps.
+ The original number of patterns for every year and the deleted patterns (due to missing data) are presented in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-original-datasets"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The original size of datasets and the eliminated rows.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-original-datasets"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+YEAR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RAW DATA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DELETED
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FINAL DATA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2014
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6834
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1158
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5676
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8117
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1358
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6759
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10258
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1642
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8616
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10355
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1678
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8677
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1363
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6642
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9499
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2280
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7219
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11798
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4579
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7096
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2021
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9513
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2417
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7096
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+TOTAL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+74379
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+16475
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+57904
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1965,9 +2352,21 @@ Sunshine Duration
  The total hours of direct sunlight during the day.
 \end_layout
 
-\begin_layout Quote
+\begin_layout Standard
 These features were aggregated and matched with each fire record,
  ensuring comprehensive weather context for both the ignition and extinguishment phases of the fires.
+ In this context,
+ incorporating meteorological variables from both the ignition and extinguishment periods captures the asymmetric evolution of weather conditions throughout the fire’s duration.
+ Forest fires in Greece often evolve under rapidly changing meteorological patterns,
+ where factors such as wind speed,
+ temperature,
+ and humidity fluctuate significantly between ignition and suppression.
+ Therefore,
+ integrating both sets of meteorological data allows for a more comprehensive and symmetric representation of the fire event,
+ enhancing the model’s ability to approximate real world dynamics.
+ However,
+ the primary aim of this study is not real - time operational prediction,
+ but rather the post-event modelling and understanding of the duration of forest fires under realistic and dynamic environmental conditions.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2005,6 +2404,34 @@ More than 7201 minutes (5 days - and more),
  which is considered a long duration fire.
 \end_layout
 
+\begin_layout Standard
+The specific temporal categorization was determined based on the distribution of forest fire duration data across the Greek territory,
+ as observed in the dataset we processed.
+ This data-driven approach ensured that the selected cut-points (
+\begin_inset Formula $\le$
+\end_inset
+
+360 min,
+ 361–7200 min,
+ 
+\begin_inset Formula $>$
+\end_inset
+
+7201 min) accurately reflected the natural groupings present within the observed fire duration patterns.
+ It should be noted that in Greek territory,
+ the combination of fuel types (such as pine and fir forests),
+ geomorphological features (including mountainous terrain,
+ ravines,
+ and steep slopes),
+ and climatic conditions (temperature,
+ humidity,
+ and wind speed) are particularly distinctive.
+ As a result,
+ if a wildfire is not brought under control within the first few hours,
+ it tends to spread rapidly beyond containment,
+ potentially burning for several days.
+\end_layout
+
 \begin_layout Subsection
 The used feature construction and selection methods
 \end_layout
@@ -2036,8 +2463,7 @@ Notably,
  on larger datasets,
  became practical only after the advent of electronic computers,
  which made it computationally feasible,
- to handle datasets,
- beyond trivial sizes 
+ to handle datasets beyond trivial sizes 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pca_cadima"
@@ -2053,12 +2479,10 @@ literal "false"
  particularly,
  in building predictive models.
  It is an unsupervised learning method,
- designed to analyze,
- the relationships among a set of variables.
+ designed to analyze the relationships among a set of variables.
  Often referred to as a form of general factor analysis,
  it involves regression to determine a line of best fit.
- The primary objective,
- of PCA,
+ The primary objective of PCA,
  is to reduce the dimensionality of a dataset,
  while retaining the most significant patterns,
  and relationships,
@@ -2078,19 +2502,17 @@ literal "false"
 
 \begin_layout Standard
 Next,
- we will briefly reference studies,
- that have utilized PCA,
+ we will briefly reference studies that have utilized PCA,
  covering different areas,
  such as:
  statistical physics,
  genetic improvement,
  face recognition,
- economic & environmental sciences,
+ economic and environmental sciences,
  medical prediction,
  e.t.c.
  Explicitly,
- the research conducted,
- by Park 
+ the research conducted by Park 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pca_park"
@@ -2105,9 +2527,7 @@ literal "false"
  Specifically,
  the results achieve full precision,
  only under the condition of an infinite dataset.
- This constraint restricts the practical applicability,
- of the method,
- when working with finite or limited data,
+ This constraint restricts the practical applicability of the method when working with finite or limited data,
  a common scenario,
  in real-world analyses.
  
@@ -2128,22 +2548,15 @@ literal "false"
  in order to evaluate,
  morphometric traits,
  under a multivariate approach.
- The findings suggest,
- that PCA could significantly enhance the genetic improvement.
+ The findings suggest that PCA could significantly enhance genetic improvement.
  Noteworthy,
- is the fact,
- that the 64.29%,
+ is the fact that the 64.29%,
  of the total variance explained,
  can be considered relatively low.
- This suggests,
- that a significant amount of unexplained information remains,
- which is not captured,
- by the four principal components.
+ This suggests that a significant amount of unexplained information remains which is not captured by the four principal components.
  Moreover,
  Gambardella et al.
- used the PCA technique for monitoring the cultivation,
- of cannabis,
- in Albania.
+ used the PCA technique for monitoring the cultivation of cannabis in Albania.
  Specifically,
  with PCA they remove redundant spectral information from multiband datasets 
 \begin_inset CommandInset citation
@@ -2175,10 +2588,7 @@ literal "false"
 
 ,
  for stock selection,
- specifically to identify,
- a limited number of stock variables,
- that could effectively aid,
- in determining winning stocks.
+ specifically to identify a limited number of stock variables that could effectively aid in determining winning stocks.
  
 \end_layout
 
@@ -2186,8 +2596,7 @@ literal "false"
 Moreover,
  Xu et al.
  presents an interesting example of a modified application of Principal Component Analysis (PCA),
- utilizing,
- both linear and non-linear methods,
+ utilizing both linear and non-linear methods,
  through Kernel PCA (KPCA),
  in combination,
  with the Adaptive Boosting (AdaBoost) algorithm 
@@ -2222,15 +2631,14 @@ literal "false"
  and accurately analyze,
  and predict the interaction between IAQ and its influencing factors.
  In particular,
- it was examined indoor air quality (IAQ),
- and its relationship,
- with building features,
+ indoor air quality (IAQ) and its relationship with building features,
  and environmental conditions.
  
 \end_layout
 
 \begin_layout Standard
-In the work of Akinnuwesi et al 
+In the work of Akinnuwesi et al.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pca_svm"
@@ -2249,32 +2657,24 @@ literal "false"
 \end_inset
 
 .
- They create,
- the Breast Cancer Risk Assessment and Early Diagnosis (BC-RAED) model,
+ They create the Breast Cancer Risk Assessment and Early Diagnosis (BC-RAED) model,
  designed to accurately detect BCa,
  in its early stages.
  PCA,
- was initially applied to extract features,
- during the first preprocessing stage,
- followed by further feature reduction,
- in the second stage.
- The multi-preprocessed data,
- were analyzed for breast cancer risk,
- and diagnosis using SVM.
+ was initially applied to extract features during the first preprocessing stage,
+ followed by further feature reduction in the second stage.
+ The multi-preprocessed data were analyzed for breast cancer risk and diagnosis using SVM.
  The BC-RAED model,
  achieved,
  an accuracy of 97.62%,
  a sensitivity of 95.24%,
- and a specificity of 100% in assessing,
- and diagnosing breast cancer risk.
+ and a specificity of 100% in assessing and diagnosing breast cancer risk.
  
 \end_layout
 
 \begin_layout Standard
 Subsequently,
- we will briefly mention certain studies,
- that have been conducted,
- in the field of Forest Fires.
+ we will briefly mention certain studies that have been conducted in the field of Forest Fires.
  Guan's research focuses on forest fire prediction using PCA-preprocessed data.
  The preprocessing step removed irrelevant information,
  simplifying analysis.
@@ -2295,8 +2695,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-A novel model was developed,
- by Nikolov,
+A novel model was developed by Nikolov,
  using meteorological forecast data as input.
  Principal Component Analysis (PCA),
  with orthogonal rotation,
@@ -2314,13 +2713,11 @@ literal "false"
 
 .
  Also,
- a recent publication focuses on predicting wildfire ignitions,
- caused by lightning strikes,
+ a recent publication focuses on predicting wildfire ignitions caused by lightning strikes,
  which account for the largest area burned annually,
  in the extratropical Northern Hemisphere.
  Principal Component Analysis (PCA),
- played a key role,
- in reducing 611 potential predictors,
+ played a key role in reducing 611 potential predictors,
  to 13 principal components,
  which were used in logistic regression to identify the primary factors influencing lightning occurrence 
 \begin_inset CommandInset citation
@@ -2349,9 +2746,7 @@ literal "false"
 \end_inset
 
 .
- This method aims to optimize feature selection,
- by minimizing redundancy,
- and maximizing relevance 
+ This method aims to optimize feature selection by minimizing redundancy and maximizing relevance 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mrmr2"
@@ -2362,11 +2757,9 @@ literal "false"
 .
  In sum,
  MRMR enhances relevance-only methods,
- such as using an f-test between the target,
- and the features.
+ such as using an f-test between the target and the features.
  When two features are similar,
- MRMR prioritizes only the one,
- with the highest relevance.
+ MRMR prioritizes only the one with the highest relevance.
 \end_layout
 
 \begin_layout Standard
@@ -2401,8 +2794,7 @@ literal "false"
 
  to perform feature selection in the context of air quality prediction.
  MRMR,
- is employed to determine which variables have the most significant impact,
- on the air quality index (AQI),
+ is employed to determine which variables have the most significant impact on the air quality index (AQI),
  while minimizing redundancy among them 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2417,7 +2809,8 @@ literal "false"
 
 \begin_layout Standard
 The article,
- by Elbeltagi is an innovative approach for estimating maize chlorophyll by integrating hyperspectral indices with cutting-edge,
+ by Elbeltagi,
+ is an innovative approach for estimating maize chlorophyll by integrating hyperspectral indices with cutting-edge,
  six advanced machine learning techniques.
  The MRMR algorithm was incorporated into the process to enhance feature selection by pinpointing the most significant spectral bands,
  minimizing data redundancy and boosting model efficiency 
@@ -2435,8 +2828,8 @@ literal "false"
 \begin_layout Standard
 In the energy sector,
  Liu conducted the following research offering an improved method for predicting transient stability in power systems.
- The MRMR algorithm is applied for feature selection with minimal redundancy and maximum relevance providing an enhanced approach for forecasting transient stability,
- in power systems.
+ The MRMR algorithm is applied for feature selection with minimal redundancy and maximum relevance,
+ providing an enhanced approach for forecasting transient stability in power systems.
  This approach addresses the limitations of previous methods,
  such as low accuracy,
  difficult applicability and high computational cost,
@@ -2455,8 +2848,7 @@ literal "false"
 \begin_layout Standard
 Eristi also refers to the energy sector.
  Specifically,
- this paper presents,
- a new PD detection system,
+ this paper presents a new PD detection system,
  that combines spectral analysis,
  spectrogram analysis,
  deep learning algorithms,
@@ -2469,10 +2861,7 @@ literal "false"
 \end_inset
 
 .
- The most impactful features,
- are identified,
- by performing MRMR feature selection analysis,
- on the extracted deep features 
+ The most impactful features are identified by performing MRMR feature selection analysis on the extracted deep features 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mrmr_eristi"
@@ -2541,7 +2930,8 @@ literal "false"
 \end_inset
 
 .
- In this work the architecture of the neural network is produced through a series of generations of the underlying genetic algorithm by reducing the training error of the neural network.
+ In this work,
+ the architecture of the neural network is produced through a series of generations of the underlying genetic algorithm by reducing the training error of the neural network.
  Furthermore,
  the method is able to identify the best set of parameters for the neural network.
  This method can also retain only a small portion of features from the original objective problem,
@@ -3700,6 +4090,82 @@ Apply
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+The diagram 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-full-pipeline"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ depicts the proposed FC scheme,
+ from raw data to statistically substantiated results.
+ Incident records from the Hellenic Fire Service (2014–2021) are combined with meteorological data from OpenWeather at ignition and extinguishment times.
+ Each incident is geocoded with OpenCage (latitude/longitude) and merged with the corresponding weather measurements,
+ yielding a consistent spatiotemporal profile per event.
+ The unified dataset is then cleaned and normalized (handling missing values,
+ harmonizing units and timing,
+ and applying feature scaling).
+ The target variable is defined as fire duration in minutes and categorized into Short,
+ Medium,
+ and Long according to the thresholds specified in the manuscript.
+ Feature Construction is performed by the proposed GE-based FC (QFc),
+ which searches for nonlinear expressions of the original variables and produces a compact set of constructed features 
+\begin_inset Formula $\left(N_{f}\right)$
+\end_inset
+
+ tailored to the classification task.
+ These features feed the final neural-network classifier,
+ which is trained and evaluated using classification error (%) as the primary metric.
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FC_Pipeline.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The full pipeline of the used process.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-full-pipeline"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Results
 \begin_inset CommandInset label
@@ -3712,10 +4178,18 @@ name "sec:Results"
 \end_layout
 
 \begin_layout Standard
-The experiments were executed using the freely available optimization environment of Optimus,
+The experiments were executed using the freely available optimization environment of Optimus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "optimus"
+literal "false"
+
+\end_inset
+
+,
  that can be downloaded from 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -3724,6 +4198,7 @@ https://github.com/itsoulos/GlobalOptimus.git
 
 \end_inset
 
+(accessed on 11 October 2025).
  as well as the WEKA programming tool 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3746,16 +4221,12 @@ literal "false"
 \end_inset
 
 .
- Each experiment was conducted 30 times,
+ Each experiment was conducted 30 times and the average classification error is reported,
  using different seed for the random generator each time and the ten - fold cross validation procedure was used to validate the experimental results.
- The values of parameters for the used methods are shown in Table
-\series bold
- 
-\series default
-
+ The values of parameters for the used methods are shown in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:expr"
+reference "tab:values"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3764,10 +4235,282 @@ nolink "false"
 \end_inset
 
 .
-
-\series bold
  
-\series default
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The values for each parameter of the proposed method.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:values"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NAME
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MEANING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VALUE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chromosomes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{g}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Generations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Selection rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mutation rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{f}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of features
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of weights
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The following notation is used in the tables presenting the experimental results:
 \end_layout
 
@@ -3846,7 +4589,7 @@ literal "false"
 \end_inset
 
 .
- This method was uses to train a neural network with 10 processing nodes.
+ This method was used to train a neural network with 10 processing nodes.
 \end_layout
 
 \begin_layout Enumerate
@@ -3907,7 +4650,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4973,7 +5716,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-19.41%
+18.88%
 \end_layout
 
 \end_inset
@@ -4985,7 +5728,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-11.39%
+10.88%
 \end_layout
 
 \end_inset
@@ -4997,7 +5740,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-11.94%
+11.25%
 \end_layout
 
 \end_inset
@@ -5009,7 +5752,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-9.75%
+9.25%
 \end_layout
 
 \end_inset
@@ -5021,7 +5764,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-12.14%
+11.63%
 \end_layout
 
 \end_inset
@@ -5033,7 +5776,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-11.02%
+10.50%
 \end_layout
 
 \end_inset
@@ -5045,7 +5788,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-11.29%
+10.75%
 \end_layout
 
 \end_inset
@@ -5057,7 +5800,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-9.72%
+9.38%
 \end_layout
 
 \end_inset
@@ -5069,7 +5812,7 @@ AVERAGE
 
 \series bold
 \size footnotesize
-8.79%
+8.25%
 \end_layout
 
 \end_inset
@@ -5084,13 +5827,24 @@ AVERAGE
 
 \end_inset
 
+Also the standard deviation for the experimental results is depicted in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:std"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
+\end_inset
+
+.
 \begin_inset Float table
 placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5913,7 +6667,14 @@ FC
 
 \end_inset
 
-Table 
+Year-wise results show that the proposed FC method achieves the lowest average classification error (8.25%),
+ outperforming NNC (9.38%),
+ MRMR (9.25%),
+ BAYESNN (10.50%),
+ DNN (10.75%),
+ ADAM (10.88%),
+ BFGS (11.25%),
+ and PCA (11.63%) (Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:expr"
@@ -5924,61 +6685,112 @@ nolink "false"
 
 \end_inset
 
- presents the percentage values of classification error for various machine learning models from 2014 to 2021,
- as well as the average error rate for each model.
- The analysis reveals significant insights regarding the performance and stability of the methods.
- The BAYES model exhibits the highest variability,
- with a particularly high error rate in 2017 (53.36%).
- This is a clear outlier,
- possibly due to specific conditions in the data or the evaluation framework.
- In other years,
- its error rates range between 7.79% and 11.81%.
- The average error rate for BAYES is 19.41%,
- the highest in the table,
- indicating the lowest overall accuracy compared to the other models.
- The ADAM model shows an average error rate of 11.39%,
- with values ranging from 9.44% to 13.00%.
- Its stability is evident,
- as there are no significant deviations in specific years.
- ADAM's performance is considered relatively good compared to other methods.
- The BFGS model has an average error rate of 11.94%,
- slightly higher than ADAM's.
- Its error rates range from 9.66% to 14.97%.
- Although it demonstrates stable performance,
- its higher average value suggests slightly lower accuracy in certain cases.
- The MRMR model has an average error rate of 9.75%,
- ranking it among the most accurate methods.
- However,
- its error rate reaches 12.65% in 2017,
- while remaining low in other years,
- making it a reliable option overall.
- The PCA model has an average error rate of 12.14%,
- which is among the highest in the table.
- It shows relatively stable values,
- with a slight increase to 15.50% in 2014.
- Despite its generally good performance,
- its accuracy is lower compared to other methods such as MRMR or FC.
- The NNC model has an average error rate of 9.72%,
- one of the lowest in the table.
- Its values range from 7.03% to 12.61%,
- with small deviations,
- demonstrating stability and reliability.
- The FC model has the lowest average error rate in the table,
- at 8.79%,
- making it the most accurate method overall.
- Its error rates range between 6.62% and 12.66%,
- indicating stable performance with minor fluctuations.
- In conclusion,
- FC is the most accurate model,
- with the lowest average error rate,
- while BAYES demonstrates the lowest accuracy due to its high average error rate and significant variability.
- Methods such as MRMR and NNC are also reliable,
- with low error rates and relatively stable performance.
- The observed deviations in specific years might be related to changes in the data or evaluation parameters.
+).
+ FC attains the best annual score in 6 out of 8 years (2014,
+ 2015,
+ 2016,
+ 2018,
+ 2019,
+ 2021),
+ with two exceptions:
+ in 2017 NNC is marginally better (12.61% vs.
+ 12.66%),
+ and in 2020 other methods tie at the lowest error (BAYESNN/DNN/NNC = 9.50% vs.
+ 9.61% for FC).
+ Notable anomalies appear for BAYES in 2017 (53.36%) and 2020 (40.26%),
+ suggesting that this classifier is sensitive to the data characteristics in those years.
+ Regarding stability,
+ standard deviations indicate high variability for NNC (e.g.,
+ 0.99 in 2014) and elevated dispersion for BFGS in some years (up to 0.51),
+ whereas FC maintains moderate and consistent variability (≈0.04–0.19),
+ offering a robust accuracy-reliability balance.
+ Overall,
+ the evidence supports FC as the top performer with consistently lower errors especially in recent years apart from specific edge cases in 2017 and 2020.
+ 
 \end_layout
 
 \begin_layout Standard
 In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Average-execution-time"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ the average execution time for all methods participated in the experiments is outlined.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename forest_meteo_time.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Average execution time for all methods incorporated in the conducted experiments.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Average-execution-time"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+As expected,
+ the proposed method requires significantly more time than other techniques since it consists of a Genetic Algorithm that in each iteration minimizes the error in a large series of RBF networks,
+ in order to calculate the corresponding fitness values.
+\end_layout
+
+\begin_layout Standard
+Using paired Wilcoxon signed-rank tests across the classification datasets,
+ the proposed FC method exhibits a consistent statistical advantage over all competing models.
+ The pairwise comparisons FC vs BAYES (p=0.016),
+ ADAM (p=0.023),
+ BFGS (p=0.016),
+ MRMR (p=0.039),
+ PCA (p=0.016),
+ BAYESNN (p=0.039),
+ DNN (p=0.039),
+ and NNC (p=0.039) are all significant at 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+.
+ None of the p-values falls below 0.01,
+ therefore the evidence corresponds to “significant” rather than “highly” or “extremely” significant according to the Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:statExper"
@@ -5989,62 +6801,12 @@ nolink "false"
 
 \end_inset
 
-,
- the results of the Wilcoxon test for pairwise comparisons of the classification models are presented,
- providing valuable insights into the statistical significance of their performance differences.
- Below is a more in-depth analysis,
- focusing on the interpretation of results and a deeper understanding of the relationships between the models.
- The overall result of the Wilcoxon test (p < 0.5) confirms that statistically significant differences exist among the models' performances.
- This indicates that the models are not equivalent in terms of their accuracy,
- with some clearly outperforming others.
- The comparison between FC and NNC (p = 0.039) reveals a statistically significant difference,
- though the p-value is relatively close to the significance threshold (commonly p < 0.05).
- This suggests that while FC outperforms NNC,
- the difference is not exceedingly pronounced.
- This outcome might be influenced by specific data characteristics or variations in the models' stability.
- The comparison between FC and PCA (p = 0.016) shows a clearer statistically significant difference.
- FC's performance is evidently superior to PCA’s,
- which may be attributed to the fundamental differences in their methodologies.
- PCA,
- as a dimensionality reduction technique,
- might lose critical information in the data,
- leading to lower accuracy in certain scenarios.
- For the comparison between FC and MRMR (p = 0.039),
- a statistically significant difference is observed once again.
- Similar to the FC-NNC comparison,
- this difference exists but is not highly pronounced.
- MRMR,
- which selects features based on mutual information,
- might not perform as consistently across all datasets,
- giving FC an edge.
- The comparison between FC and BFGS (p = 0.016) indicates an even more distinct difference.
+ legend.
+ The uniform pattern of p<0.05 across all pairs substantiates that FC attains systematically lower error than every alternative model on the evaluated datasets,
+ with the strongest statistical indication against BAYES,
  BFGS,
- as an optimization method,
- may lack the flexibility or precision required for classification tasks,
- allowing FC to demonstrate more stable and superior performance in this case.
- The difference between FC and ADAM (p = 0.023) is also statistically significant.
- While ADAM is generally considered an effective algorithm in many contexts,
- FC appears to outperform it in this analysis,
- possibly due to better adaptability to the specific characteristics of the dataset.
- The most striking difference is seen in the comparison between FC and BAYES (p = 0.0078).
- The very low p-value strongly confirms a statistically significant difference,
- highlighting FC’s clear superiority over BAYES.
- Notably,
- BAYES has exhibited high variability in its performance,
- especially in 2017,
- when it recorded a very high error rate.
- This variability likely reduces its overall reliability,
- which is reflected in this comparison.
- In summary,
- FC consistently outperforms all other models in this analysis,
- with statistically significant differences observed in all pairwise comparisons.
- The differences are not only numerical but also conceptual,
- as FC’s superior performance can likely be attributed to its stability,
- flexibility,
- and ability to handle the data’s nuances more effectively.
- In contrast,
- models like BAYES and PCA seem more affected by changes in the data or problem conditions.
- This analysis highlights FC as the most reliable and high-performing model among those evaluated.
+ and PCA (p=0.016).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -6138,7 +6900,7 @@ nolink "false"
 \end_inset
 
 ,
- with an average error of 8.79%.
+ with an average error of 8.25%.
  The error rates range from 6.62% in 2019,
  marking the lowest rate for this configuration,
  to 12.66% in 2017,
@@ -6151,7 +6913,7 @@ nolink "false"
 
 ,
  the classification error rates demonstrate further improvement,
- with an average error of 8.63%,
+ with an average error of 8.13%,
  which is the lowest among the three configurations.
  The error rates range from a minimum of 6.49% in 2019 to a maximum of 12.46% in 2017.
  The slightly lower peak error compared to 
@@ -6174,7 +6936,7 @@ nolink "false"
 \begin_inset Formula $N_{f}=1$
 \end_inset
 
- to 8.63% for 
+ to 8.50% for 
 \begin_inset Formula $N_{f}=3$
 \end_inset
 
@@ -6201,10 +6963,6 @@ alignment document
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6603,7 +7361,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
-9.03%
+8.50%
 \end_layout
 
 \end_inset
@@ -6614,7 +7372,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
-8.79%
+8.25%
 \end_layout
 
 \end_inset
@@ -6625,7 +7383,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
-8.63%
+8.13%
 \end_layout
 
 \end_inset
@@ -6807,6 +7565,829 @@ name "fig:statNf"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Furthermore,
+ to study the accuracy of the measurements in relation to the number of chromosomes (
+\begin_inset Formula $N_{c})$
+\end_inset
+
+,
+ another experiment was conducted using only the techniques based on Grammatical Evolution and with a variable number of chromosomes,
+ and the results are presented in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:experNG"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The effect of the number of chromosomes 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ to the accuracy of methods based on Grammatical Evolution.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:experNG"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NNC
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FC
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+YEAR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}=100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}=200$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}=500$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}=100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}=200$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}=500$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2014
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.90%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.78%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.21%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.74%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.77%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.04%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.13%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.07%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.17%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.24%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.51%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.98%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.18%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.12%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.98%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.92%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.60%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.63%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.63%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.61%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.66%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.71%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.66%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.58%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.29%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.96%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.85%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.72%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.40%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.48%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.03%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.55%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.69%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.62%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.43%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.51%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.61%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2021
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.97%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.98%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.65%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.90%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.55%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AVERAGE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9.13%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9.25%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9.38%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.38%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.39%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.25%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Studying this table,
+ one finds that there are no large deviations in the average classification error regardless of the number of chromosomes used in Grammatical Evolution.
 \end_layout
 
 \begin_layout Section
@@ -9281,6 +10862,34 @@ M.J.D Powell,
  pp.
  547-566,
  1989.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2025)"
+key "optimus"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ V.
+ Charilogis,
+ G.
+ Kyrou,
+ V.N.
+ Stavrou,
+ A.
+ Tzallas,
+ Journal of Open Source Software 
+\series bold
+10
+\series default
+,
+ 7584,
+ 2025.
 \end_layout
 
 \begin_layout Bibliography
