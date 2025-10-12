@@ -1712,6 +1712,264 @@ We download and analyzed 1.035,971 earthquakes events,
  The regions encompassed within these geographical coordinates are 255,
  while globally approximately 708 seismogenic zones have been recorded since 1970,
  based on data from the Interactive Earthquake Browser.
+ The features of the original dataset are show in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:dataOriginal"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The description of the original dataset.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:dataOriginal"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FEATURE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RANGE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+YEAR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2004-2011
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MONTH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1-12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DAY
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1-31
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TIME
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+00:00:00 - 23:59:59
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LATITUDE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21.00-79.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LONGITUDE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33.00-176
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DEPTH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.00-800.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MAGNITUDE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0-10.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TIMESTAMP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1719,42 +1977,80 @@ Pre - processing steps
 \end_layout
 
 \begin_layout Standard
+The initial dataset was enhanced after processing the original data.
+ An important role in this process was played by the 
+\begin_inset Formula $d_{c}$
+\end_inset
 
-\series bold
-TI AKRIBOS ALLAXE STA DATASETS??
+ distance,
+ which will be used to determine when two earthquakes are close in distance.
+ The proposed value in the present implementation was 
+\begin_inset Formula $d_{c}=$
+\end_inset
+
+5 kilometers.
+ Based on the above distance,
+ the following features were added to the datasets:
+\end_layout
+
+\begin_layout Enumerate
+Number of seismic events at a distance less than the 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ that have occurred in a previous time.
+\end_layout
+
+\begin_layout Enumerate
+Average magnitude of seismic events at a distance less than 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+,
+ which have preceded the current seismic event in time.
+\end_layout
+
+\begin_layout Enumerate
+The greatest magnitude of a seismic event recorded in the past,
+ at a distance of less than 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ from the current seismic event.
+\end_layout
+
+\begin_layout Enumerate
+The time in seconds since the largest seismic event that has occurred in the past at a distance less than 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ from the current seismic event.
+\end_layout
+
+\begin_layout Enumerate
+The distance in kilometers from the largest seismic event that has occurred in the past at a distance less than 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ from the current seismic event.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-CRITICAL DISTANCE == 5KM.
- (NA GINOUN TESTS ME ALLI DISTANCE?_
+In addition,
+ the size of the seismic recordings was divided into two large classes:
 \end_layout
 
-\begin_layout Standard
-record.nearQuakesInThePast<<" "<<
+\begin_layout Itemize
+The first class contains all the events with magnitude 
+\begin_inset Formula $\le3$
+\end_inset
+
+ 
 \end_layout
 
-\begin_layout Standard
-record.meanQuakesInThePast<<" "<<
-\end_layout
-
-\begin_layout Standard
-record.maxNearQuake<<" "<<
-\end_layout
-
-\begin_layout Standard
-record.timeBetweenMajorQuake*1.0/(3600.0 * 1000.0)<<" "<<
-\end_layout
-
-\begin_layout Standard
-record.distanceFromMajorQuake/minDistance<<" "<<
-\end_layout
-
-\begin_layout Standard
-(round(record.magnitude)>=3?1.0:0.0)<<"
-\backslash
-n";
+\begin_layout Itemize
+The second class contains all the remaining events,
+ with magnitude>3.
 \end_layout
 
 \begin_layout Subsection
@@ -2087,7 +2383,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2203,7 +2499,7 @@ https://github.com/itsoulos/GlobalOptimus.git
 
 \end_inset
 
-(accessed on 11 October 2025).
+(accessed on 12 October 2025).
  Also,
  the WEKA programming tool 
 \begin_inset CommandInset citation
@@ -2270,7 +2566,7 @@ name "tab:values"
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2433,7 +2729,7 @@ Mutation rate
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2445,7 +2741,7 @@ Mutation rate
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2454,11 +2750,43 @@ Critical Distance
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 5km
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $H$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of weights
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
 \end_layout
 
 \end_inset
@@ -2559,7 +2887,7 @@ literal "false"
  processing nodes.
  The code can be downloaded from 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2568,7 +2896,7 @@ https://github.com/rmcantin/bayesopt
 
 \end_inset
 
- (accessed on 20 September 2025).
+ (accessed on 12 October 2025).
 \end_layout
 
 \begin_layout Enumerate
@@ -3356,6 +3684,131 @@ name "fig:expYear"
 
 \end_inset
 
+The Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Experimental-results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports yearly classification error rates (2004–2011) for six machine-learning models.
+ The proposed GENCLASS method consistently ranks first every year,
+ achieving the lowest average error of 19.00%,
+ which corresponds to an overall accuracy of about 81%.
+ The runner-up is NNC with an average error of 23.54%,
+ so GENCLASS reduces error by roughly 4.54 percentage points on average about a 19% relative reduction versus the closest competitor.
+ The annual margin of GENCLASS over NNC ranges from 3.20 to 7.32 points,
+ peaking in 2006.
+ Beyond accuracy,
+ GENCLASS also shows the smallest across-year variability (standard deviation ≈ 1.16),
+ indicating stable performance throughout the evaluation period.
+ In contrast,
+ MLP exhibits the highest mean error (28.80%) and the largest variability,
+ with a pronounced deterioration in 2011.
+ Overall,
+ these results support the article’s claim that Grammatical Evolution is particularly effective for this seismic classification problem,
+ as GENCLASS delivers both the lowest average error and the most consistent year-to-year behavior.
+\end_layout
+
+\begin_layout Standard
+The R-based significance analysis reveals a clear overall difference among models (Friedman 
+\begin_inset Formula $p=1.21\times10^{-5}$
+\end_inset
+
+,
+ very strong evidence),
+ with pairwise tests indicating where these differences lie (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statClass"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+ GENCLASS outperforms MLP with 
+\begin_inset Formula $p=7.52\times10^{-4}$
+\end_inset
+
+ (extremely significant) and BAYES with 
+\begin_inset Formula $p=0.00$
+\end_inset
+
+6 (highly significant),
+ and the comparison with RBF is also statistically significant at 
+\begin_inset Formula $p=0.0125$
+\end_inset
+
+.
+ In contrast,
+ GENCLASS vs BAYESNN (
+\begin_inset Formula $p=0.0516$
+\end_inset
+
+) and GENCLASS vs NNC (
+\begin_inset Formula $p=0.8937$
+\end_inset
+
+) are not statistically significant at the 
+\begin_inset Formula $0.05$
+\end_inset
+
+ threshold.
+ Overall,
+ while the omnibus test confirms marked differences across models,
+ the superiority of the proposed method is clearly supported against MLP,
+ BAYES,
+ and RBF,
+ whereas the contrasts with BAYESNN and NNC do not reach conventional significance.
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename stat_tbl4.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical tests performed on the experimental results using the variety of machine learning methods.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statClass"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -3388,7 +3841,70 @@ nolink "false"
 
 \end_inset
 
-.
+.The results indicate that the critical distance 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ influences performance,
+ but the effect size is small.
+ The average classification error decreases slightly as the distance increases:
+ 19.08% for 
+\begin_inset Formula $d_{c}=2km$
+\end_inset
+
+,
+ 19.00% for 5 km,
+ 18.82% for 10 km,
+ and 18.71% for 20 km.
+ The gap between the worst and best setting is 0.37 percentage points,
+ i.e.,
+ about a 1.9% relative error reduction,
+ so the overall advantage of the 20 km setting is real but modest.
+ Year-by-year,
+ 
+\begin_inset Formula $d_{c}=20km$
+\end_inset
+
+ achieves the lowest error in 4 out of 8 years (2004,
+ 2005,
+ 2009,
+ 2010),
+ 
+\begin_inset Formula $d_{c}=5km$
+\end_inset
+
+ is best in 2008,
+ 
+\begin_inset Formula $d_{c}=10km$
+\end_inset
+
+ in 2007,
+ and 
+\begin_inset Formula $d_{c}=2km$
+\end_inset
+
+,
+ indicating no monotonic or universally optimal choice across years but a mild preference toward larger distances.
+ Regarding stability,
+ 
+\begin_inset Formula $d_{c}=2km$
+\end_inset
+
+ shows the narrowest range over time (17.51%–20.70%),
+ whereas 
+\begin_inset Formula $d_{c}=20km$
+\end_inset
+
+ exhibits the largest spread mainly due to 2011 (16.97%–21.78%).
+ Overall,
+ the method benefits marginally from increasing 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+,
+ with 20 km yielding the lowest average error,
+ but the choice should also consider temporal stability and yearly idiosyncrasies,
+ since the per-year optimum shifts across settings.
 \end_layout
 
 \begin_layout Standard
@@ -3933,6 +4449,127 @@ AVERAGE
 
 \end_inset
 
+The significance analysis across critical distance settings dc provides no statistical evidence of an effect on classification error (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statDc"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+ The omnibus Friedman test is non-significant (
+\begin_inset Formula $p=0.4153$
+\end_inset
+
+),
+ indicating no systematic differences across 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ levels.
+ Pairwise contrasts corroborate this:
+ 
+\begin_inset Formula $d_{c}=2km$
+\end_inset
+
+ vs 5 km (
+\begin_inset Formula $p=0.9803$
+\end_inset
+
+),
+ 10 km (
+\begin_inset Formula $p=0.5274$
+\end_inset
+
+),
+ and 20 km (
+\begin_inset Formula $p=0.5274$
+\end_inset
+
+) are not significant,
+ nor are 
+\begin_inset Formula $d_{c}=5km$
+\end_inset
+
+ vs 20 km (
+\begin_inset Formula $p=0.7675$
+\end_inset
+
+) and 
+\begin_inset Formula $d_{c}=10km$
+\end_inset
+
+ km vs 20 km (
+\begin_inset Formula $p=1$
+\end_inset
+
+).
+ The 
+\begin_inset Formula $d_{c}=5km$
+\end_inset
+
+ vs 10 km comparison returned 
+\begin_inset Formula $p=\mbox{NA}$
+\end_inset
+
+,
+ which typically reflects a degenerate post-hoc case (e.g.,
+ complete rank ties or identical values per block) and does not alter the overall conclusion.
+ In sum,
+ within the 2–20 km range,
+ dc does not yield statistically significant performance differences for the proposed method,
+ so this hyperparameter may be selected based on practical or stability considerations rather than expected accuracy gains.
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename stat_tbl5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison for the results obtained by the application of the GENCLASS method,
+ using a variety of values for the critical distance 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statDc"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -3959,6 +4596,70 @@ nolink "false"
 \end_inset
 
 .
+ In this table,
+ the results show a clear downward trend in classification error as the maximum number of generations increases.
+ The average error decreases from 20.20% 
+\begin_inset Formula $\left(N_{g}=200\right)$
+\end_inset
+
+ to 19.58% 
+\begin_inset Formula $\left(N_{g}=500\right)$
+\end_inset
+
+,
+ 19.25% 
+\begin_inset Formula $\left(N_{g}=1000\right)$
+\end_inset
+
+ and 19.00% 
+\begin_inset Formula $\left(N_{g}=2000\right)$
+\end_inset
+
+,
+ i.e.,
+ a total gain of 1.20 percentage points or roughly a 6% relative reduction compared to 
+\begin_inset Formula $N_{g}=200$
+\end_inset
+
+.
+ Improvements exhibit diminishing returns:
+ the largest drop is from 200 to 500 (−0.62),
+ followed by 500 to 1000 (−0.33) and 1000 to 2000 (−0.25).
+ On a per-year basis,
+ 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ is best in six out of eight years (2006–2011 except 2004–2005),
+ while in 2004–2005 the minimum error occurs at 
+\begin_inset Formula $N_{g}=1000$
+\end_inset
+
+.
+ The 2005 value for 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ is noticeably higher than the other settings,
+ which may reflect stochastic variability or model over-specialization for that year’s data.
+ The spread across years is broadly similar across settings,
+ so the main benefit of increasing generations is a lower mean error rather than a dramatic change in variability.
+ In practice,
+ the 1000–2000 range offers the strongest performance,
+ 
+\begin_inset Formula $N_{g}=1000$
+\end_inset
+
+ comes very close to 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ (0.25 points apart) and is attractive under tighter computational budgets,
+ whereas 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ yields the lowest average error when runtime is not a constraint.
 \end_layout
 
 \begin_layout Standard
@@ -3967,7 +4668,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4498,6 +5199,159 @@ AVERAGE
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+The significance levels in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statNg"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ indicate that the maximum number of generations has an overall effect on performance,
+ as evidenced by a strongly significant Friedman test 
+\begin_inset Formula $\left(p=6.28\times10^{-4}\right)$
+\end_inset
+
+.
+ In pairwise terms,
+ moving from 
+\begin_inset Formula $N_{g}=200$
+\end_inset
+
+ to 
+\begin_inset Formula $N_{g}=1000$
+\end_inset
+
+ yields a statistically significant error reduction (
+\begin_inset Formula $p=0.022$
+\end_inset
+
+),
+ and the contrast between 
+\begin_inset Formula $N_{g}=200$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ is even more significant (
+\begin_inset Formula $p=0.0067$
+\end_inset
+
+),
+ confirming that a low generation budget underperforms relative to higher budgets.
+ By contrast,
+ 
+\begin_inset Formula $N_{g}=200$
+\end_inset
+
+ vs 
+\begin_inset Formula $N_{g}=500$
+\end_inset
+
+ is not significant (
+\begin_inset Formula $p=0.8161$
+\end_inset
+
+),
+ nor are 
+\begin_inset Formula $N_{g}=500$
+\end_inset
+
+ vs 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ (
+\begin_inset Formula $p=0.4306$
+\end_inset
+
+) and 
+\begin_inset Formula $N_{g}=1000$
+\end_inset
+
+ vs 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ (
+\begin_inset Formula $p=0.9803$
+\end_inset
+
+),
+ suggesting diminishing returns beyond roughly 1000 generations.
+ The 
+\begin_inset Formula $N_{g}=500$
+\end_inset
+
+ vs 
+\begin_inset Formula $N_{g}=1000$
+\end_inset
+
+ comparison returned 
+\begin_inset Formula $p=\mbox{NA}$
+\end_inset
+
+,
+ typically due to a degenerate post-hoc scenario (e.g.,
+ complete rank ties or identical per-block values) and does not alter the main conclusion.
+ Overall,
+ increasing generations above 200 significantly improves performance,
+ with gains saturating around 1000 generations and no clear statistical advantage of 2000 over 1000.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename stat_tbl6.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison for the results obtained by the usage of the GENCLASS method,
+ using different values for the maximum number of generations 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statNg"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
