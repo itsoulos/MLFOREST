@@ -258,7 +258,7 @@ Constantina Kopitsa
 \begin_inset Formula $^{3}$
 \end_inset
 
-and Chrysostomos Stylios
+ and Chrysostomos Stylios
 \begin_inset Formula $^{4,*}$
 \end_inset
 
@@ -374,31 +374,31 @@ The predictability of earthquakes remains a central challenge in seismological r
  Subsequently,
  Recurrent Neural Networks (RNNs) were implemented within seismological studies as early as 2007.
  Most recently,
- Grammatical Evolution (GE) has recently been introduced in seismological studies (2025).
+ Grammatical Evolution (GE) has been introduced in seismological studies (2025).
  Despite ongoing advancements,
  the so-called "triple prediction" accurately forecasting the time,
  location,
  and magnitude of a seismic event,
  remains unachieved.
  Beyond that,
- Machine learning and soft computing techniques have maintained a longstanding presence in the field of seismology.
+ machine learning and soft computing techniques have maintained a longstanding presence in the field of seismology.
  Concerning these approaches,
  significant advancements have been achieved,
  both in mapping seismic patterns and in predicting seismic characteristics on a smaller geographical scale.
  In such a way,
  our research will analyze historical seismic events from 2004 to 2011,
- for the Latitude 21 - 79 & Longitude 33 
+ for the Latitude 21°-79° & Longitude 33
 \series bold
-- 
+°-
 \series default
-176.
+176°.
  The data will be categorized and classified,
  with the aim of employing Grammatical Evolution techniques to achieve more accurate and timely predictions of earthquake magnitudes.
  This paper presents a systematic effort to enhance magnitude prediction accuracy using GE,
  contributing to the broader goal of reliable earthquake forecasting.Subsequently,
  in this paper we present the superiority of GenClass,
  a key element of the Grammatical Evolution techniques,
- with an average error 19%,
+ with an average error of 19%,
  indicating an overall accuracy of 81%.
  
 \end_layout
@@ -416,10 +416,10 @@ Introduction
 
 \begin_layout Standard
 Seismology was first established as an academic discipline in 1876 at the Imperial College of Engineering in Tokyo,
- when John Milne (1850 - 1913) was invited to teach there,
+ when John Milne (1850-1913) was invited to teach there,
  and in 1886,
  S.
- Sekiya (1855 - 1896) was appointed as the world’s first professor dedicated specifically to the field of seismology 
+ Sekiya (1855-1896) was appointed as the world’s first professor dedicated specifically to the field of seismology 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Mosegaard"
@@ -430,7 +430,7 @@ literal "false"
 .
  Nevertheless,
  the seismologists who left a lasting legacy lending their names to the classification of earthquakes,
- were Charles Richter (1900 - 1985) and Giuseppe Mercalli (1850 - 1914).
+ were Charles Richter (1900-1985) and Giuseppe Mercalli (1850-1914).
  The former developed,
  in 1935,
  a scale measuring the magnitude of seismic events,
@@ -498,7 +498,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The Richter Scale (each level is 10 time stronger than the previous).
+The Richter Scale (each level is 10 times stronger than the previous).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -654,7 +654,7 @@ Can cause damage to weak buildings in the epicenter area
 \begin_inset Text
 
 \begin_layout Plain Layout
-Can cause great damage to well - built structures
+Can cause great damage to well-built structures
 \end_layout
 
 \end_inset
@@ -674,7 +674,7 @@ Can cause great damage to well - built structures
 \begin_inset Text
 
 \begin_layout Plain Layout
-Can cause serious damage to buildings foundations
+Can cause serious damage to buildings' foundations
 \end_layout
 
 \end_inset
@@ -744,7 +744,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The Modified Mercalli Intensity Scale (near the epicentre of the earthquake).
+The Modified Mercalli Intensity Scale (near the epicenter of the earthquake).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1080,7 +1080,7 @@ nolink "false"
 
 \end_inset
 
-a hazard map issued by the Global Earthquake Model
+a hazard map issued by the Global 
 \begin_inset Flex URL
 status collapsed
 
@@ -1143,7 +1143,8 @@ name "fig:Hazard-map-from"
 \end_layout
 
 \begin_layout Standard
-On this researchers are increasingly utilizing artificial intelligence and other advanced techniques to enhance the timely forecasting of earthquakes and other natural disasters,
+In this context,
+ researchers are increasingly utilizing artificial intelligence and other advanced techniques to enhance the timely forecasting of earthquakes and other natural disasters,
  with the ultimate aim of helping communities take protective measures and mitigate potential impacts 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1191,7 +1192,8 @@ Furthermore
 ,
 
 \series default
- Mousavi et al 
+ Mousavi et al.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Mousavi2020-1"
@@ -1286,8 +1288,7 @@ literal "false"
 
 ,
  concentrated on forecasting earthquake magnitudes in the Hindukush region.
- Four machine learning approaches—
-neural network–based pattern recognition,
+ Four machine learning approaches neural network-based pattern recognition,
  Recurrent Neural Networks,
  Random Forests 
 \begin_inset CommandInset citation
@@ -1298,8 +1299,7 @@ literal "false"
 \end_inset
 
 ,
- and a Linear Programming Boost ensemble classifier—
-were individually applied to model the relationships between calculated seismic parameters and the likelihood of future earthquake occurrences.
+ and a Linear Programming Boost ensemble classifier were individually applied to model the relationships between calculated seismic parameters and the likelihood of future earthquake occurrences.
  Also
 \series bold
 ,
@@ -1414,7 +1414,7 @@ literal "false"
 \end_inset
 
 ,
- where the chromosomes are series of production rules from a provided Backus–Naur form (BNF) grammar 
+ where the chromosomes are series of production rules from a provided Backus-Naur form (BNF) grammar 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bnf1"
@@ -1588,7 +1588,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The remaining of this paper has as follows:
+The remainder of this paper is organized as follows:
  in section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1679,10 +1679,10 @@ Dataset Description
 \end_layout
 
 \begin_layout Standard
-We download and analyzed 1.035,971 earthquakes events,
+We download and analyzed 1,035,971 earthquakes events,
  from IEB,
- between 2004 - 2011 (starting date 2004/04/01 - ending date 2011/03/16),
- count days 2.487.
+ between 2004-2011 (starting date 2004/04/01 - ending date 2011/03/16),
+ count days 2487.
  The dataset includes the following variables:
  Year,
  Month,
@@ -1694,20 +1694,20 @@ We download and analyzed 1.035,971 earthquakes events,
  Mag,
  Region,
  and Timestamp.
- We utilize the coordinates for (latitude 21 - 79 & Longitude 33 
+ We utilize the coordinates for (latitude 21°-79° & Longitude 33
 \series bold
-- 
+°-
 \series default
-176),
- select the magnitude measurements (range 1.0 - 10.0),
+176°),
+ select the magnitude measurements (range 1.0-10.0),
  and select by default for Depth Range,
  in order to use all available depths.
  From our dataset,
- the daily average is 416,55 earthquakes,
+ the daily average is 41,655 earthquakes,
  the minimum earthquakes in a day,
  was 33,
  on 2005/03/02,
- and the maximum in a day was 2.326,
+ and the maximum in a day was 2326,
  on 2011/03/11 (Tohoku earthquake 9.1 mag).
  The regions encompassed within these geographical coordinates are 255,
  while globally approximately 708 seismogenic zones have been recorded since 1970,
@@ -1874,7 +1874,7 @@ LATITUDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-21.00-79.00
+21.00°-79.00°
 \end_layout
 
 \end_inset
@@ -1894,7 +1894,7 @@ LONGITUDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-33.00-176
+33.00°-176°
 \end_layout
 
 \end_inset
@@ -1973,7 +1973,7 @@ TIMESTAMP
 \end_layout
 
 \begin_layout Subsection
-Pre - processing steps
+Pre-processing steps
 \end_layout
 
 \begin_layout Standard
@@ -1988,7 +1988,7 @@ The initial dataset was enhanced after processing the original data.
 \begin_inset Formula $d_{c}=$
 \end_inset
 
-5 kilometers.
+5km.
  Based on the above distance,
  the following features were added to the datasets:
 \end_layout
@@ -2275,13 +2275,13 @@ Crossover
 
  of produced offsprings two chromosomes are selected from the current population,
  using tournament selection.
- Subsquently,
+ Subsequently,
  these chromosomes will produce the set 
 \begin_inset Formula $\left(\widetilde{z},\widehat{w}\right)$
 \end_inset
 
- with the application of one - point crossover.
- A graphical example of the one - point crossover method is outlined in Figure 
+ with the application of one-point crossover.
+ A graphical example of the one-point crossover method is outlined in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:onePoint"
@@ -2499,7 +2499,7 @@ https://github.com/itsoulos/GlobalOptimus.git
 
 \end_inset
 
-(accessed on 12 October 2025).
+ (accessed on 12 October 2025).
  Also,
  the WEKA programming tool 
 \begin_inset CommandInset citation
@@ -2516,7 +2516,7 @@ literal "false"
 \series bold
  
 \series default
-ten - fold cross validation method.
+ten-fold cross validation method.
 
 \series bold
  
@@ -3684,7 +3684,7 @@ name "fig:expYear"
 
 \end_inset
 
-The Table 
+Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Experimental-results"
@@ -3695,7 +3695,7 @@ nolink "false"
 
 \end_inset
 
- reports yearly classification error rates (2004–2011) for six machine-learning models.
+ reports yearly classification error rates (2004-2011) for six machine-learning models.
  The proposed GENCLASS method consistently ranks first every year,
  achieving the lowest average error of 19.00%,
  which corresponds to an overall accuracy of about 81%.
@@ -3827,7 +3827,7 @@ The critical distance
 
  was used to generate the final datasets as the distance between seismic events.
  In order to determine the correlation of this parameter with the experimental results produced,
- another experiment was conducted where this distance ranged from 2 to 20 kilometers.
+ another experiment was conducted where this distance ranged from 2 to 20km.
  In this experiment,
  the proposed classification rule generation technique was used.
  The experimental results from this experiment are presented in Table 
@@ -3853,13 +3853,13 @@ nolink "false"
 \end_inset
 
 ,
- 19.00% for 5 km,
- 18.82% for 10 km,
- and 18.71% for 20 km.
+ 19.00% for 5km,
+ 18.82% for 10km,
+ and 18.71% for 20km.
  The gap between the worst and best setting is 0.37 percentage points,
  i.e.,
  about a 1.9% relative error reduction,
- so the overall advantage of the 20 km setting is real but modest.
+ so the overall advantage of the 20km setting is real but modest.
  Year-by-year,
  
 \begin_inset Formula $d_{c}=20km$
@@ -3902,7 +3902,7 @@ nolink "false"
 \end_inset
 
 ,
- with 20 km yielding the lowest average error,
+ with 20km yielding the lowest average error,
  but the choice should also consider temporal stability and yearly idiosyncrasies,
  since the per-year optimum shifts across settings.
 \end_layout
@@ -4476,17 +4476,17 @@ nolink "false"
 \begin_inset Formula $d_{c}=2km$
 \end_inset
 
- vs 5 km (
+ vs 5km (
 \begin_inset Formula $p=0.9803$
 \end_inset
 
 ),
- 10 km (
+ 10km (
 \begin_inset Formula $p=0.5274$
 \end_inset
 
 ),
- and 20 km (
+ and 20km (
 \begin_inset Formula $p=0.5274$
 \end_inset
 
@@ -4495,7 +4495,7 @@ nolink "false"
 \begin_inset Formula $d_{c}=5km$
 \end_inset
 
- vs 20 km (
+ vs 20km (
 \begin_inset Formula $p=0.7675$
 \end_inset
 
@@ -4503,7 +4503,7 @@ nolink "false"
 \begin_inset Formula $d_{c}=10km$
 \end_inset
 
- km vs 20 km (
+ km vs 20km (
 \begin_inset Formula $p=1$
 \end_inset
 
@@ -4512,7 +4512,7 @@ nolink "false"
 \begin_inset Formula $d_{c}=5km$
 \end_inset
 
- vs 10 km comparison returned 
+ vs 10km comparison returned 
 \begin_inset Formula $p=\mbox{NA}$
 \end_inset
 
@@ -4520,7 +4520,7 @@ nolink "false"
  which typically reflects a degenerate post-hoc case (e.g.,
  complete rank ties or identical values per block) and does not alter the overall conclusion.
  In sum,
- within the 2–20 km range,
+ within the 2–20km range,
  dc does not yield statistically significant performance differences for the proposed method,
  so this hyperparameter may be selected based on practical or stability considerations rather than expected accuracy gains.
 \begin_inset Float figure
@@ -4624,14 +4624,14 @@ nolink "false"
 .
  Improvements exhibit diminishing returns:
  the largest drop is from 200 to 500 (−0.62),
- followed by 500 to 1000 (−0.33) and 1000 to 2000 (−0.25).
+ followed by 500 to 1000 (-0.33) and 1000 to 2000 (-0.25).
  On a per-year basis,
  
 \begin_inset Formula $N_{g}=2000$
 \end_inset
 
- is best in six out of eight years (2006–2011 except 2004–2005),
- while in 2004–2005 the minimum error occurs at 
+ is best in six out of eight years (2006-2011 except 2004-2005),
+ while in 2004-2005 the minimum error occurs at 
 \begin_inset Formula $N_{g}=1000$
 \end_inset
 
@@ -4645,7 +4645,7 @@ nolink "false"
  The spread across years is broadly similar across settings,
  so the main benefit of increasing generations is a lower mean error rather than a dramatic change in variability.
  In practice,
- the 1000–2000 range offers the strongest performance,
+ the 1000-2000 range offers the strongest performance,
  
 \begin_inset Formula $N_{g}=1000$
 \end_inset
@@ -5372,14 +5372,14 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Standard
-This study introduces an innovative methodology for earthquake classification employing various machine learning,
+This study introduces an innovative methodology for earthquake classification employing various machine learning methods,
  including RBF,
  MLP,
  BAYES,
  NNC,
  along with the proposed GENCLASS approach.
- The analysis covers seismic data recorded between 2004 - 2011,
- within the geographical bounds of latitude 21°–79° and longitude 33°–176°.
+ The analysis covers seismic data recorded between 2004-2011,
+ within the geographical bounds of latitude 21°-79° and longitude 33°-176°.
  Our process first involved classifying the size of the seismic events into two large classes:
  The first class contains all the events with magnitude 
 \begin_inset Formula $\le3$
@@ -5417,7 +5417,7 @@ To construct the final datasets,
 
 .
  In this test,
- the maximum number of generations was varied from 200 - 2000,
+ the maximum number of generations was varied from 200-2000,
  indicated that the maximum number of generations has an overall effect on performance.
  Among all evaluated methods,
  GENCLASS consistently achieved the best performance each year,
@@ -5446,71 +5446,43 @@ The main challenges encountered in this research were related to the large volum
 \end_layout
 
 \begin_layout Author Contributions
-For research articles with several authors,
- a short paragraph specifying their individual contributions must be provided.
- The following statements should be used 
-\begin_inset Quotes eld
-\end_inset
-
 Conceptualization,
- X.X.
- and Y.Y.;
+ C.K.
+ and I.G.T.;
  methodology,
- X.X.;
+ C.K.;
  software,
- X.X.;
+ I.G.T.;
  validation,
- X.X.,
- Y.Y.
- and Z.Z.;
+ C.S.,
+ V.C.;
  formal analysis,
- X.X.;
+ V.C.;
  investigation,
- X.X.;
+ C.K.;
  resources,
- X.X.;
+ C.S.;
  data curation,
- X.X.;
- writing—
-original draft preparation,
- X.X.;
- writing—
-review and editing,
- X.X.;
+ C.K..;
+ writing original draft preparation,
+ C.K.;
+ writing review and editing,
+ I.G.T.;
  visualization,
- X.X.;
+ V.C.;
  supervision,
- X.X.;
+ C.S.;
  project administration,
- X.X.;
+ C.S.;
  funding acquisition,
- Y.Y.
+ C.S.
  All authors have read and agreed to the published version of the manuscript.
-\begin_inset Quotes erd
-\end_inset
-
-,
- please turn to the 
-\begin_inset CommandInset href
-LatexCommand href
-name "CRediT taxonomy"
-target "http://img.mdpi.org/data/contributor-role-instruction.pdf"
-literal "false"
-
-\end_inset
-
-for the term explanation.
- Authorship must be limited to those who have contributed substantially to the work
-\begin_inset space ~
-\end_inset
-
-reported.
 \end_layout
 
 \begin_layout Funding
 This research has been financed by the European Union :
  Next Generation EU through the Program Greece 2.0 National Recovery and Resilience Plan ,
- under the call RESEARCH – CREATE – INNOVATE,
+ under the call RESEARCH-CREATE-INNOVATE,
  project name “iCREW:
  Intelligent small craft simulator for advanced crew training using Virtual Reality techniques" (project code:TAEDK-06195).
 \end_layout
