@@ -2053,12 +2053,6 @@ The second class contains all the remaining events,
  with magnitude>3.
 \end_layout
 
-\begin_layout Standard
-(round(record.magnitude)>=3?1.0:0.0)<<"
-\backslash
-n";
-\end_layout
-
 \begin_layout Subsection
 The used method
 \end_layout

@@ -5372,6 +5372,73 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Standard
+This study introduces an innovative methodology for earthquake classification employing various machine learning,
+ including RBF,
+ MLP,
+ BAYES,
+ NNC,
+ along with the proposed GENCLASS approach.
+ The analysis covers seismic data recorded between 2004 - 2011,
+ within the geographical bounds of latitude 21°–79° and longitude 33°–176°.
+ Our process first involved classifying the size of the seismic events into two large classes:
+ The first class contains all the events with magnitude 
+\begin_inset Formula $\le3$
+\end_inset
+
+.
+ The second class contains all the remaining events,
+ with magnitude>3,
+ followed by magnitude prediction based on the classified data.
+ 
+\end_layout
+
+\begin_layout Standard
+To construct the final datasets,
+ the critical distance 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ defined as the distance between seismic events was applied.
+ The results indicate that the proposed method benefits slightly from increasing 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+,
+ with a value of 20km yielding the optimal average error,
+ also we Set as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ the number of chromosomes in the genetic population.
+ Furthermore,
+ an additional experiment was conducted to evaluate the stability of the proposed generations mechanism 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+.
+ In this test,
+ the maximum number of generations was varied from 200 - 2000,
+ indicated that the maximum number of generations has an overall effect on performance.
+ Among all evaluated methods,
+ GENCLASS consistently achieved the best performance each year,
+ attaining the lowest average error rate of 19%,
+ corresponding to an overall classification accuracy of 81%.
+ 
+\end_layout
+
+\begin_layout Standard
+The main challenges encountered in this research were related to the large volume of data,
+ exceeding one million records,
+ and the adaptation of such data into a reliable classification system.
+ In general,
+ seismology pay stil keep many of its secrets well guarded,
+ but not indefinitely,
+ with the rapid advancement of machine learning and artificial intelligence techniques,
+ these mysteries are gradually being unraveled.
+ It is anticipated that future developments in these fields will further contribute to decoding the complex patterns underlying seismic activity.
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 6pt
 \end_inset
 
