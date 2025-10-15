@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.10)  12 OCT 2025 11:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.14)  15 OCT 2025 07:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1646,19 +1646,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [15 <./FC_Pipeline.png>]
-Overfull \hbox (2.49998pt too wide) in paragraph at lines 1218--1218
+Overfull \hbox (2.49998pt too wide) in paragraph at lines 1225--1225
 []\T1/ppl/m/n/10 (-20) 10.  
  []
 
 
-Overfull \hbox (9.76328pt too wide) in paragraph at lines 1228--1251
+Overfull \hbox (9.76328pt too wide) in paragraph at lines 1235--1258
  [][] 
  []
 
-<forest_meteo_time.png, id=477, 455.01192pt x 256.12488pt>
+<forest_meteo_time.png, id=476, 455.01192pt x 256.12488pt>
 File: forest_meteo_time.png Graphic file (type png)
 <use forest_meteo_time.png>
-Package pdftex.def Info: forest_meteo_time.png  used on input line 1304.
+Package pdftex.def Info: forest_meteo_time.png  used on input line 1311.
 (pdftex.def)             Requested size: 341.2581pt x 192.09317pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1669,10 +1669,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [16]
-<statWilcoxon.png, id=490, 505.89pt x 505.89pt>
+<statWilcoxon.png, id=493, 505.89pt x 505.89pt>
 File: statWilcoxon.png Graphic file (type png)
 <use statWilcoxon.png>
-Package pdftex.def Info: statWilcoxon.png  used on input line 1329.
+Package pdftex.def Info: statWilcoxon.png  used on input line 1336.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
 
 
@@ -1684,19 +1684,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [17 <./forest_meteo_time.png> <./statWilcoxon.png>]
-<statWilcoxon2.png, id=502, 505.89pt x 505.89pt>
+<statWilcoxon2.png, id=505, 505.89pt x 505.89pt>
 File: statWilcoxon2.png Graphic file (type png)
 <use statWilcoxon2.png>
-Package pdftex.def Info: statWilcoxon2.png  used on input line 1436.
+Package pdftex.def Info: statWilcoxon2.png  used on input line 1443.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 1439.
+(Font)              scaled to size 9.37807pt on input line 1446.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 1439.
+(Font)              scaled to size 7.29405pt on input line 1446.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 1439.
+(Font)              scaled to size 9.37807pt on input line 1446.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 1439.
+(Font)              scaled to size 7.29405pt on input line 1446.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1725,7 +1725,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.18796pt}.
 
 [20]
-Underfull \hbox (badness 1509) in paragraph at lines 1580--1583
+Underfull \hbox (badness 1509) in paragraph at lines 1587--1590
 []\T1/ppl/m/n/9 (+20) NASA. Car-bon Diox-ide, Vi-tal Signs. Oc-to-ber 2024. Ava
 il-able from: https://climate.nasa.gov/vital-signs/carbon-
  []
@@ -1779,7 +1779,7 @@ Package rerunfilecheck Info: File `forestfires_meteo_paper.out' has not changed
 Here is how much of TeX's memory you used:
  34569 strings out of 476106
  640920 string characters out of 5793932
- 1960975 words of memory out of 5000000
+ 1961975 words of memory out of 5000000
  55229 multiletter control sequences out of 15000+600000
  636522 words of font info for 470 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -1796,10 +1796,10 @@ texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist
 pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on forestfires_meteo_paper.pdf (24 pages, 1167887 bytes).
+Output written on forestfires_meteo_paper.pdf (24 pages, 1170371 bytes).
 PDF statistics:
- 690 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
+ 693 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
  239 named destinations out of 1000 (max. 500000)
  100002 words of extra memory for PDF output out of 106986 (max. 10000000)
 
