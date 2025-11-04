@@ -1,4 +1,4 @@
-%% LyX 2.4.0~RC3 created this file.  For more info, see https://www.lyx.org/.
+%% LyX 2.4.3 created this file.  For more info, see https://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
 \documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 \usepackage{textcomp}
@@ -12,7 +12,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
 
-\Title{Classify earthquakes using Machine Learning algorithms}
+\Title{Classification of earthquakes using Grammatical Evolution}
 
 \TitleCitation{Predicting the magnitude of earthquakes using Grammatical Evolution}
 
@@ -40,15 +40,15 @@ of Ioannina, Greece; stylios@uoi.gr}
 \corres{Correspondence: stylios@uoi.gr}
 
 
-\abstract{The predictability of earthquakes remains a central challenge in
-seismological research. Are earthquakes inherently unpredictable phenomena,
-or can they be forecasted through advances in technology? Contemporary
-seismological research continues to pursue this scientific milestone,
-often referred to as the ‘Holy Grail’ of earthquake prediction. In
-the direction of earthquake prediction based on historical data, the
-Grammatical Evolution technique of GenClass demonstrated high predictive
-accuracy for earthquake magnitude. Similarly, our research team follows
-this line of reasoning, operating under the belief that nature provides
+\abstract{Earthquake predictability remains a central challenge in seismology.
+Are earthquakes inherently unpredictable phenomena, or can they be
+forecasted through advances in technology? Contemporary seismological
+research continues to pursue this scientific milestone, often referred
+to as the ‘Holy Grail’ of earthquake prediction. In the direction
+of earthquake prediction based on historical data, the Grammatical
+Evolution technique of GenClass demonstrated high predictive accuracy
+for earthquake magnitude. Similarly, our research team follows this
+line of reasoning, operating under the belief that nature provides
 a pattern that, with the appropriate tools, can be decoded. What is
 certain is that, over the past 30 years, scientists and researchers
 have made significant strides in the field of seismology, largely
@@ -59,23 +59,23 @@ Networks (DNNs), characterized by architectures incorporating two
 hidden layers, followed in 2002. Subsequently, Recurrent Neural Networks
 (RNNs) were implemented within seismological studies as early as 2007.
 Most recently, Grammatical Evolution (GE) has been introduced in seismological
-studies (2025). Despite ongoing advancements, the so-called \textquotedbl triple
-prediction\textquotedbl{} accurately forecasting the time, location,
-and magnitude of a seismic event, remains unachieved. Beyond that,
-machine learning and soft computing techniques have maintained a longstanding
-presence in the field of seismology. Concerning these approaches,
-significant advancements have been achieved, both in mapping seismic
-patterns and in predicting seismic characteristics on a smaller geographical
-scale. In such a way, our research will analyze historical seismic
-events from 2004 to 2011, for the Latitude 21°-79° \& Longitude 33\textbf{°-}176°.
-The data will be categorized and classified, with the aim of employing
-Grammatical Evolution techniques to achieve more accurate and timely
-predictions of earthquake magnitudes. This paper presents a systematic
-effort to enhance magnitude prediction accuracy using GE, contributing
-to the broader goal of reliable earthquake forecasting.Subsequently,
-in this paper we present the superiority of GenClass, a key element
-of the Grammatical Evolution techniques, with an average error of
-19\%, indicating an overall accuracy of 81\%. }
+studies (2025). Despite continuous progress in the field, achieving
+the so-called “triple prediction” --- the precise estimation of the
+time, location, and magnitude of an earthquake --- remains elusive.
+Nevertheless, machine learning and soft computing approaches have
+long played a significant role in seismological research. Concerning
+these approaches, significant advancements have been achieved, both
+in mapping seismic patterns and in predicting seismic characteristics
+on a smaller geographical scale. In such a way, our research will
+analyze historical seismic events from 2004 to 2011, for the Latitude
+21°-79° \& Longitude 33\textbf{°-}176°. The data will be categorized
+and classified, with the aim of employing Grammatical Evolution techniques
+to achieve more accurate and timely predictions of earthquake magnitudes.
+This paper presents a systematic effort to enhance magnitude prediction
+accuracy using GE, contributing to the broader goal of reliable earthquake
+forecasting. Subsequently, in this paper we present the superiority
+of GenClass, a key element of the Grammatical Evolution techniques,
+with an average error of 19\%, indicating an overall accuracy of 81\%. }
 
 
 \keyword{Earthquakes; Machine learning; Neural networks; Grammatical Evolution;}
@@ -227,54 +227,23 @@ the field of seismology \citep{Mosegaard}. Nevertheless, the seismologists
 who left a lasting legacy lending their names to the classification
 of earthquakes, were Charles Richter (1900-1985) and Giuseppe Mercalli
 (1850-1914). The former developed, in 1935, a scale measuring the
-magnitude of seismic events, it is outlined in Table \label{tab:Richter=000020Scale=000020=000026=000020magnitude=000020(SMS=000020Tsunami=000020Warning)}
-ranging from 1 to 9 \citep{Richter-1} while the latter devised a
-scale that categorizes the destructive effects of an earthquake, it
-is shown in Table \label{tab:=000020The-Modified-Mercalli} ranging
-from levels 1 to 12 \citep{Mercalli-1}. The introduction of the Richter
-scale marked a significant advancement in seismology by establishing
-a standardized method for quantifying earthquake magnitude. This standardization
-enabled consistent comparisons between seismic events, thereby enhancing
-the analysis, preparedness, and management of earthquake-related disasters
-\citep{Geovera-1}. On the other hand, the Mercalli scale assessed
-the effects of an earthquake using qualitative criteria based on observed
-impacts on buildings, infrastructure, and human perception. 
-
-\begin{table}[H]
-\centering
-\caption{The Richter Scale (each level is 10 times stronger than the previous).
-\protect\label{tab:Richter=000020Scale=000020=000026=000020Magnitude=000020(SMS=000020Tsunami=000020Warning)}}
-
-\begin{tabular*}{10cm}{@{\extracolsep{\fill}}|c|l|}
-\hline 
-Magnitude & Consequences / Effects\tabularnewline
-\hline 
-0 - 1.9 & Detected only by seismograph\tabularnewline
-\hline 
-\hline 
-2 - 2.9 & Hanging objects may swing\tabularnewline
-\hline 
-3 - 3.9 & People near the epicenter feel this quake\tabularnewline
-\hline 
-4 - 4.9 & Can cause damage around the epicenter\tabularnewline
-\hline 
-5 - 5.9 & Can cause damage to weak buildings in the epicenter area\tabularnewline
-\hline 
-6 - 6.9 & Can cause great damage to well-built structures\tabularnewline
-\hline 
-7 - 7.9 & Can cause serious damage to buildings' foundations\tabularnewline
-\hline 
-8 - 8.9 & Causes death and major destruction\tabularnewline
-\hline 
-9 - ... & Total destruction\tabularnewline
-\hline 
-\end{tabular*}
-\end{table}
+magnitude of seismic events ranging from 1 to 9 \citep{Richter-1}
+while the latter devised a scale that categorizes the destructive
+effects of an earthquake and it is shown in Table \label{tab: The-Modified-Mercalli}
+ranging from levels 1 to 12 \citep{Mercalli-1}. The introduction
+of the Richter scale marked a significant advancement in seismology
+by establishing a standardized method for quantifying earthquake magnitude.
+This standardization enabled consistent comparisons between seismic
+events, thereby enhancing the analysis, preparedness, and management
+of earthquake-related disasters \citep{Geovera-1}. On the other hand,
+the Mercalli scale assessed the effects of an earthquake using qualitative
+criteria based on observed impacts on buildings, infrastructure, and
+human perception. 
 
 \begin{table}[H]
 \centering
 \caption{The Modified Mercalli Intensity Scale (near the epicenter of the earthquake).
-\protect\label{tab:The-Modified-Mercalli}}
+\label{tab:The-Modified-Mercalli}}
 \begin{tabular*}{10cm}{@{\extracolsep{\fill}}|c|c|}
 \hline 
 Scale Level & Consequences / Effects\tabularnewline
@@ -282,11 +251,15 @@ Scale Level & Consequences / Effects\tabularnewline
 \hline 
 I & \begin{cellvarwidth}[t]
 \centering
-Not felt except by very few under\\
- especially favorable conditions.
+Felt only by a very small number of people\\
+ and only under particularly favorable conditions.
 \end{cellvarwidth}\tabularnewline
 \hline 
-II & Felt only by a few people\tabularnewline
+II & \begin{cellvarwidth}[t]
+\centering
+Experienced by only a small \\
+number of people.
+\end{cellvarwidth}\tabularnewline
 \hline 
 III & \begin{cellvarwidth}[t]
 \centering
@@ -294,7 +267,11 @@ Felt quite noticeably by \\
 people indoors
 \end{cellvarwidth}\tabularnewline
 \hline 
-IV & Felt indoors by many, and outdoors by few\tabularnewline
+IV & \begin{cellvarwidth}[t]
+\centering
+Felt by many people indoors, \\
+but only by a few outdoors.
+\end{cellvarwidth}\tabularnewline
 \hline 
 V & Felt by nearly everyone\tabularnewline
 \hline 
@@ -302,8 +279,8 @@ VI & Felt by all\tabularnewline
 \hline 
 VII & \begin{cellvarwidth}[t]
 \centering
-Damage is negligible in buildings\\
- of good design and construction
+Damage is insignificant in well-designed \\
+and well-constructed buildings.
 \end{cellvarwidth}\tabularnewline
 \hline 
 VIII & \begin{cellvarwidth}[t]
@@ -333,7 +310,7 @@ of earthquake damage was feasible \citep{NAP-1}. The classification
 of earthquakes has made it possible not only to develop seismic hazard
 maps but also to organize data systematically for the development
 of algorithms aimed at predicting seismic events. In Figure \ref{fig:Hazard-map-from}a
-hazard map issued by the Global \url{https://www.globalquakemodel.org/product/global-seismic-risk-map}
+hazard map issued by the Global Earthquake Model(\url{https://www.globalquakemodel.org/})
 is outlined, indicating a 10\% probability of being exceeded within
 50 years.
 
@@ -341,78 +318,90 @@ is outlined, indicating a 10\% probability of being exceeded within
 \begin{centering}
 \includegraphics[scale=0.45]{gem_quake}
 \par\end{centering}
-\caption{Hazard map from Global Earthquake Model.\protect\label{fig:Hazard-map-from}}
+\caption{Hazard map from Global Earthquake Model.\label{fig:Hazard-map-from}}
 
 \end{figure}
 
-In this context, researchers are increasingly utilizing artificial
-intelligence and other advanced techniques to enhance the timely forecasting
-of earthquakes and other natural disasters, with the ultimate aim
-of helping communities take protective measures and mitigate potential
-impacts \citep{Hutchinson2023}. A series of machine learning techniques
-were applied on data gathered from earthquakes. For example, Artificial
-neural networks (ANNs) \citep{nnoverview} were first applied to the
-field of seismology in 1994, specifically through research focused
-on earthquake prediction using seismic electric signals \citep{Lakkos1994}.
+In this framework, researchers are increasingly employing artificial
+intelligence and other advanced methodologies to improve the timely
+prediction of earthquakes and other natural hazards, aiming ultimately
+to support communities in implementing protective actions and reducing
+potential impacts\citep{Hutchinson2023}. A series of machine learning
+techniques were applied on data gathered from earthquakes. For example,
+Artificial neural networks (ANNs) \citep{nnoverview} were first applied
+to the field of seismology in 1994, specifically through research
+focused on earthquake prediction using seismic electric signals \citep{Lakkos1994}.
 A more advanced form of an Artificial Neural Network (ANN) was employed
 in the related study \citep{Mousavi2020}\textbf{. }Furthermore\textbf{,}
 Mousavi et al. \citep{Mousavi2020-1} suggested an attentive deep-learning
 model for simultaneous earthquake detection. Moreover, researchers
-utilized convolutional neural networks (CNNs) \citep{cnnSurvey} trained
-on more than 18 million manually annotated seismograms from Southern
-California to estimate earthquake parameters directly from raw waveform
-data, eliminating the need for manual feature extraction. The model
-exhibited remarkable precision, achieving a standard deviation of
-only 0.023 seconds in arrival-time estimation and a 95\% accuracy
-rate in polarity classification \citep{Ross2018}. 
+employed convolutional neural networks (CNNs)\citep{cnnSurvey} {[}11{]}
+trained on over 18 million manually annotated seismograms from Southern
+California to directly infer earthquake parameters from raw waveform
+data, thereby eliminating the need for manual feature extraction.
+The model demonstrated exceptional accuracy, achieving a standard
+deviation of just 0.023 seconds in arrival-time estimation and a 95\%
+success rate in polarity classification \citep{Ross2018}. 
 
 The earliest application of Deep Neural Networks (DNNs) \citep{dnnOverview},
 incorporating two hidden layers, was introduced in 2002 \citep{Negarestani2002}.
-Subsequently, a high-resolution earthquake catalog was developed using
-DNN techniques, offering valuable insights into the complexity and
-duration of earthquake sequences, as well as their relationships with
-recent neighboring seismic events, as discussed in the related work
-\citep{Tan2021}. Additionally, Recurrent Neural Networks (RNNs) \citep{rnnOverview}
-within the field of seismology was introduced in 2007 \citep{Panakat=000020=000026=000020Adeli}.
-Furthermore, a subsequent study regarding Earthquake magnitude prediction
-using machine learning techniques was introduced recently \citep{Asim=000020et=000020al.},
+Subsequently, a high-resolution earthquake catalog was generated through
+the application of deep neural network (DNN) techniques, providing
+valuable insights into the complexity and temporal characteristics
+of earthquake sequences, as well as their connections with recent
+nearby seismic events, as outlined in related studies \citep{Tan2021}.
+Additionally, Recurrent Neural Networks (RNNs) \citep{rnnOverview}
+within the field of seismology was introduced in 2007 \citep{Panakat =000026 Adeli}.
+Furthermore, a subsequent study regarding earthquake magnitude prediction
+using machine learning techniques was introduced recently \citep{Asim et al.},
 concentrated on forecasting earthquake magnitudes in the Hindukush
 region. Four machine learning approaches neural network-based pattern
 recognition, Recurrent Neural Networks, Random Forests \citep{rfOverview},
-and a Linear Programming Boost ensemble classifier were individually
+and a Linear Programming Boost ensemble classifier, were individually
 applied to model the relationships between calculated seismic parameters
-and the likelihood of future earthquake occurrences. Also\textbf{,}
-a subsequent study demonstrated that nearest-neighbor diagrams provide
-a simple yet effective approach for differentiating between distinct
-seismic patterns and assessing the reliability of earthquake catalogs
-\citep{Hsu2024}. Another research team, used Nearest Neighbor method,
-determined that the Weibull model offered a more accurate fit for
-seismic data in California, showing well-structured tail behavior.
-They further validated its robustness by successfully applying it
-to independent datasets from Japan, Italy, and New Zealand, in the
-related publication \citep{Bayliss2019}. 
+and the likelihood of future earthquake occurrences. Additionally,
+a subsequent study showed that nearest-neighbor diagrams offer a straightforward
+yet effective method for distinguishing between different seismic
+patterns and evaluating the reliability of earthquake catalogs\citep{Hsu2024}.
+Another research team, used Nearest Neighbor method, determined that
+the Weibull model offered a more accurate fit for seismic data in
+California, showing well-structured tail behavior. They further confirmed
+the model’s robustness by successfully applying it to independent
+datasets from Japan, Italy, and New Zealand, as reported in the related
+publication \citep{Bayliss2019}. 
 
 Building on recent advancements, Rouet‐Leduc et al. applied machine
 learning techniques to datasets obtained from shear laboratory experiments,
 with the objective of identifying previously undetected signals that
 could potentially precede seismic events \citep{Rouet2017}. In a
-subsequent study, the same research team utilized a machine learning-based
-approach, originally developed in the laboratory, to analyze extensive
-raw seismic data from Vancouver Island. This methodology enabled the
-differentiation of pertinent seismic signals from background noise
+subsequent study, the same research team applied a machine learning-based
+method, initially developed in the laboratory, to analyze large volumes
+of raw seismic data from Vancouver Island. This methodology enabled
+the differentiation of pertinent seismic signals from background noise
 and holds promise for evaluating whether, and under what conditions,
 a slow slip event might be associated with or evolve into a major
-earthquake \citep{Rouet2019}. Additionally, in a recent study a predictive
-model was developed, capable of estimating both the location and magnitude
-of potential earthquakes in the following week, utilizing seismic
-data from the current week and focusing on seismogenic regions in
-southwestern China. The model demonstrated a testing accuracy of 70\%,
-with corresponding precision, recall, and F1-score values of 63.63\%,
-93.33\%, and 75.66\%, respectively \citep{Saad2023}. Moreover, in
-another publication, the research team demonstrated that machine learning
-techniques can effectively predict the timing and magnitude of laboratory-induced
+earthquake \citep{Rouet2019}. Additionally, a recent study developed
+a predictive model capable of estimating both the location and magnitude
+of potential earthquakes for the following week. The model utilized
+seismic data from the current week and targeted seismogenic regions
+in southwestern China. It achieved a testing accuracy of 70\%, with
+precision, recall, and F1 score values of 63.63\%, 93.33\%, and 75.66\%,
+respectively. \citep{Saad2023}. Moreover, in another publication,
+the research team demonstrated that machine learning techniques can
+effectively predict the timing and magnitude of laboratory-induced
 earthquakes by reconstructing and interpreting the system’s complex
 spatiotemporal loading history \citep{Corbi2019}. 
+
+Noteworthy, is the study by Zhang et al., which offers new perspectives
+in the seismology field. Specifically, the authors succeeded in documenting
+the directionality of coseismic acoustic waves generated by a major
+earthquake, and in elucidating the coupling between seismic activity,
+the ionosphere, and space weather. Their findings are presented in
+the study titled “Successively equatorward propagating ionospheric
+acoustic waves and possible mechanisms following the Mw7.5 earthquake
+in Noto, Japan, on 1 January 2024”\citep{zhangQuake}. In contrast,
+the current work focuses primarily on the classification of earthquakes
+using Grammatical Evolution techniques. 
 
 In this paper, a technique based on Grammatical Evolution \citep{mainGe}
 is proposed for the efficient creation of classification rules on
@@ -433,13 +422,27 @@ combinatorial optimization \citep{ge_comb}, security issues \citep{ge_crypt},
 evolution of decision trees \citep{ge_decision}, problems that appear
 in electronics \citep{ge_analog} etc.
 
+The main contributions of the current work are:
+\begin{enumerate}
+\item The proposed method investigates a wider geographical area than other
+related studies, incorporating 255 seismic regions out of the 708
+regions identified worldwide. 
+\item The current work utilized a classification method based on Grammatical
+Evolution to properly classify the seismic events in some predefined
+classes. The use of this technique has two clear advantages: on the
+one hand, it isolates those characteristics of a seismic event that
+are deemed necessary for its effective classification and on the other
+hand, it can discover, through the generation of complex rules, hidden
+linear and nonlinear correlations between the characteristics of the
+problem.
+\end{enumerate}
 The remainder of this paper is organized as follows: in section \ref{sec:Materials-and-Methods}
 the used dataset is described as well as the steps of the proposed
 method, in section \ref{sec:Results} the experimental results are
 presented and finally in section \ref{sec:Conclusions} some conclusions
 are discussed.
 
-\section{Materials and Methods\protect\label{sec:Materials-and-Methods}}
+\section{Materials and Methods\label{sec:Materials-and-Methods}}
 
 In this section, an extensive presentation of the seismic data used,
 their post-processing, as well as the computational rule construction
@@ -450,36 +453,41 @@ be given.
 
 In this study, we utilized open data provided by the NSF Seismological
 Facility for the Earth Consortium (SAGE), specifically accessed through
-the \url{http://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&endtime=2010-12-31&orderby=time-desc&src=iris&limit=1000&maxlat=86.99&minlat=-84.16&maxlon=180.00&minlon=-180.00&zm=1&mt=ter }
-Interactive Earthquake Browser. The choice of NSF data was motivated
-by its enhanced functionality. Although the GEOFON program offers
-similar information, it imposes a restriction on the maximum number
-of earthquakes retrievable per query (1000 events), thereby limiting
-the temporal scope of data extraction. This constraint is particularly
-significant, as nearly 1000 seismic events may occur globally within
-a single day. The NSF SAGE Facility is recognized as a reliable data
-repository, having been certified by the CoreTrustSeal Standards and
-Certification Board. 
+the Interactive Earthquake Browser (\url{https://ds.iris.edu/}).
+The choice of NSF data was motivated by its enhanced functionality.
+The selection of NSF data was motivated by its high accessibility.
+In particular, it allows for the download of up to 25,000 records
+per file, substantially accelerating the workflow and enhancing information
+retrieval. Additionally, the platform provides an interactive global
+map, enabling both data visualization and the extraction of datasets
+directly from the displayed geographical regions in real time. While
+the GEOFON program offers comparable information, it limits the maximum
+number of earthquakes retrievable per query to 1,000 events, thereby
+constraining the temporal coverage of data extraction. This limitation
+is especially relevant, as nearly 1,000 seismic events may occur globally
+within a single day. The NSF SAGE Facility is acknowledged as a reliable
+data repository, having been certified by the CoreTrustSeal Standards
+and Certification Board.
 
 \subsection{Dataset Description}
 
-We download and analyzed 1,035,971 earthquakes events, from IEB, between
-2004-2011 (starting date 2004/04/01 - ending date 2011/03/16), count
-days 2487. The dataset includes the following variables: Year, Month,
-Day, Time, Latitude (Lat), Longitude (Lon), Depth, Mag, Region, and
-Timestamp. We utilize the coordinates for (latitude 21°-79° \& Longitude
-33\textbf{°-}176°), select the magnitude measurements (range 1.0-10.0),
-and select by default for Depth Range, in order to use all available
-depths. From our dataset, the daily average is 41,655 earthquakes,
-the minimum earthquakes in a day, was 33, on 2005/03/02, and the maximum
-in a day was 2326, on 2011/03/11 (Tohoku earthquake 9.1 mag). The
-regions encompassed within these geographical coordinates are 255,
-while globally approximately 708 seismogenic zones have been recorded
-since 1970, based on data from the Interactive Earthquake Browser.
-The features of the original dataset are show in Table \ref{tab:dataOriginal}.
+We downloaded and analyzed 1,035,971 earthquake events, from IEB,
+between 2004-2011 (starting date 2004/04/01 - ending date 2011/03/16),
+count days 2487. The dataset includes the following variables: Year,
+Month, Day, Time, Latitude (Lat), Longitude (Lon), Depth, Mag, Region,
+and Timestamp. We utilize the coordinates for (latitude 21°-79° \&
+Longitude 33\textbf{°-}176°), select the magnitude measurements (range
+1.0-10.0), and select by default for Depth Range, in order to use
+all available depths. From our dataset, the daily average is 41,655
+earthquakes; the minimum earthquakes in a day was 33, on 2005/03/02,
+and the maximum in a day was 2326, on 2011/03/11 (Tohoku earthquake
+9.1 mag). The regions encompassed within these geographical coordinates
+are 255, while globally approximately 708 seismogenic zones have been
+recorded since 1970, based on data from the Interactive Earthquake
+Browser. The features of the original dataset are shown in Table \ref{tab:dataOriginal}.
 
 \begin{table}[H]
-\caption{The description of the original dataset.\protect\label{tab:dataOriginal}}
+\caption{The description of the original dataset.\label{tab:dataOriginal}}
 
 \centering{}%
 \begin{tabular}{|c|c|}
@@ -508,15 +516,28 @@ TIMESTAMP & \tabularnewline
 \end{tabular}
 \end{table}
 
+We selected the specific time period for two main reasons. First,
+it allowed us to manage the exceptionally large volume of seismic
+data, amounting 1.035,971 records. Second, we observed a distinct
+pattern in the seismic data from 2015 to 2025 that did not align with
+established seismic trends. More specifically, the number of recorded
+events rose to 46.400, a finding that prompted further consideration.
+Regarding the geographical region, we deliberately selected seismic
+zones with high activity, such as those in the Mediterranean including
+Greece and Turkey, which share the same longitudinal range as Japan.
 
 \subsection{Pre-processing steps}
 
 The initial dataset was enhanced after processing the original data.
 An important role in this process was played by the $d_{c}$ distance,
 which will be used to determine when two earthquakes are close in
-distance. The proposed value in the present implementation was $d_{c}=$5km.
-Based on the above distance, the following features were added to
-the datasets:
+distance. This process attempts to include critical information about
+seismic events that can potentially be extracted from seismic events
+that are relatively close in both kilometer distance and time. Hence,
+additional features were derived based on the critical distance $d_{c}$
+to capture spatial-temporal proximity of events. The proposed value
+in the present implementation was $d_{c}=$5 km. Based on the above
+distance, the following features were added to the datasets:
 \begin{enumerate}
 \item Number of seismic events at a distance less than the $d_{c}$ that
 have occurred in a previous time.
@@ -542,8 +563,8 @@ large classes:
 
 The method that constructs classification rules was initially presented
 in \citep{genclassMain} and an implementation in C++ was suggested
-later by Anastasopoulos et al \citep{genclassSoftx}. The method can
-produce a series of classification rules in a human readable form
+later by Anastasopoulos et al. \citep{genclassSoftx}. The method
+can produce a series of classification rules in a human readable form
 in order to effectively classify patterns in predefined classes. This
 method does not require prior knowledge of the specifics of a dataset
 and can furthermore discover hidden correlations between the features
@@ -555,35 +576,33 @@ etc. The main steps of this method have as follows:
 \begin{enumerate}
 \item \textbf{Initialization step}.
 \begin{enumerate}
-\item \textbf{Set} as $N_{c}$ the number of chromosomes in the genetic
-population and as $N_{g}$ the maximum number of allowed generations.
-\item \textbf{Set} as $p_{s}$ the selection rate and as $p_{m}$ the mutation
-rate.
-\item \textbf{Initialize} the chromosomes $g_{i},\ i=1,\ldots,N_{c}$ as
-sets of random integers. 
+\item \textbf{Set} the parameters of the genetic algorithm: $N_{c}$ as
+the number of chromosomes, $N_{g}$ as the number of allowed generations,
+$p_{s}$ as the selection rate and $p_{m}$ as the mutation rate.
+\item \textbf{Perform} the initialization of chromosomes $g_{i},\ i=1,\ldots,N_{c}$.
+Every chromosome is considered as a set of randomly selected integers. 
 \item \textbf{Set} $k=0$, the generation counter.
 \end{enumerate}
 \item \textbf{Fitness calculation step}.
 \begin{enumerate}
 \item \textbf{For} $i=1,\ldots,N_{c}$ \textbf{do}
 \begin{enumerate}
-\item \textbf{Create} a classification program $C_{i}$ for the chromosome
-$g_{i}$. The BNF grammar used for this production is outlined in
-Figure .
-\item \textbf{Apply} the classification program to the train set of the
-objective problem and set as $f_{i}$ the classification error for
-this program. The variable $f_{i}$ denotes the fitness of the chromosome
-$g_{i}$.
+\item \textbf{Create} a classification program $C_{i}$ for the associated
+chromosome $g_{i}$. The construction of this program is performed
+using the BNF grammar of Figure \ref{fig:The-grammar-of}.
+\item \textbf{The} produced classification program is applied to the train
+set of the objective problem. Denote with $f_{i}$ (fitness value)
+the classification error for this program. 
 \end{enumerate}
 \item \textbf{End For}
 \end{enumerate}
 \item \textbf{Application of genetic operations}.
 \begin{enumerate}
-\item \textbf{Selection}: The chromosomes are sorted with respect to their
-fitness values. The $\left(1-p_{s}\right)\times N_{c}$ of them with
-the lowest fitness values will be copied to the next generation without
-changes. The remaining will be substituted by chromosomes produced
-during crossover and mutation.
+\item \textbf{Selection}: The chromosomes are ranked according to their
+fitness values. The $\left(1-p_{s}\right)\times N_{c}$chromosomes
+with the lowest fitness are carried over to the next generation without
+modification, while the remaining chromosomes are replaced by offspring
+generated through crossover and mutation.
 \item \textbf{Crossover}: In this procedure a series of offspring are produced,
 through a process similar to biological crossover in nature. For every
 couple $\left(\widetilde{z},\widehat{w}\right)$ of produced offsprings
@@ -591,9 +610,9 @@ two chromosomes are selected from the current population, using tournament
 selection. Subsequently, these chromosomes will produce the set $\left(\widetilde{z},\widehat{w}\right)$
 with the application of one-point crossover. A graphical example of
 the one-point crossover method is outlined in Figure \ref{fig:onePoint}.
-\item \textbf{Mutation}: In this step, for every element $g_{i,j}$ of each
-chromosome $g_{i}$ a random number $r\in[0,1]$ is selected. If $r\le p_{m}$,
-then the element $g_{i,j}$ is substituted by another random integer.
+\item \textbf{Mutation}: During this procedure, a random number $r\in[0,1]$
+is chosen for every element $g_{i,j}$ of each chromosome $g_{i}$.
+Subsequently, this element is altered randomly when $r\le p_{m}$.
 \end{enumerate}
 \item \textbf{Termination check step}.
 \begin{enumerate}
@@ -607,33 +626,34 @@ step \textbf{else} terminate.
 \begin{centering}
 \includegraphics[scale=0.5]{genclass_grammar}
 \par\end{centering}
-\caption{The grammar of the proposed method.\protect\label{fig:The-grammar-of}}
+\caption{The Backus-Naur form grammar used to generate classification rules
+for seismic events.\label{fig:The-grammar-of}}
 
 \end{figure}
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.5]{cross2}
 \par\end{centering}
-\caption{An example of the one - point crossover method.\protect\label{fig:onePoint}}
+\caption{An example of the one - point crossover method.\label{fig:onePoint}}
 
 \end{figure}
 
 
-\section{Experiments\protect\label{sec:Results}}
+\section{Experiments\label{sec:Results}}
 
-The code used in the experiments was implemented using the C++ programming
-language as well as the freely available optimization tool \citep{optimus}that
-can be downloaded from \url{https://github.com/itsoulos/GlobalOptimus.git}
-(accessed on 12 October 2025). Also, the WEKA programming tool \citep{weka_main}
-was employed. Every experiment was repeated 30 times, using different
-seed for the random generator each time and the average classification
-error was reported. The validation of the experimental results was
-performed using the\textbf{ }ten-fold cross validation method.\textbf{
-}The values of parameters for the used methods are shown in Table
-\ref{tab:values}. 
+The code employed in the experiments was implemented using the C++
+programming language, along with the freely available optimization
+tool \citep{optimus}, which can be downloaded from \url{https://github.com/itsoulos/GlobalOptimus.git}
+(accessed on 12 October 2025). Additionally, the WEKA programming
+tool \citep{weka_main} was utilized. C++ was chosen due to its high
+computational efficiency. Each experiment was repeated 30 times, using
+a different random seed for each run, and the average classification
+error was reported. The experimental results were validated using
+the ten-fold cross-validation method. The parameter values for the
+employed methods are presented in \ref{tab:values}. 
 
 \begin{table}[H]
-\caption{The values for the experimental settings.\protect\label{tab:values}}
+\caption{The values for the experimental settings.\label{tab:values}}
 
 \centering{}%
 \begin{tabular}{|c|c|c|}
@@ -664,24 +684,26 @@ experiments as denoted in Table \ref{tab:Experimental-results}.
 \begin{enumerate}
 \item RBF, a Radial Basis Function (RBF) network \citep{rbf1,rbf2} was
 incorporated with 10 weights.
-\item MLP, an artificial neural network \citep{nn1,nn2} with 10 processing
-nodes. The neural network was trained using the BFGS optimization
-method \citep{powell}.
+\item MLP, an multilayer perceptron neural network \citep{nn1,nn2} with
+10 processing nodes. The neural network was trained using the BFGS
+optimization method \citep{powell}.
 \item BAYES, where the Naive Bayes method \citep{naive_bayes} was utilized
 on the dataset.
-\item The column BAYESNN represents the incorporation of the Bayesian optimizer
-as implemented in BayesOpt \citep{bayesopt} library to train a neural
-network with $H=10$ processing nodes. The code can be downloaded
-from \url{https://github.com/rmcantin/bayesopt} (accessed on 12 October
-2025).
+\item The column BAYESNN denotes the results from the application of the
+Bayesian optimizer as implemented in BayesOpt \citep{bayesopt} library
+to train a neural network with $H=10$ processing nodes. The code
+can be downloaded from \url{https://github.com/rmcantin/bayesopt}
+(accessed on 12 October 2025).
 \item NNC, used to represent the application of Neural Network Construction
 method \citep{nnc}, which creates the architecture of neural networks
 using Grammatical Evolution.
 \item GENCLASS, represents the application of the proposed method.
 \end{enumerate}
 \begin{table}[H]
-\caption{Experimental results on the obtained datasets using a series of machine
-learning methods.\protect\label{tab:Experimental-results}}
+\caption{Experimental results on the obtained datasets with the incorporation
+of the mentioned machine learning methods. The acronyms are defined
+as follows: RBF(Radial Basis Function networks), MLP (Multilayer Perceptron
+Network), NNC (Neural Network Construction).\label{tab:Experimental-results}}
 
 \centering{}%
 \begin{tabular}{|c|c|c|c|c|c|c|}
@@ -710,12 +732,12 @@ AVERAGE & \textbf{27.22\%} & \textbf{28.80\%} & \textbf{27.49\%} & \textbf{26.97
 \end{tabular}
 \end{table}
 Also, the classification error for all methods per year is presented
-in Figure \ref{fig:expYear}.
+in Figure \ref{fig:expYear}. 
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.75]{quake_per_year}
 \par\end{centering}
-\caption{The classification error of each machine learning method per year.\protect\label{fig:expYear}}
+\caption{The classification error of each machine learning method per year.\label{fig:expYear}}
 
 \end{figure}
 Table \ref{tab:Experimental-results} reports yearly classification
@@ -723,7 +745,7 @@ error rates (2004-2011) for six machine-learning models. The proposed
 GENCLASS method consistently ranks first every year, achieving the
 lowest average error of 19.00\%, which corresponds to an overall accuracy
 of about 81\%. The runner-up is NNC with an average error of 23.54\%,
-so GENCLASS reduces error by roughly 4.54 percentage points on average
+so GENCLASS reduces error by roughly 4.54 percentage points on average,
 about a 19\% relative reduction versus the closest competitor. The
 annual margin of GENCLASS over NNC ranges from 3.20 to 7.32 points,
 peaking in 2006. Beyond accuracy, GENCLASS also shows the smallest
@@ -752,7 +774,7 @@ NNC do not reach conventional significance.
 \includegraphics[scale=0.5]{stat_tbl4}
 
 \caption{Statistical tests performed on the experimental results using the
-variety of machine learning methods.\protect\label{fig:statClass}}
+variety of machine learning methods.\label{fig:statClass}}
 
 \end{figure}
 
@@ -786,7 +808,7 @@ shifts across settings.
 
 \begin{table}[H]
 \caption{Experiments with the GENCLASS method and different values of critical
-distance $d_{c}$\protect\label{tab:dcExper}}
+distance $d_{c}$\label{tab:dcExper}}
 
 \centering{}%
 \begin{tabular}{|c|c|c|c|c|}
@@ -833,7 +855,7 @@ rather than expected accuracy gains.
 
 \caption{Statistical comparison for the results obtained by the application
 of the GENCLASS method, using a variety of values for the critical
-distance $d_{c}$.\protect\label{fig:statDc}}
+distance $d_{c}$.\label{fig:statDc}}
 
 \end{figure}
 
@@ -867,7 +889,7 @@ error when runtime is not a constraint.
 
 \begin{table}[H]
 \caption{Experiments with the GENCLASS method and different values for the
-number of generations $N_{g}$\protect\label{tab:ngExper}}
+number of generations $N_{g}$\label{tab:ngExper}}
 
 \centering{}%
 \begin{tabular}{|c|c|c|c|c|}
@@ -918,31 +940,31 @@ advantage of 2000 over 1000.
 
 \caption{Statistical comparison for the results obtained by the usage of the
 GENCLASS method, using different values for the maximum number of
-generations $N_{g}$.\protect\label{fig:statNg}}
+generations $N_{g}$.\label{fig:statNg}}
 
 \end{figure}
 
 
-\section{Conclusions\protect\label{sec:Conclusions}}
+\section{Conclusions\label{sec:Conclusions}}
 
 This study introduces an innovative methodology for earthquake classification
 employing various machine learning methods, including RBF, MLP, BAYES,
 NNC, along with the proposed GENCLASS approach. The analysis covers
 seismic data recorded between 2004-2011, within the geographical bounds
-of latitude 21°-79° and longitude 33°-176°. Our process first involved
+of latitude 21°-79° and longitude 33°-176°. Our first process involved
 classifying the size of the seismic events into two large classes:
 The first class contains all the events with magnitude $\le3$. The
 second class contains all the remaining events, with magnitude\textgreater 3,
 followed by magnitude prediction based on the classified data. 
 
 To construct the final datasets, the critical distance $d_{c}$ defined
-as the distance between seismic events was applied. The results indicate
+as the distance between seismic events, was applied. The results indicate
 that the proposed method benefits slightly from increasing $d_{c}$,
-with a value of 20km yielding the optimal average error, also we Set
+with a value of 20km yielding the optimal average error. Also we Set
 as $N_{c}$ the number of chromosomes in the genetic population. Furthermore,
 an additional experiment was conducted to evaluate the stability of
 the proposed generations mechanism $N_{g}$. In this test, the maximum
-number of generations was varied from 200-2000, indicated that the
+number of generations was varied from 200-2000, indicating that the
 maximum number of generations has an overall effect on performance.
 Among all evaluated methods, GENCLASS consistently achieved the best
 performance each year, attaining the lowest average error rate of
@@ -951,11 +973,16 @@ performance each year, attaining the lowest average error rate of
 The main challenges encountered in this research were related to the
 large volume of data, exceeding one million records, and the adaptation
 of such data into a reliable classification system. In general, seismology
-pay stil keep many of its secrets well guarded, but not indefinitely,
-with the rapid advancement of machine learning and artificial intelligence
-techniques, these mysteries are gradually being unraveled. It is anticipated
-that future developments in these fields will further contribute to
-decoding the complex patterns underlying seismic activity.
+still keeps many of its secrets well guarded, but not indefinitely.
+With the rapid advancement of machine learning and artificial intelligence
+techniques, these mysteries are gradually being unraveled. Future
+work in this area of research could include recent seismic events
+as well as the use of other advanced computational intelligence techniques
+such as feature construction from existing ones \citep{fcGE}. Furthermore,
+since Grammatical Evolution is essentially a genetic algorithm, parallel
+computing techniques can be used to speed up this process, such as
+the OpenMP method \citep{openmp}or the OpenMPI programming library
+\citep{openmpi}.
 
 \vspace{6pt}
 
@@ -1060,15 +1087,15 @@ Seismic Record, 1(1), 11-19.
 Recurrent neural networks. In Deep neural networks in a mathematical
 framework (pp. 59-79). Cham: Springer International Publishing.
 
-\bibitem{Panakat=000020=000026=000020Adeli}Panakkat, A., \& Adeli,
-H. (2007). Neural network models for earthquake magnitude prediction
-using multiple seismicity indicators. International journal of neural
-systems, 17(01), 13-33.
+\bibitem{Panakat =000026 Adeli}Panakkat, A., \& Adeli, H. (2007).
+Neural network models for earthquake magnitude prediction using multiple
+seismicity indicators. International journal of neural systems, 17(01),
+13-33.
 
-\bibitem{Asim=000020et=000020al.}Asim, K. M., Martínez-Álvarez, F.,
-Basit, A., \& Iqbal, T. (2017). Earthquake magnitude prediction in
-Hindukush region using machine learning techniques. Natural Hazards,
-85(1), 471-486.
+\bibitem{Asim et al.}Asim, K. M., Martínez-Álvarez, F., Basit, A.,
+\& Iqbal, T. (2017). Earthquake magnitude prediction in Hindukush
+region using machine learning techniques. Natural Hazards, 85(1),
+471-486.
 
 \bibitem[(2008)]{rfOverview}Breiman, L. (2001). Random forests. Machine
 learning, 45(1), 5-32.
@@ -1100,6 +1127,11 @@ study in China. Bulletin of the Seismological Society of America,
 F., Brizzi, S., Rosenau, M., \& Lallemand, S. (2019). Machine learning
 can predict the timing and size of analog earthquakes. Geophysical
 Research Letters, 46(3), 1303-1311.
+
+\bibitem[(2024)]{zhangQuake}Zhang, B., Liu, T., Feng, X., \& Xu,
+G. (2025). Successively equatorward propagating ionospheric acoustic
+waves and possible mechanisms following the Mw 7.5 earthquake in Noto,
+Japan, on 1 January 2024. Space Weather, 23(4), e2024SW003957.
 
 \bibitem[(2002)]{mainGe}O'Neill, M., \& Ryan, C. (2002). Grammatical
 evolution. IEEE Transactions on Evolutionary Computation, 5(4), 349-358.
@@ -1268,6 +1300,18 @@ and Bandits. Journal of Machine Learning Research, 15(Nov):3735-{}-3739,
 \bibitem{nnc}I.G. Tsoulos, D. Gavrilis, E. Glavas, Neural network
 construction and training using grammatical evolution, Neurocomputing
 \textbf{72}, pp. 269-277, 2008.
+
+\bibitem[(2008)]{fcGE}Gavrilis, D., Tsoulos, I. G., \& Dermatas,
+E. (2008). Selecting and constructing features using grammatical evolution.
+Pattern Recognition Letters, 29(9), 1358-1365.
+
+\bibitem[(2008)]{openmp}Chandra, R. (2001). Parallel programming
+in OpenMP. Morgan kaufmann.
+
+\bibitem[(2008)]{openmpi}Graham, R. L., Woodall, T. S., \& Squyres,
+J. M. (2005, September). Open MPI: A flexible high performance MPI.
+In International conference on parallel processing and applied mathematics
+(pp. 228-239). Berlin, Heidelberg: Springer Berlin Heidelberg.
 
 \end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
