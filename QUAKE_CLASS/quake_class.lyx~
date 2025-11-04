@@ -235,7 +235,7 @@ End
 \begin_body
 
 \begin_layout Title
-Classify earthquakes using Machine Learning algorithms
+Classification of earthquakes using Grammatical Evolution
 \end_layout
 
 \begin_layout Title Citation
@@ -351,7 +351,7 @@ Correspondence:
 \end_layout
 
 \begin_layout Abstract
-The predictability of earthquakes remains a central challenge in seismological research.
+Earthquake predictability remains a central challenge in seismology.
  Are earthquakes inherently unpredictable phenomena,
  or can they be forecasted through advances in technology?
  Contemporary seismological research continues to pursue this scientific milestone,
@@ -375,13 +375,14 @@ The predictability of earthquakes remains a central challenge in seismological r
  Recurrent Neural Networks (RNNs) were implemented within seismological studies as early as 2007.
  Most recently,
  Grammatical Evolution (GE) has been introduced in seismological studies (2025).
- Despite ongoing advancements,
- the so-called "triple prediction" accurately forecasting the time,
+ Despite continuous progress in the field,
+ achieving the so-called “triple prediction” —
+ the precise estimation of the time,
  location,
- and magnitude of a seismic event,
- remains unachieved.
- Beyond that,
- machine learning and soft computing techniques have maintained a longstanding presence in the field of seismology.
+ and magnitude of an earthquake —
+ remains elusive.
+ Nevertheless,
+ machine learning and soft computing approaches have long played a significant role in seismological research.
  Concerning these approaches,
  significant advancements have been achieved,
  both in mapping seismic patterns and in predicting seismic characteristics on a smaller geographical scale.
@@ -395,7 +396,8 @@ The predictability of earthquakes remains a central challenge in seismological r
  The data will be categorized and classified,
  with the aim of employing Grammatical Evolution techniques to achieve more accurate and timely predictions of earthquake magnitudes.
  This paper presents a systematic effort to enhance magnitude prediction accuracy using GE,
- contributing to the broader goal of reliable earthquake forecasting.Subsequently,
+ contributing to the broader goal of reliable earthquake forecasting.
+ Subsequently,
  in this paper we present the superiority of GenClass,
  a key element of the Grammatical Evolution techniques,
  with an average error of 19%,
@@ -433,15 +435,7 @@ literal "false"
  were Charles Richter (1900-1985) and Giuseppe Mercalli (1850-1914).
  The former developed,
  in 1935,
- a scale measuring the magnitude of seismic events,
- it is outlined in Table 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Richter Scale & magnitude (SMS Tsunami Warning)"
-
-\end_inset
-
- ranging from 1 to 9 
+ a scale measuring the magnitude of seismic events ranging from 1 to 9 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Richter-1"
@@ -449,8 +443,7 @@ literal "false"
 
 \end_inset
 
- while the latter devised a scale that categorizes the destructive effects of an earthquake,
- it is shown in Table 
+ while the latter devised a scale that categorizes the destructive effects of an earthquake and it is shown in Table 
 \begin_inset CommandInset label
 LatexCommand label
 name "tab: The-Modified-Mercalli"
@@ -484,252 +477,6 @@ literal "false"
  infrastructure,
  and human perception.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-alignment center
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The Richter Scale (each level is 10 times stronger than the previous).
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Richter Scale & Magnitude (SMS Tsunami Warning)"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Magnitude
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Consequences / Effects
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0 - 1.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Detected only by seismograph
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2 - 2.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Hanging objects may swing
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3 - 3.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-People near the epicenter feel this quake
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4 - 4.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Can cause damage around the epicenter
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5 - 5.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Can cause damage to weak buildings in the epicenter area
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6 - 6.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Can cause great damage to well-built structures
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7 - 7.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Can cause serious damage to buildings' foundations
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8 - 8.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Causes death and major destruction
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9 - ...
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Total destruction
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -797,11 +544,11 @@ I
 \begin_inset Text
 
 \begin_layout Plain Layout
-Not felt except by very few under
+Felt only by a very small number of people
 \begin_inset Newline newline
 \end_inset
 
- especially favorable conditions.
+ and only under particularly favorable conditions.
 \end_layout
 
 \end_inset
@@ -821,7 +568,11 @@ II
 \begin_inset Text
 
 \begin_layout Plain Layout
-Felt only by a few people
+Experienced by only a small 
+\begin_inset Newline newline
+\end_inset
+
+number of people.
 \end_layout
 
 \end_inset
@@ -865,8 +616,12 @@ IV
 \begin_inset Text
 
 \begin_layout Plain Layout
-Felt indoors by many,
- and outdoors by few
+Felt by many people indoors,
+ 
+\begin_inset Newline newline
+\end_inset
+
+but only by a few outdoors.
 \end_layout
 
 \end_inset
@@ -926,11 +681,11 @@ VII
 \begin_inset Text
 
 \begin_layout Plain Layout
-Damage is negligible in buildings
+Damage is insignificant in well-designed 
 \begin_inset Newline newline
 \end_inset
 
- of good design and construction
+and well-constructed buildings.
 \end_layout
 
 \end_inset
@@ -1080,18 +835,18 @@ nolink "false"
 
 \end_inset
 
-a hazard map issued by the Global 
+a hazard map issued by the Global Earthquake Model(
 \begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
 
-https://www.globalquakemodel.org/product/global-seismic-risk-map
+https://www.globalquakemodel.org/
 \end_layout
 
 \end_inset
 
- is outlined,
+) is outlined,
  indicating a 10% probability of being exceeded within 50 years.
 \end_layout
 
@@ -1143,9 +898,9 @@ name "fig:Hazard-map-from"
 \end_layout
 
 \begin_layout Standard
-In this context,
- researchers are increasingly utilizing artificial intelligence and other advanced techniques to enhance the timely forecasting of earthquakes and other natural disasters,
- with the ultimate aim of helping communities take protective measures and mitigate potential impacts 
+In this framework,
+ researchers are increasingly employing artificial intelligence and other advanced methodologies to improve the timely prediction of earthquakes and other natural hazards,
+ aiming ultimately to support communities in implementing protective actions and reducing potential impacts
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hutchinson2023"
@@ -1203,7 +958,7 @@ literal "false"
 
  suggested an attentive deep-learning model for simultaneous earthquake detection.
  Moreover,
- researchers utilized convolutional neural networks (CNNs) 
+ researchers employed convolutional neural networks (CNNs)
 \begin_inset CommandInset citation
 LatexCommand citep
 key "cnnSurvey"
@@ -1211,10 +966,10 @@ literal "false"
 
 \end_inset
 
- trained on more than 18 million manually annotated seismograms from Southern California to estimate earthquake parameters directly from raw waveform data,
- eliminating the need for manual feature extraction.
- The model exhibited remarkable precision,
- achieving a standard deviation of only 0.023 seconds in arrival-time estimation and a 95% accuracy rate in polarity classification 
+ [11] trained on over 18 million manually annotated seismograms from Southern California to directly infer earthquake parameters from raw waveform data,
+ thereby eliminating the need for manual feature extraction.
+ The model demonstrated exceptional accuracy,
+ achieving a standard deviation of just 0.023 seconds in arrival-time estimation and a 95% success rate in polarity classification 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ross2018"
@@ -1247,10 +1002,10 @@ literal "false"
 
 .
  Subsequently,
- a high-resolution earthquake catalog was developed using DNN techniques,
- offering valuable insights into the complexity and duration of earthquake sequences,
- as well as their relationships with recent neighboring seismic events,
- as discussed in the related work 
+ a high-resolution earthquake catalog was generated through the application of deep neural network (DNN) techniques,
+ providing valuable insights into the complexity and temporal characteristics of earthquake sequences,
+ as well as their connections with recent nearby seismic events,
+ as outlined in related studies 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tan2021"
@@ -1278,7 +1033,7 @@ literal "false"
 
 .
  Furthermore,
- a subsequent study regarding Earthquake magnitude prediction using machine learning techniques was introduced recently 
+ a subsequent study regarding earthquake magnitude prediction using machine learning techniques was introduced recently 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Asim et al."
@@ -1299,13 +1054,10 @@ literal "false"
 \end_inset
 
 ,
- and a Linear Programming Boost ensemble classifier were individually applied to model the relationships between calculated seismic parameters and the likelihood of future earthquake occurrences.
- Also
-\series bold
-,
-
-\series default
- a subsequent study demonstrated that nearest-neighbor diagrams provide a simple yet effective approach for differentiating between distinct seismic patterns and assessing the reliability of earthquake catalogs 
+ and a Linear Programming Boost ensemble classifier,
+ were individually applied to model the relationships between calculated seismic parameters and the likelihood of future earthquake occurrences.
+ Additionally,
+ a subsequent study showed that nearest-neighbor diagrams offer a straightforward yet effective method for distinguishing between different seismic patterns and evaluating the reliability of earthquake catalogs
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hsu2024"
@@ -1318,10 +1070,10 @@ literal "false"
  used Nearest Neighbor method,
  determined that the Weibull model offered a more accurate fit for seismic data in California,
  showing well-structured tail behavior.
- They further validated its robustness by successfully applying it to independent datasets from Japan,
+ They further confirmed the model’s robustness by successfully applying it to independent datasets from Japan,
  Italy,
  and New Zealand,
- in the related publication 
+ as reported in the related publication 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bayliss2019"
@@ -1347,9 +1099,9 @@ literal "false"
 
 .
  In a subsequent study,
- the same research team utilized a machine learning-based approach,
- originally developed in the laboratory,
- to analyze extensive raw seismic data from Vancouver Island.
+ the same research team applied a machine learning-based method,
+ initially developed in the laboratory,
+ to analyze large volumes of raw seismic data from Vancouver Island.
  This methodology enabled the differentiation of pertinent seismic signals from background noise and holds promise for evaluating whether,
  and under what conditions,
  a slow slip event might be associated with or evolve into a major earthquake 
@@ -1362,16 +1114,16 @@ literal "false"
 
 .
  Additionally,
- in a recent study a predictive model was developed,
- capable of estimating both the location and magnitude of potential earthquakes in the following week,
- utilizing seismic data from the current week and focusing on seismogenic regions in southwestern China.
- The model demonstrated a testing accuracy of 70%,
- with corresponding precision,
+ a recent study developed a predictive model capable of estimating both the location and magnitude of potential earthquakes for the following week.
+ The model utilized seismic data from the current week and targeted seismogenic regions in southwestern China.
+ It achieved a testing accuracy of 70%,
+ with precision,
  recall,
- and F1-score values of 63.63%,
+ and F1 score values of 63.63%,
  93.33%,
  and 75.66%,
- respectively 
+ respectively.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Saad2023"
@@ -1588,6 +1340,26 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+The main contributions of the current work are:
+\end_layout
+
+\begin_layout Enumerate
+The proposed method investigates a wider geographical area than other related studies,
+ incorporating 255 seismic regions out of the 708 regions identified worldwide.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The current work utilized a classification method based on Grammatical Evolution to properly classify the seismic events in some predefined classes.
+ The use of this technique has two clear advantages:
+ on the one hand,
+ it isolates those characteristics of a seismic event that are deemed necessary for its effective classification and on the other hand,
+ it can discover,
+ through the generation of complex rules,
+ hidden linear and nonlinear correlations between the characteristics of the problem.
+\end_layout
+
+\begin_layout Standard
 The remainder of this paper is organized as follows:
  in section 
 \begin_inset CommandInset ref
@@ -1651,27 +1423,33 @@ The Dataset Employed
 \begin_layout Standard
 In this study,
  we utilized open data provided by the NSF Seismological Facility for the Earth Consortium (SAGE),
- specifically accessed through the 
+ specifically accessed through the Interactive Earthquake Browser (
 \begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
 
-http://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&endtime=2010-12-31&orderby=time-desc&src=iris&limit=1000&maxlat=86.99&minlat=-84.16&maxlon=180.00&minlon=-180.00&zm=1&mt=ter 
+https://ds.iris.edu/
 \end_layout
 
 \end_inset
 
- Interactive Earthquake Browser.
+).
  The choice of NSF data was motivated by its enhanced functionality.
- Although the GEOFON program offers similar information,
- it imposes a restriction on the maximum number of earthquakes retrievable per query (1000 events),
- thereby limiting the temporal scope of data extraction.
- This constraint is particularly significant,
- as nearly 1000 seismic events may occur globally within a single day.
- The NSF SAGE Facility is recognized as a reliable data repository,
+ The selection of NSF data was motivated by its high accessibility.
+ In particular,
+ it allows for the download of up to 25,000 records per file,
+ substantially accelerating the workflow and enhancing information retrieval.
+ Additionally,
+ the platform provides an interactive global map,
+ enabling both data visualization and the extraction of datasets directly from the displayed geographical regions in real time.
+ While the GEOFON program offers comparable information,
+ it limits the maximum number of earthquakes retrievable per query to 1,000 events,
+ thereby constraining the temporal coverage of data extraction.
+ This limitation is especially relevant,
+ as nearly 1,000 seismic events may occur globally within a single day.
+ The NSF SAGE Facility is acknowledged as a reliable data repository,
  having been certified by the CoreTrustSeal Standards and Certification Board.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -1679,7 +1457,7 @@ Dataset Description
 \end_layout
 
 \begin_layout Standard
-We download and analyzed 1,035,971 earthquakes events,
+We downloaded and analyzed 1,035,971 earthquake events,
  from IEB,
  between 2004-2011 (starting date 2004/04/01 - ending date 2011/03/16),
  count days 2487.
@@ -1703,16 +1481,15 @@ We download and analyzed 1,035,971 earthquakes events,
  and select by default for Depth Range,
  in order to use all available depths.
  From our dataset,
- the daily average is 41,655 earthquakes,
- the minimum earthquakes in a day,
- was 33,
+ the daily average is 41,655 earthquakes;
+ the minimum earthquakes in a day was 33,
  on 2005/03/02,
  and the maximum in a day was 2326,
  on 2011/03/11 (Tohoku earthquake 9.1 mag).
  The regions encompassed within these geographical coordinates are 255,
  while globally approximately 708 seismogenic zones have been recorded since 1970,
  based on data from the Interactive Earthquake Browser.
- The features of the original dataset are show in Table 
+ The features of the original dataset are shown in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:dataOriginal"
@@ -1972,6 +1749,22 @@ TIMESTAMP
 
 \end_layout
 
+\begin_layout Standard
+We selected the specific time period for two main reasons.
+ First,
+ it allowed us to manage the exceptionally large volume of seismic data,
+ amounting 1.035,971 records.
+ Second,
+ we observed a distinct pattern in the seismic data from 2015 to 2025 that did not align with established seismic trends.
+ More specifically,
+ the number of recorded events rose to 46.400,
+ a finding that prompted further consideration.
+ Regarding the geographical region,
+ we deliberately selected seismic zones with high activity,
+ such as those in the Mediterranean including Greece and Turkey,
+ which share the same longitudinal range as Japan.
+\end_layout
+
 \begin_layout Subsection
 Pre-processing steps
 \end_layout
@@ -1984,11 +1777,18 @@ The initial dataset was enhanced after processing the original data.
 
  distance,
  which will be used to determine when two earthquakes are close in distance.
+ This process attempts to include critical information about seismic events that can potentially be extracted from seismic events that are relatively close in both kilometer distance and time.
+ Hence,
+ additional features were derived based on the critical distance 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ to capture spatial-temporal proximity of events.
  The proposed value in the present implementation was 
 \begin_inset Formula $d_{c}=$
 \end_inset
 
-5km.
+5 km.
  Based on the above distance,
  the following features were added to the datasets:
 \end_layout
@@ -2066,7 +1866,8 @@ literal "false"
 
 \end_inset
 
- and an implementation in C++ was suggested later by Anastasopoulos et al 
+ and an implementation in C++ was suggested later by Anastasopoulos et al.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "genclassSoftx"
@@ -2113,43 +1914,39 @@ Initialization step
 \series bold
 Set
 \series default
- as 
+ the parameters of the genetic algorithm:
+ 
 \begin_inset Formula $N_{c}$
 \end_inset
 
- the number of chromosomes in the genetic population and as 
+ as the number of chromosomes,
+ 
 \begin_inset Formula $N_{g}$
 \end_inset
 
- the maximum number of allowed generations.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Set
-\series default
- as 
+ as the number of allowed generations,
+ 
 \begin_inset Formula $p_{s}$
 \end_inset
 
- the selection rate and as 
+ as the selection rate and 
 \begin_inset Formula $p_{m}$
 \end_inset
 
- the mutation rate.
+ as the mutation rate.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Initialize
+Perform
 \series default
- the chromosomes 
+ the initialization of chromosomes 
 \begin_inset Formula $g_{i},\ i=1,\ldots,N_{c}$
 \end_inset
 
- as sets of random integers.
+.
+ Every chromosome is considered as a set of randomly selected integers.
  
 \end_layout
 
@@ -2200,33 +1997,37 @@ Create
 \begin_inset Formula $C_{i}$
 \end_inset
 
- for the chromosome 
+ for the associated chromosome 
 \begin_inset Formula $g_{i}$
 \end_inset
 
 .
- The BNF grammar used for this production is outlined in Figure .
+ The construction of this program is performed using the BNF grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-grammar-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Apply
+The
 \series default
- the classification program to the train set of the objective problem and set as 
+ produced classification program is applied to the train set of the objective problem.
+ Denote with 
 \begin_inset Formula $f_{i}$
 \end_inset
 
- the classification error for this program.
- The variable 
-\begin_inset Formula $f_{i}$
-\end_inset
-
- denotes the fitness of the chromosome 
-\begin_inset Formula $g_{i}$
-\end_inset
-
-.
+ (fitness value) the classification error for this program.
+ 
 \end_layout
 
 \end_deeper
@@ -2252,13 +2053,13 @@ Application of genetic operations
 Selection
 \series default
 :
- The chromosomes are sorted with respect to their fitness values.
+ The chromosomes are ranked according to their fitness values.
  The 
 \begin_inset Formula $\left(1-p_{s}\right)\times N_{c}$
 \end_inset
 
- of them with the lowest fitness values will be copied to the next generation without changes.
- The remaining will be substituted by chromosomes produced during crossover and mutation.
+chromosomes with the lowest fitness are carried over to the next generation without modification,
+ while the remaining chromosomes are replaced by offspring generated through crossover and mutation.
 \end_layout
 
 \begin_layout Enumerate
@@ -2301,8 +2102,12 @@ nolink "false"
 Mutation
 \series default
 :
- In this step,
- for every element 
+ During this procedure,
+ a random number 
+\begin_inset Formula $r\in[0,1]$
+\end_inset
+
+ is chosen for every element 
 \begin_inset Formula $g_{i,j}$
 \end_inset
 
@@ -2310,21 +2115,13 @@ Mutation
 \begin_inset Formula $g_{i}$
 \end_inset
 
- a random number 
-\begin_inset Formula $r\in[0,1]$
-\end_inset
-
- is selected.
- If 
+.
+ Subsequently,
+ this element is altered randomly when 
 \begin_inset Formula $r\le p_{m}$
 \end_inset
 
-,
- then the element 
-\begin_inset Formula $g_{i,j}$
-\end_inset
-
- is substituted by another random integer.
+.
 \end_layout
 
 \end_deeper
@@ -2400,7 +2197,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The grammar of the proposed method.
+The Backus-Naur form grammar used to generate classification rules for seismic events.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:The-grammar-of"
@@ -2480,7 +2277,8 @@ name "sec:Results"
 \end_layout
 
 \begin_layout Standard
-The code used in the experiments was implemented using the C++ programming language as well as the freely available optimization tool 
+The code employed in the experiments was implemented using the C++ programming language,
+ along with the freely available optimization tool 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "optimus"
@@ -2488,7 +2286,8 @@ literal "false"
 
 \end_inset
 
-that can be downloaded from 
+,
+ which can be downloaded from 
 \begin_inset Flex URL
 status collapsed
 
@@ -2500,7 +2299,7 @@ https://github.com/itsoulos/GlobalOptimus.git
 \end_inset
 
  (accessed on 12 October 2025).
- Also,
+ Additionally,
  the WEKA programming tool 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2509,19 +2308,13 @@ literal "false"
 
 \end_inset
 
- was employed.
- Every experiment was repeated 30 times,
- using different seed for the random generator each time and the average classification error was reported.
- The validation of the experimental results was performed using the
-\series bold
- 
-\series default
-ten-fold cross validation method.
-
-\series bold
- 
-\series default
-The values of parameters for the used methods are shown in Table 
+ was utilized.
+ C++ was chosen due to its high computational efficiency.
+ Each experiment was repeated 30 times,
+ using a different random seed for each run,
+ and the average classification error was reported.
+ The experimental results were validated using the ten-fold cross-validation method.
+ The parameter values for the employed methods are presented in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:values"
@@ -2542,7 +2335,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2838,7 +2631,7 @@ literal "false"
 
 \begin_layout Enumerate
 MLP,
- an artificial neural network 
+ an multilayer perceptron neural network 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nn1,nn2"
@@ -2872,7 +2665,7 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
-The column BAYESNN represents the incorporation of the Bayesian optimizer as implemented in BayesOpt 
+The column BAYESNN denotes the results from the application of the Bayesian optimizer as implemented in BayesOpt 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bayesopt"
@@ -2930,7 +2723,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Experimental results on the obtained datasets using a series of machine learning methods.
+Experimental results on the obtained datasets with the incorporation of the mentioned machine learning methods.
+ The acronyms are defined as follows:
+ RBF(Radial Basis Function networks),
+ MLP (Multilayer Perceptron Network),
+ NNC (Neural Network Construction).
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Experimental-results"
@@ -3641,6 +3438,7 @@ nolink "false"
 \end_inset
 
 .
+ 
 \begin_inset Float figure
 placement H
 alignment document
@@ -3700,7 +3498,8 @@ nolink "false"
  achieving the lowest average error of 19.00%,
  which corresponds to an overall accuracy of about 81%.
  The runner-up is NNC with an average error of 23.54%,
- so GENCLASS reduces error by roughly 4.54 percentage points on average about a 19% relative reduction versus the closest competitor.
+ so GENCLASS reduces error by roughly 4.54 percentage points on average,
+ about a 19% relative reduction versus the closest competitor.
  The annual margin of GENCLASS over NNC ranges from 3.20 to 7.32 points,
  peaking in 2006.
  Beyond accuracy,
@@ -3913,7 +3712,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5380,7 +5179,7 @@ This study introduces an innovative methodology for earthquake classification em
  along with the proposed GENCLASS approach.
  The analysis covers seismic data recorded between 2004-2011,
  within the geographical bounds of latitude 21°-79° and longitude 33°-176°.
- Our process first involved classifying the size of the seismic events into two large classes:
+ Our first process involved classifying the size of the seismic events into two large classes:
  The first class contains all the events with magnitude 
 \begin_inset Formula $\le3$
 \end_inset
@@ -5398,14 +5197,15 @@ To construct the final datasets,
 \begin_inset Formula $d_{c}$
 \end_inset
 
- defined as the distance between seismic events was applied.
+ defined as the distance between seismic events,
+ was applied.
  The results indicate that the proposed method benefits slightly from increasing 
 \begin_inset Formula $d_{c}$
 \end_inset
 
 ,
- with a value of 20km yielding the optimal average error,
- also we Set as 
+ with a value of 20km yielding the optimal average error.
+ Also we Set as 
 \begin_inset Formula $N_{c}$
 \end_inset
 
@@ -5418,7 +5218,7 @@ To construct the final datasets,
 .
  In this test,
  the maximum number of generations was varied from 200-2000,
- indicated that the maximum number of generations has an overall effect on performance.
+ indicating that the maximum number of generations has an overall effect on performance.
  Among all evaluated methods,
  GENCLASS consistently achieved the best performance each year,
  attaining the lowest average error rate of 19%,
@@ -5435,7 +5235,37 @@ The main challenges encountered in this research were related to the large volum
  but not indefinitely,
  with the rapid advancement of machine learning and artificial intelligence techniques,
  these mysteries are gradually being unraveled.
- It is anticipated that future developments in these fields will further contribute to decoding the complex patterns underlying seismic activity.
+ Future work in this area of \SpecialChar allowbreak
+\SpecialChar allowbreak
+research could include recent seismic events as well as the use of other advanced computational intelligence techniques such as feature construction from existing ones 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fcGE"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore,
+ since Grammatical Evolution is essentially a genetic algorithm,
+ parallel computing techniques can be used to speed up this process,
+ such as the OpenMP method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "openmp"
+literal "false"
+
+\end_inset
+
+or the OpenMPI programming library 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "openmpi"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -5447,10 +5277,10 @@ The main challenges encountered in this research were related to the large volum
 
 \begin_layout Author Contributions
 Conceptualization,
- K.C.
+ C.K.
  and I.G.T.;
  methodology,
- K.C.;
+ C.K.;
  software,
  I.G.T.;
  validation,
@@ -5459,13 +5289,13 @@ Conceptualization,
  formal analysis,
  V.C.;
  investigation,
- K.C.;
+ C.K.;
  resources,
  C.S.;
  data curation,
- K.C.;
+ C.K..;
  writing original draft preparation,
- K.C.;
+ C.K.;
  writing review and editing,
  I.G.T.;
  visualization,
@@ -7167,6 +6997,74 @@ I.G.
  pp.
  269-277,
  2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "fcGE"
+literal "false"
+
+\end_inset
+
+Gavrilis,
+ D.,
+ Tsoulos,
+ I.
+ G.,
+ & Dermatas,
+ E.
+ (2008).
+ Selecting and constructing features using grammatical evolution.
+ Pattern Recognition Letters,
+ 29(9),
+ 1358-1365.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "openmp"
+literal "false"
+
+\end_inset
+
+Chandra,
+ R.
+ (2001).
+ Parallel programming in OpenMP.
+ Morgan kaufmann.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "openmpi"
+literal "false"
+
+\end_inset
+
+Graham,
+ R.
+ L.,
+ Woodall,
+ T.
+ S.,
+ & Squyres,
+ J.
+ M.
+ (2005,
+ September).
+ Open MPI:
+ A flexible high performance MPI.
+ In International conference on parallel processing and applied mathematics (pp.
+ 228-239).
+ Berlin,
+ Heidelberg:
+ Springer Berlin Heidelberg.
 \end_layout
 
 \begin_layout Standard
