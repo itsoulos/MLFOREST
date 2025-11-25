@@ -439,7 +439,7 @@ grandfather
 \end_inset
 
  of earthquake early warning systems in general,
- and of onsite warning systems in particular
+ and of onsite warning systems in particular 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Nakamura 1988"
@@ -524,56 +524,54 @@ literal "false"
  Since 2016,
  the ShakeAlert system has been operational along the West Coast 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "USGS"
-literal "false"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shake alert"
+LatexCommand citep
+key "USGS,Shake alert"
 literal "false"
 
 \end_inset
 
 .
  Subsequently,
- a map is presented illustrating Earthquake Early Warning Systems worldwide,
+ a map is presented in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mapQuakes"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ illustrating Earthquake Early Warning Systems worldwide,
  with colors indicating the operational status of each system.
  Purple denotes operative systems that provide warnings to the public,
  black represents systems currently undergoing real-time testing,
  and gray is used for countries where feasibility studies are still in progress.
- Available from 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://www.researchgate.net/publication/283514899_Source_Characterization_for_Earthquake_Early_Warning/figures?lo=1
-\end_layout
-
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-placement document
-alignment center
+\begin_inset Float figure
+placement H
+alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\series bold
 The map shows Earthquakes Early Warning Systems around the World
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mapQuakes"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -582,8 +580,28 @@ The map shows Earthquakes Early Warning Systems around the World
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename table 1.The-map-shows-the-distribution-of-Earthquake-Early-Warning-Systems-around-the-world-with.jpg
+	filename table1.png
+	scale 140
 
 \end_inset
 
@@ -616,32 +634,8 @@ literal "false"
  the notification can be received in advance,
  allowing sufficient time to take protective action before the destructive seismic waves arrive 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Earthquake app"
-literal "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Android EAS"
-literal "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Greece Earthquakes"
-literal "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Earthquake Network"
+LatexCommand citep
+key "Earthquake app,Android EAS,Greece Earthquakes,Earthquake Network"
 literal "false"
 
 \end_inset
@@ -817,50 +811,12 @@ literal "false"
 \end_inset
 
 .
- In contrast to the aforementioned studies,
- this paper introduces a novel approach Constructing artificial features with Grammatical Evolution for earthquake prediction.The grammatical evolution technique has been demonstrated in the following studies to yield more satisfactory results compared to other methods,
- as evidenced in the following research works:
- Constructing the Bounds for Neural Network Training Using Grammatical Evolution 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Tsoulos 2023"
-literal "false"
-
-\end_inset
-
-,
- RbfCon:
- Construct Radial Basis Function Neural Networks with Grammatical Evolution 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Tsoulos 2024"
-literal "false"
-
-\end_inset
-
-.
- Moreover,
- we are the only research group that has applied grammatical evolution in studies related to earthquake prediction 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Tsoulos 2025"
-literal "false"
-
-\end_inset
-
- and classification 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kopitsa 2025"
-literal "false"
-
-\end_inset
-
-within seismology.
+ 
 \end_layout
 
 \begin_layout Standard
-The current work proposed the incorporation of a method based on Grammatical Evolution 
+In contrast to the aforementioned studies,
+ this paper introduces a novel approach constructing artificial features with Grammatical Evolution 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mainGe"
@@ -868,7 +824,7 @@ literal "false"
 
 \end_inset
 
- to produce artificial features from the original ones for the efficient classification of seismic events into predefined categories.
+ for earthquake prediction.
  The method of Grammatical Evolution can be considered as a genetic algorithm 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1006,11 +962,7 @@ literal "false"
 \end_inset
 
 ,
-
-\series bold
- 
-\series default
-automatic construction of constant numbers 
+ automatic construction of constant numbers 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ge_constant"
@@ -1068,6 +1020,24 @@ literal "false"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_analog"
+literal "false"
+
+\end_inset
+
+,
+ automatic construction of bounds for neural networks 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tsoulos 2023"
+literal "false"
+
+\end_inset
+
+,
+ construction of Radial Basis Function networks 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tsoulos 2024"
 literal "false"
 
 \end_inset
@@ -1136,10 +1106,8 @@ name "sec:Materials-and-Methods"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-This section offers a detailed account of the seismic data utilized,
- 
+In this section,
+ a detailed presentation of the datasets used as well as the machine learning techniques used in the experiments performed will be provided.
 \end_layout
 
 \begin_layout Subsection
@@ -1148,21 +1116,22 @@ The Dataset Employed
 
 \begin_layout Standard
 In this study,
- we made use of open data from the NSF Seismological Facility for the Earth Consortium (SAGE),
- 
+ we made use of open data from the NSF Seismological Facility for the Earth Consortium (SAGE) available from 
 \begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
 
-https://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&endtime=2010-12-31&orderby=time-desc&src=iris&limit=1000&maxlat=62.40&minlat=-39.02&maxlon=119.37&minlon=-113.18&zm=3&mt=ter
+https://ds.iris.edu/
 \end_layout
 
 \end_inset
 
-a platform offering an interactive global map that facilitates both data visualization and the real-time extraction of datasets from the displayed geographic regions.
+(accessed on 25 November 2025),
+ which is a platform offering an interactive global map that facilitates both data visualization and the real-time extraction of datasets from the displayed geographic regions.
  The area defined by latitudes 33°–44° and longitudes 17°–44° covers 28 seismic zones,
- with Turkey and Greece identified as the most seismically active regions.We have employed the same source in our previous studies 
+ with Turkey and Greece identified as the most seismically active regions.
+ We have employed the same source in our previous studies 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kopitsa 2025"
@@ -1185,24 +1154,40 @@ literal "false"
  Notably,
  it supports the download of up to 25,000 records per file,
  thereby streamlining the workflow and improving the efficiency of information retrieval.
- The region under investigation is presented in the subsequent table (2).
+ The region under investigation is presented in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-study-area."
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-placement document
-alignment center
+\begin_inset Float figure
+placement H
+alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-
-\series bold
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Area Study
+The study area.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-study-area."
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1211,13 +1196,36 @@ Area Study
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename table 2. area data300dpi.jpg
+	filename table2.png
 	lyxscale 50
-	scale 50
+	scale 140
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1238,7 +1246,7 @@ We obtained and systematically analyzed 511,064 earthquake events from 1990 to 2
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -1290,7 +1298,7 @@ We employed coordinates spanning latitudes 33°–44° and longitudes 17°–44�
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -1366,7 +1374,7 @@ Subsequently,
 
 \begin_layout Standard
 \begin_inset Float table
-placement document
+placement H
 alignment center
 wide false
 sideways false
@@ -3305,6 +3313,71 @@ End for
 The SVM method
 \end_layout
 
+\begin_layout Standard
+The Support Vector Machine (SVM) is a supervised learning algorithm applied to both classification and regression problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svm"
+literal "false"
+
+\end_inset
+
+.
+ The concept of Support Vector methods was introduced by V.
+ Vapnik in 1965,
+ in the context of addressing challenges in pattern recognition.
+ During the 1990s,
+ V.
+ Vapnik formally introduced Support Vector Machine (SVM) methods within the framework of Statistical Learning.
+ Since their introduction,
+ SVMs have been extensively employed across diverse domains,
+ including pattern recognition,
+ natural language processing,
+ and related applications 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wang 2022"
+literal "false"
+
+\end_inset
+
+.
+ For instance,
+ the SVM algorithm has been employed both in studies on earthquake prediction and in research on the early detection of seismic phenomena,
+ as demonstrated in the following works:
+ Hybrid Technique Using Singular Value Decomposition (SVD) and Support Vector Machine (SVM) Approach for Earthquake Prediction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Astuti 2014"
+literal "false"
+
+\end_inset
+
+,
+ Using Support Vector Machine (SVM) with GPS Ionospheric TEC Estimations to Potentially Predict Earthquake Events 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Asaly 2022"
+literal "false"
+
+\end_inset
+
+,
+ The efficacy of support vector machines (SVM) in robust determination of earthquake early warning magnitudes in central Japan 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Reddy 2013"
+literal "false"
+
+\end_inset
+
+.
+ As with other comparative analyses of models,
+ SVMs require greater computational resources during training and exhibit reduced susceptibility to overfitting,
+ whereas neural networks are generally regarded as more adaptable and capable of scaling effectively.
+ 
+\end_layout
+
 \begin_layout Subsection
 The proposed method
 \end_layout
@@ -3774,6 +3847,207 @@ AVERAGE
 
 \end_layout
 
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports the classification error rates for five temporal subsets of the seismic dataset (GCT1990,
+ GCT1995,
+ GCT2000,
+ GCT2005,
+ GCT2010),
+ where the first column encodes the year of the data and the remaining columns correspond to the machine learning models MLP(GEN),
+ MLP(PSO),
+ SVM,
+ NNC,
+ and the proposed FC (Future Constructions) model.
+ The values are expressed as percentage classification error,
+ that is,
+ the proportion of misclassified events between the two seismic classes defined during preprocessing (events with magnitude code 2–3 versus events with magnitude greater than 3).
+\end_layout
+
+\begin_layout Standard
+The most striking observation is that FC achieves the lowest error for all five datasets,
+ with no exceptions.
+ For every GCT year,
+ the FC column attains the minimum error among all models,
+ demonstrating a consistent and temporally robust superiority.
+ This pattern is clearly reflected in the AVERAGE row:
+ the mean classification error of FC is 9.05%,
+ whereas the corresponding mean error of the best conventional baseline,
+ the SVM,
+ is 11.86%.
+ Moving from 11.86% to 9.05% corresponds to an error reduction of approximately 24-25%,
+ meaning that roughly one quarter of the misclassifications made by the SVM are eliminated when using FC.
+ Compared with the neural approaches,
+ the gain is even more pronounced:
+ FC reduces the mean error from 39.22% to 9.05% for MLP(GEN),
+ from 35.37% to 9.05% for MLP(PSO),
+ and from 25.29% to 9.05% for NNC,
+ effectively absorbing about 64-77% of their errors.
+ 
+\end_layout
+
+\begin_layout Standard
+Examining the behaviour per year reveals how the proposed model interacts with the specific characteristics of each temporal subset.
+ Dataset GCT2005 appears to be the “easiest” case for all models,
+ with the SVM dropping to 6.85% error and FC reaching 4.45%,
+ which corresponds to an accuracy of about 95.5%.
+ At the opposite end of the spectrum,
+ GCT2010 is clearly the most challenging dataset,
+ as indicated by substantially increased errors for the conventional models (MLP(GEN) 52.89%,
+ MLP(PSO) 44.77%,
+ NNC 29.81%) and by a higher error for the SVM (14.46%).
+ Even in this difficult scenario,
+ FC keeps the error below 10% (9.97%),
+ preserving a clear qualitative advantage in the most demanding temporal setting.
+ A similar pattern emerges for the intermediate years 1995 and 2000,
+ where FC-SVM absolute differences are in the range of 2-4 percentage points,
+ corresponding to roughly 20-35% relative error reduction.
+ This suggests that as the data become more complex,
+ the benefit of the automatically constructed features generated by Grammatical Evolution becomes increasingly pronounced.
+\end_layout
+
+\begin_layout Standard
+A second important finding is that the ranking of the conventional models remains stable across all years.
+ The SVM is consistently the best among the standard baselines,
+ followed by NNC and the two MLP variants,
+ with MLP(PSO) systematically outperforming MLP(GEN).
+ This stability reinforces the credibility of the table as a benchmark,
+ indicating that the results are not driven by noise or random fluctuations but instead reflect a coherent hierarchy of model performance.
+ On top of this stable baseline,
+ FC does not merely swap the winner for a single dataset,
+ it establishes a new performance level by consistently pushing the error rates to substantially lower values in every year.
+\end_layout
+
+\begin_layout Standard
+From a practical standpoint,
+ given that the final processed dataset contains on the order of 10,000 seismic events,
+ an average error of 11.86% compared with 9.05% implies hundreds fewer misclassified instances when FC is used instead of a plain SVM trained on the original features.
+ This has direct implications for early warning and risk assessment applications,
+ where each reduction in misclassification translates into more reliable decision-making.
+ The evidence from Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ combined with the methodological description,
+ strongly supports the view that the feature construction phase based on Grammatical Evolution is not a minor refinement over existing classifiers,
+ but rather a key component that reshapes the feature space so that the seismic classes become much more separable.
+ This explains why the proposed FC model achieves an average error of approximately 9%,
+ in full agreement with the reported overall accuracy of 91% in the abstract.
+ 
+\end_layout
+
+\begin_layout Standard
+Overall,
+ Table 6 shows that FC is not only the best-performing model in each individual year but also the most stable across different temporal subsets,
+ confirming that the future-construction approach with Grammatical Evolution yields a substantial and consistent improvement over standard machine learning models for the discrimination of seismic events.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat_tbl6.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of FC and baseline classifiers on GCT datasets (paired one-sided t-tests on classification error)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:stat_tbl6"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The repeated-measures ANOVA with Method as the within-subject factor and DATASET (year) as the blocking factor confirms that the choice of classifier has a statistically significant effect on the classification error,
+ indicating that the models are not equivalent in terms of predictive performance.
+ Building on this global result,
+ we conducted pairwise paired t-tests between the proposed FC model and each baseline,
+ using one-sided alternatives that explicitly test the hypothesis that FC achieves lower mean error than its competitors.
+ The resulting p-values,
+ visualised as significance stars on the boxplot,
+ show that the superiority of FC is statistically supported across all comparisons (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:stat_tbl6"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+In particular,
+ the comparisons FC vs MLP(GEN) and FC vs NNC yield ** (p < 0.01),
+ indicating that the probability of observing differences of this magnitude in favour of FC purely by chance is below 1%.
+ An even stronger effect emerges for FC vs MLP(PSO),
+ which is marked with *** (p < 0.001),
+ reflecting the very large performance gap between FC and the PSO-trained MLP.
+ Finally,
+ the comparison FC vs SVM is annotated with * (p < 0.05),
+ showing that,
+ although the numerical difference in error is smaller than in the neural baselines,
+ it remains statistically significant in favour of FC.
+ Overall,
+ the pattern of significance codes (*,
+ **,
+ ***) corroborates the message of Table 6:
+ FC is not only the best-performing model in terms of average classification error,
+ but its advantage over all other methods is statistically significant,
+ with particularly strong evidence against the MLP-based models and clear,
+ though more moderate,
+ evidence against the already very competitive SVM baseline.
+\end_layout
+
 \begin_layout Subsection
 Experiments with the number of features
 \end_layout
@@ -4180,6 +4454,191 @@ AVERAGE
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultsFC"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ investigates the behaviour of the proposed FC model as the number of constructed features N_f varies from 1 to 4.
+ The results show that performance is generally very stable,
+ with the mean classification error ranging within a narrow band between 8.21% (for 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 1) and 9.34% (for 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 4).
+ The lowest average error is obtained with a single constructed feature (
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ =1),
+ whereas the configuration 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ =2,
+ which is adopted as the default setting in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ yields a mean error of 9.05%,
+ very close to the optimum and with highly consistent behaviour across all years.
+ In some datasets,
+ such as GCT2005,
+ slightly better values appear for larger 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ (e.g.,
+ 4.38% for 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 4 versus 4.40% for 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 1),
+ but these gains are marginal and do not change the overall picture.
+ Taken together,
+ the results indicate that FC does not require a large number of future constructions to perform well:
+ one or two constructed features are sufficient to achieve very low error rates,
+ while further increasing 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ does not lead to systematic improvements and likely introduces redundant information that does not translate into better generalization.
+ This supports the view that the quality of the features generated by Grammatical Evolution is more important than their quantity,
+ and that the proposed choice 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 2 offers a well-balanced compromise between performance and model simplicity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat_tbl7.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of FC and baseline classifiers on GCT datasets (paired one-sided t-tests on classification error)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:stat_tbl7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The boxplot for Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultsFC"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ together with the paired t-tests,
+ shows that none of the comparisons among the 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 1,
+ 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 2,
+ 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 3 and 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 4 configurations reaches statistical significance (all labelled as ns).
+ This indicates that,
+ given the available datasets,
+ the performance of the FC model is essentially insensitive to the number of future constructions,
+ and that using smaller values such as 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 1 or 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ = 2 achieves comparable accuracy without any statistically supported gains from increasing 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:stat_tbl7"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection
@@ -4590,6 +5049,143 @@ AVERAGE
 
 \end_layout
 
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultsNG"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ focuses on the number of generations 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ of the evolutionary algorithm during feature construction and evaluates four values (50,
+ 100,
+ 200,
+ 400).
+ The results demonstrate that FC is remarkably robust with respect to this hyperparameter:
+ the mean classification error remains very close across settings,
+ ranging from 9.18% for 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ = 100 down to 8.78% for 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ = 400.
+ The configuration 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ = 200,
+ which is used as the default in the previous analysis,
+ attains an average error of 9.05%,
+ essentially indistinguishable from the more expensive setting 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ = 400,
+ which improves the mean error only by about a quarter of a percentage point.
+ At the level of individual datasets there are cases where a larger number of generations yields more noticeable gains (for instance,
+ GCT1990 improves to 12.30% at 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ = 400),
+ but the overall pattern is that most of the benefit is already captured within 100-200 generations,
+ with further iterations providing diminishing returns.
+ Thus,
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultsNG"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ suggests that the Grammatical Evolution process converges to useful future constructions relatively quickly,
+ and that the choice 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ = 200 offers a very good trade-off between computational cost and predictive performance,
+ avoiding unnecessary increases in training time without delivering substantial accuracy gains.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat_tbl8.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of FC and baseline classifiers on GCT datasets (paired one-sided t-tests on classification error)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:stat_tbl8"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:stat_tbl8"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ the paired t-tests for the different numbers of generations show that all pairwise comparisons are non-significant (ns),
+ indicating that variations in 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ do not materially affect the classification error of the FC model.
+\end_layout
+
 \begin_layout Section
 Conclusions
 \begin_inset CommandInset label
@@ -4599,6 +5195,37 @@ name "sec:Conclusions"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+This study explores the implementation of constructing artificial features with Grammatical Evolution for earthquake prediction,
+ employing machine learning methods,
+ namely MLP(GEN),
+ MLP(PSO),
+ SVM,
+ NNC,
+ and FC (Feature Construction).
+ All the aforementioned algorithms fall within the domain of Machine Learning,
+ with the exception of FC,
+ which represents a feature engineering technique.
+ Specifically,
+ Feature Construction (FC) refers to the process of generating new,
+ informative attributes from the existing dataset,
+ thereby enhancing the representational capacity of the data and improving the performance of machine learning models.
+ Following these steps,
+ our experiments demonstrated that the FC technique yielded the best results,
+ achieving the lowest mean error.
+ Consequently,
+ we applied 1,
+ 2,
+ 3,
+ and 4 constructed features within this technique,
+ with the single constructed feature exhibiting superior performance compared to the others.
+ Our experiment was further extended by incorporating a series of values for the number of generations (50,
+ 100,
+ 200,
+ and 400),
+ and the results indicated that 400 generations yielded the best performance.
 \end_layout
 
 \begin_layout Standard
@@ -5408,52 +6035,6 @@ literal "false"
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "Tsoulos 2023"
-literal "false"
-
-\end_inset
-
- Tsoulos,
- I.
- G.,
- Tzallas,
- A.,
- & Karvounis,
- E.
- (2023).
- Constructing the Bounds for Neural Network Training Using Grammatical Evolution.
- Computers,
- 12(11),
- 226.
- 
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Tsoulos 2024"
-literal "false"
-
-\end_inset
-
- Tsoulos,
- I.
- G.,
- Varvaras,
- I.,
- & Charilogis,
- V.
- (2024).
- RbfCon:
- Construct Radial Basis Function Neural Networks with Grammatical Evolution.
- Software (2674-113X),
- 3(4).
- 
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
 key "Kopitsa 2025"
 literal "false"
 
@@ -6075,6 +6656,165 @@ F.
  pp.
  1003-1018,
  2018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Tsoulos 2023"
+literal "false"
+
+\end_inset
+
+ Tsoulos,
+ I.
+ G.,
+ Tzallas,
+ A.,
+ & Karvounis,
+ E.
+ (2023).
+ Constructing the Bounds for Neural Network Training Using Grammatical Evolution.
+ Computers,
+ 12(11),
+ 226.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Tsoulos 2024"
+literal "false"
+
+\end_inset
+
+ Tsoulos,
+ I.
+ G.,
+ Varvaras,
+ I.,
+ & Charilogis,
+ V.
+ (2024).
+ RbfCon:
+ Construct Radial Basis Function Neural Networks with Grammatical Evolution.
+ Software (2674-113X),
+ 3(4).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2016)"
+key "svm"
+literal "false"
+
+\end_inset
+
+Suthaharan,
+ S.
+ (2016).
+ Support vector machine.
+ In Machine learning models and algorithms for big data classification:
+ thinking with examples for effective learning (pp.
+ 207-235).
+ Boston,
+ MA:
+ Springer US.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Wang 2022"
+literal "false"
+
+\end_inset
+
+ Q.
+ Wang.
+ (2022).
+ Support Vector Machine Algorithm in Machine Learning,
+ IEEE International Conference on Artificial Intelligence and Computer Applications (ICAICA),
+ Dalian,
+ China,
+ 2022,
+ pp.
+ 750-756,
+ doi:
+ 10.1109/ICAICA54878.2022.9844516.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Astuti 2014"
+literal "false"
+
+\end_inset
+
+ Astuti,
+ W.,
+ Akmeliawati,
+ R.,
+ Sediono,
+ W.,
+ & Salami,
+ M.
+ J.
+ E.
+ (2014).
+ Hybrid technique using singular value decomposition (SVD) and support vector machine (SVM) approach for earthquake prediction.
+ IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing,
+ 7(5),
+ 1719-1728.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Asaly 2022"
+literal "false"
+
+\end_inset
+
+ Asaly,
+ S.,
+ Gottlieb,
+ L.
+ A.,
+ Inbar,
+ N.,
+ & Reuveni,
+ Y.
+ (2022).
+ Using support vector machine (SVM) with GPS ionospheric TEC estimations to potentially predict earthquake events.
+ Remote Sensing,
+ 14(12),
+ 2822.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Reddy 2013"
+literal "false"
+
+\end_inset
+
+ Reddy,
+ R.,
+ & Nair,
+ R.
+ R.
+ (2013).
+ The efficacy of support vector machines (SVM) in robust determination of earthquake early warning magnitudes in central Japan.
+ Journal of Earth System Science,
+ 122(5),
+ 1423-1434.
 \end_layout
 
 \begin_layout Standard
