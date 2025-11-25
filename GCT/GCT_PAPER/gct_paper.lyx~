@@ -565,7 +565,7 @@ placement document
 alignment center
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -859,6 +859,271 @@ literal "false"
 within seismology.
 \end_layout
 
+\begin_layout Standard
+The current work proposed the incorporation of a method based on Grammatical Evolution 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mainGe"
+literal "false"
+
+\end_inset
+
+ to produce artificial features from the original ones for the efficient classification of seismic events into predefined categories.
+ The method of Grammatical Evolution can be considered as a genetic algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gaOverview"
+literal "false"
+
+\end_inset
+
+ with integer chromosomes.
+ Each chromosome contains a series of production rules from the provided Backus-Naur form (BNF) grammar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bnf1"
+literal "false"
+
+\end_inset
+
+ of the underlying language and hence this method can create programs that belong to this language.
+ This procedure have been used with success in various cases,
+ such as
+\series bold
+ 
+\series default
+data fitting problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_program1,ge_program2"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+problems that appear in economics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_credit"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+computer security problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_intrusion"
+literal "false"
+
+\end_inset
+
+,
+ problems related to water quality 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_water"
+literal "false"
+
+\end_inset
+
+,
+ problems appeared in medicine 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_glykemia"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+evolutionary computation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_ant"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+hardware issues in data centers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_datacenter"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+solution of trigonometric problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+automatic composition of music 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_music"
+literal "false"
+
+\end_inset
+
+,
+ dynamic construction of neural networks 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_nn,ge_nn2"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+automatic construction of constant numbers 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+,
+ playing video games 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_pacman,ge_supermario"
+literal "false"
+
+\end_inset
+
+,
+ problems regarding energy 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+,
+ combinatorial optimization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+,
+ security issues 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+,
+ automatic construction of decision trees 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_decision"
+literal "false"
+
+\end_inset
+
+,
+ problems in in electronics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_analog"
+literal "false"
+
+\end_inset
+
+ etc.
+\end_layout
+
+\begin_layout Standard
+This research work focuses on the creation of artificial features from existing ones,
+ aiming at two goals:
+ on the one hand,
+ it seeks to reduce the required information required for the correct classification of seismic data and on the other hand,
+ it seeks to highlight the hidden nonlinear correlations that may exist between the existing features of the objective problem.
+ In this way,
+ a significant improvement in the classification of seismic data will be achieved.
+\end_layout
+
+\begin_layout Standard
+The rest of this manuscript is organized as follows:
+ the used dataset and the incorporated methods used in the conducted experiments are outlined in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ the experimental results are shown and discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and finally a detailed discussion is provided in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Materials and Methods
 \begin_inset CommandInset label
@@ -871,6 +1136,8 @@ name "sec:Materials-and-Methods"
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 This section offers a detailed account of the seismic data utilized,
  
 \end_layout
@@ -1146,8 +1413,1911 @@ At the following stage of data processing,
  utilizing approximately 10,000 seismic events in order to generate artificial features through Grammatical Evolution.
 \end_layout
 
+\begin_layout Subsection
+Global optimization methods for neural network training
+\end_layout
+
+\begin_layout Standard
+The algorithm is an evolutionary optimization method designed to minimize an objective function defined over a continuous search space.
+ It operates on a population of candidate solutions,
+ each represented as a vector of parameters.
+ At the beginning of the process,
+ an initial population is generated by sampling uniformly within the allowable bounds of the problem variables.
+ Every candidate solution is then evaluated through the objective function,
+ and the best individual is recorded.
+ During each generation,
+ the algorithm first evaluates all chromosomes in the population by computing their fitness values.
+ The population is then sorted in ascending order of fitness,
+ and a fixed proportion of the best-performing individuals is selected to act as parents for the next generation.
+ The number of selected parents is determined by the selection rate,
+ and only these top individuals participate in reproduction.
+ Pairs of parents are chosen randomly from this elite subset,
+ and new offspring are generated through a crossover procedure.
+ For each selected pair,
+ two offspring are produced by forming weighted combinations of the parents’ components,
+ with the mixing weights drawn uniformly from an extended interval.
+ This mechanism allows the offspring to inherit traits from both parents while also encouraging broader exploration of the search space.
+ After crossover,
+ a replacement step occurs,
+ where the newly produced offspring fill the positions with the lower-ranking individuals in the population.
+ Following replacement,
+ the algorithm performs a mutation step on every chromosome:
+ for each parameter,
+ a random number is drawn,
+ and if it does not exceed the mutation rate,
+ that parameter is randomly altered.
+ Mutation maintains diversity in the population and helps prevent premature convergence.
+ Once all steps of the generation are completed,
+ the generation counter is incremented,
+ and the algorithm proceeds to the next iteration unless the maximum number of generations has been reached.
+ When the evolutionary loop terminates,
+ a final local search stage is applied exclusively to the best solution found during the entire evolutionary process.
+ The purpose of this refinement step is to improve the quality of the best candidate by locally optimizing it using a dedicated local optimization method.
+ The algorithm then returns this refined best solution along with its objective value.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Genetic Algorithm
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size scriptsize
+INPUT
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $f$
+\end_inset
+
+:
+ objective function
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+:
+ number of chromosomes
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+:
+ maximum number of allowed generations
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+:
+ the selection rate of the algorithm,
+ with 
+\begin_inset Formula $p_{s}\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+:
+ the mutation rate of the algorithm,
+ with 
+\begin_inset Formula $p_{m}\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $iter$
+\end_inset
+
+:
+ the generation counter
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $a$
+\end_inset
+
+:
+ uniformly distributed random numbers,
+ in 
+\begin_inset Formula $∈[-0.5,1.5]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $localSearchRate$
+\end_inset
+
+ ∈ [0,1]
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+OUTPUT
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-
+\begin_inset Formula $x_{best}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f_{best}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+INITIALIZATION
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-iter 
+\begin_inset Formula $←0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+main pseudocode
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+01
+\series bold
+ while
+\series default
+ 
+\begin_inset Formula $iter<N_{g}$
+\end_inset
+
+ 
+\series bold
+do // 
+\series default
+termination check
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+02 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i},$
+\end_inset
+
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {1..
+\begin_inset Formula $N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+03 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $f_{i}←f(g_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+04 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+05
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Sort chromosomes by increasing fitness:
+ 
+\begin_inset Formula $N_{b}\leftarrow(1-p_{s})xN_{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+06 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Select parents 
+\begin_inset Formula $w,z$
+\end_inset
+
+ randomly among the best 
+\begin_inset Formula $N_{b}$
+\end_inset
+
+ chromosomes
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+07 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Draw 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+
+\begin_inset Formula $∈$
+\end_inset
+
+ 
+\begin_inset Formula $U[-0.5,1.5]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+08 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $z_{i}\leftarrow a_{i}z_{i}+(1-a_{i})w_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+09 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $w_{i}\leftarrow a_{i}w_{i}+(1-a_{i})z_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+10 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i},$
+\end_inset
+
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {
+\begin_inset Formula $N_{b}+1$
+\end_inset
+
+..
+\begin_inset Formula $N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Replace
+\begin_inset Formula $g_{i}$
+\end_inset
+
+with 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ or 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {
+\begin_inset Formula $1..N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each gene,
+ 
+\begin_inset Formula $j∈$
+\end_inset
+
+ {
+\begin_inset Formula $1....n$
+\end_inset
+
+ } 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Draw 
+\begin_inset Formula $rU[0,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+16
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\series bold
+if
+\series default
+ 
+\begin_inset Formula $r\leq p_{m}$
+\end_inset
+
+then
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+17 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Mutate gene 
+\begin_inset Formula $j$
+\end_inset
+
+ of 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+18
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\series bold
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+19
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+20 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+end for
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+21 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i},$
+\end_inset
+
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {1..
+\begin_inset Formula $N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+22 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $f_{i}←f(g_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+23 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Draw 
+\begin_inset Formula $ri\in U[0,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+24
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+if
+\series default
+ (
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ < 
+\begin_inset Formula $f_{best})$
+\end_inset
+
+ 
+\series bold
+then
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+25
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $xbest←gi,$
+\end_inset
+
+ 
+\begin_inset Formula $fbest←fi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+26 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+27
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+28 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $iter←iter+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+29 
+\series bold
+endwhile
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+30 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+(
+\begin_inset Formula $x_{best}$
+\end_inset
+
+ 
+\begin_inset Formula $←$
+\end_inset
+
+
+\begin_inset Formula $LocalSearch$
+\end_inset
+
+(
+\begin_inset Formula $x_{best}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+31 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+(
+\begin_inset Formula $f_{best}$
+\end_inset
+
+ 
+\begin_inset Formula $←$
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+(
+\begin_inset Formula $x_{best}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+32 
+\series bold
+return
+\series default
+ 
+\begin_inset Formula $x_{best}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f_{best}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Particle Swarm Optimization (PSO) is a population-based search method inspired by how animals move and cooperate in groups like flocks of birds or schools of fish.
+ The basic idea is that a group of “particles” explores the search space,
+ each one representing a possible solution to the problem.
+ Every particle has a position (the solution it currently represents) and a velocity (which determines how it will move in the next step).
+ At the start of the algorithm,
+ all particles are placed randomly within the allowed search boundaries,
+ and they are given small random velocities so that their initial movements aren’t too aggressive.
+ Each particle also keeps track of the best position it has discovered so far.
+ At the same time,
+ the swarm as a whole keeps track of the best position found by any particle,
+ called the global best.
+ During each iteration,
+ every particle updates its velocity based on three things:
+ its previous velocity,
+ how strongly it is pulled toward its own personal best,
+ and how strongly it is pulled toward the swarm’s global best.
+ Two new random numbers are generated during this process,
+ adding some randomness to help balance exploration and exploitation.
+ Once the velocity has been updated,
+ the particle moves to a new position,
+ and that position is evaluated using the objective function.
+ If this new position is better than the particle’s previous best,
+ the best is updated.
+ Similarly,
+ if any particle finds a position that improves upon the current global best,
+ the global best is updated as well.
+ This way,
+ information about promising areas of the search space spreads through the swarm over time.
+ The algorithm repeats these steps updating velocities,
+ moving particles,
+ evaluating them,
+ and updating the global best until a stopping condition is reached.
+ This could be a maximum number of iterations.
+ When the algorithm finishes,
+ it returns the best solution found by the swarm and the corresponding objective value.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Float algorithm
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+INPUT
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $f$
+\end_inset
+
+:
+ objective function
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $m$
+\end_inset
+
+:
+ number of particles with 
+\begin_inset Formula $x_{i}∈S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+:
+ number of velocities with 
+\begin_inset Formula $u_{i}∈S$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+- 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+:
+ number of positions in 
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $w$
+\end_inset
+
+:
+ inertia
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $c1,$
+\end_inset
+
+
+\begin_inset Formula $c2$
+\end_inset
+
+:
+ constant numbers
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $r1,$
+\end_inset
+
+
+\begin_inset Formula $r2$
+\end_inset
+
+:
+ random numbers
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $iter$
+\end_inset
+
+:
+ iteration counter
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $iter_{max}$
+\end_inset
+
+:
+ max iterations
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+:
+ vectors are best located values for every particle i
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $LS$
+\end_inset
+
+:
+ LocalSearch rate ∈ [0,1]
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+OUTPUT
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-
+\begin_inset Formula $p_{best}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+INITIALIZATION
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\series bold
+Set 
+\begin_inset Formula $iter←0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\series bold
+Set
+\series default
+ positions 
+\begin_inset Formula $x_{i}∈S,i=1.....m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\series bold
+Set
+\series default
+ velocities 
+\begin_inset Formula $u_{i},i=1.....m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+-For
+\series default
+ each particle 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {1..
+\begin_inset Formula $m$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+-
+\begin_inset Formula $p_{i}←x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align block
+
+\series bold
+\size scriptsize
+-End for
+\end_layout
+
+\begin_layout Plain Layout
+-
+\size scriptsize
+
+\begin_inset Formula $p_{best}←argmin_{i}$
+\end_inset
+
+
+\begin_inset Formula $f(x_{i})$
+\end_inset
+
+// global best
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+01
+\series bold
+ while
+\series default
+ 
+\begin_inset Formula $generation<Gmax$
+\end_inset
+
+ 
+\series bold
+do// 
+\series default
+termination check
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+02 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+For
+\series default
+ each 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {1..
+\begin_inset Formula $m$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+03
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+draw 
+\begin_inset Formula $r1,r2$
+\end_inset
+
+ 
+\begin_inset Formula $\backsim$
+\end_inset
+
+
+\begin_inset Formula $U(0,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+04
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $u_{i}←wu$
+\end_inset
+
++
+\begin_inset Formula $c1r1(p_{i}-x_{i})$
+\end_inset
+
++
+\begin_inset Formula $c2r2(p_{best}-x_{i})$
+\end_inset
+
+// update velocity
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+05
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $x_{i}←x_{i}+u_{i}$
+\end_inset
+
+// update position
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+06
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+if
+\series default
+ 
+\begin_inset Formula $r\leq p_{m}$
+\end_inset
+
+
+\series bold
+then
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+07
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $x_{i}←LS(x_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+08
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+End if
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+09
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+if
+\series default
+ 
+\begin_inset Formula $f(x_{i})<f(p_{i}$
+\end_inset
+
+
+\series bold
+)then
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+10 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $p_{i}←x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+End if
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+End for
+\end_layout
+
+\begin_layout Plain Layout
+\align block
+
+\size scriptsize
+13
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+ 
+\series default
+
+\begin_inset Formula $p_{best}←argmin_{i}$
+\end_inset
+
+
+\begin_inset Formula $f(x_{i})$
+\end_inset
+
+// Update global best
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+ 
+\begin_inset Formula $iter←iter+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15
+\series bold
+ End while
+\series default
+ // Goto termination check
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The SVM method
+\end_layout
+
+\begin_layout Subsection
+The proposed method
+\end_layout
+
 \begin_layout Section
 Results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2022,7 +4192,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2367,6 +4537,8 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 9.13%
 \end_layout
 
@@ -2376,6 +4548,8 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 9.18%
 \end_layout
 
@@ -2396,6 +4570,8 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 8.78%
 \end_layout
 
@@ -2416,6 +4592,13 @@ AVERAGE
 
 \begin_layout Section
 Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2426,247 +4609,63 @@ Conclusions
 \end_layout
 
 \begin_layout Author Contributions
-For research articles with several authors,
- a short paragraph specifying their individual contributions must be provided.
- The following statements should be used 
-\begin_inset Quotes eld
-\end_inset
-
 Conceptualization,
- X.X.
- and Y.Y.;
+ C.K.
+ and I.G.T.;
  methodology,
- X.X.;
+ C.K.;
  software,
- X.X.;
+ I.G.T.;
  validation,
- X.X.,
- Y.Y.
- and Z.Z.;
+ G.K.
+ C.S.,
+ V.C.;
  formal analysis,
- X.X.;
+ G.K..;
  investigation,
- X.X.;
+ C.K.;
  resources,
- X.X.;
+ C.S.;
  data curation,
- X.X.;
- writing—
-original draft preparation,
- X.X.;
- writing—
-review and editing,
- X.X.;
+ C.K..;
+ writing original draft preparation,
+ C.K.;
+ writing review and editing,
+ I.G.T.;
  visualization,
- X.X.;
+ V.C.;
  supervision,
- X.X.;
+ C.S.;
  project administration,
- X.X.;
+ C.S.;
  funding acquisition,
- Y.Y.
+ C.S.
  All authors have read and agreed to the published version of the manuscript.
-\begin_inset Quotes erd
-\end_inset
-
-,
- please turn to the 
-\begin_inset CommandInset href
-LatexCommand href
-name "CRediT taxonomy"
-target "http://img.mdpi.org/data/contributor-role-instruction.pdf"
-literal "false"
-
-\end_inset
-
-for the term explanation.
- Authorship must be limited to those who have contributed substantially to the work
-\begin_inset space ~
-\end_inset
-
-reported.
 \end_layout
 
 \begin_layout Funding
-Please add:
- 
-\begin_inset Quotes eld
-\end_inset
-
-This research received no external funding
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-This research was funded by NAME OF FUNDER grant number XXX.
-\begin_inset Quotes erd
-\end_inset
-
- and and 
-\begin_inset Quotes eld
-\end_inset
-
-The APC was funded by XXX
-\begin_inset Quotes erd
-\end_inset
-
-.
- Check carefully that the details given are accurate and use the standard spelling of funding agency names at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://search.crossref.org/funding
-\end_layout
-
-\end_inset
-
-,
- any errors may affect your future funding.
+This research has been financed by the European Union :
+ Next Generation EU through the Program Greece 2.0 National Recovery and Resilience Plan ,
+ under the call RESEARCH-CREATE-INNOVATE,
+ project name “iCREW:
+ Intelligent small craft simulator for advanced crew training using Virtual Reality techniques" (project code:TAEDK-06195).
 \end_layout
 
 \begin_layout Institutional Review
-In this section,
- you should add the Institutional Review Board Statement and approval number,
- if relevant to your study.
- You might choose to exclude this statement if the study did not require ethical approval.
- Please note that the Editorial Office might ask you for further information.
- Please add “The study was conducted in accordance with the Declaration of Helsinki,
- and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans.
- OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals.
- OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.
+Not applicable.
 \end_layout
 
 \begin_layout Informed Consent
-Any research article describing a study involving humans should contain this statement.
- Please add 
-\begin_inset Quotes eld
-\end_inset
-
-Informed consent was obtained from all subjects involved in the study.
-\begin_inset Quotes erd
-\end_inset
-
- OR 
-\begin_inset Quotes eld
-\end_inset
-
-Patient consent was waived due to REASON (please provide a detailed justification).
-\begin_inset Quotes erd
-\end_inset
-
- OR 
-\begin_inset Quotes eld
-\end_inset
-
-Not applicable
-\begin_inset Quotes erd
-\end_inset
-
- for studies not involving humans.
- You might also choose to exclude this statement if the study did not involve humans.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-As LyX does not allow multiple paragraphs in command type environments,
- the following ERT is used to introduce a blank line in the LaTeX output.
-\end_layout
-
-\end_inset
-
-Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves).
- Please state 
-\begin_inset Quotes eld
-\end_inset
-
-Written informed consent has been obtained from the patient(s) to publish this paper
-\begin_inset Quotes erd
-\end_inset
-
- if applicable.
+Not applicable.
 \end_layout
 
 \begin_layout Data Availability
-We encourage all authors of articles published in MDPI journals to share their research data.
- In this section,
- please provide details regarding where data supporting reported results can be found,
- including links to publicly archived datasets analyzed or generated during the study.
- Where no new data were created,
- or where data is unavailable due to privacy or ethical re-strictions,
- a statement is still required.
- Suggested Data Availability Statements are available in section “MDPI Research Data Policies” at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.mdpi.com/ethics
-\end_layout
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Acknowledgments
-In this section you can acknowledge any support given which is not covered by the author contribution or funding sections.
- This may include administrative and technical support,
- or donations in kind (e.g.,
- materials used for experiments).
- Where GenAI has been used for purposes such as generating text,
- data,
- or graphics,
- or for study design,
- data collection,
- analysis,
- or interpretation of data,
- please add “During the preparation of this manuscript/study,
- the author(s) used [tool name,
- version information] for the purposes of [description of use].
- The authors have reviewed and edited the output and take full responsibility for the content of this publication.”
+The original contributions presented in this study are included in the article.
+ Further inquiries can be directed to the corresponding author.
 \end_layout
 
 \begin_layout Conflicts of Interest
-Declare conflicts of interest or state 
-\begin_inset Quotes eld
-\end_inset
-
 The authors declare no conflicts of interest.
-\begin_inset Quotes erd
-\end_inset
-
- Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results.
- Any role of the funders in the design of the study;
- in the collection,
- analyses or interpretation of data;
- in the writing of the manuscript;
- or in the decision to publish the results must be declared in this section.
- If there is no role,
- please state 
-\begin_inset Quotes eld
-\end_inset
-
-The funders had no role in the design of the study;
- in the collection,
- analyses,
- or interpretation of data;
- in the writing of the manuscript;
- or in the decision to publish the
-\begin_inset space ~
-\end_inset
-
-results
-\begin_inset Quotes erd
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Begin Whole Page
@@ -3474,6 +5473,608 @@ literal "false"
  Algorithms,
  18(11),
  710.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2002)"
+key "mainGe"
+literal "false"
+
+\end_inset
+
+O'Neill,
+ M.,
+ & Ryan,
+ C.
+ (2002).
+ Grammatical evolution.
+ IEEE Transactions on Evolutionary Computation,
+ 5(4),
+ 349-358.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2017)"
+key "gaOverview"
+literal "false"
+
+\end_inset
+
+Kramer,
+ O.
+ (2017).
+ Genetic algorithms.
+ In Genetic algorithm essentials (pp.
+ 11-19).
+ Cham:
+ Springer International Publishing.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2002)"
+key "bnf1"
+literal "false"
+
+\end_inset
+
+J.
+ W.
+ Backus.
+ The Syntax and Semantics of the Proposed International Algebraic Language of the Zurich ACM-GAMM Conference.
+ Proceedings of the International Conference on Information Processing,
+ UNESCO,
+ 1959,
+ pp.125-132.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program1"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ J.
+ Collins,
+ M.
+ O’Neill,
+ Grammatical evolution:
+ Evolving programs for an arbitrary language.
+ In:
+ Banzhaf,
+ W.,
+ Poli,
+ R.,
+ Schoenauer,
+ M.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1998.
+ Lecture Notes in Computer Science,
+ vol 1391.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1998.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program2"
+literal "false"
+
+\end_inset
+
+M.
+ O’Neill,
+ M.,
+ C.
+ Ryan,
+ Evolving Multi-line Compilable C Programs.
+ In:
+ Poli,
+ R.,
+ Nordin,
+ P.,
+ Langdon,
+ W.B.,
+ Fogarty,
+ T.C.
+ (eds) Genetic Programming.
+ EuroGP 1999.
+ Lecture Notes in Computer Science,
+ vol 1598.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 1999.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_credit"
+literal "false"
+
+\end_inset
+
+A.
+ Brabazon,
+ M.
+ O'Neill,
+ Credit classification using grammatical evolution,
+ Informatica 
+\series bold
+30.3
+\series default
+,
+ 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_intrusion"
+literal "false"
+
+\end_inset
+
+S.
+ Şen,
+ J.A.
+ Clark.
+ A grammatical evolution approach to intrusion detection on mobile ad hoc networks,
+ In:
+ Proceedings of the second ACM conference on Wireless network security,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_water"
+literal "false"
+
+\end_inset
+
+L.
+ Chen,
+ C.H.
+ Tan,
+ S.J.
+ Kao,
+ T.S.
+ Wang,
+ Improvement of remote monitoring on water quality in a subtropical reservoir by incorporating grammatical evolution with parallel genetic algorithms into satellite imagery,
+ Water Research 
+\series bold
+ 42
+\series default
+,
+ pp.
+ 296-306,
+ 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_glykemia"
+literal "false"
+
+\end_inset
+
+J.
+ I.
+ Hidalgo,
+ J.
+ M.
+ Colmenar,
+ J.L.
+ Risco-Martin,
+ A.
+ Cuesta-Infante,
+ E.
+ Maqueda,
+ M.
+ Botella,J.
+ A.
+ Rubio,
+ Modeling glycemia in humans by means of Grammatical Evolution,
+ Applied Soft Computing 
+\series bold
+20
+\series default
+,
+ pp.
+ 40-53,
+ 2014.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_ant"
+literal "false"
+
+\end_inset
+
+J.
+ Tavares,
+ F.B.
+ Pereira,
+ Automatic Design of Ant Algorithms with Grammatical Evolution.
+ In:
+ Moraglio,
+ A.,
+ Silva,
+ S.,
+ Krawiec,
+ K.,
+ Machado,
+ P.,
+ Cotta,
+ C.
+ (eds) Genetic Programming.
+ EuroGP 2012.
+ Lecture Notes in Computer Science,
+ vol 7244.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_datacenter"
+literal "false"
+
+\end_inset
+
+M.
+ Zapater,
+ J.L.
+ Risco-Martín,
+ P.
+ Arroba,
+ J.L.
+ Ayala,
+ J.M.
+ Moya,
+ R.
+ Hermida,
+ Runtime data center temperature prediction using Grammatical Evolution techniques,
+ Applied Soft Computing 
+\series bold
+49
+\series default
+,
+ pp.
+ 94-107,
+ 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ M.
+ O’Neill,
+ J.J.
+ Collins,
+ Grammatical evolution:
+ Solving trigonometric identities,
+ proceedings of Mendel.
+ Vol.
+ 98.
+ 1998.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_music"
+literal "false"
+
+\end_inset
+
+A.O.
+ Puente,
+ R.
+ S.
+ Alfonso,
+ M.
+ A.
+ Moreno,
+ Automatic composition of music by means of grammatical evolution,
+ In:
+ APL '02:
+ Proceedings of the 2002 conference on APL:
+ array processing languages:
+ lore,
+ problems,
+ and applications July 2002 Pages 148–155.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn"
+literal "false"
+
+\end_inset
+
+Lídio Mauro Limade Campo,
+ R.
+ Célio Limã Oliveira,Mauro Roisenberg,
+ Optimization of neural networks through grammatical evolution and a genetic algorithm,
+ Expert Systems with Applications 
+\series bold
+56
+\series default
+,
+ pp.
+ 368-384,
+ 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn2"
+literal "false"
+
+\end_inset
+
+K.
+ Soltanian,
+ A.
+ Ebnenasir,
+ M.
+ Afsharchi,
+ Modular Grammatical Evolution for the Generation of Artificial Neural Networks,
+ Evolutionary Computation 
+\series bold
+30
+\series default
+,
+ pp 291–327,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+I.
+ Dempsey,
+ M.O' Neill,
+ A.
+ Brabazon,
+ Constant creation in grammatical evolution,
+ International Journal of Innovative Computing and Applications 
+\series bold
+1
+\series default
+ ,
+ pp 23–38,
+ 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_pacman"
+literal "false"
+
+\end_inset
+
+E.
+ Galván-López,
+ J.M.
+ Swafford,
+ M.
+ O’Neill,
+ A.
+ Brabazon,
+ Evolving a Ms.
+ PacMan Controller Using Grammatical Evolution.
+ In:
+ ,
+ et al.
+ Applications of Evolutionary Computation.
+ EvoApplications 2010.
+ Lecture Notes in Computer Science,
+ vol 6024.
+ Springer,
+ Berlin,
+ Heidelberg,
+ 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_supermario"
+literal "false"
+
+\end_inset
+
+N.
+ Shaker,
+ M.
+ Nicolau,
+ G.
+ N.
+ Yannakakis,
+ J.
+ Togelius,
+ M.
+ O'Neill,
+ Evolving levels for Super Mario Bros using grammatical evolution,
+ 2012 IEEE Conference on Computational Intelligence and Games (CIG),
+ 2012,
+ pp.
+ 304-31.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+D.
+ Martínez-Rodríguez,
+ J.
+ M.
+ Colmenar,
+ J.
+ I.
+ Hidalgo,
+ R.J.
+ Villanueva Micó,
+ S.
+ Salcedo-Sanz,
+ Particle swarm grammatical evolution for energy demand estimation,
+ Energy Science and Engineering 
+\series bold
+8
+\series default
+,
+ pp.
+ 1068-1079,
+ 2020.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+N.
+ R.
+ Sabar,
+ M.
+ Ayob,
+ G.
+ Kendall,
+ R.
+ Qu,
+ Grammatical Evolution Hyper-Heuristic for Combinatorial Optimization Problems,
+ IEEE Transactions on Evolutionary Computation 
+\series bold
+17
+\series default
+,
+ pp.
+ 840-861,
+ 2013.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+C.
+ Ryan,
+ M.
+ Kshirsagar,
+ G.
+ Vaidya,
+ G.
+ et al.
+ Design of a cryptographically secure pseudo random number generator with grammatical evolution.
+ Sci Rep 
+\series bold
+12
+\series default
+,
+ 8602,
+ 2022.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_decision"
+literal "false"
+
+\end_inset
+
+P.J.
+ Pereira,
+ P.
+ Cortez,
+ R.
+ Mendes,
+ Multi-objective Grammatical Evolution of Decision Trees for Mobile Marketing user conversion prediction,
+ Expert Systems with Applications 
+\series bold
+168
+\series default
+,
+ 114287,
+ 2021.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_analog"
+literal "false"
+
+\end_inset
+
+F.
+ Castejón,
+ E.J.
+ Carmona,
+ Automatic design of analog electronic circuits using grammatical evolution,
+ Applied Soft Computing 
+\series bold
+62
+\series default
+,
+ pp.
+ 1003-1018,
+ 2018.
 \end_layout
 
 \begin_layout Standard
