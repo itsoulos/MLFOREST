@@ -1131,24 +1131,6 @@ https://ds.iris.edu/
  which is a platform offering an interactive global map that facilitates both data visualization and the real-time extraction of datasets from the displayed geographic regions.
  The area defined by latitudes 33°–44° and longitudes 17°–44° covers 28 seismic zones,
  with Turkey and Greece identified as the most seismically active regions.
- We have employed the same source in our previous studies 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kopitsa 2025"
-literal "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Tsoulos 2025"
-literal "false"
-
-\end_inset
-
- as well,
- given that it is certified by the CoreTrustSeal Standards and Certification Board.
  Furthermore,
  the selection of NSF data was driven by its advanced functionality and broad accessibility.
  Notably,
@@ -1174,7 +1156,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1241,24 +1223,53 @@ Dataset Description
 \begin_layout Standard
 We obtained and systematically analyzed 511,064 earthquake events from 1990 to 2015,
  as this time period is of particular scientific interest due to the surge in seismic activity,
- as also illustrated in the following graph.
+ as also illustrated in the graph of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Graphs-seismic-events"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ Specifically,
+ we selected this time period because it encompasses a wide range of earthquake magnitudes,
+ which provides a diverse dataset conducive to algorithm training and supports the construction of artificial features via Grammatical Evolution.
+ Moreover,
+ our analysis led us to the conclusion that the datasets from 1970–1989 and 2016–2025 lack the diversity observed in the dataset we selected.
+ Specifically,
+ classes 6 and 7 are entirely absent from the 1970–1989 records,
+ while in the post-2016 data class 7 is missing and class 1 contains only a limited number of instances,
+ namely 25.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
+\begin_inset Float figure
 placement H
-alignment center
+alignment document
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
 
-\series bold
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Graphs seismic events from 1970 - 2025 (Area Study)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Graphs-seismic-events"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1267,6 +1278,25 @@ Graphs seismic events from 1970 - 2025 (Area Study)
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename table 3.graphic1.jpg
 	lyxscale 50
@@ -1276,8 +1306,16 @@ Graphs seismic events from 1970 - 2025 (Area Study)
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 We employed coordinates spanning latitudes 33°–44° and longitudes 17°–44°,
  considered magnitude values from 1.0 to 10.0,
  and incorporated all available depths by default within the depth range.
@@ -1293,26 +1331,40 @@ We employed coordinates spanning latitudes 33°–44° and longitudes 17°–44�
  region,
  and timestamp.
  Accordingly,
- the subsequent table provides a detailed overview of the raw dataset.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Raw-Data-from"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ provides a detailed overview of the raw dataset.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
+placement document
 alignment center
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\series bold
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\series bold
 Raw Data from NSF Interactive Earthquake Browser (1990 - 2015)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Raw-Data-from"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1321,8 +1373,258 @@ Raw Data from NSF Interactive Earthquake Browser (1990 - 2015)
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename table 4. Raw data300dpi.jpg
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="2">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Raw Data
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Features
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Range
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Year
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1990 - 2015
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Month
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Day
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1- 31
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+00:00:00 - 23:59:59
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Latitude
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33 - 44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Longitude
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17 - 44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.00 - 800.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Magnitude
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timestamp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -1367,26 +1669,41 @@ Subsequently,
  Previous Magnitude Code,
  Same Region Code,
  Lithospheric/Tectonic Plate,
- Kp Code,
- table 3.
- 
+ Kp Code.
+ This information is outlined in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Utilized-Data-from"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
+placement document
 alignment center
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-
-\series bold
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Utilized Data from NSF Interactive Earthquake Browser (1990 - 2015
+Utilized Data from NSF Interactive Earthquake Browser (1990 - 2015)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Utilized-Data-from"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1395,8 +1712,398 @@ Utilized Data from NSF Interactive Earthquake Browser (1990 - 2015
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename table 5. utilized data300dpi.jpg
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="3">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Utilized Data
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Features
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Range
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Class
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Year
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1990 - 2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Epoch Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 -3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Day Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 - 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+00:00:00 - 23:59:59
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 - 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Latitude
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33 - 44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Longitude
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17 - 44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.00 - 800.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 - 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Previous Magnitude Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Same Region Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lithospheric Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 - 7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kp Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.000 - 9.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 - 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -1423,49 +2130,53 @@ At the following stage of data processing,
 
 \begin_layout Subsection
 Global optimization methods for neural network training
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Global-optimization-methods"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The algorithm is an evolutionary optimization method designed to minimize an objective function defined over a continuous search space.
+In the current work two well - known global optimization methods were incorporated for neural network training 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nn1,nn2"
+literal "false"
+
+\end_inset
+
+,
+ the Genetic Algorithm and the Particle Swarm Optimization (PSO) method.
+ The Genetic algorithms is an evolutionary optimization method designed to minimize an objective function defined over a continuous search space.
  It operates on a population of candidate solutions,
- each represented as a vector of parameters.
- At the beginning of the process,
- an initial population is generated by sampling uniformly within the allowable bounds of the problem variables.
- Every candidate solution is then evaluated through the objective function,
- and the best individual is recorded.
- During each generation,
- the algorithm first evaluates all chromosomes in the population by computing their fitness values.
- The population is then sorted in ascending order of fitness,
- and a fixed proportion of the best-performing individuals is selected to act as parents for the next generation.
- The number of selected parents is determined by the selection rate,
- and only these top individuals participate in reproduction.
- Pairs of parents are chosen randomly from this elite subset,
- and new offspring are generated through a crossover procedure.
- For each selected pair,
- two offspring are produced by forming weighted combinations of the parents’ components,
- with the mixing weights drawn uniformly from an extended interval.
- This mechanism allows the offspring to inherit traits from both parents while also encouraging broader exploration of the search space.
- After crossover,
- a replacement step occurs,
- where the newly produced offspring fill the positions with the lower-ranking individuals in the population.
- Following replacement,
- the algorithm performs a mutation step on every chromosome:
- for each parameter,
- a random number is drawn,
- and if it does not exceed the mutation rate,
- that parameter is randomly altered.
- Mutation maintains diversity in the population and helps prevent premature convergence.
- Once all steps of the generation are completed,
- the generation counter is incremented,
- and the algorithm proceeds to the next iteration unless the maximum number of generations has been reached.
- When the evolutionary loop terminates,
- a final local search stage is applied exclusively to the best solution found during the entire evolutionary process.
- The purpose of this refinement step is to improve the quality of the best candidate by locally optimizing it using a dedicated local optimization method.
- The algorithm then returns this refined best solution along with its objective value.
-\end_layout
+ each represented as a vector of parameters and this population is evolved through a series of steps,
+ where in each step some process that resemble natural processes are applied to the population.
+ Genetic algorithms have applied on a wide range applications,
+ that include training of neural networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnga1,nnga2"
+literal "false"
 
-\begin_layout Standard
+\end_inset
 
+.
+ Also,
+ Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:stepsGA"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ presents the basic steps of a genetic algorithm.
 \end_layout
 
 \begin_layout Standard
@@ -1474,13 +2185,20 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Genetic Algorithm
+The main steps of a Genetic Algorithm.
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:stepsGA"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -1560,7 +2278,7 @@ INPUT
 
 \size scriptsize
 - 
-\begin_inset Formula $iter$
+\begin_inset Formula $k$
 \end_inset
 
 :
@@ -1581,16 +2299,6 @@ INPUT
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $localSearchRate$
-\end_inset
-
- ∈ [0,1]
 \end_layout
 
 \begin_layout Plain Layout
@@ -1625,8 +2333,8 @@ INITIALIZATION
 \begin_layout Plain Layout
 
 \size scriptsize
--iter 
-\begin_inset Formula $←0$
+- 
+\begin_inset Formula $k←0$
 \end_inset
 
 
@@ -1647,7 +2355,7 @@ main pseudocode
  while
 \series default
  
-\begin_inset Formula $iter<N_{g}$
+\begin_inset Formula $k<N_{g}$
 \end_inset
 
  
@@ -1727,11 +2435,6 @@ endfor
 \length 0.5cm
 \end_inset
 
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
 Sort chromosomes by increasing fitness:
  
 \begin_inset Formula $N_{b}\leftarrow(1-p_{s})xN_{c}$
@@ -1744,11 +2447,6 @@ Sort chromosomes by increasing fitness:
 
 \size scriptsize
 06 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -1768,11 +2466,6 @@ Select parents
 
 \size scriptsize
 07 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -1806,11 +2499,6 @@ Draw
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset Formula $z_{i}\leftarrow a_{i}z_{i}+(1-a_{i})w_{i}$
 \end_inset
 
@@ -1831,11 +2519,6 @@ Draw
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset Formula $w_{i}\leftarrow a_{i}w_{i}+(1-a_{i})z_{i}$
 \end_inset
 
@@ -1846,16 +2529,6 @@ Draw
 
 \size scriptsize
 10 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -1898,17 +2571,7 @@ do
 \length 0.5cm
 \end_inset
 
- 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-Replace
+ Replace
 \begin_inset Formula $g_{i}$
 \end_inset
 
@@ -1932,16 +2595,6 @@ with
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \series bold
 endfor
 \end_layout
@@ -1950,16 +2603,6 @@ endfor
 
 \size scriptsize
 13 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -1990,16 +2633,6 @@ do
 
 \size scriptsize
 14 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -2045,17 +2678,7 @@ do
 \length 0.5cm
 \end_inset
 
- 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-Draw 
+ Draw 
 \begin_inset Formula $rU[0,1]$
 \end_inset
 
@@ -2066,16 +2689,6 @@ Draw
 
 \size scriptsize
 16
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -2134,17 +2747,7 @@ then
 \length 0.5cm
 \end_inset
 
- 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-Mutate gene 
+ Mutate gene 
 \begin_inset Formula $j$
 \end_inset
 
@@ -2159,16 +2762,6 @@ Mutate gene
 
 \size scriptsize
 18
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -2207,16 +2800,6 @@ endif
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \series bold
 endfor
 \end_layout
@@ -2230,16 +2813,6 @@ endfor
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \series bold
 end for
 \end_layout
@@ -2248,26 +2821,6 @@ end for
 
 \size scriptsize
 21 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -2307,26 +2860,6 @@ do
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset Formula $f_{i}←f(g_{i})$
 \end_inset
 
@@ -2337,26 +2870,6 @@ do
 
 \size scriptsize
 23 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -2377,26 +2890,6 @@ Draw
 
 \size scriptsize
 24
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- 
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -2441,27 +2934,7 @@ then
 \length 0.5cm
 \end_inset
 
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
  
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset Formula $xbest←gi,$
 \end_inset
 
@@ -2486,26 +2959,6 @@ then
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \series bold
 endif
 \end_layout
@@ -2514,26 +2967,6 @@ endif
 
 \size scriptsize
 27
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- 
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -2552,27 +2985,7 @@ endfor
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $iter←iter+1$
+\begin_inset Formula $k←k+1$
 \end_inset
 
 
@@ -2590,60 +3003,6 @@ endwhile
 
 \size scriptsize
 30 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-(
-\begin_inset Formula $x_{best}$
-\end_inset
-
- 
-\begin_inset Formula $←$
-\end_inset
-
-
-\begin_inset Formula $LocalSearch$
-\end_inset
-
-(
-\begin_inset Formula $x_{best}$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-31 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-(
-\begin_inset Formula $f_{best}$
-\end_inset
-
- 
-\begin_inset Formula $←$
-\end_inset
-
-
-\begin_inset Formula $f$
-\end_inset
-
-(
-\begin_inset Formula $x_{best}$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-32 
 \series bold
 return
 \series default
@@ -2665,56 +3024,68 @@ return
 \end_layout
 
 \begin_layout Standard
-Particle Swarm Optimization (PSO) is a population-based search method inspired by how animals move and cooperate in groups like flocks of birds or schools of fish.
- The basic idea is that a group of “particles” explores the search space,
- each one representing a possible solution to the problem.
- Every particle has a position (the solution it currently represents) and a velocity (which determines how it will move in the next step).
- At the start of the algorithm,
- all particles are placed randomly within the allowed search boundaries,
- and they are given small random velocities so that their initial movements aren’t too aggressive.
- Each particle also keeps track of the best position it has discovered so far.
- At the same time,
- the swarm as a whole keeps track of the best position found by any particle,
- called the global best.
- During each iteration,
- every particle updates its velocity based on three things:
- its previous velocity,
- how strongly it is pulled toward its own personal best,
- and how strongly it is pulled toward the swarm’s global best.
- Two new random numbers are generated during this process,
- adding some randomness to help balance exploration and exploitation.
- Once the velocity has been updated,
- the particle moves to a new position,
- and that position is evaluated using the objective function.
- If this new position is better than the particle’s previous best,
- the best is updated.
- Similarly,
- if any particle finds a position that improves upon the current global best,
- the global best is updated as well.
- This way,
- information about promising areas of the search space spreads through the swarm over time.
- The algorithm repeats these steps updating velocities,
- moving particles,
- evaluating them,
- and updating the global best until a stopping condition is reached.
- This could be a maximum number of iterations.
- When the algorithm finishes,
- it returns the best solution found by the swarm and the corresponding objective value.
+Particle Swarm Optimization (PSO) is a population-based search method inspired by how animals move and cooperate in groups like flocks of birds or schools of fish 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pso1,pso2"
+literal "false"
+
+\end_inset
+
+.
+ The PSO was widely used in a variety of practical problems as well as in neural network training 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnpso1,nnpso2"
+literal "false"
+
+\end_inset
+
+.
+ The main steps of the PSO method are outlined in Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:psoSTEPS"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-
-\size scriptsize
 \begin_inset Float algorithm
 placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The main steps of the PSO algorithm.
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:psoSTEPS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -2849,17 +3220,6 @@ INPUT
 
 :
  vectors are best located values for every particle i
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $LS$
-\end_inset
-
-:
- LocalSearch rate ∈ [0,1]
 \end_layout
 
 \begin_layout Plain Layout
@@ -3115,18 +3475,18 @@ draw
 if
 \series default
  
-\begin_inset Formula $r\leq p_{m}$
+\begin_inset Formula $f(x_{i})<f(p_{i}$
 \end_inset
 
 
 \series bold
-then
+)then
 \end_layout
 
 \begin_layout Plain Layout
 
 \size scriptsize
-07
+07 
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -3137,7 +3497,12 @@ then
 \end_inset
 
 
-\begin_inset Formula $x_{i}←LS(x_{i})$
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $p_{i}←x_{i}$
 \end_inset
 
 
@@ -3170,75 +3535,6 @@ End if
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-if
-\series default
- 
-\begin_inset Formula $f(x_{i})<f(p_{i}$
-\end_inset
-
-
-\series bold
-)then
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-10 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $p_{i}←x_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-11
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-End if
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-12
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \series bold
 End for
 \end_layout
@@ -3247,7 +3543,7 @@ End for
 \align block
 
 \size scriptsize
-13
+10
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -3275,7 +3571,7 @@ End for
 \begin_layout Plain Layout
 
 \size scriptsize
-14
+11
 \begin_inset space \hspace{}
 \length 0.5cm
 \end_inset
@@ -3297,11 +3593,11 @@ End for
 \begin_layout Plain Layout
 
 \size scriptsize
-15
+12
 \series bold
  End while
 \series default
- // Goto termination check
+ 
 \end_layout
 
 \end_inset
@@ -3311,6 +3607,13 @@ End for
 
 \begin_layout Subsection
 The SVM method
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:The-SVM-method"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3379,7 +3682,725 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+The neural network construction method 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:The-neural-network"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another method used in the experiments to predict the category of seismic vibrations is the method of constructing artificial neural networks using Grammatical Evolution 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc"
+literal "false"
+
+\end_inset
+
+.
+ This method can detect the optimal architecture for neural networks as well as the optimal set of values for the corresponding parameters.
+
+\series bold
+ 
+\series default
+This method was used in various cases,
+ such as chemistry problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_amide1"
+literal "false"
+
+\end_inset
+
+,
+ solution of differential equations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_de"
+literal "false"
+
+\end_inset
+
+,
+ medical problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_feas"
+literal "false"
+
+\end_inset
+
+,
+ educational problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+,
+ detection of autism 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+ etc.
+ This method can produce neural networks in the following form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N\left(\overrightarrow{x},\overrightarrow{w}\right)=\sum_{i=1}^{H}w_{(d+2)i-(d+1)}\sigma\left(\sum_{j=1}^{d}x_{j}w_{(d+2)i-(d+1)+j}+w_{(d+2)i}\right)\label{eq:nn}
+\end{equation}
+
+\end_inset
+
+In this equation the value 
+\begin_inset Formula $H$
+\end_inset
+
+ represents the number of used computation units (weights) for the neural network.
+ The function 
+\begin_inset Formula $\sigma(x)$
+\end_inset
+
+ stands for the sigmoid function,
+ which is defined as:
+\begin_inset Formula 
+\begin{equation}
+\sigma(x)=\frac{1}{1+\exp(-x)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 The proposed method
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:The-proposed-method"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The method proposed here to tackle the classification of seismic events is a procedure that constructs artificial features from the original ones using Grammatical Evolution.
+ The method was initially presented in the paper of Gavrilis et al 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mainfc"
+literal "false"
+
+\end_inset
+
+ and used in various cases in the past 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fc1,fc2,fc3"
+literal "false"
+
+\end_inset
+
+.
+ The main steps of this method have as follows:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization
+\series default
+ step.
+ 
+\series bold
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Obtain 
+\series default
+the train data and denote them using the 
+\begin_inset Formula $M$
+\end_inset
+
+ pairs
+\series bold
+ 
+\begin_inset Formula $\left(x_{i},t_{i}\right),\ i=1..M$
+\end_inset
+
+
+\series default
+.
+ The values
+\series bold
+ 
+\series default
+
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ represent the actual output for the input pattern 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the parameters of the used genetic algorithm:
+\series bold
+
+\begin_inset Formula $N_{g}$
+\end_inset
+
+
+\series default
+ for as the number of allowed generations,
+ 
+\series bold
+
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ 
+\series default
+for the number of chromosomes,
+
+\series bold
+ 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+
+\series default
+ for the selection rate and 
+\series bold
+
+\begin_inset Formula $p_{m}$
+\end_inset
+
+ 
+\series default
+for the
+\series bold
+ 
+\series default
+mutation rate.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ as 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ the number of artificial features that will construct the current method.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ every chromosome 
+\begin_inset Formula $g_{i},i=1,\ldots,N_{g}$
+\end_inset
+
+ as a set of randomly selected integers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=1$
+\end_inset
+
+,
+ the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Genetic step
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For 
+\begin_inset Formula $i=1,\ldots,N_{g}$
+\end_inset
+
+ do
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Construct
+\series default
+ with Grammatical Evolution a set of 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ artificial features for the each chromosome 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+.
+ The BNF grammar used for this procedure is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BNF-grammar-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transform 
+\series default
+the original set of features using the constructed features and denote the new training set as 
+\begin_inset Formula $\left(x_{g_{i},j},t_{j}\right),\ j=1,..M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Train 
+\series default
+a machine learning 
+\begin_inset Formula $C$
+\end_inset
+
+ on the new training set.
+ The training error for this model will represent the fitness 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ for the current chromosome and it is computed as:
+\begin_inset Formula 
+\begin{equation}
+f_{i}=\sum_{j=1}^{M}\left(C\left(x_{g_{i},j}\right)-t_{j}\right)^{2}
+\end{equation}
+
+\end_inset
+
+In the current work the Radial Basis Function networks (RBF) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rbf1,rbf2"
+literal "false"
+
+\end_inset
+
+ were use d as the machine learning models.
+ A decisive factor for this choice was the short training time required for these machine learning models.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Perform
+\series default
+ the selection procedure:
+ Initially the the chromosomes are sorted according to the associated fitness values and the best
+\series bold
+ 
+\begin_inset Formula $\left(1-p_{s}\right)\times N_{C}$
+\end_inset
+
+
+\series default
+ of them are copied intact to the next generation.
+
+\series bold
+ 
+\series default
+The remaining chromosomes will be replaced by offsprings that will be produced during the crossover and the mutation procedure.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Perform
+\series default
+ the crossover procedure:
+ The outcome of this process is a set of 
+\begin_inset Formula $p_{s}\times N_{c}$
+\end_inset
+
+ new chromosomes.
+ For every pair 
+\begin_inset Formula $\left(\tilde{z},\tilde{w}\right)$
+\end_inset
+
+ of new chromosomes,
+ two distinct chromosomes 
+\begin_inset Formula $z$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+ are chosen from the current population using the process of tournament selection.
+ Afterwards,
+ the nee chromosomes are produced using the procedure of one - point crossover,
+ that is illustrated in in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:One-point-crossover"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Execute
+\series default
+ the mutation procedure:
+ during this procedure a random number 
+\begin_inset Formula $r\in\left[0,1\right]$
+\end_inset
+
+ is selected for each element of every chromosome.
+ The corresponding element is altered randomly if 
+\begin_inset Formula $r\le p_{m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+EndFor
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k\le N_{g}$
+\end_inset
+
+ goto 
+\series bold
+Genetic
+\series default
+ Step
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Obtain the best chromosome 
+\series default
+
+\begin_inset Formula $g^{*}$
+\end_inset
+
+ from the current population.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Create
+\series default
+ the corresponding 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ features for 
+\begin_inset Formula $g^{*}$
+\end_inset
+
+ and apply this features to the set set and report the corresponding test error.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The grammar used for the proposed method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BNF-grammar-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+S::=<expr>   (0) 
+\end_layout
+
+\begin_layout LyX-Code
+<expr> ::=  (<expr> <op> <expr>)  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | <func> ( <expr> )    (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |<terminal>            (2) 
+\end_layout
+
+\begin_layout LyX-Code
+<op> ::=     +      (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | -      (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           | *      (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           | /      (3)
+\end_layout
+
+\begin_layout LyX-Code
+<func> ::=   sin  (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | cos  (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           |exp   (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           |log   (3)
+\end_layout
+
+\begin_layout LyX-Code
+<terminal>::=<xlist>                (0)                      
+\end_layout
+
+\begin_layout LyX-Code
+           |<digitlist>.<digitlist> (1)
+\end_layout
+
+\begin_layout LyX-Code
+<xlist>::=x1    (0)              
+\end_layout
+
+\begin_layout LyX-Code
+           | x2 (1)              
+\end_layout
+
+\begin_layout LyX-Code
+           ………             
+\end_layout
+
+\begin_layout LyX-Code
+           | xN (N)
+\end_layout
+
+\begin_layout LyX-Code
+<digitlist>::=<digit>                  (0)                 
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit>            (1)
+\end_layout
+
+\begin_layout LyX-Code
+           | <digit><digit><digit>     (2)
+\end_layout
+
+\begin_layout LyX-Code
+<digit>  ::= 0 (0)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 1 (1)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 2 (2)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 3 (3)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 4 (4)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 5 (5)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 6 (6)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 7 (7)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 8 (8)             
+\end_layout
+
+\begin_layout LyX-Code
+           | 9 (9)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename onepoint_crossover.eps
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of the one - point crossover method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:One-point-crossover"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3394,12 +4415,278 @@ name "sec:Results"
 \end_layout
 
 \begin_layout Standard
+The methods used in the conducted experiments were coded in ANSI C++,
+ with the assistance of the freely available optimization package of OPTIMUS 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "optimus"
+literal "false"
+
+\end_inset
+
+.
+
+\series bold
+ 
+\series default
+Each experiment was conducted 30 times,
+ using different seed for the random generator in each execution.
+ Also,
+ the procedure of ten - fold cross validation was incorporated to validate the conducted experiments.
+ The values for the experimental parameters are listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-values-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The values of the experimental parameters.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-values-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PARAMETER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MEANING
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VALUE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{g}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of generations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of chromosomes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Selection rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mutation rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{f}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of features
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3872,6 +5159,98 @@ nolink "false"
  The values are expressed as percentage classification error,
  that is,
  the proportion of misclassified events between the two seismic classes defined during preprocessing (events with magnitude code 2–3 versus events with magnitude greater than 3).
+ The following notation is used in this table:
+\end_layout
+
+\begin_layout Enumerate
+The column MLP(GEN) denotes the error from the application of the genetic algorithm described in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Global-optimization-methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ for the training of a neural network with 10 processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column MLP(PSO) represents the incorporation of the PSO method given in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Global-optimization-methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ for the training of a neural network with 10 processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column SVM represent the application of the SVM method,
+ described in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:The-SVM-method"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ In the current implementation the freely available library LibSvm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "libsvm"
+literal "false"
+
+\end_inset
+
+ was used.
+\end_layout
+
+\begin_layout Enumerate
+The column NNC represents the neural network construction method,
+ described in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:The-neural-network"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column FC denotes the proposed feature construction technique,
+ outlined in subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:The-proposed-method"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The row AVERAGE denotes the average classification error for all datasets.
 \end_layout
 
 \begin_layout Standard
@@ -4053,6 +5432,20 @@ Experiments with the number of features
 \end_layout
 
 \begin_layout Standard
+An additional experiment was conducted,
+ where the number of constructed features was changed from 1 to 4 for the proposed feature construction method.
+ The corresponding experimental results are outlined in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:resultsFC"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \begin_inset Float table
 placement H
 alignment document
@@ -4468,7 +5861,7 @@ nolink "false"
 
 \end_inset
 
- investigates the behaviour of the proposed FC model as the number of constructed features N_f varies from 1 to 4.
+ investigates the behavior of the proposed FC model as the number of constructed features N_f varies from 1 to 4.
  The results show that performance is generally very stable,
  with the mean classification error ranging within a narrow band between 8.21% (for 
 \begin_inset Formula $N_{f}$
@@ -4646,6 +6039,10 @@ Experiments with the number of generations
 \end_layout
 
 \begin_layout Standard
+Moreover,
+ in order to test the efficiency of the proposed method,
+ an additional experiment was executed,
+ where the number of generations was altered from 50 to 400.
 \begin_inset Float table
 placement H
 alignment document
@@ -6033,30 +7430,6 @@ literal "false"
 \end_layout
 
 \begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Kopitsa 2025"
-literal "false"
-
-\end_inset
-
- Kopitsa,
- C.,
- Tsoulos,
- I.
- G.,
- Charilogis,
- V.,
- & Stylios,
- C.
- (2025).
- Classification of Earthquakes Using Grammatical Evolution.
- Algorithms,
- 18(11),
- 710.
-\end_layout
-
-\begin_layout Bibliography
 \labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
@@ -6707,6 +8080,253 @@ literal "false"
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "(2018)"
+key "nn1"
+literal "false"
+
+\end_inset
+
+Abiodun,
+ O.
+ I.,
+ Jantan,
+ A.,
+ Omolara,
+ A.
+ E.,
+ Dada,
+ K.
+ V.,
+ Mohamed,
+ N.
+ A.,
+ & Arshad,
+ H.
+ (2018).
+ State-of-the-art in artificial neural network applications:
+ A survey.
+ Heliyon,
+ 4(11).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nn2"
+literal "true"
+
+\end_inset
+
+Suryadevara,
+ S.,
+ & Yanamala,
+ A.
+ K.
+ Y.
+ (2021).
+ A Comprehensive Overview of Artificial Neural Networks:
+ Evolution,
+ Architectures,
+ and Applications.
+ Revista de Inteligencia Artificial en Medicina,
+ 12(1),
+ 51-76.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "gen1"
+literal "false"
+
+\end_inset
+
+Sivanandam,
+ S.
+ N.,
+ & Deepa,
+ S.
+ N.
+ (2008).
+ Genetic algorithms.
+ In Introduction to genetic algorithms (pp.
+ 15-37).
+ Berlin,
+ Heidelberg:
+ Springer Berlin Heidelberg.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "nnga1"
+literal "false"
+
+\end_inset
+
+Kalogirou,
+ S.
+ A.
+ (2004).
+ Optimization of solar systems using artificial neural-networks and genetic algorithms.
+ Applied Energy,
+ 77(4),
+ 383-405.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "nnga2"
+literal "false"
+
+\end_inset
+
+Chiroma,
+ H.,
+ Noor,
+ A.
+ S.
+ M.,
+ Abdulkareem,
+ S.,
+ Abubakar,
+ A.
+ I.,
+ Hermawan,
+ A.,
+ Qin,
+ H.,
+ ...
+ & Herawan,
+ T.
+ (2017).
+ Neural networks optimization through genetic algorithm searches:
+ a review.
+ Appl.
+ Math.
+ Inf.
+ Sci,
+ 11(6),
+ 1543-1564.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "gen2"
+literal "false"
+
+\end_inset
+
+Kramer,
+ O.
+ (2017).
+ Genetic algorithms.
+ In Genetic algorithm essentials (pp.
+ 11-19).
+ Cham:
+ Springer International Publishing.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "pso1"
+literal "false"
+
+\end_inset
+
+Wang,
+ D.,
+ Tan,
+ D.,
+ & Liu,
+ L.
+ (2018).
+ Particle swarm optimization algorithm:
+ an overview.
+ Soft computing,
+ 22(2),
+ 387-408.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "pso2"
+literal "false"
+
+\end_inset
+
+Jain,
+ N.
+ K.,
+ Nangia,
+ U.,
+ & Jain,
+ J.
+ (2018).
+ A review of particle swarm optimization.
+ Journal of The Institution of Engineers (India):
+ Series B,
+ 99(4),
+ 407-411.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "nnpso1"
+literal "false"
+
+\end_inset
+
+Meissner,
+ M.,
+ Schmuker,
+ M.,
+ & Schneider,
+ G.
+ (2006).
+ Optimized Particle Swarm Optimization (OPSO) and its application to artificial neural network training.
+ BMC bioinformatics,
+ 7(1),
+ 125.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "nnpso2"
+literal "false"
+
+\end_inset
+
+Garro,
+ B.
+ A.,
+ & Vázquez,
+ R.
+ A.
+ (2015).
+ Designing artificial neural networks using particle swarm optimization algorithms.
+ Computational intelligence and neuroscience,
+ 2015(1),
+ 369298.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "(2016)"
 key "svm"
 literal "false"
@@ -6815,6 +8435,373 @@ literal "false"
  Journal of Earth System Science,
  122(5),
  1423-1434.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ D.
+ Gavrilis,
+ E.
+ Glavas,
+ Neural network construction and training using grammatical evolution,
+ Neurocomputing 
+\series bold
+72
+\series default
+,
+ pp.
+ 269-277,
+ 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_amide1"
+literal "false"
+
+\end_inset
+
+G.V.
+ Papamokos,
+ I.G.
+ Tsoulos,
+ I.N.
+ Demetropoulos,
+ E.
+ Glavas,
+ Location of amide I mode of vibration in computed data utilizing constructed neural networks,
+ Expert Systems with Applications 
+\series bold
+36
+\series default
+,
+ pp.
+ 12210-12213,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_de"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ D.
+ Gavrilis,
+ E.
+ Glavas,
+ Solving differential equations with constructed neural networks,
+ Neurocomputing 
+\series bold
+72
+\series default
+,
+ pp.
+ 2385-2391,
+ 2009.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_feas"
+literal "false"
+
+\end_inset
+
+I.G.
+ Tsoulos,
+ G.
+ Mitsi,
+ A.
+ Stavrakoudis,
+ S.
+ Papapetropoulos,
+ Application of Machine Learning in a Parkinson's Disease Digital Biomarker Dataset Using Neural Network Construction (NNC) Methodology Discriminates Patient Motor Status,
+ Frontiers in ICT 6,
+ 10,
+ 2019.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_student"
+literal "false"
+
+\end_inset
+
+V.
+ Christou,
+ I.G.
+ Tsoulos,
+ V.
+ Loupas,
+ A.T.
+ Tzallas,
+ C.
+ Gogos,
+ P.S.
+ Karvelis,
+ N.
+ Antoniadis,
+ E.
+ Glavas,
+ N.
+ Giannakeas,
+ Performance and early drop prediction for higher education students using machine learning,
+ Expert Systems with Applications 
+\series bold
+225
+\series default
+,
+ 120079,
+ 2023.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "nnc_autism"
+literal "false"
+
+\end_inset
+
+E.I.
+ Toki,
+ J.
+ Pange,
+ G.
+ Tatsis,
+ K.
+ Plachouras,
+ I.G.
+ Tsoulos,
+ Utilizing Constructed Neural Networks for Autism Screening,
+ Applied Sciences 
+\series bold
+14
+\series default
+,
+ 3053,
+ 2024.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "mainfc"
+literal "false"
+
+\end_inset
+
+Dimitris Gavrilis,
+ Ioannis G.
+ Tsoulos,
+ Evangelos Dermatas,
+ Selecting and constructing features using grammatical evolution,
+ Pattern Recognition Letters 
+\series bold
+29
+\series default
+,pp.
+ 1358-1365,
+ 2008.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "fc1"
+literal "false"
+
+\end_inset
+
+George Georgoulas,
+ Dimitris Gavrilis,
+ Ioannis G.
+ Tsoulos,
+ Chrysostomos Stylios,
+ João Bernardes,
+ Peter P.
+ Groumpos,
+ Novel approach for fetal heart rate classification introducing grammatical evolution,
+ Biomedical Signal Processing and Control 
+\series bold
+2
+\series default
+,pp.
+ 69-79,
+ 2007 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "fc2"
+literal "true"
+
+\end_inset
+
+Otis Smart,
+ Ioannis G.
+ Tsoulos,
+ Dimitris Gavrilis,
+ George Georgoulas,
+ Grammatical evolution for features of epileptic oscillations in clinical intracranial electroencephalograms,
+ Expert Systems with Applications 
+\series bold
+38
+\series default
+,
+ pp.
+ 9991-9999,
+ 2011 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "fc3"
+literal "false"
+
+\end_inset
+
+A.
+ T.
+ Tzallas,
+ I.
+ Tsoulos,
+ M.
+ G.
+ Tsipouras,
+ N.
+ Giannakeas,
+ I.
+ Androulidakis and E.
+ Zaitseva,
+ Classification of EEG signals using feature creation produced by grammatical evolution,
+ In:
+ 24th Telecommunications Forum (TELFOR),
+ pp.
+ 1-4,
+ 2016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rbf1"
+literal "false"
+
+\end_inset
+
+J.
+ Park and I.
+ W.
+ Sandberg,
+ Universal Approximation Using Radial-Basis-Function Networks,
+ Neural Computation 3,
+ pp.
+ 246-257,
+ 1991.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rbf2"
+literal "false"
+
+\end_inset
+
+H.
+ Yu,
+ T.
+ Xie,
+ S.
+ Paszczynski,
+ B.
+ M.
+ Wilamowski,
+ Advantages of Radial Basis Function Networks for Dynamic System Design,
+ in IEEE Transactions on Industrial Electronics 
+\series bold
+58
+\series default
+,
+ pp.
+ 5438-5450,
+ 2011.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "optimus"
+literal "false"
+
+\end_inset
+
+Tsoulos,
+ I.G.;
+ Charilogis,
+ V.;
+ Kyrou,
+ G.;
+ Stavrou,
+ V.N.;
+ Tzallas,
+ A.
+ OPTIMUS:
+ A Multidimensional Global Optimization Package.
+ J.
+ Open Source Softw.
+ 2025,
+ 10,
+ 7584.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2018)"
+key "libsvm"
+literal "false"
+
+\end_inset
+
+Chang,
+ C.
+ C.,
+ & Lin,
+ C.
+ J.
+ (2011).
+ LIBSVM:
+ A library for support vector machines.
+ ACM transactions on intelligent systems and technology (TIST),
+ 2(3),
+ 1-27.
 \end_layout
 
 \begin_layout Standard
