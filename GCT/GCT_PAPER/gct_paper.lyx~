@@ -658,7 +658,22 @@ literal "false"
 Subsequently,
  we will proceed with the presentation of related studies alongside our own,
  which progressively enhance both our sustainability and our capacity for prevention against seismic phenomena.
- Adeli,
+
+\series bold
+ Housner,
+ in 1964,
+ concluded that artificial earthquakes constitute adequate representations of strong-motion events for structural analysis and may serve as standard ground motions in the design of engineering structures 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Housner 1964"
+literal "false"
+
+\end_inset
+
+.
+ 
+\series default
+Adeli,
  in 2009,
  proposed a novel feature extraction technique,
  asserting that when combined with a selected Probabilistic Neural Network (PNN),
@@ -690,7 +705,7 @@ literal "false"
 .
  Martinez-Alvarez,
  in 2013,
- investigates the utilization of various seismicity indicators as inputs for artificial neural networks.
+ investigated the utilization of various seismicity indicators as inputs for artificial neural networks.
  The study proposes combining multiple indicators—
 previously shown to be effective across different seismic regions—
 through the application of feature selection techniques 
@@ -725,6 +740,19 @@ literal "false"
 \end_inset
 
 .
+ Cortes,
+ in 2016,
+ sought to identify the parameters most effective for earthquake prediction.
+ As various studies have employed different feature sets,
+ the optimal selection of features appears to depend on the specific dataset used in constructing the model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cortes 2016"
+literal "false"
+
+\end_inset
+
+.
  Asim,
  in 2018,
  developed a hybrid embedded feature selection approach designed to enhance the accuracy of earthquake prediction 
@@ -738,7 +766,7 @@ literal "false"
 .
  Chamberlain,
  in 2018,
- demonstrates that synthetic seismograms,
+ demonstrated that synthetic seismograms,
  when applied with matched-filter techniques,
  enable the detection of earthquakes even with limited prior knowledge of the source 
 \begin_inset CommandInset citation
@@ -749,9 +777,35 @@ literal "false"
 \end_inset
 
 .
+ Okada,
+ in 2018,
+ employed observational data either by calibrating parameters within existing models or by deriving models and indicators directly from the data itself 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Okada 2018"
+literal "false"
+
+\end_inset
+
+.
+ Lin,
+ in 2018,
+ employed the earthquake catalogue from 2000 to 2010,
+ comprising events with a Richter magnitude (ML) of 5 and a depth of 300 km within the study area (21°–26° N,
+ 119°–123° E).
+ This dataset was utilized as training input to develop the initial earthquake magnitude prediction backpropagation neural network (IEMPBPNN) model,
+ which was designed with two hidden layers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lin 2018"
+literal "false"
+
+\end_inset
+
+.
  Zhang,
  in 2019,
- proposes a precursory pattern-based feature extraction approach aimed at improving earthquake prediction performance.
+ proposed a precursory pattern-based feature extraction approach aimed at improving earthquake prediction performance.
  In this method,
  raw seismic data are initially segmented into fixed daily time intervals,
  with the magnitude of the largest earthquake within each interval designated as the main shock 
@@ -763,9 +817,25 @@ literal "false"
 \end_inset
 
 .
- In Ali’s study,
+ Rohas's,
+ in 2019,
+ paper reviewed the latest uses of artificial neural networks for automated seismic-data interpretation,
+ focusing especially on earthquake detection and onset-time estimation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rojas 2019"
+literal "false"
+
+\end_inset
+
+.
+
+\series bold
+ 
+\series default
+Ali,
  in 2020,
- synthetic seismic data were generated for a three-layer geological model and analyzed using Continuous Wavelet Transform (CWT) to identify seismic reflections in both the temporal and spatial domains 
+ generated synthetic seismic data for a three-layer geological model and analyzed using Continuous Wavelet Transform (CWT) to identify seismic reflections in both the temporal and spatial domains 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ali 2020"
@@ -776,7 +846,7 @@ literal "false"
 .
  Bamer,
  in 2021,
- demonstrates in comparison with several state-of-the-art studies,
+ demonstrated through comparison with several state-of-the-art studies,
  that the convolutional neural network autonomously learns to extract the pertinent input features and structural response behavior directly from complete time histories,
  rather than relying on a predefined set of manually selected intensity measures 
 \begin_inset CommandInset citation
@@ -799,7 +869,25 @@ literal "false"
 \end_inset
 
 .
- Sinha’s review,
+ Ozkaya,
+ in 2024,
+ developed a novel feature engineering framework that integrates the Butterfly Pattern (BFPat),
+ statistical measures,
+ and wavelet packet decomposition (WPD) functions.
+ The proposed model achieved an accuracy of 99.58% in earthquake detection and 93.13% in three-class wave classification 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ozkaya 2024"
+literal "false"
+
+\end_inset
+
+.
+
+\series bold
+ 
+\series default
+Sinha’s review,
  in 2025,
  offers valuable insights into cutting-edge techniques and emerging directions in feature engineering for seismic prediction,
  highlighting the importance of interdisciplinary collaboration in advancing earthquake forecasting and reducing seismic risk 
@@ -811,7 +899,17 @@ literal "false"
 \end_inset
 
 .
- 
+ Mahmoud,
+ in 2025,
+ investigates the application of machine learning approaches to earthquake classification and prediction using synthetic seismic datasets 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mahmoud 2025"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1043,10 +1141,7 @@ literal "false"
 \end_inset
 
  etc.
-\end_layout
-
-\begin_layout Standard
-This research work focuses on the creation of artificial features from existing ones,
+ This research work focuses on the creation of artificial features from existing ones,
  aiming at two goals:
  on the one hand,
  it seeks to reduce the required information required for the correct classification of seismic data and on the other hand,
@@ -1316,7 +1411,7 @@ name "fig:Graphs-seismic-events"
 \end_layout
 
 \begin_layout Standard
-We employed coordinates spanning latitudes 33°–44° and longitudes 17°–44°,
+On the platform that provides us with the Interactive Earthquake Browser we employed coordinates spanning latitudes 33°–44° and longitudes 17°–44°,
  considered magnitude values from 1.0 to 10.0,
  and incorporated all available depths by default within the depth range.
  The raw dataset included the following variables:
@@ -2113,12 +2208,6 @@ Kp Code
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-(TO BE CHANGED)
 \end_layout
 
 \begin_layout Standard
@@ -6601,34 +6690,71 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Standard
-This study explores the implementation of constructing artificial features with Grammatical Evolution for earthquake prediction,
- employing machine learning methods,
- namely MLP(GEN),
+This study investigates the use of Grammatical Evolution for constructing artificial features in earthquake prediction,
+ applying several machine learning approaches,
+ including MLP(GEN),
  MLP(PSO),
  SVM,
- NNC,
- and FC (Feature Construction).
- All the aforementioned algorithms fall within the domain of Machine Learning,
- with the exception of FC,
- which represents a feature engineering technique.
+ and NNC,
+ alongside Feature Construction (FC).
+ The analysis is based on seismic data recorded between 1990 and 2015 within the geographical area defined by latitudes 33°–44° and longitudes 17°–44°.
+ While all the aforementioned methods belong to the domain of machine learning,
+ FC is distinguished as a feature engineering technique.
  Specifically,
  Feature Construction (FC) refers to the process of generating new,
  informative attributes from the existing dataset,
  thereby enhancing the representational capacity of the data and improving the performance of machine learning models.
  Following these steps,
  our experiments demonstrated that the FC technique yielded the best results,
- achieving the lowest mean error.
+ achieving the lowest mean error 9.05% corresponding to an overall accuracy of 91%.
+ The SVM method achieved the second-best performance,
+ with an average error of 11.86%.
+ Consequently,
+ we proceeded with the FC technique,
+ which yielded the best results,
+ and implemented artificially constructed features 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ with ranging from 1 to 4.
+ Furthermore,
+ to evaluate the efficiency of the proposed method,
+ an additional experiment was conducted in which the number of generations 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ was varied from 50 to 400.
  Consequently,
  we applied 1,
  2,
  3,
  and 4 constructed features within this technique,
- with the single constructed feature exhibiting superior performance compared to the others.
- Our experiment was further extended by incorporating a series of values for the number of generations (50,
+ with the single constructed feature
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ =1 exhibiting superior performance compared to the others producing the minimal average error 8.21%.
+ Our experiment was further extended by incorporating a series of values for the number of generations
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ (50,
  100,
  200,
  and 400),
- and the results indicated that 400 generations yielded the best performance.
+ and the results indicated that 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ 400 generations yielded the best performance 8.78%.
+ In contrast,
+ selecting 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ 200 provides also an effective balance between computational cost and predictive performance.
+ This study was conducted as a direct response to the challenge identified in our previous research,
+ thereby extending and refining the scope of the earlier findings.
 \end_layout
 
 \begin_layout Standard
@@ -7150,6 +7276,27 @@ status collapsed
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "Housner 1964"
+literal "false"
+
+\end_inset
+
+ Housner,
+ G.
+ W.,
+ & Jennings,
+ P.
+ C.
+ (1964).
+ Generation of artificial earthquakes.
+ Journal of the Engineering Mechanics Division,
+ 90(1),
+ 113-150.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "Adeli 2009"
 literal "false"
 
@@ -7272,6 +7419,29 @@ literal "false"
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "Cortes 2016"
+literal "false"
+
+\end_inset
+
+ Asencio-Cortés,
+ G.,
+ Martínez-Álvarez,
+ F.,
+ Morales-Esteban,
+ A.,
+ & Reyes,
+ J.
+ (2016).
+ A sensitivity study of seismicity indicators in supervised learning to improve earthquake prediction.
+ Knowledge-Based Systems,
+ 101,
+ 15-30.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "Asim 2018"
 literal "false"
 
@@ -7319,6 +7489,53 @@ literal "false"
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "Okada 2018"
+literal "false"
+
+\end_inset
+
+ Okada,
+ A.,
+ & Kaneda,
+ Y.
+ (2018,
+ May).
+ Neural network learning:
+ Crustal state estimation method from time-series data.
+ In 2018 International Conference on Control,
+ Artificial Intelligence,
+ Robotics & Optimization (ICCAIRO) (pp.
+ 141-146).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Lin 2018"
+literal "false"
+
+\end_inset
+
+ Lin,
+ J.
+ W.,
+ Chao,
+ C.
+ T.,
+ & Chiou,
+ J.
+ S.
+ (2018).
+ Determining neuronal number in each hidden layer using earthquake catalogues as training data in training an embedded back propagation neural network for predicting earthquake magnitude.
+ Ieee Access,
+ 6,
+ 52582-52597.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "Zhang 2019"
 literal "false"
 
@@ -7340,6 +7557,31 @@ literal "false"
  7,
  30991-31001.
  
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Rojas 2019"
+literal "false"
+
+\end_inset
+
+ Rojas,
+ O.,
+ Otero,
+ B.,
+ Alvarado,
+ L.,
+ Mus,
+ S.,
+ & Tous,
+ R.
+ (2019).
+ Artificial neural networks as emerging tools for earthquake detection.
+ Computación y Sistemas,
+ 23(2),
+ 335-350.
 \end_layout
 
 \begin_layout Bibliography
@@ -7415,6 +7657,38 @@ literal "false"
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "Ozkaya 2024"
+literal "false"
+
+\end_inset
+
+ Ozkaya,
+ S.
+ G.,
+ Baygin,
+ M.,
+ Barua,
+ P.
+ D.,
+ Tuncer,
+ T.,
+ Dogan,
+ S.,
+ Chakraborty,
+ S.,
+ & Acharya,
+ U.
+ R.
+ (2024).
+ An automated earthquake classification model based on a new butterfly pattern using seismic signals.
+ Expert Systems with Applications,
+ 238,
+ 122079.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "Sinha 2025"
 literal "false"
 
@@ -7433,6 +7707,34 @@ literal "false"
  1-8).
  IEEE.
  
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Mahmoud 2025"
+literal "false"
+
+\end_inset
+
+ Mahmoud,
+ A.,
+ Alrusaini,
+ O.,
+ Shafie,
+ E.,
+ Aboalndr,
+ A.,
+ & Elbelkasy,
+ M.
+ S.
+ (2025).
+ Machine Learning-Based Earthquake Prediction:
+ Feature Engineering and Model Performance Using Synthetic Seismic Data.
+ Appl.
+ Math,
+ 19(3),
+ 695-702.
 \end_layout
 
 \begin_layout Bibliography
