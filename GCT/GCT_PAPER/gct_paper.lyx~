@@ -1245,7 +1245,865 @@ https://ds.iris.edu/
  which is a platform offering an interactive global map that facilitates both data visualization and the real-time extraction of datasets from the displayed geographic regions.
  The area defined by latitudes 33°–44° and longitudes 17°–44° covers 28 seismic zones,
  with Turkey and Greece identified as the most seismically active regions.
- Furthermore,
+ 
+\end_layout
+
+\begin_layout Standard
+Regarding the 28 seismic zones listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Regions-codes-for"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ these correspond to specific geographic coordinates (latitudes and longitudes) provided through the interactive seismic platform previously referenced.
+ The platform grants direct access to these spatial data,
+ ensuring that the delineation of the zones is both systematic and consistent with the established geospatial framework.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Regions codes for the 28 seismic zones.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Regions-codes-for"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="29" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Region Code
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Turkey
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crete Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Dodecanese Islands,
+ GREECE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ionian Sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aegean Sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Southern Greece
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+GREECEALBANIA border region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+GREECEBULGARIA border region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cyprus region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Albania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+NORTHWESTERN Balkan Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Central Mediterranean sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Jordan Syria region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+GEORGIA ARMENIA TURKEY 
+\begin_inset Newline newline
+\end_inset
+
+Border Region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+TURKEY IRAN border region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iraq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Eastern Mediterranean sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+NORTHWESTERN CAUCASUS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Black Sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Romania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bulgaria
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Crimea Region Ukraine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ARMENIA AZERBAIJAN IRAN 
+\begin_inset Newline newline
+\end_inset
+
+border region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Adriatic sea
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UKRAINE MOLDOVA RUSSIA 
+\begin_inset Newline newline
+\end_inset
+
+border region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Southern Italy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+IRAN IRAQ border region
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Furthermore,
  the selection of NSF data was driven by its advanced functionality and broad accessibility.
  Notably,
  it supports the download of up to 25,000 records per file,
@@ -1367,10 +2225,6 @@ alignment document
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2226,17 +3080,113 @@ Kp Code
 
 \end_inset
 
-
+In the processed dataset,
+ categorical classes were introduced to facilitate the analysis.
+ Specifically,
+ the months were initially ordered numerically and subsequently grouped according to the corresponding season.
+ Thus,
+ class 0 represents the winter months,
+ class 1 corresponds to the spring months,
+ class 2 to the summer months,
+ and class 3 to the autumn months.
+ The days comprising each month were divided into three ten-day intervals,
+ with the first interval assigned to class 0,
+ the second interval to class 1,
+ and the final interval to class 2.
+ Accordingly,
+ the hours of the 24 hour day were divided into distinct periods,
+ with the morning zone assigned to class 0,
+ midday to class 1,
+ afternoon to class 2,
+ and night to class 3.
+ For the depth code,
+ earthquakes occurring near the surface (0–32.9 km) were assigned to class 0,
+ those recorded at depths between 33–69.9 km to class 1,
+ events within 70–149.9 km to class 2,
+ those between 150–299.9 km to class 3,
+ earthquakes at depths of 300–499.9 km to class 4,
+ those between 500–799.9 km to class 5,
+ and finally,
+ events occurring at depths greater than 800 km were assigned to class 6.
+ Continuing,
+ earthquakes with magnitudes below 2.9 were assigned to class 1,
+ those with magnitudes between 3.0–3.9 to class 2,
+ magnitudes between 4.0–4.9 to class 3,
+ magnitudes between 5.0–5.9 to class 4,
+ magnitudes between 6.0–6.9 to class 5,
+ magnitudes between 7.0–7.9 to class 6,
+ while events with magnitudes of 8.0 and above were assigned to class 7.
+ With regard to the categorization of the geographical region and the lithospheric plate,
+ each region was assigned a code ranging from 1 to 28.
+ Similarly,
+ a code from 1 to 7 was allocated to the lithospheric plates corresponding to each seismic event.
+ Finally,
+ the Kp code was classified as follows:
+ values ranging from 0.000–4.000 were assigned to class 0,
+ those from 4.100–5.000 to class 1,
+ values between 5.100–6.000 to class 2,
+ those from 6.100–7.000 to class 3,
+ values between 7.100–8.000 to class 4,
+ and finally,
+ values from 8.100–9.000 were assigned to class 5.
 \end_layout
 
 \begin_layout Standard
 At the following stage of data processing,
  we elected to focus on earthquakes with a magnitude code of 2 and above,
  since the inclusion of lower-magnitude events would bias the model toward predicting minor seismic occurrences.
- Specifically,
- the earthquakes were divided into two large classes to optimize performance:
- the first comprising magnitude codes 2 and 3,
- and the second encompassing events with magnitudes greater than 3.
+ Notably,
+ the small-magnitude category (1–2.9 mag) prevailed as the majority class with 407,144 records,
+ creating a significant imbalance in the dataset.
+ By excluding this dominant class,
+ we aimed to achieve a more balanced distribution across magnitudes and to enhance the representational capacity of the model.
+ This approach is consistent with previous studies that have similarly excluded small earthquakes to mitigate bias and improve predictive performance.
+ Wang et al.,
+ in 2023,
+ reports in Dataset and Feature Engineering “ The seismic catalog used in this study was obtained from the China Earthquake Data Center (CEDC,
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://data.earthquake.cn/
+\end_layout
+
+\end_inset
+
+,
+ last accessed on 12 December 2025) and includes earthquake events with a magnitude greater than 3.0 in the Sichuan–Yunnan region from 1970 to 2021” 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wang"
+literal "false"
+
+\end_inset
+
+.
+ It is noteworthy that the division into two classes within the field of seismology has previously been employed,
+ as in the study of Zhang et al.
+ (2023),
+ which investigated seismic data by categorizing events into high magnitude (
+\begin_inset Formula $M\ge5.5$
+\end_inset
+
+) and low magnitude (
+\begin_inset Formula $M<5.5$
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhu_rapid"
+literal "false"
+
+\end_inset
+
+.
+
+\series bold
  Following these steps,
  we proceeded with our experiments,
  utilizing approximately 10,000 seismic events in order to generate artificial features through Grammatical Evolution.
@@ -3030,6 +3980,19 @@ Create
 
 \end_deeper
 \begin_layout Standard
+Also,
+ a flowchart that presents the overall process of feature construction is presented in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fcSteps"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \begin_inset Float figure
 placement document
 alignment document
@@ -3223,6 +4186,50 @@ name "fig:One-point-crossover"
 \end_inset
 
 
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fc_flow.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The steps of the feature construction procedure.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fcSteps"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3247,6 +4254,28 @@ literal "false"
 \end_inset
 
 .
+ Moreover,
+ for the feature construction procedure the freely available programming tool QFc,
+ that can be downloaded from 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/itsoulos/QFc
+\end_layout
+
+\end_inset
+
+(accessed on 12 December 2025)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qfc"
+literal "false"
+
+\end_inset
+
+ has been used.
 
 \series bold
  
@@ -4872,7 +5901,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4908,7 +5937,7 @@ name "tab:resultsNG"
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4917,7 +5946,7 @@ DATASET
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4929,7 +5958,7 @@ DATASET
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4941,7 +5970,7 @@ DATASET
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4953,7 +5982,7 @@ DATASET
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4967,7 +5996,7 @@ DATASET
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4976,7 +6005,7 @@ GCT1990
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4985,7 +6014,7 @@ GCT1990
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4994,7 +6023,7 @@ GCT1990
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5003,7 +6032,7 @@ GCT1990
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5014,7 +6043,7 @@ GCT1990
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5023,7 +6052,7 @@ GCT1995
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5032,7 +6061,7 @@ GCT1995
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5041,7 +6070,7 @@ GCT1995
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5050,7 +6079,7 @@ GCT1995
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5061,7 +6090,7 @@ GCT1995
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5070,7 +6099,7 @@ GCT2000
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5079,7 +6108,7 @@ GCT2000
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5088,7 +6117,7 @@ GCT2000
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5097,7 +6126,7 @@ GCT2000
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5108,7 +6137,7 @@ GCT2000
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5117,7 +6146,7 @@ GCT2005
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5126,7 +6155,7 @@ GCT2005
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5135,7 +6164,7 @@ GCT2005
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5144,7 +6173,7 @@ GCT2005
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5155,7 +6184,7 @@ GCT2005
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5164,7 +6193,7 @@ GCT2010
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5173,7 +6202,7 @@ GCT2010
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5182,7 +6211,7 @@ GCT2010
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5191,7 +6220,7 @@ GCT2010
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5202,7 +6231,7 @@ GCT2010
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5213,7 +6242,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5224,7 +6253,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5235,7 +6264,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5246,7 +6275,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5632,23 +6661,9 @@ literal "false"
 \end_inset
 
  United Nations Office for Disaster Risk Reduction (UNDRR).
- 2017.
- The Sendai Framework Terminology on Disaster Risk Reduction.
- "Disaster risk reduction".
- Available from:
- 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://www.undrr.org/terminology/disaster-risk-reduction
-\end_layout
-
-\end_inset
-
-.
- (accessed 13 November 2025).
+ (2017).
+ Sendai framework terminology on disaster risk reduction.
+ Resilience.
 \end_layout
 
 \begin_layout Bibliography
@@ -5685,7 +6700,6 @@ literal "false"
  9th World Conference on Earthquake Engineering,
  1988 (pp.
  673-678).
- 
 \end_layout
 
 \begin_layout Bibliography
@@ -5715,8 +6729,7 @@ literal "false"
  Mexico City seismic alert system.
  Seismological Research Letters,
  66,
- 42-53.
- 
+ 42-53
 \end_layout
 
 \begin_layout Bibliography
@@ -5761,8 +6774,9 @@ literal "false"
 
  Earthquake Early Warning System (Japan).
  Wikipedia.
- Available online:
- 
+ Retrieved November 14,
+ 2025,
+ from 
 \begin_inset Flex URL
 status collapsed
 
@@ -5773,7 +6787,6 @@ https://en.wikipedia.org/wiki/Earthquake_Early_Warning_(Japan)
 
 \end_inset
 
- (accessed 14 November 2025).
  
 \end_layout
 
@@ -5870,8 +6883,9 @@ literal "false"
  ShakeAlert.
  US Geological Survey,
  Earthquake Hazards Program.
- Available online:
- 
+ Retrieved November 15,
+ 2025,
+ from 
 \begin_inset Flex URL
 status collapsed
 
@@ -5882,7 +6896,7 @@ https://earthquake.usgs.gov/data/shakealert/
 
 \end_inset
 
- (accessed 15 November 2025).
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -5895,8 +6909,9 @@ literal "false"
 
 ShakeAlert.
  Earthquake Early Warning (EEW) System.
- Available online:
- 
+ Retrieved November 15,
+ 2025,
+ from 
 \begin_inset Flex URL
 status collapsed
 
@@ -5907,7 +6922,7 @@ https://www.shakealert.org/
 
 \end_inset
 
-(accessed 15 November 2025).
+
 \end_layout
 
 \begin_layout Bibliography
@@ -5942,8 +6957,9 @@ literal "false"
 \end_inset
 
  Earthquake app.
- Available from:
- 
+ Retrieved November 16,
+ 2025,
+ from 
 \begin_inset Flex URL
 status collapsed
 
@@ -5954,7 +6970,7 @@ https://earthquake.app/#banner_1
 
 \end_inset
 
- (accessed 16 November 2025).
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -5966,8 +6982,20 @@ literal "false"
 \end_inset
 
  Android Earthquake Alert System.
- Available from:
- https://crisisresponse.google/android-early-earthquake-warnings (accessed 16 November 2025).
+ Retrieved November 16,
+ 2025,
+ from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://crisisresponse.google/android-early-earthquake-warnings 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Bibliography
@@ -5979,8 +7007,9 @@ literal "false"
 \end_inset
 
  Greece Earthquakes.
- Available from:
- 
+ Retrieved November 16,
+ 2025,
+ from 
 \begin_inset Flex URL
 status collapsed
 
@@ -5991,7 +7020,7 @@ https://play.google.com/store/apps/details?id=com.greek.Earthquake&pli=1
 
 \end_inset
 
- (accessed 16 November 2025).
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6003,7 +7032,9 @@ literal "false"
 \end_inset
 
  Earthquake Network.
- Available from:
+ Retrieved November 16,
+ 2025,
+ from
 \begin_inset Flex URL
 status collapsed
 
@@ -6014,7 +7045,7 @@ status collapsed
 
 \end_inset
 
-(accessed 16 November 2025).
+.
  
 \end_layout
 
@@ -6037,6 +7068,7 @@ literal "false"
  Journal of the Engineering Mechanics Division,
  90(1),
  113-150.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6056,6 +7088,9 @@ literal "false"
  Neural networks,
  22(7),
  1018-1024.
+
+\series bold
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6182,6 +7217,7 @@ literal "false"
  Knowledge-Based Systems,
  101,
  15-30.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6252,6 +7288,7 @@ literal "false"
  Robotics & Optimization (ICCAIRO) (pp.
  141-146).
  IEEE.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6276,6 +7313,7 @@ literal "false"
  Ieee Access,
  6,
  52582-52597.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6327,6 +7365,7 @@ literal "false"
  Computación y Sistemas,
  23(2),
  335-350.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6429,6 +7468,7 @@ literal "false"
  Expert Systems with Applications,
  238,
  122079.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6480,6 +7520,7 @@ literal "false"
  Math,
  19(3),
  695-702.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6501,6 +7542,7 @@ O'Neill,
  IEEE Transactions on Evolutionary Computation,
  5(4),
  349-358.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6521,6 +7563,7 @@ Kramer,
  11-19).
  Cham:
  Springer International Publishing.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -6533,14 +7576,13 @@ literal "false"
 
 \end_inset
 
-J.
+Backus,
+ J.
  W.
- Backus.
- The Syntax and Semantics of the Proposed International Algebraic Language of the Zurich ACM-GAMM Conference.
- Proceedings of the International Conference on Information Processing,
- UNESCO,
- 1959,
- pp.125-132.
+ (1959).
+ The syntax and the semantics of the proposed international algebraic language of the Zurich ACM-GAMM Conference.
+ In ICIP Proceedings (pp.
+ 125-132).
 \end_layout
 
 \begin_layout Bibliography
@@ -6551,31 +7593,23 @@ literal "false"
 
 \end_inset
 
-C.
- Ryan,
- J.
+Ryan,
+ C.,
  Collins,
+ J.
+ J.,
+ & Neill,
  M.
- O’Neill,
+ O.
+ (1998,
+ April).
  Grammatical evolution:
  Evolving programs for an arbitrary language.
- In:
- Banzhaf,
- W.,
- Poli,
- R.,
- Schoenauer,
- M.,
- Fogarty,
- T.C.
- (eds) Genetic Programming.
- EuroGP 1998.
- Lecture Notes in Computer Science,
- vol 1391.
- Springer,
+ In European conference on genetic programming (pp.
+ 83-96).
  Berlin,
- Heidelberg,
- 1998.
+ Heidelberg:
+ Springer Berlin Heidelberg.
 \end_layout
 
 \begin_layout Bibliography
@@ -6586,29 +7620,18 @@ literal "false"
 
 \end_inset
 
-M.
- O’Neill,
+O’Neill,
  M.,
+ & Ryan,
  C.
- Ryan,
- Evolving Multi-line Compilable C Programs.
- In:
- Poli,
- R.,
- Nordin,
- P.,
- Langdon,
- W.B.,
- Fogarty,
- T.C.
- (eds) Genetic Programming.
- EuroGP 1999.
- Lecture Notes in Computer Science,
- vol 1598.
- Springer,
+ (1999,
+ May).
+ Evolving multi-line compilable C programs.
+ In European Conference on Genetic Programming (pp.
+ 83-92).
  Berlin,
- Heidelberg,
- 1999.
+ Heidelberg:
+ Springer Berlin Heidelberg.
 \end_layout
 
 \begin_layout Bibliography
@@ -6619,17 +7642,14 @@ literal "false"
 
 \end_inset
 
-A.
- Brabazon,
+Brabazon,
+ A.,
+ & O'Neill,
  M.
- O'Neill,
- Credit classification using grammatical evolution,
- Informatica 
-\series bold
-30.3
-\series default
-,
- 2006.
+ (2006).
+ Credit classification using grammatical evolution.
+ Informatica,
+ 30(3).
 \end_layout
 
 \begin_layout Bibliography
@@ -6640,14 +7660,16 @@ literal "false"
 
 \end_inset
 
-S.
- Şen,
- J.A.
- Clark.
- A grammatical evolution approach to intrusion detection on mobile ad hoc networks,
- In:
- Proceedings of the second ACM conference on Wireless network security,
- 2009.
+Şen,
+ S.,
+ & Clark,
+ J.
+ A.
+ (2009,
+ March).
+ A grammatical evolution approach to intrusion detection on mobile ad hoc networks.
+ In Proceedings of the second ACM conference on Wireless network security (pp.
+ 95-102).
 \end_layout
 
 \begin_layout Bibliography
@@ -6658,23 +7680,22 @@ literal "false"
 
 \end_inset
 
-L.
- Chen,
- C.H.
+Chen,
+ L.,
  Tan,
- S.J.
+ C.
+ H.,
  Kao,
- T.S.
- Wang,
- Improvement of remote monitoring on water quality in a subtropical reservoir by incorporating grammatical evolution with parallel genetic algorithms into satellite imagery,
- Water Research 
-\series bold
- 42
-\series default
-,
- pp.
- 296-306,
- 2008.
+ S.
+ J.,
+ & Wang,
+ T.
+ S.
+ (2008).
+ Improvement of remote monitoring on water quality in a subtropical reservoir by incorporating grammatical evolution with parallel genetic algorithms into satellite imagery.
+ Water Research,
+ 42(1-2),
+ 296-306.
 \end_layout
 
 \begin_layout Bibliography
@@ -6685,31 +7706,29 @@ literal "false"
 
 \end_inset
 
-J.
- I.
- Hidalgo,
+Hidalgo,
  J.
- M.
+ I.,
  Colmenar,
- J.L.
+ J.
+ M.,
  Risco-Martin,
- A.
+ J.
+ L.,
  Cuesta-Infante,
- E.
+ A.,
  Maqueda,
- M.
- Botella,J.
+ E.,
+ Botella,
+ M.,
+ & Rubio,
+ J.
  A.
- Rubio,
- Modeling glycemia in humans by means of Grammatical Evolution,
- Applied Soft Computing 
-\series bold
-20
-\series default
-,
- pp.
- 40-53,
- 2014.
+ (2014).
+ Modeling glycemia in humans by means of grammatical evolution.
+ Applied Soft Computing,
+ 20,
+ 40-53.
 \end_layout
 
 \begin_layout Bibliography
@@ -6720,30 +7739,19 @@ literal "false"
 
 \end_inset
 
-J.
- Tavares,
- F.B.
- Pereira,
- Automatic Design of Ant Algorithms with Grammatical Evolution.
- In:
- Moraglio,
- A.,
- Silva,
- S.,
- Krawiec,
- K.,
- Machado,
- P.,
- Cotta,
- C.
- (eds) Genetic Programming.
- EuroGP 2012.
- Lecture Notes in Computer Science,
- vol 7244.
- Springer,
+Tavares,
+ J.,
+ & Pereira,
+ F.
+ B.
+ (2012,
+ April).
+ Automatic design of ant algorithms with grammatical evolution.
+ In European conference on genetic programming (pp.
+ 206-217).
  Berlin,
- Heidelberg,
- 2012.
+ Heidelberg:
+ Springer Berlin Heidelberg.
 \end_layout
 
 \begin_layout Bibliography
@@ -6754,27 +7762,26 @@ literal "false"
 
 \end_inset
 
-M.
- Zapater,
- J.L.
+Zapater,
+ M.,
  Risco-Martín,
- P.
+ J.
+ L.,
  Arroba,
- J.L.
+ P.,
  Ayala,
- J.M.
+ J.
+ L.,
  Moya,
+ J.
+ M.,
+ & Hermida,
  R.
- Hermida,
- Runtime data center temperature prediction using Grammatical Evolution techniques,
- Applied Soft Computing 
-\series bold
-49
-\series default
-,
- pp.
- 94-107,
- 2016.
+ (2016).
+ Runtime data center temperature prediction using grammatical evolution techniques.
+ Applied Soft Computing,
+ 49,
+ 94-107.
 \end_layout
 
 \begin_layout Bibliography
@@ -6785,18 +7792,25 @@ literal "false"
 
 \end_inset
 
-C.
- Ryan,
- M.
+Ryan,
+ C.,
  O’Neill,
- J.J.
- Collins,
+ M.,
+ & Collins,
+ J.
+ J.
+ (1998,
+ June).
  Grammatical evolution:
- Solving trigonometric identities,
- proceedings of Mendel.
- Vol.
- 98.
- 1998.
+ Solving trigonometric identities.
+ In proceedings of Mendel (Vol.
+ 98,
+ p.
+ 4th).
+ Brno,
+ Czech Republic:
+ Technical University of Brno,
+ Faculty of Mechanical Engineering.
 \end_layout
 
 \begin_layout Bibliography
@@ -6807,23 +7821,24 @@ literal "false"
 
 \end_inset
 
-A.O.
- Puente,
- R.
- S.
+de la Puente,
+ A.
+ O.,
  Alfonso,
+ R.
+ S.,
+ & Moreno,
  M.
  A.
- Moreno,
- Automatic composition of music by means of grammatical evolution,
- In:
- APL '02:
- Proceedings of the 2002 conference on APL:
+ (2002,
+ June).
+ Automatic composition of music by means of grammatical evolution.
+ In Proceedings of the 2002 conference on APL:
  array processing languages:
  lore,
  problems,
- and applications July 2002 Pages 148–155.
- 
+ and applications (pp.
+ 148-155).
 \end_layout
 
 \begin_layout Bibliography
@@ -6834,18 +7849,21 @@ literal "false"
 
 \end_inset
 
-Lídio Mauro Limade Campo,
+De Campos,
+ L.
+ M.
+ L.,
+ de Oliveira,
  R.
- Célio Limã Oliveira,Mauro Roisenberg,
- Optimization of neural networks through grammatical evolution and a genetic algorithm,
- Expert Systems with Applications 
-\series bold
-56
-\series default
-,
- pp.
- 368-384,
- 2016.
+ C.
+ L.,
+ & Roisenberg,
+ M.
+ (2016).
+ Optimization of neural networks through grammatical evolution and a genetic algorithm.
+ Expert Systems with Applications,
+ 56,
+ 368-384.
 \end_layout
 
 \begin_layout Bibliography
@@ -6856,20 +7874,17 @@ literal "false"
 
 \end_inset
 
-K.
- Soltanian,
- A.
+Soltanian,
+ K.,
  Ebnenasir,
+ A.,
+ & Afsharchi,
  M.
- Afsharchi,
- Modular Grammatical Evolution for the Generation of Artificial Neural Networks,
- Evolutionary Computation 
-\series bold
-30
-\series default
-,
- pp 291–327,
- 2022.
+ (2022).
+ Modular grammatical evolution for the generation of artificial neural networks.
+ Evolutionary computation,
+ 30(2),
+ 291-327.
 \end_layout
 
 \begin_layout Bibliography
@@ -6880,19 +7895,17 @@ literal "false"
 
 \end_inset
 
-I.
- Dempsey,
- M.O' Neill,
+Dempsey,
+ I.,
+ O'Neill,
+ M.,
+ & Brabazon,
  A.
- Brabazon,
- Constant creation in grammatical evolution,
- International Journal of Innovative Computing and Applications 
-\series bold
-1
-\series default
- ,
- pp 23–38,
- 2007.
+ (2007).
+ Constant creation in grammatical evolution.
+ International Journal of Innovative Computing and Applications,
+ 1(1),
+ 23-38.
 \end_layout
 
 \begin_layout Bibliography
@@ -6903,27 +7916,24 @@ literal "false"
 
 \end_inset
 
-E.
- Galván-López,
- J.M.
+Galván-López,
+ E.,
  Swafford,
- M.
+ J.
+ M.,
  O’Neill,
+ M.,
+ & Brabazon,
  A.
- Brabazon,
- Evolving a Ms.
- PacMan Controller Using Grammatical Evolution.
- In:
- ,
- et al.
- Applications of Evolutionary Computation.
- EvoApplications 2010.
- Lecture Notes in Computer Science,
- vol 6024.
- Springer,
+ (2010,
+ April).
+ Evolving a ms.
+ pacman controller using grammatical evolution.
+ In European Conference on the Applications of Evolutionary Computation (pp.
+ 161-170).
  Berlin,
- Heidelberg,
- 2010.
+ Heidelberg:
+ Springer Berlin Heidelberg.
 \end_layout
 
 \begin_layout Bibliography
@@ -6934,22 +7944,23 @@ literal "false"
 
 \end_inset
 
-N.
- Shaker,
- M.
+Shaker,
+ N.,
  Nicolau,
- G.
- N.
+ M.,
  Yannakakis,
- J.
+ G.
+ N.,
  Togelius,
+ J.,
+ & O'neill,
  M.
- O'Neill,
- Evolving levels for Super Mario Bros using grammatical evolution,
- 2012 IEEE Conference on Computational Intelligence and Games (CIG),
- 2012,
- pp.
- 304-31.
+ (2012,
+ September).
+ Evolving levels for super mario bros using grammatical evolution.
+ In 2012 IEEE Conference on Computational Intelligence and Games (CIG) (pp.
+ 304-311).
+ IEEE.
 \end_layout
 
 \begin_layout Bibliography
@@ -6960,27 +7971,24 @@ literal "false"
 
 \end_inset
 
-D.
- Martínez-Rodríguez,
- J.
- M.
+Martínez‐Rodríguez,
+ D.,
  Colmenar,
  J.
- I.
+ M.,
  Hidalgo,
- R.J.
+ J.
+ I.,
  Villanueva Micó,
+ R.
+ J.,
+ & Salcedo‐Sanz,
  S.
- Salcedo-Sanz,
- Particle swarm grammatical evolution for energy demand estimation,
- Energy Science and Engineering 
-\series bold
-8
-\series default
-,
- pp.
- 1068-1079,
- 2020.
+ (2020).
+ Particle swarm grammatical evolution for energy demand estimation.
+ Energy Science & Engineering,
+ 8(4),
+ 1068-1079.
 \end_layout
 
 \begin_layout Bibliography
@@ -6991,24 +7999,20 @@ literal "false"
 
 \end_inset
 
-N.
- R.
- Sabar,
- M.
+Sabar,
+ N.
+ R.,
  Ayob,
- G.
+ M.,
  Kendall,
+ G.,
+ & Qu,
  R.
- Qu,
- Grammatical Evolution Hyper-Heuristic for Combinatorial Optimization Problems,
- IEEE Transactions on Evolutionary Computation 
-\series bold
-17
-\series default
-,
- pp.
- 840-861,
- 2013.
+ (2013).
+ Grammatical evolution hyper-heuristic for combinatorial optimization problems.
+ IEEE Transactions on Evolutionary Computation,
+ 17(6),
+ 840-861.
 \end_layout
 
 \begin_layout Bibliography
@@ -7019,22 +8023,21 @@ literal "false"
 
 \end_inset
 
-C.
- Ryan,
- M.
+Ryan,
+ C.,
  Kshirsagar,
- G.
+ M.,
  Vaidya,
- G.
- et al.
+ G.,
+ Cunningham,
+ A.,
+ & Sivaraman,
+ R.
+ (2022).
  Design of a cryptographically secure pseudo random number generator with grammatical evolution.
- Sci Rep 
-\series bold
-12
-\series default
-,
- 8602,
- 2022.
+ Scientific reports,
+ 12(1),
+ 8602.
 \end_layout
 
 \begin_layout Bibliography
@@ -7045,20 +8048,18 @@ literal "false"
 
 \end_inset
 
-P.J.
- Pereira,
+Pereira,
  P.
+ J.,
  Cortez,
+ P.,
+ & Mendes,
  R.
- Mendes,
- Multi-objective Grammatical Evolution of Decision Trees for Mobile Marketing user conversion prediction,
- Expert Systems with Applications 
-\series bold
-168
-\series default
-,
- 114287,
- 2021.
+ (2021).
+ Multi-objective grammatical evolution of decision trees for mobile marketing user conversion prediction.
+ Expert Systems with Applications,
+ 168,
+ 114287.
 \end_layout
 
 \begin_layout Bibliography
@@ -7069,19 +8070,16 @@ literal "false"
 
 \end_inset
 
-F.
- Castejón,
- E.J.
- Carmona,
- Automatic design of analog electronic circuits using grammatical evolution,
- Applied Soft Computing 
-\series bold
-62
-\series default
-,
- pp.
- 1003-1018,
- 2018.
+Castejón,
+ F.,
+ & Carmona,
+ E.
+ J.
+ (2018).
+ Automatic design of analog electronic circuits using grammatical evolution.
+ Applied Soft Computing,
+ 62,
+ 1003-1018.
 \end_layout
 
 \begin_layout Bibliography
@@ -7133,6 +8131,68 @@ literal "false"
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "(2022)"
+key "Wang"
+literal "false"
+
+\end_inset
+
+Wang,
+ X.,
+ Zhong,
+ Z.,
+ Yao,
+ Y.,
+ Li,
+ Z.,
+ Zhou,
+ S.,
+ Jiang,
+ C.,
+ & Jia,
+ K.
+ (2023).
+ Small Earthquakes Can Help Predict Large Earthquakes:
+ A Machine Learning Perspective.
+ Applied Sciences,
+ 13(11),
+ 6424.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2022)"
+key "zhu_rapid"
+literal "false"
+
+\end_inset
+
+Zhu,
+ J.,
+ Zhou,
+ Y.,
+ Liu,
+ H.,
+ Jiao,
+ C.,
+ Li,
+ S.,
+ Fan,
+ T.,
+ ...
+ & Song,
+ J.
+ (2023).
+ Rapid earthquake magnitude classification using single station data based on the machine learning.
+ IEEE Geoscience and Remote Sensing Letters,
+ 21,
+ 1-5.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "(2018)"
 key "nn1"
 literal "false"
@@ -7160,6 +8220,7 @@ Abiodun,
  A survey.
  Heliyon,
  4(11).
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7184,6 +8245,7 @@ Suryadevara,
  Revista de Inteligencia Artificial en Medicina,
  12(1),
  51-76.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7208,6 +8270,7 @@ Sivanandam,
  Berlin,
  Heidelberg:
  Springer Berlin Heidelberg.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7227,6 +8290,7 @@ Kalogirou,
  Applied Energy,
  77(4),
  383-405.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7265,6 +8329,7 @@ Chiroma,
  Sci,
  11(6),
  1543-1564.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7284,6 +8349,7 @@ Kramer,
  11-19).
  Cham:
  Springer International Publishing.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7307,6 +8373,7 @@ Wang,
  Soft computing,
  22(2),
  387-408.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7331,6 +8398,7 @@ Jain,
  Series B,
  99(4),
  407-411.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7353,6 +8421,7 @@ Meissner,
  BMC bioinformatics,
  7(1),
  125.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7375,6 +8444,7 @@ Garro,
  Computational intelligence and neuroscience,
  2015(1),
  369298.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7396,6 +8466,7 @@ Suthaharan,
  Boston,
  MA:
  Springer US.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7406,18 +8477,14 @@ literal "false"
 
 \end_inset
 
+ Wang,
  Q.
- Wang.
- (2022).
- Support Vector Machine Algorithm in Machine Learning,
- IEEE International Conference on Artificial Intelligence and Computer Applications (ICAICA),
- Dalian,
- China,
- 2022,
- pp.
- 750-756,
- doi:
- 10.1109/ICAICA54878.2022.9844516.
+ (2022,
+ June).
+ Support vector machine algorithm in machine learning.
+ In 2022 IEEE international conference on artificial intelligence and computer applications (ICAICA) (pp.
+ 750-756).
+ IEEE.
 \end_layout
 
 \begin_layout Bibliography
@@ -7468,6 +8535,7 @@ literal "false"
  Remote Sensing,
  14(12),
  2822.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7488,6 +8556,7 @@ literal "false"
  Journal of Earth System Science,
  122(5),
  1423-1434.
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7498,21 +8567,17 @@ literal "false"
 
 \end_inset
 
-I.G.
- Tsoulos,
- D.
+Tsoulos,
+ I.,
  Gavrilis,
+ D.,
+ & Glavas,
  E.
- Glavas,
- Neural network construction and training using grammatical evolution,
- Neurocomputing 
-\series bold
-72
-\series default
-,
- pp.
- 269-277,
- 2008.
+ (2008).
+ Neural network construction and training using grammatical evolution.
+ Neurocomputing,
+ 72(1-3),
+ 269-277.
 \end_layout
 
 \begin_layout Bibliography
@@ -7523,23 +8588,22 @@ literal "false"
 
 \end_inset
 
-G.V.
- Papamokos,
- I.G.
+Papamokos,
+ G.
+ V.,
  Tsoulos,
- I.N.
+ I.
+ G.,
  Demetropoulos,
+ I.
+ N.,
+ & Glavas,
  E.
- Glavas,
- Location of amide I mode of vibration in computed data utilizing constructed neural networks,
- Expert Systems with Applications 
-\series bold
-36
-\series default
-,
- pp.
- 12210-12213,
- 2009.
+ (2009).
+ Location of amide I mode of vibration in computed data utilizing constructed neural networks.
+ Expert Systems with Applications,
+ 36(10),
+ 12210-12213.
 \end_layout
 
 \begin_layout Bibliography
@@ -7550,21 +8614,18 @@ literal "false"
 
 \end_inset
 
-I.G.
- Tsoulos,
- D.
+Tsoulos,
+ I.
+ G.,
  Gavrilis,
+ D.,
+ & Glavas,
  E.
- Glavas,
- Solving differential equations with constructed neural networks,
- Neurocomputing 
-\series bold
-72
-\series default
-,
- pp.
- 2385-2391,
- 2009.
+ (2009).
+ Solving differential equations with constructed neural networks.
+ Neurocomputing,
+ 72(10-12),
+ 2385-2391.
 \end_layout
 
 \begin_layout Bibliography
@@ -7575,18 +8636,20 @@ literal "false"
 
 \end_inset
 
-I.G.
- Tsoulos,
- G.
+Tsoulos,
+ I.
+ G.,
  Mitsi,
- A.
+ G.,
  Stavrakoudis,
+ A.,
+ & Papapetropoulos,
  S.
- Papapetropoulos,
- Application of Machine Learning in a Parkinson's Disease Digital Biomarker Dataset Using Neural Network Construction (NNC) Methodology Discriminates Patient Motor Status,
- Frontiers in ICT 6,
- 10,
- 2019.
+ (2019).
+ Application of machine learning in a Parkinson's disease digital biomarker dataset using neural network construction (NNC) methodology discriminates patient motor status.
+ Frontiers in ICT,
+ 6,
+ 10.
 \end_layout
 
 \begin_layout Bibliography
@@ -7597,32 +8660,28 @@ literal "false"
 
 \end_inset
 
-V.
- Christou,
- I.G.
+Christou,
+ V.,
  Tsoulos,
- V.
+ I.,
  Loupas,
- A.T.
+ V.,
  Tzallas,
- C.
+ A.
+ T.,
  Gogos,
- P.S.
+ C.,
  Karvelis,
+ P.
+ S.,
+ ...
+ & Giannakeas,
  N.
- Antoniadis,
- E.
- Glavas,
- N.
- Giannakeas,
- Performance and early drop prediction for higher education students using machine learning,
- Expert Systems with Applications 
-\series bold
-225
-\series default
-,
- 120079,
- 2023.
+ (2023).
+ Performance and early drop prediction for higher education students using machine learning.
+ Expert Systems with Applications,
+ 225,
+ 120079.
 \end_layout
 
 \begin_layout Bibliography
@@ -7633,24 +8692,23 @@ literal "false"
 
 \end_inset
 
-E.I.
- Toki,
- J.
+Toki,
+ E.
+ I.,
  Pange,
- G.
+ J.,
  Tatsis,
- K.
+ G.,
  Plachouras,
- I.G.
- Tsoulos,
- Utilizing Constructed Neural Networks for Autism Screening,
- Applied Sciences 
-\series bold
-14
-\series default
-,
- 3053,
- 2024.
+ K.,
+ & Tsoulos,
+ I.
+ G.
+ (2024).
+ Utilizing Constructed Neural Networks for Autism Screening.
+ Applied Sciences,
+ 14(7),
+ 3053.
 \end_layout
 
 \begin_layout Bibliography
@@ -7662,19 +8720,18 @@ literal "false"
 
 \end_inset
 
-Dimitris Gavrilis,
- Ioannis G.
+Gavrilis,
+ D.,
  Tsoulos,
- Evangelos Dermatas,
- Selecting and constructing features using grammatical evolution,
- Pattern Recognition Letters 
-\series bold
-29
-\series default
-,pp.
- 1358-1365,
- 2008.
- 
+ I.
+ G.,
+ & Dermatas,
+ E.
+ (2008).
+ Selecting and constructing features using grammatical evolution.
+ Pattern Recognition Letters,
+ 29(9),
+ 1358-1365.
 \end_layout
 
 \begin_layout Bibliography
@@ -7686,22 +8743,25 @@ literal "false"
 
 \end_inset
 
-George Georgoulas,
- Dimitris Gavrilis,
- Ioannis G.
+Georgoulas,
+ G.,
+ Gavrilis,
+ D.,
  Tsoulos,
- Chrysostomos Stylios,
- João Bernardes,
- Peter P.
- Groumpos,
- Novel approach for fetal heart rate classification introducing grammatical evolution,
- Biomedical Signal Processing and Control 
-\series bold
-2
-\series default
-,pp.
- 69-79,
- 2007 
+ I.
+ G.,
+ Stylios,
+ C.,
+ Bernardes,
+ J.,
+ & Groumpos,
+ P.
+ P.
+ (2007).
+ Novel approach for fetal heart rate classification introducing grammatical evolution.
+ Biomedical Signal Processing and Control,
+ 2(2),
+ 69-79.
 \end_layout
 
 \begin_layout Bibliography
@@ -7713,20 +8773,20 @@ literal "true"
 
 \end_inset
 
-Otis Smart,
- Ioannis G.
+Smart,
+ O.,
  Tsoulos,
- Dimitris Gavrilis,
- George Georgoulas,
- Grammatical evolution for features of epileptic oscillations in clinical intracranial electroencephalograms,
- Expert Systems with Applications 
-\series bold
-38
-\series default
-,
- pp.
- 9991-9999,
- 2011 
+ I.
+ G.,
+ Gavrilis,
+ D.,
+ & Georgoulas,
+ G.
+ (2011).
+ Grammatical evolution for features of epileptic oscillations in clinical intracranial electroencephalograms.
+ Expert systems with applications,
+ 38(8),
+ 9991-9999.
 \end_layout
 
 \begin_layout Bibliography
@@ -7738,25 +8798,26 @@ literal "false"
 
 \end_inset
 
-A.
- T.
- Tzallas,
- I.
+Tzallas,
+ A.
+ T.,
  Tsoulos,
- M.
- G.
+ I.,
  Tsipouras,
- N.
+ M.
+ G.,
  Giannakeas,
- I.
- Androulidakis and E.
- Zaitseva,
- Classification of EEG signals using feature creation produced by grammatical evolution,
- In:
- 24th Telecommunications Forum (TELFOR),
- pp.
- 1-4,
- 2016.
+ N.,
+ Androulidakis,
+ I.,
+ & Zaitseva,
+ E.
+ (2016,
+ November).
+ Classification of EEG signals using feature creation produced by grammatical evolution.
+ In 2016 24th Telecommunications Forum (TELFOR) (pp.
+ 1-4).
+ IEEE.
 \end_layout
 
 \begin_layout Bibliography
@@ -7767,15 +8828,16 @@ literal "false"
 
 \end_inset
 
-J.
- Park and I.
+Park,
+ J.,
+ & Sandberg,
+ I.
  W.
- Sandberg,
- Universal Approximation Using Radial-Basis-Function Networks,
- Neural Computation 3,
- pp.
- 246-257,
- 1991.
+ (1991).
+ Universal approximation using radial-basis-function networks.
+ Neural computation,
+ 3(2),
+ 246-257.
 \end_layout
 
 \begin_layout Bibliography
@@ -7786,24 +8848,20 @@ literal "false"
 
 \end_inset
 
-H.
- Yu,
- T.
+Yu,
+ H.,
  Xie,
- S.
+ T.,
  Paszczynski,
+ S.,
+ & Wilamowski,
  B.
  M.
- Wilamowski,
- Advantages of Radial Basis Function Networks for Dynamic System Design,
- in IEEE Transactions on Industrial Electronics 
-\series bold
-58
-\series default
-,
- pp.
- 5438-5450,
- 2011.
+ (2011).
+ Advantages of radial basis function networks for dynamic system design.
+ IEEE Transactions on Industrial Electronics,
+ 58(12),
+ 5438-5450.
 \end_layout
 
 \begin_layout Bibliography
@@ -7816,22 +8874,44 @@ literal "false"
 \end_inset
 
 Tsoulos,
- I.G.;
+ I.
+ G.,
  Charilogis,
- V.;
+ V.,
  Kyrou,
- G.;
+ G.,
  Stavrou,
- V.N.;
- Tzallas,
+ V.
+ N.,
+ & Tzallas,
  A.
+ (2025).
  OPTIMUS:
  A Multidimensional Global Optimization Package.
- J.
- Open Source Softw.
- 2025,
- 10,
+ Journal of Open Source Software,
+ 10(108),
  7584.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2022)"
+key "qfc"
+literal "false"
+
+\end_inset
+
+Tsoulos,
+ I.
+ G.
+ (2022).
+ QFC:
+ A Parallel Software Tool for Feature Construction,
+ Based on Grammatical Evolution.
+ Algorithms,
+ 15(8),
+ 295.
 \end_layout
 
 \begin_layout Bibliography
@@ -7855,6 +8935,7 @@ Chang,
  ACM transactions on intelligent systems and technology (TIST),
  2(3),
  1-27.
+ 
 \end_layout
 
 \begin_layout Standard
