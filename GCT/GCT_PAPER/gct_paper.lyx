@@ -377,8 +377,17 @@ Over the course of centuries,
  specifically examining seismic activity from 1990 - 2015 within the latitude range of 33–44° and longitude range of 17–44°.
  These geographical coordinates encompass 28 seismic zones,
  with the most active areas being Turkey and Greece.
- In this paper we achieved the construction of artificial features for the more effective discrimination of seismic events,
- utilizing the capabilities offered by Grammatical Evolution.
+ In this paper we applied Grammatical Evolution for artificial feature construction in earthquake prediction,
+ evaluated against machine learning approaches including MLP(GEN),
+ MLP(PSO),
+ SVM,
+ and NNC.
+ Experiments showed that Feature Construction (FC) achieved the best performance,
+ with a mean error of 9.05% and overall accuracy of 91%,
+ outperforming SVM.
+ Further analysis revealed that a single constructed feature (Nf = 1) yielded the lowest average error (8.21%),
+ while varying the number of generations indicated that Ng = 200 provided an effective balance between computational cost and predictive accuracy.
+ These findings confirm the efficiency of FC in enhancing earthquake prediction models through artificial feature construction.
  Our results,
  as will be discussed in greater detail within the research,
  yield an average error of approximately 9%,
@@ -926,8 +935,14 @@ literal "false"
 
 \end_inset
 
- for earthquake prediction.
- The method of Grammatical Evolution can be considered as a genetic algorithm 
+ for earthquake prediction,
+ marking the first application of this evolutionary technique in the field of seismology.
+ While the method does not directly address a specific gap in the literature,
+ the experiments demonstrated that feature construction achieved an overall accuracy of 91%,
+ thereby contributing to the advancement of earthquake prediction research.
+ We consider this contribution significant in enhancing the understanding of seismic phenomena and in highlighting the potential of Grammatical Evolution as a promising tool for feature engineering in geophysical datasets.
+ In particular,
+ the method of Grammatical Evolution can be considered as a genetic algorithm 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gaOverview"
@@ -1789,7 +1804,7 @@ placement document
 alignment center
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2227,6 +2242,19 @@ At the following stage of data processing,
  utilizing approximately 10,000 seismic events in order to generate artificial features through Grammatical Evolution.
 \end_layout
 
+\begin_layout Standard
+In summary,
+ the seismic data employed in this study were recorded on the magnitude scale,
+ covering events from 1 to 10.
+ Initially,
+ we excluded small earthquakes,
+ which predominated in number and affected the balance of the dataset.
+ The data source was the EarthScope Consortium,
+ which operates the NSF Geodetic Facility for the Advancement of Geoscience (GAGE) and the NSF Seismological Facility for the Advancement of Geoscience (SAGE).
+ These records were obtained from thousands of stations worldwide,
+ constituting the primary NSF SAGE archive.
+\end_layout
+
 \begin_layout Subsection
 Global optimization methods for neural network training
 \begin_inset CommandInset label
@@ -2264,10 +2292,10 @@ literal "false"
 
 .
  Also,
- Algorithm 
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:stepsGA"
+reference "fig:GASteps"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2279,839 +2307,36 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float algorithm
+\begin_inset Float figure
 placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename algorithm1.eps
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The main steps of a Genetic Algorithm.
+The main steps of the Genetic algorithm.
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:stepsGA"
+name "fig:GASteps"
 
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\series bold
-\size scriptsize
-INPUT
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $f$
-\end_inset
-
-:
- objective function
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $N_{c}$
-\end_inset
-
-:
- number of chromosomes
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $N_{g}$
-\end_inset
-
-:
- maximum number of allowed generations
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $p_{s}$
-\end_inset
-
-:
- the selection rate of the algorithm,
- with 
-\begin_inset Formula $p_{s}\leq1$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $p_{m}$
-\end_inset
-
-:
- the mutation rate of the algorithm,
- with 
-\begin_inset Formula $p_{m}\leq1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $k$
-\end_inset
-
-:
- the generation counter
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $a$
-\end_inset
-
-:
- uniformly distributed random numbers,
- in 
-\begin_inset Formula $∈[-0.5,1.5]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
-OUTPUT
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
--
-\begin_inset Formula $x_{best}$
-\end_inset
-
-,
- 
-\begin_inset Formula $f_{best}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
-INITIALIZATION
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $k←0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
-main pseudocode
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-01
-\series bold
- while
-\series default
- 
-\begin_inset Formula $k<N_{g}$
-\end_inset
-
- 
-\series bold
-do // 
-\series default
-termination check
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-02 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-for
-\series default
- each 
-\begin_inset Formula $g_{i},$
-\end_inset
-
- 
-\begin_inset Formula $i∈$
-\end_inset
-
- {1..
-\begin_inset Formula $N_{c}$
-\end_inset
-
-} 
-\series bold
-do
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-03 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $f_{i}←f(g_{i})$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-04 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-endfor
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-05
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-Sort chromosomes by increasing fitness:
- 
-\begin_inset Formula $N_{b}\leftarrow(1-p_{s})xN_{c}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-06 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-Select parents 
-\begin_inset Formula $w,z$
-\end_inset
-
- randomly among the best 
-\begin_inset Formula $N_{b}$
-\end_inset
-
- chromosomes
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-07 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-Draw 
-\begin_inset Formula $a_{i}$
-\end_inset
-
-
-\begin_inset Formula $∈$
-\end_inset
-
- 
-\begin_inset Formula $U[-0.5,1.5]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-08 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $z_{i}\leftarrow a_{i}z_{i}+(1-a_{i})w_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-09 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $w_{i}\leftarrow a_{i}w_{i}+(1-a_{i})z_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-10 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-for
-\series default
- each 
-\begin_inset Formula $g_{i},$
-\end_inset
-
- 
-\begin_inset Formula $i∈$
-\end_inset
-
- {
-\begin_inset Formula $N_{b}+1$
-\end_inset
-
-..
-\begin_inset Formula $N_{c}$
-\end_inset
-
-} 
-\series bold
-do
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-11 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- Replace
-\begin_inset Formula $g_{i}$
-\end_inset
-
-with 
-\begin_inset Formula $z_{i}$
-\end_inset
-
- or 
-\begin_inset Formula $w_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-12 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-endfor
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-13 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-for
-\series default
- each 
-\begin_inset Formula $g_{i}$
-\end_inset
-
-,
- 
-\begin_inset Formula $i∈$
-\end_inset
-
- {
-\begin_inset Formula $1..N_{c}$
-\end_inset
-
-} 
-\series bold
-do
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-14 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-for
-\series default
- each gene,
- 
-\begin_inset Formula $j∈$
-\end_inset
-
- {
-\begin_inset Formula $1....n$
-\end_inset
-
- } 
-\series bold
-do
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-15
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- Draw 
-\begin_inset Formula $rU[0,1]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-16
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- 
-\series bold
-if
-\series default
- 
-\begin_inset Formula $r\leq p_{m}$
-\end_inset
-
-then
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-17 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- Mutate gene 
-\begin_inset Formula $j$
-\end_inset
-
- of 
-\begin_inset Formula $g_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-18
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- 
-\series bold
-endif
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-19
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-endfor
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-20 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-end for
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-21 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-for
-\series default
- each 
-\begin_inset Formula $g_{i},$
-\end_inset
-
- 
-\begin_inset Formula $i∈$
-\end_inset
-
- {1..
-\begin_inset Formula $N_{c}$
-\end_inset
-
-} 
-\series bold
-do
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-22 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $f_{i}←f(g_{i})$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-23 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-Draw 
-\begin_inset Formula $ri\in U[0,1]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-24
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-if
-\series default
- (
-\begin_inset Formula $f_{i}$
-\end_inset
-
- < 
-\begin_inset Formula $f_{best})$
-\end_inset
-
- 
-\series bold
-then
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-25
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
- 
-\begin_inset Formula $xbest←gi,$
-\end_inset
-
- 
-\begin_inset Formula $fbest←fi$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-26 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-endif
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-27
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-endfor
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-28 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $k←k+1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-29 
-\series bold
-endwhile
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-30 
-\series bold
-return
-\series default
- 
-\begin_inset Formula $x_{best}$
-\end_inset
-
-,
- 
-\begin_inset Formula $f_{best}$
 \end_inset
 
 
@@ -3141,10 +2366,10 @@ literal "false"
 \end_inset
 
 .
- The main steps of the PSO method are outlined in Algorithm 
+ The main steps of the PSO method are outlined in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "alg:psoSTEPS"
+reference "fig:psoSteps"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3153,17 +2378,19 @@ nolink "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float algorithm
+\begin_inset Float figure
 placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename algorithm2.eps
+
+\end_inset
+
 
 \end_layout
 
@@ -3174,7 +2401,7 @@ status open
 The main steps of the PSO algorithm.
 \begin_inset CommandInset label
 LatexCommand label
-name "alg:psoSTEPS"
+name "fig:psoSteps"
 
 \end_inset
 
@@ -3184,519 +2411,6 @@ name "alg:psoSTEPS"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
-INPUT
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $f$
-\end_inset
-
-:
- objective function
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $m$
-\end_inset
-
-:
- number of particles with 
-\begin_inset Formula $x_{i}∈S$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $u_{i}$
-\end_inset
-
-:
- number of velocities with 
-\begin_inset Formula $u_{i}∈S$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-- 
-\begin_inset Formula $x_{i}$
-\end_inset
-
-:
- number of positions in 
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $w$
-\end_inset
-
-:
- inertia
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $c1,$
-\end_inset
-
-
-\begin_inset Formula $c2$
-\end_inset
-
-:
- constant numbers
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $r1,$
-\end_inset
-
-
-\begin_inset Formula $r2$
-\end_inset
-
-:
- random numbers
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $iter$
-\end_inset
-
-:
- iteration counter
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $iter_{max}$
-\end_inset
-
-:
- max iterations
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\begin_inset Formula $p_{i}$
-\end_inset
-
-:
- vectors are best located values for every particle i
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
-OUTPUT
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
--
-\begin_inset Formula $p_{best}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
-INITIALIZATION
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\series bold
-Set 
-\begin_inset Formula $iter←0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\series bold
-Set
-\series default
- positions 
-\begin_inset Formula $x_{i}∈S,i=1.....m$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-- 
-\series bold
-Set
-\series default
- velocities 
-\begin_inset Formula $u_{i},i=1.....m$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
--For
-\series default
- each particle 
-\begin_inset Formula $i∈$
-\end_inset
-
- {1..
-\begin_inset Formula $m$
-\end_inset
-
-} 
-\series bold
-do
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-\size scriptsize
--
-\begin_inset Formula $p_{i}←x_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-
-\series bold
-\size scriptsize
--End for
-\end_layout
-
-\begin_layout Plain Layout
--
-\size scriptsize
-
-\begin_inset Formula $p_{best}←argmin_{i}$
-\end_inset
-
-
-\begin_inset Formula $f(x_{i})$
-\end_inset
-
-// global best
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-01
-\series bold
- while
-\series default
- 
-\begin_inset Formula $generation<Gmax$
-\end_inset
-
- 
-\series bold
-do// 
-\series default
-termination check
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-02 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-For
-\series default
- each 
-\begin_inset Formula $i∈$
-\end_inset
-
- {1..
-\begin_inset Formula $m$
-\end_inset
-
-} 
-\series bold
-do
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-03
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-draw 
-\begin_inset Formula $r1,r2$
-\end_inset
-
- 
-\begin_inset Formula $\backsim$
-\end_inset
-
-
-\begin_inset Formula $U(0,1)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-04
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $u_{i}←wu$
-\end_inset
-
-+
-\begin_inset Formula $c1r1(p_{i}-x_{i})$
-\end_inset
-
-+
-\begin_inset Formula $c2r2(p_{best}-x_{i})$
-\end_inset
-
-// update velocity
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-05
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $x_{i}←x_{i}+u_{i}$
-\end_inset
-
-// update position
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-06
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-if
-\series default
- 
-\begin_inset Formula $f(x_{i})<f(p_{i}$
-\end_inset
-
-
-\series bold
-)then
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-07 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Formula $p_{i}←x_{i}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-08
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-End if
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-09
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
-End for
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-
-\size scriptsize
-10
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
- 
-\series default
-
-\begin_inset Formula $p_{best}←argmin_{i}$
-\end_inset
-
-
-\begin_inset Formula $f(x_{i})$
-\end_inset
-
-// Update global best
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-11
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\series bold
- 
-\begin_inset Formula $iter←iter+1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-12
-\series bold
- End while
-\series default
- 
 \end_layout
 
 \end_inset
@@ -3868,6 +2582,15 @@ In this equation the value
 \end_inset
 
  represents the number of used computation units (weights) for the neural network.
+ The vector 
+\begin_inset Formula $w$
+\end_inset
+
+ denotes the vector containing the parameters of the neural network and vector 
+\begin_inset Formula $x$
+\end_inset
+
+ represents the input vector (pattern).
  The function 
 \begin_inset Formula $\sigma(x)$
 \end_inset
@@ -4544,6 +3267,8 @@ nolink "false"
 \end_inset
 
 .
+ The parameters in this table have been chosen to provide a compromise between speed and efficiency of the proposed procedure and were applied to all methods used in the experiments,
+ so that there is fairness in the comparison of experimental results.
 \end_layout
 
 \begin_layout Standard
@@ -4552,7 +3277,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5550,7 +4275,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6759,6 +5484,22 @@ This study investigates the use of Grammatical Evolution for constructing artifi
  200 provides also an effective balance between computational cost and predictive performance.
  This study was conducted as a direct response to the challenge identified in our previous research,
  thereby extending and refining the scope of the earlier findings.
+\end_layout
+
+\begin_layout Standard
+Specifically,
+ the study demonstrates the potential of Grammatical Evolution as a novel feature engineering tool in seismology,
+ offering a new perspective on how artificial features can enhance earthquake prediction models.
+ At the same time,
+ certain limitations must be acknowledged,
+ such as the imbalance in the dataset and the restriction to a specific geographical region,
+ which may affect generalizability.
+ Future research should therefore explore the application of this approach to diverse seismic catalogs,
+ investigate its integration with machines learning architectures.
+ By articulating these implications,
+ limitations,
+ and directions,
+ the contribution of the study becomes clearer and more impactful.
 \end_layout
 
 \begin_layout Standard
