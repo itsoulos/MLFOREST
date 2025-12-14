@@ -554,7 +554,16 @@ nolink "false"
 
 ,
  illustrating Earthquake Early Warning Systems worldwide,
- with colors indicating the operational status of each system.
+ with colors indicating the operational status of each system,
+ provided in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zollo"
+literal "false"
+
+\end_inset
+
+.
  Purple denotes operative systems that provide warnings to the public,
  black represents systems currently undergoing real-time testing,
  and gray is used for countries where feasibility studies are still in progress.
@@ -570,6 +579,17 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename table1.png
+	scale 140
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -582,35 +602,6 @@ name "fig:mapQuakes"
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $ $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename table1.png
-	scale 140
 
 \end_inset
 
@@ -1167,6 +1158,168 @@ literal "false"
  it seeks to highlight the hidden nonlinear correlations that may exist between the existing features of the objective problem.
  In this way,
  a significant improvement in the classification of seismic data will be achieved.
+\end_layout
+
+\begin_layout Standard
+Beyond the Grammatical Evolution approach proposed in this study,
+ which achieved an accuracy of 91%,
+ we will also provide a concise comparison with results from related research that has employed alternative machine learning techniques in the field of seismology.
+ In the study by Adeli et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Adeli 2009"
+literal "false"
+
+\end_inset
+
+ the PNN model demonstrated satisfactory predictive accuracy for earthquakes with magnitudes between 4.5 and 6.0,
+ but its performance declined considerably for events exceeding magnitude 6.0.
+
+\series bold
+ 
+\series default
+Zhou et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zhou 2012"
+literal "false"
+
+\end_inset
+
+ reported that the application of the Log-Sigmoid Frequency Cepstral Coefficients method achieved an average classification accuracy exceeding 89%.
+ Narayanakumar et al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Narayanakumar 2016"
+literal "false"
+
+\end_inset
+
+ investigated the prediction of moderate earthquakes (magnitude 3.0–5.8).
+ While the seismometer recorded an event of magnitude 4.0,
+ the BP-ANN model predicted magnitudes in the range of 3.0–5.0,
+ achieving a success rate between 75% and 125%.
+ According to Asim et al.,
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Asim 2018"
+literal "false"
+
+\end_inset
+
+ the SVR-HNN prediction model achieved its highest performance in Southern California,
+ with MCC,
+ R score,
+ and accuracy values of 0.722,
+ 0.623,
+ and 90.6%,
+ respectively.
+ The Chilean region ranked second,
+ yielding an MCC of 0.613,
+ an R score of 0.603,
+ and an accuracy of 84.9%.
+ In contrast,
+ the Hindukush region exhibited the lowest performance,
+ with MCC,
+ R score,
+ and accuracy values of 0.600,
+ 0.580,
+ and 82.7%,
+ respectively.
+ Chamberlain et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chamberlain 2018"
+literal "false"
+
+\end_inset
+
+ reported that template-based detections produced 7,340 events,
+ of which 3,577 were identified as duplicates,
+ whereas the STA/LTA method yielded 682 detections over the same time interval.
+ Lin et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lin 2018"
+literal "false"
+
+\end_inset
+
+ reported that the average magnitude error in Taiwan was 
+\begin_inset Formula $\Delta ML=\pm0.3$
+\end_inset
+
+,
+ while the training errors of the EEMPBPNN model (<0.25) remained below this average error threshold.
+ Zhang et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zhang 2019"
+literal "false"
+
+\end_inset
+
+ demonstrated that the proposed method achieved prediction accuracies of 93.26% and 92.07% across the two datasets examined.
+ Rojas et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rojas 2019"
+literal "false"
+
+\end_inset
+
+ reported recognition performance of approximately 99.2% for P-wave signals and 98.4% for pure noise.
+ Ali et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ali 2020"
+literal "false"
+
+\end_inset
+
+ conducted a statistical analysis using a 95% confidence interval for the normalized CWT coefficients of P-wave velocity,
+ seismic trace,
+ acoustic impedance,
+ and synthetic seismic trace.
+ Wang et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wang 2023"
+literal "false"
+
+\end_inset
+
+ found that,
+ in the model generalization evaluation,
+ the two-class models trained on the 36-dimensional network-averaged dataset achieved test accuracies and F1-scores exceeding 90%.
+ Ozkaya et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ozkaya 2024"
+literal "false"
+
+\end_inset
+
+ reported that their model achieved an accuracy of 99.58% in earthquake detection and 93.13% in three-class wave classification.
+ While comparable studies have demonstrated strong performance,
+ many of them are limited to specific regions of interest or focus on particular signal types such as acoustic wave detection.
+
+\series bold
+ 
+\series default
+In contrast,
+ the Grammatical Evolution approach presented here not only achieves competitive accuracy (91%) but also demonstrates broader applicability across diverse seismic datasets,
+ thereby highlighting its potential as a more generalizable solution in earthquake event discrimination.
 \end_layout
 
 \begin_layout Standard
@@ -2131,6 +2284,18 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename table2.png
+	lyxscale 50
+	scale 140
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2143,36 +2308,6 @@ name "fig:The-study-area."
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $ $
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename table2.png
-	lyxscale 50
-	scale 140
 
 \end_inset
 
@@ -2210,6 +2345,32 @@ nolink "false"
  Specifically,
  we selected this time period because it encompasses a wide range of earthquake magnitudes,
  which provides a diverse dataset conducive to algorithm training and supports the construction of artificial features via Grammatical Evolution.
+ 
+\end_layout
+
+\begin_layout Standard
+In the years under examination,
+ earthquakes are distributed across all magnitude classes,
+ exhibiting an almost ideal proportion consistent with the Gutenberg–Richter law 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gutenberg"
+literal "false"
+
+\end_inset
+
+.
+ For instance,
+ within the first two five-year periods of our dataset,
+ 2 events above magnitude 8.0,
+ 3 events above magnitude 7.0,
+ 19 events above magnitude 6.0,
+ 165 events between 5.0–5.9,
+ 3,048 events between 4.0–4.9,
+ and 26,301 events between 3.0–3.9 were recorded,
+ thereby confirming the expected logarithmic relationship between frequency and magnitude.
+ Such a balanced and representative dataset further enhances the effectiveness of the Grammatical Evolution approach,
+ as it provides a comprehensive distribution of seismic events across the full spectrum of magnitudes.
  Moreover,
  our analysis led us to the conclusion that the datasets from 1970–1989 and 2016–2025 lack the diversity observed in the dataset we selected.
  Specifically,
@@ -3243,6 +3404,61 @@ literal "false"
 \end_inset
 
 .
+ Beyond neural network training,
+ Genetic Algorithms have demonstrated strong performance in physics,
+ biotechnology,
+ and medical physics.
+ In bioinformatics and biotechnology,
+ they are commonly applied to the analysis of biological data,
+ gene selection,
+ and the optimization of complex biological systems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genapp1"
+literal "false"
+
+\end_inset
+
+.
+ In medical physics and biomedical engineering,
+ GAs have been successfully used for medical image segmentation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genapp2"
+literal "false"
+
+\end_inset
+
+,
+ diagnostic modeling,
+ and the optimization of treatment parameters 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genapp3"
+literal "false"
+
+\end_inset
+
+.
+ They have also been applied to multi-objective problems related to energy efficiency,
+ economic viability,
+ environmental life-cycle assessment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genapp4"
+literal "false"
+
+\end_inset
+
+ and parameter identification in complex multi-physics energy systems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genapp5"
+literal "false"
+
+\end_inset
+
+.
  Also,
  Figure 
 \begin_inset CommandInset ref
@@ -3318,7 +3534,66 @@ literal "false"
 \end_inset
 
 .
- The main steps of the PSO method are outlined in Figure 
+ Beyond neural network training,
+ Particle Swarm Optimization has been applied across a broad spectrum of scientific and technological domains.
+ In particular,
+ it has found significant use in economic and resource optimization
+\begin_inset CommandInset citation
+LatexCommand citep
+key "psoapp1"
+literal "false"
+
+\end_inset
+
+,
+ as well as in healthcare management and medical physics,
+ where it supports efficient medical service allocation and the management of stochastic patient queue systems
+\begin_inset CommandInset citation
+LatexCommand citep
+key "psoapp2"
+literal "false"
+
+\end_inset
+
+.
+ At the same time,
+ PSO has been increasingly adopted in physics and chemical engineering for the optimization of catalytic processes and energy systems,
+ often in combination with deep learning approaches to extract meaningful physical and chemical insights
+\begin_inset CommandInset citation
+LatexCommand citep
+key "psoapp3"
+literal "false"
+
+\end_inset
+
+.
+ In more dynamic and decentralized settings,
+ PSO has proven especially effective in robotics,
+ where it is used to coordinate swarms of autonomous robots during search-and-rescue missions operating under uncertain and rapidly changing conditions
+\begin_inset CommandInset citation
+LatexCommand citep
+key "psoapp4"
+literal "false"
+
+\end_inset
+
+.
+ Finally,
+ its flexibility has also led to successful applications in bioinformatics and computational biology,
+ where advanced multi-objective PSO variants are employed for community detection and the identification of disease-related functional modules within complex biological networks
+\begin_inset CommandInset citation
+LatexCommand citep
+key "psoapp5"
+literal "false"
+
+\end_inset
+
+.
+
+\series bold
+ 
+\series default
+The main steps of the PSO method are outlined in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:psoSteps"
@@ -3443,6 +3718,63 @@ literal "false"
  As with other comparative analyses of models,
  SVMs require greater computational resources during training and exhibit reduced susceptibility to overfitting,
  whereas neural networks are generally regarded as more adaptable and capable of scaling effectively.
+ Beyond these applications,
+ SVMs have also been widely adopted in several applied scientific and engineering fields.
+ In bioinformatics,
+ SVMs are commonly employed to analyze and interpret complex biological data,
+ where their ability to handle high-dimensional feature spaces is particularly valuable
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svmapp1"
+literal "false"
+
+\end_inset
+
+.
+ In medical imaging and clinical applications,
+ they have been used effectively for disease classification and staging,
+ such as the prediction of lung cancer stages from medical imaging data
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svmapp2"
+literal "false"
+
+\end_inset
+
+.
+ In addition,
+ SVM-based models are increasingly integrated into healthcare monitoring systems,
+ including Internet of Medical Things (IoMT) frameworks,
+ where reliability and robustness are critical requirements
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svmapp3"
+literal "false"
+
+\end_inset
+
+.
+ Moreover,
+ SVMs have been applied in applied physics and engineering,
+ including the prediction of electronic properties in advanced material structures and nanocomposites
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svmapp4"
+literal "false"
+
+\end_inset
+
+.
+ Their robustness has also made them suitable for safety-critical applications,
+ such as fault detection and diagnosis in nuclear power plant systems
+\begin_inset CommandInset citation
+LatexCommand citep
+key "svmapp5"
+literal "false"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -4260,7 +4592,7 @@ literal "false"
  for the feature construction procedure the freely available programming tool QFc,
  that can be downloaded from 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4300,6 +4632,11 @@ nolink "false"
 .
  The parameters in this table have been chosen to provide a compromise between speed and efficiency of the proposed procedure and were applied to all methods used in the experiments,
  so that there is fairness in the comparison of experimental results.
+ The proposed method of feature construction was applied to each individual fold and averages of the classification errors in the control sets were obtained.
+ In addition,
+ the RBF machine learning model was used to construct the new features,
+ due to the significantly shorter learning time required for it compared to other models,
+ such as artificial neural networks.
 \end_layout
 
 \begin_layout Standard
@@ -4541,7 +4878,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4910,7 +5247,7 @@ GCT2010
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4921,7 +5258,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4932,7 +5269,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4943,7 +5280,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4954,7 +5291,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4965,7 +5302,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5129,10 +5466,6 @@ alignment document
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5629,7 +5962,7 @@ GCT2010
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5806,6 +6139,21 @@ In particular,
  evidence against the already very competitive SVM baseline.
 \end_layout
 
+\begin_layout Standard
+Moreover,
+ the proposed method can identify the hidden relationships between the features of the objective dataset.
+ As an example of constructed features consider the following two features created for a distinct run on the GCT2010 dataset:
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{1}(x) & = & \sin\left((28.841/9.28)*x_{10}+(-78.60)*x_{3}+16.12*x_{7}+6.3*x_{11}\right)\\
+f_{2}(x) & = & \cos\left(458.6*x_{2}+(-18.809)*x_{4}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Experiments with the number of features
 \end_layout
@@ -5830,7 +6178,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6427,7 +6775,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -7449,6 +7797,32 @@ https://www.shakealert.org/
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "zollo"
+literal "false"
+
+\end_inset
+
+Zollo,
+ A.,
+ Festa,
+ G.,
+ Emolo,
+ A.,
+ & Colombelli,
+ S.
+ (2015).
+ Source characterization for earthquake early warning.
+ In Encyclopedia of Earthquake Engineering (pp.
+ 3327-3346).
+ Springer,
+ Berlin,
+ Heidelberg.
 \end_layout
 
 \begin_layout Bibliography
@@ -8688,6 +9062,27 @@ Wang,
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "(2012)"
+key "gutenberg"
+literal "false"
+
+\end_inset
+
+Gutenberg,
+ B.,
+ & Richter,
+ C.
+ F.
+ (1955).
+ Magnitude and energy of earthquakes.
+ Nature,
+ 176(4486),
+ 795-795.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "(2022)"
 key "zhu_rapid"
 literal "false"
@@ -8861,6 +9256,134 @@ Chiroma,
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "(2012)"
+key "genapp1"
+literal "false"
+
+\end_inset
+
+Manning,
+ T.,
+ Sleator,
+ R.
+ D.,
+ & Walsh,
+ P.
+ (2013).
+ Naturally selecting solutions:
+ the use of genetic algorithms in bioinformatics.
+ Bioengineered,
+ 4(5),
+ 266-278.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "genapp2"
+literal "false"
+
+\end_inset
+
+Maulik,
+ U.
+ (2009).
+ Medical image segmentation using genetic algorithms.
+ IEEE Transactions on information technology in biomedicine,
+ 13(2),
+ 166-173.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "genapp3"
+literal "false"
+
+\end_inset
+
+Ghaheri,
+ A.,
+ Shoar,
+ S.,
+ Naderan,
+ M.,
+ & Hoseini,
+ S.
+ S.
+ (2015).
+ The applications of genetic algorithms in medicine.
+ Oman medical journal,
+ 30(6),
+ 406.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "genapp4"
+literal "false"
+
+\end_inset
+
+Mousavi-Avval,
+ S.
+ H.,
+ Rafiee,
+ S.,
+ Sharifi,
+ M.,
+ Hosseinpour,
+ S.,
+ Notarnicola,
+ B.,
+ Tassielli,
+ G.,
+ & Renzulli,
+ P.
+ A.
+ (2017).
+ Application of multi-objective genetic algorithms for optimization of energy,
+ economics and environmental life cycle assessment in oilseed production.
+ Journal of Cleaner Production,
+ 140,
+ 804-815.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "genapp5"
+literal "false"
+
+\end_inset
+
+Zhang,
+ W.,
+ Xie,
+ Y.,
+ He,
+ H.,
+ Long,
+ Z.,
+ Zhuang,
+ L.,
+ & Zhou,
+ J.
+ (2025).
+ Multi-physics coupling model parameter identification of lithium-ion battery based on data driven method and genetic algorithm.
+ Energy,
+ 314,
+ 134120.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "(2018)"
 key "gen2"
 literal "false"
@@ -8976,6 +9499,142 @@ Garro,
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "(2012)"
+key "psoapp1"
+literal "false"
+
+\end_inset
+
+Li,
+ S.
+ (2025).
+ Economic optimization of business administration resources:
+ Multi-objective scheduling method based on improved PSO.
+ Journal of Computational Methods in Sciences and Engineering,
+ 14727978251337955.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "psoapp2"
+literal "false"
+
+\end_inset
+
+Wang,
+ C.
+ H.,
+ Tian,
+ R.,
+ Hu,
+ K.,
+ Chen,
+ Y.
+ T.,
+ & Ku,
+ T.
+ H.
+ (2025).
+ A Markov decision optimization of medical service resources for two-class patient queues in emergency departments via particle swarm optimization algorithm.
+ Scientific Reports,
+ 15(1),
+ 2942.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "psoapp3"
+literal "false"
+
+\end_inset
+
+Bao,
+ R.,
+ Wang,
+ Z.,
+ Guo,
+ Q.,
+ Wu,
+ X.,
+ & Yang,
+ Q.
+ (2025).
+ Bio-Digital Catalyst Design:
+ Generative Deep Learning for Multi-Objective Optimization and Chemical Insights in CO2 Methanation.
+ ACS Catalysis,
+ 15(15),
+ 12691-12714.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "psoapp4"
+literal "false"
+
+\end_inset
+
+Kumar,
+ T.
+ R.,
+ Nandhini,
+ T.
+ J.,
+ Jumaniyazova,
+ I.,
+ Abdulla,
+ H.,
+ Jumaniyozov,
+ Y.,
+ & Bhatt,
+ V.
+ (2025,
+ May).
+ Swarm Robotics for Search and Rescue Operations in Disaster Zones Using Particle Swarm Optimization (PSO) Algorithms.
+ In 2025 International Conference on Networks and Cryptology (NETCRYPT) (pp.
+ 870-875).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "psoapp5"
+literal "false"
+
+\end_inset
+
+Zhu,
+ X.,
+ Bi,
+ M.,
+ Shang,
+ J.,
+ Sun,
+ Y.,
+ Li,
+ F.,
+ Zhang,
+ Y.,
+ ...
+ & Liu,
+ J.
+ X.
+ (2025).
+ MPSO-CD:
+ a Multi-objective Particle Swarm Optimization Community Detection Method for Identifying Disease Modules.
+ IEEE Transactions on Computational Biology and Bioinformatics
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "(2016)"
 key "svm"
 literal "false"
@@ -9083,6 +9742,132 @@ literal "false"
  122(5),
  1423-1434.
  
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "svmapp1"
+literal "false"
+
+\end_inset
+
+Mahata,
+ K.,
+ Sengupta,
+ S.,
+ Biswas,
+ M.,
+ Ghosh,
+ S.,
+ Banerjee,
+ A.
+ K.,
+ Pati,
+ S.
+ K.,
+ & Mal,
+ C.
+ (2025).
+ Application of Machine Learning in Bioinformatics:
+ Capture and Interpret Biological Data.
+ In Machine Learning in Biomedical and Health Informatics (pp.
+ 239-262).
+ Apple Academic Press.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "svmapp2"
+literal "false"
+
+\end_inset
+
+Manimaran,
+ P.,
+ Vignesh,
+ R.,
+ Vignesh,
+ B.,
+ & Thilak,
+ G.
+ (2025,
+ February).
+ Enhanced Prediction of Lung Cancer Stages using SVM and Medical Imaging.
+ In 2025 International Conference on Electronics and Renewable Systems (ICEARS) (pp.
+ 1334-1338).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "svmapp3"
+literal "false"
+
+\end_inset
+
+Kazi,
+ K.
+ S.
+ L.
+ (2025).
+ Machine learning-driven internet of medical things (ML-IoMT)-based healthcare monitoring system.
+ In Responsible AI for digital health and medical analytics (pp.
+ 49-86).
+ IGI Global Scientific Publishing.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "svmapp4"
+literal "false"
+
+\end_inset
+
+Azizian‐Kalandaragh,
+ Y.,
+ Barkhordari,
+ A.,
+ & Badali,
+ Y.
+ (2025).
+ Support vector machine for prediction of the electronic factors of a Schottky configuration interlaid with pure PVC and doped by Sm2O3 nanoparticles.
+ Advanced Electronic Materials,
+ 11(6),
+ 2400624.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "svmapp5"
+literal "false"
+
+\end_inset
+
+Sun,
+ Y.,
+ Song,
+ M.,
+ Song,
+ C.,
+ Zhao,
+ M.,
+ & Yang,
+ Y.
+ (2025).
+ KPCA-based fault detection and diagnosis model for the chemical and volume control system in nuclear power plants.
+ Annals of Nuclear Energy,
+ 211,
+ 110973.
 \end_layout
 
 \begin_layout Bibliography

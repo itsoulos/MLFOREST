@@ -432,12 +432,2603 @@ Genetic algorithms;
 Introduction
 \end_layout
 
+\begin_layout Standard
+Since ancient times,
+ both the power of nature and its wrath when ecological balances were disturbed have been well known.
+ A remarkable example of this can be found in The Persians by Aeschylus,
+ a classical tragedy written in 472 BCE that recounts the historical events of 480 BCE 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aeschylus"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aeschylus-1"
+literal "false"
+
+\end_inset
+
+.
+ The play describes the environmental and human calamities that befell the Persians during their disorderly retreat,
+ following their desecration of the natural world.
+ Historical accounts describe their transgressions,
+ such as the 
+\begin_inset Quotes eld
+\end_inset
+
+chaining
+\begin_inset Quotes erd
+\end_inset
+
+ of the Bosporus through the construction of a floating bridge,
+ the plundering of agricultural lands to feed their vast army,
+ the burning and devastation of forests and plains,
+ all actions that ultimately aimed to deprive the native populations of their vital resources.
+ This reveals,
+ we understand that every action provokes a reaction even from mother Nature herself,
+ who does not assume the role of a passive observer but rather that of a force of balance,
+ ensuring the planet's survival.
+ Recent scientific consensus confirms that anthropogenic factors,
+ especially fossil fuel combustion,
+ deforestation,
+ and industrial emissions,play a pivotal role in driving climate change and its associated extreme events.In summary,
+ climate change has been linked to extreme natural disaster events,
+ including heat waves and cold spells,
+ droughts,
+ tropical storms and high winds,
+ river floods,
+ coastal floods 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hallegatte"
+literal "false"
+
+\end_inset
+
+ and wildfires 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kopitsa 2025"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "United nations 2022"
+literal "false"
+
+\end_inset
+
+.
+ In particular,
+ according to the United Nations,
+ climate change refers to long-term alterations in temperature and weather patterns.
+ While such variations may occur naturally—
+stemming from fluctuations in solar activity or major volcanic eruptions—
+human activities have emerged as the predominant cause since the 19th century.
+ This anthropogenic influence is primarily attributed to the extensive combustion of fossil fuels,
+ including coal,
+ oil,
+ and natural gas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "United Nations"
+literal "false"
+
+\end_inset
+
+.
+ As will be demonstrated through the data presented below,
+ climate change has entered an irreversible trajectory,
+ with each passing year bearing witness to phenomena that repeatedly set new temperature records.
+ Nevertheless,
+ notable efforts have been made in the past—
+through treaties,
+ regulations,
+ targets,
+ and constraints—
+aiming to reduce carbon dioxide emissions in an attempt to intercept climate change at a critical threshold.
+ Specifically,
+ the 1992 UN Conference of Environment and Development set as its ultimate objective 
+\begin_inset Quotes eld
+\end_inset
+
+the stabilization of greenhouse gas concentrations in the atmosphere
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "United Nations 1992"
+literal "false"
+
+\end_inset
+
+.
+ In 1997,
+ the Kyoto Protocol was adopted with the aim of committing industrialized nations and economies in transition to limit and reduce greenhouse gas (GHG) emissions,
+ based on individually agreed targets.
+ The overarching Convention,
+ however,
+ merely requires these countries to implement mitigation policies and measures,
+ and to submit periodic reports 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "United Nations 1997"
+literal "false"
+
+\end_inset
+
+.
+ In 2015,
+ the Paris Agreement articulated long-term goals intended to guide 195 Parties in substantially reducing global greenhouse gas emissions.
+ Its central aim is to constrain the rise in global temperatures to well below 2°C above pre-industrial levels,
+ while encouraging efforts to limit the increase to 1.5°C.
+ Achieving these targets is recognized as a critical step towards significantly mitigating the risks and adverse impacts associated with climate change 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "United Nations 2015"
+literal "false"
+
+\end_inset
+
+.
+ Although we briefly observed the emergence of more environmentally conscious actions in the past,
+ today,
+ in the year 2025,
+ NASA's data indicate that the debate has shifted to whether humanity will surpass the critical threshold of 1.5°C or 2.7°F global temperature 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NASA 2024"
+literal "false"
+
+\end_inset
+
+.
+ Subsequently,
+ visual representations of the planet’s average temperature are provided for the years 1881,
+ 1995,
+ and 2024.
+ Visualization is from NASA Goddard's Scientific Visualization Studio:
+ https://svs.gsfc.nasa.gov/5450 
+\begin_inset CommandInset label
+LatexCommand label
+name "Ref:fig: NASA Global Temperature"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\begin_inset Quotes eld
+\end_inset
+
+This color-coded map shows changing global surface temperature anomalies.
+ Normal temperatures are shown in white,
+ higher than normal temperatures in red and lower than normal temperatures in blue
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1881jpg.jpg
+	lyxscale 80
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Global Temperature 1881
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NASA Global-Temperature-1881"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 1995.png
+	lyxscale 80
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Global Temperature 1995
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NASA Global-Temperature-1995"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 2024.png
+	lyxscale 80
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Global Temperature 2025
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NASA Global-Temperature-2025"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 1.5°C target is highly ambitious and is likely to have been surpassed by 2025,
+ nevertheless,
+ it remains significant as a benchmark for minimizing,
+ to the greatest extent possible,
+ the impacts of natural disasters that are exacerbated by climate change.
+ Subsequently,
+ we will present numerical evidence illustrating how major natural disasters have become increasingly frequent and intense over time,
+ as a result of the evolving impacts of climate change.
+ Our data were retrieved from the (EM-DAT) Emergency Events Database 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EM DATA"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.emdat.be/
+\end_layout
+
+\end_inset
+
+ on 9 November 2025.
+\end_layout
+
+\begin_layout Standard
+From 1900 to 1994,
+ a total of 5,423 major events were recorded,
+ around the world categorized as follows 
+\begin_inset CommandInset label
+LatexCommand label
+name "Ref:tab: Hazards 1900 - 1994"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Hazards (1900 - 1994)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Hazards-(1900-1994)"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="12">
+<features tabularvalignment="middle" tabularwidth="10cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Hazards
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Human 
+\begin_inset Newline newline
+\end_inset
+
+Causalties
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Human 
+\begin_inset Newline newline
+\end_inset
+
+Causalties
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Human 
+\begin_inset Newline newline
+\end_inset
+
+Causalties
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Total 
+\begin_inset Newline newline
+\end_inset
+
+Causalties/ 
+\begin_inset Newline newline
+\end_inset
+
+Hazard
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Climatological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Drought
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+307
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.708,981
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Wildfire
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+107
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.307
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+11.711,288
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hydrological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Flood
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.431
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.812,496
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Landslide 
+\begin_inset Newline newline
+\end_inset
+
+(wet)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+280
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43.587
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+6.856,083
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Meteorological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Storm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.789
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.151,310
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Fog
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Extreme 
+\begin_inset Newline newline
+\end_inset
+
+Temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.843
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.169,153
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Geophysical
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Earthquake
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+829
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.578,863
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Volcanic 
+\begin_inset Newline newline
+\end_inset
+
+Activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+126
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+85.144
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Landslide (dry)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.104
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.668,111
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Biological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Epidemic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+351
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.453,050
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Infestation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(no data)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9.453,050
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the starting point of our research in 1995 up to 2025,
+ the following 8.855 mazor events were recorded,
+ around the world categorized as follows
+\begin_inset CommandInset label
+LatexCommand label
+name "Ref:tab: Hazards 1995 - 2025"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Hazards (1995 - 2025)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Hazards-(1995-2025)"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="12">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Hazards
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Human Causalties
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Human Causalties
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Human Causalties
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color violet
+Total Causalties/ Hazard
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" mroffset="10cm" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Climatological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Drought
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+351
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.723
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Wildfire
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+194
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.740
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Glacial Lake 
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+Outburst Floods
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+478
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+26.941
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hydrological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Flood
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.576
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160.394
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Landslide (wet)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+447
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21.847
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+182.241
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Meteorological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Storm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.957
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+235.377
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Fog
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Extreme 
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+Temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+533
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+352.179
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+587.556
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Geophysical
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Earthquake
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+647
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+605.378
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Volcanic Activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.234
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Landslide (dry)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+280
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+606.892
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Biological
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Epidemic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+163.994
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Infestation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(no data)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+163.994
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Extra - Terrestrial
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Impact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(no data)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+According to the available data,
+ we conclude that natural disasters have increased over the past 30 years when compared with the preceding 94 years.
+ More specifically,
+ there has been a rise in droughts,
+ floods,
+ wildfires,
+ landslides,
+ storms,
+ extreme temperatures,
+ and epidemics.
+ Geophysical events,
+ by contrast,
+ appear to have remained stable in number,
+ given that the comparison is made against a period three times longer.
+ In addition,
+ two new categories have emerged.
+\end_layout
+
+\begin_layout Standard
+In the field of climate change projections,
+ numerous studies have been conducted.
+ The first scientifically documented prediction of climate change was made in 1896,
+ by Svante Arrhenius,
+ in his work 
+\begin_inset Quotes eld
+\end_inset
+
+On the Influence of Carbon Acid in the Air upon the Temperature of the Ground
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arrhenius "
+literal "false"
+
+\end_inset
+
+.The aforementioned scholar estimated that the combustion of fossil fuels could ultimately emit sufficient carbon dioxide to raise the Earth’s temperature by approximately 5 - 6°C or 9 - 11°F.
+ Since then,
+ approximately 130 years have passed;
+ nevertheless,
+ the fundamental physics underlying these calculations has remained unchanged.
+ What has evolved are the techniques employed in our projections,
+ which have become considerably more detailed and precise 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rolnick et al 2022"
+literal "false"
+
+\end_inset
+
+.
+ It is evident that climate change is intrinsically linked to global warming and the increasing occurrence of natural disasters,
+ such as wildfires,
+ floods,
+ droughts,
+ extreme weather events,
+ landslides,
+ and storms.
+ In this context,
+ we will refer to several studies on climate change and forest fires,
+ such as:
+ Koulelis et al.,
+ in 2023,
+ conducted a study reviewing the impacts of climate change on Greek forests,
+ examining factors such as climate trends,
+ forest management practices,
+ biodiversity,
+ genetics,
+ insect activity,
+ and wildfires,
+ drawing upon data from the Scopus and Mendeley databases as well as official reports 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Koulelis 2023"
+literal "false"
+
+\end_inset
+
+.
+ The findings of Rovithakis et al.,
+ in 2022,
+ indicate that fire danger is projected to progressively intensify in the future,
+ particularly under the high-end climate change scenario 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rovithakis 2022"
+literal "false"
+
+\end_inset
+
+.
+ Giannakopoulos et al.,
+ in 2011,
+ reported that shifting climate conditions,
+ marked by an average increase in minimum temperatures of approximately 1.3°C and a 15% reduction in winter precipitation—
+indicate an intensified risk of forest fires in the future 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Giannakopoulos 2011"
+literal "false"
+
+\end_inset
+
+.
+ Comparable studies have linked floods to climate change,
+ such as:
+ Knox,
+ in 2000,
+ reported that flood chronologies from multiple regions indicate that periods of rapid climate change tend to coincide with more frequent occurrences of large and extreme flooding events 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Knox 2000"
+literal "false"
+
+\end_inset
+
+.
+ Milly et al.,
+ in 2002,
+ found that the frequency of major floods increased significantly throughout the twentieth century 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milly 2002"
+literal "false"
+
+\end_inset
+
+.
+ Bronstert,
+ in 2003,
+ highlighted that anthropogenic activities contributing to heightened flood risk encompass river regulation practices,
+ intensified land use and forestry,
+ as well as greenhouse gas emissions that drive changes in the global climate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bronstert 2003"
+literal "false"
+
+\end_inset
+
+.
+ Subsequently,
+ we will discuss studies addressing drought and its linkage to climate change,
+ including:
+ Cook et al.,
+ in 2018,
+ projected that rising temperatures will heighten both the risk and severity of drought across large parts of the subtropics and mid-latitudes in both hemispheres,
+ as a result of regional declines in precipitation combined with widespread warming 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cook 2018"
+literal "false"
+
+\end_inset
+
+.
+ Mukherjee et al.,
+ in 2018,
+ noted that while droughts are natural phenomena,
+ climate change has generally accelerated hydrological processes,
+ causing them to develop more rapidly and with greater intensity 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mukherjee 2018"
+literal "false"
+
+\end_inset
+
+.
+ Yuan et al.,
+ in 2023,
+ observed that flash droughts—
+developing unusually rapidly in contrast to the more gradual archetypal droughts,
+ are increasingly becoming the new normal 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yuan 2023"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Consequently,
+ research on rising temperatures has attracted significant scientific interest.
+ Subsequently,
+ we will present studies that focus on the field of climate change,
+ specifically on the projection of such meteorological phenomena.
+ Kretschmer et al.
+ published in 2017 “Early Prediction of Extreme Stratospheric Polar Vortex States Based on Causal Precursors” 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kretschmer 2017"
+literal "false"
+
+\end_inset
+
+.
+ Nowack et al.,
+ in 2018,
+ authored “Using Machine Learning to Build Temperature-Based Ozone Parameterizations for Climate Sensitivity Simulations” 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nowack 2018"
+literal "false"
+
+\end_inset
+
+.
+ Huntingford et al.,
+ in 2019,
+ highlighted that artificial intelligence (AI) can build upon identified climate linkages to deliver improved warnings of impending weather phenomena,
+ including extreme events 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huntingford 2019"
+literal "false"
+
+\end_inset
+
+.
+ Mansfield et al.,
+ in 2020,
+ introduced a machine learning approach that leverages a unique dataset of existing climate model simulations to identify relationships between short-term and long-term temperature responses under different climate forcing scenarios 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mansfield 2020"
+literal "false"
+
+\end_inset
+
+.
+ Haggag et al.,
+ in 2021,
+ demonstrated the application of the developed model by linking flood disaster data from the Canadian Disaster Database with climate change indices for Ontario,
+ which were then used to train,
+ test,
+ and validate the model 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Haggag 2021"
+literal "false"
+
+\end_inset
+
+.
+ Haq,
+ in 2022,
+ developed and optimized the Climate Deep Long Short-Term Memory (CDLSTM) model to forecast temperature and rainfall values across all Himalayan states 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Haq 2022"
+literal "false"
+
+\end_inset
+
+.
+ Slater et al.,
+ in 2023,
+ reviewed recent advances in hybrid hydroclimatic forecasting and delineated key challenges and opportunities for future research 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Slater 2023"
+literal "false"
+
+\end_inset
+
+.
+ Singh Bist et al.,
+ in 2024,
+ research introduced an innovative method for predicting climate change by employing deep learning techniques 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bist 2024"
+literal "false"
+
+\end_inset
+
+.
+ Gautam et al.,
+ in 2025,
+ advanced the examination of climate time series data and enhance its analysis through deep learning methods 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GAUTAM 2025"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Section
 Materials and Methods
 \end_layout
 
+\begin_layout Standard
+In this section,
+ a detailed presentation of the datasets used as well as the machine learning techniques used in the experiments performed will be provided.
+\end_layout
+
+\begin_layout Subsection
+The Dataset Employed
+\end_layout
+
+\begin_layout Standard
+In this study,
+ we utilized Historical Weather Data provided by Visual Crossing 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.visualcrossing.com/
+\end_layout
+
+\end_inset
+
+,
+ (last accessed on 08 December 2025),
+ which aggregates information from multiple authoritative sources,
+ including national meteorological services,
+ global climate models,
+ and satellite observations.In order to gain access to the historical data,
+ we first completed the registration process.
+ Subsequently,
+ by selecting data access,
+ we defined the region of interest and the desired date range.
+ We then proceeded with the data retrieval process,
+ with a limit of 1,000 records per day in order to remain within the free access tier.
+ The overall procedure is straightforward,
+ and the only limitation encountered was the daily cap of 1,000 data points.
+ 
+\end_layout
+
+\begin_layout Subsection
+The Dataset Description
+\end_layout
+
+\begin_layout Standard
+We downloaded historical meteorological data covering the period from 1995 to 2025,
+ spanning approximately 30 years,
+ to support the needs of our climate change research.
+ In addition,
+ we selected regions across different geographical latitudes and longitudes in order to obtain a more comprehensive understanding of the areas most affected by the global increase in temperature.
+ The selected regions of interest are:
+ Congo,
+ Saudi Arabia,
+ Greece,
+ Turkey,
+ Reykjavík,
+ Svalbard,
+ and Cape Town.
+\end_layout
+
 \begin_layout Section
 Results
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Experimental-results-on"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ summarizes the experimental results on datasets derived from various areas using a series of machine learning methods.
+ The following notation is used in the experimental tables:
+\end_layout
+
+\begin_layout Enumerate
+The column dataset denotes the objective dataset.
+\end_layout
+
+\begin_layout Enumerate
+The column MLP represents the results derived from the application of an artificial neural network with 10 processing nodes.
+ This network was trained using the BFGS variant of Powell 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "powell"
+literal "false"
+
+\end_inset
+
+ as the training method.
+\end_layout
+
+\begin_layout Enumerate
+The column RBF denotes the application of a Radial Basis Function (RBF) network 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rbf1,rbf2"
+literal "false"
+
+\end_inset
+
+ to the related dataset.
+ This network has 10 processing nodes.
+\end_layout
+
+\begin_layout Enumerate
+The column SVM represents the application of the SVM method,
+ using the implementation provided in the freely available library of LibSvm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "libsvm"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column NNC stands for the usage of the Neural Network Construction method,
+ initially described in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nnc"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The column GENCLASS indicates the incorporation of the proposed method for construction of classification rules.
+\end_layout
+
+\begin_layout Enumerate
+The row average represents the average classification error for all used datasets.
 \end_layout
 
 \begin_layout Standard
@@ -446,7 +3037,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -496,7 +3087,7 @@ DATASET
 \begin_inset Text
 
 \begin_layout Plain Layout
-MLP(BFGS)
+MLP
 \end_layout
 
 \end_inset
@@ -1022,943 +3613,52 @@ Conclusions
 \end_layout
 
 \begin_layout Author Contributions
-For research articles with several authors,
- a short paragraph specifying their individual contributions must be provided.
- The following statements should be used 
-\begin_inset Quotes eld
-\end_inset
-
-Conceptualization,
- X.X.
- and Y.Y.;
- methodology,
- X.X.;
- software,
- X.X.;
- validation,
- X.X.,
- Y.Y.
- and Z.Z.;
- formal analysis,
- X.X.;
- investigation,
- X.X.;
- resources,
- X.X.;
- data curation,
- X.X.;
- writing—
-original draft preparation,
- X.X.;
- writing—
-review and editing,
- X.X.;
- visualization,
- X.X.;
- supervision,
- X.X.;
- project administration,
- X.X.;
- funding acquisition,
- Y.Y.
+C.K.,
+ V.C.
+ and I.G.T.
+ conceived of the idea and the methodology,
+ and C.K.
+ and V.C.
+ implemented the corresponding software.
+ C.K.
+ conducted the experiments,
+ employing objective functions as test cases,
+ and provided the comparative experiments.
+ V.C.
+ performed the necessary statistical tests.
  All authors have read and agreed to the published version of the manuscript.
-\begin_inset Quotes erd
-\end_inset
-
-,
- please turn to the 
-\begin_inset CommandInset href
-LatexCommand href
-name "CRediT taxonomy"
-target "http://img.mdpi.org/data/contributor-role-instruction.pdf"
-literal "false"
-
-\end_inset
-
-for the term explanation.
- Authorship must be limited to those who have contributed substantially to the work
-\begin_inset space ~
-\end_inset
-
-reported.
 \end_layout
 
 \begin_layout Funding
-Please add:
- 
-\begin_inset Quotes eld
-\end_inset
-
-This research received no external funding
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-This research was funded by NAME OF FUNDER grant number XXX.
-\begin_inset Quotes erd
-\end_inset
-
- and and 
-\begin_inset Quotes eld
-\end_inset
-
-The APC was funded by XXX
-\begin_inset Quotes erd
-\end_inset
-
-.
- Check carefully that the details given are accurate and use the standard spelling of funding agency names at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://search.crossref.org/funding
-\end_layout
-
-\end_inset
-
-,
- any errors may affect your future funding.
+This research has been financed by the European Union :
+ Next Generation EU through the Program Greece 2.0 National Recovery and Resilience Plan ,
+ under the call RESEARCH-CREATE-INNOVATE,
+ project name “iCREW:
+ Intelligent small craft simulator for advanced crew training using Virtual Reality techniques" (project code:TAEDK-06195).
 \end_layout
 
 \begin_layout Institutional Review
-In this section,
- you should add the Institutional Review Board Statement and approval number,
- if relevant to your study.
- You might choose to exclude this statement if the study did not require ethical approval.
- Please note that the Editorial Office might ask you for further information.
- Please add “The study was conducted in accordance with the Declaration of Helsinki,
- and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans.
- OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals.
- OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.
+Not applicable.
 \end_layout
 
 \begin_layout Informed Consent
-Any research article describing a study involving humans should contain this statement.
- Please add 
-\begin_inset Quotes eld
-\end_inset
-
-Informed consent was obtained from all subjects involved in the study.
-\begin_inset Quotes erd
-\end_inset
-
- OR 
-\begin_inset Quotes eld
-\end_inset
-
-Patient consent was waived due to REASON (please provide a detailed justification).
-\begin_inset Quotes erd
-\end_inset
-
- OR 
-\begin_inset Quotes eld
-\end_inset
-
-Not applicable
-\begin_inset Quotes erd
-\end_inset
-
- for studies not involving humans.
- You might also choose to exclude this statement if the study did not involve humans.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-As LyX does not allow multiple paragraphs in command type environments,
- the following ERT is used to introduce a blank line in the LaTeX output.
-\end_layout
-
-\end_inset
-
-Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves).
- Please state 
-\begin_inset Quotes eld
-\end_inset
-
-Written informed consent has been obtained from the patient(s) to publish this paper
-\begin_inset Quotes erd
-\end_inset
-
- if applicable.
+Not applicable.
 \end_layout
 
 \begin_layout Data Availability
-We encourage all authors of articles published in MDPI journals to share their research data.
- In this section,
- please provide details regarding where data supporting reported results can be found,
- including links to publicly archived datasets analyzed or generated during the study.
- Where no new data were created,
- or where data is unavailable due to privacy or ethical re-strictions,
- a statement is still required.
- Suggested Data Availability Statements are available in section “MDPI Research Data Policies” at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.mdpi.com/ethics
-\end_layout
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Only for journal Drones
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-DURC Statement:
-
-\series default
- Current research is limited to the [please insert a specific academic field,
- e.g.,
- XXX],
- which is beneficial [share benefits and/or primary use] and does not pose a threat to public health or national security.
- Authors acknowledge the dual-use potential of the research involving xxx and confirm that all necessary precautions have been taken to prevent potential misuse.
- As an ethical responsibility,
- authors strictly adhere to relevant national and international laws about DURC.
- Authors advocate for responsible deployment,
- ethical considerations,
- regulatory compliance,
- and transparent reporting to mitigate misuse risks and foster beneficial outcomes.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Only for journal Nursing Reports
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-Public Involvement Statement:
-
-\series default
- Please describe how the public (patients,
- consumers,
- carers) were involved in the research.
- Consider reporting against the GRIPP2 (Guidance for Reporting Involvement of Patients and the Public) checklist.
- If the public were not involved in any aspect of the research add:
- ``No public involvement in any aspect of this research''.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Only for journal Nursing Reports
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-Guideline and Standards Statement:
-
-\series default
- Please add a statement indicating which reporting guideline was used when drafting the report.
- For example,
- ``This manuscript was drafted against the XXX (the full name of reporting guidelines and citation) for XXX (type of research) research''.
- A complete list of reporting guidelines can be accessed via the equator network:
- 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.equator-network.org/
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Only for journal Nursing Reports
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-Use of Artificial Intelligence:
-
-\series default
- Please describe in detail any and all uses of artificial intelligence (AI) or AI-assisted tools used in the preparation of the manuscript.
- This may include,
- but is not limited to,
- language translation,
- language editing and grammar,
- or generating text.
- Alternatively,
- please state that “AI or AI-assisted tools were not used in drafting any aspect of this manuscript”.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Acknowledgments
-In this section you can acknowledge any support given which is not covered by the author contribution or funding sections.
- This may include administrative and technical support,
- or donations in kind (e.g.,
- materials used for experiments).
- Where GenAI has been used for purposes such as generating text,
- data,
- or graphics,
- or for study design,
- data collection,
- analysis,
- or interpretation of data,
- please add “During the preparation of this manuscript/study,
- the author(s) used [tool name,
- version information] for the purposes of [description of use].
- The authors have reviewed and edited the output and take full responsibility for the content of this publication.”
+Data are contained within the article.
 \end_layout
 
 \begin_layout Conflicts of Interest
-Declare conflicts of interest or state 
-\begin_inset Quotes eld
-\end_inset
-
 The authors declare no conflicts of interest.
-\begin_inset Quotes erd
-\end_inset
-
- Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results.
- Any role of the funders in the design of the study;
- in the collection,
- analyses or interpretation of data;
- in the writing of the manuscript;
- or in the decision to publish the results must be declared in this section.
- If there is no role,
- please state 
-\begin_inset Quotes eld
-\end_inset
-
-The funders had no role in the design of the study;
- in the collection,
- analyses,
- or interpretation of data;
- in the writing of the manuscript;
- or in the decision to publish the
-\begin_inset space ~
-\end_inset
-
-results
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Only for journal Encyclopedia
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Entry Link
-The Link to this entry published on the encyclopedia platform.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Abbreviations
-The following abbreviations are used in this manuscript:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Optional
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="2">
-<features tabularvalignment="middle">
-<column alignment="none" valignment="top" special="@{}l">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="none" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-MDPI
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Multidisciplinary Digital Publishing Institute
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-DOAJ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Directory of open access journals
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TLA
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Three letter acronym
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LD
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Linear dichroism
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Appendix Titles
-no
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Optional
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Leave argument 
-\begin_inset Quotes eld
-\end_inset
-
-no
-\begin_inset Quotes erd
-\end_inset
-
- if all appendix headings stay EMPTY (then no dot is printed after 
-\begin_inset Quotes eld
-\end_inset
-
-Appendix A
-\begin_inset Quotes erd
-\end_inset
-
-).
- If the appendix sections contain a heading then change the argument to 
-\begin_inset Quotes eld
-\end_inset
-
-yes
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-Please,
- note that in LyX a trailing dot is always present and the name 
-\begin_inset Quotes eld
-\end_inset
-
-Appendix
-\begin_inset Quotes erd
-\end_inset
-
- is missing.
- Also make sure that no space follows the argument 
-\begin_inset Quotes eld
-\end_inset
-
-yes
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Start of Appendix
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Keep empty!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-\start_of_appendix
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Keep empty if Appendix Titles is 
-\begin_inset Quotes eld
-\end_inset
-
-no
-\begin_inset Quotes erd
-\end_inset
-
- (but retain this note)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Keep empty if Appendix Titles is 
-\begin_inset Quotes eld
-\end_inset
-
-no
-\begin_inset Quotes erd
-\end_inset
-
- (but retain this note)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The appendix is an optional section that can contain details and data supplemental to the main text—
-for example,
- explanations of experimental details that would disrupt the flow of the main text but nonetheless remain crucial to understanding and reproducing the research shown;
- figures of replicates for experiments of which representative data are shown in the main text can be added here if brief,
- or as Supplementary Data.
- Mathematical proofs of results not central to the paper can be added as an appendix.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-This is a table caption.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab5"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="5">
-<features booktabs="true" tabularvalignment="middle" tabularwidth="100text%">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Title 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Title 2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Title 3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Data
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Data
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry 2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Data
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Data
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Keep empty if Appendix Titles is 
-\begin_inset Quotes eld
-\end_inset
-
-no
-\begin_inset Quotes erd
-\end_inset
-
- (but retain this note)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-All appendix sections must be cited in the main text.
- In the appendices,
- Figures,
- Tables,
- etc.
- should be labeled,
- starting with 
-\begin_inset Quotes eld
-\end_inset
-
-A
-\begin_inset Quotes erd
-\end_inset
-
-—
-e.g.,
- Figure A1,
- Figure A2,
- etc.
 \end_layout
 
 \begin_layout Begin Whole Page
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Keep empty!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Dissolve the outer note inset to print a list of endnotes
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Print End Notes
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Keep empty!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1970,492 +3670,851 @@ Keep empty!
 References
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Please provide either the correct journal abbreviation (e.g.
- according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Citations and References in Supplementary files are permitted provided that they also appear in the reference list here.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-References,
- variant A:
- external bibliography
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout External Bibliography
-yes
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Insert you external bibtex file into the BibTeX inset below but keep empty the Style field.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintCited"
-bibfiles "your_external_BibTeX_file"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-References,
- variant B:
- internal bibliography
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Bibliography
-\labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author1(year)"
-key "ref-journal"
+label "(2012)"
+key "Aeschylus"
 literal "false"
 
 \end_inset
 
- Author
-\begin_inset space ~
-\end_inset
-
-1,
- T.
- The title of the cited article.
- 
-\emph on
-Journal Abbreviation
-\emph default
- 
-\series bold
-2008
-\series default
-,
- 
-\emph on
-10
-\emph default
-,
- 142–149.
+ Aeschylus,
+ 472 B.C.The Persians.
+ Place and date of edition used as base for this ebook:
+ London:
+ George Allen & Unwin,
+ 1939.
+ Available from:
+ https://gutenberg.ca/ebooks/murrayaeschylus-persians/murrayaeschylus-persians-00-h.html 
 \end_layout
 
 \begin_layout Bibliography
-\labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author2(year)"
-key "ref-book1"
+key "Aeschylus-1"
 literal "false"
 
 \end_inset
 
- Author
-\begin_inset space ~
+Aeschylus,
+ 472 B.C.
+ Persians.
+ Richer Resources Publications,
+ Arlington,
+ Virginia,
+ USA,
+ ISBN 978-1-935238-57-7.
+ Available from:
+ https://johnstoniatexts.x10host.com/aeschylus/persianshtml.html 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "United Nations"
+literal "false"
+
 \end_inset
 
-2,
- L.
- The title of the cited contribution.
- In 
-\emph on
-The Book Title
-\emph default
-;
- Editor1,
- F.,
- Editor2,
+ United Nations.
+ Climate Action.
+ Available from:
+ https://www.un.org/en/climatechange/what-is-climate-change (accessed on 7 Novemer 2025)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "United Nations 1992"
+literal "false"
+
+\end_inset
+
+ United Nations.
+ (1992) Climate Change.
+ United Nations Framework Convention on Climate Change (UNFCCC).
+ Rio de Janeiro,
+ Brazil 3 - 14 June 1992.
+ Available from:
+ https://unfccc.int/process-and-meetings/united-nations-framework-convention-on-climate-change (accessed on 7 Novemer 2025)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "United Nations 1997"
+literal "false"
+
+\end_inset
+
+United Nations.
+ (1997) Climate Change.The Kyoto Protocol,
+ 11 December 1997.
+ Available from:
+ https://unfccc.int/process-and-meetings/the-kyoto-protocol (accessed on 7 Novemer 2025)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Hallegatte"
+literal "false"
+
+\end_inset
+
+Hallegatte,
+ S.
+ (2014).
+ Natural disasters and climate change.
+ Cham:
+ Springer International Publishing.
+ ISBN 978-3-319-08932-4 ISBN 978-3-319-08933-1 (eBook).
+ DOI 10.1007/978-3-319-08933-1
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Kopitsa 2025"
+literal "false"
+
+\end_inset
+
+ Kopitsa,
+ C.,
+ Tsoulos,
+ I.
+ G.,
+ Miltiadous,
  A.,
- Eds.;
- Publishing House:
- City,
- Country,
- 2007;
- pp.
- 32–58.
+ & Charilogis,
+ V.
+ (2025).
+ Predicting the Forest Fire Duration Enriched with Meteorological Data Using Feature Construction Techniques.
+ Symmetry,
+ 17(11),
+ 1785.
+ https://doi.org/10.3390/sym17111785 
 \end_layout
 
 \begin_layout Bibliography
-\labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author3(year)"
-key "ref-book2"
+key "United nations 2022"
 literal "false"
 
 \end_inset
 
- Author 1,
- A.;
- Author 2,
- B.
- 
-\shape italic
-Book Title
-\shape default
-,
- 3rd ed.;
- Publisher:
- Publisher Location,
- Country,
- 2008;
- pp.
- 154–196.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author4(year)"
-key "ref-unpublish"
-literal "false"
-
-\end_inset
-
- Author 1,
- A.B.;
- Author 2,
- C.
- Title of Unpublished Work.
- 
-\shape italic
-Abbreviated Journal Name
-\shape default
- year,
- 
-\shape italic
-phrase indicating stage of publication (submitted;
- accepted;
- in press)
-\shape default
-.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring 999
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Author5(year)"
-key "ref-url"
-literal "false"
-
-\end_inset
-
- Title of Site.
+ United Nations Environment Programme.
+ (2022) Number of Wildfires to Rise by 50 per Cent by 2100 and Governments Are Not Prepared,
+ Experts Warn.
+ 23 February 2022.
  Available online:
- URL (accessed on Day Month Year).
+ https://www.unep.org/news-and-stories/press-release/number-wildfires-rise-50-cent-2100-and-governments-are-not-prepared (accessed on 7 Novemer 2025)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "United Nations 2015"
+literal "false"
+
+\end_inset
+
+United Nations.
+ (2015) Climate Action.
+ The Paris Agreement.
+ Available from:
+ https://www.un.org/en/climatechange/paris-agreement (accessed on 8 November 2025).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "NASA 2024"
+literal "false"
+
+\end_inset
+
+ NASA.
+ 2024.
+ Global Temperature - Earth Indicator.
+ Available from:
+ https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/ (accessed on 8 November 2025).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "EM DATA"
+literal "false"
+
+\end_inset
+
+EM-DATA.
+ The International Disaster Database.
+ Emergency Events Database.
+ Available from:
+ https://www.emdat.be/ (accessed on 9 November 2025).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Arrhenius "
+literal "false"
+
+\end_inset
+
+ Arrhenius,
+ S.
+ (1896).
+ On the Inﬂuence of Carbonic Acid in the Air upon the Temperature of the Ground.
+ Philosophical Magazine and Journal of Science,
+ Series 5,
+ Volume 41,
+ April 1896,
+ pages 237-276.
+ Available from:
+ https://climatepositions.com/wp-content/uploads/2014/03/Arrhenius.pdf (accessed on 11 November 2025).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Rolnick et al 2022"
+literal "false"
+
+\end_inset
+
+ Rolnick,
+ D.,
+ Donti,
+ P.
+ L.,
+ Kaack,
+ L.
+ H.,
+ Kochanski,
+ K.,
+ Lacoste,
+ A.,
+ Sankaran,
+ K.,
+ ...
+ & Bengio,
+ Y.
+ (2022).
+ Tackling climate change with machine learning.
+ ACM Computing Surveys (CSUR),
+ 55(2),
+ 1-96.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Koulelis 2023"
+literal "false"
+
+\end_inset
+
+ Koulelis,
+ P.
+ P.,
+ Proutsos,
+ N.,
+ Solomou,
+ A.
+ D.,
+ Avramidou,
+ E.
+ V.,
+ Malliarou,
+ E.,
+ Athanasiou,
+ M.,
+ ...
+ & Petrakis,
+ P.
+ V.
+ (2023).
+ Effects of climate change on Greek forests:
+ A review.
+ Atmosphere,
+ 14(7),
+ 1155.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Rovithakis 2022"
+literal "false"
+
+\end_inset
+
+ Rovithakis,
+ A.,
+ Grillakis,
+ M.
+ G.,
+ Seiradakis,
+ K.
+ D.,
+ Giannakopoulos,
+ C.,
+ Karali,
+ A.,
+ Field,
+ R.,
+ ...
+ & Voulgarakis,
+ A.
+ (2022).
+ Future climate change impact on wildfire danger over the Mediterranean:
+ the case of Greece.
+ Environmental Research Letters,
+ 17(4),
+ 045022.
  
 \end_layout
 
 \begin_layout Bibliography
-\labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author6(year)"
-key "ref-proceeding"
+key "Giannakopoulos 2011"
 literal "false"
 
 \end_inset
 
- Author 1,
- A.B.;
- Author 2,
- C.D.;
- Author 3,
- E.F.
- Title of presentation.
- In Proceedings of the Name of the Conference,
- Location of Conference,
- Country,
- Date of Conference (Day Month Year);
- Abstract Number (optional),
- Pagination (optional).
+ Giannakopoulos,
+ C.,
+ Kostopoulou,
+ E.,
+ Varotsos,
+ K.
+ V.,
+ Tziotziou,
+ K.,
+ & Plitharas,
+ A.
+ (2011).
+ An integrated assessment of climate change impacts for Greece in the near future.
+ Regional Environmental Change,
+ 11(4),
+ 829-843.
 \end_layout
 
 \begin_layout Bibliography
-\labelwidthstring 999
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Author7(year)"
-key "ref-thesis"
+key "Knox 2000"
 literal "false"
 
 \end_inset
 
- Author 1,
- A.B.
- Title of Thesis.
- Level of Thesis,
- Degree-Granting University,
- Location of University,
- Date of Completion.
+ Knox,
+ J.
+ C.
+ (2000).
+ Sensitivity of modern and Holocene floods to climate change.
+ Quaternary Science Reviews,
+ 19(1-5),
+ 439-457.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-If authors have biography,
- please use the format below
-\end_layout
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Milly 2002"
+literal "false"
 
 \end_inset
 
-
+ Milly,
+ P.
+ C.
+ D.,
+ Wetherald,
+ R.
+ T.,
+ Dunne,
+ K.
+ A.,
+ & Delworth,
+ T.
+ L.
+ (2002).
+ Increasing risk of great floods in a changing climate.
+ Nature,
+ 415(6871),
+ 514-517.
 \end_layout
 
-\begin_layout Section*
-Short Biography of Authors
-\end_layout
-
-\begin_layout Biography
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-Definitions/author
-\end_layout
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Bronstert 2003"
+literal "false"
 
 \end_inset
 
+ Bronstert,
+ A.
+ (2003).
+ Floods and climate change:
+ interactions and impacts.
+ Risk Analysis:
+ An International Journal,
+ 23(3),
+ 545-557.
+\end_layout
 
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Cook 2018"
+literal "false"
+
+\end_inset
+
+ Cook,
+ B.
+ I.,
+ Mankin,
+ J.
+ S.,
+ & Anchukaitis,
+ K.
+ J.
+ (2018).
+ Climate change and drought:
+ From past to future.
+ Current Climate Change Reports,
+ 4(2),
+ 164-179.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Mukherjee 2018"
+literal "false"
+
+\end_inset
+
+ Mukherjee,
+ S.,
+ Mishra,
+ A.,
+ & Trenberth,
+ K.
+ E.
+ (2018).
+ Climate change and drought:
+ a perspective on drought indices.
+ Current climate change reports,
+ 4(2),
+ 145-163.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Yuan 2023"
+literal "false"
+
+\end_inset
+
+ Yuan,
+ X.,
+ Wang,
+ Y.,
+ Ji,
+ P.,
+ Wu,
+ P.,
+ Sheffield,
+ J.,
+ & Otkin,
+ J.
+ A.
+ (2023).
+ A global transition to flash droughts under climate change.
+ Science,
+ 380(6641),
+ 187-191.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Kretschmer 2017"
+literal "false"
+
+\end_inset
+
+ Kretschmer,
+ M.,
+ Runge,
+ J.,
+ & Coumou,
+ D.
+ (2017).
+ Early prediction of extreme stratospheric polar vortex states based on causal precursors.
+ Geophysical research letters,
+ 44(16),
+ 8592-8600.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Nowack 2018"
+literal "false"
+
+\end_inset
+
+ Nowack,
+ P.,
+ Braesicke,
+ P.,
+ Haigh,
+ J.,
+ Abraham,
+ N.
+ L.,
+ Pyle,
+ J.,
+ & Voulgarakis,
+ A.
+ (2018).
+ Using machine learning to build temperature-based ozone parameterizations for climate sensitivity simulations.
+ Environmental Research Letters,
+ 13(10),
+ 104016.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Huntingford 2019"
+literal "false"
+
+\end_inset
+
+ Huntingford,
+ C.,
+ Jeffers,
+ E.
+ S.,
+ Bonsall,
+ M.
+ B.,
+ Christensen,
+ H.
+ M.,
+ Lees,
+ T.,
+ & Yang,
+ H.
+ (2019).
+ Machine learning and artificial intelligence to aid climate change research and preparedness.
+ Environmental Research Letters,
+ 14(12),
+ 124007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Mansfield 2020"
+literal "false"
+
+\end_inset
+
+ Mansfield,
+ L.
+ A.,
+ Nowack,
+ P.
+ J.,
+ Kasoar,
+ M.,
+ Everitt,
+ R.
+ G.,
+ Collins,
+ W.
+ J.,
+ & Voulgarakis,
+ A.
+ (2020).
+ Predicting global patterns of long-term climate change from short-term simulations using machine learning.
+ npj Climate and Atmospheric Science,
+ 3(1),
+ 44.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Haggag 2021"
+literal "false"
+
+\end_inset
+
+ Haggag,
+ M.,
+ Siam,
+ A.
+ S.,
+ El-Dakhakhni,
+ W.,
+ Coulibaly,
+ P.,
+ & Hassini,
+ E.
+ (2021).
+ A deep learning model for predicting climate-induced disasters.
+ Natural Hazards,
+ 107(1),
+ 1009-1034.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Haq 2022"
+literal "false"
+
+\end_inset
+
+ Haq,
+ M.
+ A.
+ (2022).
+ CDLSTM:
+ A novel model for climate change forecasting.
+ Computers,
+ Materials & Continua,
+ 71(2).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Slater 2023"
+literal "false"
+
+\end_inset
+
+ Slater,
+ L.
+ J.,
+ Arnal,
+ L.,
+ Boucher,
+ M.
+ A.,
+ Chang,
+ A.
+ Y.
+ Y.,
+ Moulds,
+ S.,
+ Murphy,
+ C.,
+ ...
+ & Zappa,
+ M.
+ (2023).
+ Hybrid forecasting:
+ blending climate predictions with AI models.
+ Hydrology and earth system sciences,
+ 27(9),
+ 1865-1889.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Bist 2024"
+literal "false"
+
+\end_inset
+
+ Bist,
+ A.
+ S.,
+ Rawat,
+ B.,
+ Joshi,
+ Y.,
+ Aini,
+ Q.,
+ Santoso,
+ N.
+ P.
+ L.,
+ & Kusumawardhani,
+ D.
+ A.
+ R.
+ (2024,
+ August).
+ Harnessing Deep Learning for Accurate Climate Change Predictions.
+ In 2024 3rd International Conference on Creative Communication and Innovative Technology (ICCIT) (pp.
+ 1-6).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "GAUTAM 2025"
+literal "false"
+
+\end_inset
+
+ GAUTAM,
+ A.,
+ AJMERA,
+ R.,
+ DHARAMDASANI,
+ D.
+ K.,
+ SRIVASTAVA,
+ S.,
+ & JOHARI,
+ A.
+ (2025).
+ IMPROVING CLIMATE CHANGE PREDICTIONS USING TIME SERIES ANALYSIS AND DEEP LEARNING.
+ Global & Stochastic Analysis,
+ 12(4).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "powell"
+literal "true"
+
+\end_inset
+
+M.J.D Powell,
+ A Tolerant Algorithm for Linearly Constrained Optimization Calculations,
+ Mathematical Programming 
 \series bold
-Firstname Lastname
+45
 \series default
- Biography of first author
+,
+ pp.
+ 547-566,
+ 1989.
+ 
 \end_layout
 
-\begin_layout Biography
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-Definitions/author
-\end_layout
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(1991)"
+key "rbf1"
+literal "false"
 
 \end_inset
 
-
+J.
+ Park and I.
+ W.
+ Sandberg,
+ Universal Approximation Using Radial-Basis-Function Networks,
+ Neural Computation 
 \series bold
-Firstname Lastname
+3
 \series default
- Biography of second author
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-For the MDPI journals use author-date citation,
- please follow the formatting guidelines on http://www.mdpi.com/authors/references
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-To cite two works by the same author:
- 
-\backslash
-citeauthor{ref-journal-1a} (
-\backslash
-citeyear{ref-journal-1a},
- 
-\backslash
-citeyear{ref-journal-1b}).
- This produces:
- Whittaker (1967,
- 1975).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-To cite two works by the same author with specific pages:
- 
-\backslash
-citeauthor{ref-journal-3a} (
-\backslash
-citeyear{ref-journal-3a},
- p.
- 328;
- 
-\backslash
-citeyear{ref-journal-3b},
- p.475).
- This produces:
- Wong (1999,
- p.
- 328;
- 2000,
- p.
- 475).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-To obtain 
-\backslash
-citeauthor{} in LyX you have to choose 
-\begin_inset Quotes eld
-\end_inset
-
-Author1
-\begin_inset Quotes erd
-\end_inset
-
- (or 
-\begin_inset Quotes eld
-\end_inset
-
-Author2
-\begin_inset Quotes erd
-\end_inset
-
 ,
- or \SpecialChar ldots
-) in 
-\family sans
-Insert\SpecialChar menuseparator
-Citation\SpecialChar menuseparator
-Citation style
-\family default
-,
- as demonstrated in this citation inset:
- 
-\begin_inset CommandInset citation
-LatexCommand citeauthor
-key "ref-journal"
+ pp.
+ 246-257,
+ 1991.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rbf2"
 literal "false"
 
 \end_inset
 
- (either left- or right-click it).
+G.A.
+ Montazer,
+ D.
+ Giveki,
+ M.
+ Karami,
+ H.
+ Rastegar,
+ Radial basis function neural networks:
+ A review.
+ Comput.
+ Rev.
+ J 
+\series bold
+1
+\series default
+,
+ pp.
+ 52-74,
+ 2018.
 \end_layout
 
-\begin_layout Plain Layout
-To obtain 
-\backslash
-citeyear{} in LyX you have to choose 
-\begin_inset Quotes eld
-\end_inset
-
-year
-\begin_inset Quotes erd
-\end_inset
-
- in 
-\family sans
-Insert\SpecialChar menuseparator
-Citation\SpecialChar menuseparator
-Citation style
-\family default
-,
- as demonstrated in this citation inset:
- 
-\begin_inset CommandInset citation
-LatexCommand citeyear
-key "ref-journal"
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "libsvm"
 literal "false"
 
 \end_inset
 
- (either left- or right-click it).
+Chang,
+ C.
+ C.,
+ & Lin,
+ C.
+ J.
+ (2011).
+ LIBSVM:
+ A library for support vector machines.
+ ACM transactions on intelligent systems and technology (TIST),
+ 2(3),
+ 1-27.
+ 
 \end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2012)"
+key "nnc"
+literal "false"
 
 \end_inset
 
-
+Tsoulos,
+ I.,
+ Gavrilis,
+ D.,
+ & Glavas,
+ E.
+ (2008).
+ Neural network construction and training using grammatical evolution.
+ Neurocomputing,
+ 72(1-3),
+ 269-277.
 \end_layout
 
 \begin_layout Standard
