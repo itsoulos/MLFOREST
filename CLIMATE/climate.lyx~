@@ -1748,7 +1748,11 @@ Events
 
 \bar under
 \color violet
-Human Causalties
+Human 
+\begin_inset Newline newline
+\end_inset
+
+Causalties
 \end_layout
 
 \end_inset
@@ -1784,7 +1788,11 @@ Events
 
 \bar under
 \color violet
-Human Causalties
+Human
+\begin_inset Newline newline
+\end_inset
+
+ Causalties
 \end_layout
 
 \end_inset
@@ -1820,7 +1828,11 @@ Events
 
 \bar under
 \color violet
-Human Causalties
+Human 
+\begin_inset Newline newline
+\end_inset
+
+Causalties
 \end_layout
 
 \end_inset
@@ -1832,7 +1844,11 @@ Human Causalties
 
 \bar under
 \color violet
-Total Causalties/ Hazard
+Total
+\begin_inset Newline newline
+\end_inset
+
+ Causalties/ Hazard
 \end_layout
 
 \end_inset
@@ -3032,16 +3048,135 @@ The row average represents the average classification error for all used dataset
 \end_layout
 
 \begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Experimental-results-on"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports the percentage classification error obtained by five machine learning models (MLP,
+ RBF,
+ SVM,
+ NNC,
+ and the proposed GENCLASS) across seven region-specific climate-zone datasets (CAPETOWN,
+ GREECE,
+ ICELAND,
+ KONGO,
+ ARABIA,
+ SVALBARD,
+ TURKEY).
+ Since the entries are error percentages,
+ lower values indicate higher classification accuracy,
+ while the final row (AVERAGE) summarizes the mean error over all datasets.
+ The dominant outcome is the consistent superiority of GENCLASS,
+ which achieves the lowest error on every dataset and the best overall average (1.66%).
+ Importantly,
+ this performance should be interpreted in light of the strong geographical and environmental heterogeneity represented by the selected regions,
+ spanning a wide range of latitudes and longitudes and encompassing markedly different physical settings (coastal versus inland areas,
+ mountainous terrain,
+ forests,
+ deserts,
+ glaciers/sea ice,
+ and distinct hemispheric seasonality).
+ Such factors affect local temperature dynamics,
+ variability,
+ and seasonality and therefore shape the complexity of the classification patterns that each model must learn.
+ For instance,
+ KONGO lies close to the Equator (approximately within a few degrees north and south of 0° latitude,
+ primarily at eastern longitudes in Central Africa) and is characterized by extensive tropical rainforest cover and high atmospheric moisture.
+ In this dataset,
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Experimental-results-on"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ shows the highest errors for most methods and also the largest GENCLASS error (4.84%),
+ suggesting a comparatively more challenging classification structure,
+ plausibly due to weaker temperature seasonality and stronger interactions with humidity and cloud-related processes.
+ In contrast,
+ ARABIA (roughly 16°-32°N at eastern longitudes in Western Asia) is dominated by hot desert conditions,
+ where land-surface properties,
+ low cloudiness,
+ and persistent aridity often yield clearer and more repeatable temperature-related signatures,
+ accordingly,
+ GENCLASS attains a very low error (0.73%) and NNC also performs strongly.
+ In the Mediterranean/subtropical band,
+ GREECE (approximately 35°-41°N,
+ 20°-28°E) combines strong maritime influence,
+ extensive coastline and island geography,
+ and pronounced mountainous terrain,
+ all of which introduce microclimatic variability,
+ nevertheless,
+ GENCLASS remains highly accurate (0.85%),
+ indicating robust handling of nonlinear interactions linked to elevation,
+ coastal effects,
+ and seasonal transitions typical of Mediterranean climates.
+ TURKEY (approximately 36°-42°N,
+ 26°-45°E) is even more heterogeneous,
+ with coastal zones influenced by surrounding seas and inland plateaus and mountain ranges exhibiting more continental conditions,
+ despite this diversity,
+ GENCLASS again yields the smallest error (0.63%),
+ whereas conventional baselines such as MLP and SVM show substantially larger errors.
+ At higher latitudes,
+ ICELAND (approximately 63°-66°N,
+ at western longitudes in the North Atlantic) is shaped by oceanic forcing,
+ strong winds,
+ glaciers,
+ and complex volcanic topography,
+ which can increase meteorological variability,
+ still,
+ GENCLASS keeps the error relatively low (2.47%) compared with the other methods.
+ SVALBARD (approximately 74°-81°N at eastern longitudes in the Arctic Ocean) represents an Arctic archipelago with extensive glaciation/sea-ice influence and extreme photoperiodicity (polar night and midnight sun),
+ conditions that can produce strong seasonal contrasts and circulation-driven variability,
+ nevertheless,
+ GENCLASS remains the most accurate method (1.11%),
+ with NNC as the next best performer.
+ Finally,
+ CAPETOWN (approximately 34°S,
+ 18°E) lies in the Southern Hemisphere and is typically described by a Mediterranean-type regime with strong coastal forcing and nearby mountainous relief that modulates winds and temperature variability,
+ here too GENCLASS attains the lowest error (0.97%).
+ The AVERAGE row confirms that,
+ when aggregating across all these diverse geographic coordinates and environmental contexts,
+ GENCLASS provides the most reliable generalization with the smallest mean error,
+ while NNC consistently ranks second.
+ Overall,
+ the 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Experimental-results-on"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ supports not only that GENCLASS is more accurate,
+ but also that it generalizes effectively across datasets derived from regions with fundamentally different latitude–longitude positioning and physical environments,
+ suggesting improved capacity to capture nonlinear relationships and interactions induced by topography,
+ land cover (forest/desert/ice),
+ proximity to oceans,
+ and regional seasonality.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 alignment document
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3593,6 +3728,129 @@ AVERAGE
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results summarized in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statResults"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ indicate that the comparison GENCLASS vs MLP yields 
+\begin_inset Formula $p=0.0195$
+\end_inset
+
+,
+ implying a statistically significant difference (
+\begin_inset Formula $p<0.05$
+\end_inset
+
+) and supporting the conclusion that GENCLASS outperforms MLP under the adopted experimental setting.
+ The comparison GENCLASS vs RBF results in 
+\begin_inset Formula $p=0.2492$
+\end_inset
+
+,
+ which is not significant (ns,
+ 
+\begin_inset Formula $p>0.05$
+\end_inset
+
+),
+ therefore,
+ given the available datasets,
+ there is insufficient statistical evidence to claim a systematic performance difference between GENCLASS and RBF at the 5% significance level.
+ In contrast,
+ GENCLASS vs SVM yields 
+\begin_inset Formula $p=8.74\times10^{-5}$
+\end_inset
+
+,
+ an extremely small value (
+\begin_inset Formula $p<0.0001$
+\end_inset
+
+),
+ providing very strong statistical evidence that GENCLASS outperforms SVM on the evaluated datasets.
+ The comparison GENCLASS vs NNC produces 
+\begin_inset Formula $p=0.6583$
+\end_inset
+
+ (ns),
+ suggesting that no statistically significant difference can be established between GENCLASS and NNC.
+ Finally,
+ the overall Friedman test reports 
+\begin_inset Formula $p=2.49\times10^{-5}$
+\end_inset
+
+ (
+\begin_inset Formula $p<0.0001$
+\end_inset
+
+),
+ confirming that,
+ when all models are jointly considered across all datasets,
+ there are statistically significant performance differences and the methods cannot be regarded as equivalent.
+ Overall,
+ these findings substantiate that GENCLASS is decisively and statistically superior to SVM and significantly different from MLP,
+ while differences relative to RBF and NNC are not statistically significant under the 
+\begin_inset Formula $p<0.05$
+\end_inset
+
+criterion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat-tbl3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison for the results obtained by the application of various machine learning methods.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statResults"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
