@@ -43,34 +43,31 @@ of Ioannina, Greece itsoulos@uoi.gr}
 \corres{Correspondence: itsoulos@uoi.gr}
 
 
-\abstract{Over the course of centuries, humanity has evolved, acquired knowledge,
-and developed an understanding of the geological phenomenon known
-as the earthquake. Earthquakes are not the result of the wrath of
-mythological beings, but rather of the dynamic processes occurring
-beneath the Earth’s crust specifically, the movement and interaction
-of tectonic / lithospheric plates. When one plate shifts relative
-to another, stress accumulates and is eventually released as seismic
-energy. This process is continuous and unstoppable. This phenomenon
-is well recognized in the Mediterranean region, where significant
-seismic activity arises from the northward convergence (4--10 mm
-per year) of the African plate relative to the Eurasian plate along
-a complex plate boundary. Consequently, our research will focus on
-the Mediterranean region, specifically examining seismic activity
-from 1990 - 2015 within the latitude range of 33--44° and longitude
-range of 17--44°. These geographical coordinates encompass 28 seismic
-zones, with the most active areas being Turkey and Greece. In this
-paper we applied Grammatical Evolution for artificial feature construction
-in earthquake prediction, evaluated against machine learning approaches
-including MLP(GEN), MLP(PSO), SVM, and NNC. Experiments showed that
-Feature Construction (FC) achieved the best performance, with a mean
-error of 9.05\% and overall accuracy of 91\%, outperforming SVM. Further
-analysis revealed that a single constructed feature (Nf = 1) yielded
+\abstract{Earthquakes are the result of the dynamic processes occurring beneath
+the Earth’s crust specifically, the movement and interaction of tectonic
+/ lithospheric plates. When one plate shifts relative to another,
+stress accumulates and is eventually released as seismic energy. This
+process is continuous and unstoppable. This phenomenon is well recognized
+in the Mediterranean region, where significant seismic activity arises
+from the northward convergence (4--10 mm per year) of the African
+plate relative to the Eurasian plate along a complex plate boundary.
+Consequently, our research will focus on the Mediterranean region,
+specifically examining seismic activity from 1990 - 2015 within the
+latitude range of 33--44° and longitude range of 17--44°. These
+geographical coordinates encompass 28 seismic zones, with the most
+active areas being Turkey and Greece. In this paper we applied Grammatical
+Evolution for artificial feature construction in earthquake prediction,
+evaluated against machine learning approaches including MLP(GEN),
+MLP(PSO), SVM, and NNC. Experiments showed that Feature Construction
+(FC) achieved the best performance, with a mean error of 9.05\% and
+overall accuracy of 91\%, outperforming SVM. Further analysis revealed
+that a single constructed feature $\left(N_{f}=1\right)$ yielded
 the lowest average error (8.21\%), while varying the number of generations
-indicated that Ng = 200 provided an effective balance between computational
-cost and predictive accuracy. These findings confirm the efficiency
-of FC in enhancing earthquake prediction models through artificial
-feature construction. Our results, as will be discussed in greater
-detail within the research, yield an average error of approximately
+indicated that $N_{g}=200$ provided an effective balance between
+computational cost and predictive accuracy. These findings confirm
+the efficiency of FC in enhancing earthquake prediction models through
+artificial feature construction. Our results, as will be discussed
+in greater detail within the research, yield an average error of approximately
 9\%, corresponding to an overall accuracy of 91\%.}
 
 
@@ -282,7 +279,7 @@ where feasibility studies are still in progress.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=1.4]{table1}
+\includegraphics[scale=0.65]{table1}
 \par\end{centering}
 \caption{The map shows Earthquakes Early Warning Systems around the World\label{fig:mapQuakes}}
 \end{figure}
@@ -564,10 +561,12 @@ functionality and broad accessibility. Notably, it supports the download
 of up to 25,000 records per file, thereby streamlining the workflow
 and improving the efficiency of information retrieval. The region
 under investigation is presented in Figure \ref{fig:The-study-area.}.
+This image was retrieved from IRIS Earthquake Browser, in the following
+URL: \url{https://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&endtime=2010-12-31&orderby=time-desc&src=iris&limit=1000&maxlat=74.85&minlat=-7.26&maxlon=135.19&minlon=-97.36&zm=3&mt=ter}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=1.4]{table2}
+\includegraphics[scale=0.65]{table2}
 \par\end{centering}
 \caption{The study area.\label{fig:The-study-area.}}
 
@@ -776,7 +775,7 @@ and parameter identification in complex multi-physics energy systems
 steps of a genetic algorithm.
 
 \begin{figure}[H]
-\includegraphics{algorithm1}
+\includegraphics[scale=0.75]{ga_schema}
 
 \caption{The main steps of the Genetic algorithm.\label{fig:GASteps}}
 \end{figure}
@@ -805,7 +804,7 @@ PSO variants are employed for community detection and the identification
 of disease-related functional modules within complex biological networks\citep{psoapp5}.\textbf{
 }The main steps of the PSO method are outlined in Figure \ref{fig:psoSteps}.
 \begin{figure}[H]
-\includegraphics{algorithm2}
+\includegraphics[scale=0.65]{pso_schema}
 
 \caption{The main steps of the PSO algorithm.\label{fig:psoSteps}}
 \end{figure}

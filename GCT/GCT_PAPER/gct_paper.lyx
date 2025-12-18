@@ -360,12 +360,7 @@ Correspondence:
 \end_layout
 
 \begin_layout Abstract
-Over the course of centuries,
- humanity has evolved,
- acquired knowledge,
- and developed an understanding of the geological phenomenon known as the earthquake.
- Earthquakes are not the result of the wrath of mythological beings,
- but rather of the dynamic processes occurring beneath the Earth’s crust specifically,
+Earthquakes are the result of the dynamic processes occurring beneath the Earth’s crust specifically,
  the movement and interaction of tectonic / lithospheric plates.
  When one plate shifts relative to another,
  stress accumulates and is eventually released as seismic energy.
@@ -385,8 +380,16 @@ Over the course of centuries,
  Experiments showed that Feature Construction (FC) achieved the best performance,
  with a mean error of 9.05% and overall accuracy of 91%,
  outperforming SVM.
- Further analysis revealed that a single constructed feature (Nf = 1) yielded the lowest average error (8.21%),
- while varying the number of generations indicated that Ng = 200 provided an effective balance between computational cost and predictive accuracy.
+ Further analysis revealed that a single constructed feature 
+\begin_inset Formula $\left(N_{f}=1\right)$
+\end_inset
+
+ yielded the lowest average error (8.21%),
+ while varying the number of generations indicated that 
+\begin_inset Formula $N_{g}=200$
+\end_inset
+
+ provided an effective balance between computational cost and predictive accuracy.
  These findings confirm the efficiency of FC in enhancing earthquake prediction models through artificial feature construction.
  Our results,
  as will be discussed in greater detail within the research,
@@ -582,7 +585,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename table1.png
-	scale 140
+	scale 65
 
 \end_inset
 
@@ -2273,6 +2276,20 @@ nolink "false"
 \end_inset
 
 .
+ This image was retrieved from IRIS Earthquake Browser,
+ in the following URL:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&endtime=2010-12-31&orderby=time-desc&src=iris&limit=1000&maxlat=74.85&minlat=-7.26&maxlon=135.19&minlon=-97.36&zm=3&mt=ter
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2281,14 +2298,14 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename table2.png
 	lyxscale 50
-	scale 140
+	scale 65
 
 \end_inset
 
@@ -3484,7 +3501,8 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename algorithm1.eps
+	filename ga_schema.png
+	scale 75
 
 \end_inset
 
@@ -3610,11 +3628,12 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename algorithm2.eps
+	filename pso_schema.png
+	scale 65
 
 \end_inset
 
