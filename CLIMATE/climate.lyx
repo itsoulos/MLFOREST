@@ -1651,7 +1651,7 @@ Infestation
 
 \begin_layout Standard
 From the starting point of our research in 1995 up to 2025,
- the following 8.855 mazor events were recorded,
+ the following 8.855 major events were recorded,
  around the world categorized as follows
 \begin_inset CommandInset label
 LatexCommand label
@@ -2953,6 +2953,12 @@ literal "false"
  
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+GRAMMATICAL EVOLUTION HERE
+\end_layout
+
 \begin_layout Section
 Materials and Methods
 \end_layout
@@ -4169,7 +4175,11 @@ Region
 
 \series bold
 \size footnotesize
-Baseline for Class
+Baseline 
+\begin_inset Newline newline
+\end_inset
+
+for Class
 \end_layout
 
 \end_inset
@@ -4181,7 +4191,11 @@ Baseline for Class
 
 \series bold
 \size footnotesize
-Class 0 /total data
+Class 0 /
+\begin_inset Newline newline
+\end_inset
+
+total data
 \end_layout
 
 \end_inset
@@ -4193,7 +4207,11 @@ Class 0 /total data
 
 \series bold
 \size footnotesize
-Class 1/total data
+Class 1/
+\begin_inset Newline newline
+\end_inset
+
+total data
 \end_layout
 
 \end_inset
@@ -4228,7 +4246,7 @@ Turkey
 \begin_layout Plain Layout
 
 \size footnotesize
-11,32
+11.32
 \end_layout
 
 \end_inset
@@ -4285,7 +4303,7 @@ Reykjavik (Iceland)
 \begin_layout Plain Layout
 
 \size footnotesize
-4,715
+4.715
 \end_layout
 
 \end_inset
@@ -4342,7 +4360,7 @@ Greece
 \begin_layout Plain Layout
 
 \size footnotesize
-9,068333333
+9.068333333
 \end_layout
 
 \end_inset
@@ -4399,7 +4417,7 @@ Svalbard
 \begin_layout Plain Layout
 
 \size footnotesize
-8,966666667
+8.966666667
 \end_layout
 
 \end_inset
@@ -4456,7 +4474,7 @@ Cape Town
 \begin_layout Plain Layout
 
 \size footnotesize
-16,605
+16,.605
 \end_layout
 
 \end_inset
@@ -4513,7 +4531,7 @@ Saudi Arabia
 \begin_layout Plain Layout
 
 \size footnotesize
-26,88666667
+26.88666667
 \end_layout
 
 \end_inset
@@ -4570,7 +4588,7 @@ Congo
 \begin_layout Plain Layout
 
 \size footnotesize
-25,6466667
+25.6466667
 \end_layout
 
 \end_inset
