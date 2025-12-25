@@ -2954,13 +2954,288 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+A method that constructs classification rules using the technique of Grammatical Evolution 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mainGe"
+literal "false"
+
+\end_inset
+
+ is proposed here for the prediction of climate changes.
+ The Grammatical Evolution procedure can be considered as
+\series bold
+ 
+\series default
+a genetic algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gaOverview"
+literal "false"
+
+\end_inset
+
+,
+ where the chromosomes are series of integer values the representing the production rules of the provided Backus-Naur form (BNF) grammar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bnf1"
+literal "false"
+
+\end_inset
+
+.
+ The Grammatical Evolution procedure has been used successfully in a series of practical problems,
+ such as
+\series bold
+ 
+\series default
+data fitting problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_program1,ge_program2"
+literal "false"
+
+\end_inset
+
+,
+ issues appeared in economic problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_credit"
+literal "false"
+
+\end_inset
+
+,
+ issues regarding network security
+\series bold
+ 
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_intrusion"
+literal "false"
+
+\end_inset
+
+,
 
 \series bold
-GRAMMATICAL EVOLUTION HERE
+ 
+\series default
+problems regarding the quality of water 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_water"
+literal "false"
+
+\end_inset
+
+,
+ medicine problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_glykemia"
+literal "false"
+
+\end_inset
+
+,
+ evolutionary computation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_ant"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+problems that appear in data centers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_datacenter"
+literal "false"
+
+\end_inset
+
+,
+ solution of trigonometric problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+,
+ automatic composition of music 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_music"
+literal "false"
+
+\end_inset
+
+,
+ construction of the architecture of neural networks
+\series bold
+ 
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_nn,ge_nn2"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+production of numerical constants 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+,
+ playing video games 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_pacman,ge_supermario"
+literal "false"
+
+\end_inset
+
+,
+ energy problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+combinatorial optimization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+cryptography problems
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+construction of decision trees 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_decision"
+literal "false"
+
+\end_inset
+
+,
+
+\series bold
+ 
+\series default
+electronic problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ge_analog"
+literal "false"
+
+\end_inset
+
+ etc.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+This paper proposes the application of a technique for automatically generating classification rules to predict climate change in various regions of our planet.
+ These rules are expressed in a programming language and can be interpreted later.
+\end_layout
+
+\begin_layout Standard
+The rest of this manuscript is organized as follows:
+ the used dataset and the incorporated methods used in the conducted experiments are outlined in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ the experimental results are shown and discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and finally a detailed discussion is provided in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 Materials and Methods
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Materials-and-Methods"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3058,7 +3333,7 @@ placement document
 alignment center
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3811,7 +4086,7 @@ placement document
 alignment center
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align left
@@ -4113,7 +4388,7 @@ placement document
 alignment center
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align left
@@ -4631,8 +4906,25 @@ The rationale for selecting the initial five-year period was to establish a refe
  thereby enhancing the reliability of subsequent analyses.
 \end_layout
 
+\begin_layout Subsection
+The proposed method
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+WRITE SOME TEXT HERE
+\end_layout
+
 \begin_layout Section
 Results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5532,12 +5824,96 @@ Experiments with the number of chromosomes
 \end_layout
 
 \begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:experNC"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ evaluates the sensitivity of the proposed model to the number of chromosomes 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+,
+ using classification error percentages as the performance metric (lower is better).
+ A clear and nearly monotonic improvement is observed as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ increases from 50 to 1000:
+ the mean error (AVERAGE row) drops from 3.21% to 1.46%,
+ i.e.,
+ an absolute reduction of 1.75 percentage points corresponding to an approximate 54.5% relative decrease.
+ Most of the gain is realized up to 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+=500 (3.21%→2.68%→2.17%→1.66%),
+ whereas the additional improvement from 500 to 1000 is smaller (1.66%→1.46%,
+ a 0.20 decrease),
+ indicating diminishing returns for very large chromosome counts.
+ At the dataset level,
+ the largest relative reductions from 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+=50 to 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+=1000 occur for ARABIA (2.52%→0.54%,
+ ~78.6%) and TURKEY (2.37%→0.57%,
+ ~75.9%).
+ In contrast,
+ ICELAND exhibits a smaller but consistent overall reduction (3.22%→2.14%,
+ ~33.5%) and a slight non-monotonic fluctuation at 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+=100 (3.27% vs.
+ 3.22%),
+ which is corrected for higher 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+.
+ KONGO remains the most challenging dataset across all settings (8.86% at 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+=50 and 4.39% at 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+=1000),
+ implying that increasing 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ substantially improves performance but does not fully remove the intrinsic difficulty associated with that region’s data structure.
+ Importantly,
+ cross-dataset variability also decreases with 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+:
+ the maximum error decreases from 8.86% to 4.39% and the range (max-min) shrinks from 7.08 to 3.85 percentage points,
+ while the standard deviation of errors across datasets declines from about 2.54 to 1.40,
+ suggesting more uniform generalization when using larger chromosome counts.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6116,8 +6492,167 @@ AVERAGE
 
 \end_layout
 
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:stat_tbl7"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ clearly illustrates that increasing the number of chromosomes leads to lower classification error across essentially all datasets,
+ with the mean performance (AVERAGE,
+ black dashed line) following a steady downward trend.
+ The improvement is most pronounced from small 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ values up to approximately 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+=500,
+ after which the error continues to decrease but at a slower rate,
+ indicating diminishing returns for very large chromosome counts.
+ Moreover,
+ the dataset-specific curves become slightly more clustered as 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ increases,
+ suggesting a more uniform behavior of the proposed model across regions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat_tbl7.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+This figure shows the effect of changing the number of chromosomes on the learning error of the proposed technique for a series of datasets.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:stat_tbl7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Experiments with the number of generations
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:experNG"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ investigates the effect of the number of generations 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ on the proposed model,
+ using classification error percentages as the evaluation metric (lower is better).
+ The overall trend is strongly improving with increasing 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+:
+ the mean error (AVERAGE) decreases from 4.46% at 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=50 to 1.45% at 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=2000,
+ corresponding to a 3.01 percentage-point reduction and an approximate 67.4% relative decrease.
+ The gains are not evenly distributed across increments:
+ 50→100 (-0.99),
+ 100→200 (-0.82),
+ 200→1000 (-0.98),
+ and 1000→2000 (-0.21),
+ indicating diminishing returns beyond 1000 generations,
+ where additional computational effort yields smaller improvements in the mean error.
+ At the dataset level,
+ all regions improve substantially from 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=50 to 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=2000,
+ with the largest relative reductions observed for TURKEY (2.63%→0.37%,
+ ~85.9%) and ARABIA (3.03%→0.63%,
+ ~79.2%).
+ KONGO also improves markedly (14.12%→4.18%,
+ ~70.4%) but remains the most challenging dataset across all settings,
+ consistently exhibiting the highest errors.
+ ICELAND shows the smallest overall relative improvement (4.32%→2.58%,
+ ~40.3%) and a slight degradation from 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=1000 to 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=2000 (2.47%→2.58%),
+ suggesting that for certain datasets additional generations may introduce over-training effects and/or stochastic variability that partially offsets expected gains.
+ Increasing 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ also reduces cross-dataset variability:
+ the maximum error drops from 14.12% to 4.18% and the range (max–min) shrinks from 11.92 to 3.81 percentage points,
+ while the standard deviation across datasets decreases from about 4.00 to 1.30,
+ supporting a more uniform generalization profile at higher 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6126,7 +6661,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6641,6 +7176,8 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 4.46%
 \end_layout
 
@@ -6650,6 +7187,8 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 3.46%
 \end_layout
 
@@ -6659,6 +7198,8 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 2.64%
 \end_layout
 
@@ -6679,6 +7220,8 @@ AVERAGE
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 1.45%
 \end_layout
 
@@ -6697,8 +7240,171 @@ AVERAGE
 
 \end_layout
 
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:stat_tbl8"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ shows that increasing the number of generations also yields a systematic reduction in classification error,
+ with the mean curve (AVERAGE) improving markedly when moving from few to many generations.
+ The largest gains are achieved up to roughly 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=1000,
+ while the transition from 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=1000 to 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+=2000 exhibits a clear flattening of the curves,
+ implying that additional computational effort produces smaller marginal improvements.
+ Although minor dataset-specific fluctuations may occur at the final step,
+ the overall pattern confirms that larger 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ enhances generalization and reduces error.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stat_tbl8.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The impact of altering the number of generations to the classification error of the proposed method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:stat_tbl8"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this study,
+ we examined multiple climatological datasets from regions representing diverse climatic zones.
+ Specifically,
+ we analyzed data from the period 1995–2025 for Congo,
+ Saudi Arabia,
+ Cape Town,
+ Reykjavik (Iceland),
+ Svalbard,
+ Greece,
+ and Turkey.
+ Our analysis included identifying the most extreme temperature values recorded in each region.
+ Notably,
+ Greece exhibited the lowest temperature among all examined areas,
+ whereas the highest temperature was,
+ as expected,
+ observed in Saudi Arabia.
+ In addition,
+ we conducted statistical assessments to quantify the increase in mean temperature for each country.
+ Turkey demonstrated the greatest rise,
+ consistent with its already thermally stressed conditions during the summer months.
+ Subsequently,
+ in order to define the classes within our dataset,
+ we established a baseline for each region by calculating the mean temperature from the earliest years of the record.
+ This approach ensured an appropriate and region-specific reference point.
+ Based on this baseline,
+ we conducted further measurements and determined that the data would be divided into two classes:
+ Class 0,
+ representing temperature differences less than or equal to 1°C (±1.8°F),
+ and Class 1,
+ representing temperature differences equal to or greater than 1.1°C (≈2.0°F).
+ This classification strategy resulted in a balanced distribution of data across the two classes,
+ thereby providing a solid foundation for the subsequent experimental phase involving different algorithms.
+ For our experiments,
+ we employed the MLP,
+ RBF,
+ SVM,
+ NNC,
+ and GenClass algorithms.
+ Among all methods and across all datasets,
+ GenClass achieved the best performance,
+ with an average error rate of 1.66%,
+ corresponding to an accuracy of 98.34%.
+ The next best performing method was NNC,
+ which recorded an error rate of 6.18%.
+ A statistical performance validation of the models was conducted using the Friedman test (p = 2.49×10⁻⁵).
+ The statistical analysis demonstrates that GENCLASS achieves significantly superior performance compared to SVM and MLP,
+ while no statistically significant differences are observed relative to RBF and NNC under the p < 0.05 criterion.
+ Subsequently,
+ the experiments focused more extensively on the GenClass algorithm,
+ particularly by introducing different combinations of chromosomes and generations.
+ The performance improved further when using 
+\begin_inset Formula $N_{c}=1000$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+,
+ reducing the average error rate even more.
+ Specifically,
+ with 1000 chromosomes the error rate reached 1.46%,
+ while with 2000 generations the error rate decreased slightly to 1.45%.
+ 
+\end_layout
+
+\begin_layout Standard
+In conclusion,
+ our study demonstrated that the use of Grammatical Evolution with rule based construction constitutes the most suitable approach for the examined problem.
+ This research could be further extended to additional regions representing different climatic zones.
+ Moreover,
+ we identified limitations in retrieving meteorological data from the southern Antarctic region,
+ as the available records contained numerous missing values.
 \end_layout
 
 \begin_layout Standard
@@ -7490,6 +8196,565 @@ literal "false"
  IMPROVING CLIMATE CHANGE PREDICTIONS USING TIME SERIES ANALYSIS AND DEEP LEARNING.
  Global & Stochastic Analysis,
  12(4).
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2002)"
+key "mainGe"
+literal "false"
+
+\end_inset
+
+O'Neill,
+ M.,
+ & Ryan,
+ C.
+ (2002).
+ Grammatical evolution.
+ IEEE Transactions on Evolutionary Computation,
+ 5(4),
+ 349-358.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2017)"
+key "gaOverview"
+literal "false"
+
+\end_inset
+
+Kramer,
+ O.
+ (2017).
+ Genetic algorithms.
+ In Genetic algorithm essentials (pp.
+ 11-19).
+ Cham:
+ Springer International Publishing.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring 999
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2002)"
+key "bnf1"
+literal "false"
+
+\end_inset
+
+Backus,
+ J.
+ W.
+ (1959).
+ The syntax and the semantics of the proposed international algebraic language of the Zurich ACM-GAMM Conference.
+ In ICIP Proceedings (pp.
+ 125-132).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program1"
+literal "false"
+
+\end_inset
+
+Ryan,
+ C.,
+ Collins,
+ J.
+ J.,
+ & Neill,
+ M.
+ O.
+ (1998,
+ April).
+ Grammatical evolution:
+ Evolving programs for an arbitrary language.
+ In European conference on genetic programming (pp.
+ 83-96).
+ Berlin,
+ Heidelberg:
+ Springer Berlin Heidelberg.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_program2"
+literal "false"
+
+\end_inset
+
+O’Neill,
+ M.,
+ & Ryan,
+ C.
+ (1999,
+ May).
+ Evolving multi-line compilable C programs.
+ In European Conference on Genetic Programming (pp.
+ 83-92).
+ Berlin,
+ Heidelberg:
+ Springer Berlin Heidelberg.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_credit"
+literal "false"
+
+\end_inset
+
+Brabazon,
+ A.,
+ & O'Neill,
+ M.
+ (2006).
+ Credit classification using grammatical evolution.
+ Informatica,
+ 30(3).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_intrusion"
+literal "false"
+
+\end_inset
+
+Şen,
+ S.,
+ & Clark,
+ J.
+ A.
+ (2009,
+ March).
+ A grammatical evolution approach to intrusion detection on mobile ad hoc networks.
+ In Proceedings of the second ACM conference on Wireless network security (pp.
+ 95-102).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_water"
+literal "false"
+
+\end_inset
+
+Chen,
+ L.,
+ Tan,
+ C.
+ H.,
+ Kao,
+ S.
+ J.,
+ & Wang,
+ T.
+ S.
+ (2008).
+ Improvement of remote monitoring on water quality in a subtropical reservoir by incorporating grammatical evolution with parallel genetic algorithms into satellite imagery.
+ Water Research,
+ 42(1-2),
+ 296-306.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_glykemia"
+literal "false"
+
+\end_inset
+
+Hidalgo,
+ J.
+ I.,
+ Colmenar,
+ J.
+ M.,
+ Risco-Martin,
+ J.
+ L.,
+ Cuesta-Infante,
+ A.,
+ Maqueda,
+ E.,
+ Botella,
+ M.,
+ & Rubio,
+ J.
+ A.
+ (2014).
+ Modeling glycemia in humans by means of grammatical evolution.
+ Applied Soft Computing,
+ 20,
+ 40-53.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_ant"
+literal "false"
+
+\end_inset
+
+Tavares,
+ J.,
+ & Pereira,
+ F.
+ B.
+ (2012,
+ April).
+ Automatic design of ant algorithms with grammatical evolution.
+ In European conference on genetic programming (pp.
+ 206-217).
+ Berlin,
+ Heidelberg:
+ Springer Berlin Heidelberg.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_datacenter"
+literal "false"
+
+\end_inset
+
+Zapater,
+ M.,
+ Risco-Martín,
+ J.
+ L.,
+ Arroba,
+ P.,
+ Ayala,
+ J.
+ L.,
+ Moya,
+ J.
+ M.,
+ & Hermida,
+ R.
+ (2016).
+ Runtime data center temperature prediction using grammatical evolution techniques.
+ Applied Soft Computing,
+ 49,
+ 94-107.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_trig"
+literal "false"
+
+\end_inset
+
+Ryan,
+ C.,
+ O’Neill,
+ M.,
+ & Collins,
+ J.
+ J.
+ (1998,
+ June).
+ Grammatical evolution:
+ Solving trigonometric identities.
+ In proceedings of Mendel (Vol.
+ 98,
+ p.
+ 4th).
+ Brno,
+ Czech Republic:
+ Technical University of Brno,
+ Faculty of Mechanical Engineering.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_music"
+literal "false"
+
+\end_inset
+
+de la Puente,
+ A.
+ O.,
+ Alfonso,
+ R.
+ S.,
+ & Moreno,
+ M.
+ A.
+ (2002,
+ June).
+ Automatic composition of music by means of grammatical evolution.
+ In Proceedings of the 2002 conference on APL:
+ array processing languages:
+ lore,
+ problems,
+ and applications (pp.
+ 148-155).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn"
+literal "false"
+
+\end_inset
+
+De Campos,
+ L.
+ M.
+ L.,
+ de Oliveira,
+ R.
+ C.
+ L.,
+ & Roisenberg,
+ M.
+ (2016).
+ Optimization of neural networks through grammatical evolution and a genetic algorithm.
+ Expert Systems with Applications,
+ 56,
+ 368-384.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_nn2"
+literal "false"
+
+\end_inset
+
+Soltanian,
+ K.,
+ Ebnenasir,
+ A.,
+ & Afsharchi,
+ M.
+ (2022).
+ Modular grammatical evolution for the generation of artificial neural networks.
+ Evolutionary computation,
+ 30(2),
+ 291-327.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_constant"
+literal "false"
+
+\end_inset
+
+Dempsey,
+ I.,
+ O'Neill,
+ M.,
+ & Brabazon,
+ A.
+ (2007).
+ Constant creation in grammatical evolution.
+ International Journal of Innovative Computing and Applications,
+ 1(1),
+ 23-38.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_pacman"
+literal "false"
+
+\end_inset
+
+Galván-López,
+ E.,
+ Swafford,
+ J.
+ M.,
+ O’Neill,
+ M.,
+ & Brabazon,
+ A.
+ (2010,
+ April).
+ Evolving a ms.
+ pacman controller using grammatical evolution.
+ In European Conference on the Applications of Evolutionary Computation (pp.
+ 161-170).
+ Berlin,
+ Heidelberg:
+ Springer Berlin Heidelberg.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_supermario"
+literal "false"
+
+\end_inset
+
+Shaker,
+ N.,
+ Nicolau,
+ M.,
+ Yannakakis,
+ G.
+ N.,
+ Togelius,
+ J.,
+ & O'neill,
+ M.
+ (2012,
+ September).
+ Evolving levels for super mario bros using grammatical evolution.
+ In 2012 IEEE Conference on Computational Intelligence and Games (CIG) (pp.
+ 304-311).
+ IEEE.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_energy"
+literal "false"
+
+\end_inset
+
+Martínez‐Rodríguez,
+ D.,
+ Colmenar,
+ J.
+ M.,
+ Hidalgo,
+ J.
+ I.,
+ Villanueva Micó,
+ R.
+ J.,
+ & Salcedo‐Sanz,
+ S.
+ (2020).
+ Particle swarm grammatical evolution for energy demand estimation.
+ Energy Science & Engineering,
+ 8(4),
+ 1068-1079.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_comb"
+literal "false"
+
+\end_inset
+
+Sabar,
+ N.
+ R.,
+ Ayob,
+ M.,
+ Kendall,
+ G.,
+ & Qu,
+ R.
+ (2013).
+ Grammatical evolution hyper-heuristic for combinatorial optimization problems.
+ IEEE Transactions on Evolutionary Computation,
+ 17(6),
+ 840-861.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_crypt"
+literal "false"
+
+\end_inset
+
+Ryan,
+ C.,
+ Kshirsagar,
+ M.,
+ Vaidya,
+ G.,
+ Cunningham,
+ A.,
+ & Sivaraman,
+ R.
+ (2022).
+ Design of a cryptographically secure pseudo random number generator with grammatical evolution.
+ Scientific reports,
+ 12(1),
+ 8602.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_decision"
+literal "false"
+
+\end_inset
+
+Pereira,
+ P.
+ J.,
+ Cortez,
+ P.,
+ & Mendes,
+ R.
+ (2021).
+ Multi-objective grammatical evolution of decision trees for mobile marketing user conversion prediction.
+ Expert Systems with Applications,
+ 168,
+ 114287.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ge_analog"
+literal "false"
+
+\end_inset
+
+Castejón,
+ F.,
+ & Carmona,
+ E.
+ J.
+ (2018).
+ Automatic design of analog electronic circuits using grammatical evolution.
+ Applied Soft Computing,
+ 62,
+ 1003-1018.
 \end_layout
 
 \begin_layout Bibliography
