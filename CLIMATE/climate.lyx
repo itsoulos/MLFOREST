@@ -5331,6 +5331,18 @@ Mutation procedure
 \end_inset
 
 .
+ The mutation procedure is depicted as a flowchart in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mutation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -5386,7 +5398,7 @@ Get
 \begin_inset Formula $c^{*}$
 \end_inset
 
- of the population with the lowest fitness value and create the corresponding  classification program 
+ of the population with the lowest fitness value and create the corresponding classification program 
 \begin_inset Formula $G^{*}$
 \end_inset
 
@@ -5398,23 +5410,39 @@ Get
 \series bold
 Apply
 \series default
- the classification program to the test set of the problem and report the result.
+ the classification program to the test set of the objective problem and calculate the corresponding test error.
+ 
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+The overall procedure is graphically outlined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-flowchart-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../URBAN/onepoint_crossover.eps
-	scale 35
+	filename crossover.png
+	scale 45
 
 \end_inset
 
@@ -5438,6 +5466,93 @@ name "fig:onePoint"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename mutation_flowchart.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The flowchart of the mutation procedure.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mutation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename genclass_flowchart.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The flowchart of the proposed method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-flowchart-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5501,7 +5616,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6721,7 +6836,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
