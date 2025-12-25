@@ -3144,7 +3144,7 @@ literal "false"
 \series bold
  
 \series default
-cryptography problems
+cryptography problems 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ge_crypt"
@@ -3182,10 +3182,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 This paper proposes the application of a technique for automatically generating classification rules to predict climate change in various regions of our planet.
- These rules are expressed in a programming language and can be interpreted later.
+ These rules are expressed in a C - like programming language and they can also detect hidden correlations between the features of the problem and use only those features that contain the most important information for the correct classification or patterns of the objective problem.
 \end_layout
 
 \begin_layout Standard
@@ -3251,7 +3249,7 @@ The Dataset Employed
 In this study,
  we utilized Historical Weather Data provided by Visual Crossing 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4911,9 +4909,541 @@ The proposed method
 \end_layout
 
 \begin_layout Standard
+The current work proposed the incorporation of a method that constructs classification rules,
+ initially proposed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genclass"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore,
+ this method was implemented as a software recently 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "genclass_softx"
+literal "false"
+
+\end_inset
+
+.
+ The underlying grammar for this method is provided in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:genclassGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 
 \series bold
-WRITE SOME TEXT HERE
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The underlying grammar for the method that produces classification programs using Grammatical Evolution.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:genclassGrammar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+<S>::=if(<BEXPR>) CLASS=0 else CLASS=1 
+\end_layout
+
+\begin_layout LyX-Code
+<BEXPR>::=<XLIST><BOOLOP><EXPR>            
+\end_layout
+
+\begin_layout LyX-Code
+         |!(<BEXPR>)                       
+\end_layout
+
+\begin_layout LyX-Code
+         |<XLIST><BOOLOP><EXPR>&<BEXPR>    
+\end_layout
+
+\begin_layout LyX-Code
+         |<XLIST><BOOLOP><EXPR>|<BEXPR>    
+\end_layout
+
+\begin_layout LyX-Code
+<BOOLOP>::= >                              
+\end_layout
+
+\begin_layout LyX-Code
+          | >=                             
+\end_layout
+
+\begin_layout LyX-Code
+          | <                              
+\end_layout
+
+\begin_layout LyX-Code
+          | <=                             
+\end_layout
+
+\begin_layout LyX-Code
+<EXPR>::= (<EXPR><BINARYOP><EXPR>)         
+\end_layout
+
+\begin_layout LyX-Code
+        | <FUNCTION>(<EXPR>)               
+\end_layout
+
+\begin_layout LyX-Code
+        | <TERMINAL>                       
+\end_layout
+
+\begin_layout LyX-Code
+<BINARYOP>::= +                            
+\end_layout
+
+\begin_layout LyX-Code
+            | -                            
+\end_layout
+
+\begin_layout LyX-Code
+            | *                            
+\end_layout
+
+\begin_layout LyX-Code
+            | /                            
+\end_layout
+
+\begin_layout LyX-Code
+<FUNCTION>::= sin | cos | exp | log        
+\end_layout
+
+\begin_layout LyX-Code
+<TERMINAL>::= <XLIST>                      
+\end_layout
+
+\begin_layout LyX-Code
+            | <DIGITLIST>.<DIGITLIST>      
+\end_layout
+
+\begin_layout LyX-Code
+            | (-<DIGITLIST>.<DIGITLIST>)   
+\end_layout
+
+\begin_layout LyX-Code
+ <XLIST>::= x1 | x2 | ...|xD               
+\end_layout
+
+\begin_layout LyX-Code
+<DIGITLIST>::=<DIGIT>                      
+\end_layout
+
+\begin_layout LyX-Code
+             | <DIGIT><DIGIT>              
+\end_layout
+
+\begin_layout LyX-Code
+             | <DIGIT><DIGIT><DIGIT>       
+\end_layout
+
+\begin_layout LyX-Code
+<DIGIT>::= 0 | 1 | 2 | 3 | 4 |5 |6 |7 |8 |9    
+\end_layout
+
+\end_inset
+
+The steps for this method have as follows:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialization step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ with 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+the number of chromosomes and with 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+ the number of allowed generations.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ the selection rate 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ and the mutation rate 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Initialize
+\series default
+ each chromosome 
+\begin_inset Formula $c_{i},\ i=1,\ldots,N_{c}$
+\end_inset
+
+ as a set of randomly selected integers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+,
+ that defines the generation counter.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fitness calculation step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+For
+\series default
+ 
+\begin_inset Formula $i=1,\ldots,N_{c}$
+\end_inset
+
+ 
+\series bold
+do
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Construct
+\series default
+ with the procedure of Grammatical evolution and the incorporation of the BNF grammar of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:genclassGrammar"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ a classification program 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ that corresponds to the elements of chromosome 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Calculate
+\series default
+ the associated fitness 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ value as
+\begin_inset Formula 
+\begin{equation}
+f_{i}=\sum_{j=1}^{M}\left(G_{i}\left(x_{j}\right)-t_{j}\right)^{2}
+\end{equation}
+
+\end_inset
+
+The set 
+\begin_inset Formula $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{M},t_{M}\right)\right\} $
+\end_inset
+
+ denotes the training set of the objective problem,
+ where the vectors 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ stand for the input patterns and each value 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ represents the actual output for pattern 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+End For
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Application of Genetic Operations
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Selection procedure.
+
+\series default
+ The remaining are substituted by chromosomes produced during crossover and mutation.
+ The top 
+\begin_inset Formula $p_{s}\times N_{c}$
+\end_inset
+
+ chromosomes are directly carried over to the next generation,
+ while the rest are replaced by chromosomes generated through crossover and mutation.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Crossover procedure.
+
+\series default
+ This procedure produces new chromosomes from the current population.
+ For every pair 
+\begin_inset Formula $\left(c_{1},c_{2}\right)$
+\end_inset
+
+ of new chromosomes two chromosomes denoted as 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ are selected from the current population using tournament selection.
+ The production of 
+\begin_inset Formula $\left(c_{1},c_{2}\right)$
+\end_inset
+
+ will be performed using one - point crossover 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "onepoint"
+literal "false"
+
+\end_inset
+
+.
+ An example of this procedure is outlined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:onePoint"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Mutation procedure
+\series default
+.
+ Draw a random number 
+\begin_inset Formula $r\le1$
+\end_inset
+
+ for each element of every chromosome.
+ Alter randomly this element when 
+\begin_inset Formula $r\le p_{m}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Termination check step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Set
+\series default
+ 
+\begin_inset Formula $k=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+If
+\series default
+ 
+\begin_inset Formula $k<N_{g}$
+\end_inset
+
+ then go to Fitness calculation step else go to Testing step.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Testing step
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+(OK)Obtain
+\series default
+ the best chromosome 
+\begin_inset Formula $c^{*}$
+\end_inset
+
+ and produce the associated classification program 
+\begin_inset Formula $G^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Apply
+\series default
+ the classification program to the test set of the problem and report the result.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../URBAN/onepoint_crossover.eps
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A graphical example of the one - point crossover.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:onePoint"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4921,6 +5451,284 @@ Results
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Results"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The software used in the experiments were coded in C++ programming language and the freely available software Optimus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "optimus"
+literal "false"
+
+\end_inset
+
+,
+ available from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/itsoulos/GlobalOptimus/
+\end_layout
+
+\end_inset
+
+ (accessed on 25 December 2025),
+ was incorporated for the optimization methods.
+ The experimental results were validated using the ten - fold cross validation procedure and all the experiments were executed on a Debian Linux machine with 128GB of ram.
+ The values for the experimental parameters are outlined in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:settings"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimental settings.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:settings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PARAMETER
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PURPOSE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VALUE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of chromosomes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{g}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum number of generations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Selection rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mutation rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number or weights
+\begin_inset Newline newline
+\end_inset
+
+ for neural network
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -5136,7 +5944,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -7283,7 +8091,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7332,79 +8140,112 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Standard
-In this study,
- we examined multiple climatological datasets from regions representing diverse climatic zones.
- Specifically,
- we analyzed data from the period 1995–2025 for Congo,
- Saudi Arabia,
- Cape Town,
- Reykjavik (Iceland),
- Svalbard,
- Greece,
- and Turkey.
- Our analysis included identifying the most extreme temperature values recorded in each region.
- Notably,
- Greece exhibited the lowest temperature among all examined areas,
- whereas the highest temperature was,
- as expected,
- observed in Saudi Arabia.
- In addition,
- we conducted statistical assessments to quantify the increase in mean temperature for each country.
- Turkey demonstrated the greatest rise,
- consistent with its already thermally stressed conditions during the summer months.
- Subsequently,
- in order to define the classes within our dataset,
- we established a baseline for each region by calculating the mean temperature from the earliest years of the record.
- This approach ensured an appropriate and region-specific reference point.
- Based on this baseline,
- we conducted further measurements and determined that the data would be divided into two classes:
- Class 0,
- representing temperature differences less than or equal to 1°C (±1.8°F),
- and Class 1,
- representing temperature differences equal to or greater than 1.1°C (≈2.0°F).
- This classification strategy resulted in a balanced distribution of data across the two classes,
- thereby providing a solid foundation for the subsequent experimental phase involving different algorithms.
- For our experiments,
- we employed the MLP,
- RBF,
- SVM,
- NNC,
- and GenClass algorithms.
- Among all methods and across all datasets,
- GenClass achieved the best performance,
- with an average error rate of 1.66%,
- corresponding to an accuracy of 98.34%.
- The next best performing method was NNC,
- which recorded an error rate of 6.18%.
- A statistical performance validation of the models was conducted using the Friedman test (p = 2.49×10⁻⁵).
- The statistical analysis demonstrates that GENCLASS achieves significantly superior performance compared to SVM and MLP,
- while no statistically significant differences are observed relative to RBF and NNC under the p < 0.05 criterion.
- Subsequently,
- the experiments focused more extensively on the GenClass algorithm,
- particularly by introducing different combinations of chromosomes and generations.
- The performance improved further when using 
-\begin_inset Formula $N_{c}=1000$
-\end_inset
-
- and 
-\begin_inset Formula $N_{g}=2000$
-\end_inset
-
-,
- reducing the average error rate even more.
- Specifically,
- with 1000 chromosomes the error rate reached 1.46%,
- while with 2000 generations the error rate decreased slightly to 1.45%.
+The present study provides empirical evidence that daily temperature time series (1995-2025) across seven regions spanning distinct climate zones exhibit a consistent warming signal,
+ albeit with pronounced spatial heterogeneity.
+ Mean temperature increases are not uniform:
+ Turkey shows the strongest rise,
+ followed by Reykjavik and Greece,
+ whereas the Congo region displays only marginal changes.
+ This spatial contrast underscores that large-scale warming manifests differently depending on geography,
+ seasonality,
+ maritime influence,
+ topography,
+ and local atmospheric processes (e.g.,
+ humidity and cloud-related dynamics).
+ In methodological terms,
+ the adoption of a region-specific baseline derived from the early 1995-2000 period proved effective for defining comparable classes across heterogeneous climates,
+ supporting relatively balanced class distributions and reducing the risk that the labeling scheme inherits the already intensified warming of recent years.
  
 \end_layout
 
 \begin_layout Standard
-In conclusion,
- our study demonstrated that the use of Grammatical Evolution with rule based construction constitutes the most suitable approach for the examined problem.
- This research could be further extended to additional regions representing different climatic zones.
+From a modeling perspective,
+ Grammatical Evolution with rule-based construction (GENCLASS) demonstrates robust and systematic superiority over the considered baselines (MLP,
+ RBF,
+ SVM,
+ and NNC) across all datasets,
+ achieving the lowest average classification error and indicating strong cross-regional generalization.
+ Importantly,
+ the advantage is not limited to the mean performance but extends to consistency across markedly different environmental regimes,
+ which is critical for transferability in climate-related applications.
+ Statistical validation further corroborates that the observed differences are unlikely to be due to chance:
+ the overall Friedman test is highly significant (p = 2.49×10⁻⁵).
+ Pairwise comparisons indicate that GENCLASS significantly outperforms SVM and differs significantly from MLP,
+ while differences relative to RBF and NNC are not statistically significant at the 0.05 level.
+ This pattern is consistent with GENCLASS remaining competitive against strong conventional learners while avoiding the pronounced degradation that some methods exhibit on nonlinear and non-stationary climate time series.
+ 
+\end_layout
+
+\begin_layout Standard
+Sensitivity analyses with respect to key evolutionary parameters strengthen the methodological credibility of the proposed approach.
+ Increasing the number of chromosomes (
+\begin_inset Formula $N_{c}$
+\end_inset
+
+) and generations (
+\begin_inset Formula $N_{g}$
+\end_inset
+
+) yields systematic error reductions,
+ with clear diminishing returns beyond approximately 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+≈500 and 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+≈1000,
+ suggesting that improvements stem from enhanced search efficacy rather than incidental fluctuations.
  Moreover,
- we identified limitations in retrieving meteorological data from the southern Antarctic region,
- as the available records contained numerous missing values.
+ the persistent relative difficulty of the KONGO dataset across all settings is informative:
+ in regions with weaker temperature seasonality and stronger coupling between temperature and moisture/cloud processes,
+ a binary temperature-deviation labeling scheme may be intrinsically harder to learn,
+ motivating either feature enrichment or a revised labeling strategy that better reflects the underlying physical dynamics.
+\end_layout
+
+\begin_layout Standard
+Despite the strong results,
+ several limitations delineate the scope of generalization.
+ First,
+ the data originate from an aggregated provider and may embed temporal inconsistencies,
+ missingness patterns,
+ or changes in upstream data synthesis over time.
+ Second,
+ evaluation is conducted using classification error under a binary formulation (Class 0/1),
+ which necessarily simplifies a multi-factor climate system and does not quantify predictive uncertainty.
+ Third,
+ careful time-series-aware evaluation is essential to preclude information leakage from later periods into earlier ones.
+ Fourth,
+ applying a uniform absolute threshold (±1°C and >1.1°C) for class definition while practical may not be climatically equivalent across tropical versus polar regimes,
+ where variability and seasonal structure differ qualitatively.
+\end_layout
+
+\begin_layout Standard
+Future work can extend this research along four complementary directions.
+ First,
+ geographic and climatic coverage should be broadened by incorporating additional regions per climate zone,
+ explicitly addressing microclimates (island and mountainous settings),
+ and systematically revisiting Antarctica through alternative data sources and missing-data strategies.
+ Second,
+ the representation of the climate system should be enriched by integrating additional predictors (humidity,
+ pressure,
+ wind,
+ radiation,
+ drought indices,
+ and teleconnection-related indicators),
+ enabling the learned rules to capture drivers rather than only temperature outcomes.
+ Third,
+ the task formulation should be expanded beyond binary classification toward multi-class regimes and/or regression-based forecasting with explicit horizons (10/20/30 years) and uncertainty quantification,
+ thereby improving the operational relevance of the results.
+ Fourth,
+ experimental protocols should be strengthened with time-aware cross-validation,
+ decade-wise stability checks,
+ and broader benchmarking against modern hybrid/deep time-series models,
+ while retaining the interpretability advantages of rule-based structures.
+ Ultimately,
+ the most impactful direction is a unified framework that couples predictive accuracy with statistical rigor and interpretable rules,
+ ensuring that the resulting climate inferences are not only accurate but also scientifically explainable and actionable for adaptation planning.
 \end_layout
 
 \begin_layout Standard
@@ -7488,7 +8329,17 @@ literal "false"
  George Allen & Unwin,
  1939.
  Available from:
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
  https://gutenberg.ca/ebooks/murrayaeschylus-persians/murrayaeschylus-persians-00-h.html 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Bibliography
@@ -7508,7 +8359,18 @@ Aeschylus,
  USA,
  ISBN 978-1-935238-57-7.
  Available from:
- https://johnstoniatexts.x10host.com/aeschylus/persianshtml.html 
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://johnstoniatexts.x10host.com/aeschylus/persianshtml.html 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Bibliography
@@ -7522,7 +8384,18 @@ literal "false"
  United Nations.
  Climate Action.
  Available from:
- https://www.un.org/en/climatechange/what-is-climate-change (accessed on 7 Novemer 2025)
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.un.org/en/climatechange/what-is-climate-change
+\end_layout
+
+\end_inset
+
+ (accessed on 7 Novemer 2025)
 \end_layout
 
 \begin_layout Bibliography
@@ -7539,7 +8412,18 @@ literal "false"
  Rio de Janeiro,
  Brazil 3 - 14 June 1992.
  Available from:
- https://unfccc.int/process-and-meetings/united-nations-framework-convention-on-climate-change (accessed on 7 Novemer 2025)
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://unfccc.int/process-and-meetings/united-nations-framework-convention-on-climate-change
+\end_layout
+
+\end_inset
+
+ (accessed on 7 Novemer 2025)
 \end_layout
 
 \begin_layout Bibliography
@@ -7572,7 +8456,7 @@ Hallegatte,
  Cham:
  Springer International Publishing.
  ISBN 978-3-319-08932-4 ISBN 978-3-319-08933-1 (eBook).
- DOI 10.1007/978-3-319-08933-1
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7597,7 +8481,7 @@ literal "false"
  Symmetry,
  17(11),
  1785.
- https://doi.org/10.3390/sym17111785 
+ 
 \end_layout
 
 \begin_layout Bibliography
@@ -7613,7 +8497,18 @@ literal "false"
  Experts Warn.
  23 February 2022.
  Available online:
- https://www.unep.org/news-and-stories/press-release/number-wildfires-rise-50-cent-2100-and-governments-are-not-prepared (accessed on 7 Novemer 2025)
+ h
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+ttps://www.unep.org/news-and-stories/press-release/number-wildfires-rise-50-cent-2100-and-governments-are-not-prepared
+\end_layout
+
+\end_inset
+
+ (accessed on 7 Novemer 2025)
 \end_layout
 
 \begin_layout Bibliography
@@ -7628,7 +8523,18 @@ United Nations.
  (2015) Climate Action.
  The Paris Agreement.
  Available from:
- https://www.un.org/en/climatechange/paris-agreement (accessed on 8 November 2025).
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.un.org/en/climatechange/paris-agreement
+\end_layout
+
+\end_inset
+
+ (accessed on 8 November 2025).
 \end_layout
 
 \begin_layout Bibliography
@@ -7643,7 +8549,18 @@ literal "false"
  2024.
  Global Temperature - Earth Indicator.
  Available from:
- https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/ (accessed on 8 November 2025).
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/
+\end_layout
+
+\end_inset
+
+ (accessed on 8 November 2025).
 \end_layout
 
 \begin_layout Bibliography
@@ -7658,7 +8575,18 @@ EM-DATA.
  The International Disaster Database.
  Emergency Events Database.
  Available from:
- https://www.emdat.be/ (accessed on 9 November 2025).
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.emdat.be/
+\end_layout
+
+\end_inset
+
+ (accessed on 9 November 2025).
 \end_layout
 
 \begin_layout Bibliography
@@ -7678,8 +8606,7 @@ literal "false"
  Volume 41,
  April 1896,
  pages 237-276.
- Available from:
- https://climatepositions.com/wp-content/uploads/2014/03/Arrhenius.pdf (accessed on 11 November 2025).
+ A
 \end_layout
 
 \begin_layout Bibliography
@@ -8755,6 +9682,99 @@ Castejón,
  Applied Soft Computing,
  62,
  1003-1018.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "genclass"
+literal "false"
+
+\end_inset
+
+Tsoulos,
+ I.G.
+ Creating classification rules using grammatical evolution.
+ Int.
+ J.
+ Comput.
+ Intell.
+ Stud.
+ 2020,
+ 9,
+ 161–171.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2008)"
+key "genclass_softx"
+literal "false"
+
+\end_inset
+
+Anastasopoulos,
+ N.;
+ Tsoulos,
+ I.G.;
+ Tzallas,
+ A.
+ GenClass:
+ A parallel tool for data classification based on Grammatical Evolution.
+ SoftwareX 2021,
+ 16,
+ 100830.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2022)"
+key "onepoint"
+literal "false"
+
+\end_inset
+
+Poli,
+ R.,
+ & Langdon,
+ W.
+ B.
+ (1998).
+ Genetic programming with one-point crossover (pp.
+ 180-189).
+ Springer London.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "(2022)"
+key "optimus"
+literal "false"
+
+\end_inset
+
+Tsoulos,
+ I.
+ G.,
+ Charilogis,
+ V.,
+ Kyrou,
+ G.,
+ Stavrou,
+ V.
+ N.,
+ & Tzallas,
+ A.
+ (2025).
+ OPTIMUS:
+ A Multidimensional Global Optimization Package.
+ Journal of Open Source Software,
+ 10(108),
+ 7584.
 \end_layout
 
 \begin_layout Bibliography
