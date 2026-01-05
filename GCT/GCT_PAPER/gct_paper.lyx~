@@ -366,10 +366,10 @@ Earthquakes are the result of the dynamic processes occurring beneath the Earth�
  stress accumulates and is eventually released as seismic energy.
  This process is continuous and unstoppable.
  This phenomenon is well recognized in the Mediterranean region,
- where significant seismic activity arises from the northward convergence (4–10 mm per year) of the African plate relative to the Eurasian plate along a complex plate boundary.
+ where significant seismic activity arises from the northward convergence (4-10 mm per year) of the African plate relative to the Eurasian plate along a complex plate boundary.
  Consequently,
  our research will focus on the Mediterranean region,
- specifically examining seismic activity from 1990 - 2015 within the latitude range of 33–44° and longitude range of 17–44°.
+ specifically examining seismic activity from 1990 - 2015 within the latitude range of 33-44° and longitude range of 17-44°.
  These geographical coordinates encompass 28 seismic zones,
  with the most active areas being Turkey and Greece.
  In this paper we applied Grammatical Evolution for artificial feature construction in earthquake prediction,
@@ -519,7 +519,7 @@ literal "false"
  In Southern Europe,
  at the University of Naples in Italy,
  a software model called PRESTo (PRobabilistic and Evolutionary early warning SysTem) was developed,
- designed to estimates of earthquake location and size within 5–6 seconds 
+ designed to estimates of earthquake location and size within 5-6 seconds 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Satriano 2009"
@@ -648,7 +648,7 @@ literal "false"
  humanity can move beyond the devastating consequences of major earthquakes,
  such as the 2004 Indian Ocean event with more than 220,000 fatalities,
  the 2011 Tōhoku earthquake in Japan with over 19,000 losses,
- and the 2023 Turkey–Syria earthquake with more than 43,000 deaths.
+ and the 2023 Turkey-Syria earthquake with more than 43,000 deaths.
  Accordingly,
  resilience and sustainability for populations affected by seismic events encompass both physical and social infrastructures capable of withstanding earthquakes,
  while simultaneously safeguarding long-term well-being through disaster risk reduction,
@@ -713,9 +713,7 @@ literal "false"
  Martinez-Alvarez,
  in 2013,
  investigated the utilization of various seismicity indicators as inputs for artificial neural networks.
- The study proposes combining multiple indicators—
-previously shown to be effective across different seismic regions—
-through the application of feature selection techniques 
+ The study proposes combining multiple indicators-previously shown to be effective across different seismic regions through the application of feature selection techniques 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Martínez-Álvarez 2013"
@@ -798,8 +796,8 @@ literal "false"
  Lin,
  in 2018,
  employed the earthquake catalogue from 2000 to 2010,
- comprising events with a Richter magnitude (ML) of 5 and a depth of 300 km within the study area (21°–26° N,
- 119°–123° E).
+ comprising events with a Richter magnitude (ML) of 5 and a depth of 300 km within the study area (21°-26° N,
+ 119°-123° E).
  This dataset was utilized as training input to develop the initial earthquake magnitude prediction backpropagation neural network (IEMPBPNN) model,
  which was designed with two hidden layers 
 \begin_inset CommandInset citation
@@ -1200,9 +1198,9 @@ literal "false"
 
 \end_inset
 
- investigated the prediction of moderate earthquakes (magnitude 3.0–5.8).
+ investigated the prediction of moderate earthquakes (magnitude 3.0-5.8).
  While the seismometer recorded an event of magnitude 4.0,
- the BP-ANN model predicted magnitudes in the range of 3.0–5.0,
+ the BP-ANN model predicted magnitudes in the range of 3.0-5.0,
  achieving a success rate between 75% and 125%.
  According to Asim et al.,
  
@@ -1399,7 +1397,7 @@ https://ds.iris.edu/
 
 (accessed on 25 November 2025),
  which is a platform offering an interactive global map that facilitates both data visualization and the real-time extraction of datasets from the displayed geographic regions.
- The area defined by latitudes 33°–44° and longitudes 17°–44° covers 28 seismic zones,
+ The area defined by latitudes 33°-44° and longitudes 17°-44° covers 28 seismic zones,
  with Turkey and Greece identified as the most seismically active regions.
  
 \end_layout
@@ -2368,7 +2366,7 @@ nolink "false"
 \begin_layout Standard
 In the years under examination,
  earthquakes are distributed across all magnitude classes,
- exhibiting an almost ideal proportion consistent with the Gutenberg–Richter law 
+ exhibiting an almost ideal proportion consistent with the Gutenberg-Richter law 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gutenberg"
@@ -2382,16 +2380,16 @@ literal "false"
  2 events above magnitude 8.0,
  3 events above magnitude 7.0,
  19 events above magnitude 6.0,
- 165 events between 5.0–5.9,
- 3,048 events between 4.0–4.9,
- and 26,301 events between 3.0–3.9 were recorded,
+ 165 events between 5.0-5.9,
+ 3,048 events between 4.0-4.9,
+ and 26,301 events between 3.0-3.9 were recorded,
  thereby confirming the expected logarithmic relationship between frequency and magnitude.
  Such a balanced and representative dataset further enhances the effectiveness of the Grammatical Evolution approach,
  as it provides a comprehensive distribution of seismic events across the full spectrum of magnitudes.
  Moreover,
- our analysis led us to the conclusion that the datasets from 1970–1989 and 2016–2025 lack the diversity observed in the dataset we selected.
+ our analysis led us to the conclusion that the datasets from 1970-1989 and 2016-2025 lack the diversity observed in the dataset we selected.
  Specifically,
- classes 6 and 7 are entirely absent from the 1970–1989 records,
+ classes 6 and 7 are entirely absent from the 1970-1989 records,
  while in the post-2016 data class 7 is missing and class 1 contains only a limited number of instances,
  namely 25.
 \end_layout
@@ -2462,7 +2460,7 @@ name "fig:Graphs-seismic-events"
 \end_layout
 
 \begin_layout Standard
-On the platform that provides us with the Interactive Earthquake Browser we employed coordinates spanning latitudes 33°–44° and longitudes 17°–44°,
+On the platform that provides us with the Interactive Earthquake Browser we employed coordinates spanning latitudes 33°-44° and longitudes 17°-44°,
  considered magnitude values from 1.0 to 10.0,
  and incorporated all available depths by default within the depth range.
  The raw dataset included the following variables:
@@ -3278,21 +3276,21 @@ In the processed dataset,
  afternoon to class 2,
  and night to class 3.
  For the depth code,
- earthquakes occurring near the surface (0–32.9 km) were assigned to class 0,
- those recorded at depths between 33–69.9 km to class 1,
- events within 70–149.9 km to class 2,
- those between 150–299.9 km to class 3,
- earthquakes at depths of 300–499.9 km to class 4,
- those between 500–799.9 km to class 5,
+ earthquakes occurring near the surface (0-32.9 km) were assigned to class 0,
+ those recorded at depths between 33-69.9 km to class 1,
+ events within 70-149.9 km to class 2,
+ those between 150-299.9 km to class 3,
+ earthquakes at depths of 300-499.9 km to class 4,
+ those between 500-799.9 km to class 5,
  and finally,
  events occurring at depths greater than 800 km were assigned to class 6.
  Continuing,
  earthquakes with magnitudes below 2.9 were assigned to class 1,
- those with magnitudes between 3.0–3.9 to class 2,
- magnitudes between 4.0–4.9 to class 3,
+ those with magnitudes between 3.0-3.9 to class 2,
+ magnitudes between 4.0-4.9 to class 3,
  magnitudes between 5.0–5.9 to class 4,
  magnitudes between 6.0–6.9 to class 5,
- magnitudes between 7.0–7.9 to class 6,
+ magnitudes between 7.0-7.9 to class 6,
  while events with magnitudes of 8.0 and above were assigned to class 7.
  With regard to the categorization of the geographical region and the lithospheric plate,
  each region was assigned a code ranging from 1 to 28.
@@ -3300,13 +3298,13 @@ In the processed dataset,
  a code from 1 to 7 was allocated to the lithospheric plates corresponding to each seismic event.
  Finally,
  the Kp code was classified as follows:
- values ranging from 0.000–4.000 were assigned to class 0,
+ values ranging from 0.000-4.000 were assigned to class 0,
  those from 4.100–5.000 to class 1,
  values between 5.100–6.000 to class 2,
  those from 6.100–7.000 to class 3,
- values between 7.100–8.000 to class 4,
+ values between 7.100-8.000 to class 4,
  and finally,
- values from 8.100–9.000 were assigned to class 5.
+ values from 8.100-9.000 were assigned to class 5.
 \end_layout
 
 \begin_layout Standard
@@ -3314,7 +3312,7 @@ At the following stage of data processing,
  we elected to focus on earthquakes with a magnitude code of 2 and above,
  since the inclusion of lower-magnitude events would bias the model toward predicting minor seismic occurrences.
  Notably,
- the small-magnitude category (1–2.9 mag) prevailed as the majority class with 407,144 records,
+ the small-magnitude category (1-2.9 mag) prevailed as the majority class with 407,144 records,
  creating a significant imbalance in the dataset.
  By excluding this dominant class,
  we aimed to achieve a more balanced distribution across magnitudes and to enhance the representational capacity of the model.
@@ -3334,7 +3332,7 @@ http://data.earthquake.cn/
 \end_inset
 
 ,
- last accessed on 12 December 2025) and includes earthquake events with a magnitude greater than 3.0 in the Sichuan–Yunnan region from 1970 to 2021” 
+ last accessed on 12 December 2025) and includes earthquake events with a magnitude greater than 3.0 in the Sichuan-Yunnan region from 1970 to 2021” 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Wang"
@@ -3628,12 +3626,12 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename pso_schema.png
-	scale 75
+	scale 65
 
 \end_inset
 
@@ -4582,6 +4580,65 @@ name "fig:fcSteps"
 
 \end_inset
 
+ Moreover,
+ a graphical pipeline that summarizes the whole procedure is depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-pipeline-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pipeline.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The pipeline of the used procedure.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-pipeline-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -5369,7 +5426,7 @@ nolink "false"
  and the proposed FC (Future Constructions) model.
  The values are expressed as percentage classification error,
  that is,
- the proportion of misclassified events between the two seismic classes defined during preprocessing (events with magnitude code 2–3 versus events with magnitude greater than 3).
+ the proportion of misclassified events between the two seismic classes defined during preprocessing (events with magnitude code 2-3 versus events with magnitude greater than 3).
  The following notation is used in this table:
 \end_layout
 
@@ -6159,6 +6216,69 @@ In particular,
 \end_layout
 
 \begin_layout Standard
+Also,
+ a graphical summary that represents graphically the comparison between the different machine learning methods is depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Graphical-comparison-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename summary.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Graphical comparison of the used machine learning methods.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Graphical-comparison-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Moreover,
  the proposed method can identify the hidden relationships between the features of the objective dataset.
  As an example of constructed features consider the following two features created for a distinct run on the GCT2010 dataset:
@@ -6171,6 +6291,290 @@ f_{2}(x) & = & \cos\left(458.6*x_{2}+(-18.809)*x_{4}\right)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The following figures provide a concise visual characterization of the artificial features generated by Grammatical Evolution:
+ (i) expression-tree representations for two representative constructed features (
+\begin_inset Formula $f_{1}$
+\end_inset
+
+,
+\begin_inset Formula $f_{2}$
+\end_inset
+
+) and (ii) a complementary summary of the grammar primitives used in these constructions,
+ offering direct insight into both their structural form and their basic building blocks.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure_comment1_tree_f1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Constructed feature 
+\begin_inset Formula $f_{1}(x)$
+\end_inset
+
+ expression tree
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cf_f1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cf_f1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ (expression tree of 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+) visualizes the internal structure of the first constructed feature as an expression tree.
+ The root node corresponds to the non-linear primitive sin,
+ applied to an algebraic core that combines multiple original variables (
+\begin_inset Formula $x_{10}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{7}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+) through a weighted sum with constants.
+ This diagram provides an interpretable view of the GE output,
+ indicating that non-linearity is applied over algebraic forms of controlled complexity assembled from grammar primitives.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure_comment1_tree_f2.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Constructed feature 
+\begin_inset Formula $f_{2}(x)$
+\end_inset
+
+ expression tree
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cf_f2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cf_f2"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ (expression tree of 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+) depicts a second constructed feature with a simpler topology:
+ a cos root applied to the sum of two variable terms (
+\begin_inset Formula $x_{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $x_{4}$
+\end_inset
+
+) with constant coefficients.
+ Compared to 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+,
+ this construction has lower structural complexity (fewer nodes/terms) while still introducing non-linearity.
+ The contrast between the two trees illustrates that GE can produce features of varying complexity,
+ ranging from compact to richer expressions,
+ depending on the optimization objective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure_comment1_primitive_usage.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Grammar primitives used in example constructed features (
+\begin_inset Formula $f_{1}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Grammarf1f2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Grammarf1f2"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ (primitive usage) summarizes the grammar building blocks used in the example constructions (
+\begin_inset Formula $f_{1}$
+\end_inset
+
+,
+\begin_inset Formula $f_{2}$
+\end_inset
+
+),
+ including non-linear functions (sin/cos),
+ arithmetic operators (+,
+ *,
+ /),
+ and terminal variables 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ Bar heights correspond to simple occurrence counts (node counts) of primitives within the two symbolic expressions,
+ while numeric constants are omitted to keep the visualization compact and focused on structural elements.
+ This plot provides an intuitive view of the 
+\begin_inset Quotes eld
+\end_inset
+
+vocabulary” employed in these constructions,
+ and the same analysis can be extended by aggregating counts over all runs to describe broader construction trends.
 \end_layout
 
 \begin_layout Subsection
@@ -6673,6 +7077,75 @@ nolink "false"
 \end_inset
 
  = 2 offers a well-balanced compromise between performance and model simplicity.
+ Also,
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nfexpers"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+presents a comparison for the test error for various cases of the parameter 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename nfexper.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The performance of the proposed method on the used datasets,
+ using various values for the parameter 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nfexpers"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6778,6 +7251,123 @@ nolink "false"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Nf1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effect of the number of constructed features 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+:
+ consistency of 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+=1 and diminishing returns
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Nf1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Nf1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ summarizes how the classification error varies with the number of constructed features 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+.
+ The left panel plots error versus 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ for each dataset,
+ together with the mean trend (± standard error),
+ indicating that the lowest average error is obtained at 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+=1.
+ The right panel reports the per-dataset difference 
+\begin_inset Formula $Δ$
+\end_inset
+
+ = Error (
+\begin_inset Formula $N_{f}$
+\end_inset
+
+=k) - Error (
+\begin_inset Formula $N_{f}$
+\end_inset
+
+= 1) for k≥2,
+ where the dashed line 
+\begin_inset Formula $Δ$
+\end_inset
+
+=0 corresponds to the 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+=1 baseline.
+ Predominantly positive 
+\begin_inset Formula $Δ$
+\end_inset
+
+ values show that increasing 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+ provides no additional benefit and leads to diminishing returns relative to 
+\begin_inset Formula $N_{f}$
+\end_inset
+
+=1.
 \end_layout
 
 \begin_layout Subsection
@@ -7263,6 +7853,68 @@ nolink "false"
 
  = 200 offers a very good trade-off between computational cost and predictive performance,
  avoiding unnecessary increases in training time without delivering substantial accuracy gains.
+ Furthermore,
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ngexpers"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ outlines the performance of the proposed method ti the used datasets,
+ using different values for the number of generations 
+\begin_inset Formula $N_{g}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The performance of the proposed method using different values for the parameter 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ngexpers"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7348,7 +8000,7 @@ This study investigates the use of Grammatical Evolution for constructing artifi
  SVM,
  and NNC,
  alongside Feature Construction (FC).
- The analysis is based on seismic data recorded between 1990 and 2015 within the geographical area defined by latitudes 33°–44° and longitudes 17°–44°.
+ The analysis is based on seismic data recorded between 1990 and 2015 within the geographical area defined by latitudes 33°-44° and longitudes 17°-44°.
  While all the aforementioned methods belong to the domain of machine learning,
  FC is distinguished as a feature engineering technique.
  Specifically,

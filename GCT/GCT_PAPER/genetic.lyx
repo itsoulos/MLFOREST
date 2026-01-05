@@ -1,0 +1,1339 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass mdpi
+\begin_preamble
+\documentclass[mathematics,article,submit,moreauthors,pdftex]{mdpi}
+
+\usepackage[utf8]{inputenc}
+\begin{document}
+\firstpage{1}
+\setcounter{page}{\@firstpage}
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2024}
+\copyrightyear{2024}
+\datereceived{}
+\daterevised{}
+\dateaccepted{}
+\datepublished{}
+\hreflink{https://doi.org/}
+
+
+\end{document}
+\end_preamble
+\options journal,article,submit,pdftex,moreauthors
+\use_default_options true
+\maintain_unincluded_children no
+\begin_local_layout
+#Adds an endnote inset, in addition to footnotes. You will need to add
+#\printendnotes in TeX-code where you want the endnotes to appear.
+Format 66
+Counter endnotes
+    PrettyFormat "Endnote ##"
+End
+InsetLayout Flex:Endnote
+   LyXType     custom
+   LatexName   endnote
+   LatexType   command
+   Counter     endnotes
+   Decoration  classic
+   Font
+     Size Small
+   EndFont
+   MultiPar    true
+   LabelString endnote
+   Requires    enotez
+End
+\end_local_layout
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Genetic Algorithm
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size scriptsize
+INPUT
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $f$
+\end_inset
+
+:
+ objective function
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+:
+ number of chromosomes
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $N_{g}$
+\end_inset
+
+:
+ maximum number of allowed generations
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+:
+ the selection rate of the algorithm,
+ with 
+\begin_inset Formula $p_{s}\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $p_{m}$
+\end_inset
+
+:
+ the mutation rate of the algorithm,
+ with 
+\begin_inset Formula $p_{m}\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $iter$
+\end_inset
+
+:
+ the generation counter
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $a$
+\end_inset
+
+:
+ uniformly distributed random numbers,
+ in 
+\begin_inset Formula $∈[-0.5,1.5]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+- 
+\begin_inset Formula $localSearchRate$
+\end_inset
+
+ ∈ [0,1]
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+OUTPUT
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-
+\begin_inset Formula $x_{best}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f_{best}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+INITIALIZATION
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-iter 
+\begin_inset Formula $←0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+main pseudocode
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+01
+\series bold
+ while
+\series default
+ 
+\begin_inset Formula $iter<N_{g}$
+\end_inset
+
+ 
+\series bold
+do // 
+\series default
+termination check
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+02 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i},$
+\end_inset
+
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {1..
+\begin_inset Formula $N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+03 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $f_{i}←f(g_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+04 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+05
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Sort chromosomes by increasing fitness:
+ 
+\begin_inset Formula $N_{b}\leftarrow(1-p_{s})xN_{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+06 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Select parents 
+\begin_inset Formula $w,z$
+\end_inset
+
+ randomly among the best 
+\begin_inset Formula $N_{b}$
+\end_inset
+
+ chromosomes
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+07 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Draw 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+
+\begin_inset Formula $∈$
+\end_inset
+
+ 
+\begin_inset Formula $U[-0.5,1.5]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+08 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $z_{i}\leftarrow a_{i}z_{i}+(1-a_{i})w_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+09 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $w_{i}\leftarrow a_{i}w_{i}+(1-a_{i})z_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+10 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i},$
+\end_inset
+
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {
+\begin_inset Formula $N_{b}+1$
+\end_inset
+
+..
+\begin_inset Formula $N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Replace
+\begin_inset Formula $g_{i}$
+\end_inset
+
+with 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ or 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {
+\begin_inset Formula $1..N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each gene,
+ 
+\begin_inset Formula $j∈$
+\end_inset
+
+ {
+\begin_inset Formula $1....n$
+\end_inset
+
+ } 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Draw 
+\begin_inset Formula $rU[0,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+16
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\series bold
+if
+\series default
+ 
+\begin_inset Formula $r\leq p_{m}$
+\end_inset
+
+then
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+17 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Mutate gene 
+\begin_inset Formula $j$
+\end_inset
+
+ of 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+18
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\series bold
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+19
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+20 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+end for
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+21 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+for
+\series default
+ each 
+\begin_inset Formula $g_{i},$
+\end_inset
+
+ 
+\begin_inset Formula $i∈$
+\end_inset
+
+ {1..
+\begin_inset Formula $N_{c}$
+\end_inset
+
+} 
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+22 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $f_{i}←f(g_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+23 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Draw 
+\begin_inset Formula $ri\in U[0,1]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+24
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+if
+\series default
+ (
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ < 
+\begin_inset Formula $f_{best})$
+\end_inset
+
+ 
+\series bold
+then
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+25
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $xbest←gi,$
+\end_inset
+
+ 
+\begin_inset Formula $fbest←fi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+26 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+27
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\series bold
+endfor
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+28 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Formula $iter←iter+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+29 
+\series bold
+endwhile
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+30 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+(
+\begin_inset Formula $x_{best}$
+\end_inset
+
+ 
+\begin_inset Formula $←$
+\end_inset
+
+
+\begin_inset Formula $LocalSearch$
+\end_inset
+
+(
+\begin_inset Formula $x_{best}$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+31 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+(
+\begin_inset Formula $f_{best}$
+\end_inset
+
+ 
+\begin_inset Formula $←$
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+(
+\begin_inset Formula $x_{best}$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+32 
+\series bold
+return
+\series default
+ 
+\begin_inset Formula $x_{best}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f_{best}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
