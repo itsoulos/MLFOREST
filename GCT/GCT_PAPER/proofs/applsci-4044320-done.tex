@@ -1,0 +1,2147 @@
+%% LyX 2.4.3 created this file.  For more info, see https://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[applsci,article,accept,pdftex,moreauthors]{Definitions/mdpi}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{url}
+\usepackage{varwidth}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{ } 
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ } 
+\datepublished{ } 
+
+
+
+
+\Title{Constructing  %MDPI: Notes for Authors
+%MDPI:1. The paper was edited by our English editor, please check the whole text and confirm if your meaning is retained.
+%MDPI:2. Do not delete any comment we left for you and reply to each comment so that we can understand your meaning clearly.
+%MDPI:3. Please directly correct on this version. If you need to revise somewhere in your paper, please highlight the revisions and track changes to make us known.
+%MDPI:4. Please finish the proofreading based on this version.
+%MDPI:5. Please make sure that all the symbols in the paper are of the same format.
+%MDPI:6. Please confirm and revise all the comments with “Confirmed”, “OK”, “Revised”, “It should be italic”; “I confirm”; “I confirm xx is correct”; “I have checked and revised all.” , etc.“
+%MDPI:7. Please note that at this stage (the manuscript has been accepted in the current form), we will not accept authorship or content changes to the main text.
+%MDPI:(Thank you for your cooperation in advance.)
+Artificial Features with Grammatical Evolution for Earthquake
+Prediction}
+
+%\TitleCitation{Constructing artificial features with Grammatical Evolution for earthquake
+%prediction}
+
+\Author{Constantina %MDPI: Please carefully check the accuracy of names and affiliations. Changing authorship is NOT acceptable during this period (including adding new authors/corresponding authors/affiliations or deleting present authors/corresponding authors/affiliations or exchanging author orders).
+ Kopitsa, Glykeria Kyrou,
+Vasileios Charilogis and Ioannis G. Tsoulos *}
+
+\AuthorNames{Kopitsa, C., Kyrou, G., Charilogis V. \textbackslash\& Tsoulos,
+I.G. }
+
+\AuthorNames{Constantina Kopitsa, Glykeria Kyrou, Vasileios Charilogis and Ioannis
+G. Tsoulos}
+
+%\AuthorCitation{Kopitsa, C.; Kyrou, G.; Charilogis, V., Tsoulos, I.G. }
+
+
+\address[1]{Department %MDPI: there is only one affiliation, so we deleted the number, please confirm and check this part.
+ of Informatics and Telecommunications, %MDPI: We changed dot to comma. Please confirm this revision.
+University of Ioannina, 45500 Ioannina, Greece; %MDPI: We added city name and post code, please confirm.
+ k.kopitsa@uoi.gr (C.K.); g.kyrou@uoi.gr (G.K.); v.charilog@uoi.gr (V.C.)}
+
+
+\corres{\hangafter=1 \hangindent=1.05em \hspace{-0.82em}Correspondence: itsoulos@uoi.gr}
+
+
+\abstract{Earthquakes are the result of the dynamic processes occurring beneath
+the Earth’s crust; specifically, the movement and interaction of tectonic/lithospheric plates. When one plate shifts relative to another,
+stress accumulates and is eventually released as seismic energy. This
+process is continuous and unstoppable. This phenomenon is well recognized
+in the Mediterranean region, where significant seismic activity arises
+from the northward convergence (4--10 mm per year) of the African plate
+relative to the Eurasian plate along a complex plate boundary. Consequently,
+our research will focus on the Mediterranean region, specifically
+examining seismic activity from 1990 to 2015 within the latitude range
+of 33--44° and longitude range of 17--44°. These geographical coordinates
+encompass 28~seismic zones, with the most active areas being Turkey
+and Greece. In this paper, we applied Grammatical Evolution for artificial
+feature construction in earthquake prediction, evaluated against machine
+learning approaches including MLP(GEN), MLP(PSO), SVM, and NNC. Experiments
+showed that feature construction (FC) achieved the best performance,
+with a mean error of 9.05\% and overall accuracy of 91\%, outperforming
+SVM. Further analysis revealed that a single constructed feature $\left(N_{f}=1\right)$
+yielded the lowest average error (8.21\%), while varying the number
+of generations indicated that $N_{g}=200$ provided an effective balance
+between computational cost and predictive accuracy. These findings
+confirm the efficiency of FC in enhancing earthquake prediction models
+through artificial feature construction. Our results, as will be discussed
+in greater detail within the research, yield an average error of approximately
+9\%, corresponding to an overall accuracy of 91\%.}
+
+
+\keyword{earthquakes; %MDPI: we revised the lowercase and uppercase format in this part, please confirm and check
+ machine learning; neural networks; Grammatical Evolution;
+Feature Construction}
+
+\DeclareTextSymbolDefault{\textquotedbl}{T1}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% Variable width box for table cells
+\newenvironment{cellvarwidth}[1][t]
+    {\begin{varwidth}[#1]{\linewidth}}
+    {\@finalstrut\@arstrutbox\end{varwidth}}
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxcode}
+	{\par\begin{list}{}{
+		\setlength{\rightmargin}{\leftmargin}
+		\setlength{\listparindent}{0pt}% needed for AMS classes
+		\raggedright
+		\setlength{\itemsep}{0pt}
+		\setlength{\parsep}{0pt}
+		\normalfont\ttfamily}%
+	 \item[]}
+	{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+%\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
+
+% Below journals will use APA reference format:
+% admsci, aichem, behavsci, businesses, econometrics, economies, education, ejihpe, famsci, games, humans, ijcs, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth
+
+% Below journals will use Chicago reference format:
+% arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% accountaudit, acoustics, actuators, addictions, adhesives, admsci, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, air, algorithms, allergies, alloys, amh, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arm, arthropoda, arts, asc, asi, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, commodities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecm, ecologies, econometrics, economies, education, eesp, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, ent, entomology, entropy, environments, epidemiologia, epigenomes, esa, est, famsci, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, fuels, future, futureinternet, futureparasites, futurepharmacol, futurephys, futuretransp, galaxies, games, gases, gastroent, gastrointestdisord, gastronomy, gels, genealogy, genes, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, glacies, grasses, greenhealth, gucdd, hardware, hazardousmatters, healthcare, hearts, hemato, hematolrep, heritage, higheredu, highthroughput, histories, horticulturae, hospitals, humanities, humans, hydrobiology, hydrogen, hydrology, hygiene, idr, iic, ijerph, ijfs, ijgi, ijmd, ijms, ijns, ijpb, ijt, ijtm, ijtpp, ime, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jal, jcdd, jcm, jcp, jcs, jcto, jdad, jdb, jeta, jfb, jfmk, jimaging, jintelligence, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joitmc, joma, jop, jor, journalmedia, jox, jpbi, jpm, jrfm, jsan, jtaer, jvd, jzbg, kidney, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, land, languages, laws, life, lights, limnolrev, lipidology, liquids, literature, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mps, msf, mti, multimedia, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nursrep, nutraceuticals, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, organoids, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, populations, poultry, powders, preprints, proceedings, processes, prosthesis, proteomes, psf, psych, psychiatryint, psychoactives, psycholint, publications, purification, quantumrep, quaternary, qubs, radiation, reactions, realestate, receptors, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, rheumato, risks, robotics, rsee, ruminants, safety, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, signals, sinusitis, siuj, skins, smartcities, sna, societies, socsci, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, tourismhosp, toxics, toxins, transplantology, transportation, traumacare, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, wem, wevj, wild, wind, women, world, youth, zoonoticdis
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, book, bookreview, briefreport, casereport, comment, commentary, communication, conferenceproceedings, correction, conferencereport, entry, expressionofconcern, extendedabstract, datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, systematicreview, supfile, technicalnote, viewpoint, guidelines, registeredreport, tutorial
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and dvi2pdf.
+
+%=================================================================
+%% MDPI internal commands - do not modify
+%\firstpage{1} 
+%\setcounter{page}{\@firstpage}
+%\pubvolume{1}
+%\issuenum{1}
+%\articlenumber{0}
+%\pubyear{2025}
+%\copyrightyear{2025}
+%%\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
+%\datereceived{}
+%\daterevised{ } % Comment out if no revised date
+%\dateaccepted{}
+%\datepublished{}
+%%\datecorrected{} % For corrected papers include a "Corrected: XXX" date in the original paper.
+%%\dateretracted{} % For retracted papers include a "RETRACTED: XXX" date in the original paper.
+%\hreflink{https://doi.org/} % If needed use \linebreak
+%%\doinum{}
+%%\pdfoutput=1 % Uncommented for upload to arXiv.org
+%%\CorrStatement{yes}  % For updates
+%\longauthorlist{yes} % For many authors that exceed the left citation part
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
+
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences:
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data:
+%\dataset{DOI number or link to the deposited data set in cases where the data set is published or set to be published separately. If the data set is submitted and will be published as a supplement to this paper in the journal Data, this field will be filled by the editors of the journal. In this case, please make sure to submit the data set as a supplement when entering your manuscript into our manuscript editorial system.}
+
+%\datasetlicense{license under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal BioTech, Fishes, Neuroimaging and Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{Instead of the abstract}
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
+ 
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+%
+%\noindent The goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2 bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What is the implication of the main finding?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+When entering the single keyword “earthquakes” into Google Scholar,
+more than 3,910,000 results are retrieved, demonstrating the intense
+interest that exists in the field of seismology. Thanks to these studies
+and investigations, which evolve from an initial idea or theory into
+practical applications, it can be stated with confidence that humanity
+is now capable of achieving timely early warning before seismic events
+occur. Consequently, the pursuit of sustainability strengthens our
+resilience against seismic phenomena. This has been achieved through
+the implementation of early warning systems established across the
+globe, particularly in technologically advanced countries that are
+also seismically vulnerable regions. For this purpose, the UN Disaster
+Risk Reduction was established, which is “aimed at preventing new
+and reducing existing disaster risk and managing residual risk, all
+of which contribute to strengthening resilience and therefore to the
+achievement of sustainable development ”~\citep{UNDRR 2017}. An early
+achievement of disaster risk reduction took place in Japan in 1960,
+when seismic sensors were installed along the railway infrastructure
+to ensure the automatic immobilization of trains~\citep{Nakamura 1984}.
+The Japanese UrEDAS (Urgent Earthquake Detection and Alarm System)
+has been described as the ``grandfather'' of earthquake early warning
+systems, in general, and of onsite warning systems in particular~\citep{Nakamura 1988}.
+Since then, techniques and methods have advanced through technological
+progress. The next achievement in early earthquake warning was accomplished
+in Mexico in 1989 with the establishment of the Seismic Alert System
+(SAS)~\citep{Espinosa Aranda 1995}. In 2006, Japan launched the Earthquake
+Early Warning system initially for a limited audience, and subsequently
+for the general public, in order to ensure the effectiveness of EEW
+in disaster mitigation~\citep{Kamigaichi 2009}. This allows an earthquake
+warning to be disseminated between several seconds and up to one minute
+prior to the occurrence of the event~\citep{EEW}. In Bucharest, Romania,
+an earthquake warning system, in 1999, was also developed, providing
+a preparation window of 25 s~\citep{Wenzel 1999}. Also in Istanbul,
+in preparation for the anticipated earthquake, an early warning system
+was implemented in 2002~\citep{Alcik 2009}. In Southern Europe, at
+the University of Naples in Italy, a software model called PRESTo version 1.0 %MDPI: please confirm if this is software? if yes, please add version number for it.
+(Probabilistic and Evolutionary Early Warning System) was developed,
+designed to estimate earthquake location and size within 5--6 s
+~\citep{Satriano 2009}. Furthermore, the United States, through the
+U.S. Geological Survey, has established its own earthquake warning
+system. Since 2016, the ShakeAlert system has been operational along
+the West Coast~\citep{USGS, Shake alert}. Subsequently, a map is presented
+in Figure \ref{fig:mapQuakes}, illustrating Earthquake Early Warning
+Systems worldwide, with colors indicating the operational status of
+each system, provided in~\citep{zollo}. Purple denotes operative
+systems that provide warnings to the public, black represents systems
+currently undergoing real-time testing, and gray is used for countries
+where feasibility studies are still in progress. 
+
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=1.5]{table1}
+%\par\end{centering}
+\caption{{The} %MDPI: 1. The contents of this figure are not legible. Please replace the image with one of a sufficiently high resolution (min. 1000 pixels width/height, or a resolution of 300 dpi or higher). 2. Please change the hyphen (-) into a minus sign (−, “U+2212”) in the figure, e.g., “-1” should be “−1”. 3. the image is incomplete, please revise. %MDPI: Please DO NOT change any data in figures/tables or replace into new figures/tables during proofreading stage since paper has been accepted.
+ map shows Earthquakes Early Warning Systems around the world.\label{fig:mapQuakes}}
+\end{figure}
+
+Within this framework, it is important to highlight that in recent
+years, considerable emphasis has been placed on the advancement of
+diverse models for the early detection of seismic events, which have
+become available to the wider public through mobile applications,
+television broadcasts, and radio communication~\citep{Tsoulos 2025}.
+The primary function of Android applications is that, once an earthquake
+is detected, an alert is transmitted to all smartphones located within
+the affected area. Provided that the user is not in close proximity
+to the epicenter, the notification can be received in advance, allowing
+sufficient time to take protective action before the destructive seismic
+waves arrive~\citep{Earthquake app,Android EAS,Greece Earthquakes,Earthquake Network}.
+By harnessing technology as an ally against natural disasters, humanity
+can move beyond the devastating consequences of major earthquakes,
+such as the 2004 Indian Ocean event with more than 220,000 fatalities,
+the 2011 Tōhoku earthquake in Japan with over 19,000~losses, and the
+2023 Turkey--Syria earthquake with more than 43,000 deaths. Accordingly,
+resilience and sustainability for populations affected by seismic
+events encompass both physical and social infrastructures capable
+of withstanding earthquakes, while simultaneously safeguarding long-term
+well-being through disaster risk reduction, community preparedness,
+and equitable recovery. 
+
+Subsequently, we will proceed with the presentation of related studies
+alongside our own, which progressively enhance both our sustainability
+and our capacity for prevention against seismic phenomena.\textbf{
+}Housner, in 1964, concluded that artificial earthquakes constitute
+adequate representations of strong-motion events for structural analysis
+and may serve as standard ground motions in the design of engineering
+structures~\citep{Housner 1964}.\textbf{ }Adeli, in 2009, proposed
+a novel feature extraction technique, asserting that when combined
+with a selected Probabilistic Neural Network (PNN), it can yield reliable
+prediction outcomes for earthquakes with magnitudes ranging from 4.5
+to 6.0 on the Richter scale~\citep{Adeli 2009}. Zhou, in 2012, introduced
+a robust feature extraction approach, the Log-Sigmoid Frequency Cepstral
+Coefficients (LSFCCs), derived from the Mel Frequency Cepstral Coefficients
+(MFCCs), for the classification of ground targets using geophones.
+Employing LSFCCs, the average classification accuracy for tracked
+and wheeled vehicles exceeds 89\% across three distinct geographical
+settings, achieved with a single classifier trained in only one of
+these environments~\citep{Zhou 2012}. Martinez-Alvarez, in 2013,
+investigated the utilization of various seismicity indicators as inputs
+for artificial neural networks. The study proposes combining multiple
+indicators---previously shown to be effective across different seismic
+regions through the application of feature selection techniques~\citep{Mart=0000EDnez-=0000C1lvarez 2013}.
+Schmidt, in 2015, proposed an efficient and automated method for seismic
+feature extraction. The central concept of this approach is to interpret
+a two-dimensional seismic image as a function defined on the vertices
+of a carefully constructed underlying graph~\citep{Schmidt 2015}.
+Narayanakumar, in 2016, extracted seismic features from a predetermined
+number of events preceding the main shock in order to perform earthquake
+prediction using the backpropagation (BP) neural network technique~\citep{Narayanakumar 2016}. Cortes, in 2016, sought to identify the
+parameters most effective for earthquake prediction. As various studies
+have employed different feature sets, the optimal selection of features
+appears to depend on the specific dataset used in constructing the
+model~\citep{Cortes 2016}. Asim, in 2018, developed a hybrid embedded
+feature selection approach designed to enhance the accuracy of earthquake
+prediction~\citep{Asim 2018}. Chamberlain, in 2018, demonstrated
+that synthetic seismograms, when applied with matched-filter techniques,
+enable the detection of earthquakes even with limited prior knowledge
+of the source~\citep{Chamberlain 2018}. Okada, in 2018, employed
+observational data either by calibrating parameters within existing
+models or by deriving models and indicators directly from the data
+itself~\citep{Okada 2018}. Lin, in 2018, employed the earthquake
+catalogue from 2000 to 2010, comprising events with a Richter magnitude
+(ML) of 5 and a depth of 300 km within the study area (21--26° N,
+119--123° E). This dataset was utilized as training input to develop
+the initial earthquake magnitude prediction backpropagation neural
+network (IEMPBPNN) model, which was designed with two hidden layers~\citep{Lin 2018}. Zhang, in 2019, proposed a precursory pattern-based
+feature extraction approach aimed at improving earthquake prediction
+performance. In this method, raw seismic data are initially segmented
+into fixed daily time intervals, with the magnitude of the largest
+earthquake within each interval designated as the main shock~\citep{Zhang 2019}.
+Rohas's, in 2019, paper reviewed the latest uses of artificial neural
+networks for automated seismic data interpretation, focusing especially
+on earthquake detection and onset-time estimation~\citep{Rojas 2019}.\textbf{
+}Ali, in 2020, generated synthetic seismic data for a three-layer
+geological model and analyzed using Continuous Wavelet Transform (CWT)
+to identify seismic reflections in both the temporal and spatial domains
+~\citep{Ali 2020}. Bamer, in 2021, demonstrated, through comparison
+with several state-of-the-art studies, that the convolutional neural
+network autonomously learns to extract pertinent input features
+and structural response behavior directly from complete time histories,
+rather than relying on a predefined set of manually selected intensity
+measures~\citep{Bamer 2021}. Wang, in 2023, reports that the accuracies
+of various AI models using the feature extraction dataset surpassed
+those obtained with the spectral amplitude dataset, demonstrating
+that the feature extraction approach more effectively emphasizes the
+distinctions among different types of seismic events~\citep{Wang 2023}.
+Ozkaya, in 2024, developed a novel feature engineering framework that
+integrates the Butterfly Pattern (BFPat), statistical measures, and
+wavelet packet decomposition (WPD) functions. The proposed model achieved
+an accuracy of 99.58\% in earthquake detection and 93.13\% in three-class
+wave classification~\citep{Ozkaya 2024}.\textbf{ }Sinha’s review,
+in 2025, offers valuable insights into cutting-edge techniques and
+emerging directions in feature engineering for seismic prediction,
+highlighting the importance of interdisciplinary collaboration in
+advancing earthquake forecasting and reducing seismic risk~\citep{Sinha 2025}.
+Mahmoud, in 2025, investigates the application of machine learning
+approaches to earthquake classification and prediction using synthetic
+seismic datasets~\citep{Mahmoud 2025}.
+
+In contrast to the aforementioned studies, this paper introduces a
+novel approach constructing artificial features with Grammatical Evolution
+~\citep{mainGe} for earthquake prediction, marking the first application
+of this evolutionary technique in the field of seismology. While the
+method does not directly address a specific gap in the literature,
+the experiments demonstrated that feature construction achieved an
+overall accuracy of 91\%, thereby contributing to the advancement
+of earthquake prediction research. We consider this contribution significant
+in enhancing the understanding of seismic phenomena and in highlighting
+the potential of Grammatical Evolution as a promising tool for feature
+engineering in geophysical datasets. In particular, the method of
+Grammatical Evolution can be considered as a genetic {algorithm}~\citep{gaOverview}
+with integer chromosomes. Each chromosome contains a series of production
+rules from the provided Backus--Naur form (BNF) grammar~\citep{bnf1}
+of the underlying language, and hence, this method can create programs
+that belong to this language. This procedure has been used with success
+in various cases, such as\textbf{ }data fitting problems~\citep{ge_program1,ge_program2},\textbf{
+}problems that appear in economics~\citep{ge_credit},\textbf{ }computer
+security problems~\citep{ge_intrusion}, problems related to water
+quality~\citep{ge_water}, problems appearing in medicine~\citep{ge_glykemia},\textbf{
+}evolutionary computation~\citep{ge_ant},\textbf{ }hardware issues
+in data centers~\citep{ge_datacenter},\textbf{ }solutions of trigonometric
+problems~\citep{ge_trig},\textbf{ }automatic composition of music
+~\citep{ge_music}, dynamic construction of neural networks~\citep{ge_nn,ge_nn2},
+automatic construction of constant numbers~\citep{ge_constant}, playing
+video games~\citep{ge_pacman,ge_supermario}, problems regarding energy
+~\citep{ge_energy}, combinatorial optimization~\citep{ge_comb}, security
+issues~\citep{ge_crypt}, automatic construction of decision trees
+~\citep{ge_decision}, problems in electronics~\citep{ge_analog},
+automatic construction of bounds for neural networks~\citep{Tsoulos 2023},
+construction of Radial Basis Function networks~\citep{Tsoulos 2024},
+etc. This research work focuses on the creation of artificial features
+from existing ones, aiming at two goals: on the one hand, it seeks
+to reduce the information required for the correct classification
+of seismic data, and on the other hand, it seeks to highlight the hidden
+non-linear correlations that may exist between the existing features
+of the objective problem. In this way, a significant improvement in
+the classification of seismic data will be achieved.
+
+Beyond the Grammatical Evolution approach proposed in this study,
+which achieved an accuracy of 91\%, we also provide a concise
+comparison with results from related research that has employed alternative
+machine learning techniques in the field of seismology. In the study
+by Adeli et al.~\citep{Adeli 2009}, the PNN model demonstrated satisfactory
+predictive accuracy for earthquakes with magnitudes between 4.5 and
+6.0, but its performance declined considerably for events exceeding
+a magnitude of 6.0.\textbf{ }Zhou et al.~\citep{Zhou 2012} reported that
+the application of the Log-Sigmoid Frequency Cepstral Coefficient
+method achieved an average classification accuracy exceeding 89\%.
+Narayanakumar et al.~\citep{Narayanakumar 2016} investigated the prediction
+of moderate earthquakes (magnitude 3.0--5.8). While the seismometer
+recorded an event of magnitude 4.0, the BP-ANN model predicted magnitudes
+in the range of 3.0--5.0, achieving a success rate between 75\% and
+125\%. According to Asim et al.~\citep{Asim 2018}, the SVR-HNN prediction
+model achieved its highest performance in Southern California, with
+MCC, R score, and accuracy values of 0.722, 0.623, and 90.6\%, respectively.
+The Chilean region ranked second, yielding an MCC of 0.613, an R score
+of 0.603, and an accuracy of 84.9\%. In contrast, the Hindukush region
+exhibited the lowest performance, with MCC, R score, and accuracy
+values of 0.600, 0.580, and 82.7\%, respectively. Chamberlain et al.
+~\citep{Chamberlain 2018} reported that template-based detections
+produced {7340} %MDPI: Commas are only used for numbers with five or more digits. We have removed them in four-digit numbers. Please confirm and check whole text.
+ events, of which 3577 were identified as duplicates,
+whereas the STA/LTA method yielded 682 detections over the same time
+interval. Lin et al.~\citep{Lin 2018} reported that the average magnitude
+error in Taiwan was $\Delta ML=\pm0.3$, while the training errors
+of the EEMPBPNN model (\textless 0.25) remained below this average
+error threshold. Zhang et al.~\citep{Zhang 2019} demonstrated that
+the proposed method achieved prediction accuracies of 93.26\% and
+92.07\% across the two datasets examined. Rojas et al.~\citep{Rojas 2019}
+reported recognition performance of approximately 99.2\% for P-wave
+signals and 98.4\% for pure noise. Ali et al.~\citep{Ali 2020} conducted
+a statistical analysis using a 95\% confidence interval for the normalized
+CWT coefficients of P-wave velocity, seismic trace, acoustic impedance,
+and synthetic seismic trace. Wang et al.~\citep{Wang 2023} found
+that, in the model generalization evaluation, the two-class models
+trained on the 36-dimensional network-averaged dataset achieved test
+accuracies and F1 scores exceeding 90\%. Ozkaya et al.~\citep{Ozkaya 2024}
+reported that their model achieved an accuracy of 99.58\% in earthquake
+detection and 93.13\% in three-class wave classification. While comparable
+studies have demonstrated strong performance, many of them are limited
+to specific regions of interest or focus on particular signal types,
+such as acoustic wave detection.\textbf{ }In contrast, the Grammatical
+Evolution approach presented here not only achieves competitive accuracy
+(91\%) but also demonstrates broader applicability across diverse
+seismic datasets, thereby highlighting its potential as a more generalizable
+solution in earthquake event discrimination.
+
+The rest of this manuscript is organized as follows: The used dataset
+and the incorporated methods used in the conducted experiments are
+outlined in Section~\ref{sec:Materials-and-Methods}, the experimental
+results are shown and discussed in Section~\ref{sec:Results}, and
+finally, a detailed discussion is provided in Section~\ref{sec:Conclusions}.
+
+\section{{Materials}%MDPI: 1. To avoid any mistake, please double check that the following details are provided for all cases: company names and addresses (city, country) of the instruments, agents and software used. For USA or Canadian companies, please provide the state name as well (i.e., city name, abbreviated state name, USA/Canada). 2. For all the software used, please provide the version number of the software, or you can provide the website and accessed date (Day Month Year; before accepted date) of this software, if it is not applicable, it can be ignored.
+ and Methods\label{sec:Materials-and-Methods}}
+
+In this section, a detailed presentation of the datasets used as well
+as the machine learning techniques used in the experiments performed
+will be provided.
+
+\subsection{The Dataset Employed}
+
+In this study, we made use of open data from the NSF Seismological
+Facility for the Earth Consortium (SAGE) available from \url{https://ds.iris.edu/}(accessed
+on 25 November 2025), which is a platform offering an interactive
+global map that facilitates both data visualization and the real-time
+extraction of datasets from the displayed geographic regions. The
+area defined by latitudes 33--44° and longitudes 17--44° covers 28
+seismic zones, with Turkey and Greece identified as the most seismically
+active regions. 
+
+Regarding the 28 seismic zones listed in Table \ref{tab:Regions-codes-for},
+these correspond to specific geographic coordinates (latitudes and
+longitudes) provided through the interactive seismic platform previously
+referenced. The platform grants direct access to these spatial data,
+ensuring that the delineation of the zones is both systematic and
+consistent with the established geospatial framework. 
+
+\begin{table}[H]
+\small
+\caption{Regions codes for the 28 seismic zones.\label{tab:Regions-codes-for}}
+
+%\centering{}%
+\begin{tabularx}{\textwidth}{CC}
+\toprule 
+\textbf{{Region} %MDPI: we added bold for table header, please confirm and check all tables.
+} & \textbf{Region Code}\tabularnewline
+\midrule 
+Turkey & 1\tabularnewline
+Crete Greece & 2\tabularnewline
+Greece & 3\tabularnewline
+Dodecanese Islands, GREECE & 4\tabularnewline
+Ionian Sea & 5\tabularnewline
+Aegean Sea & 6\tabularnewline
+Southern Greece & 7\tabularnewline
+GREECEALBANIA border region & 8\tabularnewline
+GREECEBULGARIA border region & 9\tabularnewline
+Cyprus region & 10\tabularnewline
+Albania & 11\tabularnewline
+NORTHWESTERN Balkan Region & 12\tabularnewline
+Central Mediterranean sea & 13\tabularnewline
+Jordan Syria region & 14\tabularnewline
+
+GEORGIA ARMENIA TURKEY & 15\\
+Border Region
+ & \tabularnewline
+TURKEY IRAN border region & 16\tabularnewline
+Iraq & 17\tabularnewline
+Eastern Mediterranean sea & 18\tabularnewline
+NORTHWESTERN CAUCASUS & 19\tabularnewline
+Black Sea & 20\tabularnewline
+Romania & 21\tabularnewline
+Bulgaria & 22\tabularnewline
+Crimea Region Ukraine & 23\tabularnewline
+
+
+ARMENIA AZERBAIJAN IRAN &24\\
+border region
+& \tabularnewline
+Adriatic sea & 25\tabularnewline
+
+UKRAINE MOLDOVA RUSSIA &26\\
+border region
+ & \tabularnewline
+Southern Italy & 27\tabularnewline
+IRAN IRAQ border region & 28\tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}
+
+\textls[-30]{Furthermore, the selection of NSF data was driven by its advanced
+functionality and broad accessibility. Notably, it supports the download
+of up to 25,000 records per file, thereby streamlining the workflow
+and improving the efficiency of information retrieval. The region
+under investigation is presented in Figure \ref{fig:The-study-area.}.
+This image was retrieved from IRIS Earthquake Browser, in the following}
+{URL:} %MDPI: Please provide the access date of the URL in the following format: “URL (accessed on Day Month Year; Notice: Date should before the accepted date (8 January 2026))”.
+ \url{https://ds.iris.edu/ieb/index.html?format=text&nodata=404&starttime=2010-01-01&endtime=2010-12-31&orderby=time-desc&src=iris&limit=1000&maxlat=74.85&minlat=-7.26&maxlon=135.19&minlon=-97.36&zm=3&mt=ter} (accessed on 10 January 2026).
+
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=1.3]{table2}
+%\par\end{centering}
+\caption{{The} %MDPI: 1. The contents of this figure are not legible. Please replace the image with one of a sufficiently high resolution (min. 1000 pixels width/height, or a resolution of 300 dpi or higher). 2. Please remove the non-English term or add a definition for it. 3. Please confirm whether the overlapping/incomplete content in this figure affects scientific understanding and if it does, please revise it.
+ study area.\label{fig:The-study-area.}}
+
+\end{figure}
+
+
+\subsection{Dataset Description}
+
+We obtained and systematically analyzed 511,064 earthquake events
+from 1990 to 2015, as this time period is of particular scientific
+interest due to the surge in seismic activity, as also illustrated
+in the graph of Figure \ref{fig:Graphs-seismic-events}. Specifically,
+we selected this time period because it encompasses a wide range of
+earthquake magnitudes, which provides a diverse dataset conducive
+to {algorithm} training and supports the construction of artificial
+features via Grammatical Evolution. 
+
+In the years under examination, earthquakes are distributed across
+all magnitude classes, exhibiting an almost ideal proportion consistent
+with the Gutenberg--Richter {law}%MDPI: References should be numbered in order of appearance. We detected "Ref 63" appears before "62", please rearrange all the references to appear in numerical order.
+~\citep{gutenberg}. For instance, within
+the first two five-year periods of our dataset, 2 events above magnitude
+8.0, 3 events above magnitude 7.0, 19 events above magnitude 6.0,
+165~events between 5.0 and 5.9, 3048 events between 4.0 and 4.9, and 26,301
+events between 3.0 and 3.9 were recorded, thereby confirming the expected
+logarithmic relationship between frequency and magnitude. Such a balanced
+and representative dataset further enhances the effectiveness of the
+Grammatical Evolution approach, as it provides a comprehensive distribution
+of seismic events across the full spectrum of magnitudes. Moreover,
+our analysis led us to the conclusion that the datasets from 1970 to 1989
+and 2016 to 2025 lack the diversity observed in the dataset we selected.
+Specifically, classes 6 and 7 are entirely absent from the \mbox{1970--1989
+records}, while in the post-2016 data, class 7 is missing and class
+1 contains only a limited number of instances, namely 25.
+
+\begin{figure}[H]
+
+%\begin{centering}
+\includegraphics{\string"table 3.graphic1\string".jpg}
+%\par\end{centering}
+\caption{{Graphs of} %MDPI: we use commas to separate thousands for numbers with five or more digits (not four digits) in the picture, e.g., "10000" should be "10,000". please confirm and check
+ seismic events from 1970 to 2025 (study area).\label{fig:Graphs-seismic-events}}
+\end{figure}
+
+On the platform that provides us with the Interactive Earthquake Browser,
+we employed coordinates spanning latitudes 33--44° and longitudes
+17--44°, considered magnitude values from 1.0 to 10.0, and incorporated
+all available depths by default within the depth range. The raw dataset
+included the following variables: year, month, day, time, latitude
+(Lat), longitude (Lon), depth, magnitude, region, and timestamp. Accordingly,
+Table \ref{tab:Raw-Data-from} provides a detailed overview of the
+raw dataset.
+
+\begin{table}[H]
+%\centering
+\caption{Raw data from NSF Interactive Earthquake Browser (1990--2015).\label{tab:Raw-Data-from}}
+
+\begin{tabularx}{\textwidth}{CC}
+\toprule
+\textbf{Raw Data} & \tabularnewline
+\midrule 
+\textbf{{Features} %MDPI: we added line for table header, please confirm and check all tables
+} & \textbf{Range}\tabularnewline
+\midrule
+Year & 1990--2015\tabularnewline
+Month & 1--12\tabularnewline
+Day & 1- 31\tabularnewline
+Time & 00:00:00--23:59:59\tabularnewline
+Latitude & 33--44\tabularnewline
+Longitude & 17--44\tabularnewline
+Region & 1--28\tabularnewline
+Depth & 0.00--800.00\tabularnewline
+Magnitude & 1--10\tabularnewline
+Timestamp & \tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}
+
+Subsequently, a preprocessing procedure was applied to the dataset.
+This included the identification of the lithospheric plate associated
+with each earthquake, to which a unique code was assigned. Furthermore,
+the months were categorized according to the four seasons, the days
+were grouped into ten-day intervals, and the time of occurrence was
+classified into four periods (morning, noon, afternoon, and night).
+The focal depth was divided into six categories. In addition, a new
+column was created to indicate, with a binary value (0 or 1), whether
+an earthquake had previously occurred in the same region during the
+same season. Finally, the dataset was merged with the Kp index, representing
+geomagnetic storm activity, which was further classified into six
+distinct categories. The final dataset was further processed, including
+the following: Year, Epoch Code, Day Code, Time Code, Latitude, Longitude,
+Depth Code, Previous Magnitude Code, Same Region Code, Lithospheric/Tectonic
+Plate, Kp Code. This information is outlined in Table \ref{tab:Utilized-Data-from}.
+
+\begin{table}[H]
+%\centering
+\caption{Utilized data from NSF Interactive Earthquake Browser (1990--2015).\label{tab:Utilized-Data-from}}
+
+\begin{tabularx}{\textwidth}{CCC}
+\toprule 
+\textbf{Utilized Data} &  & \tabularnewline
+\midrule 
+\textbf{Features} & \textbf{Range} & \textbf{Class}\tabularnewline
+\midrule
+Year & 1990--2015 & \tabularnewline
+Epoch Code & 1--12 & 0--3\tabularnewline
+Day Code & 1--31 & 0--2\tabularnewline
+Time Code & 00:00:00--23:59:59 & 0--3\tabularnewline
+Latitude & 33--44 & \tabularnewline
+Longitude & 17--44 & \tabularnewline
+Depth Code & 0.00--800.00 & 0--5\tabularnewline
+Previous Magnitude Code & 1--10 & 1--7\tabularnewline
+Same Region Code & 1--28 & 1--28\tabularnewline
+Lithospheric Code & 1--7 & 1--7\tabularnewline
+Kp Code & 0.000--9.000 & 0--5\tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}
+In the processed dataset, categorical classes were introduced to facilitate
+the analysis. Specifically, the months were initially ordered numerically
+and subsequently grouped according to the corresponding season. Thus,
+class 0 represents the winter months, class 1~corresponds to the spring
+months, class 2 to the summer months, and class 3 to the autumn months.
+The days comprising each month were divided into three ten-day intervals,
+with the first interval assigned to class 0, the second interval to
+class 1, and the final interval to class 2. Accordingly, the hours
+of the 24 h day were divided into distinct periods, with the morning
+zone assigned to class 0, midday to class 1, afternoon to class 2,
+and night to class 3. For the depth code, earthquakes occurring near
+the surface (0--32.9 km) were assigned to class 0, those recorded at
+depths between 33 and 69.9 km to class 1, events within 70--149.9 km to
+class 2, those between 150 and 299.9 km to class 3, earthquakes at depths
+of 300--499.9 km to class 4, those between 500 and 799.9 km to class 5,
+and finally, events occurring at depths greater than 800 km were assigned
+to class 6. Continuing, earthquakes with magnitudes below 2.9 were
+assigned to class 1, those with magnitudes between 3.0 and 3.9 to class
+2, magnitudes between 4.0 and 4.9 to class 3, magnitudes between 5.0 and 5.9
+to class 4, magnitudes between 6.0 and 6.9 to class 5, magnitudes between
+7.0 and 7.9 to class 6, while events with magnitudes of 8.0 and above
+were assigned to class 7. With regard to the categorization of the
+geographical region and the lithospheric plate, each region was assigned
+a code ranging from 1 to 28. Similarly, a code from 1 to 7 was allocated
+to the lithospheric plates corresponding to each seismic event. Finally,
+the Kp code was classified as follows: values ranging from 0.000 to 4.000
+were assigned to class 0, those from 4.100 to 5.000 to class 1, values
+between 5.100 and 6.000 to class 2, those from 6.100 to 7.000 to class
+3, values between 7.100 and 8.000 to class 4, and finally, values from
+8.100 to 9.000 were assigned to class 5.
+
+At the following stage of data processing, we elected to focus on
+earthquakes with a magnitude code of 2 and above, since the inclusion
+of lower-magnitude events would bias the model toward predicting minor
+seismic occurrences. Notably, the small-magnitude category (1--2.9
+mag) prevailed as the majority class with 407,144 records, creating
+a significant imbalance in the dataset. By excluding this dominant
+class, we aimed to achieve a more balanced distribution across magnitudes
+and to enhance the representational capacity of the model. This approach
+is consistent with previous studies that have similarly excluded small
+earthquakes to mitigate bias and improve predictive performance. Wang
+et al., in 2023, reports in Dataset and Feature Engineering “The
+seismic catalog used in this study was obtained from the China Earthquake
+Data Center (CEDC, \url{http://data.earthquake.cn/}, last accessed
+on 12 December 2025) and includes earthquake events with a magnitude
+greater than 3.0 in the Sichuan-Yunnan region from 1970 to 2021”~\citep{Wang}.
+It is noteworthy that the division into two classes within the field
+of seismology has previously been employed, as in the study of Zhang
+et al. (2023), which investigated seismic data by categorizing events
+into high magnitude ($M\ge5.5$) and low magnitude ($M<5.5$)~\citep{zhu_rapid}.\textbf{
+}Following these steps, we proceeded with our experiments, utilizing
+approximately 10,000 seismic events in order to generate artificial
+features through Grammatical Evolution.
+
+In summary, the seismic data employed in this study were recorded
+on the magnitude scale, covering events from 1 to 10. Initially, we
+excluded small earthquakes, which predominated in number and affected
+the balance of the dataset. The data source was the EarthScope Consortium,
+which operates the NSF Geodetic Facility for the Advancement of Geoscience
+(GAGE) and the NSF Seismological Facility for the Advancement of Geoscience
+(SAGE). These records were obtained from thousands of stations worldwide,
+constituting the primary NSF SAGE archive.
+
+\subsection{Global Optimization Methods for Neural Network Training\label{subsec:Global-optimization-methods}}
+
+In the current work, two well-known global optimization methods were
+incorporated for neural network training~\citep{nn1,nn2}, the Genetic
+{Algorithm} and the Particle Swarm Optimization (PSO) method. The Genetic
+Algorithm is an evolutionary optimization method designed to minimize
+an objective function defined over a continuous search space. It operates
+on a population of candidate solutions, each represented as a vector
+of parameters, and this population evolves through a series of steps,
+where in each step, some processes that resemble natural processes are
+applied to the population. Genetic Algorithms have applied on a wide
+range of applications that include training of neural {networks}%MDPI: reference 67 is not cited in main text, Please add the reference citation. We can help you rearrange all the references to appear in numerical order, please do not rearrange it by yourself, just make sure all the references are cited in the main text.
+~\citep{nnga1,nnga2}.
+Beyond neural network training, Genetic Algorithms have demonstrated
+strong performance in physics, biotechnology, and medical physics.
+In bioinformatics and biotechnology, they are commonly applied to
+the analysis of biological data, gene selection, and the optimization
+of complex biological systems~\citep{genapp1}. In medical physics
+and biomedical engineering, GAs have been successfully used for medical
+image segmentation~\citep{genapp2}, diagnostic modeling, and the
+optimization of treatment parameters~\citep{genapp3}. They have also
+been applied to multi-objective problems related to energy efficiency,
+economic viability, environmental life-cycle assessment~\citep{genapp4},
+and parameter identification in complex multi-physics energy systems~\citep{genapp5}. Also, Figure \ref{fig:GASteps} presents the basic
+steps of a Genetic {Algorithm}.
+
+\begin{figure}[H]
+\includegraphics[scale=0.75]{ga_schema}
+
+\caption{The main steps of the Genetic {Algorithm}.\label{fig:GASteps}}
+\end{figure}
+
+Particle Swarm Optimization (PSO) is a population-based search method
+inspired by how animals move and cooperate in groups like flocks of
+birds or schools of {fish}%MDPI: reference 75 is not cited in main text, Please add the reference citation. We can help you rearrange all the references to appear in numerical order, please do not rearrange it by yourself, just make sure all the references are cited in the main text.
+~\citep{pso1,pso2}. The PSO was widely used
+in a variety of practical problems as well as in neural network training
+~\citep{nnpso1,nnpso2}. Beyond neural network training, Particle Swarm
+Optimization has been applied across a broad spectrum of scientific
+and technological domains. In particular, it has found significant
+use in economic and resource optimization~\citep{psoapp1}, as well
+as in healthcare management and medical physics, where it supports
+efficient medical service allocation and the management of stochastic
+patient queue systems~\citep{psoapp2}. At the same time, PSO has been
+increasingly adopted in physics and chemical engineering for the optimization
+of catalytic processes and energy systems, often in combination with
+deep learning approaches to extract meaningful physical and chemical
+insights~\citep{psoapp3}. In more dynamic and decentralized settings,
+PSO has proven especially effective in robotics, where it is used
+to coordinate swarms of autonomous robots during search-and-rescue
+missions operating under uncertain and rapidly changing conditions~\citep{psoapp4}.
+Finally, its flexibility has also led to successful applications in
+bioinformatics and computational biology, where advanced multi-objective
+PSO variants are employed for community detection and the identification
+of disease-related functional modules within complex biological networks~\citep{psoapp5}.\textbf{
+}The main steps of the PSO method are outlined in Figure \ref{fig:psoSteps}.
+\begin{figure}[H]
+\includegraphics[scale=0.55]{pso_schema}
+
+\caption{The main steps of the PSO {algorithm}.\label{fig:psoSteps}}
+\end{figure}
+
+
+\subsection{The SVM Method\label{subsec:The-SVM-method}}
+
+The Support Vector Machine (SVM) is a supervised learning {algorithm}
+applied to both classification and regression problems~\citep{svm}.
+The concept of Support Vector methods was introduced by V. Vapnik
+in 1965, in the context of addressing challenges in pattern recognition.
+During the 1990s, V. Vapnik formally introduced Support Vector Machine
+(SVM) methods within the framework of Statistical Learning. Since
+their introduction, SVMs have been extensively employed across diverse
+domains, including pattern recognition, natural language processing,
+and related applications~\citep{Wang 2022}. For instance, the SVM
+{algorithm} has been employed both in studies on earthquake prediction
+and in research on the early detection of seismic phenomena, as demonstrated
+in the following works: Hybrid Technique Using Singular Value Decomposition
+(SVD) and Support Vector Machine (SVM) Approach for Earthquake Prediction
+~\citep{Astuti 2014}, Using Support Vector Machine (SVM) with GPS
+Ionospheric TEC Estimations to Potentially Predict Earthquake Events
+~\citep{Asaly 2022}, The efficacy of Support Vector Machines (SVM)
+in robust determination of earthquake early warning magnitudes in
+central Japan~\citep{Reddy 2013}. As with other comparative analyses
+of models, SVMs require greater computational resources during training
+and exhibit reduced susceptibility to overfitting, whereas neural
+networks are generally regarded as more adaptable and capable of scaling
+effectively. Beyond these applications, SVMs have also been widely
+adopted in several applied scientific and engineering fields. In bioinformatics,
+SVMs are commonly employed to analyze and interpret complex biological
+data, where their ability to handle high-dimensional feature spaces
+is particularly valuable~\citep{svmapp1}. In medical imaging and clinical
+applications, they have been used effectively for disease classification
+and staging, such as the prediction of lung cancer stages from medical
+imaging data~\citep{svmapp2}. In addition, SVM-based models are increasingly
+integrated into healthcare monitoring systems, including Internet
+of Medical Things (IoMT) frameworks, where reliability and robustness
+are critical requirements~\citep{svmapp3}. Moreover, SVMs have been
+applied in applied physics and engineering, including the prediction
+of electronic properties in advanced material structures and nanocomposites~\citep{svmapp4}.
+Their robustness has also made them suitable for safety-critical applications,
+such as fault detection and diagnosis in nuclear power plant systems~\citep{svmapp5}. 
+
+\subsection{The Neural Network Construction Method \label{subsec:The-neural-network}}
+
+Another method used in the experiments to predict the category of
+seismic vibrations is the method of constructing artificial neural
+networks using Grammatical Evolution~\citep{nnc}. This method can
+detect the optimal architecture for neural networks as well as the
+optimal set of values for the corresponding parameters.\textbf{ }This
+method was used in various cases, such as chemistry problems~\citep{nnc_amide1},
+solution of differential equations~\citep{nnc_de}, medical problems~\citep{nnc_feas}, educational problems~\citep{nnc_student}, detection
+of autism~\citep{nnc_autism}, etc. This method can produce neural
+networks in the following {form:}%MDPI:(1). Variables in the main text and equations should be consistent, keep italic or non-italic, please carefully check the full text, whether they should be consistent, if should be, please revise in the whole text. (2). Please check the whole text, make sure there are no repeat equations.
+
+\begin{equation}
+N\left(\overrightarrow{x},\overrightarrow{w}\right)=\sum_{i=1}^{H}w_{(d+2)i-(d+1)}\sigma\left(\sum_{j=1}^{d}x_{j}w_{(d+2)i-(d+1)+j}+w_{(d+2)i}\right)\label{eq:nn}
+\end{equation}
+
+In %MDPI: We added indent, please confirm and check whole text
+ this equation, the value $H$ represents the number of used computation
+units (weights) for the neural network. The vector $w$ denotes the
+vector containing the parameters of the neural network and vector
+$x$ represents the input vector (pattern). The function $\sigma(x)$
+stands for the sigmoid function, which is defined as
+\begin{equation}
+\sigma(x)=\frac{1}{1+\exp(-x)}
+\end{equation}
+
+
+\subsection{The Proposed Method\label{subsec:The-proposed-method}}
+
+The method proposed here to tackle the classification of seismic events
+is a procedure that constructs artificial features from the original
+ones using Grammatical Evolution. The method was initially presented
+in the paper of Gavrilis et al.~\citep{mainfc} and used in various
+cases in the past~\citep{fc1,fc2,fc3}. The main steps of this method
+have as follows:
+\begin{enumerate}
+\item \textbf{{Initialization}%MDPI: Please confirm if the bold is unnecessary and can be removed. please check whole text
+} step. \textbf{}
+
+\begin{enumerate}
+\item \textbf{Obtain }the training data and denote them using the $M$ pairs\textbf{
+$\left(x_{i},t_{i}\right),\ i=1\ldots M$}. {The} %MDPI: we revised the dots before, please confirm and check whole text
+ values\textbf{ }$t_{i}$
+represent the actual output for the input pattern $x_{i}$.
+\item \textbf{Set} the parameters of the used genetic {algorithm}: \textbf{$N_{g}$}
+for the number of allowed generations, \textbf{$N_{c}$ }for the
+number of chromosomes,\textbf{ $p_{s}$} for the selection rate, and
+\textbf{$p_{m}$ }for the\textbf{ }mutation rate.
+\item \textbf{Set} as $N_{f}$ the number of artificial features that will
+construct the current~method.
+\item \textbf{Initialize} \textls[-30]{every chromosome $g_{i},i=1,\ldots,N_{g}$ as
+a set of randomly selected~integers.}
+\item \textbf{Set} $k=1$, the generation counter.
+\end{enumerate}
+\item \textbf{Genetic step.}
+
+\begin{enumerate}
+\item \textbf{For $i=1,\ldots,N_{g}$ do}
+
+\begin{enumerate}[leftmargin=*,labelsep=5mm]
+\item \textbf{Construct} with Grammatical Evolution a set of $N_{f}$ artificial
+features for each chromosome $g_{i}$. The BNF grammar used for
+this procedure is shown in Figure \ref{fig:BNF-grammar-of}.
+\item \textbf{Transform }the original set of features using the constructed
+features and denote the new training set as $\left(x_{g_{i},j},t_{j}\right),\ j=1,\ldots M$.
+\item \textbf{Train }a machine learning $C$ on the new training set. The
+training error for this model will represent the fitness $f_{i}$
+for the current chromosome, and it is computed as
+\begin{equation}
+f_{i}=\sum_{j=1}^{M}\left(C\left(x_{g_{i},j}\right)-t_{j}\right)^{2}
+\end{equation}
+In the current work, the Radial Basis Function networks (RBF)~\citep{rbf1,rbf2}
+were used as the machine learning models. A decisive factor for this
+choice was the short training time required for these machine learning~models.
+\item \textbf{Perform} the selection procedure: Initially, the chromosomes
+are sorted according to the associated fitness values and the best\textbf{
+\mbox{$\left(1-p_{s}\right)\times N_{C}$}} of them are copied intact to
+the next generation.\textbf{ }The remaining chromosomes will be replaced
+by offsprings that will be produced during the crossover and the mutation
+procedure.
+\item \textbf{Perform} the crossover procedure: The outcome of this process
+is a set of $p_{s}\times N_{c}$ new chromosomes. For every pair $\left(\tilde{z},\tilde{w}\right)$
+of new chromosomes, two distinct chromosomes $z$ and $w$ are chosen
+from the current population using the process of tournament selection.
+Afterwards, the new chromosomes are produced using the procedure of
+one-point crossover, which is illustrated in Figure \ref{fig:One-point-crossover}. 
+\item \textbf{Execute} the mutation procedure: During this procedure a random
+number $r\in\left[0, 1\right]$ is selected for each element of every
+chromosome. The corresponding element is altered randomly if $r\le p_{m}$. 
+\end{enumerate}
+\item \textbf{EndFor}
+\end{enumerate}
+\item \textbf{Set} $k=k+1$.
+\item \textbf{If} $k\le N_{g}$ go to \textbf{Genetic} Step.
+\item \textbf{Obtain the best chromosome }$g^{*}$ from the current population.
+\item \textbf{Create} the corresponding $N_{f}$ features for $g^{*}$ and
+apply these features to the set and report the corresponding test
+error.
+
+\end{enumerate}
+
+{Also,} %MDPI: we added indent, please confirm
+ a flowchart that presents the overall process of feature construction
+is presented in Figure \ref{fig:fcSteps}.
+\begin{figure}[H]
+
+
+\begin{lyxcode}
+S::=\textless expr\textgreater ~~~(0)~
+
+\textless expr\textgreater ~::=~~(\textless expr\textgreater ~\textless op\textgreater ~\textless expr\textgreater )~~(0)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~\textless func\textgreater ~(~\textless expr\textgreater ~)~~~~(1)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar\textless terminal\textgreater ~~~~~~~~~~~~(2)~
+
+\textless op\textgreater ~::=~~~~~+~~~~~~(0)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~-~~~~~~(1)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~{*}~~~~~~(2)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~/~~~~~~(3)
+
+\textless func\textgreater ~::=~~~sin~~(0)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~cos~~(1)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar exp~~~(2)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar log~~~(3)
+
+\textless terminal\textgreater ::=\textless xlist\textgreater ~~~~~~~~~~~~~~~~(0)~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar\textless digitlist\textgreater .\textless digitlist\textgreater ~(1)
+
+\textless xlist\textgreater ::=x1~~~~(0)~~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~x2~(1)~~~~~~~~~~~~~~
+
+~~~~~~~~~~~………~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~xN~(N)
+
+\textless digitlist\textgreater ::=\textless digit\textgreater ~~~~~~~~~~~~~~~~~~(0)~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~\textless digit\textgreater\textless digit\textgreater ~~~~~~~~~~~~(1)
+
+~~~~~~~~~~~\textbar ~\textless digit\textgreater\textless digit\textgreater\textless digit\textgreater ~~~~~(2)
+
+\textless digit\textgreater ~~::=~0~(0)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~1~(1)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~2~(2)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~3~(3)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~4~(4)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~5~(5)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~6~(6)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~7~(7)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~8~(8)~~~~~~~~~~~~~
+
+~~~~~~~~~~~\textbar ~9~(9)
+\end{lyxcode}
+\caption{{The} %MDPI: 1. Please check if there needs explanation for * and numbers in the figure. 2. please check if hyphen should be minus sign. if so, please revise it.
+ grammar used for the proposed method. The numbers in parentheses indicate the increasing number of the production rule for the corresponding non-terminal symbol.\label{fig:BNF-grammar-of}}
+\end{figure}
+
+
+\begin{figure}[H]
+%\begin{centering}
+
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering %% If there is a figure in wide page, please release command \centering
+\includegraphics[scale=0.6]{onepoint_crossover}
+\end{adjustwidth}
+%\par\end{centering}
+\caption{{An} %MDPI: Please check if there needs explanation for numbers and color in the figure.
+ example of the one-point crossover method. The blue color denotes the first chromosome and the green color the parts of the second chromosome. \label{fig:One-point-crossover}}
+\end{figure}\vspace{-6pt}
+
+
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.6]{fc_flow}
+%\par\end{centering}
+\caption{The steps of the feature construction procedure.\label{fig:fcSteps}}
+\end{figure}
+
+ Moreover, a graphical pipeline that summarizes the whole procedure
+is depicted in Figure \ref{fig:The-pipeline-of}.
+
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.4]{pipeline}
+%\par\end{centering}
+\caption{The pipeline of the used procedure.\label{fig:The-pipeline-of}}
+
+\end{figure}
+
+
+\section{Results\label{sec:Results}}
+
+The methods used in the conducted experiments were coded in ANSI C++,
+with the assistance of the freely available optimization package of
+OPTIMUS~\citep{optimus}. Moreover, for the feature construction procedure,
+the freely available programming tool QFc, which can be downloaded
+from \url{https://github.com/itsoulos/QFc} (accessed on 12 December
+2025)~\citep{qfc} was used.\textbf{ }Each experiment was conducted
+30 times, using different seeds for the random generator in each execution.
+Also, the procedure of ten-fold cross-validation was incorporated
+to validate the conducted experiments. The values for the experimental
+parameters are listed in Table \ref{tab:The-values-of}. The parameters
+in this table have been chosen to provide a compromise between speed
+and efficiency of the proposed procedure and were applied to all methods
+used in the experiments, so that there is fairness in the comparison
+of experimental results. The proposed method of feature construction
+was applied to each individual fold and averages of the classification
+errors in the control sets were obtained. In addition, the RBF machine
+learning model was used to construct the new features due to the
+significantly shorter learning time required for it compared to other
+models, such as artificial neural networks.
+
+\begin{table}[H]
+\caption{The values of the experimental parameters.\label{tab:The-values-of}}
+
+%\centering{}%
+\begin{tabularx}{\textwidth}{CCC}
+\toprule 
+\textbf{{PARAMETER} %MDPI: please check if this format should be Parameter. if so, please revise the format in all tables header
+} & \textbf{MEANING} & \textbf{VALUE}\tabularnewline
+\midrule 
+$N_{g}$ & Number of generations & 500\tabularnewline
+$N_{c}$ & Number of chromosomes & 500\tabularnewline
+$p_{s}$ & Selection rate & 0.9\tabularnewline
+$p_{m}$ & Mutation rate & 0.05\tabularnewline
+$N_{f}$ & Number of features & 2\tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}
+
+
+
+
+Table \ref{tab:results} reports the classification error rates for
+five temporal subsets of the seismic dataset (GCT1990, GCT1995, GCT2000,
+GCT2005, GCT2010), where the first column encodes the year of the
+data and the remaining columns correspond to the machine learning
+models MLP(GEN), MLP(PSO), SVM, NNC, and the proposed FC (future construction)
+model. The values are expressed as percentage classification errors,
+that is, the proportion of misclassified events between the two seismic
+classes defined during preprocessing (events with magnitude code 2--3
+versus events with a magnitude greater than 3). The following notation
+is used in this table:
+\begin{enumerate}
+\item The column MLP(GEN) denotes the error from the application of the
+Genetic {Algorithm} described in Section~\ref{subsec:Global-optimization-methods}
+for the training of a neural network with 10 processing nodes.
+\item The column MLP(PSO) represents the incorporation of the PSO method
+given in \mbox{Section~\ref{subsec:Global-optimization-methods}} for
+the training of a neural network with 10 processing nodes.
+\item The column SVM represents the application of the SVM method, described
+in \mbox{Section~\ref{subsec:The-SVM-method}}. In the current implementation,
+the freely available library LibSvm~\citep{libsvm} was used.
+\item The column NNC represents the neural network construction method,
+described in Section~\ref{subsec:The-neural-network}.
+\item The column FC denotes the proposed feature construction technique,
+outlined in Section~\ref{subsec:The-proposed-method}.
+\item The row AVERAGE denotes the average classification error for all datasets.
+\end{enumerate}
+
+Also, Table \ref{tab:Precision-and-recall} indicates the precision
+and recall values for SVM, NNC, and the proposed~method.
+\begin{table}[H]
+\caption{Experimental results using a series of machine learning methods.\label{tab:results}}
+
+%\centering{}%
+\begin{tabularx}{\textwidth}{CCCCCC}
+\toprule
+\textbf{DATASET} & \textbf{MLP(GEN)} & \textbf{MLP(PSO)} & \textbf{SVM} & \textbf{NNC} & \textbf{FC}\tabularnewline
+\midrule 
+GCT1990 & 39.98\% & 38.21\% & 14.30\% & 22.72\% & 13.50\%\tabularnewline
+GCT1995 & 38.08\% & 33.22\% & 13.48\% & 21.50\% & 10.82\%\tabularnewline
+GCT2000 & 26.70\% & 27.48\% & 10.19\% & 24.59\% & 6.52\%\tabularnewline
+GCT2005 & 38.44\% & 33.19\% & 6.85\% & 27.85\% & 4.45\%\tabularnewline
+GCT2010 & 52.89\% & 44.77\% & 14.46\% & 29.81\% & 9.97\%\tabularnewline
+\textbf{{AVERAGE} %MDPI: Please confirm if the bold is unnecessary and can be removed. please check whole table
+} & \textbf{39.22\%} & \textbf{35.37\%} & \textbf{11.86\%} & \textbf{25.29\%} & \textbf{9.05\%}\tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}\vspace{-6pt}
+
+
+\begin{table}[H]
+\small
+\caption{Precision and recall values for the methods SVM, NNC, and FC.\label{tab:Precision-and-recall}}
+
+%\centering{}%
+\begin{tabularx}{\textwidth}{ccccccc}
+\toprule 
+ & \multicolumn{2}{c}{\textbf{SVM}} & \multicolumn{2}{c}{\textbf{NNC}} & \multicolumn{2}{c}{\textbf{FC}}\tabularnewline
+\midrule 
+\textbf{{DATASET} %MDPI: we added bold for table header and we added line for table header as well, please confirm
+} & \textbf{PRECISION} & \textbf{RECALL} & \textbf{PRECISION} & \textbf{RECALL} & \textbf{PRECISION} & \textbf{RECALL}\tabularnewline
+\midrule
+GCT1990 & 0.798 & 0.837 & 0.684 & 0.728 & 0.800 & 0.874\tabularnewline
+GCT1995 & 0.811 & 0.830 & 0.684 & 0.729 & 0.801 & 0.886\tabularnewline
+GCT2000 & 0.835 & 0.844 & 0.662 & 0.700 & 0.835 & 0.901\tabularnewline
+GCT2005 & 0.856 & 0.869 & 0.628 & 0.627 & 0.856 & 0.904\tabularnewline
+GCT2010 & 0.802 & 0.824 & 0.633 & 0.628 & 0.804 & 0.805\tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}
+ 
+
+The most striking observation is that FC achieves the lowest error
+for all five datasets, with no exceptions. For every GCT year, the
+FC column attains the minimum error among all models, demonstrating
+a consistent and temporally robust superiority. This pattern is clearly
+reflected in the AVERAGE row: the mean classification error of FC
+is 9.05\%, whereas the corresponding mean error of the best conventional
+baseline, the SVM, is 11.86\%. Moving from 11.86\% to 9.05\% corresponds
+to an error reduction of approximately 24--25\%, meaning that roughly
+one quarter of the misclassifications made by the SVM are eliminated
+when using FC. Compared with the neural approaches, the gain is even
+more pronounced: FC reduces the mean error from 39.22\% to 9.05\%
+for MLP(GEN), from 35.37\% to 9.05\% for MLP(PSO), and from 25.29\%
+to 9.05\% for NNC, effectively absorbing about 64--77\% of their~errors. 
+
+Examining the behaviour per year reveals how the proposed model interacts
+with the specific characteristics of each temporal subset. Dataset
+GCT2005 appears to be the “easiest” case for all models, with the
+SVM dropping to 6.85\% error and FC reaching 4.45\%, which corresponds
+to an accuracy of about 95.5\%. At the opposite end of the spectrum,
+GCT2010 is clearly the most challenging dataset, as indicated by substantially
+increased errors for the conventional models (MLP(GEN) 52.89\%, MLP(PSO)
+44.77\%, NNC 29.81\%) and by a higher error for the SVM (14.46\%).
+Even in this difficult scenario, FC keeps the error below 10\% (9.97\%),
+preserving a clear qualitative advantage in the most demanding temporal
+setting. A similar pattern emerges for the intermediate years 1995
+and 2000, where FC-SVM absolute differences are in the range of 2--4
+percentage points, corresponding to roughly 20--35\% relative error
+reduction. This suggests that as the data become more complex, the
+benefit of the automatically constructed features generated by Grammatical
+Evolution becomes increasingly pronounced.
+
+A second important finding is that the ranking of the conventional
+models remains stable across all years. The SVM is consistently the
+best among the standard baselines, followed by NNC and the two MLP
+variants, with MLP(PSO) systematically outperforming MLP(GEN). This
+stability reinforces the credibility of the table as a benchmark,
+indicating that the results are not driven by noise or random fluctuations
+but instead reflect a coherent hierarchy of model performance. On
+top of this stable baseline, FC does not merely swap the winner for
+a single dataset, it establishes a new performance level by consistently
+pushing the error rates to substantially lower values in every year.
+
+From a practical standpoint, given that the final processed dataset
+contains on the order of 10,000 seismic events, an average error of
+11.86\% compared with 9.05\% implies hundreds of fewer misclassified
+instances when FC is used instead of a plain SVM trained on the original
+features. This has direct implications for early warning and risk
+assessment applications, where each reduction in misclassification
+translates into more reliable decision-making. The evidence from Table
+\ref{tab:results}, combined with the methodological description,
+strongly supports the view that the feature construction phase based
+on Grammatical Evolution is not a minor refinement over existing classifiers,
+but rather a key component that reshapes the feature space so that
+the seismic classes become much more separable. This explains why
+the proposed FC model achieves an average error of approximately 9\%,
+in full agreement with the reported overall accuracy of 91\% in the
+abstract. 
+
+Overall, Table \ref{tab:Precision-and-recall} shows that FC is not only the best-performing model
+in each individual year but also the most stable across different
+temporal subsets, confirming that the future construction approach
+with Grammatical Evolution yields a substantial and consistent improvement
+over standard machine learning models for the discrimination of seismic~events.
+
+
+The repeated-measures ANOVA with Method as the within-subject factor
+and DATASET (year) as the blocking factor confirms that the choice
+of classifier has a statistically significant effect on the classification
+error, indicating that the models are not equivalent in terms of predictive
+performance. Building on this global result, we conducted pairwise
+paired \emph{t}-tests between the proposed FC model and each baseline, using
+one-sided alternatives that explicitly test the hypothesis that FC
+achieves lower mean error than its competitors. The resulting p-values,
+visualized as significance stars on the boxplot, show that the superiority
+of FC is statistically supported across all comparisons (Figure \ref{fig:stat_tbl6}).
+
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.4]{stat_tbl6}
+%\par\end{centering}
+\caption{{Comparison} %MDPI: 1. Please italicize the variable “p” in the figure. 2. please check the same figure captions. 3. figures 10, 16 and 19 captions are duplicated, please confirm if this should be kept.
+ of FC and baseline classifiers on GCT datasets (paired
+one-sided \emph{t}-tests on classification error).\label{fig:stat_tbl6}}
+\end{figure}
+
+In particular, the comparisons of FC vs. MLP(GEN) and FC vs. NNC yield
+{*}{*} (\emph{p} \textless{} 0.01), indicating that the probability of observing
+differences of this magnitude in favor of FC purely by chance is
+below 1\%. An even stronger effect emerges for FC vs. MLP(PSO), which
+is marked with {*}{*}{*} (\emph{p} \textless{} 0.001), reflecting the very
+large performance gap between FC and the PSO-trained MLP. Finally,
+the comparison of FC vs. SVM is annotated with \mbox{{*} (\emph{p} \textless{} 0.05),}
+showing that, although the numerical difference in error is smaller
+than in the neural baselines, it remains statistically significant
+in favor of FC. Overall, the pattern of significance codes ({*},
+{*}{*}, {*}{*}{*}) corroborates the message of Table \ref{tab:Precision-and-recall}: FC is not
+only the best-performing model in terms of average classification
+error, but its advantage over all other methods is statistically significant,
+with particularly strong evidence against the MLP-based models and
+clear, though more moderate, evidence against the already very competitive
+SVM baseline.
+
+Also, a graphical summary that graphically represents the comparison
+between the different machine learning methods is depicted in Figure
+\ref{fig:Graphical-comparison-of}.
+
+
+
+Moreover, the proposed method can identify the hidden relationships
+between the features of the objective dataset. As an example of constructed
+features, consider the following two features created for a distinct
+run on the GCT2010 dataset:
+\begin{eqnarray*}
+f_{1}(x) & = & \sin\left((28.841/9.28)*x_{10}+(-78.60)*x_{3}+16.12*x_{7}+6.3*x_{11}\right)\\
+f_{2}(x) & = & \cos\left(458.6*x_{2}+(-18.809)*x_{4}\right)
+\end{eqnarray*}
+
+The following figures provide a concise visual characterization of
+the artificial features generated by Grammatical Evolution: (i) expression-tree
+representations for two representative constructed features ($f_{1}$,$f_{2}$)
+and (ii) a complementary summary of the grammar primitives used in
+these constructions, offering direct insight into both their structural
+form and their basic building blocks.
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.95]{summary}
+%\par\end{centering}
+\caption{{Graphical} %MDPI: we use periods as decimal signs instead of commas, e.g., "0,1" should be "0.1". please confirm and check.
+ comparison of the used machine learning methods.\label{fig:Graphical-comparison-of}}
+
+\end{figure}
+
+
+Figure \ref{fig:cf_f1} (expression tree of $f_{1}$) visualizes the
+internal structure of the first constructed feature as an expression
+tree. The root node corresponds to the non-linear primitive sin, applied
+to an algebraic core that combines multiple original variables ($x_{10}$,
+$x_{3}$, $x_{7}$, $x_{1}$) through a weighted sum with constants.
+This diagram provides an interpretable view of the GE output, indicating
+that non-linearity is applied over algebraic forms of controlled complexity
+assembled from grammar primitives.\vspace{-12pt}
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.4]{figure_comment1_tree_f1}
+%\par\end{centering}
+\caption{{Constructed} %MDPI: Please check if there needs explanation for * in the figure or it should be multiplication sign.
+ feature $f_{1}(x)$ expression tree. The leaf nodes denote terminal symbols and inner nodes denote non - terminal symbols. \label{fig:cf_f1}}
+
+\end{figure}
+
+
+
+Figure \ref{fig:cf_f2} (expression tree of $f_{2}$) depicts a second
+constructed feature with a simpler topology: a cos root applied to
+the sum of two variable terms ($x_{2}$, $x_{4}$) with constant coefficients.
+Compared to $f_{1}$, this construction has lower structural complexity
+(fewer nodes/terms) while still introducing non-linearity. The contrast
+between the two trees illustrates that GE can produce features of
+varying complexity, ranging from compact to richer expressions, depending
+on the optimization objective.
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.4]{figure_comment1_tree_f2}
+%\par\end{centering}
+\caption{{Constructed} %MDPI: Please check if there needs explanation for * in the figure or it should be multiplication sign.
+ feature $f_{2}(x)$ expression tree.  The leaf nodes denote terminal symbols and inner nodes denote non - terminal symbols.\label{fig:cf_f2}}
+\end{figure}
+
+
+
+Figure \ref{fig:Grammarf1f2} (primitive usage) summarizes the grammar
+building blocks used in the example constructions ($f_{1}$,$f_{2}$),
+including non-linear functions (sin/cos), arithmetic operators (+,
+{*}, /), and terminal variables $x_{i}$. Bar heights correspond to
+simple occurrence counts (node counts) of primitives within the two
+symbolic expressions, while numeric constants are omitted to keep
+the visualization compact and focused on structural elements. This
+plot provides an intuitive view of the ``vocabulary” employed in
+these constructions, and the same analysis can be extended by aggregating
+counts over all runs to describe broader construction trends.
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.6]{figure_comment1_primitive_usage}
+%\par\end{centering}
+\caption{{Grammar} %MDPI: Please check if there needs explanation for * in the figure?
+ primitives used in example constructed features ($f_{1}$,
+$f_{2}$).\label{fig:Grammarf1f2}}
+\end{figure}
+
+\subsection{Experiments with the Number of Features}
+
+An additional experiment was conducted, where the number of constructed
+features was changed from 1 to 4 for the proposed feature construction
+method. The corresponding experimental results are outlined in Table
+\ref{tab:resultsFC}.
+\begin{table}[H]
+\caption{Experimental results using the proposed method and a series of values
+for the number of constructed features $N_{f}$.\label{tab:resultsFC}}
+
+%\centering{}%
+\begin{tabularx}{\textwidth}{CCCCC}
+\toprule 
+\textbf{DATASET} & \boldmath{$N_{f}=1$} & \boldmath{$N_{f}=2$} & \boldmath{$N_{f}=3$} & \boldmath{$N_{f}=4$}\tabularnewline
+\midrule 
+GCT1990 & 11.03\% & 13.50\% & 14.62\% & 15.40\%\tabularnewline
+GCT1995 & 9.41\% & 10.82\% & 9.98\% & 10.05\%\tabularnewline
+GCT2000 & 6.51\% & 6.52\% & 6.75\% & 6.54\%\tabularnewline
+GCT2005 & 4.40\% & 4.45\% & 4.42\% & 4.38\%\tabularnewline
+GCT2010 & 9.72\% & 9.97\% & 9.82\% & 10.32\%\tabularnewline
+\textbf{{AVERAGE} %MDPI: Please confirm if the bold is unnecessary and can be removed. please check whole table
+} & \textbf{8.21\%} & \textbf{9.05\%} & \textbf{9.12\%} & \textbf{9.34\%}\tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}
+
+Table \ref{tab:resultsFC} investigates the behavior of the proposed
+FC model as the number of constructed features $N_f$ %MDPI: pelase check if this should be in italics and this format should be ``$N_{f}$''? the format of variable should be unified, please confirm and check all variables.
+ varies from 1
+to 4. The results show that performance is generally very stable,
+with the mean classification error ranging within a narrow band between
+8.21\% (for $N_{f}$ = 1) and 9.34\% (for $N_{f}$ = 4). The lowest
+average error is obtained with a single constructed feature ($N_{f}$
+= 1), whereas the configuration $N_{f}$ = 2, which is adopted as the
+default setting in Table \ref{tab:results}, yields a mean error of
+9.05\%, very close to the optimum and with highly consistent behaviour
+across all years. In some datasets, such as GCT2005, slightly better
+values appear for larger $N_{f}$ (e.g., 4.38\% for $N_{f}$ = 4 versus
+4.40\% for $N_{f}$ = 1), but these gains are marginal and do not
+change the overall picture. Taken together, the results indicate that
+FC does not require a large number of future constructions to perform
+well: one or two constructed features are sufficient to achieve very
+low error rates, while further increasing $N_{f}$ does not lead to
+systematic improvements and likely introduces redundant information
+that does not translate into better generalization. This supports
+the view that the quality of the features generated by Grammatical
+Evolution is more important than their quantity, and that the proposed
+choice $N_{f}$ = 2 offers a well-balanced compromise between performance
+and model simplicity. Also, Figure \ref{fig:nfexpers} presents a comparison
+for the test error for various cases of the parameter $N_{f}$.
+\vspace{-9pt}
+\begin{figure}[H]
+%\begin{centering}
+\hspace{-9pt}\includegraphics[scale=0.5]{nfexper}
+%\par\end{centering}
+\caption{The performance of the proposed method on the used datasets, using
+various values for the parameter $N_{f}$.\label{fig:nfexpers}}
+
+\end{figure}
+
+
+
+The boxplot for Table \ref{tab:resultsFC}, together with the paired
+\emph{t}-tests, shows that none of the comparisons among the $N_{f}$ = 1,
+$N_{f}$ = 2, $N_{f}$ = 3, and $N_{f}$ = 4 configurations reach
+statistical significance (all labelled as ns). This indicates that,
+given the available datasets, the performance of the FC model is essentially
+insensitive to the number of future constructions, and that using
+smaller values such as $N_{f}$ = 1 or $N_{f}$ = 2 achieves comparable
+accuracy without any statistically supported gains from increasing
+$N_{f}$ (Figure \ref{fig:stat_tbl7}).
+
+
+
+
+Figure \ref{fig:Nf1} summarizes how the classification error
+varies with the number of constructed features $N_{f}$. The left
+panel plots error versus $N_{f}$ for each dataset, together with
+the mean trend (\textpm{} standard error), indicating that the lowest
+average error is obtained at \mbox{$N_{f}$ = 1}. The right panel reports the
+per-dataset difference $\Delta$ = Error ($N_{f}$ = k) {$-$} %MDPI: We revised the hyphen (-) into a minus sign ("$-$" U+2212). Please confirm.
+ Error \mbox{($N_{f}$ = 
+1)} for k \ensuremath{\ge} 2, where the dashed line $\Delta$ = 0 corresponds
+to the $N_{f}$ = 1 baseline. Predominantly positive $\Delta$ values
+show that increasing $N_{f}$ provides no additional benefit and leads
+to diminishing returns relative to $N_{f}$ = 1.
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.35]{stat_tbl7}
+%\par\end{centering}
+\caption{{Comparison} %MDPI: Please italicize the variable "p" in the figure.
+ of FC and baseline classifiers on GCT datasets (paired
+one-sided \emph{t}-tests on classification error).\label{fig:stat_tbl7}}
+\end{figure}\vspace{-6pt}
+
+
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.35]{Nf1}
+%\par\end{centering}
+\caption{{Effect} %MDPI: Please check if there needs explanation for numbers and different lines in the figure.
+\textls[-25]{ of the number of constructed features $N_{f}$: consistency
+of $N_{f}$ = 1 and diminishing~returns.}\label{fig:Nf1}}
+\end{figure}
+
+\subsection{Experiments with the Number of Generations}
+
+Moreover, in order to test the efficiency of the proposed method,
+an additional experiment was executed, where the number of generations
+was altered from 50 to 400.
+
+
+Table \ref{tab:resultsNG} focuses on the number of generations $N_{g}$
+of the evolutionary {algorithm} during feature construction and evaluates
+four values (50, 100, 200, 400). The results demonstrate that FC is
+remarkably robust with respect to this hyperparameter: the mean classification
+error remains very close across settings, ranging from 9.18\% for
+$N_{g}$ = 100 down to 8.78\% for $N_{g}$ = 400. The configuration
+$N_{g}$ = 200, which is used as the default in the previous analysis,
+attains an average error of 9.05\%, essentially indistinguishable
+from the more expensive setting $N_{g}$ = 400, which improves the
+mean error only by about a quarter of a percentage point. At the level
+of individual datasets, there are cases where a larger number of generations
+yields more noticeable gains (for instance, GCT1990 improves to 12.30\%
+at $N_{g}$ = 400), but the overall pattern is that most of the benefit
+is already captured within 100--200 generations, with further iterations
+providing diminishing returns. Thus, Table \ref{tab:resultsNG} suggests
+that the Grammatical Evolution process converges to useful future
+constructions relatively quickly, and that the choice $N_{g}$ = 200
+offers a very good trade-off between computational cost and predictive
+performance, avoiding unnecessary increases in training time without
+delivering substantial accuracy gains. Furthermore, Figure \ref{fig:ngexpers}
+outlines the performance of the proposed method to the used datasets,
+using different values for the number of generations $N_{g}.$
+\begin{table}[H]
+\caption{Experimental results using the proposed method and a series of values
+for the number of generations $N_{g}$.\label{tab:resultsNG}}
+
+%\centering{}%
+\begin{tabularx}{\textwidth}{CCCCC}
+\toprule 
+\textbf{DATASET} & \boldmath{$N_{g}=50$} & \boldmath{$N_{g}=100$} & \boldmath{$N_{g}=200$} & \boldmath{$N_{g}=400$}\tabularnewline
+\midrule 
+GCT1990 & 13.61\% & 13.19\% & 13.50\% & 12.30\%\tabularnewline
+GCT1995 & 11.06\% & 11.70\% & 10.82\% & 10.74\%\tabularnewline
+GCT2000 & 6.53\% & 6.58\% & 6.52\% & 6.52\%\tabularnewline
+GCT2005 & 4.58\% & 4.45\% & 4.45\% & 4.41\%\tabularnewline
+GCT2010 & 9.88\% & 10.00\% & 9.97\% & 9.94\%\tabularnewline
+\textbf{{AVERAGE} %MDPI: Please confirm if the bold is unnecessary and can be removed. please check whole table
+} & \textbf{9.13\%} & \textbf{9.18\%} & \textbf{9.05\%} & \textbf{8.78\%}\tabularnewline
+\bottomrule 
+\end{tabularx}
+\end{table}\vspace{-15pt}
+
+\begin{figure}[H]
+%\begin{centering}
+\hspace{-9pt}\includegraphics[scale=0.45]{ngexper}
+%\par\end{centering}
+\caption{The performance of the proposed method using different values for
+the parameter $N_{g}$.\label{fig:ngexpers}}
+
+\end{figure}
+
+
+
+In Figure \ref{fig:stat_tbl8}, the paired \emph{t}-tests for the different
+numbers of generations show that all pairwise comparisons are non-significant
+(ns), indicating that variations in $N_{g}$ do not materially affect
+the classification error of the FC model.
+\begin{figure}[H]
+%\begin{centering}
+\includegraphics[scale=0.32]{stat_tbl8}
+%\par\end{centering}
+\caption{{Comparison} %MDPI: 1. Please italicize the variable “p” in the figure. 2. There is no * in the image, please confirm if the explanation is unnecessary and can be removed. 3. Please check if there needs explanation for ns in the figure.
+ of FC and baseline classifiers on GCT datasets (paired
+one-sided \emph{t}-tests on classification error).\label{fig:stat_tbl8}}
+\end{figure}
+
+\section{Conclusions\label{sec:Conclusions}}
+
+This study investigates the use of Grammatical Evolution for constructing
+artificial features in earthquake prediction, applying several machine
+learning approaches, including MLP(GEN), MLP(PSO), SVM, and NNC, alongside
+feature construction (FC). The analysis is based on seismic data recorded
+between 1990 and 2015 within the geographical area defined by latitudes
+33--44° and longitudes 17--44°. While all the aforementioned methods
+belong to the domain of machine learning, FC is distinguished as a
+feature engineering technique. Specifically, feature construction
+(FC) refers to the process of generating new, informative attributes
+from the existing dataset, thereby enhancing the representational
+capacity of the data and improving the performance of machine learning
+models. Following these steps, our experiments demonstrated that the
+FC technique yielded the best results, achieving the lowest mean error
+9.05\% corresponding to an overall accuracy of 91\%. The SVM method
+achieved the second-best performance, with an average error of 11.86\%.
+Consequently, we proceeded with the FC technique, which yielded the
+best results, and implemented artificially constructed features $N_{f}$
+ranging from 1 to 4. Furthermore, to evaluate the efficiency
+of the proposed method, an additional experiment was conducted in
+which the number of generations $N_{g}$ varied from 50 to 400.
+Consequently, we applied 1, 2, 3, and 4 constructed features within
+this technique, with the single constructed feature\mbox{ $N_{f}$ = 1} exhibiting
+superior performance compared to the others, producing the minimal
+average error 8.21\%. Our experiment was further extended by incorporating
+a series of values for the number of generations $N_{g}$ (50, 100,
+200, and 400), and the results indicated that $N_{g}$ 400 generations
+yielded the best performance 8.78\%. In contrast, selecting $N_{g}$
+200 also provides an effective balance between computational cost
+and predictive performance. This study was conducted as a direct response
+to the challenge identified in our previous research, thereby extending
+and refining the scope of the earlier findings.
+
+Specifically, this study demonstrates the potential of Grammatical
+Evolution as a novel feature engineering tool in seismology, offering
+a new perspective on how artificial features can enhance earthquake
+prediction models. At the same time, certain limitations must be acknowledged,
+such as the imbalance in the dataset and the restriction to a specific
+geographical region, which may affect generalizability. Future research
+should therefore explore the application of this approach to diverse
+seismic catalogs and investigate its integration with machines learning
+architectures. By articulating these implications, limitations, and
+directions, the contribution of this study becomes clearer and more
+impactful.
+
+\vspace{6pt}
+
+
+\authorcontributions{Conceptualization, C.K. and I.G.T.; methodology, C.K.; software,
+I.G.T.; validation, G.K. %MDPI: C.S. does not belong to this paper, please check and revise.
+ and V.C.; formal analysis, G.K.; investigation,
+C.K.; resources,; data curation, C.K.; writing---original draft
+preparation, C.K.; writing---review and editing, I.G.T.; visualization,
+V.C.; supervision, {I.G.T.}; project administration, {I.G.T.}; funding acquisition,
+{I.G.T} All authors have read and agreed to the published version of the manuscript.}
+
+\funding{This research has been financed by the European Union: Next Generation
+EU through the Program Greece 2.0 National Recovery and Resilience
+Plan , under the call RESEARCH-CREATE-INNOVATE, project name “iCREW:
+Intelligent small craft simulator for advanced crew training using
+Virtual Reality techniques\textquotedbl{} (project code: TAEDK-06195).}
+
+\institutionalreview{Not applicable. %MDPI: In this section, you should add the Institutional Review Board Statement and approval number, if relevant to your study. You might choose to exclude this statement if the study did not require ethical approval. Please note that the Editorial Office might ask you for further information. Please add “The study was conducted in accordance with the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans. OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals. OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.
+}
+
+\informedconsent{Not applicable. %MDPI: Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans. Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper'' if applicable.
+}
+
+\dataavailability{The original contributions presented in this study are included in
+the article. Further inquiries can be directed to the corresponding
+author.}
+
+\conflictsofinterest{The authors declare no conflicts of interest.}
+
+\begin{adjustwidth}{-\extralength}{0cm}{}
+
+
+\reftitle{References}
+\begin{thebibliography}{999}
+\bibitem[(2017)]{UNDRR 2017} {United Nations Office for Disaster Risk
+Reduction (UNDRR). Sendai framework terminology on disaster
+risk reduction. Resilience.~2017} available from \url{https://www.undrr.org/drr-glossary/terminology} (accessed on 10 January 2026). %MDPI: We are sorry but we could not find the required information about this entry. Please provide more information about this article, whether it is a book (please provide the name and location of the publisher); online resource (please provide the URL of the website and the date it was accessed (Date Month Year)); or journal article (please provide the name of the journal, the year and volume in which it was published, and the page number). Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
+%MDPI: Please do not change the reference format with any tools. Our production editor has done thoroughly layout work for the reference. If any changes are necessary, please highlight them. Thanks for your cooperation. Please do not delete nonredundant ref. or add any new references. According to our requirements, no content changes are allowed after the article is accepted. Hope you can understand.
+
+
+\bibitem{Nakamura 1984} Nakamura, Y. \emph{Development of Earthquake
+Early-Warning System for the Shinkansen, Some Recent Earthquake Engineering
+Research and Practice in Japan}; The Japanese National
+Committee of the International Association for Earthquake Engineering: {Tokyo, Japan,} %MDPI: Newly added  information. Please confirm. The following highlights are the same meaning, please check.
+ 1984; pp. 224--238.
+
+\bibitem{Nakamura 1988} Nakamura, Y. On the urgent earthquake
+detection and alarm system (UrEDAS). In Proceedings of the  9th World Conference
+on Earthquake Engineering, {Tokyo, Japan, 2–9 August} 1988; pp. 673--678.
+
+\bibitem{Espinosa Aranda 1995} Espinosa Aranda, J.M.; Jimenez, A.;
+Ibarrola, G.; Alcantar, F.; Aguilar, A.; Inostroza, M.;  Maldonado,
+S. Mexico City seismic alert system. \emph{Seismol. Res.
+Lett.} \textbf{1995}, \emph{66}, 42--53
+
+\bibitem{Kamigaichi 2009} Kamigaichi, O.; Saito, M.; Doi, K.; Matsumori,
+T.; Tsukada, S.Y.; Takeda, K.; {Shimoyama, T.; Nakamura, K.; Kiyomoto, M.;}  Watanabe, Y. Earthquake
+early warning in Japan: Warning the general public and future prospects.
+\emph{Seismol. Res. Lett.} \textbf{2009}, \emph{80}, 717--726.
+
+\bibitem{EEW} Earthquake Early Warning System (Japan). Wikipedia.
+Available online: \url{https://en.wikipedia.org/wiki/Earthquake_Early_Warning_(Japan)}  (accessed on 14 November 2025). 
+
+\bibitem{Wenzel 1999} Wenzel, F.; Oncescu, M.C.; Baur, M.; Fiedrich,
+F.;  Ionescu, C. An early warning system for Bucharest.
+\emph{Seismol. Res. Lett.} \textbf{1999}, \emph{70}, 161--169. 
+
+\bibitem{Alcik 2009} Alcik, H.; Ozel, O.; Apaydin, N.;  Erdik,
+M. A study on warning algorithms for Istanbul earthquake early
+warning system. \emph{Geophys. Res. Lett.} \textbf{2009}, {\emph{36(5)}.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the page number or doi information.
+ 
+
+\bibitem{Satriano 2009} Satriano, C., Elia, L., Martino, C., Lancieri, M., Zollo, A., \& Iannaccone, G. (2009, December). The Earthquake Early Warning System for Southern Italy: Concepts, Capabilities and Future Perspectives. In AGU Fall Meeting Abstracts (Vol. 2009, pp. S13A-1726).
+
+\bibitem{USGS} ShakeAlert. US Geological Survey, Earthquake Hazards
+Program. Available online: \url{https://earthquake.usgs.gov/data/shakealert/}  (accessed on 15 November 2025). 
+
+\bibitem{Shake alert}ShakeAlert. Earthquake Early Warning (EEW) System.
+Available online:  \url{https://www.shakealert.org/} (accessed on 15 November~2025). 
+
+\bibitem[(2012)]{zollo}Zollo, A.; Festa, G.; Emolo, A.;  Colombelli,
+S. Source characterization for earthquake early warning. In
+\emph{Encyclopedia of Earthquake Engineering}; Springer: Berlin/Heidelberg, Germany, 2015; pp. 3327--3346.
+
+
+\bibitem{Tsoulos 2025} Kopitsa, C.; Tsoulos, I.G.;  Charilogis,
+V. Predicting the Magnitude of Earthquakes Using Grammatical
+Evolution. \emph{Algorithms} \textbf{2025}, \emph{18}, 405. 
+
+\bibitem{Earthquake app} Earthquake App. 
+Available online: \url{https://earthquake.app/#banner_1}  (accessed on 16 November 2025). 
+
+\bibitem{Android EAS} Android Earthquake Alert System. Available online: \url{https://crisisresponse.google/android-early-earthquake-warnings} (accessed on 16 November 2025). 
+
+\bibitem{Greece Earthquakes} Greece Earthquakes.  Available online: \url{https://play.google.com/store/apps/details?id=com.greek.Earthquake&pli=1}  (accessed on 16 November 2025). 
+
+\bibitem{Earthquake Network} Earthquake Network. Available online: \url{ https://sismo.app/}  (accessed on 16 November 2025). 
+
+\bibitem{Housner 1964} Housner, G.W.;  Jennings, P.C. 
+Generation of artificial earthquakes. \emph{J. Eng. Mech.
+Div.} \textbf{1964}, \emph{90}, 113--150. 
+
+\bibitem{Adeli 2009} Adeli, H.;  Panakkat, A. A probabilistic
+neural network for earthquake magnitude prediction. \emph{Neural Netw.} \textbf{2009},
+\emph{22}, 1018--1024.
+
+\bibitem{Zhou 2012} Zhou, Q.; Tong, G.; Xie, D.; Li, B.;  Yuan,
+X. A seismic-based feature extraction {algorithm} for robust
+ground target classification. \emph{IEEE Signal Process. Lett.} \textbf{2012}, \emph{19},
+639--642. 
+
+\bibitem{Mart=0000EDnez-=0000C1lvarez 2013} Martínez-Álvarez, F.;
+Reyes, J.; Morales-Esteban, A.;  Rubio-Escudero, C. Determining
+the best set of seismicity indicators to predict earthquakes. Two
+case studies: Chile and the Iberian Peninsula. \emph{Knowl.-Based Syst.} \textbf{2013},
+\emph{50}, 198--210. 
+
+\bibitem{Schmidt 2015} Schmidt, L.; Hegde, C.; Indyk, P.; Lu, L.;
+Chi, X.;  Hohl, D. Seismic feature extraction using
+Steiner tree methods. In Proceedings of the  2015 IEEE international conference on acoustics,
+speech and signal processing (ICASSP), {Brisbane, Australia, 19--24} April 2015;  IEEE: {New York, NY, USA, 2015}; pp. 1647--1651.
+
+\bibitem{Narayanakumar 2016} Narayanakumar, S.;  Raja, K. 
+A BP artificial neural network model for earthquake magnitude prediction
+in Himalayas, India. \emph{Circuits Syst.} \textbf{2016}, \emph{7}, 3456--3468. 
+
+\bibitem{Cortes 2016} Asencio-Cortés, G.; Martínez-Álvarez, F.; Morales-Esteban,
+A.;  Reyes, J. A sensitivity study of seismicity indicators
+in supervised learning to improve earthquake prediction. \emph{Knowl.-Based
+Syst.} \textbf{2016}, \emph{101}, 15--30. 
+
+\bibitem{Asim 2018} Asim, K.M.; Idris, A.; Iqbal, T.;  Martínez-Álvarez,
+F. Earthquake prediction model using support vector regressor
+and hybrid neural networks. \emph{PLoS ONE} \textbf{2018}, \emph{13}, e0199004. 
+
+\bibitem{Chamberlain 2018} Chamberlain, C.J.;  Townend, J. 
+Detecting real earthquakes using artificial earthquakes: On the use
+of synthetic waveforms in matched‐filter earthquake detection. \emph{Geophys.
+Res. Lett.} \textbf{2018}, \emph{45}, 11--641. 
+
+\bibitem{Okada 2018} Okada, A.;  Kaneda, Y.  Neural
+network learning: Crustal state estimation method from time-series
+data. In Proceedings of the  2018 International Conference on Control, Artificial Intelligence,
+Robotics  Optimization (ICCAIRO), {Prague, Czech Republic, 19–21} May 2018; IEEE: {New York, NY, USA}, 2018; pp. 141--146.
+
+\bibitem{Lin 2018} Lin, J.W.; Chao, C.T.;  Chiou, J.S. 
+Determining neuronal number in each hidden layer using earthquake
+catalogues as training data in training an embedded back propagation
+neural network for predicting earthquake magnitude. \emph{IEEE Access} \textbf{2018}, \emph{6},
+52582--52597. 
+
+\bibitem{Zhang 2019} Zhang, L.; Si, L.; Yang, H.; Hu, Y.;  Qiu,
+J. Precursory pattern based feature extraction techniques
+for earthquake prediction. \emph{IEEE Access} \textbf{2019}, \emph{7}, 30991--31001. 
+
+\bibitem{Rojas 2019} Rojas, O.; Otero, B.; Alvarado, L.; Mus, S.;
+ Tous, R. Artificial neural networks as emerging tools for
+earthquake detection. \emph{Comput. Sist.} \textbf{2019}, \emph{23}, 335--350. 
+
+\bibitem{Ali 2020} Ali, A.; Sheng-Chang, C.;  Shah, M.  
+Continuous wavelet transformation of seismic data for feature extraction.
+\emph{SN Appl. Sci.} \textbf{2020}, \emph{2}, 1835. 
+
+\bibitem{Bamer 2021} Bamer, F.; Thaler, D.; Stoffel, M.;  Markert,
+B. A monte carlo simulation approach in non-linear structural
+dynamics using convolutional neural networks. \emph{Front. Built Environ.} \textbf{2021},
+\emph{7}, 679488. 
+
+\bibitem{Wang 2023} Wang, T.; Bian, Y.; Zhang, Y.;  Hou, X. 
+Using artificial intelligence methods to classify different seismic
+events. \emph{Seismol. Soc. Am.} \textbf{2023}, \emph{94}, 1--16. 
+
+\bibitem{Ozkaya 2024} Ozkaya, S.G.; Baygin, M.; Barua, P.D.; Tuncer,
+T.; Dogan, S.; Chakraborty, S.;  Acharya, U.R. An automated
+earthquake classification model based on a new butterfly pattern using
+seismic signals. \emph{Expert Syst. Appl.} \textbf{2024}, \emph{238}, 122079. 
+
+\bibitem{Sinha 2025} Sinha, D.K.;  Kulkarni, S.
+Advancing Seismic Prediction through Machine Learning: A Comprehensive
+Review of the Transformative Impact of Feature Engineering. In Proceedings of the  2025
+International Conference on Emerging Trends in Industry 4.0 Technologies
+(ICETI4T), {Navi Mumbai, India, 6--7} June 2025; IEEE: {New York, NY, USA}, 2025; pp. 1--8.
+
+\bibitem{Mahmoud 2025} Mahmoud, A.; Alrusaini, O.; Shafie, E.; Aboalndr,
+A.;  Elbelkasy, M.S. Machine Learning-Based Earthquake
+Prediction: Feature Engineering and Model Performance Using Synthetic
+Seismic Data. \emph{Appl. Math} \textbf{2025}, \emph{19}, 695--702. 
+
+\bibitem[(2002)]{mainGe}O'Neill, M.;  Ryan, C. Grammatical
+evolution. \emph{IEEE Trans. Evol. Comput.} \textbf{2002}, \emph{5}, 349--358. 
+
+\bibitem[(2017)]{gaOverview}{Kramer, O.} %MDPI: Refs. 38 and 75 are duplicated. You can add a new related reference to replace a duplicate reference, please ensure that the new reference does not duplicate with other references. Also, we can help you remove duplicated references and rearrange all the references to appear in numerical order, please do not delete it by yourself, just make sure all the references are cited in the main text. Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
+{Genetic algorithms.}
+In \emph{{Genetic Algorithm Essentials}}; {Springer International
+Publishing: Cham, Switzerland, 2017; pp.~11--19. }
+
+\bibitem[(2002)]{bnf1}Backus, J.W. The syntax and the semantics
+of the proposed international algebraic language of the Zurich ACM-GAMM
+Conference. In \emph{ICIP Proceedings}; {1959;} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
+ pp. 125--132.
+
+\bibitem{ge_program1}Ryan, C.; Collins, J.J.;  Neill, M.O. Grammatical evolution: Evolving programs for an arbitrary
+language. In Proceedings of the  European Conference on Genetic Programming, {Paris, France, 14--15 April} 1998;
+Springer:  Berlin/Heidelberg, Germany, 1998; pp.~83--96.
+
+\bibitem{ge_program2}O’Neill, M.;  Ryan, C. Evolving
+multi-line compilable C programs. In European Conference on Genetic
+Programming, {Göteborg, Sweden, 26--27 May} 1999; Springer: Berlin/Heidelberg, Germany, 1999; pp. 83--92.
+
+\bibitem{ge_credit}Brabazon, A.;  O'Neill, M. Credit classification
+using grammatical evolution. \emph{Informatica} \textbf{2006}, {\emph{30}.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the page number or doi information.
+
+
+\bibitem{ge_intrusion}Şen, S.;  Clark, J.A.  A grammatical
+evolution approach to intrusion detection on mobile ad hoc networks.
+In Proceedings of the Second ACM Conference on Wireless Network Security, {Zurich, Switzerland, 16--19} March 2009;
+pp. 95--102.
+
+\bibitem{ge_water}Chen, L.; Tan, C.H.; Kao, S.J.;  Wang, T.S.
+Improvement of remote monitoring on water quality in a subtropical
+reservoir by incorporating grammatical evolution with parallel genetic
+algorithms into satellite imagery. \emph{Water Res.} \textbf{2008}, \emph{42}, 296--306.
+
+\bibitem{ge_glykemia}Hidalgo, J.I.; Colmenar, J.M.; Risco-Martin,
+J.L.; Cuesta-Infante, A.; Maqueda, E.; Botella, M.;  Rubio, J.A. Modeling glycemia in humans by means of grammatical evolution.
+\emph{Appl. Soft Comput.} \textbf{2014}, \emph{20}, 40--53.
+
+\bibitem{ge_ant}Tavares, J.;  Pereira, F.B. Automatic
+design of ant algorithms with grammatical evolution. In Proceedings of the  European Conference
+on Genetic Programming, {Malaga, Spain, 11--13} April 2012;  Springer: Berlin/Heidelberg, Germany, 2012; pp. 206--217.
+
+\bibitem{ge_datacenter}Zapater, M.; Risco-Martín, J.L.; Arroba,
+P.; Ayala, J.L.; Moya, J.M.;  Hermida, R. Runtime data
+center temperature prediction using grammatical evolution techniques.
+\emph{Appl. Soft Comput.} \textbf{2016}, \emph{49}, 94--107.
+
+\bibitem{ge_trig}Ryan, C.; O’Neill, M.;  Collins, J.J. Grammatical evolution: Solving trigonometric identities. In
+{\emph{Mendel};} %MDPI: we revised the book name, please confirm
+ Technical
+University of Brno, Faculty of Mechanical Engineering: Brno, Czech Republic, 1998; Volume 98, p. 4.
+
+\bibitem{ge_music}de la Puente, A.O.; Alfonso, R.S.;  Moreno,
+M.A. Automatic composition of music by means of grammatical
+evolution. In Proceedings of the 2002 Conference on APL: Array Processing
+Languages: Lore, Problems, and Applications, {Madrid, Spain, 22--25 July} 2002; pp. 148--155.
+
+\bibitem{ge_nn}De Campos, L.M.L.; de Oliveira, R.C.L.;  Roisenberg,
+M. Optimization of neural networks through grammatical evolution
+and a genetic {algorithm}. \emph{Expert Syst. Appl.} \textbf{2016}, \emph{56}, 368--384.
+
+\bibitem{ge_nn2}Soltanian, K.; Ebnenasir, A.;  Afsharchi, M. 
+Modular grammatical evolution for the generation of artificial neural
+networks. \emph{Evol. Comput.} \textbf{2022}, \emph{30}, 291--327.
+
+\bibitem{ge_constant}Dempsey, I.; O'Neill, M.;  Brabazon, A. 
+Constant creation in grammatical evolution. \emph{Int. J.
+ Innov. Comput. Appl.} \textbf{2007}, \emph{1}, 23--38.
+
+\bibitem{ge_pacman}Galván-López, E.; Swafford, J.M.; O’Neill, M.;
+ Brabazon, A.  Evolving a ms. pacman controller using
+grammatical evolution. In Proceedings of the  European Conference on the Applications
+of Evolutionary Computation, {Istanbul, Turkey, 7--9} April 2010; Springer: Berlin/Heidelberg, Germany, 2010; pp. 161--170.
+
+\bibitem{ge_supermario}Shaker, N.; Nicolau, M.; Yannakakis, G.N.;
+Togelius, J.;  O'neill, M. Evolving levels for
+super mario bros using grammatical evolution. In Proceedings of the  2012 IEEE Conference
+on Computational Intelligence and Games (CIG), {Granada, Spain, 11--14} September 2012; IEEE: {New York, NY, USA}, 2012; pp. 304--311.
+
+\bibitem{ge_energy}Martínez‐Rodríguez, D.; Colmenar, J.M.; Hidalgo,
+J.I.; Villanueva Micó, R.J.;  Salcedo‐Sanz, S.  Particle
+swarm grammatical evolution for energy demand estimation. \emph{Energy Sci.
+ Eng.} \textbf{2020}, \emph{8}, 1068--1079.
+
+\bibitem{ge_comb}Sabar, N.R.; Ayob, M.; Kendall, G.;  Qu, R. 
+Grammatical evolution hyper-heuristic for combinatorial optimization
+problems. \emph{IEEE Trans. Evol. Comput.} \textbf{2013}, \emph{17}, 840--861.
+
+\bibitem{ge_crypt}Ryan, C.; Kshirsagar, M.; Vaidya, G.; Cunningham,
+A.;  Sivaraman, R. Design of a cryptographically secure
+pseudo random number generator with grammatical evolution. \emph{Sci.
+Rep.} \textbf{2022}, \emph{12}, 8602.
+
+\bibitem{ge_decision}Pereira, P.J.; Cortez, P.;  Mendes, R. 
+Multi-objective grammatical evolution of decision trees for mobile
+marketing user conversion prediction. \emph{Expert Syst. Appl.} \textbf{2021},
+\emph{168}, 114287.
+
+\bibitem{ge_analog}Castejón, F.;  Carmona, E.J.  Automatic
+design of analog electronic circuits using grammatical evolution.
+\emph{Appl. Soft Comput.} \textbf{2018}, \emph{62}, 1003--1018.
+
+\bibitem{Tsoulos 2023} Tsoulos, I.G.; Tzallas, A.;  Karvounis,
+E. Constructing the Bounds for Neural Network Training Using
+Grammatical Evolution. \emph{Computers} \textbf{2023}, \emph{12}, 226. 
+
+\bibitem{Tsoulos 2024} Tsoulos, I.G.; Varvaras, I.;  Charilogis,
+V. RbfCon: Construct Radial Basis Function Neural Networks
+with Grammatical Evolution. \emph{Software}  \textbf{2024}, \emph{3}, {2674-113X.} %MDPI: we moved the information here, please confirm
+ 
+
+
+ \bibitem[(2012)]{gutenberg}Gutenberg, B.;  Richter, C.F.
+Magnitude and energy of earthquakes. \emph{Nature} \textbf{1955}, \emph{176}, 795--795.
+
+
+\bibitem[(2022)]{Wang}Wang, X.; Zhong, Z.; Yao, Y.; Li, Z.; Zhou,
+S.; Jiang, C.;  Jia, K. Small Earthquakes Can Help Predict
+Large Earthquakes: A Machine Learning Perspective. \emph{Appl. Sci.} \textbf{2023},
+\emph{13}, 6424.
+
+\bibitem[(2022)]{zhu_rapid}Zhu, J.; Zhou, Y.; Liu, H.; Jiao, C.;
+Li, S.; Fan, T.; {Wei, Y.;}  Song, J. Rapid earthquake magnitude
+classification using single station data based on the machine learning.
+\emph{IEEE Geosci. Remote Sens. Lett.} \textbf{2023}, \emph{21}, {7500705}.
+
+\bibitem[(2018)]{nn1}Abiodun, O.I.; Jantan, A.; Omolara, A.E.;
+Dada, K.V.; Mohamed, N.A.;  Arshad, H. State-of-the-art
+in artificial neural network applications: A survey. \emph{Heliyon} \textbf{2018}, \emph{4}, {e00938}.
+
+\bibitem{nn2}Suryadevara, S.;  Yanamala, A.K.Y.  A Comprehensive
+Overview of Artificial Neural Networks: Evolution, Architectures,
+and Applications. \emph{Rev. Intel. Artif. Med.} \textbf{2021},
+\emph{12}, 51--76. 
+
+
+\bibitem[(2018)]{nnga1}Kalogirou, S.A. Optimization of solar
+systems using artificial neural-networks and genetic algorithms. \emph{Appl.
+Energy} \textbf{2004}, \emph{77}, 383--405. 
+
+\bibitem[(2018)]{nnga2}Chiroma, H.; Noor, A.S.M.; Abdulkareem,
+S.; Abubakar, A.I.; Hermawan, A.; Qin, H.; {Hamza, M.F.;}  Herawan, T.
+Neural networks optimization through genetic {algorithm} searches: A
+review. \emph{Appl. Math. Inf. Sci.} \textbf{2017}, \emph{11}, 1543--1564. 
+
+\bibitem[(2012)]{genapp1}Manning, T.; Sleator, R.D.;  Walsh, P.
+Naturally selecting solutions: The use of genetic algorithms
+in bioinformatics. \emph{Bioengineered} \textbf{2013}, \emph{4}, 266--278.
+
+\bibitem[(2012)]{genapp2}Maulik, U. Medical image segmentation
+using genetic algorithms. \emph{IEEE Trans. Inf. Technol.
+ Biomed.} \textbf{2009}, \emph{13}, 166--173.
+
+\bibitem[(2012)]{genapp3}Ghaheri, A.; Shoar, S.; Naderan, M.; 
+Hoseini, S.S. The applications of genetic algorithms in medicine.
+\emph{Oman Med. J.} \textbf{2015}, \emph{30}, 406.
+
+\bibitem[(2012)]{genapp4}Mousavi-Avval, S.H.; Rafiee, S.; Sharifi,
+M.; Hosseinpour, S.; Notarnicola, B.; Tassielli, G.;  Renzulli,
+P.A. Application of multi-objective genetic algorithms for
+optimization of energy, economics and environmental life cycle assessment
+in oilseed production. \emph{J. Clean. Prod.} \textbf{2017}, \emph{140}, 804--815.
+
+\bibitem[(2012)]{genapp5}Zhang, W.; Xie, Y.; He, H.; Long, Z.; Zhuang,
+L.;  Zhou, J. Multi-physics coupling model parameter identification
+of lithium-ion battery based on data driven method and genetic {algorithm}.
+\emph{Energy} \textbf{2025}, \emph{314}, 134120.
+
+
+\bibitem[(2018)]{pso1}Wang, D.; Tan, D.;  Liu, L. Particle
+swarm optimization {algorithm}: An overview. \emph{Soft Comput.} \textbf{2018}, \emph{22},
+387--408.
+
+\bibitem[(2018)]{pso2}Jain, N.K.; Nangia, U.;  Jain, J. 
+A review of particle swarm optimization. \emph{J. Inst.
+ Eng. (India) Ser. B} \textbf{2018}, \emph{99}, 407--411. 
+
+\bibitem[(2018)]{nnpso1}Meissner, M.; Schmuker, M.;  Schneider,
+G. Optimized Particle Swarm Optimization (OPSO) and its application
+to artificial neural network training. \emph{BMC Bioinform.} \textbf{2006}, \emph{7}, 125. 
+
+\bibitem[(2018)]{nnpso2}Garro, B.A.;  Vázquez, R.A. Designing
+artificial neural networks using particle swarm optimization algorithms.
+\emph{Comput. Intell. Neurosci.} \textbf{2015}, \emph{2015}, 369298. 
+
+\bibitem[(2012)]{psoapp1}Li, S.  Economic optimization of
+business administration resources: Multi-objective scheduling method
+based on improved PSO. \emph{J. Comput. Methods Sci.
+ Eng.} \textbf{2025}, \emph{{25}}, 14727978251337955.
+
+\bibitem[(2012)]{psoapp2}Wang, C.H.; Tian, R.; Hu, K.; Chen, Y.T.;  Ku, T.H. A Markov decision optimization of medical
+service resources for two-class patient queues in emergency departments
+via particle swarm optimization {algorithm}. \emph{Sci. Rep.} \textbf{2025}, \emph{15},
+2942.
+
+\bibitem[(2012)]{psoapp3}Bao, R.; Wang, Z.; Guo, Q.; Wu, X.;  Yang,
+Q. Bio-Digital Catalyst Design: Generative Deep Learning for
+Multi-Objective Optimization and Chemical Insights in CO2 Methanation.
+\emph{ACS Catal.} \textbf{2025}, \emph{15}, 12691--12714.
+
+\bibitem[(2012)]{psoapp4}Kumar, T.R.; Nandhini, T.J.; Jumaniyazova,
+I.; Abdulla, H.; Jumaniyozov, Y.;  Bhatt, V. Swarm
+Robotics for Search and Rescue Operations in Disaster Zones Using
+Particle Swarm Optimization (PSO) Algorithms. In Proceedings of the  2025 International
+Conference on Networks and Cryptology (NETCRYPT), {New Delhi, India, 29--31} May 2025; IEEE: {New York, NY, USA}, 2025; pp.~870--875.
+
+\bibitem[(2012)]{psoapp5}Zhu, X.; Bi, M.; Shang, J.; Sun, Y.; Li,
+F.; Zhang, Y.; {Dai, L.; Li, S.;}  Liu, J.X. MPSO-CD: A Multi-objective
+Particle Swarm Optimization Community Detection Method for Identifying
+Disease Modules. \emph{IEEE Trans. Comput. Biol. Bioinform.} \textbf{2025}, {\emph{22},  1505--1516.}
+
+\bibitem[(2016)]{svm}Suthaharan, S. Support vector machine.
+In \emph{Machine Learning Models and Algorithms for Big Data Classification:
+Thinking with Examples for Effective Learning}; Springer: Boston,
+MA, USA, 2016; pp. 207--235. 
+
+\bibitem{Wang 2022} Wang, Q. Support vector machine
+{algorithm} in machine learning. In Proceedings of the  2022 IEEE International Conference
+on Artificial Intelligence and Computer Applications (ICAICA), {Dalian, China, 24--26} June 2022; IEEE: {New York, NY, USA}, 2022; pp.
+750--756.
+
+\bibitem{Astuti 2014} Astuti, W.; Akmeliawati, R.; Sediono, W.; 
+Salami, M.J.E.  Hybrid technique using singular value decomposition
+(SVD) and support vector machine (SVM) approach for earthquake prediction.
+\emph{IEEE J. Sel. Top. Appl. Earth Obs. 
+Remote Sens.} \textbf{2014}, \emph{7}, 1719--1728. 
+
+\bibitem{Asaly 2022} Asaly, S.; Gottlieb, L.A.; Inbar, N.;  Reuveni,
+Y. Using support vector machine (SVM) with GPS ionospheric
+TEC estimations to potentially predict earthquake events. \emph{Remote Sens.} \textbf{2022},
+\emph{14}, 2822. 
+
+\bibitem{Reddy 2013} Reddy, R.;  Nair, R.R. The efficacy
+of support vector machines (SVM) in robust determination of earthquake
+early warning magnitudes in central Japan. \emph{J. Earth Syst.
+Sci.} \textbf{2013}, \emph{122}, 1423--1434. 
+
+\bibitem[(2012)]{svmapp1}Mahata, K.; Sengupta, S.; Biswas, M.; Ghosh,
+S.; Banerjee, A.K.; Pati, S.K.;  Mal, C. Application of
+Machine Learning in Bioinformatics: Capture and Interpret Biological
+Data. In \emph{Machine Learning in Biomedical and Health Informatics}; Apple Academic Press: {Waretown, NJ, USA}, 2025; pp.
+239--262.
+
+\bibitem[(2012)]{svmapp2}Manimaran, P.; Vignesh, R.; Vignesh, B.;
+ Thilak, G. Enhanced Prediction of Lung Cancer
+Stages using SVM and Medical Imaging. In Proceedings of the  2025 International Conference
+on Electronics and Renewable Systems (ICEARS), {Tuticorin, India, 11--13} February 2025; IEEE: {New York, NY, USA}, 2025; pp. 1334--1338.
+
+\bibitem[(2012)]{svmapp3}Kazi, K.S.L.  Machine learning-driven
+internet of medical things (ML-IoMT)-based healthcare monitoring system.
+In \emph{Responsible AI for Digital Health and Medical Analytics};
+IGI Global Scientific Publishing: {2025;} %MDPI: We are sorry but we could not find the required information about this entry. Please add the location of the publisher (city and country).
+ pp. 49--86.
+
+\bibitem[(2012)]{svmapp4}Azizian‐Kalandaragh, Y.; Barkhordari, A.;
+ Badali, Y. Support vector machine for prediction of the
+electronic factors of a Schottky configuration interlaid with pure
+PVC and doped by Sm\textsubscript{2}O\textsubscript{3} nanoparticles. \emph{Adv. Electron. Mater.} \textbf{2025},
+\emph{11}, 2400624.
+
+\bibitem[(2012)]{svmapp5}Sun, Y.; Song, M.; Song, C.; Zhao, M.; 
+Yang, Y.  KPCA-based fault detection and diagnosis model for
+the chemical and volume control system in nuclear power plants. \emph{Ann.
+ Nucl. Energy} \textbf{2025}, \emph{211}, 110973.
+
+\bibitem{nnc}Tsoulos, I.; Gavrilis, D.;  Glavas, E. Neural
+network construction and training using grammatical evolution. \emph{Neurocomputing} \textbf{2008},
+\emph{72}, 269--277.
+
+\bibitem{nnc_amide1}Papamokos, G.V.; Tsoulos, I.G.; Demetropoulos,
+I.N.;  Glavas, E. Location of amide I mode of vibration
+in computed data utilizing constructed neural networks. \emph{Expert Syst.
+ Appl.} \textbf{2009}, \emph{36}, 12210--12213.
+
+\bibitem{nnc_de}Tsoulos, I.G.; Gavrilis, D.;  Glavas, E. 
+Solving differential equations with constructed neural networks. \emph{Neurocomputing} \textbf{2009},
+\emph{72}, 2385--2391.
+
+\bibitem{nnc_feas}Tsoulos, I.G.; Mitsi, G.; Stavrakoudis, A.; 
+Papapetropoulos, S. Application of machine learning in a Parkinson's
+disease digital biomarker dataset using neural network construction
+(NNC) methodology discriminates patient motor status. \emph{Front. 
+ICT} \textbf{2019}, \emph{6},~10.
+
+\bibitem{nnc_student}Christou, V.; Tsoulos, I.; Loupas, V.; Tzallas,
+A.T.; Gogos, C.; Karvelis, P.S.; {Antoniadis, N.; Glavas, E.;}  Giannakeas, N. Performance
+and early drop prediction for higher education students using machine
+learning. \emph{Expert Syst. Appl.} \textbf{2023}, \emph{225}, 120079.
+
+\bibitem{nnc_autism}Toki, E.I.; Pange, J.; Tatsis, G.; Plachouras,
+K.;  Tsoulos, I.G. Utilizing Constructed Neural Networks
+for Autism Screening. \emph{Appl. Sci.} \textbf{2024}, \emph{14}, 3053.
+
+\bibitem[(2018)]{mainfc}Gavrilis, D.; Tsoulos, I.G.;  Dermatas,
+E. Selecting and constructing features using grammatical evolution.
+\emph{Pattern Recognit. Lett.} \textbf{2008}, \emph{29}, 1358--1365.
+
+\bibitem[(2018)]{fc1}Georgoulas, G.; Gavrilis, D.; Tsoulos, I.G.;
+Stylios, C.; Bernardes, J.;  Groumpos, P.P. Novel approach
+for fetal heart rate classification introducing grammatical evolution.
+\emph{Biomed. Signal Process. Control }\textbf{2007}, \emph{2}, 69--79.
+
+\bibitem[(2018)]{fc2}Smart, O.; Tsoulos, I.G.; Gavrilis, D.; 
+Georgoulas, G. Grammatical evolution for features of epileptic
+oscillations in clinical intracranial electroencephalograms. \emph{Expert
+Syst. Appl.} \textbf{2011}, \emph{38}, 9991--9999.
+
+\bibitem[(2018)]{fc3}Tzallas, A.T.; Tsoulos, I.; Tsipouras, M.G.;
+Giannakeas, N.; Androulidakis, I.;  Zaitseva, E. 
+Classification of EEG signals using feature creation produced by grammatical
+evolution. In Proceedings of the  2016 24th Telecommunications Forum (TELFOR), {Belgrade, Serbia, 22--23} November 2016;
+IEEE: {New York, NY, USA}, 2016; pp. 1--4.
+
+\bibitem{rbf1}Park, J.;  Sandberg, I.W. Universal approximation
+using radial-basis-function networks. \emph{Neural Comput.} \textbf{1991}, \emph{3}, 246--257.
+
+\bibitem{rbf2}Yu, H.; Xie, T.; Paszczynski, S.;  Wilamowski, B.M. Advantages of radial basis function networks for dynamic
+system design. \emph{IEEE Trans. Ind. Electron.} \textbf{2011}, \emph{58},
+5438--5450.
+
+\bibitem[(2018)]{optimus}Tsoulos, I.G.; Charilogis, V.; Kyrou, G.;
+Stavrou, V.N.;  Tzallas, A. OPTIMUS: A Multidimensional
+Global Optimization Package. \emph{J.~Open Source Softw.} \textbf{2025}, \emph{10},
+7584.
+
+\bibitem[(2022)]{qfc}Tsoulos, I.G.  QFC: A Parallel Software
+Tool for Feature Construction, Based on Grammatical Evolution. \emph{Algorithms} \textbf{2022},
+\emph{15}, 295.
+
+\bibitem[(2018)]{libsvm}Chang, C.C.;  Lin, C.J.  LIBSVM:
+A library for support vector machines. \emph{ACM Trans. Intell.
+Syst. Technol. (TIST)} \textbf{2011}, \emph{2}, 1--27. 
+
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors' response\\
+%Reviewer 2 comments and authors' response\\
+%Reviewer 3 comments and authors' response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PublishersNote{}
+
+\end{adjustwidth}{}
+\end{document}
