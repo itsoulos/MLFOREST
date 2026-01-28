@@ -365,60 +365,38 @@ Correspondence:
 
 \begin_layout Abstract
 Climate change is no longer a future or hypothetical issue,
- but a present reality with tangible consequences and impacts on the well-being not only of the planet itself but also of all living organism that constitute the ecosystem.
+ but a present reality with tangible consequences and impacts on the well-being not only of the planet itself but also of all living organisms that constitute the ecosystem.
  Since 1969,
  the global surface temperature has been surpassing its own record almost every year,
- with NASA's final measurement for 2024 indicating an increase of approximately 2.65° Fahreheit or 1.47° Celsius,
+ with NASA’s final measurement for 2024 indicating an increase of approximately 2.65° Fahrenheit or 1.47° Celsius,
  in global temperature.
  These measurements indicate that we have reached the thresholds established by the United Nations,
  scientists,
- and member states through Paris Agreement of 2015.
- Under this accord,
- countries committed to holding the global temperature increase well below 2° C above pre - industrial levels and pursuing efforts to limit it to 1.5° C,
- recognizing that achieving this goal would significantly reduce the risk and impacts of climate change.
- Prior to the Paris Agreement,
- several other initiatives had been undertaken to address environmental challenges.
- In 1992,
- the United Nations Conference of Environment and Development (UNCED) was hold in Rio de Janeiro,
- Brazil (3 - 14 June),
- with the ultimate objective of stabilizing greenhouse gas concentrations in the atmosphere.
- The momentum continued in 1997 with the adoption of the Kyoto Protocol,
- which ope-rationalized the United Nations Framework Convention on Climate Change (UNFCCC) by committing industrialized nations and economies in transition to limit and reduce greenhouse gas emissions in accordance with agreed individual targets.
- Although we briefly observed the emergence of more environmentally conscious actions in the past,
- today,
- in the year 2025,
- NASA's data indicate that the debate has shifted to whether humanity will surpass the critical threshold of 1.5°C or 2.7°F global temperature increase.
+ and member states through the Paris Agreement of 2015.
  In this study,
  we seek to gain a comprehensive understanding of climate change,
- and more specifically of its environmental impacts across five distinct regions located in different climatic zones.
+ and more specifically of its environmental impacts across seven distinct regions located in different climatic zones.
  Particular emphasis is placed on highlighting the rate at which climate change has altered annual temperature patterns during the period 1995–2025.
- Furthermore,
- we aim to project future climate trends by estimating temperature changes over the next 10,
- 20,
- and 30 years.
  To achieve this,
- we evaluated multiple modeling techniques and propose the use of Grammatical Evolution with rule-based construction as the most suitable approach.
- The first region is the Congo area,
- located near the equator and characterized by an equatorial tropical climate.
- The second is Saudi Arabia,
- identify as hot desert climate.
- The thors is Greece which lies within the subtropical zone of the Northern hemisphere.
- The fourth region is Turkey,
- characterized by diverse climate zones,
- overall,
- the country belongs primarily to the Mediterranean climate zone,
- while its interior regions exhibit continental conditions and the northern coasts experience humid temperate climates.The fifth region is Iceland,
- specifically Reykjavik,
- which is located within the subarctic zone.
- The sixth one is Svalbard region,
- in the North Arctic Ocean.
- The final region is Cape Town in South Africa,
- located in the Southern Hemisphere,
- which belongs primarily to the Mediterranean climate zone,
- characterized by warm,
- dry summers and mild,
- wet winters.
- 
+ we evaluated multiple modeling techniques and proposed the use of Grammatical Evolution with rule-based construction as the most suitable approach.GENCLASS,
+ demonstrates robust and systematic superiority over the considered baselines (MLP,
+ RBF,
+ SVM,
+ and NNC) across all datasets,
+ achieving the lowest average classification error and indicating strong cross-regional generalization.
+ In our research,
+ we will examine a broad spectrum of climatic zones,
+ specifically focusing on the Congo region,
+ Saudi Arabia,
+ Greece,
+ Turkey,
+ Reykjavik in Iceland,
+ the Arctic Svalbard archipelago,
+ and Cape Town in South Africa.
+ Our experiments yielded highly robust results,
+ with an average error rate of 1.66% and a classification accuracy of 98.34% for predicting climate change categories.
+ These outcomes were further confirmed through established validation techniques,
+ reinforcing the reliability of the model’s performance.
 \end_layout
 
 \begin_layout Keywords
@@ -5331,7 +5309,18 @@ Mutation procedure
 \end_inset
 
 .
- The mutation procedure is depicted as a flowchart in Figure .
+ The mutation procedure is depicted as a flowchart in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mutation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -5605,7 +5594,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6048,7 +6037,7 @@ placement H
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6723,6 +6712,318 @@ name "fig:statResults"
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Precision-and-recall"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports precision and recall for the three learning models (MLP,
+ RBF,
+ and GENCLASS) across the seven regions (ARABIA,
+ CAPETOWN,
+ GREECE,
+ ICELAND,
+ KONGO,
+ SVALBARD,
+ TURKEY).
+ Precision reflects the purity of positive predictions (the fraction of predicted positives that are correct),
+ whereas recall reflects the detection rate of the actual positives (the fraction of true positives that are correctly identified).
+ GENCLASS consistently achieves the best performance on both metrics for all regions,
+ exhibiting near-ceiling values with limited variation (precision approximately 0.950-0.996 and recall approximately 0.946-0.996).
+ RBF is generally the second-best approach and reaches high values in several regions (e.g.,
+ GREECE/ICELAND/ARABIA/TURKEY around 0.92-0.96),
+ but it degrades sharply in CAPETOWN and KONGO (precision 0.571 and 0.585,
+ recall 0.735 and 0.644),
+ which is visible as pronounced drops in the corresponding curve.
+ MLP yields the weakest results overall,
+ with precision approximately 0.576-0.711 and recall approximately 0.711-0.852,
+ indicating substantially lower correctness of positive predictions and reduced ability to capture positive instances compared to the other methods.
+ Overall,
+ the figure provides clear empirical evidence that GENCLASS delivers the most robust and consistently strong classification behavior across regions while maintaining simultaneously high precision and high recall.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename precisionAndRecall.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Precision and recall for three methods participated in the conducted experiments.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Precision-and-recall"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+In addition,
+ an indicative diagram showing the learning path for model GENCLASS and for KONGO dataset is presented in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:An-indicative-plot"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plot_kongo.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An indicative plot for the method GENCLASS and the dataset KONGO.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:An-indicative-plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Moreover,
+ Indicative plots for ROC and PR performance curves are outlined in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:roc"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pr"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicative plots for the ROC curves,
+ involving the RBF network,
+ the NNC method and the GENCLASS method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:roc"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename iceland_roc.png
+	scale 22
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename arabia_roc.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename svalbard_roc.png
+	scale 22
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename turkey_roc.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicative plots for the PR curves for the RBF network,
+ the NNC method and the GENCLASS method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pr"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename iceland_pr.png
+	scale 22
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename arabia_pr.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename svalbard_pr.png
+	scale 22
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename turkey_pr.png
+	scale 22
+
+\end_inset
+
 
 \end_layout
 
@@ -8221,6 +8522,707 @@ name "fig:stat_tbl8"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Experiments with the RBF network
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimental results using different number for the weights 
+\begin_inset Formula $H$
+\end_inset
+
+ of the RBF network.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:rbfExpers"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DATASET
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RBF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $H=10$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RBF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $H=15$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RBF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $H=20$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RBF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $H=25$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RBF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $H=30$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GENCLASS
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CAPETOWN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.43%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.77%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.55%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.41%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GREECE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.34%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.34%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.98%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.06%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18.69%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.85%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ICELAND
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.09%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.79%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.06%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.33%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.13%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.47%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+KONGO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30.16%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17.59%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.93%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21.69%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21.21%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.84%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ARABIA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.62%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.35%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.40%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.96%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.81%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.73%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SVALVARD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23.30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.65%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.74%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.92%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.44%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.11%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TURKEY
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.81%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.00%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.54%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.77%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.87%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.63%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+AVERAGE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+13.25%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.32%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.06%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8.75%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+10.08%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.66%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
