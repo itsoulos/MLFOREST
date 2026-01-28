@@ -1181,7 +1181,7 @@ placement H
 alignment center
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1224,7 +1224,7 @@ placement H
 alignment center
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4343,8 +4343,6 @@ name "Ref:tab Table 5 Baseline Class "
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 The definition of the two classes was based on the environmental considerations discussed in our introduction,
  aligned with the Paris Agreement and the 1.5 °C climate target,
  as well as on our data-driven analyses and the class balance that we were able to achieve.
@@ -4939,6 +4937,24 @@ line parameters that define all key aspects of the method,
  and other evolutionary settings.
  The implementation relies on OpenMP for multicore parallelization and uses Grammatical Evolution with a BNF grammar to generate human\SpecialChar nobreakdash
 readable classification rules.
+ 
+\end_layout
+
+\begin_layout Standard
+The objective of the proposed method is to achieve high-accuracy classification of daily climate observations into temperature-change categories,
+ while preserving interpretability through explicit rules.
+ Grammatical Evolution produces concrete if-then programs over the available features,
+ making nonlinear relationships transparent and directly inspectable.
+ Empirically,
+ GENCLASS demonstrates systematic superiority over the considered baselines (MLP,
+ RBF,
+ SVM,
+ and NNC) across all regions,
+ achieving the lowest mean classification error (AVERAGE 1.66%) and consistently high precision/recall.
+ Although strong deep sequence models for climate time series exist (e.g.,
+ LSTM/CDLSTM),
+ the present study focuses on interpretable rule-induction and benchmarking against established conventional learners;
+ a comprehensive comparison against deep sequence architectures under strictly time-ordered evaluation protocols is a natural extension for future work.
  The underlying grammar for this method is provided in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5244,6 +5260,8 @@ The set
 \end_inset
 
 .
+ The proposed method in practice uses the mean classification error on the training set as the fitness measure,
+ since the output of the produced model is one of the available categories of the dataset under study.
 \end_layout
 
 \end_deeper
@@ -5930,6 +5948,7 @@ literal "false"
 \end_inset
 
 .
+ The parameters used in the genetic algorithm for the NNC model are the same as in the case of the GENCLASS model.
 \end_layout
 
 \begin_layout Enumerate
@@ -7069,6 +7088,95 @@ name "fig:pr"
 
 \end_inset
 
+As an example of rule production from the GENCLASS method,
+ consider the program presented in Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:example"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+for the Greece dataset.
+ As can be observed,
+ the rule-generation method produces rules in a form that is understandable by humans (the above program can also be exported to actual C++ and Python code through the available software).
+ Furthermore,
+ for the effective creation of a classification program,
+ it is not necessary to use all the features of the dataset under study.”
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of classification program for the Greece dataset.
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:example"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if(x26>=(((-61.4)+x3)/(-01.085))&x11<=x4&
+\end_layout
+
+\begin_layout Plain Layout
+
+   !(x1<(-58.007)|x21>((-561.6)*((-563.231)*((x28+x1)+(-77.456))))&
+\end_layout
+
+\begin_layout Plain Layout
+
+   x12>=(x5+(-47.804)))) CLASS=0.00
+\end_layout
+
+\begin_layout Plain Layout
+
+else 
+\end_layout
+
+\begin_layout Plain Layout
+
+CLASS=1.00
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -7820,6 +7928,75 @@ name "fig:stat_tbl7"
 
 \end_inset
 
+ Also,
+ the average execution time for the proposed method and a variety of values for the 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ parameter is outlined in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Average-execution-time"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ As it was expected,
+ the execution time increases rapidly as the number of chromosomes increases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename exectime.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Average execution time for the proposed method and different values of parameter 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Average-execution-time"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -7901,6 +8078,16 @@ nolink "false"
 
 =2000 (2.47%→2.58%),
  suggesting that for certain datasets additional generations may introduce over-training effects and/or stochastic variability that partially offsets expected gains.
+ The slight degradation in the ICELAND dataset between 
+\begin_inset Formula $N_{g}=1000$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{g}=2000$
+\end_inset
+
+ can be attributed to stochastic fluctuations in the evolutionary search and dataset\SpecialChar nobreakdash
+specific characteristics that limit further improvement beyond a certain number of generations.
  Increasing 
 \begin_inset Formula $N_{g}$
 \end_inset
@@ -8592,16 +8779,32 @@ Experiments with the RBF network
 \end_layout
 
 \begin_layout Standard
+Another experiment was conducted where the RBF network was used as the classification model and the number of weights 
+\begin_inset Formula $H$
+\end_inset
+
+ was varied from 10 to 30 and the corresponding results are listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:rbfExpers"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align block
 \begin_inset Float table
 placement H
 alignment document
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -8639,7 +8842,7 @@ name "tab:rbfExpers"
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8648,7 +8851,7 @@ DATASET
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8665,7 +8868,7 @@ RBF
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8682,7 +8885,7 @@ RBF
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8699,7 +8902,7 @@ RBF
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8716,7 +8919,7 @@ RBF
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8733,7 +8936,7 @@ RBF
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8744,7 +8947,7 @@ GENCLASS
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8753,7 +8956,7 @@ CAPETOWN
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8762,7 +8965,7 @@ CAPETOWN
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8771,7 +8974,7 @@ CAPETOWN
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8780,7 +8983,7 @@ CAPETOWN
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8789,7 +8992,7 @@ CAPETOWN
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8798,7 +9001,7 @@ CAPETOWN
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8809,7 +9012,7 @@ CAPETOWN
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8818,7 +9021,7 @@ GREECE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8827,7 +9030,7 @@ GREECE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8836,7 +9039,7 @@ GREECE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8845,7 +9048,7 @@ GREECE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8854,7 +9057,7 @@ GREECE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8863,7 +9066,7 @@ GREECE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8874,7 +9077,7 @@ GREECE
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8883,7 +9086,7 @@ ICELAND
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8892,7 +9095,7 @@ ICELAND
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8901,7 +9104,7 @@ ICELAND
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8910,7 +9113,7 @@ ICELAND
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8919,7 +9122,7 @@ ICELAND
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8928,7 +9131,7 @@ ICELAND
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8939,7 +9142,7 @@ ICELAND
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8948,7 +9151,7 @@ KONGO
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8957,7 +9160,7 @@ KONGO
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8966,7 +9169,7 @@ KONGO
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8975,7 +9178,7 @@ KONGO
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8984,7 +9187,7 @@ KONGO
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8993,7 +9196,7 @@ KONGO
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9004,7 +9207,7 @@ KONGO
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9013,7 +9216,7 @@ ARABIA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9022,7 +9225,7 @@ ARABIA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9031,7 +9234,7 @@ ARABIA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9040,7 +9243,7 @@ ARABIA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9049,7 +9252,7 @@ ARABIA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9058,7 +9261,7 @@ ARABIA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9069,7 +9272,7 @@ ARABIA
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9078,7 +9281,7 @@ SVALVARD
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9087,7 +9290,7 @@ SVALVARD
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9096,7 +9299,7 @@ SVALVARD
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9105,7 +9308,7 @@ SVALVARD
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9114,7 +9317,7 @@ SVALVARD
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9123,7 +9326,7 @@ SVALVARD
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9134,7 +9337,7 @@ SVALVARD
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9143,7 +9346,7 @@ TURKEY
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9152,7 +9355,7 @@ TURKEY
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9161,7 +9364,7 @@ TURKEY
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9170,7 +9373,7 @@ TURKEY
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9179,7 +9382,7 @@ TURKEY
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9188,7 +9391,7 @@ TURKEY
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9199,7 +9402,7 @@ TURKEY
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9210,7 +9413,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9221,7 +9424,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9232,7 +9435,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9243,7 +9446,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9254,7 +9457,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9265,7 +9468,7 @@ AVERAGE
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9281,6 +9484,119 @@ AVERAGE
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+ The Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RBF-Sensitivity-to"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ is a heatmap of classification error (Error %) for the RBF model under different numbers of hidden nodes H,
+ together with a GENCLASS reference column.
+ Each row corresponds to one region/dataset (CAPETOWN,
+ GREECE,
+ ICELAND,
+ KONGO,
+ ARABIA,
+ SVALBARD,
+ TURKEY),
+ while the last row (AVERAGE) reports the mean error across all regions.
+ Each column represents a different RBF configuration (
+\begin_inset Formula $H=10$
+\end_inset
+
+,
+ 15,
+ 20,
+ 25,
+ 30),
+ and the final column reports GENCLASS.
+ The numerical error percentages are printed inside each cell,
+ and the color intensity encodes the magnitude of the error (darker color indicates lower error).
+ The heatmap shows that increasing H often improves RBF performance initially,
+ but the trend is not monotonic and degradation is observed for larger H in some regions,
+ which is consistent with overfitting;
+ for example,
+ in GREECE the error remains low up to 
+\begin_inset Formula $H=20$
+\end_inset
+
+ but increases sharply at 
+\begin_inset Formula $H=25$
+\end_inset
+
+ and 
+\begin_inset Formula $H=30$
+\end_inset
+
+,
+ while in KONGO the best performance occurs at a smaller H and then worsens as H grows.
+ In the AVERAGE row,
+ the best mean RBF performance occurs around 
+\begin_inset Formula $H=20$
+\end_inset
+
+,
+ whereas larger settings (
+\begin_inset Formula $H=25,H=30$
+\end_inset
+
+) lead to higher mean error,
+ highlighting a saturation regime and diminishing returns.
+ Across all regions,
+ GENCLASS achieves markedly lower error than any tested RBF setting,
+ indicating a consistently stronger reference performance against which RBF sensitivity to hidden-layer size can be assessed.
+ All values in the figure are taken directly from the raw Excel table (without formatting) and visually summarize both the initial gains from increasing H and the potential performance drop when H becomes excessively large.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename heatMap_RBFvsGENCLASS.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+RBF Sensitivity to the number of hidden nodes.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RBF-Sensitivity-to"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
