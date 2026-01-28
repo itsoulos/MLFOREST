@@ -5,10 +5,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
 \usepackage{array}
+\usepackage{cprotect}
 \usepackage{float}
 \usepackage{url}
 \usepackage{multirow}
 \usepackage{varwidth}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \PassOptionsToPackage{normalem}{ulem}
 \usepackage{ulem}
@@ -46,53 +48,32 @@ of Ioannina, Greece v.charilog@uoi.gr}
 
 \abstract{Climate change is no longer a future or hypothetical issue, but a
 present reality with tangible consequences and impacts on the well-being
-not only of the planet itself but also of all living organism that
+not only of the planet itself but also of all living organisms that
 constitute the ecosystem. Since 1969, the global surface temperature
-has been surpassing its own record almost every year, with NASA's
+has been surpassing its own record almost every year, with NASA’s
 final measurement for 2024 indicating an increase of approximately
-2.65° Fahreheit or 1.47° Celsius, in global temperature. These measurements
+2.65° Fahrenheit or 1.47° Celsius, in global temperature. These measurements
 indicate that we have reached the thresholds established by the United
-Nations, scientists, and member states through Paris Agreement of
-2015. Under this accord, countries committed to holding the global
-temperature increase well below 2° C above pre - industrial levels
-and pursuing efforts to limit it to 1.5° C, recognizing that achieving
-this goal would significantly reduce the risk and impacts of climate
-change. Prior to the Paris Agreement, several other initiatives had
-been undertaken to address environmental challenges. In 1992, the
-United Nations Conference of Environment and Development (UNCED) was
-hold in Rio de Janeiro, Brazil (3 - 14 June), with the ultimate objective
-of stabilizing greenhouse gas concentrations in the atmosphere. The
-momentum continued in 1997 with the adoption of the Kyoto Protocol,
-which ope-rationalized the United Nations Framework Convention on
-Climate Change (UNFCCC) by committing industrialized nations and economies
-in transition to limit and reduce greenhouse gas emissions in accordance
-with agreed individual targets. Although we briefly observed the emergence
-of more environmentally conscious actions in the past, today, in the
-year 2025, NASA's data indicate that the debate has shifted to whether
-humanity will surpass the critical threshold of 1.5°C or 2.7°F global
-temperature increase. In this study, we seek to gain a comprehensive
-understanding of climate change, and more specifically of its environmental
-impacts across five distinct regions located in different climatic
-zones. Particular emphasis is placed on highlighting the rate at which
-climate change has altered annual temperature patterns during the
-period 1995--2025. Furthermore, we aim to project future climate
-trends by estimating temperature changes over the next 10, 20, and
-30 years. To achieve this, we evaluated multiple modeling techniques
-and propose the use of Grammatical Evolution with rule-based construction
-as the most suitable approach. The first region is the Congo area,
-located near the equator and characterized by an equatorial tropical
-climate. The second is Saudi Arabia, identify as hot desert climate.
-The thors is Greece which lies within the subtropical zone of the
-Northern hemisphere. The fourth region is Turkey, characterized by
-diverse climate zones, overall, the country belongs primarily to the
-Mediterranean climate zone, while its interior regions exhibit continental
-conditions and the northern coasts experience humid temperate climates.The
-fifth region is Iceland, specifically Reykjavik, which is located
-within the subarctic zone. The sixth one is Svalbard region, in the
-North Arctic Ocean. The final region is Cape Town in South Africa,
-located in the Southern Hemisphere, which belongs primarily to the
-Mediterranean climate zone, characterized by warm, dry summers and
-mild, wet winters. }
+Nations, scientists, and member states through the Paris Agreement
+of 2015. In this study, we seek to gain a comprehensive understanding
+of climate change, and more specifically of its environmental impacts
+across seven distinct regions located in different climatic zones.
+Particular emphasis is placed on highlighting the rate at which climate
+change has altered annual temperature patterns during the period 1995--2025.
+To achieve this, we evaluated multiple modeling techniques and proposed
+the use of Grammatical Evolution with rule-based construction as the
+most suitable approach. GENCLASS, demonstrates robust and systematic
+superiority over the considered baselines (MLP, RBF, SVM, and NNC)
+across all datasets, achieving the lowest average classification error
+and indicating strong cross-regional generalization. In our research,
+we will examine a broad spectrum of climatic zones, specifically focusing
+on the Congo region, Saudi Arabia, Greece, Turkey, Reykjavik in Iceland,
+the Arctic Svalbard archipelago, and Cape Town in South Africa. Our
+experiments yielded highly robust results, with an average error rate
+of 1.66\% and a classification accuracy of 98.34\% for predicting
+climate change categories. These outcomes were further confirmed through
+established validation techniques, reinforcing the reliability of
+the model’s performance.}
 
 
 \keyword{Genetic algorithms; Grammatical Evolution; Machine learning; Climate
@@ -105,6 +86,10 @@ change}
 \newenvironment{cellvarwidth}[1][t]
     {\begin{varwidth}[#1]{\linewidth}}
     {\@finalstrut\@arstrutbox\end{varwidth}}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\providecommand{\algorithmname}{Algorithm}
+\floatname{algorithm}{\protect\algorithmname}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
 \newenvironment{lyxcode}
@@ -245,43 +230,47 @@ change}
 
 \makeatother
 
+\usepackage{listings}
+\renewcommand{\lstlistingname}{\protect\inputencoding{latin9}Listing}
+
 \begin{document}
 \maketitle
 
 \section{Introduction}
 
-s, both the power of nature and its wrath when ecological balances
-were disturbed have been well known. A remarkable example of this
-can be found in The Persians by Aeschylus, a classical tragedy written
-in 472 BCE that recounts the historical events of 480 BCE \citep{Aeschylus}
-\citep{Aeschylus-1}. The play describes the environmental and human
-calamities that befell the Persians during their disorderly retreat,
-following their desecration of the natural world. Historical accounts
-describe their transgressions, such as the ``chaining'' of the Bosporus
+The power of nature and its capacity to respond when ecological balances
+are disrupted has long been recognized. A striking early example appears
+in The Persians by Aeschylus, a classical tragedy written in 472 BCE
+that recounts the historical events of 480 BCE \citep{Aeschylus}
+\citep{Aeschylus-1}. The play depicts the environmental and human
+catastrophes that afflicted the Persian army during its chaotic retreat,
+following acts that violated the natural world. Historical sources
+describe these transgressions, including the “chaining” of the Bosporus
 through the construction of a floating bridge, the plundering of agricultural
-lands to feed their vast army, the burning and devastation of forests
-and plains, all actions that ultimately aimed to deprive the native
-populations of their vital resources. This reveals, we understand
-that every action provokes a reaction even from mother Nature herself,
-who does not assume the role of a passive observer but rather that
-of a force of balance, ensuring the planet's survival. Recent scientific
-consensus confirms that anthropogenic factors, especially fossil fuel
-combustion, deforestation, and industrial emissions,play a pivotal
-role in driving climate change and its associated extreme events.In
-summary, climate change has been linked to extreme natural disaster
-events, including heat waves and cold spells, droughts, tropical storms
-and high winds, river floods, coastal floods \citep{Hallegatte} and
-wildfires \citep{Kopitsa 2025} \citep{United nations 2022}. In particular,
-according to the United Nations, climate change refers to long-term
-alterations in temperature and weather patterns. While such variations
-may occur naturally---stemming from fluctuations in solar activity
-or major volcanic eruptions---human activities have emerged as the
-predominant cause since the 19th century. This anthropogenic influence
-is primarily attributed to the extensive combustion of fossil fuels,
-including coal, oil, and natural gas \citep{United Nations}. As will
-be demonstrated through the data presented below, climate change has
-entered an irreversible trajectory, with each passing year bearing
-witness to phenomena that repeatedly set new temperature records.
+lands to sustain their vast forces, and the burning and devastation
+of forests and plains---actions intended to deprive local populations
+of essential resources. Such accounts illustrate that every action
+elicits a reaction, even from nature itself, which does not remain
+a passive observer but acts as a regulating force that safeguards
+the planet’s equilibrium.
+
+Recent scientific consensus confirms that anthropogenic factors, especially
+fossil fuel combustion, deforestation, and industrial emissions,play
+a pivotal role in driving climate change and its associated extreme
+events.In summary, climate change has been linked to extreme natural
+disaster events, including heat waves and cold spells, droughts, tropical
+storms and high winds, river floods, coastal floods \citep{Hallegatte}
+and wildfires \citep{Kopitsa 2025} \citep{United nations 2022}.
+In particular, according to the United Nations, climate change refers
+to long-term alterations in temperature and weather patterns. While
+such variations may occur naturally---stemming from fluctuations
+in solar activity or major volcanic eruptions---human activities
+have emerged as the predominant cause since the 19th century. This
+anthropogenic influence is primarily attributed to the extensive combustion
+of fossil fuels, including coal, oil, and natural gas \citep{United Nations}.
+As will be demonstrated through the data presented below, climate
+change has entered an irreversible trajectory, with each passing year
+bearing witness to phenomena that repeatedly set new temperature records.
 Nevertheless, notable efforts have been made in the past---through
 treaties, regulations, targets, and constraints---aiming to reduce
 carbon dioxide emissions in an attempt to intercept climate change
@@ -304,165 +293,7 @@ mitigating the risks and adverse impacts associated with climate change
 of more environmentally conscious actions in the past, today, in the
 year 2025, NASA's data indicate that the debate has shifted to whether
 humanity will surpass the critical threshold of 1.5°C or 2.7°F global
-temperature \citep{NASA 2024}. Subsequently, visual representations
-of the planet’s average temperature are provided for the years 1881,
-1995, and 2024. Visualization is from NASA Goddard's Scientific Visualization
-Studio: https://svs.gsfc.nasa.gov/5450 \label{Ref:fig: NASA Global Temperature}
-
-\textit{``This color-coded map shows changing global surface temperature
-anomalies. Normal temperatures are shown in white, higher than normal
-temperatures in red and lower than normal temperatures in blue''.}
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.5]{1881jpg}
-
-\caption{Global Temperature 1881\label{fig:NASA Global-Temperature-1881}}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.5]{1995}
-
-\caption{Global Temperature 1995\label{fig:NASA Global-Temperature-1995}}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.5]{2024}
-
-\caption{Global Temperature 2025\label{fig:NASA Global-Temperature-2025}}
-\end{figure}
-
-The 1.5°C target is highly ambitious and is likely to have been surpassed
-by 2025, nevertheless, it remains significant as a benchmark for minimizing,
-to the greatest extent possible, the impacts of natural disasters
-that are exacerbated by climate change. Subsequently, we will present
-numerical evidence illustrating how major natural disasters have become
-increasingly frequent and intense over time, as a result of the evolving
-impacts of climate change. Our data were retrieved from the (EM-DAT)
-Emergency Events Database \citep{EM DATA} \url{https://www.emdat.be/}
-on 9 November 2025.
-
-From 1900 to 1994, a total of 5,423 major events were recorded, around
-the world categorized as follows \label{Ref:tab: Hazards 1900 - 1994}:
-
-\begin{table}
-\caption{\textbf{Hazards (1900 - 1994)\label{tab:Hazards-(1900-1994)}}}
-
-{\tiny{}%
-\begin{tabular*}{10cm}{@{\extracolsep{\fill}}ccccccccccc}
-\hline 
-{\tiny\textcolor{violet}{\uline{Hazards}}} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Human }}}\\
-{\tiny\textcolor{violet}{\uline{Causalties}}}
-\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Human }}}\\
-{\tiny\textcolor{violet}{\uline{Causalties}}}
-\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Human }}}\\
-{\tiny\textcolor{violet}{\uline{Causalties}}}
-\end{cellvarwidth} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Total }}}\\
-{\tiny\textcolor{violet}{\uline{Causalties/ }}}\\
-{\tiny\textcolor{violet}{\uline{Hazard}}}
-\end{cellvarwidth}\tabularnewline
-\hline 
-{\tiny\textbf{Climatological}} & {\tiny\textcolor{blue}{Drought}} & {\tiny 307} & {\tiny 11.708,981} & {\tiny\textcolor{blue}{Wildfire}} & {\tiny 107} & {\tiny 2.307} &  &  &  & {\tiny\textbf{11.711,288}}\tabularnewline
-{\tiny\textbf{Hydrological}} & {\tiny\textcolor{blue}{Flood}} & {\tiny 1.431} & {\tiny 6.812,496} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{blue}{Landslide }}\\
-{\tiny\textcolor{blue}{(wet)}}
-\end{cellvarwidth} & {\tiny 280} & {\tiny 43.587} &  &  &  & {\tiny\textbf{6.856,083}}\tabularnewline
-{\tiny\textbf{Meteorological}} & {\tiny\textcolor{blue}{Storm}} & {\tiny 1.789} & {\tiny 1.151,310} & {\tiny\textcolor{blue}{Fog}} & {\tiny 1} & {\tiny 4.000} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{blue}{Extreme }}\\
-{\tiny\textcolor{blue}{Temperature}}
-\end{cellvarwidth} & {\tiny 110} & {\tiny 13.843} & {\tiny\textbf{1.169,153}}\tabularnewline
-{\tiny\textbf{Geophysical}} & {\tiny\textcolor{blue}{Earthquake}} & {\tiny 829} & {\tiny 1.578,863} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{blue}{Volcanic }}\\
-{\tiny\textcolor{blue}{Activity}}
-\end{cellvarwidth} & {\tiny 126} & {\tiny 85.144} & {\tiny\textcolor{blue}{Landslide (dry)}} & {\tiny 32} & {\tiny 4.104} & {\tiny\textbf{1.668,111}}\tabularnewline
-{\tiny\textbf{Biological}} & {\tiny\textcolor{blue}{Epidemic}} & {\tiny 351} & {\tiny 9.453,050} & {\tiny\textcolor{blue}{Infestation}} & {\tiny 61} & {\tiny (no data)} &  &  &  & {\tiny\textbf{9.453,050}}\tabularnewline
-\hline 
-\end{tabular*}}{\tiny\par}
-\end{table}
-
-From the starting point of our research in 1995 up to 2025, the following
-8.855 major events were recorded, around the world categorized as
-follows\label{Ref:tab: Hazards 1995 - 2025}:
-
-\begin{table}
-\caption{\textbf{Hazards (1995 - 2025)\label{tab:Hazards-(1995-2025)}}}
-
-{\tiny{}%
-\begin{tabular}{ccccccccccc}
-\hline 
-{\tiny\textcolor{violet}{\uline{Hazards}}} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Human }}}\\
-{\tiny\textcolor{violet}{\uline{Causalties}}}
-\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Human}}}\\
-{\tiny\textcolor{violet}{\uline{ Causalties}}}
-\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Human }}}\\
-{\tiny\textcolor{violet}{\uline{Causalties}}}
-\end{cellvarwidth} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{violet}{\uline{Total}}}\\
-{\tiny\textcolor{violet}{\uline{ Causalties/ Hazard}}}
-\end{cellvarwidth}\tabularnewline
-\hline 
-\multirow{1}{*}[10cm]{{\tiny\textbf{Climatological}}} & {\tiny\textcolor{blue}{Drought}} & {\tiny 351} & {\tiny 24.723} & {\tiny\textcolor{blue}{Wildfire}} & {\tiny 194} & {\tiny 1.740} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{blue}{Glacial Lake}}{\tiny\par}
-
-{\tiny\textcolor{blue}{Outburst Floods}}
-\end{cellvarwidth} & {\tiny 8} & {\tiny 478} & {\tiny\textbf{26.941}}\tabularnewline
-{\tiny\textbf{Hydrological}} & {\tiny\textcolor{blue}{Flood}} & {\tiny 3.576} & {\tiny 160.394} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{blue}{Landslide}}{\tiny\par}
-
-{\tiny\textcolor{blue}{(wet)}}
-\end{cellvarwidth} & {\tiny 447} & {\tiny 21.847} &  &  &  & {\tiny\textbf{182.241}}\tabularnewline
-{\tiny\textbf{Meteorological}} & {\tiny\textcolor{blue}{Storm}} & {\tiny 1.957} & {\tiny 235.377} & {\tiny\textcolor{blue}{Fog}} & {\tiny 0} & {\tiny 0} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{blue}{Extreme}}{\tiny\par}
-
-{\tiny\textcolor{blue}{Temperature}}
-\end{cellvarwidth} & {\tiny 533} & {\tiny 352.179} & {\tiny\textbf{587.556}}\tabularnewline
-{\tiny\textbf{Geophysical}} & {\tiny\textcolor{blue}{Earthquake}} & {\tiny 647} & {\tiny 605.378} & \begin{cellvarwidth}[t]
-\centering
-{\tiny\textcolor{blue}{Volcanic}}{\tiny\par}
-
-{\tiny\textcolor{blue}{Activity}}
-\end{cellvarwidth} & {\tiny 73} & {\tiny 1.234} & {\tiny\textcolor{blue}{Landslide (dry)}} & {\tiny 10} & {\tiny 280} & {\tiny\textbf{606.892}}\tabularnewline
-{\tiny\textbf{Biological}} & {\tiny\textcolor{blue}{Epidemic}} & {\tiny 1.025} & {\tiny 163.994} & {\tiny\textcolor{blue}{Infestation}} & {\tiny 31} & {\tiny (no data)} &  &  &  & {\tiny\textbf{163.994}}\tabularnewline
-\begin{cellvarwidth}[t]
-\centering
-{\tiny\textbf{Extra - }}{\tiny\par}
-
-{\tiny\textbf{Terrestrial}}
-\end{cellvarwidth} & {\tiny\textcolor{blue}{Impact}} & {\tiny 1} & {\tiny (no data)} &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}}{\tiny\par}
-\end{table}
-
-According to the available data, we conclude that natural disasters
-have increased over the past 30 years when compared with the preceding
-94 years. More specifically, there has been a rise in droughts, floods,
-wildfires, landslides, storms, extreme temperatures, and epidemics.
-Geophysical events, by contrast, appear to have remained stable in
-number, given that the comparison is made against a period three times
-longer. In addition, two new categories have emerged.
+temperature \citep{NASA 2024}.
 
 In the field of climate change projections, numerous studies have
 been conducted. The first scientifically documented prediction of
@@ -572,7 +403,11 @@ regions of our planet. These rules are expressed in a C - like programming
 language and they can also detect hidden correlations between the
 features of the problem and use only those features that contain the
 most important information for the correct classification or patterns
-of the objective problem.
+of the objective problem. In contrast to conventional AI methods,
+the proposed framework produces interpretable C\nobreakdash-like
+rules while simultaneously performing implicit feature selection,
+enabling more explainable and efficient climate\nobreakdash-prediction
+models.
 
 The rest of this manuscript is organized as follows: the used dataset
 and the incorporated methods used in the conducted experiments are
@@ -585,6 +420,168 @@ finally a detailed discussion is provided in section \ref{sec:Conclusions}.
 In this section, a detailed presentation of the datasets used as well
 as the machine learning techniques used in the experiments performed
 will be provided.
+
+\subsection{Impacts of Climate Change in Natural Disasters}
+
+In order to present the impacts of climate change in natural disasters,
+visual representations of the planet’s average temperature are provided
+for the years 1881, 1995, and 2024. Visualization is from NASA Goddard's
+Scientific Visualization Studio: https://svs.gsfc.nasa.gov/5450 \label{Ref:fig: NASA Global Temperature}
+
+\textit{``This color-coded map shows changing global surface temperature
+anomalies. Normal temperatures are shown in white, higher than normal
+temperatures in red and lower than normal temperatures in blue''.}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{1881jpg}
+
+\caption{Global Temperature 1881\label{fig:NASA Global-Temperature-1881}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{1995}
+
+\caption{Global Temperature 1995\label{fig:NASA Global-Temperature-1995}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{2024}
+
+\caption{Global Temperature 2025\label{fig:NASA Global-Temperature-2025}}
+\end{figure}
+
+The 1.5°C target is highly ambitious and is likely to have been surpassed
+by 2025, nevertheless, it remains significant as a benchmark for minimizing,
+to the greatest extent possible, the impacts of natural disasters
+that are exacerbated by climate change. Subsequently, we will present
+numerical evidence illustrating how major natural disasters have become
+increasingly frequent and intense over time, as a result of the evolving
+impacts of climate change. Our data were retrieved from the (EM-DAT)
+Emergency Events Database \citep{emdata} \url{https://www.emdat.be/}
+on 9 November 2025.
+
+From 1900 to 1994, a total of 5,423 major events were recorded, around
+the world categorized as follows \label{Ref:tab: Hazards 1900 - 1994}:
+
+\begin{table}[H]
+\caption{\textbf{Hazards (1900 - 1994)\label{tab:Hazards-(1900-1994)}}}
+
+{\tiny{}%
+\begin{tabular*}{10cm}{@{\extracolsep{\fill}}ccccccccccc}
+\hline 
+{\tiny\textcolor{violet}{\uline{Hazards}}} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Human }}}\\
+{\tiny\textcolor{violet}{\uline{Causalties}}}
+\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Human }}}\\
+{\tiny\textcolor{violet}{\uline{Causalties}}}
+\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Human }}}\\
+{\tiny\textcolor{violet}{\uline{Causalties}}}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Total }}}\\
+{\tiny\textcolor{violet}{\uline{Causalties/ }}}\\
+{\tiny\textcolor{violet}{\uline{Hazard}}}
+\end{cellvarwidth}\tabularnewline
+\hline 
+{\tiny Climatological} & {\tiny\textcolor{blue}{Drought}} & {\tiny 307} & {\tiny 11.708,981} & {\tiny\textcolor{blue}{Wildfire}} & {\tiny 107} & {\tiny 2.307} &  &  &  & {\tiny 11.711,288}\tabularnewline
+{\tiny Hydrological} & {\tiny\textcolor{blue}{Flood}} & {\tiny 1.431} & {\tiny 6.812,496} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{blue}{Landslide }}\\
+{\tiny\textcolor{blue}{(wet)}}
+\end{cellvarwidth} & {\tiny 280} & {\tiny 43.587} &  &  &  & {\tiny 6.856,083}\tabularnewline
+{\tiny Meteorological} & {\tiny\textcolor{blue}{Storm}} & {\tiny 1.789} & {\tiny 1.151,310} & {\tiny\textcolor{blue}{Fog}} & {\tiny 1} & {\tiny 4.000} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{blue}{Extreme }}\\
+{\tiny\textcolor{blue}{Temperature}}
+\end{cellvarwidth} & {\tiny 110} & {\tiny 13.843} & {\tiny 1.169,153}\tabularnewline
+{\tiny Geophysical} & {\tiny\textcolor{blue}{Earthquake}} & {\tiny 829} & {\tiny 1.578,863} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{blue}{Volcanic }}\\
+{\tiny\textcolor{blue}{Activity}}
+\end{cellvarwidth} & {\tiny 126} & {\tiny 85.144} & {\tiny\textcolor{blue}{Landslide (dry)}} & {\tiny 32} & {\tiny 4.104} & {\tiny 1.668,111}\tabularnewline
+{\tiny Biological} & {\tiny\textcolor{blue}{Epidemic}} & {\tiny 351} & {\tiny 9.453,050} & {\tiny\textcolor{blue}{Infestation}} & {\tiny 61} & {\tiny (no data)} &  &  &  & {\tiny 9.453,050}\tabularnewline
+\hline 
+\end{tabular*}}{\tiny\par}
+\end{table}
+
+From the starting point of our research in 1995 up to 2025, the following
+8.855 major events were recorded, around the world categorized as
+follows\label{Ref:tab: Hazards 1995 - 2025}:
+
+\begin{table}[H]
+\caption{\textbf{Hazards (1995 - 2025)\label{tab:Hazards-(1995-2025)}}}
+
+{\tiny{}%
+\begin{tabular}{ccccccccccc}
+\hline 
+{\tiny\textcolor{violet}{\uline{Hazards}}} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Human }}}\\
+{\tiny\textcolor{violet}{\uline{Causalties}}}
+\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Human}}}\\
+{\tiny\textcolor{violet}{\uline{ Causalties}}}
+\end{cellvarwidth} & {\tiny\textcolor{violet}{\uline{Type}}} & {\tiny\textcolor{violet}{\uline{Events}}} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Human }}}\\
+{\tiny\textcolor{violet}{\uline{Causalties}}}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{violet}{\uline{Total}}}\\
+{\tiny\textcolor{violet}{\uline{ Causalties/ Hazard}}}
+\end{cellvarwidth}\tabularnewline
+\hline 
+\multirow{1}{*}[10cm]{{\tiny Climatological}} & {\tiny\textcolor{blue}{Drought}} & {\tiny 351} & {\tiny 24.723} & {\tiny\textcolor{blue}{Wildfire}} & {\tiny 194} & {\tiny 1.740} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{blue}{Glacial Lake}}{\tiny\par}
+
+{\tiny\textcolor{blue}{Outburst Floods}}
+\end{cellvarwidth} & {\tiny 8} & {\tiny 478} & {\tiny 26.941}\tabularnewline
+{\tiny Hydrological} & {\tiny\textcolor{blue}{Flood}} & {\tiny 3.576} & {\tiny 160.394} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{blue}{Landslide}}{\tiny\par}
+
+{\tiny\textcolor{blue}{(wet)}}
+\end{cellvarwidth} & {\tiny 447} & {\tiny 21.847} &  &  &  & {\tiny 182.241}\tabularnewline
+{\tiny Meteorological} & {\tiny\textcolor{blue}{Storm}} & {\tiny 1.957} & {\tiny 235.377} & {\tiny\textcolor{blue}{Fog}} & {\tiny 0} & {\tiny 0} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{blue}{Extreme}}{\tiny\par}
+
+{\tiny\textcolor{blue}{Temperature}}
+\end{cellvarwidth} & {\tiny 533} & {\tiny 352.179} & {\tiny 587.556}\tabularnewline
+{\tiny Geophysical} & {\tiny\textcolor{blue}{Earthquake}} & {\tiny 647} & {\tiny 605.378} & \begin{cellvarwidth}[t]
+\centering
+{\tiny\textcolor{blue}{Volcanic}}{\tiny\par}
+
+{\tiny\textcolor{blue}{Activity}}
+\end{cellvarwidth} & {\tiny 73} & {\tiny 1.234} & {\tiny\textcolor{blue}{Landslide (dry)}} & {\tiny 10} & {\tiny 280} & {\tiny 606.892}\tabularnewline
+{\tiny Biological} & {\tiny\textcolor{blue}{Epidemic}} & {\tiny 1.025} & {\tiny 163.994} & {\tiny\textcolor{blue}{Infestation}} & {\tiny 31} & {\tiny (no data)} &  &  &  & {\tiny 163.994}\tabularnewline
+\begin{cellvarwidth}[t]
+\centering
+{\tiny Extra -}{\tiny\par}
+
+{\tiny Terrestrial}
+\end{cellvarwidth} & {\tiny\textcolor{blue}{Impact}} & {\tiny 1} & {\tiny (no data)} &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}}{\tiny\par}
+\end{table}
+
+According to the available data, we conclude that natural disasters
+have increased over the past 30 years when compared with the preceding
+94 years. More specifically, there has been a rise in droughts, floods,
+wildfires, landslides, storms, extreme temperatures, and epidemics.
+Geophysical events, by contrast, appear to have remained stable in
+number, given that the comparison is made against a period three times
+longer. In addition, two new categories have emerged.
 
 \subsection{The Dataset Employed}
 
@@ -728,6 +725,18 @@ baseline. Temperatures that were either lower or higher by up to 1°C
 whereas temperatures exceeding the baseline by more than 1.1°C (\ensuremath{\approx}2.0°F)
 were assigned to Class 1 \label{Ref:tab Table 5 Baseline Class }
 
+The definition of the two classes was based on the environmental considerations
+discussed in our introduction, aligned with the Paris Agreement and
+the 1.5\,°C climate target, as well as on our data-driven analyses
+and the class balance that we were able to achieve. Similarly, the
+temporal span of our dataset was selected to align with the climatological
+milestones commonly used to characterize the progression of climate
+change. For this reason, we adopted the period 1995--2025 as the
+analysis window across the different climatic regions. Furthermore,
+the definition of our classes was made with careful consideration,
+and the first class explicitly includes negative temperature anomalies,
+as it encompasses all temperature values from below zero up to +1\,°C.
+
 \begin{table}
 \centering
 \raggedright{}\caption{Baseline Class (1995 - 2000) / Region\label{tab:Baseline-Class-(1995}}
@@ -765,12 +774,45 @@ associated with climate change, given that our dataset spans from
 in a stable climatic baseline, thereby enhancing the reliability of
 subsequent analyses.
 
-\subsection{The proposed method}
+\subsection{The proposed method\label{subsec:The-proposed-method}}
 
 The current work proposed the incorporation of a method that constructs
 classification rules, initially proposed in \citep{genclass}. Furthermore,
 this method was implemented as a software recently \citep{genclass_softx}.
-The underlying grammar for this method is provided in Figure \ref{fig:genclassGrammar}.\textbf{ }
+The published software GENCLASS is an open\nobreakdash-source software
+tool, publicly available on GitHub (\url{https://github.com/itsoulos/GenClass/}),
+where detailed installation instructions and usage examples are provided.
+The software is implemented in ANSI C++ and supports Python\nobreakdash-formatted
+rule output. Its execution is controlled through a set of command\nobreakdash-line
+parameters that define all key aspects of the method, including the
+number of chromosomes, number of generations, mutation rate, and other
+evolutionary settings. The implementation relies on OpenMP for multicore
+parallelization and uses Grammatical Evolution with a BNF grammar
+to generate human\nobreakdash-readable classification rules. 
+
+The objective of the proposed method is to achieve high-accuracy classification
+of daily climate observations into temperature-change categories,
+while preserving interpretability through explicit rules. Grammatical
+Evolution produces concrete if-then programs over the available features,
+making nonlinear relationships transparent and directly inspectable.
+Empirically, GENCLASS demonstrates better performance over the considered
+baselines (MLP, RBF, SVM, and NNC) across all regions, achieving the
+lowest mean classification error (AVERAGE 1.66\%) and consistently
+high precision/recall. Although strong deep sequence models for climate
+time series exist (e.g., LSTM/CDLSTM), the present study focuses on
+interpretable rule-induction and benchmarking against established
+conventional learners; a comprehensive comparison against deep sequence
+architectures under strictly time-ordered evaluation protocols is
+a natural extension for future work. 
+
+The proposed model, through the use of BNF grammar and Grammatical
+Evolution, is able to construct rules that exploit only the necessary
+features of the dataset under study. In this way, the model becomes
+more flexible and faster in decision-making, even when dealing with
+large datasets. Moreover, since it relies solely on the essential
+information for rule generation, it may exhibit better generalization
+capabilities compared to other machine learning models. The underlying
+grammar for this method is provided in Figure \ref{fig:genclassGrammar}.\textbf{ }
 
 \begin{figure}[H]
 \caption{The underlying grammar for the method that produces classification
@@ -854,7 +896,10 @@ f_{i}=\sum_{j=1}^{M}\left(G_{i}\left(x_{j}\right)-t_{j}\right)^{2}
 The set $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{M},t_{M}\right)\right\} $
 denotes the training set of the objective problem, where the vectors
 $x_{i}$ stand for the input patterns and each value $t_{i}$ represents
-the actual output for pattern $x_{i}$.
+the actual output for pattern $x_{i}$. The proposed method in practice
+uses the mean classification error on the training set as the fitness
+measure, since the output of the produced model is one of the available
+categories of the dataset under study.
 \end{enumerate}
 \item \textbf{End For}
 \end{enumerate}
@@ -963,7 +1008,9 @@ has 10 processing nodes.
 the implementation provided in the freely available library of LibSvm
 \citep{libsvm}.
 \item The column NNC stands for the usage of the Neural Network Construction
-method, initially described in \citep{nnc}.
+method, initially described in \citep{nnc}. The parameters used in
+the genetic algorithm for the NNC model are the same as in the case
+of the GENCLASS model.
 \item The column GENCLASS indicates the incorporation of the proposed method
 for construction of classification rules.
 \item The row average represents the average classification error for all
@@ -1088,6 +1135,100 @@ of various machine learning methods.\label{fig:statResults}}
 
 \end{figure}
 
+The dataset related to the KONGO country remains the most challenging
+dataset. A possible explanation for this outcome is that, as noted
+in the detailed Dataset Description in Section 2.2, the Congo region
+does not exhibit balanced class distributions compared to the other
+areas. This imbalance likely contributes to the slight deviation observed
+relative to the rest of our data.
+
+The Figure \ref{fig:Precision-and-recall} reports precision and recall
+for the three learning models (MLP, RBF, and GENCLASS) across the
+seven regions (ARABIA, CAPETOWN, GREECE, ICELAND, KONGO, SVALBARD,
+TURKEY). Precision reflects the purity of positive predictions (the
+fraction of predicted positives that are correct), whereas recall
+reflects the detection rate of the actual positives (the fraction
+of true positives that are correctly identified). GENCLASS consistently
+achieves the best performance on both metrics for all regions, exhibiting
+near-ceiling values with limited variation (precision approximately
+0.950-0.996 and recall approximately 0.946-0.996). RBF is generally
+the second-best approach and reaches high values in several regions
+(e.g., GREECE/ICELAND/ARABIA/TURKEY around 0.92-0.96), but it degrades
+sharply in CAPETOWN and KONGO (precision 0.571 and 0.585, recall 0.735
+and 0.644), which is visible as pronounced drops in the corresponding
+curve. MLP yields the weakest results overall, with precision approximately
+0.576-0.711 and recall approximately 0.711-0.852, indicating substantially
+lower correctness of positive predictions and reduced ability to capture
+positive instances compared to the other methods. Overall, the figure
+provides clear empirical evidence that GENCLASS delivers the most
+robust and consistently strong classification behavior across regions
+while maintaining simultaneously high precision and high recall.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{precisionAndRecall}
+\par\end{centering}
+\caption{Precision and recall for three methods participated in the conducted
+experiments.\label{fig:Precision-and-recall}}
+
+\end{figure}
+In addition, an indicative diagram showing the learning path for model
+GENCLASS and for KONGO dataset is presented in Figure \ref{fig:An-indicative-plot}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{plot_kongo}
+\par\end{centering}
+\caption{An indicative plot for the method GENCLASS and the dataset KONGO.\label{fig:An-indicative-plot}}
+
+\end{figure}
+Moreover, Indicative plots for ROC and PR performance curves are outlined
+in Figures \ref{fig:roc} and \ref{fig:pr} respectively.
+
+\begin{figure}[H]
+\caption{Indicative plots for the ROC curves, involving the RBF network, the
+NNC method and the GENCLASS method.\label{fig:roc}}
+
+$ $
+
+\includegraphics[scale=0.22]{iceland_roc}\includegraphics[scale=0.22]{arabia_roc}
+
+\includegraphics[scale=0.22]{svalbard_roc}\includegraphics[scale=0.22]{turkey_roc}
+\end{figure}
+\begin{figure}[H]
+\caption{Indicative plots for the PR curves for the RBF network, the NNC method
+and the GENCLASS method.\label{fig:pr}}
+
+$ $
+
+\includegraphics[scale=0.22]{iceland_pr}\includegraphics[scale=0.22]{arabia_pr}
+
+\includegraphics[scale=0.22]{svalbard_pr}\includegraphics[scale=0.22]{turkey_pr}
+\end{figure}
+As an example of rule production from the GENCLASS method, consider
+the program presented in Algorithm \ref{alg:example}for the Greece
+dataset. As can be observed, the rule-generation method produces rules
+in a form that is understandable by humans (the above program can
+also be exported to actual C++ and Python code through the available
+software). Furthermore, for the effective creation of a classification
+program, it is not necessary to use all the features of the dataset
+under study.”
+
+\begin{algorithm}[H]
+
+\caption{An example of classification program for the Greece dataset.\label{alg:example}}
+
+\bgroup\inputencoding{latin9}
+\begin{lstlisting}[language={C++}]
+if(x26>=(((-61.4)+x3)/(-01.085))&x11<=x4&
+   !(x1<(-58.007)|x21>((-561.6)*((-563.231)*((x28+x1)+(-77.456))))&
+   x12>=(x5+(-47.804)))) CLASS=0.00
+else 
+CLASS=1.00
+\end{lstlisting}
+\leavevmode\egroup
+\end{algorithm}
+
 
 \subsection{Experiments with the number of chromosomes}
 
@@ -1149,6 +1290,14 @@ the dataset-specific curves become slightly more clustered as $N_{c}$
 increases, suggesting a more uniform behavior of the proposed model
 across regions.
 
+Increasing the number of chromosomes will allow the genetic algorithm
+underlying the GENCLASS technique to perform a more thorough exploration
+of the problem’s search space and to generate a larger number of classification
+rules. In this way, higher accuracy on the model’s error in the test
+set can be achieved. Naturally, this will also lead to increased training
+times; however, this drawback can be mitigated through the use of
+parallel Genetic Algorithms.
+
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.4]{stat_tbl7}
@@ -1156,9 +1305,22 @@ across regions.
 \caption{This figure shows the effect of changing the number of chromosomes
 on the learning error of the proposed technique for a series of datasets.\label{fig:stat_tbl7}}
 \end{figure}
+ Also, the average execution time for the proposed method and a variety
+of values for the $N_{c}$ parameter is outlined in Figure \ref{fig:Average-execution-time}.
+As it was expected, the execution time increases rapidly as the number
+of chromosomes increases.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{exectime}
+\par\end{centering}
+\caption{Average execution time for the proposed method and different values
+of parameter $N_{c}$.\label{fig:Average-execution-time}}
+
+\end{figure}
 
 
-\subsection{Experiments with the number of generations}
+\subsection{Experiments with the number of generations\label{subsec:ExperimentsNG}}
 
 Table \ref{tab:experNG} investigates the effect of the number of
 generations $N_{g}$ on the proposed model, using classification error
@@ -1180,12 +1342,16 @@ ICELAND shows the smallest overall relative improvement (4.32\%→2.58\%,
 \textasciitilde 40.3\%) and a slight degradation from $N_{g}$=1000
 to $N_{g}$=2000 (2.47\%→2.58\%), suggesting that for certain datasets
 additional generations may introduce over-training effects and/or
-stochastic variability that partially offsets expected gains. Increasing
-$N_{g}$ also reduces cross-dataset variability: the maximum error
-drops from 14.12\% to 4.18\% and the range (max--min) shrinks from
-11.92 to 3.81 percentage points, while the standard deviation across
-datasets decreases from about 4.00 to 1.30, supporting a more uniform
-generalization profile at higher $N_{g}$.
+stochastic variability that partially offsets expected gains. The
+slight degradation in the ICELAND dataset between $N_{g}=1000$ and
+$N_{g}=2000$ can be attributed to stochastic fluctuations in the
+evolutionary search and dataset\nobreakdash-specific characteristics
+that limit further improvement beyond a certain number of generations.
+Increasing $N_{g}$ also reduces cross-dataset variability: the maximum
+error drops from 14.12\% to 4.18\% and the range (max--min) shrinks
+from 11.92 to 3.81 percentage points, while the standard deviation
+across datasets decreases from about 4.00 to 1.30, supporting a more
+uniform generalization profile at higher $N_{g}$.
 
 \begin{table}[H]
 \caption{Experimental results on the provided datasets using the proposed method
@@ -1227,6 +1393,91 @@ and reduces error.
 error of the proposed method.\label{fig:stat_tbl8}}
 \end{figure}
 
+As shown here and according to established GA theory, increasing the
+number of generations allows the evolutionary process to explore a
+larger portion of the search space and refine candidate solutions
+over time, leading to more stable convergence and improved generalization
+across datasets. 
+
+\subsection{Experiments with the RBF network}
+
+Another experiment was conducted where the RBF network was used as
+the classification model and the number of weights $H$ was varied
+from 10 to 30 and the corresponding results are listed in Table \ref{tab:rbfExpers}.
+
+\begin{table}[H]
+\caption{Experimental results using different number for the weights $H$ of
+the RBF network.\label{tab:rbfExpers}}
+
+\centering{}%
+\begin{tabular}{ccccccc}
+\hline 
+DATASET & \begin{cellvarwidth}[t]
+\centering
+RBF\\
+$H=10$
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+RBF\\
+$H=15$
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+RBF\\
+$H=20$
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+RBF\\
+$H=25$
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+RBF\\
+$H=30$
+\end{cellvarwidth} & GENCLASS\tabularnewline
+\hline 
+CAPETOWN & 12.43\% & 11.50\% & 10.77\% & 10.55\% & 10.41\% & 0.97\%\tabularnewline
+GREECE & 4.34\% & 3.34\% & 2.98\% & 9.06\% & 18.69\% & 0.85\%\tabularnewline
+ICELAND & 7.09\% & 4.79\% & 4.06\% & 3.33\% & 3.13\% & 2.47\%\tabularnewline
+KONGO & 30.16\% & 17.59\% & 19.93\% & 21.69\% & 21.21\% & 4.84\%\tabularnewline
+ARABIA & 7.62\% & 4.35\% & 3.40\% & 2.96\% & 2.81\% & 0.73\%\tabularnewline
+SVALVARD & 23.30\% & 9.65\% & 7.74\% & 6.92\% & 6.44\% & 1.11\%\tabularnewline
+TURKEY & 7.81\% & 7.00\% & 7.54\% & 6.77\% & 7.87\% & 0.63\%\tabularnewline
+\textbf{AVERAGE} & \textbf{13.25\%} & \textbf{8.32\%} & \textbf{8.06\%} & \textbf{8.75\%} & \textbf{10.08\%} & \textbf{1.66\%}\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+ The Figure \ref{fig:RBF-Sensitivity-to} is a heatmap of classification
+error (Error \%) for the RBF model under different numbers of hidden
+nodes H, together with a GENCLASS reference column. Each row corresponds
+to one region/dataset (CAPETOWN, GREECE, ICELAND, KONGO, ARABIA, SVALBARD,
+TURKEY), while the last row (AVERAGE) reports the mean error across
+all regions. Each column represents a different RBF configuration
+($H=10$, 15, 20, 25, 30), and the final column reports GENCLASS.
+The numerical error percentages are printed inside each cell, and
+the color intensity encodes the magnitude of the error (darker color
+indicates lower error). The heatmap shows that increasing H often
+improves RBF performance initially, but the trend is not monotonic
+and degradation is observed for larger H in some regions, which is
+consistent with overfitting; for example, in GREECE the error remains
+low up to $H=20$ but increases sharply at $H=25$ and $H=30$, while
+in KONGO the best performance occurs at a smaller H and then worsens
+as H grows. In the AVERAGE row, the best mean RBF performance occurs
+around $H=20$, whereas larger settings ($H=25,H=30$) lead to higher
+mean error, highlighting a saturation regime and diminishing returns.
+Across all regions, GENCLASS achieves markedly lower error than any
+tested RBF setting, indicating a consistently stronger reference performance
+against which RBF sensitivity to hidden-layer size can be assessed.
+All values in the figure are taken directly from the raw Excel table
+(without formatting) and visually summarize both the initial gains
+from increasing H and the potential performance drop when H becomes
+excessively large.
+\begin{center}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{heatMap_RBFvsGENCLASS}
+
+\caption{RBF Sensitivity to the number of hidden nodes.\label{fig:RBF-Sensitivity-to}}
+
+\end{figure}
+\par\end{center}
 
 \section{Conclusions\label{sec:Conclusions}}
 
@@ -1277,6 +1528,43 @@ temperature and moisture/cloud processes, a binary temperature-deviation
 labeling scheme may be intrinsically harder to learn, motivating either
 feature enrichment or a revised labeling strategy that better reflects
 the underlying physical dynamics.
+
+The parameter sensitivity analysis indicates that increasing the number
+of chromosomes ($N_{c}$) and the number of generations ($N_{g}$)
+leads to systematic reductions in error, while the marginal gains
+progressively shrink beyond a moderate range of values, revealing
+clear diminishing returns. This pattern is expected in genetic and
+evolutionary computation: enlarging the computational budget (via
+larger populations and/or longer runs) typically improves exploration
+and convergence at first, but eventually enters a saturation regime
+once the search operates in a sufficiently good region of the solution
+space. Similar observations and interpretations have been reported
+in the literature on parameter setting/control in evolutionary algorithms,
+as well as in broader empirical studies of hyper-parameter spaces
+that identify wide viable regions and limited additional benefits
+beyond certain cost levels \citep{gaAnalyze1,gaAnalyze2,gaAnalyze3,gaAnalyze4}.
+This contextualization supports reproducibility by documenting that
+the selected configuration lies within a stable-performance regime
+without requiring excessive computational overhead \citep{gaAnalyze5}.
+
+The effect of the number of generations $N_{g}$ is reported in Section
+\ref{subsec:ExperimentsNG} (Table \ref{tab:experNG} and Figure \ref{fig:stat_tbl8}).
+Error decreases strongly as $N_{g}$ increases up to 1000, while the
+step from $N_{g}=1000$ to $N_{g}=2000$ exhibits a clear flattening
+(diminishing returns): the AVERAGE error drops from 1.66\% $\left(N_{g}=1000\right)$
+to 1.45\% $\left(N_{g}=2000\right)$, i.e., only by 0.21 percentage
+points. For reproducibility and a balanced trade-off between performance
+and computational effort, $N_{g}=1000$ is recommended as a practical
+default, which is also the value adopted in the main experimental
+settings (Table \ref{tab:settings}). This recommendation is consistent
+with the algorithm definition in Section \ref{subsec:The-proposed-method},
+where $N_{g}$ acts as the maximum number of generations in the termination
+condition, therefore, computational effort increases approximately
+proportionally with the number of generations (for fixed $N_{c}$).
+Optionally, an early-stopping rule (e.g., stopping when the best fitness
+does not improve for $W$ consecutive generations) can be used to
+further balance cost and benefit, while retaining $N_{g}=1000$ as
+the default configuration.
 
 Despite the strong results, several limitations delineate the scope
 of generalization. First, the data originate from an aggregated provider
@@ -1384,10 +1672,6 @@ The Paris Agreement. Available from: \url{https://www.un.org/en/climatechange/pa
 \bibitem{NASA 2024} NASA. 2024. Global Temperature - Earth Indicator.
 Available from: \url{https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/}
 (accessed on 8 November 2025).
-
-\bibitem{EM DATA}EM-DATA. The International Disaster Database. Emergency
-Events Database. Available from: \url{https://www.emdat.be/} (accessed
-on 9 November 2025).
 
 \bibitem{Arrhenius } Arrhenius, S. (1896). On the Influence of Carbonic
 Acid in the Air upon the Temperature of the Ground. Philosophical
@@ -1587,6 +1871,10 @@ marketing user conversion prediction. Expert Systems with Applications,
 design of analog electronic circuits using grammatical evolution.
 Applied Soft Computing, 62, 1003-1018.
 
+\bibitem[(1999)]{emdata}EM-DATA. The International Disaster Database.
+Emergency Events Database. Available from: \url{https://www.emdat.be/}
+(accessed on 9 November 2025).
+
 \bibitem[(2008)]{genclass}Tsoulos, I.G. Creating classification rules
 using grammatical evolution. Int. J. Comput. Intell. Stud. 2020, 9,
 161--171.
@@ -1622,6 +1910,28 @@ systems and technology (TIST), 2(3), 1-27.
 \bibitem[(2012)]{nnc}Tsoulos, I., Gavrilis, D., \& Glavas, E. (2008).
 Neural network construction and training using grammatical evolution.
 Neurocomputing, 72(1-3), 269-277.
+
+\bibitem[(1999)]{gaAnalyze1}Eiben, A. E., Hinterding, R., \&amp;
+Michalewicz, Z. (1999). Parameter control in evolutionary algorithms.
+IEEE Transactions on Evolutionary Computation, 3(2), 124--141.
+
+\bibitem[(1999)]{gaAnalyze2}De Jong, K. A. (2007). Parameter setting
+in EAs: A 30 year perspective. In F. G. Lobo, C. F. Lima, \&amp; Z.
+Michalewicz (Eds.), Parameter Setting in Evolutionary Algorithms (pp.
+1--18). Springer.
+
+\bibitem[(1999)]{gaAnalyze3}Sipper, M., Fu, W., Ahuja, K., \&amp;
+Moore, J. H. (2018). Investigating the parameter space of evolutionary
+algorithms. BioData Mining, 11, 2. 
+
+\bibitem[(1999)]{gaAnalyze4}O’Neill, M., Brabazon, A., Nicolau, M.,
+McGarraghy, S., \&amp; Keenan, P. (Eds.). (2018). The Handbook of
+Grammatical Evolution. Springer.
+
+\bibitem[(1999)]{gaAnalyze5}Mills, K. L., Filliben, J. J., \&amp;
+Haines, A. (2014). Determining relative importance and best settings
+for genetic algorithm control parameters. Evolutionary Computation,
+23(2), 309--342.
 
 \end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

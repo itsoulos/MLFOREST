@@ -4946,7 +4946,7 @@ The objective of the proposed method is to achieve high-accuracy classification 
  Grammatical Evolution produces concrete if-then programs over the available features,
  making nonlinear relationships transparent and directly inspectable.
  Empirically,
- GENCLASS demonstrates systematic superiority over the considered baselines (MLP,
+ GENCLASS demonstrates better performance over the considered baselines (MLP,
  RBF,
  SVM,
  and NNC) across all regions,
@@ -4955,6 +4955,19 @@ The objective of the proposed method is to achieve high-accuracy classification 
  LSTM/CDLSTM),
  the present study focuses on interpretable rule-induction and benchmarking against established conventional learners;
  a comprehensive comparison against deep sequence architectures under strictly time-ordered evaluation protocols is a natural extension for future work.
+ 
+\end_layout
+
+\begin_layout Standard
+The proposed model,
+ through the use of BNF grammar and Grammatical Evolution,
+ is able to construct rules that exploit only the necessary features of the dataset under study.
+ In this way,
+ the model becomes more flexible and faster in decision-making,
+ even when dealing with large datasets.
+ Moreover,
+ since it relies solely on the essential information for rule generation,
+ it may exhibit better generalization capabilities compared to other machine learning models.
  The underlying grammar for this method is provided in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7886,6 +7899,16 @@ nolink "false"
 
  increases,
  suggesting a more uniform behavior of the proposed model across regions.
+\end_layout
+
+\begin_layout Standard
+Increasing the number of chromosomes will allow the genetic algorithm underlying the GENCLASS technique to perform a more thorough exploration of the problem’s search space and to generate a larger number of classification rules.
+ In this way,
+ higher accuracy on the model’s error in the test set can be achieved.
+ Naturally,
+ this will also lead to increased training times;
+ however,
+ this drawback can be mitigated through the use of parallel Genetic Algorithms.
 \end_layout
 
 \begin_layout Standard

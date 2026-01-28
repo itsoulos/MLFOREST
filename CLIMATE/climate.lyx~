@@ -4892,67 +4892,6 @@ name "subsec:The-proposed-method"
 \end_layout
 
 \begin_layout Standard
-The objective of the proposed method is to achieve high-accuracy classification of daily
-\end_layout
-
-\begin_layout Standard
-climate observations into temperature-change categories,
- while preserving
-\end_layout
-
-\begin_layout Standard
-interpretability through explicit rules.
- Grammatical Evolution produces concrete if-then
-\end_layout
-
-\begin_layout Standard
-programs over the available features,
- making nonlinear relationships transparent and
-\end_layout
-
-\begin_layout Standard
-directly inspectable.
- Empirically,
- GENCLASS demonstrates systematic superiority over
-\end_layout
-
-\begin_layout Standard
-the considered baselines (MLP,
- RBF,
- SVM,
- and NNC) across all regions,
- achieving the
-\end_layout
-
-\begin_layout Standard
-lowest mean classification error (AVERAGE 1.66%) and consistently high
-\end_layout
-
-\begin_layout Standard
-precision/recall.
- Although strong deep sequence models for climate time series exist
-\end_layout
-
-\begin_layout Standard
-(e.g.,
- LSTM/CDLSTM),
- the present study focuses on interpretable rule-induction and
-\end_layout
-
-\begin_layout Standard
-benchmarking against established conventional learners;
- a comprehensive comparison
-\end_layout
-
-\begin_layout Standard
-against deep sequence architectures under strictly time-ordered evaluation protocols is
-\end_layout
-
-\begin_layout Standard
-a natural extension for future work.
-\end_layout
-
-\begin_layout Standard
 The current work proposed the incorporation of a method that constructs classification rules,
  initially proposed in 
 \begin_inset CommandInset citation
@@ -4998,6 +4937,37 @@ line parameters that define all key aspects of the method,
  and other evolutionary settings.
  The implementation relies on OpenMP for multicore parallelization and uses Grammatical Evolution with a BNF grammar to generate human\SpecialChar nobreakdash
 readable classification rules.
+ 
+\end_layout
+
+\begin_layout Standard
+The objective of the proposed method is to achieve high-accuracy classification of daily climate observations into temperature-change categories,
+ while preserving interpretability through explicit rules.
+ Grammatical Evolution produces concrete if-then programs over the available features,
+ making nonlinear relationships transparent and directly inspectable.
+ Empirically,
+ GENCLASS demonstrates better performance over the considered baselines (MLP,
+ RBF,
+ SVM,
+ and NNC) across all regions,
+ achieving the lowest mean classification error (AVERAGE 1.66%) and consistently high precision/recall.
+ Although strong deep sequence models for climate time series exist (e.g.,
+ LSTM/CDLSTM),
+ the present study focuses on interpretable rule-induction and benchmarking against established conventional learners;
+ a comprehensive comparison against deep sequence architectures under strictly time-ordered evaluation protocols is a natural extension for future work.
+ 
+\end_layout
+
+\begin_layout Standard
+The proposed model,
+ through the use of BNF grammar and Grammatical Evolution,
+ is able to construct rules that exploit only the necessary features of the dataset under study.
+ In this way,
+ the model becomes more flexible and faster in decision-making,
+ even when dealing with large datasets.
+ Moreover,
+ since it relies solely on the essential information for rule generation,
+ it may exhibit better generalization capabilities compared to other machine learning models.
  The underlying grammar for this method is provided in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7929,6 +7899,16 @@ nolink "false"
 
  increases,
  suggesting a more uniform behavior of the proposed model across regions.
+\end_layout
+
+\begin_layout Standard
+Increasing the number of chromosomes will allow the genetic algorithm underlying the GenClass technique to perform a more thorough exploration of the problem’s search space and to generate a larger number of classification rules.
+ In this way,
+ higher accuracy on the model’s error in the test set can be achieved.
+ Naturally,
+ this will also lead to increased training times;
+ however,
+ this drawback can be mitigated through the use of parallel Genetic Algorithms.
 \end_layout
 
 \begin_layout Standard
