@@ -10,6 +10,13 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{setspace}
+\onehalfspacing
+\usepackage{textcomp}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{3pt}
+
+
+
 
 \begin{document}
 
@@ -122,14 +129,14 @@ and measures, and to submit periodic reports \textit{\cite{United Nations 1997}.
 In 2015, the Paris Agreement articulated long-term goals intended
 to guide 195 Parties in substantially reducing global greenhouse gas
 emissions. Its central aim is to constrain the rise in global temperatures
-to well below 2°C above pre-industrial levels, while encouraging efforts
-to limit the increase to 1.5°C. Achieving these targets is recognized
+to well below 2\textdegree C above pre-industrial levels, while encouraging efforts
+to limit the increase to 1.5\textdegree C. Achieving these targets is recognized
 as a critical step towards significantly mitigating the risks and
 adverse impacts associated with climate change \textit{\cite{United Nations 2015}.}
 Although we briefly observed the emergence of more environmentally
 conscious actions in the past, today, in the year 2025, NASA's data
 indicate that the debate has shifted to whether humanity will surpass
-the critical threshold of 1.5°C or 2.7°F global temperature \textit{\cite{NASA 2024}}.
+the critical threshold of 1.5\textdegree C or 2.7\textdegree F global temperature \textit{\cite{NASA 2024}}.
 
 In the field of climate change projections, numerous studies have
 been conducted. The first scientifically documented prediction of
@@ -257,11 +264,10 @@ as the machine learning techniques used in the experiments performed
 will be provided.
 
 \subsection{\textmd{Impacts of Climate Change in Natural Disasters}}
-
 In order to present the impacts of climate change in natural disasters,
 visual representations of the planet\textquoteright s average temperature
 are provided for the years 1881, 1995, and 2024. Visualization is
-from NASA Goddard's Scientific Visualization Studio:\url{https://svs.gsfc.nasa.gov/5450}
+from NASA Goddard's Scientific Visualization Studio \cite{NASA 2024}. 
 as seen in Figure
 \ref{fig:NASA-Global-Temperature-1881}.
 
@@ -269,27 +275,28 @@ as seen in Figure
 temperature anomalies. Normal temperatures are shown in white, higher
 than normal temperatures in red and lower than normal temperatures
 in blue\textquotedblright .
-
 \begin{figure}[H]
+	\centering
 \includegraphics{1881-300dpi}\caption{Global Temperature 1881\label{fig:NASA-Global-Temperature-1881}}
-\end{figure}
 
-\begin{figure}[H]
+
+\vspace{-2pt} 
+
 \includegraphics{1995-300dpi}\caption{Global Temperature 1995\label{fig:NASA-Global-Temperature-1995}}
-\end{figure}
 
-\begin{figure}[H]
+\vspace{-2pt}
+
 \includegraphics{2024-300dpi}\caption{Global Temperature 2024\label{fig:NASA-Global-Temperature-2024}}
 \end{figure}
 
-The 1.5°C target is highly ambitious and is likely to have been surpassed
+The 1.5\textdegree C target is highly ambitious and is likely to have been surpassed
 by 2025, nevertheless, it remains significant as a benchmark for minimizing,
 to the greatest extent possible, the impacts of natural disasters
 that are exacerbated by climate change. Subsequently, we will present
 numerical evidence illustrating how major natural disasters have become
 increasingly frequent and intense over time, as a result of the evolving
 impacts of climate change. Our data were retrieved from the\textit{
-(EM-DAT) Emergency Events Database\cite{EM-DATA}} \url{https://www.emdat.be/}
+(EM-DAT) Emergency Events Database\cite{EM-DATA}},  
 on 9 November 2025.
 
 From 1900 to 2025, a total of major events were recorded, around the
@@ -363,27 +370,37 @@ world categorized as follows \tabref{Table-1-Hazards-1900--}
 
 \end{table}
 
+
+
 According to the available data, we conclude that natural disasters
 have increased over the past 35 years when compared with the preceding
 90 years. More specifically, there has been a rise in droughts, forest
 fires, floods, landslides, extreme temperatures, earthquakes and storms.
 
-\subsection{\textmd{The dataset employed }}
-
+\clearpage
+\subsection{\textmd{The Dataset Employed }}
+\vspace{-4em}
 In this study, we utilized Historical Weather Data provided by Visual
-Crossing \url{https://www.visualcrossing.com/}, (last accessed on
-13 December 2025), which aggregates information from multiple authoritative
+Crossing \cite{Visual Crossing},with last accessed on
+13 December 2025, which aggregates information from multiple authoritative
 sources, including national meteorological services, global climate
-models, and satellite observations.In order to gain access to the
-historical data, we first completed the registration process. Subsequently,
+models, and satellite observations. Specifically, the data originate 
+from verified governmental agencies such as NOAA, the German DWD, 
+and the UK Met Office, as well as from certified private networks. 
+This ensures the highest possible accuracy for each location. 
+Through continuously updated, high resolution models,
+ Visual Crossing provides reliable information that supports informed 
+ decision making regardless of the geographical area of interest.
+ In order to gain access in the historical data, we first completed 
+ the registration process. Subsequently,
 by selecting data access, we defined the region of interest and the
 desired date range. We then proceeded with the data retrieval process,
 with a limit of 1,000 records per day in order to remain within the
 free access tier. The overall procedure is straightforward, and the
 only limitation encountered was the daily cap of 1,000 data points.
 
-\subsection{\textmd{The dataset description}}
-
+\subsection{\textmd{The Dataset Description}}
+\vspace{-4em}
 We downloaded historical meteorological data covering the period from
 1995 to 2025, spanning approximately 30 years, to support the needs
 of our climate change research. In addition, we selected regions across
@@ -406,6 +423,7 @@ in the records obtained from Visual Crossing, which did not affect
 our results.
 
 \begin{table}[H]
+	\centering
 \begin{tabular*}{10cm}{@{\extracolsep{\fill}}|c|c|}
 \hline
 \textbf{\textcolor{blue}{Number}} & \textbf{\textcolor{blue}{Data}}\tabularnewline
@@ -476,39 +494,40 @@ our results.
 
 In summary, we report the maximum and minimum values of the average
 temperature for each region. For Greece, the highest recorded value
-was 36°C (96.8°F) on July 21, 2011, while the lowest was \textminus 26.33°C
-(-15.4°F) on January 27, 2003. In Turkey, the maximum temperature
-was recorded on July 30, 2000, at 41.05°C (105.9°F), while the minimum
-reached \textminus 22.94°C (\textminus 9.3°F) on February 16, 2006.
-In Saudi Arabia, the maximum temperature approached 48.2°C (118.9°F)
-on May 30, 2021, while the minimum reached \textminus 2.05°C (28.3°F)
+was 36\textdegree C (96.8\textdegree F) on July 21, 2011, while the lowest was \textminus 26.33\textdegree C
+(-15.4\textdegree F) on January 27, 2003. In Turkey, the maximum temperature
+was recorded on July 30, 2000, at 41.05\textdegree C (105.9\textdegree F), while the minimum
+reached \textminus 22.94\textdegree C (\textminus 9.3\textdegree F) on February 16, 2006.
+In Saudi Arabia, the maximum temperature approached 48.2\textdegree C (118.9\textdegree F)
+on May 30, 2021, while the minimum reached \textminus 2.05\textdegree C (28.3\textdegree F)
 on January 17, 2008. In Cape Town, the maximum temperature reached
-42°C (107.6°F) on February 3, 2015, while the minimum was 0.05°C (32.1°F),
+42\textdegree C (107.6\textdegree F) on February 3, 2015, while the minimum was 0.05\textdegree C (32.1\textdegree F),
 a value that occurred seven times: twice in July 1996, twice in 2000,
 and once in 2001, 2002, and 2003. In Reykjavik, Iceland, the maximum
-temperature was 25.7°C (78.3°F) on July 30, 2008, while the minimum
-reached \textminus 14.3°C (6.2°F) on July 3, 1998. In Congo, the maximum
-temperature reached 39.05°C (102.3°F) on February 22, 1995, while
-the minimum was 12.5°C (54.6°F) on June 7, 2012. In Svalbard, the
-maximum temperature reached 33.38°C (92.1°F) on July 20, 2022, while
-the minimum was \textminus 15.11°C (4.8°F) on January 5, 2003.
+temperature was 25.7\textdegree C (78.3\textdegree F) on July 30, 2008, while the minimum
+reached \textminus 14.3\textdegree C (6.2\textdegree F) on July 3, 1998. In Congo, the maximum
+temperature reached 39.05\textdegree C (102.3\textdegree F) on February 22, 1995, while
+the minimum was 12.5\textdegree C (54.6\textdegree F) on June 7, 2012. In Svalbard, the
+maximum temperature reached 33.38\textdegree C (92.1\textdegree F) on July 20, 2022, while
+the minimum was \textminus 15.11\textdegree C (4.8\textdegree F) on January 5, 2003.
 
 From these observations, it is striking that Greece recorded the lowest
-temperature \textminus 26.33°C (-15.4°F), followed by Turkey \textminus 22.94°C
-(\textminus 9.3°F) compared to regions located within the Arctic Circle,
+temperature \textminus 26.33\textdegree C (-15.4\textdegree F), followed by Turkey \textminus 22.94\textdegree C
+(\textminus 9.3\textdegree F) compared to regions located within the Arctic Circle,
 while the highest value was, as expected, observed in Saudi Arabia,
 a country characterized by a desert climate. In addition, over the
 period from January 1, 1995, to December 8, 2025, all seven regions
 under investigation exhibited an increase in mean temperature, albeit
-with varying magnitudes. Turkey recorded the highest rise at 1.92°C
-(3.46°F), followed by Reykjavik with 1.41°C (2.54°F) and Greece with
-1.22°C (2.20°F). More moderate increases were observed in Svalbard
-(0.93°C; 1.67°F), Cape Town (0.81°C; 1.46°F), and Saudi Arabia (0.79°C;
-1.42°F). Congo displayed the smallest change, with only 0.10°C (0.18°F).
+with varying magnitudes. Turkey recorded the highest rise at 1.92\textdegree C
+(3.46\textdegree F), followed by Reykjavik with 1.41\textdegree C (2.54\textdegree F) and Greece with
+1.22\textdegree C (2.20\textdegree F). More moderate increases were observed in Svalbard
+(0.93\textdegree C; 1.67\textdegree F), Cape Town (0.81\textdegree C; 1.46\textdegree F), and Saudi Arabia (0.79\textdegree C;
+1.42\textdegree F). Congo displayed the smallest change, with only 0.10\textdegree C (0.18\textdegree F).
 These findings highlight both regional disparities and the broader
 trend of warming consistent with the impacts of climate change \tabref{Table-3-Mean-Temperature-increased-1995-2025}.
 
 \begin{table}[H]
+		\centering
 \begin{tabular}{|c|c|c|}
 \hline
 \textbf{\textcolor{blue}{Number}} & \textbf{\textcolor{blue}{Region}} & \textbf{\textcolor{blue}{Mean Temperature increased}}\tabularnewline
@@ -547,7 +566,7 @@ were assigned to Class 1 \tabref{Table-4-Region-Baseline-Class}.
 
 The definition of the two classes was based on the environmental considerations
 discussed in our introduction, aligned with the Paris Agreement and
-the 1.5\,°C climate target, as well as on our data-driven analyses
+the 1.5\textdegree C climate target, as well as on our data-driven analyses
 and the class balance that we were able to achieve. Similarly, the
 temporal span of our dataset was selected to align with the climatological
 milestones commonly used to characterize the progression of climate
@@ -555,9 +574,10 @@ change. For this reason, we adopted the period 1995--2025 as the
 analysis window across the different climatic regions. Furthermore,
 the definition of our classes was made with careful consideration,
 and the first class explicitly includes negative temperature anomalies,
-as it encompasses all temperature values from below zero up to +1\,°C.
+as it encompasses all temperature values from below zero up to +1\textdegree C.
 
 \begin{table}[H]
+
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 \textbf{\textcolor{blue}{Number}} & \textbf{\textcolor{blue}{Region}} & \textbf{\textcolor{blue}{Baseline for Class}} & \textbf{\textcolor{blue}{Class 0 (total data)}} & \textbf{\textcolor{blue}{Class 1 (total data)}}\tabularnewline
@@ -596,8 +616,8 @@ The current work proposed the incorporation of a method that constructs
 classification rules, initially proposed in \textit{\cite{Tsoulos 2020}.}
 Furthermore, this method was implemented as a software recently \textit{\cite{Anastasopoulos 2021}.}
 The published software GENCLASS is an open\nobreakdash-source software
-tool, publicly available on GitHub\url{https://github.com/itsoulos/GenClass/},
-where detailed installation instructions and usage examples are provided.
+tool, publicly available on GitHub \cite{GitHub},where detailed installation 
+instructions and usage examples are provided.
 The software is implemented in ANSI C++ and supports Python\nobreakdash-formatted
 rule output. Its execution is controlled through a set of command\nobreakdash-line
 parameters that define all key aspects of the method, including the
@@ -629,14 +649,13 @@ large datasets. Moreover, since it relies solely on the essential
 information for rule generation, it may exhibit better generalization
 capabilities compared to other machine learning models. The underlying
 grammar for this method is provided in Figure \figref{The-underlying-grammar-method}.
-
 \begin{figure}[H]
-\includegraphics[scale=0.7]{grammar_method(fig4)}
-
+	\centering
+\includegraphics[scale=0.80]{grammar_method(fig4)}
 \caption{The underlying grammar for the method that produces classification
 programs using Grammatical Evolution\label{fig:The-underlying-grammar-method}}
 \end{figure}
-
+\clearpage
 The steps for this method have as follows:
 \begin{enumerate}
 \item Initialization step.
@@ -650,10 +669,12 @@ the number of allowed generations.
 randomly selected integers.
 \item Set$k=0$, that defines the generation counter.
 \end{enumerate}
+\vspace{2em}
 \item Fitness calculation step.
 \begin{enumerate}
 \item For i = 1, . . . , \textit{\textcolor{blue}{N\textsubscript{c}}}
 do
+\vspace{2em}
 \begin{enumerate}
 \item Construct with the procedure of Grammatical evolution and the incorporation
 of the BNF grammar of \figref{The-underlying-grammar-method} a classification
@@ -672,8 +693,10 @@ of the dataset under study.
 \end{enumerate}
 \item End For
 \end{enumerate}
+\vspace{2em}
 \item Application of Genetic Operations.
 \begin{enumerate}
+	\vspace{2em}
 \item Selection procedure. The remaining are substituted by chromosomes
 produced during crossover and mutation. The top $p_{s}\times N_{c}$
 chromosomes are directly carried over to the next generation, while
@@ -684,19 +707,39 @@ the current population. For every pair $\left(c_{1},c_{2}\right)$
 of new chromosomes two chromosomes denoted as $p_{1}$ and $p_{2}$
 are selected from the current population using tournament selection.
 The production of $\left(c_{1},c_{2}\right)$ will be performed using
-one - point crossover \textit{\cite{Poli 1998}}. An example of this
+one - point crossover \textit{\cite{Poli 1998}}. 
+\vspace{-5em}
+An example of this
 procedure is outlined in \figref{A-graphical-example}.
+\vspace{3.6em}
+\begin{figure} [H]
+	\includegraphics[scale=0.55]{crossover(fig5)}
+		\centering	
+	\caption{A graphical example of the one - point crossover.\label{fig:A-graphical-example}}
+\end{figure}
+\vspace{-2em}
 \item Mutation procedure. Draw a random number $r\le1$ for each element
 of every chromosome. Alter randomly this element when $r\le p_{m}$.
 The mutation procedure is depicted as a flowchart in \figref{The-flowchart-of}
 \end{enumerate}
+
+\begin{figure}[H]
+	\includegraphics[scale=0.7]{mutation_flowchart}
+	\centering	
+	\caption{The flowchart of the mutation procedure\label{fig:The-flowchart-of}}
+\end{figure}
+
+
+\clearpage
 \item Termination check step.
+
 \begin{enumerate}
 \item Set $k=k+1$
 \item If $k<N_{g}$ then go to Fitness calculation step else go to Testing
 step.
 \end{enumerate}
 \item Testing step.
+
 \begin{enumerate}
 \item Get the best chromosome $c^{*}$ of the population with the lowest
 fitness value and create the corresponding classification program
@@ -705,40 +748,29 @@ $G^{*}$.
 problem and calculate the corresponding test error.
 \end{enumerate}
 \end{enumerate}
+\clearpage
 The overall procedure is graphically outlined in \figref{The-flowchart-of-1}.
-
 \begin{figure}[H]
-\includegraphics[scale=0.8]{crossover(fig5)}
-
-\caption{A graphical example of the one - point crossover.\label{fig:A-graphical-example}}
-\end{figure}
-
-\begin{figure}[H]
-\includegraphics[scale=0.8]{mutation_flowchart}
-
-\caption{The flowchart of the mutation procedure\label{fig:The-flowchart-of}}
-\end{figure}
-
-\begin{figure}[H]
-\includegraphics[scale=0.75]{genclass_flowchart(fig7)}
-
+\includegraphics[scale=0.70]{genclass_flowchart(fig7)}
+\centering
 \caption{The flowchart of the proposed method\label{fig:The-flowchart-of-1}}
 \end{figure}
 
 
-
+\clearpage
 \section{Results\label{sec:Results}}
 The software used in the experiments were coded in C++ programming
 language and the freely available software Optimus \textit{\cite{Tsoulos 2025},}
-available from \url{https://github.com/itsoulos/GlobalOptimus/} (accessed
-on 25 December 2025), was incorporated for the optimization methods.
+ with last accessed on 25 December 2025, was incorporated for the optimization methods.
 The experimental results were validated using the ten - fold cross
 validation procedure and all the experiments were executed on a Debian
 Linux machine with 128GB of ram. The values for the experimental parameters
 are outlined in Table \ref{tabTable-5-:Experimental-settings} .
 
 \begin{table}[H]
+	\centering
 \begin{tabular}{|c|c|c|}
+	
 \hline
 \textbf{\textcolor{blue}{PARAMETER}} & \textbf{\textcolor{blue}{PURPOSE}} & \textbf{\textcolor{blue}{VALUE}}\tabularnewline
 \hline
@@ -758,7 +790,7 @@ are outlined in Table \ref{tabTable-5-:Experimental-settings} .
 \caption{Experimental settings\label{tabTable-5-:Experimental-settings}}
 \end{table}
 
-Table \tabref{Table-6-Experimental-results-on} summarizes the experimental
+The \tabref{Table-6-Experimental-results-on} summarizes the experimental
 results on datasets derived from various areas using a series of machine
 learning methods. The following notation is used in the experimental
 tables:
@@ -787,7 +819,9 @@ Table \tabref{Table-6-Experimental-results-on} reports the percentage
 classification error obtained by five machine learning models (MLP,
 RBF, SVM, NNC, and the proposed GENCLASS) across seven region-specific
 climate-zone datasets (CAPETOWN, GREECE, ICELAND, CONGO, ARABIA, SVALBARD,
-TURKEY). Since the entries are error percentages, lower values indicate
+TURKEY). 
+\clearpage
+Since the entries are error percentages, lower values indicate
 higher classification accuracy, while the final row (AVERAGE) summarizes
 the mean error over all datasets. The dominant outcome is the consistent
 superiority of GENCLASS, which achieves the lowest error on every
@@ -799,8 +833,8 @@ physical settings (coastal versus inland areas, mountainous terrain,
 forests, deserts, glaciers/sea ice, and distinct hemispheric seasonality).
 Such factors affect local temperature dynamics, variability, and seasonality
 and therefore shape the complexity of the classification patterns
-that each model must learn. For instance, KONGO lies close to the
-Equator (approximately within a few degrees north and south of 0°
+that each model must learn. For instance, CONGO lies close to the
+Equator (approximately within a few degrees north and south of $0^\circ$
 latitude, primarily at eastern longitudes in Central Africa) and is
 characterized by extensive tropical rainforest cover and high atmospheric
 moisture. In this dataset, Table\tabref{Table-6-Experimental-results-on}
@@ -808,7 +842,7 @@ shows the highest errors for most methods and also the largest GENCLASS
 error (4.84\%), suggesting a comparatively more challenging classification
 structure, plausibly due to weaker temperature seasonality and stronger
 interactions with humidity and cloud-related processes. In contrast,
-ARABIA (roughly 16°-32°N at eastern longitudes in Western Asia) is
+ARABIA (roughly $16^\circ$-$32^\circ$N at eastern longitudes in Western Asia) is
 dominated by hot desert conditions, where land-surface properties,
 low cloudiness, and persistent aridity often yield clearer and more
 repeatable temperature-related signatures, accordingly, GENCLASS attains
@@ -849,8 +883,8 @@ fundamentally different latitude--longitude positioning and physical
 environments, suggesting improved capacity to capture nonlinear relationships
 and interactions induced by topography, land cover (forest/desert/ice),
 proximity to oceans, and regional seasonality.
-
 \begin{table}[H]
+	\centering
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
 \textbf{\textcolor{blue}{DATASET}} & \textbf{\textcolor{blue}{MLP}} & \textbf{\textcolor{blue}{RBF}} & \textbf{\textcolor{blue}{SVM}} & \textbf{\textcolor{blue}{NNC}} & \textbf{\textcolor{blue}{GENCLASS}}\tabularnewline
@@ -873,13 +907,11 @@ proximity to oceans, and regional seasonality.
 \textbf{Average} & 31.30\% & 13.25\% & 42.22\% & 6.18\% & 1.66\%\tabularnewline
 \hline
 \end{tabular}
-
+\vspace{2em}
 \caption{Experimental results on the provided datasets using a series of machine
 learning methods\label{tab:Table-6-Experimental-results-on}.}
-
 \end{table}
-
-The results summarized in Figure\figref{Statistical-comparison-for}
+The results summarized in \figref{Statistical-comparison-for}
 indicate that the comparison GENCLASS vs MLP yields $p=0.0195$, implying
 a statistically significant difference ($p<0.05$) and supporting
 the conclusion that GENCLASS outperforms MLP under the adopted experimental
@@ -902,6 +934,7 @@ relative to RBF and NNC are not statistically significant under the
 $p<0.05$ criterion.
 
 \begin{figure}[H]
+	\centering
 \includegraphics[scale=0.8]{stat-tbl3}
 
 \caption{Statistical comparison for the results obtained by the application
@@ -937,22 +970,25 @@ provides clear empirical evidence that GENCLASS delivers the most
 robust and consistently strong classification behavior across regions
 while maintaining simultaneously high precision and high recall.
 
+\vspace{5pt}
 \begin{figure}[H]
+	\centering
 \includegraphics[scale=0.8]{precisionAndRecall}
-
+\vspace{1em}
 \caption{Precision and recall for three methods participated in the conducted
 experiments\label{fig:Precision-and-recall}}
 \end{figure}
 
+
+\clearpage
 In addition, an indicative diagram showing the learning path for model
-GENCLASS and for CONGO dataset is presented in Figure \figref{An-indicative-plot}.
-
+GENCLASS and for CONGO dataset is presented in \figref{An-indicative-plot}.
 \begin{figure}[H]
-\includegraphics[scale=0.8]{plot_kongo}
-
+	\centering
+\includegraphics[scale=0.4]{plot_kongo}
 \caption{An indicative plot for the method GENCLASS and the dataset CONGO\label{fig:An-indicative-plot}}
 \end{figure}
-
+\vspace{-0.1em}
 Moreover, Indicative plots for ROC and PR performance curves are outlined
 in Figures \figref{Indicative-plots-for-ROC} and \figref{Indicative-plots-for-PR}
 respectively.
@@ -985,15 +1021,18 @@ program, it is not necessary to use all the features of the dataset
 under study.\textquotedblright{}
 
 \begin{figure}[H]
-\includegraphics[scale=0.7]{algorithm1}
+\includegraphics[scale=0.8]{algorithm1}
+\centering
 
 \caption{An example of classification program for the Greece dataset\label{alg:An-example-of}}
 \end{figure}
 
 
+\clearpage
+
 \subsection{\textmd{Experiments with the number of chromosomes}}
 
-Table \tabref{Table-7-Experimental-results-on-1} evaluates the sensitivity
+In \tabref{Table-7-Experimental-results-on-1} evaluates the sensitivity
 of the proposed model to the number of chromosomes $N_{c}$, using
 classification error percentages as the performance metric (lower
 is better). A clear and nearly monotonic improvement is observed as
@@ -1004,10 +1043,10 @@ of the gain is realized up to $N_{c}$=500 (3.21\%\textrightarrow 2.68\%\textrigh
 whereas the additional improvement from 500 to 1000 is smaller (1.66\%\textrightarrow 1.46\%,
 a 0.20 decrease), indicating diminishing returns for very large chromosome
 counts. At the dataset level, the largest relative reductions from
-$N_{c}$=50 to $N_{c}$=1000 occur for ARABIA (2.52\%\textrightarrow 0.54\%,
-\textasciitilde 78.6\%) and TURKEY (2.37\%\textrightarrow 0.57\%,
+$N_{c}$=50 to $N_{c}$=1000 occur for ARABIA (2.52\%\textrightarrow 0.54\%, the improvement amounted
+\textasciitilde 78.6\%) and for TURKEY (2.37\%\textrightarrow 0.57\%,the improvement amounted
 \textasciitilde 75.9\%). In contrast, ICELAND exhibits a smaller
-but consistent overall reduction (3.22\%\textrightarrow 2.14\%, \textasciitilde 33.5\%)
+but consistent overall reduction (3.22\%\textrightarrow 2.14\%, to \textasciitilde 33.5\%)
 and a slight non-monotonic fluctuation at $N_{c}$=100 (3.27\% vs.
 3.22\%), which is corrected for higher$N_{c}$. CONGO remains the
 most challenging dataset across all settings (8.86\% at $N_{c}$=50
@@ -1021,6 +1060,7 @@ of errors across datasets declines from about 2.54 to 1.40, suggesting
 more uniform generalization when using larger chromosome counts.
 
 \begin{table}[H]
+	\centering
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
 \textbf{Dataset} & \textbf{$N_{c}=50$} & \textbf{$N_{c}=100$} & \textbf{$N_{c}=200$} & \textbf{$N_{c}=500$} & \textbf{$N_{c}=1000$}\tabularnewline
@@ -1043,11 +1083,12 @@ more uniform generalization when using larger chromosome counts.
 \textbf{Average} & \textbf{3.21\%} & \textbf{2.68\%} & \textbf{2.17\%} & \textbf{1.66\%} & \textbf{1.46\%}\tabularnewline
 \hline
 \end{tabular}
-
+\vspace{1em}
 \caption{Experimental results on the provided datasets using the proposed method
 and a series of values for the number of chromosomes $N_{c}$.\label{tab:Table-7-Experimental-results-on-1}}
 \end{table}
 
+\clearpage
 In \figref{stat-tb17.png} clearly illustrates that increasing the
 number of chromosomes leads to lower classification error across essentially
 all datasets, with the mean performance (AVERAGE, black dashed line)
@@ -1068,12 +1109,15 @@ this will also lead to increased training times; however, this drawback
 can be mitigated through the use of parallel Genetic Algorithms.
 
 \begin{figure}[H]
+	\centering
 \includegraphics[scale=0.8]{stat_tbl7}
 
 \caption{This figure shows the effect of changing the number of chromosomes
 on the learning error of the proposed technique for a series of datasets\label{fig:stat-tb17.png}}
 \end{figure}
 
+
+\clearpage
 Also, the average execution time for the proposed method and a variety
 of values for the $N_{c}$ parameter is outlined in Figure\figref{Average-execution-time}.
 As it was expected, the execution time increases rapidly as the number
@@ -1086,7 +1130,7 @@ of chromosomes increases.
 of parameter $N_{c}$\label{fig:Average-execution-time}}
 \end{figure}
 
-
+\clearpage
 \subsection{\textmd{Experiments with the number of generations\label{subsec:Experiments-with-the}}}
 
 Table \ref{tab:Table-8-Experimental-results-on-Ng} investigates the effect
@@ -1102,12 +1146,12 @@ distributed across increments: 50\textrightarrow 100 (-0.99), 100\textrightarrow
 additional computational effort yields smaller improvements in the
 mean error. At the dataset level, all regions improve substantially
 from $N_{g}$=50 to $N_{g}$=2000, with the largest relative reductions
-observed for TURKEY (2.63\%\textrightarrow 0.37\%, \textasciitilde 85.9\%)
-and ARABIA (3.03\%\textrightarrow 0.63\%, \textasciitilde 79.2\%).
-CONGO also improves markedly (14.12\%\textrightarrow 4.18\%, \textasciitilde 70.4\%)
+observed for TURKEY (2.63\%\textrightarrow 0.37\%,the improvement amounted \textasciitilde 85.9\%)
+and ARABIA (3.03\%\textrightarrow 0.63\%, the improvement amounted \textasciitilde 79.2\%).
+CONGO also improves markedly (14.12\%\textrightarrow 4.18\%,the improvement amounted \textasciitilde 70.4\%)
 but remains the most challenging dataset across all settings, consistently
 exhibiting the highest errors. ICELAND shows the smallest overall
-relative improvement (4.32\%\textrightarrow 2.58\%, \textasciitilde 40.3\%)
+relative improvement (4.32\%\textrightarrow 2.58\%, with \textasciitilde 40.3\%)
 and a slight degradation from $N_{g}$=1000 to$N_{g}$ =2000 (2.47\%\textrightarrow 2.58\%),
 suggesting that for certain datasets additional generations may introduce
 over-training effects and/or stochastic variability that partially
@@ -1122,6 +1166,7 @@ across datasets decreases from about 4.00 to 1.30, supporting a more
 uniform generalization profile at higher$N_{g}$.
 
 \begin{table}[H]
+	\centering
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
 \textbf{Dataset} & $N_{g}=50$ & $N_{g}=100$ & $N_{g}=200$ & $N_{g}=1000$ & $N_{g}=2000$\tabularnewline
@@ -1144,11 +1189,13 @@ uniform generalization profile at higher$N_{g}$.
 \textbf{Average} & \textbf{4.46\%} & \textbf{3.46\%} & \textbf{2.64\%} & \textbf{1.66\%} & \textbf{1.45\%}\tabularnewline
 \hline
 \end{tabular}
-
+\vspace{1em}
 \caption{Experimental results on the provided datasets using the proposed method
 and a series of values for the number of generations $N_{g}$.\label{tab:Table-8-Experimental-results-on-Ng}}
 \end{table}
 
+
+\clearpage
 In \figref{The-impact-of-stat-tb18} shows that increasing the number
 of generations also yields a systematic reduction in classification
 error, with the mean curve (AVERAGE) improving markedly when moving
@@ -1173,6 +1220,8 @@ larger portion of the search space and refine candidate solutions
 over time, leading to more stable convergence and improved generalization
 across datasets.
 
+
+\clearpage
 \subsection{\textmd{Experiments with the RBF network}}
 
 Another experiment was conducted where the RBF network was used as
@@ -1180,6 +1229,7 @@ the classification model and the number of weights $H$ was varied
 from 10 to 30 and the corresponding results are listed in Table\tabref{Table-9-Experimental-RBF-results-using}
 
 \begin{table}[H]
+	\centering
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 \textbf{Dataset} &
@@ -1218,12 +1268,13 @@ $H=30$
 \textbf{Average} & \textbf{13.25\%} & \textbf{8.32\%} & \textbf{8.06\%} & \textbf{8.75\%} & \textbf{10.08\%} & \textbf{1.66\%}\tabularnewline
 \hline
 \end{tabular}
-
+\vspace{1em}
 \caption{Experimental results using different number for the weights $H$ of
 the RBF network.\label{tab:Table-9-Experimental-RBF-results-using}}
 \end{table}
 
-The \figref{RBF-Sensitivity-to} is a heatmap of classification error
+
+The last  \figref{RBF-Sensitivity-to} is a heatmap of classification error
 (Error \%) for the RBF model under different numbers of hidden nodes
 H, together with a GENCLASS reference column. Each row corresponds
 to one region/dataset (CAPETOWN, GREECE, ICELAND, CONGO, ARABIA, SVALBARD,
@@ -1256,7 +1307,7 @@ excessively large.
 \end{figure}
 
 
-
+\clearpage
 \section{Conclusions\label{sec:Conclusions}}
 The present study provides empirical evidence that daily temperature
 time series (1995-2025) across seven regions spanning distinct climate
@@ -1411,309 +1462,386 @@ The data used here are freely available.
 
 
 \begin{thebibliography}{10}
-\bibitem{Aeschylus}Aeschylus, 472 B.C.The Persians. Place and date
+\bibitem{Aeschylus}
+Aeschylus, 472 B.C.The Persians. Place and date
 of edition used as base for this ebook: London: George Allen \& Unwin,
 1939. Available from: \url{https://gutenberg.ca/ebooks/murrayaeschylus-persians/murrayaeschylus-persians-00-h.html}
 
-\bibitem{Aeschylus-1}Aeschylus, 472 B.C. Persians. Richer Resources
+\bibitem{Aeschylus-1}
+Aeschylus, 472 B.C. Persians. Richer Resources
 Publications, Arlington, Virginia, USA, ISBN 978-1-935238-57-7. Available
 from: \url{https://johnstoniatexts.x10host.com/aeschylus/persianshtml.html}
 
-\bibitem{Dey 2021} Dey, R., \& Lewis, S. C. Natural disasters linked
+\bibitem{Dey 2021}
+ Dey, R., \& Lewis, S. C. Natural disasters linked
 to climate change. In: The impacts of climate change. Elsevier, 2021.
 p. 177-193. Available from: \url{https://doi.org/10.1016/B978-0-12-822373-4.00004-5.}
 
-\bibitem{Kopitsa} Kopitsa, C., Tsoulos, I. G., Miltiadous, A., \&
+\bibitem{Kopitsa}
+ Kopitsa, C., Tsoulos, I. G., Miltiadous, A., \&
 Charilogis, V. Predicting the Forest Fire Duration Enriched with Meteorological
 Data Using Feature Construction Techniques. Symmetry, 2025, 17(11),
 1785. \url{https://doi.org/10.3390/sym17111785}
 
-\bibitem{United Nations  2022}United Nations Environment Programme.
+\bibitem{United Nations  2022}
+United Nations Environment Programme.
 Number of Wildfires to Rise by 50 per Cent by 2100 and Governments
 Are Not Prepared, Experts Warn. 23 February 2022. {[}accessed on 7
 Novemer 2025{]}. Available from: \url{https://www.unep.org/news-and-stories/press-release/number-wildfires-rise-50-cent-2100-and-governments-are-not-prepared}
 
-\bibitem{United Nations} United Nations. Climate Action. {[}accessed
+\bibitem{United Nations}
+ United Nations. Climate Action. {[}accessed
 on 7 November 2025{]}.Available from: \url{https://www.un.org/en/climatechange/what-is-climate-change}
 
-\bibitem{United Nations 1992} United Nations. Climate Change. United
+\bibitem{United Nations 1992}
+ United Nations. Climate Change. United
 Nations Framework Convention on Climate Change (UNFCCC). Rio de Janeiro,
 Brazil 3 - 14 June 1992. {[}accessed on 7 November 2025{]}. Available
 from: \url{https://unfccc.int/process-and-meetings/united-nations-framework-convention-on-climate-change}
 
-\bibitem{United Nations 1997} United Nations. Climate Change.The
+\bibitem{United Nations 1997}
+ United Nations. Climate Change.The
 Kyoto Protocol, 11 December 1997. {[}accessed on 7 November 2025{]}.
 Available from: \url{https://unfccc.int/process-and-meetings/the-kyoto-protocol }
 
-\bibitem{United Nations 2015}United Nations. Climate Action. The
+\bibitem{United Nations 2015}
+United Nations. Climate Action. The
 Paris Agreement. {[}accessed on 8 November 2025{]} .Available from:
 \url{https://www.un.org/en/climatechange/paris-agreement}
 
-\bibitem{NASA 2024} NASA. Global Temperature - Earth Indicator. 2024.
+\bibitem{NASA 2024}
+ NASA. Global Temperature - Earth Indicator. 2024.
 {[}accessed on 8 November 2025{]}. Available from: \url{https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/}
 
-\bibitem{Arrhenius} Arrhenius, S. On the Influence of Carbonic Acid
+\bibitem{Arrhenius}
+ Arrhenius, S. On the Influence of Carbonic Acid
 in the Air upon the Temperature of the Ground. Philosophical Magazine
 and Journal of Science, 1896. Series 5, Volume 41, April 1896, pages
 237-276. A
 
-\bibitem{Rolnick 2022} Rolnick, D., Donti, P. L., Kaack, L. H., Kochanski,
+\bibitem{Rolnick 2022} 
+Rolnick, D., Donti, P. L., Kaack, L. H., Kochanski,
 K., Lacoste, A., Sankaran, K., ... \& Bengio, Y. Tackling climate
 change with machine learning. ACM Computing Surveys (CSUR), 2022.
 55(2), 1-96.
 
-\bibitem{Koulelis 2023} Koulelis, P. P., Proutsos, N., Solomou, A.
+\bibitem{Koulelis 2023}
+ Koulelis, P. P., Proutsos, N., Solomou, A.
 D., Avramidou, E. V., Malliarou, E., Athanasiou, M., ... \& Petrakis,
 P. V. Effects of climate change on Greek forests: A review. Atmosphere,
 2023. 14(7), 1155.
 
-\bibitem{Rovithakis 2022} Rovithakis, A., Grillakis, M. G., Seiradakis,
+\bibitem{Rovithakis 2022}
+ Rovithakis, A., Grillakis, M. G., Seiradakis,
 K. D., Giannakopoulos, C., Karali, A., Field, R., ... \& Voulgarakis,
 A. Future climate change impact on wildfire danger over the Mediterranean:
 the case of Greece. Environmental Research Letters, 2022. 17(4), 045022.
 
-\bibitem{Xepapadeas 2024} Xepapadeas, P., Douvis, K., Kapsomenakis,
+\bibitem{Xepapadeas 2024}
+ Xepapadeas, P., Douvis, K., Kapsomenakis,
 I., Xepapadeas, A., \& Zerefos, C. Wildfires, Vulnerability, and Climate
 Change: Methodology and Application to the Regions of Greece. 2024.
 Available from: \url{doi: 10.20944/preprints202405.0081.v1}
 
-\bibitem{Knox 2000} Knox, J. C. Sensitivity of modern and Holocene
+\bibitem{Knox 2000}
+ Knox, J. C. Sensitivity of modern and Holocene
 floods to climate change. Quaternary Science Reviews, 2000. 19(1-5),
 439-457.
 
-\bibitem{Milly 2002} Milly, P. C. D., Wetherald, R. T., Dunne, K.
+\bibitem{Milly 2002}
+ Milly, P. C. D., Wetherald, R. T., Dunne, K.
 A., \& Delworth, T. L. Increasing risk of great floods in a changing
 climate. Nature, 2002. 415(6871), 514-517.
 
-\bibitem{Angra 2022} Angra, D., \& Sapountzaki, K. Climate change
+\bibitem{Angra 2022} 
+Angra, D., \& Sapountzaki, K. Climate change
 affecting forest fire and flood risk---facts, predictions, and perceptions
 in Central and South Greece. Sustainability, 2022, 14.20: 13395. Available
 from: \url{https://doi.org/10.3390/su142013395}
 
-\bibitem{Cook 2018} Cook, B. I., Mankin, J. S., \& Anchukaitis, K.
+\bibitem{Cook 2018}
+ Cook, B. I., Mankin, J. S., \& Anchukaitis, K.
 J. Climate change and drought: From past to future. Current Climate
 Change Reports,2018. 4(2), 164-179.
 
-\bibitem{Stathi 2023} Stathi, E., Kastridis, A., \& Myronidis, D.Analysis
+\bibitem{Stathi 2023}
+ Stathi, E., Kastridis, A., \& Myronidis, D.Analysis
 of hydro meteorological trends and drought severity in water-demanding
 Mediterranean islands under climate change conditions. Climate, 2023,
 11.5: 106. Available from: \url{https://doi.org/10.3390/cli11050106}
 
-\bibitem{Yuan 2023} , X., Wang, Y., Ji, P., Wu, P., Sheffield, J.,
+\bibitem{Yuan 2023} 
+Yuan, X., Wang, Y., Ji, P., Wu, P., Sheffield, J.,
 \& Otkin, J. A. A global transition to flash droughts under climate
 change. Science, 2023. 380(6641), 187-191.
 
-\bibitem{Kretschmer 2017} Kretschmer, M., Runge, J., \& Coumou, D.
+\bibitem{Kretschmer 2017}
+ Kretschmer, M., Runge, J., \& Coumou, D.
 Early prediction of extreme stratospheric polar vortex states based
 on causal precursors. Geophysical research letters, 2017. 44(16),
 8592-8600. Available from: \url{ https://doi.org/10.1002/2017GL074696}
 
-\bibitem{Kambezidis 2021} Kambezidis, H. D., Psiloglou, B. E., Varotsos,
+\bibitem{Kambezidis 2021}
+ Kambezidis, H. D., Psiloglou, B. E., Varotsos,
 K. V., \& Giannakopoulos, C. Climate change and thermal comfort in
 Greece. Climate, 2021, 9.1: 10. Available from: \url{ https://doi.org/10.3390/cli9010010}
 
-\bibitem{Lindsey 2025} Lindsey, R. Dahlman, L. Climate change: global
+\bibitem{Lindsey 2025}
+ Lindsey, R. Dahlman, L. Climate change: global
 temperature. NOAA. Science \& Information for Climate-Smart nation.
 2025. {[}accessed on 19 March 2026{]}. Available from:\url{https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature}
 
-\bibitem{Mansfield 2020} Mansfield, L. A., Nowack, P. J., Kasoar,
+\bibitem{Mansfield 2020}
+ Mansfield, L. A., Nowack, P. J., Kasoar,
 M., Everitt, R. G., Collins, W. J., \& Voulgarakis, A. Predicting
 global patterns of long-term climate change from short-term simulations
 using machine learning. npj Climate and Atmospheric Science, 2020.
 3(1), 44.
 
-\bibitem{Haggag 2021} Haggag, M., Siam, A. S., El-Dakhakhni, W.,
+\bibitem{Haggag 2021} 
+Haggag, M., Siam, A. S., El-Dakhakhni, W.,
 Coulibaly, P., \& Hassini, E. A deep learning model for predicting
 climate-induced disasters. Natural Hazards, 2021. 107(1), 1009-1034.
 
-\bibitem{Haq 2022} Haq, M. A. CDLSTM: A novel model for climate change
+\bibitem{Haq 2022}
+ Haq, M. A. CDLSTM: A novel model for climate change
 forecasting. Computers, Materials \& Continua, 2022. 71(2).
 
-\bibitem{Slater 2023} Slater, L. J., Arnal, L., Boucher, M. A., Chang,
+\bibitem{Slater 2023}
+ Slater, L. J., Arnal, L., Boucher, M. A., Chang,
 A. Y. Y., Moulds, S., Murphy, C., ... \& Zappa, M. Hybrid forecasting:
 blending climate predictions with AI models. Hydrology and earth system
 sciences, 2023. 27(9), 1865-1889.
 
-\bibitem{Bist 2024} Bist, A. S., Rawat, B., Joshi, Y., Aini, Q.,
+\bibitem{Bist 2024} 
+Bist, A. S., Rawat, B., Joshi, Y., Aini, Q.,
 Santoso, N. P. L., \& Kusumawardhani, D. A. R. . Harnessing Deep Learning
 for Accurate Climate Change Predictions. In 2024 3rd International
 Conference on Creative Communication and Innovative Technology (ICCIT)
 (2024, August) (pp. 1-6). IEEE.
 
-\bibitem{GAUTAM 2025}GAUTAM, A., AJMERA, R., DHARAMDASANI, D. K.,
+\bibitem{GAUTAM 2025}
+GAUTAM, A., AJMERA, R., DHARAMDASANI, D. K.,
 SRIVASTAVA, S., \& JOHARI, A. IMPROVING CLIMATE CHANGE PREDICTIONS
 USING TIME SERIES ANALYSIS AND DEEP LEARNING. Global \& Stochastic
 Analysis, 2025. 12(4).
 
-\bibitem{O'Neill 2002}O'Neill, M., \& Ryan, C. Grammatical evolution.
+\bibitem{O'Neill 2002}
+O'Neill, M., \& Ryan, C. Grammatical evolution.
 IEEE Transactions on Evolutionary Computation, 2002. 5(4), 349-358.
 
-\bibitem{Kramer 2017}Kramer, O. Genetic algorithms. In Genetic algorithm
+\bibitem{Kramer 2017}
+Kramer, O. Genetic algorithms. In Genetic algorithm
 essentials. Cham: Springer International Publishing. 2017. pp. 11-19.
 
-\bibitem{Backus 1959}Backus, J. W. The syntax and the semantics of
+\bibitem{Backus 1959}
+Backus, J. W. The syntax and the semantics of
 the proposed international algebraic language of the Zurich ACM-GAMM
 Conference. 1959. In ICIP Proceedings (pp. 125-132).
 
-\bibitem{Ryan 1998}Ryan, C., Collins, J. J., \& Neill, M. O. Grammatical
+\bibitem{Ryan 1998}
+Ryan, C., Collins, J. J., \& Neill, M. O. Grammatical
 evolution: Evolving programs for an arbitrary language. In European
 conference on genetic programming 1998. (pp. 83-96). Berlin, Heidelberg:
 Springer (1998, April) Berlin Heidelberg.
 
-\bibitem{Neill 1999}O\textquoteright Neill, M., \& Ryan, C.. Evolving
+\bibitem{Neill 1999}
+O\textquoteright Neill, M., \& Ryan, C.. Evolving
 multi-line compilable C programs. In European Conference on Genetic
 Programming 1999. (pp. 83-92). Berlin, Heidelberg: Springer (1999,
 May) Berlin Heidelberg.
 
-\bibitem{Brabazon 2006}Brabazon, A., \& O'Neill, M. Credit classification
+\bibitem{Brabazon 2006}
+Brabazon, A., \& O'Neill, M. Credit classification
 using grammatical evolution. Informatica, 2006. 30(3).
 
-\bibitem{Sen 2009}Sen, S., \& Clark, J. A. . A grammatical evolution
+\bibitem{Sen 2009}
+Sen, S., \& Clark, J. A. . A grammatical evolution
 approach to intrusion detection on mobile ad hoc networks. In Proceedings
 of the second ACM conference on Wireless network security2009. (pp.
 95-102). (2009, March).
 
-\bibitem{Chen 2008}Chen, L., Tan, C. H., Kao, S. J., \& Wang, T.
+\bibitem{Chen 2008}
+Chen, L., Tan, C. H., Kao, S. J., \& Wang, T.
 S. Improvement of remote monitoring on water quality in a subtropical
 reservoir by incorporating grammatical evolution with parallel genetic
 algorithms into satellite imagery. Water Research, 2008. 42(1-2),
 296-306.
 
-\bibitem{Hidalgo 2014}Hidalgo, J. I., Colmenar, J. M., Risco-Martin,
+\bibitem{Hidalgo 2014}
+Hidalgo, J. I., Colmenar, J. M., Risco-Martin,
 J. L., Cuesta-Infante, A., Maqueda, E., Botella, M., \& Rubio, J.
 A. Modeling glycemia in humans by means of grammatical evolution.
 Applied Soft Computing, 2014. 20, 40-53.
 
-\bibitem{Tavares 2012}Tavares, J., \& Pereira, F. B. . Automatic
+\bibitem{Tavares 2012}
+Tavares, J., \& Pereira, F. B. . Automatic
 design of ant algorithms with grammatical evolution. In European conference
 on genetic programming 2012. (pp. 206-217). Berlin, Heidelberg: Springer
 (2012, April) Berlin Heidelberg.
 
-\bibitem{Zapater 2016}Zapater, M., Risco-Martín, J. L., Arroba, P.,
+\bibitem{Zapater 2016}
+Zapater, M., Risco-Martín, J. L., Arroba, P.,
 Ayala, J. L., Moya, J. M., \& Hermida, R. Runtime data center temperature
 prediction using grammatical evolution techniques. Applied Soft Computing,
 2016. 49, 94-107.
 
-\bibitem{Ryan 1998-1}Ryan, C., O\textquoteright Neill, M., \& Collins,
+\bibitem{Ryan 1998-1}
+Ryan, C., O\textquoteright Neill, M., \& Collins,
 J. J. Grammatical evolution: Solving trigonometric identities. In
 proceedings of Mendel 1998. (Vol. 98, p. 4th). Brno, Czech Republic:
 Technical University of Brno, (1998, June) Faculty of Mechanical Engineering.
 
-\bibitem{de la Puente 2002}de la Puente, A. O., Alfonso, R. S., \&
+\bibitem{de la Puente 2002}
+de la Puente, A. O., Alfonso, R. S., \&
 Moreno, M. A. Automatic composition of music by means of grammatical
 evolution. In Proceedings of the 2002 conference on APL: array processing
 languages: lore, problems, and applications 2002. (pp. 148-155).
 
-\bibitem{De Campos 2016}De Campos, L. M. L., de Oliveira, R. C. L.,
+\bibitem{De Campos 2016}
+De Campos, L. M. L., de Oliveira, R. C. L.,
 \& Roisenberg, M. Optimization of neural networks through grammatical
 evolution and a genetic algorithm. Expert Systems with Applications,
 2016. 56, 368-384.
 
-\bibitem{Soltanian 2022}Soltanian, K., Ebnenasir, A., \& Afsharchi,
+\bibitem{Soltanian 2022}
+Soltanian, K., Ebnenasir, A., \& Afsharchi,
 M. Modular grammatical evolution for the generation of artificial
 neural networks. Evolutionary computation, 2022. 30(2), 291-327
 
-\bibitem{Dempsey 2007}Dempsey, I., O'Neill, M., \& Brabazon, A. Constant
+\bibitem{Dempsey 2007}
+Dempsey, I., O'Neill, M., \& Brabazon, A. Constant
 creation in grammatical evolution. International Journal of Innovative
 Computing and Applications, 2007. 1(1), 23-38.
 
-\bibitem{Galv=0000E1n-L=0000F3pez 2010}Galvan-Lopez, E., Swafford,
+\bibitem{Galv=0000E1n-L=0000F3pez 2010}
+Galvan-Lopez, E., Swafford,
 J. M., O\textquoteright Neill, M., \& Brabazon, A. Evolving a ms.
 pacman controller using grammatical evolution. In European Conference
 on the Applications of Evolutionary Computation 2010 (pp. 161-170).
 Berlin, Heidelberg: Springer (2010, April). Berlin Heidelberg.
 
-\bibitem{Shaker 2012}Shaker, N., Nicolau, M., Yannakakis, G. N.,
+\bibitem{Shaker 2012}
+Shaker, N., Nicolau, M., Yannakakis, G. N.,
 Togelius, J., \& O'neill, M. Evolving levels for super mario bros
 using grammatical evolution. In 2012 IEEE Conference on Computational
 Intelligence and Games (CIG) (pp. 304-311).(2012, September). IEEE.
 
-\bibitem{Mart=0000EDnez=002010Rodr=0000EDguez 2020}Martínez-Rodriguez,
+\bibitem{Mart=0000EDnez=002010Rodr=0000EDguez 2020}
+Martínez-Rodriguez,
 D., Colmenar, J. M., Hidalgo, J. I., Villanueva Mico, R. J., and Salcedo-Sanz,
 S. Particle swarm grammatical evolution for energy demand estimation.
 Energy Science and Engineering, 2020. 8(4), 1068-1079.
 
-\bibitem{Sabar 2013}Sabar, N. R., Ayob, M., Kendall, G., \& Qu, R.
+\bibitem{Sabar 2013}
+Sabar, N. R., Ayob, M., Kendall, G., \& Qu, R.
 Grammatical evolution hyper-heuristic for combinatorial optimization
 problems. IEEE Transactions on Evolutionary Computation, 2013. 17(6),
 840-861.
 
-\bibitem{Ryan 2022}Ryan, C., Kshirsagar, M., Vaidya, G., Cunningham,
+\bibitem{Ryan 2022}
+Ryan, C., Kshirsagar, M., Vaidya, G., Cunningham,
 A., \& Sivaraman, R. Design of a cryptographically secure pseudo random
 number generator with grammatical evolution. Scientific reports, 2022.
 12(1), 8602.
 
-\bibitem{Pereira 2021}Pereira, P. J., Cortez, P., \& Mendes, R. Multi-objective
+\bibitem{Pereira 2021}
+Pereira, P. J., Cortez, P., \& Mendes, R. Multi-objective
 grammatical evolution of decision trees for mobile marketing user
 conversion prediction. Expert Systems with Applications,2021. 168,
 114287.
 
-\bibitem{Castej=0000F3n 2018}Castejon, F., \& Carmona, E. J. Automatic
+\bibitem{Castej=0000F3n 2018}
+Castejon, F., \& Carmona, E. J. Automatic
 design of analog electronic circuits using grammatical evolution.
 Applied Soft Computing, 2018. 62, 1003-1018.
 
-\bibitem{EM-DATA}EM-DATA. The International Disaster Database. Emergency
+
+\bibitem{EM-DATA}
+EM-DATA. The International Disaster Database. Emergency
 Events Database. {[}accessed on 9 November 2025{]}. Available from:
 \url{https://www.emdat.be/}
 
-\bibitem{Tsoulos 2020} Tsoulos, I.G. Creating classification rules
+\bibitem{Visual Crossing}
+ Historical Weather Data. {[accessed on 13 December{]}. 
+	Available from \url{https://www.visualcrossing.com/}
+
+\bibitem{Tsoulos 2020}
+ Tsoulos, I.G. Creating classification rules
 using grammatical evolution. Int. J. Comput. Intell. Stud. 2020, 9,
 161--171.
 
-\bibitem{Anastasopoulos 2021}Anastasopoulos, N.; Tsoulos, I.G.; Tzallas,
+\bibitem{Anastasopoulos 2021}
+Anastasopoulos, N.; Tsoulos, I.G.; Tzallas,
 A. GenClass: A parallel tool for data classification based on Grammatical
 Evolution. SoftwareX 2021, 16, 100830.
 
-\bibitem{Poli 1998}Poli, R., \& Langdon, W. B. Genetic programming
+\bibitem{GitHub}
+GEN CLASS. {[accessed on 18 April 2026{]}.
+	Available from \url{https://github.com/itsoulos/GenClass/}
+
+\bibitem{Poli 1998}
+Poli, R., \& Langdon, W. B. Genetic programming
 with one-point crossover 1998. (pp. 180-189). Springer London
 
-\bibitem{Tsoulos 2025}Tsoulos, I. G., Charilogis, V., Kyrou, G.,
+\bibitem{Tsoulos 2025}
+Tsoulos, I. G., Charilogis, V., Kyrou, G.,
 Stavrou, V. N., \& Tzallas, A. OPTIMUS: A Multidimensional Global
 Optimization Package. Journal of Open Source Software, 2025. 10(108),
-7584.
+7584. Available from \url{https://github.com/itsoulos/GlobalOptimus/}
 
-\bibitem{M.J.D Powell 1989}M.J.D Powell, A Tolerant Algorithm for
+\bibitem{M.J.D Powell 1989}
+M.J.D Powell, A Tolerant Algorithm for
 Linearly Constrained Optimization Calculations, Mathematical Programming
 \textbf{45}, pp. 547-566, 1989.
 
-\bibitem{J. Park 1991}J. Park and I. W. Sandberg, Universal Approximation
+\bibitem{J. Park 1991}
+J. Park and I. W. Sandberg, Universal Approximation
 Using Radial-Basis-Function Networks, Neural Computation \textbf{3},
 pp. 246-257, 1991.
 
-\bibitem{G.A. Montazer 2018}G.A. Montazer, D. Giveki, M. Karami,
+\bibitem{G.A. Montazer 2018}
+G.A. Montazer, D. Giveki, M. Karami,
 H. Rastegar, Radial basis function neural networks: A review. Comput.
 Rev. J \textbf{1}, pp. 52-74, 2018.
 
-\bibitem{Chang 2011}Chang, C. C., \& Lin, C. J. LIBSVM: A library
+\bibitem{Chang 2011}
+Chang, C. C., \& Lin, C. J. LIBSVM: A library
 for support vector machines. ACM transactions on intelligent systems
 and technology, 2011. (TIST), 2(3), 1-27.
 
-\bibitem{Tsoulos 2008}Tsoulos, I., Gavrilis, D., \& Glavas, E. Neural
+\bibitem{Tsoulos 2008}
+Tsoulos, I., Gavrilis, D., \& Glavas, E. Neural
 network construction and training using grammatical evolution. Neurocomputing,
 2008. 72(1-3), 269-277.
 
-\bibitem{Eiben 1999}Eiben, A. E., Hinterding, R., \&amp; Michalewicz,
+\bibitem{Eiben 1999}
+Eiben, A. E., Hinterding, R., \&amp; Michalewicz,
 Z. Parameter control in evolutionary algorithms. IEEE Transactions
 on Evolutionary Computation, 1999. 3(2), 124--141.
 
-\bibitem{De Jong 2007}De Jong, K. A. Parameter setting in EAs: A
+\bibitem{De Jong 2007}
+De Jong, K. A. Parameter setting in EAs: A
 30 year perspective. In F. G. Lobo, C. F. Lima, \&amp; Z. Michalewicz
 (Eds.), Parameter Setting in Evolutionary Algorithms2007. (pp. 1--18).
 Springer.
 
-\bibitem{Sipper 2018}Sipper, M., Fu, W., Ahuja, K., \&amp; Moore,
+\bibitem{Sipper 2018}
+Sipper, M., Fu, W., Ahuja, K., \&amp; Moore,
 J. H. Investigating the parameter space of evolutionary algorithms.
 BioData Mining, 2018. 11, 2.
 
-\bibitem{O=002019Neill 2018}O\textquoteright Neill, M., Brabazon,
+\bibitem{O=002019Neill 2018}
+O\textquoteright Neill, M., Brabazon,
 A., Nicolau, M., McGarraghy, S., \&amp; Keenan, P. (Eds.). The Handbook
 of Grammatical Evolution. 2018. Springer.
 
-\bibitem{Mills 2014}Mills, K. L., Filliben, J. J., \&amp; Haines,
+\bibitem{Mills 2014}
+Mills, K. L., Filliben, J. J., \&amp; Haines,
 A. Determining relative importance and best settings for genetic algorithm
 control parameters. Evolutionary Computation, 2014. 23(2), 309--342.
 
-\end{thebibliography}
+}}\end{thebibliography}
 
 
 
