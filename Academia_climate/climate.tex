@@ -50,10 +50,10 @@ University of Ioannina, Greece. }
 \section*{Abstract}
 Climate change is no longer a distant or hypothetical concern, but
 it has become an immediate reality with tangible consequences and
-impacts on the the planet and on all living organisms within its ecosystems.
-Since 1969, the global surface temperature have been breaking previous
+impacts on  the planet and on all living organisms within its ecosystems.
+Since 1969, the global surface temperature has been breaking previous
 records almost annually, with NASA\textquoteright s final measurement
-for 2024 indicating an increase of approximately 2.65  Fahrenheit degrees
+for 2024, indicating an increase of approximately 2.65  degrees Fahrenheit
 or 1.47 Celsius, in global temperature. These findings indicate that
 we have reached the critical thresholds established by the United
 Nations, the scientific community, and member states through the Paris
@@ -62,7 +62,7 @@ a comprehensive understanding of climate change, and more specifically
 of its environmental impacts across seven regions located in different
 climatic zones. Significant emphasis is placed on highlighting the
 rate at which climate change has altered annual temperature patterns
-during the period 1995--2025 across Congo region, Saudi Arabia, Greece,
+during the period 1995--2025 across the Congo region, Saudi Arabia, Greece,
 Turkey, Reykjavik in Iceland, the Arctic Archipelago of Svalbard,
 and Cape Town in South Africa. To achieve this, we evaluated multiple
 modeling techniques and proposed the use of Grammatical Evolution
@@ -83,7 +83,7 @@ Climate Change.}
 
 The power of nature and its capacity to respond when ecological balances
 are disrupted has long been recognized. A striking early example appears
-in The Persians by Aeschylus, a classical tragedy written in 472 BCE
+in  Persians by Aeschylus, a classical tragedy written in 472 BCE
 that recounts the historical events of 480 BCE \textit{\cite{Aeschylus,Aeschylus-1}}.
 The play depicts the environmental and human catastrophes that afflicted
 the Persian army during its chaotic retreat, following acts that violated
@@ -198,7 +198,7 @@ Vortex States by combining a response guided community detection approach
 with a causal discovery algorithm \textit{\cite{Kretschmer 2017}}.
 Kambezidis et al., in 2021, analyzed future thermal sensation in Greece
 \textit{\cite{Kambezidis 2021}.} Lindsay et al., in 2025, highlighted
-the world rising temperature\textit{\cite{Lindsey 2025}}. Mansfield
+the world's rising temperature\textit{\cite{Lindsey 2025}}. Mansfield
 et al., in 2020, introduced a machine learning approach that leverages
 a unique dataset of existing climate model simulations to identify
 relationships between short-term and long-term temperature responses
@@ -240,6 +240,10 @@ combinatorial optimization\textit{\cite{Sabar 2013},} cryptography
 problems\textit{\cite{Ryan 2022},} construction of decision trees\textit{\cite{Pereira 2021},}
 electronic problems\textit{\cite{Castej=0000F3n 2018} }etc.
 
+
+The motivation for this research stems from the well- established fact that climate change affects the sustainability of our planet through its harmful impacts and the intensification of natural-disaster phenomena, as discussed in the studies referenced above. Beyond this, our objective was twofold: first, to examine the progression of climate change through direct statistical analysis, and second, to assess the current stage relative to internationally established climate targets and present our findings accordingly.
+The most effective and comprehensible way to achieve this was to begin with a separate statistical analysis for each region of interest, which formed the basis for defining the two temperature-increase classes. The definition of these two classes serves a dual purpose: on the one hand, it balances the dataset, and on the other, it aligns with the climate thresholds set by international environmental institutions.
+
 This paper proposes the application of a technique for automatically
 generating classification rules to predict climate change classes
 in various regions of our planet. These rules are expressed in a C
@@ -264,13 +268,13 @@ as the machine learning techniques used in the experiments performed
 will be provided.
 
 \subsection{\textmd{Impacts of Climate Change in Natural Disasters}}
-In order to present the impacts of climate change in natural disasters,
+In order to present the impacts of climate change on natural disasters,
 visual representations of the planet\textquoteright s average temperature
 are provided for the years 1881, 1995, and 2024. Visualization is
 from NASA Goddard's Scientific Visualization Studio \cite{NASA 2024}. 
 as seen in Figure
 \ref{fig:NASA-Global-Temperature-1881}.
-At this point, it should be noted that the purpose of this figure is primarily illustrative and informational with respect to climate change, Specifically the global increase in temperature. The figure depicts the rapid rise in Earth's temperature following the Industrial Revolution, in order to make it cleared that the planet has been gradually warming over time.
+At this point, it should be noted that the purpose of this figure is primarily illustrative and informational with respect to climate change, specifically the global increase in temperature. The figure depicts the rapid rise in Earth's temperature following the Industrial Revolution, in order to make it clear that the planet has been gradually warming over time.
 
 
 \textquotedblleft This color-coded map shows changing global surface
@@ -291,8 +295,8 @@ in blue\textquotedblright .
 \includegraphics{2024-300dpi}\caption{Global Temperature 2024\label{fig:NASA-Global-Temperature-2024}}
 \end{figure}
 
-The 1.5\textdegree C target is highly ambitious and is likely to have been surpassed
-by 2025, nevertheless, it remains significant as a benchmark for minimizing,
+The 1.5\textdegree C target is highly ambitious and is likely to  be surpassed
+by 2025. Nevertheless, it remains significant as a benchmark for minimizing,
 to the greatest extent possible, the impacts of natural disasters
 that are exacerbated by climate change. Subsequently, we will present
 numerical evidence illustrating how major natural disasters have become
@@ -383,7 +387,7 @@ fires, floods, landslides, extreme temperatures, earthquakes and storms.
 \subsection{\textmd{The Dataset Employed }}
 \vspace{-4em}
 In this study, we utilized Historical Weather Data provided by Visual
-Crossing \cite{Visual Crossing},with last accessed on
+Crossing \cite{Visual Crossing}, last accessed on
 13 December 2025, which aggregates information from multiple authoritative
 sources, including national meteorological services, global climate
 models, and satellite observations. Specifically, the data originate 
@@ -420,7 +424,7 @@ structure \tabref{Table-2-structure-columns}, 30+ years of data per
 region, and multiple climate zones, such as: Mediterranean (Greece
 \& Turkey), Arctic (Iceland Reykjavik \& Svalbard), Desert (Saudi
 Arabia), Tropical (Congo), Temperate (Cape Town). The differences
-in the number of data entries are due to gaps (missing values) present
+in the number of data entries  due to gaps (missing values) present
 in the records obtained from Visual Crossing, which did not affect
 our results.
 
@@ -568,6 +572,9 @@ relative to this baseline were assigned to Class 0,
 whereas temperatures exceeding the baseline by more than 1.1 
 were assigned to Class 1 \tabref{Table-4-Region-Baseline-Class}.
 
+ The formulation of the problem may appear simplified through the use of a binary classification scheme. However, this choice is directly aligned with the central issues of climate change, particularly global temperature increase. In recent years, major environmental institutions and international climate agreements (as discussed in  Introduction) have repeatedly emphasized the critical need for countries to limit global warming and prevent the mean temperature rise from exceeding 1.5\textsuperscript{o}C.
+Therefore, adopting a binary classification framework is intentional and scientifically meaningful. While a difference of one degree may seem small from a numerical perspective, it represents a substantial and highly consequential threshold for planetary sustainability. In this context, the classification captures a climate - critical distinction rather than a trivial fluctuation.
+
 The definition of the two classes was based on the environmental considerations
 discussed in our introduction, aligned with the Paris Agreement and
 the 1.5\textdegree C climate target, as well as on our data-driven analyses
@@ -612,7 +619,9 @@ a reference point unaffected by the extreme temperature fluctuations
 associated with climate change, given that our dataset spans from
 1995 to 2025. This approach ensured that the classification was grounded
 in a stable climatic baseline, thereby enhancing the reliability of
-subsequent analyses.
+subsequent analysis.
+Finally, we note that regarding temporal leakage, we clarify that the class labels were generated manually using historical temperature data only, and no future information was used at any stage of preprocessing. At the same time, we note in the final part of the conclusions section the relevant limitations concerning the need for time - series - aware evaluation strategies.
+
 
 \subsection{\textmd{The proposed method\label{subsec:The-proposed-method}}}
 
@@ -634,7 +643,7 @@ The objective of the proposed method is to achieve high-accuracy classification
 of daily climate observations into temperature-change categories,
 while preserving interpretability through explicit rules.
 
-At this point, before proceeding to the detailed description of the procedures, we provide a two part summary of our study. The first part of our work involved the statistical analysis of the dataset, which produced the temperature increase percentages for the regions of interest and enabled the definition of two classes. The second and main part of the current study focuces on validating these results using various machine - learning techniques.
+At this point, before proceeding to the detailed description of the procedures, we provide a two - part summary of our study. The first part of our work involved the statistical analysis of the dataset, which produced the temperature increase percentages for the regions of interest and enabled the definition of two classes. The second and main part of the current study focuses on validating these results using various machine - learning techniques.
 
 The two classes (0, 1) were not generated by the Genetic Algorithm. They were defined by us prior to the experiments, using explicit temperature baselines:
 \begin{itemize}
@@ -642,7 +651,7 @@ The two classes (0, 1) were not generated by the Genetic Algorithm. They were de
 	\item Class 1: increase above 1.1\textsuperscript{o}C
 	\end{itemize}
 
-These initial steps were performed manually in Excel before converting the dataset to CSV. The data were then transformed into a format compatible with the Optimus/GENCLASS framework, as described in current section. 
+These initial steps were performed manually in Excel before converting the dataset to CSV. The data were then transformed into a format compatible with the Optimus/GENCLASS framework, as described in the current section.
 Therefore, the Genetic Algorithm does not operate as a black box: its fitness function evaluates how well the evolved rules classify these scientifically defined categories based on the meteorological parameters.
 
 Grammatical Evolution produces concrete if-then programs over the available features,
@@ -664,7 +673,7 @@ more flexible and faster in decision-making, even when dealing with
 large datasets. Moreover, since it relies solely on the essential
 information for rule generation, it may exhibit better generalization
 capabilities compared to other machine learning models. The underlying
-grammar for this method is provided in Figure \figref{The-underlying-grammar-method}.
+grammar for this method is provided in Figure \figref{The-underlying-grammar-method}. In this grammar the constant $D$ has the value $D=30$ since the number of features for the used data is set 30, as shown in Table \ref{tab:Table-2-structure-columns}. For example, the variable X2 encodes the minimum temperature etc.
 \begin{figure}[H]
 	\centering
 \includegraphics[scale=0.80]{grammar_method(fig4)}
@@ -701,7 +710,7 @@ f_{i}=\sum_{j=1}^{M}\left(G_{i}\left(x_{j}\right)-t_{j}\right)^{2}
 \end{equation}
 The set $T=\left\{ \left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right),\ldots,\left(x_{M},t_{M}\right)\right\} $denotes
 the training set of the objective problem, where the vectors$x_{i}$
-stand for the input patterns and each value ti represents the actual
+stand for the input patterns and each value $t_{i}$ represents the actual
 output for pattern $x_{i}$. The proposed method in practice uses
 the mean classification error on the training set as the fitness measure,
 since the output of the produced model is one of the available categories
@@ -775,13 +784,15 @@ The overall procedure is graphically outlined in \figref{The-flowchart-of-1}.
 
 \clearpage
 \section{Results\label{sec:Results}}
-The software used in the experiments were coded in C++ programming
+The software used in the experiments was coded in C++ programming
 language and the freely available software Optimus \textit{\cite{Tsoulos 2025},}
  with last accessed on 25 December 2025, was incorporated for the optimization methods.
 The experimental results were validated using the ten - fold cross
 validation procedure and all the experiments were executed on a Debian
 Linux machine with 128GB of ram. The values for the experimental parameters
-are outlined in Table \ref{tabTable-5-:Experimental-settings} .
+are outlined in Table \ref{tabTable-5-:Experimental-settings}.\\
+At this point, before proceeding to the detailed description, we outline clarifications concerning the validation strategy of the results.  The validation process begins with the use of historical, day by day climate observations from 1995 to 2025. Each time step corresponds to a single day, and the class label (0 or 1) was assigned solely on the basis of each day mean temperature. This ensures that the class procedure relies strictly on past information, and therefore no temporal leakage occurs during preprocessing.
+Subsequently, the defined classes were validated using machine learning algorithms and the GENCLASS evolutionary framework. Nevertheless, as also noted Conclusions section, we acknowledge that random cross validation does not explicitly preserve temporal ordering and may introduce limitations when dealing with time dependent climate data. For this reason, we explicitly highlight the need for time-series-aware evaluation protocols as an important consideration for future extensions of this work.
 
 \begin{table}[H]
 	\centering
