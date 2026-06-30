@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.6.14)  17 JUN 2026 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.6.12)  29 JUN 2026 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -604,7 +604,7 @@ Underfull \vbox (badness 5548) has occurred while \output is active []
 
 
 
-[3]
+[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -616,17 +616,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--291
 
  []
 
-<1881-300dpi.png, id=195, 240.9pt x 141.1674pt>
+<1881-300dpi.png, id=199, 240.9pt x 141.1674pt>
 File: 1881-300dpi.png Graphic file (type png)
 <use 1881-300dpi.png>
 Package pdftex.def Info: 1881-300dpi.png  used on input line 294.
 (pdftex.def)             Requested size: 240.8994pt x 141.16704pt.
-<1995-300dpi.png, id=196, 407.121pt x 240.9pt>
+<1995-300dpi.png, id=200, 407.121pt x 240.9pt>
 File: 1995-300dpi.png Graphic file (type png)
 <use 1995-300dpi.png>
 Package pdftex.def Info: 1995-300dpi.png  used on input line 302.
 (pdftex.def)             Requested size: 407.12001pt x 240.8994pt.
-<2024-300dpi.png, id=197, 410.0118pt x 240.9pt>
+<2024-300dpi.png, id=201, 410.0118pt x 240.9pt>
 File: 2024-300dpi.png Graphic file (type png)
 <use 2024-300dpi.png>
 Package pdftex.def Info: 2024-300dpi.png  used on input line 307.
@@ -690,9 +690,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
                                                   \__shipout_drop_firstpage_...
 l.541 
       ]
-Underfull \vbox (badness 1117) has occurred while \output is active []
-
-
 
 [11
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
@@ -719,7 +716,7 @@ Overfull \hbox (3.55951pt too wide) in paragraph at lines 681--693
 exist (e.g., LSTM/CDLSTM),
  []
 
-<grammar_method(fig4).jpg, id=249, 597.73312pt x 845.1575pt>
+<grammar_method(fig4).jpg, id=253, 597.73312pt x 845.1575pt>
 File: grammar_method(fig4).jpg Graphic file (type jpg)
 <use grammar_method(fig4).jpg>
 Package pdftex.def Info: grammar_method(fig4).jpg  used on input line 705.
@@ -727,13 +724,8 @@ Package pdftex.def Info: grammar_method(fig4).jpg  used on input line 705.
 
 
 [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[14]
-
-[15
+[14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -741,15 +733,15 @@ s been already used, duplicate ignored
 l.709 \clearpage
                  <./grammar_method(fig4).jpg>]
 
-[16
+[15
 
 ]
-<crossover(fig5).jpg, id=287, 586.1097pt x 180.675pt>
+<crossover(fig5).jpg, id=286, 586.1097pt x 180.675pt>
 File: crossover(fig5).jpg Graphic file (type jpg)
 <use crossover(fig5).jpg>
 Package pdftex.def Info: crossover(fig5).jpg  used on input line 770.
 (pdftex.def)             Requested size: 322.36133pt x 99.37154pt.
-<mutation_flowchart.jpg, id=289, 294.8616pt x 557.2017pt>
+<mutation_flowchart.jpg, id=288, 294.8616pt x 557.2017pt>
 File: mutation_flowchart.jpg Graphic file (type jpg)
 <use mutation_flowchart.jpg>
 Package pdftex.def Info: mutation_flowchart.jpg  used on input line 781.
@@ -759,7 +751,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[17
+[16
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
@@ -769,21 +761,21 @@ s been already used, duplicate ignored
 l.785 
        <./crossover(fig5).jpg>]
 
-[18
+[17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.806 \end{enumerate}\clearpage
                                 <./mutation_flowchart.jpg>]
-<genclass_flowchart(fig7).jpg, id=312, 251.4996pt x 954.6867pt>
+<genclass_flowchart(fig7).jpg, id=311, 251.4996pt x 954.6867pt>
 File: genclass_flowchart(fig7).jpg Graphic file (type jpg)
 <use genclass_flowchart(fig7).jpg>
 Package pdftex.def Info: genclass_flowchart(fig7).jpg  used on input line 809.
 (pdftex.def)             Requested size: 150.90091pt x 572.81644pt.
 
 
-[19
+[18
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
@@ -793,15 +785,15 @@ s been already used, duplicate ignored
 l.815 \clearpage
                  <./genclass_flowchart(fig7).jpg>]
 
-[20
+[19
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.866 \item T
-             he column NNC stands for the usage of the Neural Network Constr...
+l.870 \item T
+             he column XGBOOST denotes the usage of the gradient boost techn...
 ]
 Overfull \hbox (39.03311pt too wide) in paragraph at lines 959--1003
  [][] 
@@ -809,13 +801,13 @@ Overfull \hbox (39.03311pt too wide) in paragraph at lines 959--1003
 
 
 
-[21]
+[20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[22]
-<stat-tbl3.jpg, id=371, 240.9pt x 212.2329pt>
+[21]
+<stat-tbl3.jpg, id=370, 240.9pt x 212.2329pt>
 File: stat-tbl3.jpg Graphic file (type jpg)
 <use stat-tbl3.jpg>
 Package pdftex.def Info: stat-tbl3.jpg  used on input line 1011.
@@ -825,7 +817,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[23
+[22
 pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -833,26 +825,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
 l.1017 
        ]
 
-[24
+[23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1051 
         <./stat-tbl3.jpg>]
-<precisionAndRecall.jpg, id=385, 240.9pt x 232.9503pt>
+<precisionAndRecall.jpg, id=384, 240.9pt x 232.9503pt>
 File: precisionAndRecall.jpg Graphic file (type jpg)
 <use precisionAndRecall.jpg>
 Package pdftex.def Info: precisionAndRecall.jpg  used on input line 1054.
 (pdftex.def)             Requested size: 313.16995pt x 302.83534pt.
-<plot_kongo.jpg, id=387, 481.8pt x 361.35pt>
+<plot_kongo.jpg, id=386, 481.8pt x 361.35pt>
 File: plot_kongo.jpg Graphic file (type jpg)
 <use plot_kongo.jpg>
 Package pdftex.def Info: plot_kongo.jpg  used on input line 1066.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 
 
-[25
+[24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -865,22 +857,22 @@ as been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.1070 \clearpage
                   <./precisionAndRecall.jpg> <./plot_kongo.jpg>]
-<iceland_roc.jpg, id=396, 240.9pt x 178.9887pt>
+<iceland_roc.jpg, id=394, 240.9pt x 178.9887pt>
 File: iceland_roc.jpg Graphic file (type jpg)
 <use iceland_roc.jpg>
 Package pdftex.def Info: iceland_roc.jpg  used on input line 1076.
 (pdftex.def)             Requested size: 240.8994pt x 178.98824pt.
-<arabia_roc.jpg, id=397, 240.9pt x 178.9887pt>
+<arabia_roc.jpg, id=395, 240.9pt x 178.9887pt>
 File: arabia_roc.jpg Graphic file (type jpg)
 <use arabia_roc.jpg>
 Package pdftex.def Info: arabia_roc.jpg  used on input line 1077.
 (pdftex.def)             Requested size: 240.8994pt x 178.98824pt.
-<svalbard_roc.jpg, id=398, 240.9pt x 179.2296pt>
+<svalbard_roc.jpg, id=396, 240.9pt x 179.2296pt>
 File: svalbard_roc.jpg Graphic file (type jpg)
 <use svalbard_roc.jpg>
 Package pdftex.def Info: svalbard_roc.jpg  used on input line 1078.
 (pdftex.def)             Requested size: 240.8994pt x 179.22914pt.
-<turkey_roc.jpg, id=399, 240.9pt x 180.1932pt>
+<turkey_roc.jpg, id=397, 240.9pt x 180.1932pt>
 File: turkey_roc.jpg Graphic file (type jpg)
 <use turkey_roc.jpg>
 Package pdftex.def Info: turkey_roc.jpg  used on input line 1079.
@@ -895,22 +887,22 @@ Overfull \hbox (26.90201pt too wide) in paragraph at lines 1076--1080
 [] [] 
  []
 
-<iceland_pr.jpg, id=400, 240.9pt x 177.7842pt>
+<iceland_pr.jpg, id=398, 240.9pt x 177.7842pt>
 File: iceland_pr.jpg Graphic file (type jpg)
 <use iceland_pr.jpg>
 Package pdftex.def Info: iceland_pr.jpg  used on input line 1086.
 (pdftex.def)             Requested size: 240.8994pt x 177.78374pt.
-<arabia_pr.jpg, id=401, 240.9pt x 178.5069pt>
+<arabia_pr.jpg, id=399, 240.9pt x 178.5069pt>
 File: arabia_pr.jpg Graphic file (type jpg)
 <use arabia_pr.jpg>
 Package pdftex.def Info: arabia_pr.jpg  used on input line 1087.
 (pdftex.def)             Requested size: 240.8994pt x 178.50644pt.
-<svalbard_pr.jpg, id=402, 240.9pt x 178.9887pt>
+<svalbard_pr.jpg, id=400, 240.9pt x 178.9887pt>
 File: svalbard_pr.jpg Graphic file (type jpg)
 <use svalbard_pr.jpg>
 Package pdftex.def Info: svalbard_pr.jpg  used on input line 1088.
 (pdftex.def)             Requested size: 240.8994pt x 178.98824pt.
-<turkey_pr.jpg, id=403, 240.9pt x 178.5069pt>
+<turkey_pr.jpg, id=401, 240.9pt x 178.5069pt>
 File: turkey_pr.jpg Graphic file (type jpg)
 <use turkey_pr.jpg>
 Package pdftex.def Info: turkey_pr.jpg  used on input line 1089.
@@ -930,7 +922,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[26
+[25
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
@@ -944,7 +936,7 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 1106.
 
 
-[27
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -953,7 +945,7 @@ l.1129 \clearpage
                   <./iceland_pr.jpg> <./arabia_pr.jpg> <./svalbard_pr.jpg> <./t
 urkey_pr.jpg>]
 
-[28
+[27
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
@@ -962,14 +954,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
                                                   \__shipout_drop_firstpage_...
 l.1189 \clearpage
                  ]
-<stat_tbl7.jpg, id=424, 505.89pt x 486.1362pt>
+<stat_tbl7.jpg, id=423, 505.89pt x 486.1362pt>
 File: stat_tbl7.jpg Graphic file (type jpg)
 <use stat_tbl7.jpg>
 Package pdftex.def Info: stat_tbl7.jpg  used on input line 1211.
 (pdftex.def)             Requested size: 404.71254pt x 388.90948pt.
 
 
-[29
+[28
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
@@ -978,14 +970,14 @@ as been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.1218 \clearpage
                   <./stat_tbl7.jpg>]
-<exectime.jpg, id=431, 240.9pt x 121.4136pt>
+<exectime.jpg, id=430, 240.9pt x 121.4136pt>
 File: exectime.jpg Graphic file (type jpg)
 <use exectime.jpg>
 Package pdftex.def Info: exectime.jpg  used on input line 1225.
 (pdftex.def)             Requested size: 409.52823pt x 206.40224pt.
 
 
-[30
+[29
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
@@ -995,7 +987,7 @@ as been already used, duplicate ignored
 l.1231 \clearpage
                   <./exectime.jpg>]
 
-[31
+[30
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
@@ -1004,14 +996,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
                                                   \__shipout_drop_firstpage_...
 l.1298 \clearpage
                  ]
-<stat_tbl8.jpg, id=445, 505.89pt x 485.6544pt>
+<stat_tbl8.jpg, id=443, 505.89pt x 485.6544pt>
 File: stat_tbl8.jpg Graphic file (type jpg)
 <use stat_tbl8.jpg>
 Package pdftex.def Info: stat_tbl8.jpg  used on input line 1311.
 (pdftex.def)             Requested size: 404.71254pt x 388.52405pt.
 
 
-[32
+[31
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
@@ -1020,7 +1012,7 @@ as been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.1324 \clearpage
                   <./stat_tbl8.jpg>]
-<heatMap_RBFvsGENCLASS.jpg, id=453, 505.89pt x 485.6544pt>
+<heatMap_RBFvsGENCLASS.jpg, id=452, 505.89pt x 485.6544pt>
 File: heatMap_RBFvsGENCLASS.jpg Graphic file (type jpg)
 <use heatMap_RBFvsGENCLASS.jpg>
 Package pdftex.def Info: heatMap_RBFvsGENCLASS.jpg  used on input line 1407.
@@ -1030,7 +1022,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[33
+[32
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has
@@ -1039,21 +1031,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has
                                                   \__shipout_drop_firstpage_...
 l.1411 
        ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[34
+
+
+[33
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1413 \clearpage
-                  <./heatMap_RBFvsGENCLASS.jpg>]
-Underfull \hbox (badness 3019) in paragraph at lines 1449--1462
+l.1443 T
+        he results of this chronological split experiment show that GENCLASS...
+ <./heatMap_RBFvsGENCLASS.jpg>]
+
+[34
+pdfTeX warning (ext4): destination with the same identifier (name{table.10}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1448 \clearpage
+                 ]
+Underfull \hbox (badness 3019) in paragraph at lines 1484--1497
 \OT1/cmr/m/n/12 method-olog-i-cal cred-i-bil-ity of the pro-posed approach. Inc
 reas-ing the num-ber of
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 1463--1480
+Underfull \hbox (badness 3482) in paragraph at lines 1498--1515
 []\OT1/cmr/m/n/12 The param-e-ter sen-si-tiv-ity anal-y-sis indi-cates that inc
 reas-ing the num-ber of
  []
@@ -1070,31 +1074,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [36]
 
 [37]
-Underfull \hbox (badness 1442) in paragraph at lines 1574--1577
+Underfull \hbox (badness 1442) in paragraph at lines 1611--1614
 []\OT1/cmr/m/n/12 Aeschylus, 472 B.C. Per-sians. Richer Resources Pub-li-ca-tio
 ns, Arling-ton, Vir-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1590--1594
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1631
 []\OT1/cmr/m/n/12 United Nations Envi-ron-ment Pro-gramme. Num-ber of Wild-fire
 s to
  []
 
 
-Underfull \hbox (badness 8132) in paragraph at lines 1590--1594
+Underfull \hbox (badness 8132) in paragraph at lines 1627--1631
 \OT1/cmr/m/n/12 Rise by 50 per Cent by 2100 and Gov-ern-ments Are Not Pre-pared
 ,
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 1590--1594
+Underfull \hbox (badness 4229) in paragraph at lines 1627--1631
 \OT1/cmr/m/n/12 Experts Warn. 23 Febru-ary 2022. [accessed on 7 Nove-mer 2025].
  Avail-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1590--1594
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1631
 \OT1/cmr/m/n/12 able from: []$\OT1/cmtt/m/n/12 https : / / www . unep . org / n
 ews-[]and-[]stories / press-[]release /
  []
@@ -1102,7 +1106,7 @@ ews-[]and-[]stories / press-[]release /
 
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1693--1696
+Underfull \hbox (badness 10000) in paragraph at lines 1730--1733
 \OT1/cmr/m/n/12 able from:[]$\OT1/cmtt/m/n/12 https : / / www . climate . gov /
  news-[]features / understanding-[]climate /
  []
@@ -1123,38 +1127,37 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `climate.out' has not changed.
-(rerunfilecheck)             Checksum: F0705D1DA703972337FE67307F2969EC;2040.
+(rerunfilecheck)             Checksum: 81C6870D95397367CB425F694802D146;2196.
  ) 
 Here is how much of TeX's memory you used:
- 13123 strings out of 475102
- 201576 string characters out of 5764877
- 620523 words of memory out of 5000000
- 35730 multiletter control sequences out of 15000+600000
+ 13128 strings out of 475102
+ 201643 string characters out of 5764877
+ 620734 words of memory out of 5000000
+ 35732 multiletter control sequences out of 15000+600000
  571204 words of font info for 82 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  75i,12n,79p,768b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/sheridan/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.
-600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on climate.pdf (43 pages, 7199470 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm1200.pfb>
+Output written on climate.pdf (43 pages, 7202919 bytes).
 PDF statistics:
- 688 PDF objects out of 1000 (max. 8388607)
- 574 compressed objects within 6 object streams
- 194 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 686 PDF objects out of 1000 (max. 8388607)
+ 577 compressed objects within 6 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
