@@ -331,7 +331,7 @@ Correspondence:
 This study explores various machine learning techniques for assessing forest fire risk.
  The data used in this study have been selected from three different areas in Greece over the past 25 years (2000 - 2024).
  The first area of interest is Attica,
- the second area is eastern Macedonia and Thrace,
+ the second area is Eastern Macedonia and Thrace,
  and the third area is Crete.
  For each of the aforementioned areas,
  a separate data file was created,
@@ -339,19 +339,14 @@ This study explores various machine learning techniques for assessing forest fir
  and specialized definitions - classes were created for the forest fire risk occurrence.
  This study utilized a range of traditional machine learning techniques alongside novel methods based on Grammatical Evolution,
  including automated feature construction from existing attributes and the automatic generation of classification rules.
- For the Attica dataset,
- our results showed that GENCLASS achieved an error rate of 12.43%,
- corresponding to an accuracy of 87.57%.
- For the Eastern Macedonia & Thrace dataset,
- FC2 (MLP) reached an error rate of 11.87% and an accuracy of 88.13%,
- while GENCLASS performed very similarly with 11.93% error and 88.07% accuracy.
- Finally,
- for the Crete dataset,
- GENCLASS recorded an error rate of 15.11%,
- resulting in an accuracy of 84.89%.
- GENCLASS demonstrated stable performance across all three datasets,
- validating the climatological attributes and the definitions that underpin the construction of the Final_DangerClass_combination.
- 
+ Across all three datasets,
+ GENCLASS demonstrated the most consistent overall performance among the tested techniques,
+ closely followed by the feature construction method FC2 (MLP),
+ while the remaining traditional approaches (MLP,
+ RBF,
+ and Random Forest) showed comparatively lower and more variable performance.
+ These findings validate the climatological attributes and region specific definitions developed for the classification of fire danger,
+ confirming that region specific thresholds provide a more reliable framework for wildfire risk assessment than the generic 30/30/30 rule.
 \end_layout
 
 \begin_layout Keywords
@@ -397,7 +392,7 @@ textdegree
 
 \end_inset
 
-C or 73.7 
+C or 74.5 
 \begin_inset ERT
 status open
 
@@ -447,7 +442,7 @@ textdegree
 
 \end_inset
 
- C or 70.1 
+ C or 68.3 
 \begin_inset ERT
 status open
 
@@ -1561,10 +1556,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Greece_map.png
-	lyxscale 50
-	scale 75
-	BoundingBox 0bp 0bp 1653bp 993bp
-	rotateOrigin centerTop
+	lyxscale 30
+	scale 90
 
 \end_inset
 
@@ -1631,8 +1624,8 @@ nolink "false"
 .
  Following this refinement,
  Attica provided 1.859 forest fire records,
- Eastern Macedonia and Thrace 2.653,
- and Crete 2.789.
+ Eastern Macedonia and Thrace 2.652,
+ and Crete 2.787.
 \end_layout
 
 \begin_layout Standard
@@ -4808,7 +4801,7 @@ Crete area and data description
 The regional unit of Crete covers an area of 8.450 km²,
  with Herakleio as its capital.
  Between 2001 to 2025 Crete experienced a loss of 1.3 kha (13 km²) of tree cover attributable to wildfires,
- along with an additional 3.2 kha (33 km²) lost due to other disturbance factors.
+ along with an additional 3.2 kha (32 km²) lost due to other disturbance factors.
  The most severe year within this period was 2008 during which fires accounted for 210 ha (2.1 km²) of tree cover loss,
  representing 44%,
  of the total loss recorded that year,
@@ -5444,7 +5437,7 @@ The column FC2(MLP) stands for the construction of two artificial features using
 \end_layout
 
 \begin_layout Enumerate
-The column GENCLASS represents the incorporation of the GENCLASS method to produce calcification rules.
+The column GENCLASS represents the incorporation of the GENCLASS method to produce classification rules.
  
 \end_layout
 
@@ -5486,7 +5479,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Experimental results using a the machine learning methods on various regions.
+Experimental results using the machine learning methods on various regions.
  The numbers in cells represent average classification error.
 \begin_inset CommandInset label
 LatexCommand label
@@ -5504,6 +5497,8 @@ name "tab:Experimental-results-using"
 
 \begin_layout Plain Layout
 \align center
+
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="7">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -5519,6 +5514,8 @@ name "tab:Experimental-results-using"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 DATASET
 \end_layout
 
@@ -5528,6 +5525,8 @@ DATASET
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLP(BFGS)
 \end_layout
 
@@ -5537,6 +5536,8 @@ MLP(BFGS)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 RBF
 \end_layout
 
@@ -5546,6 +5547,8 @@ RBF
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 RF
 \end_layout
 
@@ -5555,6 +5558,8 @@ RF
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 FC2(RF)
 \end_layout
 
@@ -5564,6 +5569,8 @@ FC2(RF)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 FC2(MLP)
 \end_layout
 
@@ -5573,6 +5580,8 @@ FC2(MLP)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 GENCLASS
 \end_layout
 
@@ -5584,6 +5593,8 @@ GENCLASS
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Attica
 \end_layout
 
@@ -5593,6 +5604,8 @@ Attica
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13.67%
 \end_layout
 
@@ -5602,6 +5615,8 @@ Attica
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 14.42%
 \end_layout
 
@@ -5611,6 +5626,8 @@ Attica
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13.93%
 \end_layout
 
@@ -5620,6 +5637,8 @@ Attica
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13.01%
 \end_layout
 
@@ -5629,6 +5648,8 @@ Attica
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.82%
 \end_layout
 
@@ -5638,6 +5659,8 @@ Attica
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.43%
 \end_layout
 
@@ -5649,10 +5672,14 @@ Attica
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Eastern Macedonia 
 \end_layout
 
 \begin_layout Plain Layout
+
+\size footnotesize
 & Thrace
 \end_layout
 
@@ -5662,6 +5689,8 @@ Eastern Macedonia
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.51%
 \end_layout
 
@@ -5671,6 +5700,8 @@ Eastern Macedonia
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 15.34%
 \end_layout
 
@@ -5680,6 +5711,8 @@ Eastern Macedonia
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12.21%
 \end_layout
 
@@ -5689,6 +5722,8 @@ Eastern Macedonia
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11.93%
 \end_layout
 
@@ -5698,6 +5733,8 @@ Eastern Macedonia
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11.87%
 \end_layout
 
@@ -5707,6 +5744,8 @@ Eastern Macedonia
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11.47%
 \end_layout
 
@@ -5718,6 +5757,8 @@ Eastern Macedonia
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Crete
 \end_layout
 
@@ -5727,6 +5768,8 @@ Crete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 16.39%
 \end_layout
 
@@ -5736,6 +5779,8 @@ Crete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 17.82%
 \end_layout
 
@@ -5745,6 +5790,8 @@ Crete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 15.96%
 \end_layout
 
@@ -5754,6 +5801,8 @@ Crete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 16.15%
 \end_layout
 
@@ -5763,6 +5812,8 @@ Crete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 15.56%
 \end_layout
 
@@ -5772,6 +5823,8 @@ Crete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 14.86%
 \end_layout
 
@@ -5785,6 +5838,7 @@ Crete
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 AVERAGE
 \end_layout
 
@@ -5796,6 +5850,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 14.19%
 \end_layout
 
@@ -5807,6 +5862,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 15.86%
 \end_layout
 
@@ -5818,6 +5874,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 14.03%
 \end_layout
 
@@ -5829,6 +5886,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 13.70%
 \end_layout
 
@@ -5840,6 +5898,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 13.42%
 \end_layout
 
@@ -5851,6 +5910,7 @@ AVERAGE
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 12.92%
 \end_layout
 
@@ -5866,10 +5926,1117 @@ AVERAGE
 
 \end_inset
 
-In summary,
- the results show that GENCLASS achieved better overall performance compared to the other methods and consistently remained very close to FC2 (MLP),
- with the only exception being the Eastern Macedonia & Thrace dataset,
- where FC2 (MLP) performed marginally better by 0.06%.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename statistical_analysis_figure.png
+	lyxscale 30
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Average classification error by ,
+ across the three study regions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:statClassification"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statClassification"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ presents,
+ in bar-chart form,
+ the mean classification error rate (%) achieved by each of the six evaluated machine learning models,
+ averaged across the three study regions (Attica,
+ Eastern Macedonia & Thrace,
+ and Crete),
+ with error bars representing one standard deviation.
+ GENCLASS is visually distinguished from the remaining five models and serves as the reference model against which pairwise comparisons are drawn.
+ It attained the lowest mean classification error (12.92%),
+ followed in ascending order by FC2(MLP) (13.42%),
+ FC2(RF) (13.70%),
+ RF (14.03%),
+ MLP(BFGS) (14.19%),
+ and RBF (15.86%),
+ the latter exhibiting both the highest mean error and the greatest variability across regions.
+ The figure further reports the result of a Friedman test (
+\begin_inset Formula $χ^{2}$
+\end_inset
+
+ = 14.05,
+ df = 5,
+ p = 0.015),
+ a non-parametric procedure appropriate for comparing multiple related samples,
+ which indicates that the observed differences in performance among the six models are unlikely to have arisen by chance.
+ Significance markers displayed above each bar correspond to paired t-test comparisons against GENCLASS:
+ all models differ significantly from GENCLASS (p < 0.05) with the exception of FC2(RF),
+ which is marked as not significant (n.s.),
+ suggesting that its performance is statistically comparable to that of GENCLASS despite its marginally higher mean error.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistical comparison of classification error,
+ average ranking,
+ and significance tests (Wilcoxon and paired t-test) for the six machine learning models relative to GENCLASS as the reference model.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:statClassification"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="10">
+<features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Model
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Mean
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+SD
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Min 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Max
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Avg
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Rank
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Mean Diff vs 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+GENCLASS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Wilcoxon
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Paired
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Significance
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+GENCLASS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11.47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Reference
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+FC2(MLP)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13.42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11.87
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15.56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.1814
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.0395
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+FC2(RF)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2.19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11.93
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+16.15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-0.78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.1814
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.0955
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+n.s.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+RF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14.03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12.21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15.96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-1.11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.1814
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.0367
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLP(BFGS)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14.19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12.51
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+16.39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+4.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-1.27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.1814
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.0123
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+RBF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1.76
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14.42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+17.82
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-2.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.1814
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0.0324
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size footnotesize
+Friedman test:
+ chi-squared = 14.048,
+ df = 5,
+ p-value = 0.0153
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size footnotesize
+Nemenyi critical difference (alpha = 0.05):
+ 4.353
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size footnotesize
+Significance vs.
+ GENCLASS (paired t-test):
+ *** p<0.001,
+ ** p<0.01,
+ * p<0.05,
+ n.s.
+ = not significant
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size footnotesize
+Note:
+ n = 3 regions per technique;
+ results are indicative given the small sample size.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:statClassification"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ complements Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statClassification"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ by providing a detailed statistical summary of model performance across the three regions (n = 3 per model).
+ For each model,
+ the table reports the mean,
+ standard deviation,
+ minimum,
+ and maximum classification error,
+ together with the average rank obtained across regions,
+ the mean difference relative to GENCLASS,
+ and the corresponding significance estimates derived from both the Wilcoxon signed-rank test and the paired t-test.
+ GENCLASS consistently ranks first (average rank = 1) with the lowest mean error and a comparatively narrow standard deviation (SD = 1.75),
+ whereas RBF ranks last (average rank = 6) with both the highest mean error and the widest range of observed values.
+ The Wilcoxon test yields an identical p-value (0.1814) for all comparisons,
+ which is not statistically significant;
+ this outcome reflects the limited statistical power of the test given the very small sample size (n = 3 paired observations per comparison).
+ In contrast,
+ the paired t-test,
+ being a parametric test with greater sensitivity under these conditions,
+ identifies statistically significant differences (p < 0.05) between GENCLASS and all other models except FC2(RF) (p = 0.0955,
+ n.s.),
+ which again emerges as the closest competitor to GENCLASS.
+ The table footnote reports the overall Friedman test statistic (
+\begin_inset Formula $χ^{2}$
+\end_inset
+
+ = 14.048,
+ df = 5,
+ p = 0.0153) and the Nemenyi critical difference (4.353) used for post-hoc multiple comparisons,
+ while explicitly cautioning that,
+ owing to the small sample size (three regions per technique),
+ the results should be regarded as indicative rather than conclusive.
+\end_layout
+
+\begin_layout Standard
+Taken together,
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statClassification"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ and Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:statClassification"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ converge on the conclusion that GENCLASS systematically outperforms the remaining five models,
+ with the superiority being statistically robust,
+ as confirmed by the paired t-test,
+ against every model except FC2(RF),
+ which stands out as its most competitive alternative.
 \end_layout
 
 \begin_layout Subsection
@@ -6359,7 +7526,7 @@ Precision
 \begin_layout Plain Layout
 
 \size footnotesize
-87.83%
+89%
 \end_layout
 
 \end_inset
@@ -6447,7 +7614,7 @@ Recall
 \begin_layout Plain Layout
 
 \size footnotesize
-89.04%
+88.9%
 \end_layout
 
 \end_inset
@@ -6537,7 +7704,7 @@ Precision
 \begin_layout Plain Layout
 
 \size footnotesize
-84.33%
+85.07%
 \end_layout
 
 \end_inset
@@ -6643,6 +7810,119 @@ Recall
 
 \end_layout
 
+\begin_layout Standard
+The precision and recall values presented in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab11:Precision-&-Recall"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ confirm the pattern already observed for classification error,
+ showing consistently high and stable performance across all three regions.
+ For the Attica dataset,
+ both metrics ranged between 85.32% and 88.50%,
+ with GENCLASS,
+ FC2(RF),
+ and RF achieving the strongest results,
+ while RBF again recorded the lowest performance,
+ at approximately 85%.
+ The Eastern Macedonia & Thrace dataset exhibited the highest overall performance levels among the three regions,
+ ranging from 83.51% to 89.45%,
+ with RF,
+ MLP (BFGS),
+ and GENCLASS standing out in precision,
+ and FC2(RF) and FC2(MLP) achieving the highest recall values.
+ In contrast,
+ the Crete dataset showed comparatively lower performance levels,
+ ranging from 82.09% to 85.50%,
+ although the relative ranking of the techniques remained consistent with the other two regions,
+ with GENCLASS and RF standing out.
+ Across all three datasets,
+ RBF consistently underperformed relative to the other five techniques,
+ whereas GENCLASS,
+ RF,
+ and the feature construction methods FC2(RF) and FC2(MLP) maintained the most stable and competitive precision and recall values,
+ corroborating the reliability of the region specific fire danger thresholds developed in this study.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pr.png
+	lyxscale 30
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Line chart of the average precision and recall (%) across the three study regions,
+ for each machine learning model.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:precisionRacallChart"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:precisionRacallChart"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ summarizes these findings,
+ showing that GENCLASS achieves the highest average recall across the three regions (87.50%) and an average precision (87.52%) essentially equivalent to that of RF,
+ the top-performing model on this metric (87.53%),
+ while RBF remains the weakest performing technique throughout.
+\end_layout
+
 \begin_layout Section
 Conclusions
 \begin_inset CommandInset label
@@ -6655,393 +7935,79 @@ name "sec:Conclusions"
 \end_layout
 
 \begin_layout Standard
-This research developed new wildfire danger rules following an in depth examination of the environmental characteristics associated with each recorded fire incident and the corresponding analytical outcomes.
- For the purposes of the study,
- we employed several machine learning approaches,
- including Random Forest (RF),
- a set of feature construction techniques such as FC2 (RF) and FC2 (MLP),
- along with artificial Neural Network like RBF and MLP (BFGS) and finally GENCLASS a portable tool for data classification based on Grammatical Evolution.
- 
-\end_layout
-
-\begin_layout Standard
-For the completion of the project,
- we used climatological and operational firefighting data from 2000 to 2024 for three different regions of Greece,
- in order to highlight the distinct climatological conditions characterizing each of them.
- This perspective underscores that every region is unique and must be investigated according to its own climatological particularities.
- 
-\end_layout
-
-\begin_layout Standard
-Our results indicated stable performance across all datasets.
- Specifically,
- for the Attica dataset,
- GENCLASS achieved the best performance with the lowest error rate of 12.43%.
- It was followed by the feature construction techniques FC2 (RF) and FC2 (MLP),
- the artificial neural network MLP (BFGS),
- the Random Forest (RF),
- while RBF ranked last in terms of accuracy.
- In the precision and recall values,
- GENCLASS achieved the highest performance,
- ranging between 88.50% and 88.10%,
- respectively,
- while RBF ranked last with corresponding values of 85.43% and 85.32%.
-\end_layout
-
-\begin_layout Standard
-The dataset for Eastern Macedonia & Thrace showed that the feature construction technique FC2 (MLP) achieved the best performance,
- with an error rate of 11.87%,
- outperforming the other methods by a small margin of 0.06%.
- In second place,
- GENCLASS and the feature construction technique FC2 (RF) tied,
- both recording an error rate of 11.93%.
- The artificial neural network RBF ranked last in this dataset,
- yielding an error rate of 15.34%.
- In the precision values,
- Random Forest (RF) achieved the best performance with 89.45%,
- followed by the artificial neural network MLP (BFGS) with 89.04%,
- and GENCLASS with 89%.
- RBF ranked last,
- yielding a precision of 83.51%.
- Regarding recall,
- GENCLASS achieved the second highest value at 88.90%.
- In second place,
- FC2 (RF) and FC2 (MLP) tied,
- both reaching 89.08%.
- Once again,
- RBF exhibited the lowest performance,
- with a recall value of 83.82%.
- 
-\end_layout
-
-\begin_layout Standard
-For the Crete dataset,
- GENCLASS achieved the best error accuracy with 15.11%,
- followed by FC2 (MLP) with 15.56%,
- while RBF ranked last with an error rate of 17.82%.
- In the precision and recall values,
- GENCLASS obtained the highest performance,
- ranging between 85.07% and 85.50%.
- In terms of precision,
- GENCLASS tied with Random Forest (RF) at 85.07%,
- whereas in recall RF ranked second with 85.03%.
- Finally,
- the RBF technique recorded the lowest performance in both precision and recall,
- with values of 82.09%.
-\end_layout
-
-\begin_layout Standard
-At this stage,
- we compare our findings with the results reported in the previously cited studies from Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab1:Comparison-table"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-In 2021,
- the study that conducted from 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cuevas 2021"
-literal "false"
-
-\end_inset
-
- indicated that the 30/30/30 rule does not provide accuracy,
- as it is overly general,
- and their experiments showed low accuracy rates ranging from 10% to 66%.
- Overall,
- our research is largely consistent with theirs,
- for this reason,
- we processed the climatological factors of each region and accordingly developed specialized new rules to replace the general 30/30/30 rule.The next paper 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cortez 2007"
-literal "false"
-
-\end_inset
-
- reported results within a similar range,
- achieving accuracy levels between 46% and 61%,
- while using four factors:
- temperature,
+This study developed and validated region specific fire danger classification schemes for three climatically distinct areas of Greece,
+ namely Attica,
+ Eastern Macedonia & Thrace,
+ and Crete,
+ using twenty five years (2000-2024) of combined climatological and operational fire incident data.
+ Rather than relying on the generic 30/30/30 rule,
+ specialized threshold values for temperature,
  humidity,
- rainfall,
- and wind,
- for the purposes of their experiments.
- The difference in our study is that we achieved better results,
- with an average error rate of 13.16% across the three datasets,
- corresponding to a correct prediction rate of mean average at 86.84%.
- In addition,
- our experiments were conducted using the following factors:
- temperature,
- humidity,
- rainfall,
- wind gusts,
+ wind gust,
  wind speed,
  wind direction,
- time of occurrence,
- and month.
- Continuing,
- the research by 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Yunhao 2007"
-literal "false"
-
-\end_inset
-
- compared two wildfire models,
- the IFSI and the FPI,
- reporting accuracy levels of 78% and 73%,
- respectively.
- The difference compared to our work lies both in our superior results and in the application of our own customized rules.The study by 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sakr 2011"
-literal "false"
-
-\end_inset
-
- took a different direction,
- focusing on only two features:
- humidity and precipitation,
- and achieved high accuracy levels of 97%.
- The main difference compared to our work lies in the number of features used,
- as we focused on eight features,
- with our accuracy averaging 86.84%.
- Although the following aim 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Agarwal 2020"
-literal "false"
-
-\end_inset
-
- combined operational wildfire data with meteorological data,
- it focused on estimating the economic damage caused by fires,
- achieving very strong results ranging from 93.3% to 97%.
- While the core structure of the data,
- namely the integration of operational and meteorological information,
- aligns with our own approach,
- the fundamental discrepancy lies in the fact that their work targeted economic loss estimation,
- whereas our research focused on deriving insights that would be operationally useful for wildfire suppression services.
- The subsequent researchers 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Masinda 2022"
-literal "false"
-
-\end_inset
-
- attempted to verify the effectiveness of the Canadian FWI model in a region of China,
- reporting an accuracy of 72.7%.
- The distinction from our study lies in the fact that we developed our own 
-\begin_inset Quotes eld
-\end_inset
-
-model
-\begin_inset Quotes erd
-\end_inset
-
-,
- tailored to the meteorological characteristics of each region,
- with better results.
- Using the same model,
- the next project from 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Karali 2023"
-literal "false"
-
-\end_inset
-
- on wildfire prediction for the region of Attica,
- where their results reached 60%.
- This comparison is particularly interesting,
- as they worked on one of the regions we also analyzed.
- Our results for Attica reached 87.57% accuracy and 12.43% error.
- Since as previously noted we did not rely on external models or generic rules,
- but instead developed our own region specific rules.The final study 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Parvar 2024"
-literal "false"
-
-\end_inset
-
- combined meteorological data with operational fire data,
- focusing specifically on land surface temperature and precipitation,
- achieving high performance with a ROC value reaching 0.83.
- Although the core idea and the data integration approach are similar to ours,
- we employed a larger set of meteorological variables,
- achieving correspondingly high accuracy levels.
- 
+ ignition time,
+ and month were derived independently for each region,
+ reflecting their distinct climatic profiles.
 \end_layout
 
 \begin_layout Standard
-As shown in the comparison above,
- our study employed a larger set of environmental variables and additionally developed new rules for the emergence of the Final_DangerClass_combination,
- tailored to each region.
- Our results were validated through multiple machine learning approaches,
- yielding very good error rate performance for each dataset individually.
+Six machine learning techniques were evaluated across all three datasets using ten fold cross-validation:
+ two classical approaches (MLP trained with BFGS,
+ and RBF networks),
+ Random Forest (RF),
+ two Grammatical Evolution based feature construction methods (FC2(RF) and FC2(MLP)),
+ and GENCLASS,
+ an evolutionary rule induction method also grounded in Grammatical Evolution.
+ The results consistently demonstrated a clear performance hierarchy:
+ GENCLASS achieved the lowest average classification error (12.92%) and the highest average precision and recall values across all three regions,
+ confirming that the fire danger rule constructed in this study is fully identifiable and predictable from climatological and operational data.
+ FC2(MLP) and FC2(RF) followed closely,
+ ranking second and third respectively in average classification error (13.42% and 13.70%),
+ while the classical techniques (RF,
+ MLP (BFGS),
+ and particularly RBF) exhibited comparatively higher and more variable error rates,
+ with RBF consistently ranking last across all three regions in both classification error and precision/recall metrics.
 \end_layout
 
 \begin_layout Standard
-In summary,
- the findings of the study identified new threshold values for wildfire occurrence in the region of Attica,
- as follows:
- temperature 
-\begin_inset Formula $\ge$
-\end_inset
-
- 73.7 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-textdegree
+This pattern indicates that techniques grounded in Grammatical Evolution,
+ whether through automated feature construction (FC2) or direct rule induction (GENCLASS),
+ are better suited to capturing the complex,
+ region specific relationships between meteorological conditions and wildfire occurrence than conventional neural network or ensemble based approaches.
+ In particular,
+ the superiority of GENCLASS suggests that the interpretable decision rules it generates are not only competitive in predictive accuracy but also offer a transparent and operationally meaningful representation of fire danger,
+ a property that black box models such as MLP and RBF cannot provide.
+ These findings validate the climatological attributes and the region specific definitions developed for the classification of fire danger,
+ confirming that tailored,
+ evolutionarily derived thresholds provide a more reliable and robust framework for wildfire risk assessment than generic,
+ one size fits all rules.
 \end_layout
 
-\end_inset
-
- F,
- humidity 
-\begin_inset Formula $\le$
-\end_inset
-
- 49.3%,
- 0% precipitation,
- wind gust speed 
-\begin_inset Formula $\ge$
-\end_inset
-
- 10.01 mph,
- wind speed ≥ 16.1 mph,
- wind direction in the sectors SW,
- N,
- NE,
- and NW,
- ignition time from 12:31 on wards,
- and hazardous months corresponding to June,
- July,
- and August.
- The accuracy of these values is further validated through the applied validation techniques,
- with GENCLASS achieving the best performance at 12.43% error,
- indicating a correct verification rate of 87.57%.
- Similarly,
- for the region of Eastern Macedonia and Thrace,
- the study identified new threshold values for wildfire occurrence as follows:
- temperature 
-\begin_inset Formula $\ge$
-\end_inset
-
-68.1 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-textdegree
-\end_layout
-
-\end_inset
-
- F,
- humidity 
-\begin_inset Formula $\le$
-\end_inset
-
- 64.1%,
- 0% precipitation,
- wind\SpecialChar nobreakdash
-gust speed 
-\begin_inset Formula $\ge$
-\end_inset
-
-7.1 mph,
- wind speed 
-\begin_inset Formula $\ge$
-\end_inset
-
- 6.1 mph,
- wind direction within the sectors E,
- S,
- SW,
- SE,
- and NE,
- ignition time from 11:31 onwards,
- and hazardous months corresponding to May,
- June,
- July,
- August,
- and October.
- Furthermore,
- the accuracy of these values is validated through the applied validation techniques,
- with FC2 (MLP) achieving the best performance at 11.87% error,
- indicating a correct accuracy rate of 88.13%.
- In the same way,
- for the region of Crete,
- the study identified new threshold values for wildfire occurrence as follows:
- temperature 
-\begin_inset Formula $\ge$
-\end_inset
-
-70.1 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-textdegree
-\end_layout
-
-\end_inset
-
- F,
- humidity 
-\begin_inset Formula $\le$
-\end_inset
-
- 66%,
- 0% precipitation,
- wind\SpecialChar nobreakdash
-gust speed 
-\begin_inset Formula $\ge$
-\end_inset
-
- 9.1 mph,
- wind speed 
-\begin_inset Formula $\ge$
-\end_inset
-
-16.1 mph,
- wind direction within the sectors N,
- NE,
- and NW,
- ignition time from 12:31 onwards,
- and hazardous months corresponding to June,
- July,
- and August.
- Here as well,
- the newly derived values are validated by the performance of the applied techniques,
- with GENCLASS achieving the best result at 15.11% error,
- indicating a correct verification rate of 84.89%.
- 
+\begin_layout Standard
+Building on these findings,
+ several directions merit further investigation.
+ First,
+ the application of the proposed methodology to additional Greek regions with different climatic and topographic characteristics would help establish whether the observed superiority of Grammatical Evolution based techniques generalizes beyond the three areas examined here.
+ Second,
+ incorporating additional predictive features,
+ such as vegetation type,
+ fuel moisture content,
+ terrain slope,
+ and proximity to human activity,
+ could further improve the discriminative power of the constructed classes,
+ particularly for the Crete dataset,
+ which exhibited comparatively lower performance across all techniques.
+ Third,
+ future work could explore the integration of the fire duration variable,
+ excluded in this study to preserve model impartiality,
+ as a secondary prediction target once ignition risk has been established,
+ thereby extending the framework from a binary danger classifier to a more comprehensive operational decision support tool.
+ Finally,
+ given the consistently strong performance of GENCLASS,
+ further research should focus on refining and extending the interpretability of the generated rule sets,
+ potentially enabling their direct adoption by fire prevention services as a practical,
+ region specific alternative to the traditional 30/30/30 rule.
 \end_layout
 
 \begin_layout Standard

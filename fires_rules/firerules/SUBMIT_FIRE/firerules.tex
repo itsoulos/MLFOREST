@@ -1,0 +1,1344 @@
+%% LyX 2.5.1 created this file.  For more info, see https://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[journal,article,submit,moreauthors]{Definitions/mdpi}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\synctex=-1
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{float}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{varwidth}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+
+\Title{Creating specialized classes for fire risk using machine learning
+methods}
+
+\Author{Constantina Kopitsa$^{1}$, \textsubscript{\textsuperscript{}}Ioannis
+G. Tsoulos$^{2}$, Vasileios Charilogis$^{3}$, Glykeria Kyrou$^{4*}$}
+
+
+\address{$^{1}\quad$Department of Informatics and Telecommunications. University
+of Ioannina, \\
+$^{2}\quad$Department of Informatics and Telecommunications. University
+of Ioannina, \\
+$^{3}\quad$Department of Informatics and Telecommunications. University
+of Ioannina, \\
+$^{4}\quad$Department of Informatics and Telecommunications. University
+of Ioannina}
+
+
+\corres{Correspondence: g.kyrou@uoi.gr}
+
+
+\abstract{This study explores various machine learning techniques for assessing
+forest fire risk. The data used in this study have been selected from
+three different areas in Greece over the past 25 years (2000 - 2024).
+The first area of interest is Attica, the second area is Eastern Macedonia
+and Thrace, and the third area is Crete. For each of the aforementioned
+areas, a separate data file was created, an analysis was carried out,
+and specialized definitions - classes were created for the forest
+fire risk occurrence. This study utilized a range of traditional machine
+learning techniques alongside novel methods based on Grammatical Evolution,
+including automated feature construction from existing attributes
+and the automatic generation of classification rules. Across all three
+datasets, GENCLASS demonstrated the most consistent overall performance
+among the tested techniques, closely followed by the feature construction
+method FC2 (MLP), while the remaining traditional approaches (MLP,
+RBF, and Random Forest) showed comparatively lower and more variable
+performance. These findings validate the climatological attributes
+and region specific definitions developed for the classification of
+fire danger, confirming that region specific thresholds provide a
+more reliable framework for wildfire risk assessment than the generic
+30/30/30 rule.}
+
+
+\keyword{Fire risk; Machine learning; neural networks}
+
+\DeclareTextSymbolDefault{\textquotedbl}{T1}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% Variable width box for table cells
+\newenvironment{cellvarwidth}[1][t]
+    {\begin{varwidth}[#1]{\linewidth}}
+    {\@finalstrut\@arstrutbox\end{varwidth}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+%\documentclass[preprints,article,submit,moreauthors]{Definitions/mdpi} 
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
+
+% Below journals will use APA reference format:
+% admsci, aieduc, behavsci, businesses, econometrics, economies, education, ejihpe, famsci, games, humans, ijcs, ijfs, investment, fclam, jintelligence, journalmedia, jrfm, jsam, languages, opermanag, peacestud, pmh, psycholint, publications, tourismhosp, youth
+
+% Below journals will use Chicago reference format:
+% arts, genealogy, histories, humanities, laws, literature, religions, risks, socsci
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% accountaudit, acn, acoustics, actuators, addictions, addictprev, adhesives, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, aichem, aieng, aimater, aimed, aipa, air, aisens, aisoc, algorithms, allergies, alloys, amh, analog, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aps, aquacj, archaeolstud, architecture, arm, arthropoda, asc, asi, astronautics, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, bioresourbioprod, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, buildings, cancers, carbon, cardio, cardiogenetics, cardiovascmed, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, commodities, complexities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, culture, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, dhi, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, drugreact, drylands, dynamics, earth, ebj, ecm, ecologies, edm, eesp, electricity, electrochem, electronicmat, electronics, embodiedintell, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environremediat, epidemiologia, epigenomes, esa, est, fermentation, fibers, fintech, fire, fishes, fluids, foodeng, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, freshwater, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, gases, gastroent, gastrointestdisord, gastronomy, gels, genes, geochem, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, germs, glacies, grainsci, grasses, green, greenhealth, gucdd, gynecolcancer, hardware, hazardousmatters, healthcare, healthcmater, hearts, hemato, hematolrep, hep, heritage, higheredu, highthroughput, horticulturae, hospitals, hydrobiology, hydrogen, hydrology, hydrometeorology, hydropower, hygiene, idr, iic, ijem, ijerph, ijgi, ijmd, ijms, ijns, ijom, ijp, ijpb, ijt, ijtm, ijtpp, ijtst, ime, immuno, industries, inflammj, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jaestheticmed, jal, japma, jcdd, jcm, jcp, jcrm, jcs, jcto, jdad, jdb, jdream, jemr, jeta, jfb, jfmk, jfth, jgbg, jgg, jimaging, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joi, joitmc, joma, jop, joptm, jor, jox, jpbi, jphytomed, jpm, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, lam, land, lasers, legumes, life, lights, limnolrev, lipidology, liquids, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, maritime, materials, materproc, mathematics, mca, mcb, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mollusca, mps, msf, mti, multimedia, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neuroimaging, neurolint, neurosci, nitrogen, notspecified, nursrep, nutraceuticals, nutrients, obesities, occuphealth, oceans, ohbm, onco, optics, oral, organics, organoids, osteology, oxygen, pandemics, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, phc, philosophies, photochem, photonics, photovoltaics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, populations, poultry, powders, precision, precisoncol, preprints, proceedings, processes, prosthesis, proteomes, psf, psychiatryint, psychoactives, purification, quantumrep, quaternary, qubs, radiation, rareearths, rdt, reactions, realestate, receptors, recycling, regeneration, remotesensing, reports, reprodmed, resources, rheumato, rjpm, robotics, rsee, ruminants, safety, sanpp, sca, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, shi, signals, sinusitis, siuj, skins, smartcities, smartfish, sna, societies, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stratsediment, stresses, strokerep, superintelligence, surfaces, surgeries, suschem, sustainability, sustainfoods, sustainpackag, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, toxics, toxins, tph, transplantology, transportation, traumacare, traumas, tri, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, welding, wem, wevj, wild, wind, women, world, zoonoticdis
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, book, bookreview, briefreport, casereport, comment, commentary, communication, conferenceproceedings, correction, conferencereport, entry, expressionofconcern, extendedabstract, datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, systematicreview, supfile, technicalnote, viewpoint, guidelines, registeredreport, tutorial
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+\setcounter{page}{\@firstpage}
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+%\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{}
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{}
+\datepublished{}
+%\datecorrected{} % For corrected papers include a "Corrected: XXX" date in the original paper.
+%\dateretracted{} % For retracted papers include a "RETRACTED: XXX" date in the original paper.
+%\doinum{} % Used for some special journals, like molbank
+%\pdfoutput=1 % Uncommented for upload to arXiv.org
+%\CorrStatement{yes}  % For updates
+%\longauthorlist{yes} % For many authors that exceed the left citation part
+%\IsAssociation{yes} % For association journals
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
+
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences:
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data:
+%\dataset{DOI number or link to the deposited data set in cases where the data set is published or set to be published separately. If the data set is submitted and will be published as a supplement to this paper in the journal Data, this field will be filled by the editors of the journal. In this case, please make sure to submit the data set as a supplement when entering your manuscript into our manuscript editorial system.}
+
+%\datasetlicense{license under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal BioTech, Fishes, Neuroimaging and Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{Instead of the abstract}
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
+ 
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+%
+%\noindent This is an optional section, the goal of which is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple overview allowing the reader to quickly and simply find out what the article is about and what can be cited from it. Each of these parts should be up to 2 bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What are the implications of the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+This study presents a new rule for forest fire risk, which specifies
+and adapts the climatic and forest fire data with a new framework
+instead of the well known 30/30/30. In short the rule 30/30/30 means
+that there is a risk of fire when the following conditions prevail:
+temperatures \textgreater 30 , wind \textgreater 30, and humidity
+\textless 30. However, at this point we will briefly give a sample
+of analyses and experiments, with new definitions, which are specific
+to each region. For example, the dangerous mean temperature point
+for Attica is 23.6\,\textdegree \textsuperscript{}C or 74.5\,\textdegree
+F, for Eastern Macedonia and Thrace is 20\,\textdegree C or 68.1\,\textdegree
+F, and for Crete is 20.17\,\textdegree C or 68.3\,\textdegree F.
+In other words, wildfires do not necessarily follow our predefined
+rules, however, our newly developed, region - with specific rules
+- adapted to the unique characteristics of each area, can contribute
+to more effective fire prevention and suppression efforts. In this
+context, it is important to highlight several real world case studies,
+that demonstrate the necessity of establishing new, region specific
+thresholds for wildfire ignition risk. 
+\begin{itemize}
+\item A first example is the wildfire that broke out during the winter season,
+specifically in January 2025, in California, lasting 24 days \citep{AA 2025}.
+Moreover, the study by Bouvier et\,al. (2025) indicates that an improved
+wildfire prevention model is required for periods traditionally considered
+as non hazardous for fire occurrence \citep{Bouvier 2025}. It is
+worth noting that, based on the meteorological data we retrieved from
+Visual Crossing for the region of California for the period 01/01/2025
+- 31/01/2025, for this event, the mean temperature was approximately
+5\,\textdegree C (42\,\textdegree F), with maximum temperatures
+reaching only 15\,\textdegree C (60\,\textdegree F)\citep{Visual crossing}. 
+\item A second example is the wildfire that broke out during the early spring
+season, specifically in March 2022, in South Korea \citep{NASA 2022}.
+Notably, by examining the temperature records for that specific period
+in the region of South Korea, the nighttime minimum temperatures dropped
+to -4\,\textdegree C (24.8\,\textdegree F), while daytime maximum
+temperatures ranged between 12\,\textdegree C (53.6\,\textdegree
+F) and 14\,\textdegree C (57.2\,\textdegree F) \citep{Weatherspark}.
+\item A third example is the wildfire that occurred in May 2025 near the
+city of Chita in Russia \citep{Modis Nasa 2025}. During that period,
+temperatures were approximately 17.2\,\textdegree C (63\,\textdegree
+F), with the lowest recorded temperature reaching 4.4\,\textdegree
+C (40\,\textdegree F) \citep{WeatherSpark Russia}.
+\item A fourth example is the winter wildfire that occurred in Ofunato,
+Japan, in February 2025 \citep{Suzuki 2026}. During that period,
+temperatures ranged from \textminus 1.6\,\textdegree C (29\textdegree
+F) to a maximum of 3.8\,\textdegree C (39\,\textdegree F) \citep{WeatherSpark japan}. 
+\end{itemize}
+In summary, the aforementioned incidents represent only a subset of
+the wildfire events identified through the literature review, all
+of which fall outside the scope of the traditional 30/30/30 rule.
+This highlights the need to develop and examine new, region specific
+and context adapted metrics for assessing wildfire occurrence risk,
+based on meteorological variables and operational firefighting data.
+
+In our search for studies related to our own work, we initially focused
+on identifying research that examined the application of the 30/30/30
+rule and its reported outcomes, using the keywords: \textit{30/30/30
+rule fire risk.} The review of the retrieved studies indicated that
+only one verification oriented investigation of the rule has been
+conducted, and its findings were not satisfactory. Specifically, the
+study by Cuevas and Rodriguez (2021) highlights that the 30/30/30
+rule does not account for the majority of large scale wildfires, explaining
+only about 10\% of such events. In contrast, it appears more relevant
+for medium sized wildfires, accounting for approximately 66\% of these
+cases. Moreover, temperature and relative humidity emerge as the most
+critical variables, as over 80\% of the analyzed wildfires met these
+two conditions \citep{Cuevas 2021}. We will proceed by presenting
+studies and research works that examine the impact of meteorological
+variables and modeling approaches on forest fires, comparable to our
+own, and, where applicable, we will conclude by comparing their reported
+performance metrics with the findings of the present study.
+
+The study by Cortez and Morais (2007) employed meteorological variables
+such as: temperature, relative humidity, rainfall, and wind, using
+an SVM model capable of predicting the burned area of small fires.
+Their approach achieved accurate predictions in 46\% of the cases
+when an error of $\le$\,1\,ha was allowed, and in 61\% of the cases
+when the admissible error increased to $\le$2\,ha \citep{Cortez 2007}.
+The publication by Yunhao et\,al. (2007) focuses on comparing two
+wildfire risk indices: the Fire Potential Index (FPI) and the Integrated
+Fire Susceptibility Index (IFSI). Their experimental results, based
+on the Area Under the Curve (AUC) of the REC curves, showed that IFSI
+performed as the superior model with an accuracy of approximately
+78\%, whereas FPI achieved a prediction accuracy of about 73\% \citep{Yunhao 2007}.
+
+Next on the research by Sakr et\,al. (2011) employed only two meteorological
+variables cumulative precipitation and relative humidity, together
+with two artificial intelligence techniques, artificial neural networks
+(ANN) and support vector machines (SVM), to accurately predict the
+risk of fire occurrence. Their results showed that, for the SVM model,
+each month included at least one iteration in which the testing accuracy
+exceeded 97\% \citep{Sakr 2011}. Analogous result were reported in
+the study by Agarwal et\,al. (2020) who applied the Gradient Boosting
+Tree algorithm using data from the National Fire Incident Reporting
+System (NFIRS) together with meteorological information from the National
+Oceanic and Atmospheric Administration (NOAA) to predict economic
+losses caused by fire incidents. Their results demonstrated strong
+predictive performance, achieving 93.3\% accuracy on the full dataset
+and 97\% accuracy on the test set \citep{Agarwal 2020}. The subsequent
+field study by Masinda et\,al. (2022) examined the daily assessment
+of wildfire danger in Northeastern China using the Canadian Forest
+Fire Weather Index (FWI). Their results indicated that the Canadian
+FWI performed well, with the Wilcoxon paired sample test showing satisfactory
+agreement in 72.7\% of the cases \citep{Masinda 2022}. The same modeling
+framework, combining the Canadian Forest Fire Weather Index (FWI)
+with the Initial Spread Index (ISI), was examined by Karali et\,al.
+(2023) in their assessment of hazardous wildfire prone conditions.
+Their findings indicated that lead time plays a decisive role in forecast
+performance, with the probability of correct prediction reaching approximately
+60\% \citep{Karali 2023}. In their study, Parvar et\,al. (2024) developed
+a wildfire risk map by integrating meteorological variables such as:
+Land Surface Temperature (LST), precipitation, and historical fire
+occurrence data. The performance of their model was statistically
+evaluated using the ROC curve, achieving an AUC value of 0.83\%, indicating
+strong predictive capability \citep{Parvar 2024}. 
+
+At this point, we will present, in a table \ref{tab1:Comparison-table},
+the results of the aforementioned studies in order to enable a direct
+comparison among them Table \ref{tab1:Comparison-table}. In Section\ref{sec:Conclusions}
+a concise comparison will also be provided between the findings of
+each related study and those of our own research.
+
+\begin{table}
+\caption{Comparative overview of accuracy/performance results reported by previous
+studies on forest fire risk prediction, as identified in the literature
+review.\label{tab1:Comparison-table}}
+
+\centering{}%
+\begin{tabular}{|>{\raggedright}p{5cm}|l|}
+\hline 
+\textbf{Authors names} & \textbf{Results}\tabularnewline
+\hline 
+\hline 
+{\footnotesize Diaz Cuevas, M. D. P., \& Limones Rodriguez, N.\citep{Cuevas 2021}} & {\footnotesize 10\% accuracy (large fires) \& 66\% (medium fires)}\tabularnewline
+\hline 
+{\footnotesize Cortez, P., \& Morais, A. D. J. R\citep{Cortez 2007}} & {\footnotesize 46\% error ( of \ensuremath{\le}\,1ha) \& 61\% ( \ensuremath{\le}\,2\,ha)}\tabularnewline
+\hline 
+{\footnotesize Yunhao, C., Jing, L., \& Guangxiong, P.\citep{Yunhao 2007}} & {\footnotesize IFSI accuracy (78\%) \& FPI (73\%)}\tabularnewline
+\hline 
+{\footnotesize Sakr, G. E., Elhajj, I. H., \& Mitri, G.\citep{Sakr 2011}} & {\footnotesize SVM accuracy (97\%)}\tabularnewline
+\hline 
+{\footnotesize Agarwal, P., Tang, J., Narayanan, A. N. L., \& Zhuang,
+J\citep{Agarwal 2020}} & {\footnotesize Gradient Boosting Tree accuracy (93.3\%) \& test set
+(97\%)}\tabularnewline
+\hline 
+{\footnotesize Masinda, M. M., Li, F., Qi, L., Sun, L., \& Hu, T\citep{Masinda 2022}} & {\footnotesize FWI Wilcoxon test accuracy (72.7\%)}\tabularnewline
+\hline 
+{\footnotesize Karali, A., Varotsos, K. V., Giannakopoulos, C., Nastos,
+P. P., \& Hatzaki, M\citep{Karali 2023}.} & {\footnotesize FWI \& ISI accuracy (60\%)}\tabularnewline
+\hline 
+{\footnotesize Parvar, Z., Saeidi, S., \& Mirkarimi, S.\citep{Parvar 2024}} & {\footnotesize AUC value of 0.83}\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+The remaining of this paper has the following structure: the Section
+\ref{sec:Materials-and-Methods} presents the used dataset and the
+new threshold values for wildfire occurrence, the Section \ref{sec:Results}
+illustrates the experimental results finally the Section \ref{sec:Conclusions}
+It provides a concise presentation of the results, accompanied by
+a comparative discussion with the previously cited studies in the
+table \ref{tab1:Comparison-table}. 
+
+\section{Materials and Methods\label{sec:Materials-and-Methods}}
+
+In this section, a detailed presentation of the datasets used as well
+as the machine learning techniques used in the experiments performed
+will be provided. 
+
+\subsection{The dataset employed}
+
+For the purposes of our study, we combined two distinct data sources.
+On the one hand, to analyze the climatological conditions, we employed
+Historical Weather Data from Visual Crossing \url{https://www.visualcrossing.com/ }\citep{Visual crossing}
+(last accessed on 02 February 2026), which compiles information from
+a range of authoritative sources, including national meteorological
+agencies, global climate datasets, and satellite observations. Access
+to the historical dataset required completing the registration process,
+after which we selected the data-access interface, specified the region
+of interest, and defined the temporal range. Data retrieval was then
+carried out under the free access tier, which allows up to 1,000 records
+per day. The procedure is generally straightforward, with the only
+notable constraint being the daily limit of 1,000 data points.
+
+On the other hand, for the analysis of forest / wild fires, we relied
+on the open data provided by the Hellenic Fire Service \url{https://www.fireservice.gr/el_GR/synola-dedomenon}
+( last accessed on 02 February 2026). The fire data are collected
+and updated each year by the individual fire stations responsible
+for reporting incidents. 
+
+\subsection{The dataset description}
+
+For this study, we obtained historical meteorological data for the
+period 2000 -- 2024, providing a roughly 25 year record to support
+our fire duration according to climate patterns analysis. We additionally
+selected regions across different latitudes and longitudes, in Greece,
+to achieve a more comprehensive representation of the study areas.
+The selected regions of interest are: Attica, Eastern Macedonia and
+Thrace, and Crete \ref{fig:Map-with-areas}. 
+
+\begin{figure}
+\raggedleft
+\begin{centering}
+\includegraphics[scale=0.9]{Greece_map}
+\par\end{centering}
+\caption{Map of Greece highlighting the three geographic study areas (Study
+Area 1: Attica, Study Area 2: Eastern Macedonia \& Thrace, Study Area
+3: Crete).\label{fig:Map-with-areas}}
+\end{figure}
+
+The climatic and fire dataset for all regions covers the period from
+January 1, 2000, to December 31, 2024. Specifically, Attica provides
+9.131 climatic dataset and 2.736 fire records, Eastern Macedonia and
+Thrace provides 9.131 climatological records and 10.358 fire records,
+and finally Crete provides 9.121 climatological records and 6.036
+fire record. The variation in the number of climatological records
+is attributable to gaps (missing values) in the data retrieved from
+Visual Crossing, which did not influence our results. Before proceeding
+with the merging of the two data files, the experiments focused exclusively
+on forest fire incidents in order to maintain homogeneity in our dataset
+with respect to fire behavior characteristics. In other words, we
+chose to proceed with the following categories : (9) Burned forests,
+(10) Burned forest area, and (11) Burned grove (small forest) Table
+\ref{tab3:Table_3_Primary-table-with}. Following this refinement,
+Attica provided 1.859 forest fire records, Eastern Macedonia and Thrace
+2.652, and Crete 2.787.
+
+Afterwards, the climatological dataset merged with the forest fire
+dataset, retaining only the climate records corresponding to the fire
+ignition date. The merging process was performed combining the climatological
+data Table \ref{tab2:Table_2Primary-table-with} with the fire incident
+data Table \ref{tab3:Table_3_Primary-table-with} based on the date
+field. 
+
+\begin{table}[H]
+\centering
+\caption{Primary table of raw climatological variables (33 attributes) retrieved
+from the Visual Crossing platform for the period 2000--2024.\label{tab2:Table_2Primary-table-with}}
+
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|c|c|}
+\hline 
+\textbf{Number} & \textbf{Data Description} & \textbf{Values}\tabularnewline
+\hline 
+\hline 
+1 & Region & Area\tabularnewline
+\hline 
+2 & Date & Year/month/day\tabularnewline
+\hline 
+3 & Tempmax (Fahrenheit) & \textdegree F\tabularnewline
+\hline 
+4 & Tempmin (Fahrenheit) & \textdegree F\tabularnewline
+\hline 
+5 & Temp (Fahrenheit) daily mean average & \textdegree F\tabularnewline
+\hline 
+6 & Feelslikemax (Fahrenheit) & \textdegree F\tabularnewline
+\hline 
+7 & Feelslikemin (Fahrenheit) & \textdegree F\tabularnewline
+\hline 
+8 & Feelslike (Fahrenheit) & \textdegree F\tabularnewline
+\hline 
+9 & Dew & \textdegree F\tabularnewline
+\hline 
+10 & Humidity & \%\tabularnewline
+\hline 
+11 & Precipitation & in\tabularnewline
+\hline 
+12 & Precipprob & \%\tabularnewline
+\hline 
+13 & Precipcover & \%\tabularnewline
+\hline 
+14 & Preciptype & Type(s)\tabularnewline
+\hline 
+15 & Snow & in\tabularnewline
+\hline 
+16 & Snowdepth & in\tabularnewline
+\hline 
+17 & Windgust (miles) & mph\tabularnewline
+\hline 
+18 & Windspeed (miles) & mph\tabularnewline
+\hline 
+19 & Winddir & (\textdegree)\tabularnewline
+\hline 
+20 & Sealevel & mb\tabularnewline
+\hline 
+21 & Cloudcover & \%\tabularnewline
+\hline 
+22 & Visibility & mi\tabularnewline
+\hline 
+23 & Solarradiation & (W/m\texttwosuperior )\tabularnewline
+\hline 
+24 & Solarenergy & (MJ/m\texttwosuperior )\tabularnewline
+\hline 
+25 & Uvindex & (0-10)\tabularnewline
+\hline 
+26 & Severisk & (0-100)\tabularnewline
+\hline 
+27 & Sunrise & time\tabularnewline
+\hline 
+28 & Sunset & time\tabularnewline
+\hline 
+29 & Moonphase & (0-1)\tabularnewline
+\hline 
+30 & Conditions & general observations\tabularnewline
+\hline 
+31 & Descriptions & general observations day/night\tabularnewline
+\hline 
+32 & Icon & summarized observations\tabularnewline
+\hline 
+33 & Stations & Code for stations\tabularnewline
+\hline 
+\end{tabular*}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Primary table of raw operational forest fire incident data (16 attributes)
+as recorded by the Hellenic Fire Service.\label{tab3:Table_3_Primary-table-with}}
+
+\begin{tabular*}{10cm}{@{\extracolsep{\fill}}|c|c|}
+\hline 
+\textbf{Number} & \textbf{Data Description}\tabularnewline
+\hline 
+\hline 
+1 & Fire department\tabularnewline
+\hline 
+2 & Forest department\tabularnewline
+\hline 
+3 & Location\tabularnewline
+\hline 
+4 & Region\tabularnewline
+\hline 
+5 & Date of fire ignition\tabularnewline
+\hline 
+6 & Time of fire ignition\tabularnewline
+\hline 
+7 & Extinguish date\tabularnewline
+\hline 
+8 & Extinguish time\tabularnewline
+\hline 
+9 & Burned forests\tabularnewline
+\hline 
+10 & Burned forests area\tabularnewline
+\hline 
+11 & Burned grove (small forest)\tabularnewline
+\hline 
+12 & Burned grassland\tabularnewline
+\hline 
+13 & Burned swamps\tabularnewline
+\hline 
+14 & Burned agricultural\tabularnewline
+\hline 
+15 & Burned crops\tabularnewline
+\hline 
+16 & Burned garbage dumps\tabularnewline
+\hline 
+\end{tabular*}
+\end{table}
+
+Accordingly, we created three new datasets, one for each study region.
+Each region was examined and analyzed independently, resulting in
+a distinct fire risk classification for every area. Consequently,
+the variables processed in order to construct the class representing
+danger forest fire ignition, for all three datasets were the following:
+mean daily temperature, daily humidity values, precipitation occurrence,
+wind gusts, wind speed, wind direction, time of fire ignition, month
+of fire ignition, and fire duration, with the final output expressed
+as the Final\_DangerClass\_combination Table \ref{tab4:Table_4_Modified-Data}.
+In the end, in order to ensure impartiality in our experiments, we
+removed the FireDuration feature, since the model would otherwise
+be able to see the answer, as the accuracy for all datasets reached
+100\%. 
+
+\begin{table}[H]
+\centering
+\caption{Final derived variables/classes obtained after processing the raw
+data, used to construct the target variable Final\_DangerClass\_combination.\label{tab4:Table_4_Modified-Data}}
+
+\begin{tabular*}{10cm}{@{\extracolsep{\fill}}|c|c|}
+\hline 
+\textbf{Number} & \textbf{Data}\tabularnewline
+\hline 
+\hline 
+1 & TempSpecialClass (daily mean average)\tabularnewline
+\hline 
+2 & HumiditySpecialClass\tabularnewline
+\hline 
+3 & PrecipitationBasicClass\tabularnewline
+\hline 
+4 & WindgustSpecialClass\tabularnewline
+\hline 
+5 & WindspeedSpecialClass\tabularnewline
+\hline 
+6 & WinddirSpecialClass\tabularnewline
+\hline 
+7 & TimeClass\tabularnewline
+\hline 
+8 & Monthclass\tabularnewline
+\hline 
+9 & Fireduration (Removed)\tabularnewline
+\hline 
+10 & Final\_DangerClass\_combination\tabularnewline
+\hline 
+\end{tabular*}
+\end{table}
+
+
+\subsubsection{Attica area and data description}
+
+The regional unit of Attica covers an area of 3,808.1\,km\texttwosuperior ,
+with Athens as its capital. Between 2001 and 2025, Attica experienced
+a loss of 22\,kha (220 km\texttwosuperior ) of tree cover attributable
+to wildfires, along with an additional 3.3\,kha (33 km\texttwosuperior )
+lost due to other disturbance factors. The most severe year within
+this period was 2021, during which fires accounted for 8.5\,kha (85
+km\texttwosuperior ) of tree cover loss, representing 99\% of the
+total loss recorded that year, according to the global forest watch
+\citep{Global Forest Watch Attica}. 
+
+A brief description of the Attica dataset follows. The final dataset
+consisted of 1.859 records and 8 attributes, with the last attribute
+representing the target class, namely: Final\_DangerClass\_combination.
+The classes followed a binary scheme, where 0 denoted a non hazardous
+value, and 1 denoted as a hazardous value, in the following Table
+\ref{tab5:Table_5_Modified_Special_-Classes}. 
+
+\begin{table}[H]
+\raggedright
+\caption{Definition of the threshold values (temperature, humidity, wind, wind
+direction, ignition time, month) separating the non-hazardous (Class
+0) from the hazardous (Class 1) fire danger class for the Attica region,
+with the corresponding number of records per class.\label{tab5:Table_5_Modified_Special_-Classes}}
+
+\centering{}%
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Features} & \textbf{Class 0 (non hazard)} & \textbf{Class 1 (hazard)}\tabularnewline
+\hline 
+\hline 
+TempSpecialClass (daily mean average) & \textless = (73.6\textdegree F)  & 73.7\textdegree F = \textgreater{} (or 23.6\textdegree C)\tabularnewline
+\hline 
+HumiditySpecialClass & 49.4\% = \textgreater{} & \textless{} = 49.3\%\tabularnewline
+\hline 
+PrecipitationBasicClass & rain & no rain\tabularnewline
+\hline 
+WindgustSpecialClass & \textless{} = 10miles & 10.01miles =\textgreater\tabularnewline
+\hline 
+WindspeedSpecialClass & \textless{} = 16miles & 16.1miles = \textgreater\tabularnewline
+\hline 
+WinddirSpecialClass & (S, SE, E, W) & (SW, N, NE, NW)\tabularnewline
+\hline 
+TimeClass & \textless{} = 12:30 & 12:31 =\textgreater\tabularnewline
+\hline 
+Monthclass & (1,2,3,4,5,9,10,11,12) & (6,7,8{*})\tabularnewline
+\hline 
+Final\_DangerClass\_combination & 844 data & 1.015 data\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+In summary, the findings of the study identified new threshold values
+for wildfire occurrence in the region of Attica, as follows: temperature
+$\ge$ 73.7\,\textdegree F, humidity $\le$49.3\%, 0\% precipitation,
+wind gust speed $\ge$10.01\,mph, wind speed $\ge$16.1\,mph, wind
+direction in the sectors SW, N, NE, and NW, ignition time from 12:31
+on wards, and hazardous months corresponding to June, July, and August{*}.
+
+\subsubsection{Eastern Macedonia and Thrace area and data description}
+
+The regional unit of Eastern Macedonia and Thrace, covers an area
+of 14.158 km\texttwosuperior , with Komotini as its capital. Between
+2001 to 2025, Eastern Macedonia and Thrace experienced a loss of 40
+kha (400 km\texttwosuperior ) of tree cover attributable to wildfires,
+along with an additional 11 kha (110 km\texttwosuperior ) lost due
+to other disturbance factors. The most severe year within this period
+was 2023, during which fires accounted for 31 kha (310 km\texttwosuperior )
+of tree cover loss, representing 94\% of the total loss recorded that
+year, according to the global forest watch\citep{Global Forest Watch Attica}. 
+
+A brief description of the Eastern Macedonia and Thrace dataset follows.
+The final dataset consisted of 2.653 records and 8 attributes, with
+the last attribute representing the target class, namely: Final\_DangerClass\_combination.
+The classes follow the same binary scheme as previously. A concise
+summary table of these variables is presented in Table \ref{tab6:Modified_Special_-Classes_EastMa}. 
+
+\begin{table}[H]
+\caption{Definition of the threshold values (temperature, humidity, wind, wind
+direction, ignition time, month) separating the non-hazardous (Class
+0) from the hazardous (Class 1) fire danger class for the Eastern
+Macedonia \& Thrace region, with the corresponding number of records
+per class.\label{tab6:Modified_Special_-Classes_EastMa}}
+
+\centering{}%
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Features} & \textbf{Class 0 (non hazard)} & \textbf{Class 1 (hazard)}\tabularnewline
+\hline 
+\hline 
+TempSpecialClass (daily mean average) & \textless{} = 68\textsuperscript{o}F & 68.1\textsuperscript{o}F = \textgreater (or 20\textsuperscript{o}C)\tabularnewline
+\hline 
+HumiditySpecialClass & 64.1\% = \textgreater{} & \textless{} = 64\%\tabularnewline
+\hline 
+PrecipitationBasicClass & rain & no rain\tabularnewline
+\hline 
+WindgustSpecialClass & \textless{} = 7miles & 7.1miles =\textgreater\tabularnewline
+\hline 
+WindspeedSpecialClass & \textless{} = 6miles & 6.1miles =\textgreater\tabularnewline
+\hline 
+WinddirSpecialClass & (W,NW,N) & (E,SE,SW,S,NE)\tabularnewline
+\hline 
+TimeClass & \textless{} = 11:30 & 11:31 =\textgreater\tabularnewline
+\hline 
+Monthclass & (1,2,3,4,9,11,12) & (5,6,7,8,10{*})\tabularnewline
+\hline 
+Final\_DangerClass\_combination & 1.093 & 1.559\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+In summary, the findings of the study identified new threshold values
+for wildfire occurrence in the region of Eastern Macedonia and Thrace,
+as follows: temperature $\ge$ 68.1\,\textdegree F, humidity $\le$
+64.1\%, 0\% precipitation, wind gust speed $\ge$ 7.1\,mph, wind speed
+$\ge$ 6.1\,mph, wind direction in the sectors E, S, SW, SE, and NE,
+ignition time from 11:31 on wards, and hazardous months corresponding
+to May, June, July, August and October.
+
+\subsubsection{Crete area and data description }
+
+The regional unit of Crete covers an area of 8.450 km\texttwosuperior ,
+with Herakleio as its capital. Between 2001 to 2025 Crete experienced
+a loss of 1.3 kha (13 km\texttwosuperior ) of tree cover attributable
+to wildfires, along with an additional 3.2 kha (32 km\texttwosuperior )
+lost due to other disturbance factors. The most severe year within
+this period was 2008 during which fires accounted for 210 ha (2.1
+km\texttwosuperior ) of tree cover loss, representing 44\%, of the
+total loss recorded that year, according to the global forest watch
+\citep{Global Forest Watch Attica}. 
+
+A brief description of the Crete datasets follows in Table \ref{tab7:Table_7_Modified_Special_-Classes_Crete}. 
+
+\begin{table}[H]
+\raggedright
+\caption{Definition of the threshold values (temperature, humidity, wind, wind
+direction, ignition time, month) separating the non-hazardous (Class
+0) from the hazardous (Class 1) fire danger class for the Crete region,
+with the corresponding number of records per class.\label{tab7:Table_7_Modified_Special_-Classes_Crete}}
+
+\centering{}%
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Features} & \textbf{Class 0 (non hazard)} & \textbf{Class 1 (hazard)}\tabularnewline
+\hline 
+\hline 
+TempSpecialClass (daily mean average) & \textless{} = 70\textdegree F & 70.1\textdegree F = \textgreater (or 20.17\textdegree C)\tabularnewline
+\hline 
+HumiditySpecialClass & 66.1\% = \textgreater{} & \textless{} = 66\%\tabularnewline
+\hline 
+PrecipitationBasicClass & rain & no rain\tabularnewline
+\hline 
+WindgustSpecialClass & \textless{} = 9miles & 9.1miles =\textgreater\tabularnewline
+\hline 
+WindspeedSpecialClass & \textless{} = 16miles & 16.1miles =\textgreater\tabularnewline
+\hline 
+WinddirSpecialClass & (S, SW, SE, E, W) & (N, NE, NW)\tabularnewline
+\hline 
+TimeClass & \textless{} = 12:30 & 12:31 =\textgreater\tabularnewline
+\hline 
+Monthclass & (1,2,3,4,5,9,10,11,12) & (6,7,8{*})\tabularnewline
+\hline 
+Final\_DangerClass\_combination & 1.383 & 1.404\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+In summary, the findings of the study identified new threshold values
+for wildfire occurrence in the region of Crete, as follows: temperature
+$\ge$ 70.1\,\textdegree F, humidity $\le$66\%, 0\% precipitation,
+wind gust speed $\ge$9.1\,mph, wind speed$\ge$ 16.1\,mph, wind direction
+in the sectors N, NE, and NW, ignition time from 12:31 on wards, and
+hazardous months corresponding to June, July, and August .
+
+\section{Results\label{sec:Results}}
+
+For the purposes of our experiments, we employed the available optimization
+package Optimus\citep{Optimus}, which can be downloaded from\url{https://github.com/itsoulos/GlobalOptimus}
+(accessed on 20 June 2026). For the feature construction process used
+in the FC2(RF) and FC2(MLP) algorithms, we utilized the freely available
+programming tool QFc\citep{QFC}, accessible at \url{https://github.com/itsoulos/QFc}
+(accessed on 20 June 2026). In addition, the GENCLASS \citep{GenClass 2021}
+system was employed in our experiments. GENCLASS is a free software
+framework entirely written in ANSI C++, available by \url{https://github.com/itsoulos/GenClass/}(accessed
+on 20 June 2026) designed to construct classification programs in
+a C like programming language for the purpose of classifying input
+data. It operates as an evolutionary rule induction method, generating
+interpretable decision rules through genetic search mechanisms.
+
+Each experiment was executed 30 times, using different seeds for the
+random number generator in every run. In addition, the ten\nobreakdash-fold
+cross\nobreakdash-validation procedure was applied to ensure robust
+validation of the experimental results. The proposed feature construction
+method was applied independently to each fold, and the average classification
+errors on the corresponding test sets were computed. For the experimental
+tables the following notation was used:
+\begin{enumerate}
+\item The column DATASET denotes the dataset corresponding to a regions
+where the machine learning methods were applied. Attica contains 1.859
+records, of which 844 correspond to class 0 and 1.015 to class 1.
+Eastern Macedonia \& Thrace contains 2.653 records, of which 1.093
+correspond to class 0 and 1.559 to class 1. Crete contains 2.789 records,
+of which 1.383 correspond to class 0 and 1.404 to class 1. 
+\item The column MLP(BFGS) represents the application of an artificial neural
+network \citep{nn1,nn2} with 10 processing nodes trained with the
+BFGS optimization method \citep{powell}.
+\item The column RBF stands for the usage of a Radial Basis Function (RBF)
+network \citep{rbf1,rbf2} with 10 processing nodes.
+\item The column RF denotes the application of the Random Forest model \citep{random_forest}.
+\item The column FC2(RF) represents the construction of two artificial features
+using the Grammatical Evolution feature construction technique \citep{fc1}.
+The Radial Basis Function (RBF) machine learning model was employed
+for feature construction, while the generated features were evaluated
+using Random Forests.
+\item The column FC2(MLP) stands for the construction of two artificial
+features using the same feature construction technique. The evaluation
+of the constructed features was performed using a neural network trained
+with the BFGS method.
+\item The column GENCLASS represents the incorporation of the GENCLASS method
+to produce classification rules. 
+\item The row AVERAGE represents the average classification error for each
+dataset and method.
+\end{enumerate}
+
+\subsection{Classification error}
+
+The results demonstrated in Table \ref{tab:Experimental-results-using}
+that the model GENCLASS achieved the lower error accuracy in predicting
+the final danger class, indicating that the newly developed fire danger
+rule is fully identifiable and predictable based on the combined climatological
+and operational fire incident data. 
+
+\begin{table}[H]
+\caption{Experimental results using the machine learning methods on various
+regions. The numbers in cells represent average classification error.\label{tab:Experimental-results-using}}
+
+\centering{}{\footnotesize{}%
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+{\footnotesize DATASET} & {\footnotesize MLP(BFGS)} & {\footnotesize RBF} & {\footnotesize RF} & {\footnotesize FC2(RF)} & {\footnotesize FC2(MLP)} & {\footnotesize GENCLASS}\tabularnewline
+\hline 
+\hline 
+{\footnotesize Attica} & {\footnotesize 13.67\%} & {\footnotesize 14.42\%} & {\footnotesize 13.93\%} & {\footnotesize 13.01\%} & {\footnotesize 12.82\%} & {\footnotesize 12.43\%}\tabularnewline
+\hline 
+\begin{cellvarwidth}[t]
+\centering
+{\footnotesize Eastern Macedonia }{\footnotesize\par}
+
+{\footnotesize\& Thrace}
+\end{cellvarwidth} & {\footnotesize 12.51\%} & {\footnotesize 15.34\%} & {\footnotesize 12.21\%} & {\footnotesize 11.93\%} & {\footnotesize 11.87\%} & {\footnotesize 11.47\%}\tabularnewline
+\hline 
+{\footnotesize Crete} & {\footnotesize 16.39\%} & {\footnotesize 17.82\%} & {\footnotesize 15.96\%} & {\footnotesize 16.15\%} & {\footnotesize 15.56\%} & {\footnotesize 14.86\%}\tabularnewline
+\hline 
+{\footnotesize\textbf{AVERAGE}} & {\footnotesize\textbf{14.19\%}} & {\footnotesize\textbf{15.86\%}} & {\footnotesize\textbf{14.03\%}} & {\footnotesize\textbf{13.70\%}} & {\footnotesize\textbf{13.42\%}} & {\footnotesize\textbf{12.92\%}}\tabularnewline
+\hline 
+\end{tabular}}{\footnotesize\par}
+\end{table}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.6]{statistical_analysis_figure}
+\par\end{centering}
+\caption{Average classification error by , across the three study regions\label{fig:statClassification}}
+\end{figure}
+
+Figure \ref{fig:statClassification} presents, in bar-chart form,
+the mean classification error rate (\%) achieved by each of the six
+evaluated machine learning models, averaged across the three study
+regions (Attica, Eastern Macedonia \& Thrace, and Crete), with error
+bars representing one standard deviation. GENCLASS is visually distinguished
+from the remaining five models and serves as the reference model against
+which pairwise comparisons are drawn. It attained the lowest mean
+classification error (12.92\%), followed in ascending order by FC2(MLP)
+(13.42\%), FC2(RF) (13.70\%), RF (14.03\%), MLP(BFGS) (14.19\%), and
+RBF (15.86\%), the latter exhibiting both the highest mean error and
+the greatest variability across regions. The figure further reports
+the result of a Friedman test ($\chi^{2}$ = 14.05, df = 5, p = 0.015),
+a non-parametric procedure appropriate for comparing multiple related
+samples, which indicates that the observed differences in performance
+among the six models are unlikely to have arisen by chance. Significance
+markers displayed above each bar correspond to paired t-test comparisons
+against GENCLASS: all models differ significantly from GENCLASS (p
+\textless{} 0.05) with the exception of FC2(RF), which is marked as
+not significant (n.s.), suggesting that its performance is statistically
+comparable to that of GENCLASS despite its marginally higher mean
+error.
+
+\begin{table}[H]
+\caption{Statistical comparison of classification error, average ranking, and
+significance tests (Wilcoxon and paired t-test) for the six machine
+learning models relative to GENCLASS as the reference model.\label{tab:statClassification}}
+
+\begin{centering}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+{\scriptsize Model} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Mean}{\scriptsize\par}
+
+{\scriptsize Error}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize SD}{\scriptsize\par}
+
+{\scriptsize Error}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Min }{\scriptsize\par}
+
+{\scriptsize Error}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Max}{\scriptsize\par}
+
+{\scriptsize Error}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Avg}{\scriptsize\par}
+
+{\scriptsize Rank}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Mean Diff vs }{\scriptsize\par}
+
+{\scriptsize GENCLASS}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Wilcoxon}{\scriptsize\par}
+
+{\scriptsize p}
+\end{cellvarwidth} & \begin{cellvarwidth}[t]
+\centering
+{\scriptsize Paired}{\scriptsize\par}
+
+{\scriptsize p}
+\end{cellvarwidth} & {\scriptsize Significance}\tabularnewline
+\hline 
+\hline 
+{\scriptsize GENCLASS} & {\scriptsize 12.92} & {\scriptsize 1.75} & {\scriptsize 11.47} & {\scriptsize 14.86} & {\scriptsize 1} & {\scriptsize 0} &  &  & {\scriptsize Reference}\tabularnewline
+\hline 
+{\scriptsize FC2(MLP)} & {\scriptsize 13.42} & {\scriptsize 1.92} & {\scriptsize 11.87} & {\scriptsize 15.56} & {\scriptsize 2} & {\scriptsize -0.5} & {\scriptsize 0.1814} & {\scriptsize 0.0395} & {\scriptsize{*}}\tabularnewline
+\hline 
+{\scriptsize FC2(RF)} & {\scriptsize 13.7} & {\scriptsize 2.19} & {\scriptsize 11.93} & {\scriptsize 16.15} & {\scriptsize 3.33} & {\scriptsize -0.78} & {\scriptsize 0.1814} & {\scriptsize 0.0955} & {\scriptsize n.s.}\tabularnewline
+\hline 
+{\scriptsize RF} & {\scriptsize 14.03} & {\scriptsize 1.88} & {\scriptsize 12.21} & {\scriptsize 15.96} & {\scriptsize 4} & {\scriptsize -1.11} & {\scriptsize 0.1814} & {\scriptsize 0.0367} & {\scriptsize{*}}\tabularnewline
+\hline 
+{\scriptsize MLP(BFGS)} & {\scriptsize 14.19} & {\scriptsize 1.99} & {\scriptsize 12.51} & {\scriptsize 16.39} & {\scriptsize 4.67} & {\scriptsize -1.27} & {\scriptsize 0.1814} & {\scriptsize 0.0123} & {\scriptsize{*}}\tabularnewline
+\hline 
+{\scriptsize RBF} & {\scriptsize 15.86} & {\scriptsize 1.76} & {\scriptsize 14.42} & {\scriptsize 17.82} & {\scriptsize 6} & {\scriptsize -2.94} & {\scriptsize 0.1814} & {\scriptsize 0.0324} & {\scriptsize{*}}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+\end{table}
+
+{\footnotesize\textit{Friedman test: chi-squared = 14.048, df = 5,
+p-value = 0.0153}}{\footnotesize\par}
+
+{\footnotesize\textit{Nemenyi critical difference (alpha = 0.05):
+4.353}}{\footnotesize\par}
+
+{\footnotesize\textit{Significance vs. GENCLASS (paired t-test): {*}{*}{*}
+p\textless 0.001, {*}{*} p\textless 0.01, {*} p\textless 0.05,
+n.s. = not significant}}{\footnotesize\par}
+
+{\footnotesize\textit{Note: n = 3 regions per technique; results are
+indicative given the small sample size.\medskip{}
+}}{\footnotesize\par}
+
+Table \ref{tab:statClassification} complements Figure \ref{fig:statClassification}
+by providing a detailed statistical summary of model performance across
+the three regions (n = 3 per model). For each model, the table reports
+the mean, standard deviation, minimum, and maximum classification
+error, together with the average rank obtained across regions, the
+mean difference relative to GENCLASS, and the corresponding significance
+estimates derived from both the Wilcoxon signed-rank test and the
+paired t-test. GENCLASS consistently ranks first (average rank = 1)
+with the lowest mean error and a comparatively narrow standard deviation
+(SD = 1.75), whereas RBF ranks last (average rank = 6) with both the
+highest mean error and the widest range of observed values. The Wilcoxon
+test yields an identical p-value (0.1814) for all comparisons, which
+is not statistically significant; this outcome reflects the limited
+statistical power of the test given the very small sample size (n
+= 3 paired observations per comparison). In contrast, the paired t-test,
+being a parametric test with greater sensitivity under these conditions,
+identifies statistically significant differences (p \textless{} 0.05)
+between GENCLASS and all other models except FC2(RF) (p = 0.0955,
+n.s.), which again emerges as the closest competitor to GENCLASS.
+The table footnote reports the overall Friedman test statistic ($\chi^{2}$
+= 14.048, df = 5, p = 0.0153) and the Nemenyi critical difference
+(4.353) used for post-hoc multiple comparisons, while explicitly cautioning
+that, owing to the small sample size (three regions per technique),
+the results should be regarded as indicative rather than conclusive.
+
+Taken together, Figure \ref{fig:statClassification} and Table \ref{fig:statClassification}
+converge on the conclusion that GENCLASS systematically outperforms
+the remaining five models, with the superiority being statistically
+robust, as confirmed by the paired t-test, against every model except
+FC2(RF), which stands out as its most competitive alternative.
+
+\subsection{Precision and recall values}
+
+Precision and recall are evaluation metrics used to assess the performance
+of a machine learning model. Precision expresses the proportion of
+predicted positive cases that are actually correct, while recall indicates
+the proportion of true positive cases that the model successfully
+identifies. Together, these metrics provide essential insight into
+the effectiveness of a model in classification tasks. Precision is
+calculated as: 
+\begin{equation}
+\mbox{Precision}=\frac{\mbox{TruePositives}}{\mbox{TruePositives}+\mbox{FalsePositives}}\label{eq:precision}
+\end{equation}
+
+Precision reflects the model’s ability to avoid false positives, making
+it a key indicator of prediction reliability. In other words, the
+higher the value, the fewer the errors. 
+
+The Recall value confirms the model’s ability to correctly identify
+the positive class, reflecting how many of the actual positive instances
+were successfully detected. As with precision and recall, the higher
+the value, the more successful the classification. Recall is calculated
+as: 
+\begin{equation}
+\mbox{Recall}=\frac{\mbox{TruePositives}}{\mbox{TruePositives}+\mbox{FalseNegatives}}\label{eq:recall}
+\end{equation}
+
+The following table presents the average values of the precision and
+recall measures for each dataset and for every method Table \ref{tab11:Precision-=000026-Recall}.
+In this comparison as well, we observe the consistent performance
+of all methods. The best values are achieved by RF, FC2(RF), FC2 (MLP),
+and GENCLASS, while for the Eastern Macedonia \& Thrace dataset, MLP
+(BFGS) stands out.
+
+\begin{table}[H]
+\caption{Comparative summary of average precision and recall values (\%) for
+each machine learning technique, by study region (Attica, Eastern
+Macedonia \& Thrace, Crete).\label{tab11:Precision-=000026-Recall}}
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+ &  & \multicolumn{1}{c|}{\begin{cellvarwidth}[t]
+\centering
+{\footnotesize MLP}{\footnotesize\par}
+
+{\footnotesize (BFGS)}
+\end{cellvarwidth}} & \multicolumn{1}{c|}{{\footnotesize RBF}} & \multicolumn{1}{c|}{{\footnotesize RF}} & \multicolumn{1}{c|}{\begin{cellvarwidth}[t]
+\centering
+{\footnotesize FC2}{\footnotesize\par}
+
+{\footnotesize (RF)}
+\end{cellvarwidth}} & \multicolumn{1}{c|}{\begin{cellvarwidth}[t]
+\centering
+{\footnotesize FC2}{\footnotesize\par}
+
+{\footnotesize (MLP)}
+\end{cellvarwidth}} & \multicolumn{1}{c|}{{\footnotesize GENCLASS}}\tabularnewline
+\hline 
+\hline 
+\multirow{2}{*}{{\footnotesize Attica}} & {\footnotesize Precision} & {\footnotesize 87.98\%} & {\footnotesize 85.43\%} & {\footnotesize 88.07\%} & {\footnotesize 88.24\%} & {\footnotesize 88\%} & {\footnotesize 88.50\%}\tabularnewline
+\cline{2-8}
+ & {\footnotesize Recall} & {\footnotesize 87.14\%} & {\footnotesize 85.32\%} & {\footnotesize 87.33\%} & {\footnotesize 87.32\%} & {\footnotesize 88.02\%} & {\footnotesize 88.10\%}\tabularnewline
+\hline 
+\multirow{2}{*}{\begin{cellvarwidth}[t]
+\centering
+{\footnotesize Eastern}{\footnotesize\par}
+
+{\footnotesize Macedonia}
+\end{cellvarwidth}} & {\footnotesize Precision} & {\footnotesize 89.04\%} & {\footnotesize 83.51\%} & {\footnotesize 89.45\%} & {\footnotesize 87.92\%} & {\footnotesize 88.08\%} & {\footnotesize 89\%}\tabularnewline
+\cline{2-8}
+ & {\footnotesize Recall} & {\footnotesize 88.05\%} & {\footnotesize 83.82\%} & {\footnotesize 88.37\%} & {\footnotesize 89.08\%} & {\footnotesize 89.08\%} & {\footnotesize 88.9\%}\tabularnewline
+\hline 
+\multirow{2}{*}{{\footnotesize Crete}} & {\footnotesize Precision} & {\footnotesize 84.46\%} & {\footnotesize 82.09\%} & {\footnotesize 85.07\%} & {\footnotesize 84.95\%} & {\footnotesize 84.46\%} & {\footnotesize 85.07\%}\tabularnewline
+\cline{2-8}
+ & {\footnotesize Recall} & {\footnotesize 84.39\%} & {\footnotesize 82.09\%} & {\footnotesize 85.03\%} & {\footnotesize 84.88\%} & {\footnotesize 84.52\%} & {\footnotesize 85.50\%}\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+The precision and recall values presented in Table \ref{tab11:Precision-=000026-Recall}
+confirm the pattern already observed for classification error, showing
+consistently high and stable performance across all three regions.
+For the Attica dataset, both metrics ranged between 85.32\% and 88.50\%,
+with GENCLASS, FC2(RF), and RF achieving the strongest results, while
+RBF again recorded the lowest performance, at approximately 85\%.
+The Eastern Macedonia \& Thrace dataset exhibited the highest overall
+performance levels among the three regions, ranging from 83.51\% to
+89.45\%, with RF, MLP (BFGS), and GENCLASS standing out in precision,
+and FC2(RF) and FC2(MLP) achieving the highest recall values. In contrast,
+the Crete dataset showed comparatively lower performance levels, ranging
+from 82.09\% to 85.50\%, although the relative ranking of the techniques
+remained consistent with the other two regions, with GENCLASS and
+RF standing out. Across all three datasets, RBF consistently underperformed
+relative to the other five techniques, whereas GENCLASS, RF, and the
+feature construction methods FC2(RF) and FC2(MLP) maintained the most
+stable and competitive precision and recall values, corroborating
+the reliability of the region specific fire danger thresholds developed
+in this study.
+
+\begin{figure}[H]
+
+\begin{centering}
+\includegraphics[scale=0.6]{pr}
+\par\end{centering}
+\caption{Line chart of the average precision and recall (\%) across the three
+study regions, for each machine learning model.\label{fig:precisionRacallChart}}
+
+\end{figure}
+
+Figure \ref{fig:precisionRacallChart} summarizes these findings,
+showing that GENCLASS achieves the highest average recall across the
+three regions (87.50\%) and an average precision (87.52\%) essentially
+equivalent to that of RF, the top-performing model on this metric
+(87.53\%), while RBF remains the weakest performing technique throughout.
+
+\section{Conclusions\label{sec:Conclusions}}
+
+This study developed and validated region specific fire danger classification
+schemes for three climatically distinct areas of Greece, namely Attica,
+Eastern Macedonia \& Thrace, and Crete, using twenty five years (2000-2024)
+of combined climatological and operational fire incident data. Rather
+than relying on the generic 30/30/30 rule, specialized threshold values
+for temperature, humidity, wind gust, wind speed, wind direction,
+ignition time, and month were derived independently for each region,
+reflecting their distinct climatic profiles.
+
+Six machine learning techniques were evaluated across all three datasets
+using ten fold cross-validation: two classical approaches (MLP trained
+with BFGS, and RBF networks), Random Forest (RF), two Grammatical
+Evolution based feature construction methods (FC2(RF) and FC2(MLP)),
+and GENCLASS, an evolutionary rule induction method also grounded
+in Grammatical Evolution. The results consistently demonstrated a
+clear performance hierarchy: GENCLASS achieved the lowest average
+classification error (12.92\%) and the highest average precision and
+recall values across all three regions, confirming that the fire danger
+rule constructed in this study is fully identifiable and predictable
+from climatological and operational data. FC2(MLP) and FC2(RF) followed
+closely, ranking second and third respectively in average classification
+error (13.42\% and 13.70\%), while the classical techniques (RF, MLP
+(BFGS), and particularly RBF) exhibited comparatively higher and more
+variable error rates, with RBF consistently ranking last across all
+three regions in both classification error and precision/recall metrics.
+
+This pattern indicates that techniques grounded in Grammatical Evolution,
+whether through automated feature construction (FC2) or direct rule
+induction (GENCLASS), are better suited to capturing the complex,
+region specific relationships between meteorological conditions and
+wildfire occurrence than conventional neural network or ensemble based
+approaches. In particular, the superiority of GENCLASS suggests that
+the interpretable decision rules it generates are not only competitive
+in predictive accuracy but also offer a transparent and operationally
+meaningful representation of fire danger, a property that black box
+models such as MLP and RBF cannot provide. These findings validate
+the climatological attributes and the region specific definitions
+developed for the classification of fire danger, confirming that tailored,
+evolutionarily derived thresholds provide a more reliable and robust
+framework for wildfire risk assessment than generic, one size fits
+all rules.
+
+Building on these findings, several directions merit further investigation.
+First, the application of the proposed methodology to additional Greek
+regions with different climatic and topographic characteristics would
+help establish whether the observed superiority of Grammatical Evolution
+based techniques generalizes beyond the three areas examined here.
+Second, incorporating additional predictive features, such as vegetation
+type, fuel moisture content, terrain slope, and proximity to human
+activity, could further improve the discriminative power of the constructed
+classes, particularly for the Crete dataset, which exhibited comparatively
+lower performance across all techniques. Third, future work could
+explore the integration of the fire duration variable, excluded in
+this study to preserve model impartiality, as a secondary prediction
+target once ignition risk has been established, thereby extending
+the framework from a binary danger classifier to a more comprehensive
+operational decision support tool. Finally, given the consistently
+strong performance of GENCLASS, further research should focus on refining
+and extending the interpretability of the generated rule sets, potentially
+enabling their direct adoption by fire prevention services as a practical,
+region specific alternative to the traditional 30/30/30 rule.
+
+\vspace{6pt}
+
+
+\authorcontributions{Conceptualization, C.K..; methodology, C.K.; software, I.G.T.; validation,
+V.C.; formal analysis, V.C.; resources, G.K.; visualization, C.K.;
+supervision, I.G.T. All authors have read and agreed to the published
+version of the manuscript.}
+
+\funding{This research has been financed by the European Union : Next Generation
+EU through the Program Greece 2.0 National Recovery and Resilience
+Plan , under the call RESEARCH -- CREATE -- INNOVATE, project name
+“iCREW: Intelligent small craft simulator for advanced crew training
+using Virtual Reality techniques\textquotedbl{} (project code:TAEDK-06195).}
+
+\institutionalreview{Not applicable.}
+
+\informedconsent{Not applicable.}
+
+\dataavailability{The original contributions presented in this study are included in
+the article. Further inquiries can be directed to the corresponding
+author. }
+
+\conflictsofinterest{The authors declare no conflicts of interest.}
+
+\begin{adjustwidth}{-\extralength}{0cm}{}
+
+
+\reftitle{References}
+\begin{thebibliography}{99}
+\bibitem{AA 2025} AA.com.tr. Southern California wildfires fully
+contained after 24 days (2025). Available from: \url{https://www.aa.com.tr/en/americas/southern-california-wildfires-fully-contained-after-24-days/3468561}
+(Last accessed on 01/05/2026). 
+
+\bibitem{Bouvier 2025}Bouvier, V., Dedieu, K., Lyons, D., \& Raynaud,
+R. (2025). When it burns in winter: Modelling off-season California
+wildfires. Available from: \url{https://hal.science/hal-05240719/ }(Last
+accessed on 01/05/2026). 
+
+\bibitem{Visual crossing} Visual crossing.com. Available from: \url{https://www.visualcrossing.com/weather-query-builder/}
+(Last accessed on 01/05/2026). 
+
+\bibitem{NASA 2022}NASA. Wildfires Char South Korea. Available from:
+\url{https://science.nasa.gov/earth/earth-observatory/wildfires-char-south-korea-149551/ }(Last
+accessed on 01/05/2026). 
+
+\bibitem{Weatherspark} WeatherSpark. Available from: \url{https://weatherspark.com/h/d/142033/2022/3/4/Historical-Weather-on-Friday-March-4-2022-in-Seoul-South-Korea}
+(Last accessed on 01/05/2026). 
+
+\bibitem{Modis Nasa 2025} Modis NASA. May 25, 2025 - Fires Continue
+to Scorch Russia's Far East. Available from: \url{https://modis.gsfc.nasa.gov/gallery/individual.php?db_date=2025-05-25}
+(Last accessed on 01/05/2026). 
+
+\bibitem{WeatherSpark Russia} WeatherSpark. Available from: \url{https://weatherspark.com/d/127538/5/22/Average-Weather-on-May-22-in-Chita-Russia }(Last
+accessed on 01/05/2026). 
+
+\bibitem{Suzuki 2026} Suzuki, S., Manzello, S.L. The 2025 Wildland-Urban
+Interface (WUI) Fire Disaster in Ofunato City, Japan. Fire Technol
+62, 49 (2026). 
+
+\bibitem{WeatherSpark japan} WeatherSpark. Available from: \url{https://weatherspark.com/d/144114/2/26/Average-Weather-on-February-26-in-\%C5\%8Cfunato-Japan}
+(Last accessed on 01/05/2026). 
+
+\bibitem{Cuevas 2021} Diaz Cuevas, M. D. P., \& Limones Rodriguez,
+N. (2021). El papel de la regla 30/30/30 en los incendios forestales.
+El caso de las provincias de Huelva y Sevilla. Available from: \url{https://idus.us.es/server/api/core/bitstreams/7c154de8-c760-442d-b95b-9b9d5a79944d/content }(Last
+accessed on 12/05/2026). 
+
+\bibitem{Cortez 2007} Cortez, P., \& Morais, A. D. J. R. (2007).
+A data mining approach to predict forest fires using meteorological
+data. New Trends in Artificial Intelligence, Proceedings of the 13th
+EPIA, 512-523. 
+
+\bibitem{Yunhao 2007} Yunhao, C., Jing, L., \& Guangxiong, P. (2007).
+Forest fire risk assessment combining remote sensing and meteorological
+information. New Zealand Journal of Agricultural Research, 50(5),
+1037-1044. 
+
+\bibitem{Sakr 2011}Sakr, G. E., Elhajj, I. H., \& Mitri, G. (2011).
+Efficient forest fire occurrence prediction for developing countries
+using two weather parameters. Engineering Applications of Artificial
+Intelligence, 24(5), 888-894. 
+
+\bibitem{Agarwal 2020}Agarwal, P., Tang, J., Narayanan, A. N. L.,
+\& Zhuang, J. (2020). Big data and predictive analytics in fire risk
+using weather data. Risk analysis, 40(7), 1438-1449. 
+
+\bibitem{Masinda 2022} Masinda, M. M., Li, F., Qi, L., Sun, L., \&
+Hu, T. (2022). Forest fire risk estimation in a typical temperate
+forest in Northeastern China using the Canadian forest fire weather
+index: case study in autumn 2019 and 2020. Natural hazards, 111(1),
+1085-1101. 
+
+\bibitem{Karali 2023} Karali, A., Varotsos, K. V., Giannakopoulos,
+C., Nastos, P. P., \& Hatzaki, M. (2023). Seasonal fire danger forecasts
+for supporting fire prevention management in an eastern Mediterranean
+environment: the case of Attica, Greece. Natural hazards and earth
+system sciences, 23(2), 429-445. 
+
+\bibitem{Parvar 2024}Parvar, Z., Saeidi, S., \& Mirkarimi, S. (2024).
+Integrating meteorological and geospatial data for forest fire risk
+assessment. Journal of environmental management, 358, 120925. 
+
+\bibitem{Global Forest Watch Attica} Global Forest Watch. Available
+from: \url{https://www.globalforestwatch.org/dashboards/country/GRC/3/?category=fires&location=WyJjb3VudHJ5IiwiR1JDIiwiMyJd&map=eyJjYW5Cb3VuZCI6dHJ1ZX0\%3D}
+(Last accessed on 02/05/2026). 
+
+\bibitem{Optimus} Tsoulos, I. G., Charilogis, V., Kyrou, G., Stavrou,
+V. N., \& Tzallas, A. (2025). OPTIMUS: A Multidimensional Global Optimization
+Package. Journal of Open Source Software, 10(108), 7584. 
+
+\bibitem{QFC} Tsoulos, I. G. (2022). QFC: A Parallel Software Tool
+for Feature Construction, Based on Grammatical Evolution. Algorithms,
+15(8), 295. 
+
+\bibitem{GenClass 2021}Anastasopoulos, N., Tsoulos, I. G., \& Tzallas,
+A. (2021). GenClass: A parallel tool for data classification based
+on Grammatical Evolution. SoftwareX, 16, 100830.
+
+\bibitem{Kopitsa 2024} Kopitsa, C., Tsoulos, I. G., Charilogis, V.,
+\& Stavrakoudis, A. (2024). Predicting the duration of forest fires
+using machine learning methods. Future Internet, 16(11), 396.
+
+\bibitem{nn1}Müller, B., Reinhardt, J., \& Strickland, M. T. (2012).
+Neural networks: an introduction. Springer Science \& Business Media.
+
+\bibitem{nn2}Gurney, K. (2018). An introduction to neural networks.
+CRC press.
+
+\bibitem{powell}M.J.D Powell, A Tolerant Algorithm for Linearly Constrained
+Optimization Calculations, Mathematical Programming \textbf{45}, pp.
+547-566, 1989. 
+
+\bibitem[(1991)]{rbf1}J. Park and I. W. Sandberg, Universal Approximation
+Using Radial-Basis-Function Networks, Neural Computation \textbf{3},
+pp. 246-257, 1991.
+
+\bibitem{rbf2}G.A. Montazer, D. Giveki, M. Karami, H. Rastegar, Radial
+basis function neural networks: A review. Comput. Rev. J \textbf{1},
+pp. 52-74, 2018.
+
+\bibitem{random_forest}S.J. Rigatti, Random forest. Journal of Insurance
+Medicine \textbf{47}, pp. 31-39, 2017.
+
+\bibitem{fc1}Dimitris Gavrilis, Ioannis G. Tsoulos, Evangelos Dermatas,
+Selecting and constructing features using grammatical evolution, Pattern
+Recognition Letters \textbf{29},pp. 1358-1365, 2008. 
+
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors' response\\
+%Reviewer 2 comments and authors' response\\
+%Reviewer 3 comments and authors' response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PublishersNote{}
+
+\end{adjustwidth}{}
+\end{document}
