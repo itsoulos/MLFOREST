@@ -1555,7 +1555,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Greece_map.png
+	filename ../../../Downloads/Greece_map.png
 	lyxscale 30
 	scale 90
 
@@ -5940,7 +5940,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename statistical_analysis_figure.png
+	filename ../../../Downloads/statistical_analysis_figure.png
 	lyxscale 30
 	scale 60
 
@@ -7866,7 +7866,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename pr.png
+	filename ../../../Downloads/pr.png
 	lyxscale 30
 	scale 60
 
@@ -8033,7 +8033,7 @@ Conceptualization,
  visualization,
  C.K.;
  supervision,
- I.G.T.
+ G.K.
  All authors have read and agreed to the published version of the manuscript.
 \end_layout
 
