@@ -342,11 +342,11 @@ Introduction
 This study aims to investigate the connection between climate change,
  specifically the factors of rising temperatures,
  low humidity,
- and high wind speed and their anomalous influence ( values) on forest fire duration.
+ and high wind speed and their anomalous influence on forest fire duration.
  These influences will be captured through the development of a functional relationship,
  referred to as Final_effects.
- The objective is to accurately predict the predefined class of climatic effects using a 30 year period (1991 - 2020 or 1992 - 2022),
- in accordance with the WMO Technical Regulations on climatological normals
+ The objective is to accurately predict the predefined class of climatic effects using a 30 year period (1980 - 2010 or 1992 - 2022),
+ in accordance with the WMO Technical Regulations on climatological normals 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "WMO"
@@ -637,6 +637,48 @@ Crown fires are less common and typically occur during periods of extreme heat a
  thereby increasing the likelihood of fire reaching and propagating through the forest canopy.
 \end_layout
 
+\begin_layout Standard
+The remaining of this article is organized as follows:
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Materials-and-Methods"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ the used datasets are fully described,
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ the experimental results from the application of various machine learning methods to the described datasets are listed and finally in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ a series of conclusions are presented.
+\end_layout
+
 \begin_layout Section
 Materials and Methods
 \begin_inset CommandInset label
@@ -646,12 +688,6 @@ name "sec:Materials-and-Methods"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-In this section,
- a detailed presentation of the datasets used as well as the machine learning techniques used in the experiments performed will be provided.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -698,9 +734,9 @@ literal "false"
  specified the region of interest,
  and defined the temporal range.
  Data retrieval was then carried out under the free access tier,
- which allows up to 1,000 records per day.
+ which allows up to 1000 records per day.
  The procedure is generally straightforward,
- with the only notable constraint being the daily limit of 1,000 data points.
+ with the only notable constraint being the daily limit of 1000 data points.
 \end_layout
 
 \begin_layout Standard
@@ -765,7 +801,7 @@ Following this refinement,
  2025.
  Specifically,
  Attica provides 2.100 forest fire records,
- Crete provides 2.893 wildfire record and finally Western Macedonia and Thrace provides 2.919 forest fire records.
+ Crete provides 2.893 wildfire record and finally Eastern Macedonia and Thrace provides 2.919 forest fire records.
 \end_layout
 
 \begin_layout Standard
@@ -811,13 +847,13 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Primary table with raw climatic data
+Definition of raw climatological variables and units of measurement
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Table-1-Primary-table-with"
@@ -833,6 +869,7 @@ name "tab:Table-1-Primary-table-with"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="34" columns="3">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -3251,7 +3288,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -3261,7 +3298,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Primary table with raw fire data
+Raw wildfire incident data (Hellenic Fire Service)
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Table-2-Primary-table-with"
@@ -3277,6 +3314,7 @@ name "tab:Table-2-Primary-table-with"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="2">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -4119,7 +4157,7 @@ tuple "list"
 In the merged datasets,
  new columns were generated containing the normal values derived from the baseline climatological periods of previous decades.
  These values were then compared with the meteorological and operational firefighting conditions recorded for each event,
- in order to construct the final classification variable Effects_final.
+ in order to construct the final classification variable Final_effects.
  This variable quantifies,
  with binary values (0/1),
  the influence of the selected features,
@@ -4142,7 +4180,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4152,7 +4190,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modified_data_all_region( climate & fires)
+Derived classification variables for climatic anomalies and fire duration,
+ by region
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Modified_data_all_region(-climat"
@@ -4168,6 +4207,7 @@ name "tab:Modified_data_all_region(-climat"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="2">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -4781,8 +4821,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Attica Baseline (1980 - 2010),
- normal values
+Climatological normal (baseline) values for Attica,
+ 1980–2010
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Attica-Baseline-(1980"
@@ -4798,6 +4838,7 @@ name "tab:Attica-Baseline-(1980"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="6">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -6053,7 +6094,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -6063,7 +6104,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Attica_Analytic_values (Normal/ anomalous)
+Distribution of normal vs.
+ anomalous values per feature – Attica
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Attica_Analytic_values-(Normal/-"
@@ -6079,6 +6121,7 @@ name "tab:Attica_Analytic_values-(Normal/-"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="4">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -7068,13 +7111,13 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Attica_Influence_Values
+Influence of climatic anomalies on fire duration – Attica
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Attica_Influence_Values"
@@ -7090,6 +7133,7 @@ name "tab:Attica_Influence_Values"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 
 \size footnotesize
 \begin_inset Tabular
@@ -7246,10 +7290,7 @@ duration
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_temp_anomaly (1)
-\color inherit
- 
+Class_temp_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -7261,7 +7302,6 @@ Class_temp_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -7295,7 +7335,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-~41%
+41.10%
 \end_layout
 
 \end_inset
@@ -7306,7 +7346,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--4.25%
+-17.85%
 \end_layout
 
 \end_inset
@@ -7319,21 +7359,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_temp_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -7367,7 +7404,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-~45%
+58.95%
 \end_layout
 
 \end_inset
@@ -7389,10 +7426,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_high_heat_anomaly (1)
-\color inherit
- 
+Class_high_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -7404,7 +7438,6 @@ Class_high_heat_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -7449,7 +7482,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--1.05%
+-16.87%
 \end_layout
 
 \end_inset
@@ -7462,21 +7495,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -7510,7 +7540,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-42.62%
+58.43%
 \end_layout
 
 \end_inset
@@ -7532,10 +7562,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_low_heat_anomaly (1)
-\color inherit
- 
+Class_low_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -7547,7 +7574,6 @@ Class_low_heat_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -7592,7 +7618,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--2.61%
+-19.64%
 \end_layout
 
 \end_inset
@@ -7605,21 +7631,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -7653,7 +7676,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-42.79%
+59.82%
 \end_layout
 
 \end_inset
@@ -7675,21 +7698,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -7734,7 +7754,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+9.79%
+-11.66%
 \end_layout
 
 \end_inset
@@ -7747,21 +7767,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -7795,7 +7812,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-34.38%
+55.83%
 \end_layout
 
 \end_inset
@@ -7817,21 +7834,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_high_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -7876,7 +7890,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--15.59%
+-40.55%
 \end_layout
 
 \end_inset
@@ -7889,21 +7903,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -7937,7 +7948,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-45.32%
+70.27%
 \end_layout
 
 \end_inset
@@ -7959,21 +7970,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_low_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -8018,7 +8026,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+17.22%
+-1.40%
 \end_layout
 
 \end_inset
@@ -8031,21 +8039,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -8079,7 +8084,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-32.08%
+50.69%
 \end_layout
 
 \end_inset
@@ -8101,21 +8106,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -8160,7 +8162,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--2.85%
+-16.19%
 \end_layout
 
 \end_inset
@@ -8173,21 +8175,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -8221,7 +8220,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-44.76%
+58.09%
 \end_layout
 
 \end_inset
@@ -8243,21 +8242,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_high_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -8302,7 +8298,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+13.35%
+-1,53%
 \end_layout
 
 \end_inset
@@ -8315,21 +8311,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -8363,7 +8356,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-35.89%
+50.76%
 \end_layout
 
 \end_inset
@@ -8385,21 +8378,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_low_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -8444,7 +8434,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--14.07%
+-30.81%
 \end_layout
 
 \end_inset
@@ -8457,21 +8447,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -8505,7 +8492,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-48.66%
+65.40%
 \end_layout
 
 \end_inset
@@ -8538,8 +8525,7 @@ Fire_duration_class (0)
 
 \begin_layout Standard
 From the feature analysis,
- the duration of wildfires in the Attica region is influenced by 9.79% by humidity anomalies,
- and specifically by 17.22% when humidity is lower than the expected baseline,
+ the duration of wildfires in the Attica region is influenced by -40.55% by high humidity anomalies,
  as in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -8552,16 +8538,13 @@ tuple "list"
 
 \end_inset
 
- (Class_low_humidity_anomaly).
+ (Class_high_humidity_anomaly).
  The next most influential factor is wind speed,
- with the feature (Class_high_windspeed_anomaly) accounting for 13.35% of the observed impact.
- 
-\end_layout
-
-\begin_layout Standard
-Regarding the negative values,
- it is worth noting that they indicate that these features reduce the duration of the fire,
- with the strongest effects observed for (Class_high_humidity_anomaly) at −15.59% and (Class_low_windspeed_anomaly) at −14.07%.
+ with the feature (Class_low_windspeed_anomaly) accounting for -30.81% of the observed impact.
+ Another feature,
+ it is worth noting the temperature with (Class_low_heat_anomaly) at −19.64%,
+ (Class_temp_anomaly) at −17.85%,
+ and (Class_high_heat_anomaly) at −16.87%.
 \end_layout
 
 \begin_layout Subsection
@@ -8586,14 +8569,14 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Crete Baseline 1980 - 2010,
- normal values
+Climatological normal (baseline) values for Crete,
+ 1980–2010
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Crete-Baseline-1980"
@@ -8609,6 +8592,7 @@ name "tab:Crete-Baseline-1980"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="6">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -10045,7 +10029,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -10055,7 +10039,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Crete_Analytic_values (Normal/ anomalous)
+Distribution of normal vs.
+ anomalous values per feature – Crete
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Crete_Analytic_values-(Normal/-a"
@@ -10071,6 +10056,7 @@ name "tab:Crete_Analytic_values-(Normal/-a"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="4">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -11043,13 +11029,13 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Crete_Influence_Value
+Influence of climatic anomalies on fire duration – Crete
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Crete_Influence_Value"
@@ -11065,6 +11051,7 @@ name "tab:Crete_Influence_Value"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 
 \size footnotesize
 \begin_inset Tabular
@@ -11221,10 +11208,7 @@ duration
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_temp_anomaly (1)
-\color inherit
- 
+Class_temp_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11236,7 +11220,6 @@ Class_temp_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -11281,7 +11264,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--2.12%
+-9.66%
 \end_layout
 
 \end_inset
@@ -11294,21 +11277,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_temp_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -11342,7 +11322,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-47.28%
+54.83%
 \end_layout
 
 \end_inset
@@ -11364,10 +11344,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_high_heat_anomaly (1)
-\color inherit
- 
+Class_high_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11379,7 +11356,6 @@ Class_high_heat_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -11424,7 +11400,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+4.89%
+-3,97%
 \end_layout
 
 \end_inset
@@ -11437,21 +11413,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -11485,7 +11458,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-43.12%
+51.98%
 \end_layout
 
 \end_inset
@@ -11507,10 +11480,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_low_heat_anomaly (1)
-\color inherit
- 
+Class_low_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11522,7 +11492,6 @@ Class_low_heat_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -11567,7 +11536,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--12.77%
+-30.02%
 \end_layout
 
 \end_inset
@@ -11580,21 +11549,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -11628,7 +11594,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-47.76%
+65.01%
 \end_layout
 
 \end_inset
@@ -11650,21 +11616,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -11709,7 +11672,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--1.65%
+-8.85%
 \end_layout
 
 \end_inset
@@ -11722,21 +11685,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -11770,7 +11730,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-45.57%
+54.42%
 \end_layout
 
 \end_inset
@@ -11792,21 +11752,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_high_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -11851,7 +11808,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+0.35%
+-8.09%
 \end_layout
 
 \end_inset
@@ -11864,21 +11821,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -11912,7 +11866,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-45.61%
+54.05%
 \end_layout
 
 \end_inset
@@ -11934,21 +11888,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_low_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -11993,7 +11944,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--1.29%
+-10.15%
 \end_layout
 
 \end_inset
@@ -12006,21 +11957,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -12054,7 +12002,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-46.21%
+55.07%
 \end_layout
 
 \end_inset
@@ -12076,21 +12024,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -12135,7 +12080,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--3.28%
+-9.37%
 \end_layout
 
 \end_inset
@@ -12148,21 +12093,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -12196,7 +12138,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-48.60%
+54.68%
 \end_layout
 
 \end_inset
@@ -12218,21 +12160,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_high_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -12277,7 +12216,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+8.21%
+-0.07%
 \end_layout
 
 \end_inset
@@ -12290,21 +12229,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -12338,7 +12274,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-41.76%
+50.03%
 \end_layout
 
 \end_inset
@@ -12360,21 +12296,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_low_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -12419,7 +12352,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--10.71%
+-22.11%
 \end_layout
 
 \end_inset
@@ -12432,21 +12365,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -12480,7 +12410,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-49.65%
+61.05%
 \end_layout
 
 \end_inset
@@ -12514,14 +12444,16 @@ Fire_duration_class (0)
 \begin_layout Standard
 From the feature analysis,
  the duration of wildfires in the Crete region,
- is influenced by 
-\color black
-temperature (Class_high_heat_anomaly) by + 4.89% ,
- when it is higher than the expected baseline,
+ is influenced by (Class_low_heat_anomaly)
+\size small
+ at - 30.02%
+\size default
+ ,
+ and from (Class_low_windspeed_anomaly) at -22.11%,
  according to Table 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:Crete-Baseline-1980"
+reference "tab:Crete_Influence_Value"
 plural "false"
 caps "false"
 noprefix "false"
@@ -12531,14 +12463,8 @@ tuple "list"
 \end_inset
 
 .
- There is also a minor influence of approximately + 0.35% when humidity is higher (Class_high_humidity_anomaly),
- while wind speed (Class_high_windspeed_anomaly) exhibits the strongest influence,
- with a percentage of + 8.21%.
- Concerning,
- the negative values,
- the strongest effects observed for 
-\size small
-(Class_low_heat_anomaly) at -12.77% and (Class_low_windspeed_anomaly) at -10.71%.
+ There is also another feature it is worth noting the (Class_low_humidity_anomaly) at -10.15%.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -12581,13 +12507,14 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Eastern Macedonia Thrace Baseline (1992 - 2022) normal values
+Climatological normal (baseline) values for Eastern Macedonia & Thrace,
+ 1992–2022
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Eastern-Macedonia-Thrace"
@@ -12603,6 +12530,7 @@ name "tab:Eastern-Macedonia-Thrace"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="6">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -13638,13 +13566,14 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Macedonia_Analytic_values (Normal/ anomalous)
+Distribution of normal vs.
+ anomalous values per feature – Eastern Macedonia & Thrace
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Macedonia_Analytic_values-(Norma"
@@ -13660,6 +13589,7 @@ name "tab:Macedonia_Analytic_values-(Norma"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="4">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -14324,13 +14254,13 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Macedonia Influence Values
+Influence of climatic anomalies on fire duration – Eastern Macedonia & Thrace
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Macedonia_Influence_Values"
@@ -14346,6 +14276,7 @@ name "tab:Macedonia_Influence_Values"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 
 \size footnotesize
 \begin_inset Tabular
@@ -14502,10 +14433,7 @@ duration
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_temp_anomaly (1)
-\color inherit
- 
+Class_temp_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -14517,7 +14445,6 @@ Class_temp_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -14562,7 +14489,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+0.32%
+-32.29%
 \end_layout
 
 \end_inset
@@ -14575,21 +14502,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_temp_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -14623,7 +14547,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-33.53%
+66.14%
 \end_layout
 
 \end_inset
@@ -14645,10 +14569,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_high_heat_anomaly (1)
-\color inherit
- 
+Class_high_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -14660,7 +14581,6 @@ Class_high_heat_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -14705,7 +14625,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+6.03%
+-27.11%
 \end_layout
 
 \end_inset
@@ -14718,21 +14638,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -14766,7 +14683,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-30.41%
+63.55%
 \end_layout
 
 \end_inset
@@ -14788,10 +14705,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
-Class_low_heat_anomaly (1)
-\color inherit
- 
+Class_low_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -14803,7 +14717,6 @@ Class_low_heat_anomaly (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -14848,7 +14761,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--8.63%
+-46.07%
 \end_layout
 
 \end_inset
@@ -14861,21 +14774,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_heat_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -14909,7 +14819,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-35.59%
+73.03%
 \end_layout
 
 \end_inset
@@ -14931,21 +14841,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -14990,7 +14897,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+0.77%
+-32.08%
 \end_layout
 
 \end_inset
@@ -15003,21 +14910,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -15051,7 +14955,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-33.19%
+66.04%
 \end_layout
 
 \end_inset
@@ -15073,21 +14977,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_high_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -15132,7 +15033,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--10.32%
+-48.46%
 \end_layout
 
 \end_inset
@@ -15145,21 +15046,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -15193,7 +15091,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-36.08%
+74.23%
 \end_layout
 
 \end_inset
@@ -15215,21 +15113,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_low_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -15274,7 +15169,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+7.77%
+-25.33%
 \end_layout
 
 \end_inset
@@ -15287,21 +15182,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_humidity_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -15335,7 +15227,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-29.57%
+62.66%
 \end_layout
 
 \end_inset
@@ -15357,21 +15249,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -15416,7 +15305,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+2.23%
+-32.38%
 \end_layout
 
 \end_inset
@@ -15429,21 +15318,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -15477,7 +15363,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-31.58%
+66.19%
 \end_layout
 
 \end_inset
@@ -15499,21 +15385,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_high_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -15558,7 +15441,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-+3.76%
+-28.54%
 \end_layout
 
 \end_inset
@@ -15571,21 +15454,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_high_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -15619,7 +15499,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-31.97%
+64.27%
 \end_layout
 
 \end_inset
@@ -15641,21 +15521,18 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Class_low_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color blue
 Fire_duration_class (1)
 \end_layout
 
@@ -15700,7 +15577,7 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
--3.64%
+-36.04%
 \end_layout
 
 \end_inset
@@ -15713,21 +15590,18 @@ Fire_duration_class (1)
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Class_low_windspeed_anomaly (1) 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 +
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-\color black
 Fire_duration_class (0)
 \end_layout
 
@@ -15761,7 +15635,7 @@ Fire_duration_class (0)
 \begin_layout Plain Layout
 
 \size footnotesize
-35.62%
+68.02%
 \end_layout
 
 \end_inset
@@ -15790,17 +15664,8 @@ Fire_duration_class (0)
 
 \begin_layout Standard
 From the feature analysis,
- the duration of wildfires in the Eastern Macedonia & Thrace region,
- is influenced by 
-\color black
-temperature (Class_high_heat_anomaly) 
-\end_layout
-
-\begin_layout Standard
-
-\color black
-by + 6.03% ,
- when it is higher than the expected baseline,
+ the duration of wildfires in the Eastern Macedonia & Thrace region is most strongly influenced by humidity,
+ with (Class_high_humidity_anomaly) accounting for -48.46%,
  according to Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -15813,13 +15678,14 @@ tuple "list"
 
 \end_inset
 
-.
- There is also a influence of approximately + 7.77% when humidity is lower (Class_low_humidity_anomaly) while wind speed (Class_high_windspeed_anomaly) exhibits an effects + 3.76%.
- In regard to the negatives values,
- the strongest effects observed for 
-\size small
-(Class_high_humidity_anomaly) with -10.32%,
- and (Class_low_heat_anomaly) at -8.63%.
+Temperature also plays a substantial role,
+ with (Class_low_heat_anomaly) at -46.07%,
+ followed by wind speed,
+ with (Class_low_windspeed_anomaly) at -36.04%.
+ Other features exhibit comparable secondary effects,
+ including (Class_windspeed_anomaly) at -32.38%,
+ (Class_temp_anomaly) at -32.29%,
+ and (Class_humidity_anomaly) at -32.08%.
 \end_layout
 
 \begin_layout Section
@@ -15905,6 +15771,207 @@ literal "false"
  
 \end_layout
 
+\begin_layout Subsection
+The Feature Construction Method
+\end_layout
+
+\begin_layout Standard
+The proposed feature construction method,
+ aims at the automatic generation of new features from the original ones through evolutionary processes,
+ using the Grammatical Evolution procedure 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tsoulos 2022"
+literal "false"
+
+\end_inset
+
+.
+ Specifically,
+ the constructed features (FC) represent nonlinear combinations of the original ones and are subsequently used for training a machine learning model.
+ The model’s performance on the training data serves as the fitness function for the Grammatical Evolution process,
+ providing feedback that guides the evolutionary search toward generating more effective features.This method has been applied across many different domains,
+ including disease prediction
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tsoulos covid"
+literal "false"
+
+\end_inset
+
+,
+ wildfire duration estimation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tsoulos fires"
+literal "false"
+
+\end_inset
+
+,
+ Parkinson’s symptom detection
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tsoulos parkinson"
+literal "false"
+
+\end_inset
+
+,
+ object recognition
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lillywhite object"
+literal "false"
+
+\end_inset
+
+,
+ image quality enhancement
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lensen image"
+literal "false"
+
+\end_inset
+
+,
+ and several others.
+ The feature
+\begin_inset space \space{}
+\end_inset
+
+construction (FC) process involves two main steps.
+\end_layout
+
+\begin_layout Enumerate
+The feature construction phase,
+ in which candidate feature sets are explored using Grammatical Evolution as the primary mechanism.
+ This evolutionary procedure (selection,
+ crossover,
+ mutation) is iterated over a number of generations,
+ aiming to identify the genotype that yields the highest performing features.
+\end_layout
+
+\begin_layout Enumerate
+The feature evaluation phase,
+ during which the best genotype is used to generate the new set of (N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+f
+\end_layout
+
+\end_inset
+
+) features.
+ This step ensures a rigorous assessment based on their performance.
+\end_layout
+
+\begin_layout Standard
+Below,
+ the Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The_used_process_of_FC_method"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ illustrates the workflow carried out in this study,
+ aimed at identifying the influence of the climatic characteristics that,
+ in practice,
+ affect wildfire duration,
+ as well as validating our results through the feature construction (FC) technique,
+ which ultimately produced the best performance.
+ Specifically,
+ we first constructed the climatological baseline for each region,
+ identifying the normal and anomalous values.
+ Subsequently,
+ we processed the data provided by the Hellenic Fire Service,
+ focusing exclusively on forest area wildfires,
+ their duration,
+ and the day of occurrence.
+ Using the ignition day as the reference point,
+ we merged the corresponding meteorological records from the same calendar dates.
+ Based on the baseline analysis,
+ we then identified the climatic attributes required to build the dataset,
+ defined the binary classes (0/1),
+ and established the final output (target) class.
+\end_layout
+
+\begin_layout Standard
+Afterwards,
+ we processed the resulting datasets using machine learning techniques.
+ Among these methods,
+ the feature construction (FC) approach stood out:
+ feature construction is performed by the proposed GE based FC,
+ which searches for nonlinear expressions of the original variables and produces a compact set of constructed features (N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+f
+\end_layout
+
+\end_inset
+
+) tailored to the classification task.
+ These features are then trained and evaluated using classification error (%) as the primary metric.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Workflow of the proposed methodology,
+ from climatological baseline construction and merging with wildfire records,
+ through feature and class definition,
+ to model training and evaluation using the feature construction (FC) method.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The_used_process_of_FC_method"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename process_FC.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Each experiment was executed 30 times,
  using different seeds for the random number generator in every run.
@@ -15980,7 +16047,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -17414,7 +17481,6 @@ This study developed and validated the climatological influences associated with
  classes were generated to define the climatological normal values for each season,
  which were then compared with the conditions observed during the 2000–2025 fire events.
  This comparison allowed us to identify the anomalous climatological values and assess their influence on the duration of each forest fire.
- 
 \end_layout
 
 \begin_layout Standard
@@ -17423,8 +17489,7 @@ Finally,
  humidity,
  and wind speed features,
  and its reliability was validated using five machine learning techniques across all three datasets.
- The machine learning techniques that validated our results,
- are:
+ The machine learning techniques that validated our results are:
  the NEAT method,
  the Radial Basis Function (RBF),
  the LBFGS optimizer,
@@ -17443,17 +17508,16 @@ Finally,
 
 \begin_layout Standard
 In addition,
- the statistical validation further reinforces that the observed differences are unlikely to be attributable to chance.
- The overall Friedman test indicates a meaningful effect (chi\SpecialChar nobreakdash
-squared = 8.533,
+ the statistical validation reinforces that the difference between FC2 and NEAT is unlikely to be attributable to chance.
+ The overall Friedman test did not reach the conventional 0.05 significance threshold (chi-squared = 8.533,
  p = 0.074),
- while the Nemenyi critical difference of 3.522 confirms that the average rank of FC2 differs significantly from that of NEAT,
- RBF,
+ and the Nemenyi critical difference of 3.522 confirms that the average rank of FC2 differs significantly only from that of NEAT,
+ while the differences from RBF,
  LBFGS,
- and ADAM.
- This outcome is fully consistent with the paired t\SpecialChar nobreakdash
-test,
- which also shows a statistically significant difference (p = 0.0002).
+ and ADAM are not statistically significant.
+ This outcome is consistent with the paired t-test,
+ which likewise shows a statistically significant difference from NEAT (p = 0.0002),
+ but not from the remaining three methods.
 \end_layout
 
 \begin_layout Standard
@@ -17475,7 +17539,7 @@ Conceptualization,
  G.K.
  and V.C.;
  formal analysis,
- G.K.;
+ V.C.;
  investigation,
  C.K.;
  resources,
@@ -18192,6 +18256,149 @@ literal "false"
  The WEKA Workbench.
  Online Appendix for" Data Mining:
  Practical Machine Learning Tools and Techniques".
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Tsoulos 2022"
+literal "false"
+
+\end_inset
+
+ Tsoulos,
+ I.
+ G.
+ (2022).
+ Constructing Features Using a Hybrid Genetic Algorithm.
+ Signals,
+ 3(2),
+ 174-188.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Tsoulos covid"
+literal "false"
+
+\end_inset
+
+ Tsoulos,
+ I.
+ G.,
+ Tzallas,
+ A.
+ T.,
+ & Tsalikakis,
+ D.
+ (2022).
+ Prediction of covid-19 cases using constructed features by grammatical evolution.
+ Symmetry,
+ 14(10),
+ 2149.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Tsoulos fires"
+literal "false"
+
+\end_inset
+
+ Kopitsa,
+ C.,
+ Tsoulos,
+ I.
+ G.,
+ Miltiadous,
+ A.,
+ & Charilogis,
+ V.
+ (2025).
+ Predicting the Forest Fire Duration Enriched with Meteorological Data Using Feature Construction Techniques.
+ Symmetry,
+ 17(11),
+ 1785.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Tsoulos parkinson"
+literal "false"
+
+\end_inset
+
+ Psathas,
+ A.,
+ Tsoulos,
+ I.
+ G.,
+ Giannakeas,
+ N.,
+ Tzallas,
+ A.,
+ & Charilogis,
+ V.
+ (2025).
+ Constructing Artificial Features with Grammatical Evolution for the Motor Symptoms of Parkinson’s Disease.
+ Bioengineering,
+ 12(12),
+ 1318.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Lillywhite object"
+literal "false"
+
+\end_inset
+
+ Lillywhite,
+ K.,
+ Lee,
+ D.
+ J.,
+ Tippetts,
+ B.,
+ & Archibald,
+ J.
+ (2013).
+ A feature construction method for general object recognition.
+ Pattern Recognition,
+ 46(12),
+ 3300-3314.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Lensen image"
+literal "false"
+
+\end_inset
+
+ Lensen,
+ A.,
+ Al-Sahaf,
+ H.,
+ Zhang,
+ M.,
+ & Xue,
+ B.
+ (2016,
+ March).
+ Genetic programming for region detection,
+ feature extraction,
+ feature construction and classification in image data.
+ In European conference on genetic programming (pp.
+ 51-67).
+ Cham:
+ Springer International Publishing.
 \end_layout
 
 \begin_layout Bibliography
